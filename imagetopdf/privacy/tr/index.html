@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Image to PDF</title>
+<meta name="description" content="Image to PDF Android uygulamasının gizlilik politikası. Görselleriniz cihazınızdan hiç çıkmaz.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .todo {
+    background: #fff3cd; color: #4d3800;
+    border: 1px dashed #c9a227; border-radius: 6px;
+    padding: .15em .5em; font-weight: 650;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  @media (prefers-color-scheme: dark) {
+    .todo { background: #3a2f0b; color: #ffe08a; border-color: #8a7320; }
+  }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="../">← English version</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — Image to PDF</h1>
+  <p class="lede">Android uygulaması, paket adı <code>com.tinytools.imgtopdf</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 16 Ağustos 2026.</span> <span>Son güncelleme: 16 Ağustos 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Bu uygulamanın geliştiricisi hiçbir veri toplamaz.</strong> Fotoğraflarınız ve
+  oluşturduğunuz PDF'ler cihazınızdan hiç çıkmaz. Hesap açmanız gerekmez, giriş yapmanız gerekmez,
+  uygulamaya ait hiçbir sunucu yoktur ve geliştiricinin yazdığı hiçbir analiz veya takip kodu
+  bulunmaz. Dönüştürme işlemlerinin tamamı çevrimdışı olarak, telefonunuzda yapılır.</p>
+  <p>Tek istisna, Google'ın sağladığı reklam ve ödeme hizmetleridir; bunlar aşağıda ayrıntılı
+  olarak anlatılmıştır. Tek seferlik reklam kaldırma satın alırsanız bunlar da devre dışı kalır.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play üzerinden <code>com.tinytools.imgtopdf</code> paket adıyla dağıtılan
+<em>Image to PDF</em> Android uygulamasını kapsar. Uygulamanın bağımsız geliştiricisi tarafından
+yazılmıştır. Sorularınızı <a href="#iletisim">İletişim</a> bölümündeki adrese iletebilirsiniz.</p>
+
+<h2>Uygulama ne yapar</h2>
+<p>ImageToPdf, fotoğraflarla PDF belgeleri arasında iki yönlü dönüştürme yapar. Seçtiğiniz
+fotoğrafları tek bir PDF'e dönüştürür; bir PDF'in sayfalarını da görsel olarak dışa aktarır.
+PDF oluştururken sayfa boyutunu, yönü, sığdırma modunu, kenar boşluğunu ve sayfa sırasını;
+sayfaları dışa aktarırken çıktı biçimini (JPEG, PNG veya WEBP), kaliteyi ve çözünürlüğü siz
+belirlersiniz. Filigran yoktur, abonelik yoktur, kalite sınırı yoktur.</p>
+
+<h2>Görselleriniz ve dosyalarınız cihazınızda kalır</h2>
+<p>En önemli bölüm bu olduğu için açıkça yazıyoruz:</p>
+<ul>
+  <li><strong>Görseller hiçbir zaman yüklenmez.</strong> Uygulamanın kendine ait bir sunucusu
+  yoktur. Fotoğraflarınızı, PDF'lerinizi, bunların içeriğini, dosya adlarını veya meta verilerini
+  hiçbir yere göndermez.</li>
+  <li><strong>Görseller Android Fotoğraf Seçici üzerinden okunur.</strong> İstediğiniz fotoğrafları
+  siz seçersiniz. Uygulamaya yalnızca seçtiğiniz öğelere erişim verilir; galeriniz taranmaz.</li>
+  <li><strong>Çıktılar MediaStore üzerinden yazılır:</strong> PDF'ler
+  <code>Documents/Image to PDF</code>, PDF'ten dışa aktarılan sayfalar <code>Pictures/Image to PDF</code>
+  klasörüne, yani cihazınızın kendi depolama alanına kaydedilir. Sistemin Paylaş penceresi ve
+  önizlemeler için uygulamanın özel önbelleğine geçici kopyalar konabilir; bunlar uygulamanın
+  korumalı alanına aittir ve önbellek temizlendiğinde veya uygulama kaldırıldığında silinir.</li>
+  <li><strong>Android 10 ve sonrasında depolama izni istenmez.</strong> Fotoğraf Seçici ve
+  MediaStore bunu gereksiz kılar. Android 9 ve öncesinde ise eski
+  <code>WRITE_EXTERNAL_STORAGE</code> izni yalnızca dosyaları kaydedebilmek için tanımlanmıştır.</li>
+</ul>
+
+<h3>Uygulamanın cihazda sakladıkları</h3>
+<p>Uygulama, cihazdaki kendi özel alanında az miktarda durum bilgisi tutar. Bunların hiçbiri kişisel
+veri değildir ve hiçbiri hiçbir yere gönderilmez:</p>
+<ul>
+  <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı;</li>
+  <li>ödüllü reklam izleyerek kazanılan geçici reklamsız sürenin bitiş zamanı;</li>
+  <li>reklam sıklığını düşük tutmak için kullanılan, gösterilen geçiş reklamı sayacı.</li>
+</ul>
+<p>Bu yerel veriler, Android bulut yedeklemesinin ve cihazdan cihaza aktarımın dışında bırakılmıştır;
+yani Google Drive hesabınıza kopyalanmaz. Google'ın reklam ve rıza bileşenleri de kendi ayarlarını
+cihazda, Google'ın denetiminde tutar. Uygulamayı kaldırmak veya verilerini temizlemek, uygulamanın
+sakladığı her şeyi siler.</p>
+
+<h2>Reklamlar — Google AdMob</h2>
+<p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
+tarafından sunulan reklamlarla desteklenir. AdMob, uygulamaya bir yazılım geliştirme kiti olarak
+gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>. Reklamlar gösterilirken
+AdMob ve Google'ın reklam iş ortakları şunları toplayıp işleyebilir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Veri</th><th>Kullanım amacı</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reklam kimliği (Android'in atadığı, sıfırlanabilir tanımlayıcı)</td>
+      <td>Reklam sunumu, gösterim sıklığı sınırlama, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, IP adresinden türetilen kaba konum</td>
+      <td>Ülkenize veya bölgenize uygun reklam sunumu ve yasal uyumluluk</td>
+    </tr>
+    <tr>
+      <td>Cihaz bilgileri — model, işletim sistemi sürümü, dil, ekran ve ağ özellikleri</td>
+      <td>Reklamların doğru görüntülenmesi, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Uygulama etkileşim olayları — bir reklamın istendiği, gösterildiği, tıklandığı veya
+      kapatıldığı bilgisi</td>
+      <td>Reklam ölçümü, reklamverenlerin faturalandırılması, dolandırıcılık önleme</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Uygulama GPS veya hassas konum izni <strong>istemez</strong> ve görsellerinizi, dosya adlarınızı
+veya belge içeriğinizi AdMob'a göndermez. Geliştirici, AdMob'dan hiçbir kişisel veri almaz;
+yalnızca gösterim ve gelir toplamları gibi toplulaştırılmış, anonim raporlar görür.</p>
+<p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden uygulama
+<code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Kullanılan reklam biçimleri:
+banner, ara sıra gösterilen geçiş reklamı, izlemeyi kendiniz seçtiğiniz ödüllü reklam ve uygulama
+açılış reklamı.</p>
+<p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites">Google, hizmetlerimizi
+  kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543">AdMob ve üçüncü taraf reklamcılık</a></li>
+</ul>
+
+<h2>Satın alma — Google Play Faturalandırma</h2>
+<p>Uygulamada, reklamları kalıcı olarak kaldıran tek seferlik ve isteğe bağlı tek bir satın alma
+vardır. Abonelik veya yinelenen hiçbir ödeme yoktur.</p>
+<p>İşlemin tamamı Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
+numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı asla görmez ve almaz.</strong>
+Google yalnızca toplulaştırılmış satış rakamlarını bildirir. Uygulama içinde satın alma, cihazınızda
+tek bir doğru/yanlış işareti olarak tutulur; uygulamayı yeniden kurduğunuzda veya yeni bir cihaza
+geçtiğinizde Google Play hesabınızdan geri yüklenir. Ödeme verilerinizin Google tarafından işlenmesi
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
+koşulları kapsamındadır.</p>
+
+<h2>Reklam tercihleriniz</h2>
+
+<h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
+<p>Kişiselleştirilmiş reklam istenmeden önce uygulama, Google'ın User Messaging Platform altyapısıyla
+hazırlanmış bir rıza formu gösterir; neye izin vereceğinizi burada seçersiniz. Seçiminiz Google'ın
+bileşeni tarafından cihazınızda saklanır ve sonraki açılışlarda dikkate alınır.</p>
+<p><strong>Kararınızı istediğiniz zaman değiştirebilirsiniz:</strong> uygulamayı açın,
+<em>Ayarlar → Gizlilik seçenekleri</em> bölümüne gidin; aynı form yeniden görünür. Rızanızı buradan
+geri çekebilirsiniz. Rızayı geri çekmek uygulamayı devre dışı bırakmaz; dönüştürme işlemlerini
+yapmaya devam edebilirsiniz ve reklamlar kişiselleştirilmemiş biçimde gösterilmeye devam
+edebilir.</p>
+
+<h3>Diğer ülkelerde</h3>
+<p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak zorunlu olduğu yerlerde göründüğü
+için sizde görünmeyebilir. Reklamları yine de işletim sistemi düzeyinde denetleyebilirsiniz: Android
+<em>Ayarlar → Gizlilik → Reklamlar</em> bölümünden (tam yol üreticiye ve Android sürümüne göre
+değişir) reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz; silmeniz durumunda
+uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
+
+<h3>Reklamları tamamen kaldırmak</h3>
+<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın reklam istemesini tümüyle durdurur.</p>
+
+<h2>Uygulamanın istediği izinler</h2>
+<div class="card">
+<ul>
+  <li><code>INTERNET</code> — reklamların alınması ve Google Play Faturalandırma ile iletişim için
+  gereklidir. Ağ üzerinden başka hiçbir şey gönderilmez.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yükleme denemesinden önce bağlantı
+  olup olmadığını kontrol etmesini sağlar.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un
+  kullandığı reklam tanımlayıcısına erişim.</li>
+  <li><code>WRITE_EXTERNAL_STORAGE</code>, yalnızca Android 9 ve öncesinde — çıktı dosyalarınızı
+  kaydedebilmek için gereklidir. Android 10 ve sonrasında istenmez.</li>
+</ul>
+</div>
+<p>Uygulama kamera, kişiler, mikrofon, hassas konum veya hesap izni istemez.</p>
+
+<h2>Çocuklar</h2>
+<p>Bu uygulama genel amaçlı bir araçtır. <strong>13 yaşın altındaki çocuklara yönelik değildir</strong>
+(veya ülkenizdeki eşdeğer asgari yaş), çocuklara yönelik bir kategoride listelenmemiştir ve çocuklar
+için tasarlanmamış, çocuklara pazarlanmamıştır. Geliştirici, çocuklardan bilerek hiçbir kişisel veri
+toplamaz. Bir çocuğun bu uygulamadaki reklam hizmetleri aracılığıyla kişisel veri verdiğini
+düşünüyorsanız aşağıdaki adrese ve verinin bulunduğu taraf olan Google'a başvurun.</p>
+
+<h2>Verilerin saklanması</h2>
+<p>Geliştirici hiçbir kullanıcı verisi saklamadığı için geliştirici tarafında saklanacak veya
+silinecek bir şey yoktur. Cihazınızdaki veriler, uygulamanın verilerini temizleyene veya uygulamayı
+kaldırana kadar orada kalır. AdMob ve Google Play aracılığıyla Google'ın topladığı veriler,
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'nda açıklanan
+kendi saklama sürelerine tabidir.</p>
+
+<h2>Hukuki dayanaklar ve haklarınız</h2>
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde kişiselleştirilmiş reklamın hukuki dayanağı, yukarıda
+anlatılan formla alınan ve istediğiniz zaman geri çekebileceğiniz açık rızanızdır.
+Kişiselleştirilmemiş reklam, dolandırıcılık önleme ve reklam hizmetlerinin güvenliği meşru menfaate
+dayanır. Satın alma işleminizin yürütülmesi, reklam kaldırmayı satın aldığınızda kurulan sözleşmenin
+ifası için gereklidir.</p>
+<p>GDPR kapsamında ve Türkiye'de 6698 sayılı KVKK kapsamında eşdeğer biçimde; kişisel verilerinizin
+işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini isteme, işlenmesini
+kısıtlama veya işlenmesine itiraz etme, veri taşınabilirliği ve rızanızı geri çekme haklarına
+sahipsiniz. Ayrıca ulusal veri koruma otoritesine şikâyette bulunabilirsiniz; Türkiye'de bu kurum
+Kişisel Verileri Koruma Kurumu'dur (KVKK).</p>
+<p>Geliştirici hakkınızda hiçbir kişisel veri tutmadığı için geliştiricinin getirebileceği veya
+silebileceği bir kayıt yoktur. Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran
+taraf olan Google'a,
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'ndaki araçlar
+kullanılarak iletilmelidir. Diğer tüm konular için veya doğru yolu bulmak üzere yardım almak için
+aşağıdaki adrese yazabilirsiniz.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Uygulamanın veri uygulamaları değişirse — örneğin yeni bir üçüncü taraf hizmet eklenirse — bu
+sayfa güncellenir ve en üstteki "son güncelleme" tarihi değişir. Önemli değişiklikler ayrıca
+uygulamanın Google Play sayfasına da yansıtılır. Güncellemeden sonra uygulamayı kullanmaya devam
+etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+
+<h2 id="iletisim">İletişim</h2>
+<p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>
+<div class="card">
+  <p><span class="todo">TODO: your email</span></p>
+  <p>Yayına almadan önce bu yer tutucuyu gerçek ve düzenli takip edilen bir e-posta adresiyle
+  değiştirin. Google Play çalışan bir iletişim adresi zorunlu tutar ve bu sayfadaki adres Play
+  Console listelemenizdekiyle aynı olmalıdır.</p>
+</div>
+
+<footer>
+  <p>Image to PDF — filigran yok, abonelik yok, bulut yok. Bu politika, uygulamanın 1.0.0
+  sürümündeki halini açıklar.</p>
+</footer>
+
+</main>
+</body>
+</html>

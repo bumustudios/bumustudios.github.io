@@ -1,0 +1,14 @@
+# Windows and macOS file-manager droppings. They are invisible locally and very
+# visible in a public repository.
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Jekyll build output. This site ships .nojekyll so Jekyll never runs here, but a
+# local `jekyll serve` used for previewing would still write these.
+_site/
+.jekyll-cache/

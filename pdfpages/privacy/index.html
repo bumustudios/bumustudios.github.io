@@ -85,9 +85,8 @@
   table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
   th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
   th { font-weight: 650; background: var(--surface); }
-  @media (prefers-color-scheme: dark) {
-  }
   .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
   footer {
     margin-top: 3rem; padding-top: 1.25rem;
     border-top: 1px solid var(--rule);
@@ -102,7 +101,7 @@
 <body>
 <main>
 
-<p class="lang"><a href="tr/">Türkçe sürüm →</a></p>
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="tr/">Türkçe sürüm</a><span class="sep">·</span><a href="/imagetopdf/privacy/">ImageToPdf policy</a></p>
 
 <header>
   <h1>Privacy Policy — PdfPages</h1>
@@ -156,7 +155,7 @@ page limit.</p>
 runs entirely on your device and has no network access of its own; it is a piece of local code, not
 a service.</p>
 
-<h2>What the app stores locally</h2>
+<h3>What the app stores locally</h3>
 <p>The app keeps a small amount of state in its own private storage on the device. None of it is
 personal information, and none of it is sent anywhere:</p>
 <ul>
@@ -247,6 +246,7 @@ stable advertising identifier.</p>
 <p>Buying the one-time ad removal stops ad requests from the app altogether.</p>
 
 <h2>Permissions the app requests</h2>
+<div class="card">
 <ul>
   <li><code>INTERNET</code> — required to fetch ads and to communicate with Google Play Billing.
   Nothing else is sent over the network.</li>
@@ -257,6 +257,7 @@ stable advertising identifier.</p>
   <li><code>WRITE_EXTERNAL_STORAGE</code>, limited to Android 9 and older — needed there to save
   your output files. It is not requested on Android 10 or newer.</li>
 </ul>
+</div>
 <p>The app requests no camera, contacts, microphone, precise location or account permissions.</p>
 
 <h2>Children</h2>

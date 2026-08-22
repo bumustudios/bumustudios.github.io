@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — BumuStudios</title>
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --bg: #f7f8fa; --surface: #ffffff; --ink: #16202c; --ink-2: #5a6a7a;
+    --line: #dde4ec; --accent: #2f5d8a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e151d; --surface: #16202b; --ink: #e2e9f0; --ink-2: #9aabbc;
+      --line: #26333f; --accent: #7fb2dd;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0 20px 80px; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  header { padding: 80px 0 40px; border-bottom: 1px solid var(--line); }
+  .code { font-size: 14px; text-transform: uppercase; letter-spacing: .1em;
+          color: var(--ink-2); margin: 0 0 12px; font-weight: 600; }
+  h1 { font-size: clamp(28px, 6vw, 38px); margin: 0 0 12px; letter-spacing: -.02em; }
+  .tagline { font-size: 18px; color: var(--ink-2); margin: 0; }
+  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .1em;
+       color: var(--ink-2); margin: 48px 0 16px; font-weight: 600; }
+  .links { display: flex; flex-direction: column; gap: 10px; font-size: 15px; }
+  .links a { color: var(--accent); }
+  footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line);
+           color: var(--ink-2); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="code">Error 404</p>
+    <h1>That page isn&rsquo;t here</h1>
+    <p class="tagline">The address may have changed, or it may simply be a typo.
+    Everything this site publishes is listed below.</p>
+  </header>
+
+  <h2>Privacy policies</h2>
+  <div class="links">
+    <a href="/imagetopdf/privacy/">ImageToPdf &mdash; privacy policy (English)</a>
+    <a href="/imagetopdf/privacy/tr/">ImageToPdf &mdash; gizlilik politikas&#305; (T&uuml;rk&ccedil;e)</a>
+    <a href="/pdfpages/privacy/">PdfPages &mdash; privacy policy (English)</a>
+    <a href="/pdfpages/privacy/tr/">PdfPages &mdash; gizlilik politikas&#305; (T&uuml;rk&ccedil;e)</a>
+  </div>
+
+  <h2>Studio</h2>
+  <div class="links">
+    <a href="/">BumuStudios home</a>
+  </div>
+
+  <footer>
+    Still stuck? Write to <a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a>.
+  </footer>
+</main>
+</body>
+</html>

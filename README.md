@@ -16,6 +16,8 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | ImageToPdf gizlilik politikası (TR) | <https://bumustudios.github.io/imagetopdf/privacy/tr/> |
 | PdfPages privacy policy (EN) | <https://bumustudios.github.io/pdfpages/privacy/> |
 | PdfPages gizlilik politikası (TR) | <https://bumustudios.github.io/pdfpages/privacy/tr/> |
+| Grid Smash privacy policy (EN) | <https://bumustudios.github.io/gridsmash/privacy/> |
+| Grid Smash gizlilik politikası (TR) | <https://bumustudios.github.io/gridsmash/privacy/tr/> |
 
 ## Read this before editing a policy page
 
@@ -36,7 +38,7 @@ Consequences of that:
   data handling than the English one is a discrepancy, not a translation lag.
 - **Update the "last updated" date** in the page when the substance changes, and
   keep it identical across the two languages.
-- Keep the two apps' pages structurally parallel. They are deliberately the same
+- Keep the apps' pages structurally parallel. They are deliberately the same
   template, which is what makes a difference between them readable as meaningful.
 
 ## Layout
@@ -48,6 +50,8 @@ imagetopdf/privacy/     ImageToPdf policy, English
 imagetopdf/privacy/tr/  ImageToPdf policy, Turkish
 pdfpages/privacy/       PdfPages policy, English
 pdfpages/privacy/tr/    PdfPages policy, Turkish
+gridsmash/privacy/      Grid Smash policy, English
+gridsmash/privacy/tr/   Grid Smash policy, Turkish
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll
 ```
 
@@ -59,6 +63,7 @@ rather than one file.
 
 - [ImageToPdf](https://github.com/bumustudios/ImageToPdf) *(private)*
 - [PdfPages](https://github.com/bumustudios/PdfPages) *(private)*
+- [GridSmash](https://github.com/bumustudios/GridSmash) *(private)*
 
 ## Licence
 

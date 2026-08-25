@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — ImageToPdf</title>
-<meta name="description" content="Privacy policy for the ImageToPdf Android app. Your images never leave your device.">
+<title>Privacy Policy — Grid Smash</title>
+<meta name="description" content="Privacy policy for the Grid Smash Android game. No account, no server, fully offline.">
 <meta name="color-scheme" content="light dark">
 <style>
   :root {
@@ -101,77 +101,77 @@
 <body>
 <main>
 
-<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="tr/">Türkçe sürüm</a><span class="sep">·</span><a href="/pdfpages/privacy/">PdfPages policy</a><span class="sep">·</span><a href="/gridsmash/privacy/">Grid Smash policy</a></p>
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="tr/">Türkçe sürüm</a><span class="sep">·</span><a href="/imagetopdf/privacy/">ImageToPdf policy</a><span class="sep">·</span><a href="/pdfpages/privacy/">PdfPages policy</a></p>
 
 <header>
-  <h1>Privacy Policy — ImageToPdf</h1>
-  <p class="lede">Android app, package <code>com.bumustudios.imgtopdf</code></p>
-  <p class="dates"><span>Effective date: 16 August 2026.</span> <span>Last updated: 16 August 2026.</span></p>
+  <h1>Privacy Policy — Grid Smash</h1>
+  <p class="lede">Android game, package <code>com.bumustudios.gridsmash</code></p>
+  <p class="dates"><span>Effective date: 25 August 2026.</span> <span>Last updated: 25 August 2026.</span></p>
 </header>
 
 <div class="callout">
-  <p><strong>The developer of this app collects nothing.</strong> Your photos and the PDFs you
-  create never leave your device. There is no account to make, no sign-in, no server belonging
-  to this app, and no analytics or tracking code written by the developer. All conversion
-  happens locally, on your phone, offline.</p>
+  <p><strong>The developer of this game collects nothing.</strong> There is no account to make, no
+  sign-in, no server belonging to this game, and no analytics or tracking code written by the
+  developer. The game does not read your files, your photos or your contacts — it never asks for
+  a single storage permission. Everything, including the daily puzzle, is computed on your phone,
+  offline.</p>
   <p>The one exception is the advertising and payment services provided by Google, which are
-  described in full below. If you buy the one-time ad removal, even those stop running.</p>
+  described in full below. If you buy the one-time ad removal, the interruptions stop; the only
+  ad left is the optional one you can choose to watch to continue a lost game.</p>
 </div>
 
 <h2>Who this policy is from</h2>
-<p>This policy covers the Android application <em>ImageToPdf</em>, distributed through Google
-Play under the package name <code>com.bumustudios.imgtopdf</code>. It is written by the app's
-independent developer. Questions can be sent to the address in
-<a href="#contact">Contact</a>.</p>
+<p>This policy covers the Android game <em>Grid Smash</em>, distributed through Google Play under
+the package name <code>com.bumustudios.gridsmash</code>. It is written by the game's independent
+developer. Questions can be sent to the address in <a href="#contact">Contact</a>.</p>
 
-<h2>What the app does</h2>
-<p>ImageToPdf converts between photos and PDF documents, in both directions. It turns photos you
-choose into a PDF, and it exports the pages of a PDF back out as images. You control page size,
-orientation, fit mode, margins and page order when creating a PDF, and output format (JPEG, PNG or
-WEBP), quality and resolution when exporting pages. There is no watermark, no subscription and no
-quality cap.</p>
+<h2>What the game is</h2>
+<p>Grid Smash is a block puzzle. You drag pieces from a tray of three onto an 8×8 board; full rows
+and columns clear and score, and the game ends when nothing fits. There is an endless mode and a
+daily puzzle. No account, no subscription, no energy system.</p>
 
-<h2>Your images and files stay on your device</h2>
+<h2>The game runs entirely on your device</h2>
 <p>This is the most important section, so it is stated plainly:</p>
 <ul>
-  <li><strong>Images are never uploaded.</strong> The app has no backend of its own. It does not
-  transmit your photos, your PDFs, their contents, their file names or their metadata anywhere.</li>
-  <li><strong>Images are read through the Android Photo Picker.</strong> You pick the specific
-  photos you want. The app is granted access only to those items and does not browse your gallery.</li>
-  <li><strong>Output is written through MediaStore</strong> into <code>Documents/Image to PDF</code>
-  for PDFs and <code>Pictures/Image to PDF</code> for pages exported from a PDF, on your device's own
-  storage. Temporary copies may be placed in the app's private cache to support the system Share
-  sheet and previews; these belong to the app's sandbox and are removed when the cache is cleared
-  or the app is uninstalled.</li>
-  <li><strong>No storage permission is requested on Android 10 and newer.</strong> The Photo Picker
-  and MediaStore make one unnecessary. On Android 9 and older, the legacy
-  <code>WRITE_EXTERNAL_STORAGE</code> permission is declared solely so files can be saved.</li>
+  <li><strong>Nothing you do in the game is uploaded.</strong> The game has no backend of its own.
+  Your scores, your streaks and your in-progress games are not transmitted anywhere and there is
+  no online leaderboard.</li>
+  <li><strong>The daily puzzle needs no server.</strong> Everyone in the world gets the same piece
+  sequence for the same date because the sequence is derived mathematically from the date itself,
+  on your device. No network request is involved.</li>
+  <li><strong>The game reads no files.</strong> It requests no storage, camera, microphone,
+  contacts or location permission — not on any Android version.</li>
+  <li><strong>The piece generator cannot watch you.</strong> The random pieces are drawn from a
+  seeded sequence fixed before the game starts; the state of your board is not an input to it.
+  This is a fairness property rather than a privacy one, but it is part of the same promise: the
+  game does not analyse your play.</li>
 </ul>
 
-<h3>What the app stores locally</h3>
-<p>The app keeps a small amount of state in its own private storage on the device. None of it is
+<h3>What the game stores locally</h3>
+<p>The game keeps a small amount of state in its own private storage on the device. None of it is
 personal information, and none of it is sent anywhere:</p>
 <ul>
+  <li>your theme, language, sound and vibration choices;</li>
+  <li>your best scores and your daily-puzzle streak;</li>
+  <li>a snapshot of an unfinished game, so it can be resumed after a restart;</li>
   <li>whether the one-time "remove ads" purchase is active;</li>
   <li>the expiry time of a temporary ad-free period earned by watching a rewarded ad;</li>
   <li>a counter of how many interstitial ads have been shown, used to keep ad frequency low.</li>
 </ul>
 <p>This local state is deliberately excluded from Android cloud backup and from device-to-device
 transfer, so it is not copied to your Google Drive. Google's advertising and consent components
-also keep their own settings on the device, under Google's control. Uninstalling the app or
-clearing its data removes everything the app has stored.</p>
+also keep their own settings on the device, under Google's control. Uninstalling the game or
+clearing its data removes everything the game has stored.</p>
 
 <h2>Advertising — Google AdMob</h2>
-<p>The app is free and is supported by ads served by Google AdMob (Google Ireland Limited / Google
-LLC, depending on your region). AdMob is embedded in the app as a software development kit, and
-<strong>it does collect data</strong>, independently of the developer. When ads are served, AdMob
+<p>The game is free and is supported by ads served by Google AdMob (Google Ireland Limited / Google
+LLC, depending on your region). AdMob is embedded in the game as a software development kit, and
+<strong>it does collect data, independently of the developer</strong>. When ads are served, AdMob
 and Google's advertising partners may collect and process:</p>
 
 <div class="table-wrap">
 <table>
-  <thead>
-    <tr><th>Data</th><th>Used for</th></tr>
-  </thead>
+  <thead><tr><th>Data</th><th>Used for</th></tr></thead>
   <tbody>
     <tr>
       <td>Advertising ID (a resettable identifier assigned by Android)</td>
@@ -194,12 +194,14 @@ and Google's advertising partners may collect and process:</p>
 </table>
 </div>
 
-<p>The app does <strong>not</strong> request GPS or precise location permission, and it does not
-send your images, file names or document contents to AdMob. The developer receives no personal data
-from AdMob — only aggregated, anonymous reporting such as impression and revenue totals.</p>
-<p>Because ads require an advertising identifier, the app declares the
-<code>com.google.android.gms.permission.AD_ID</code> permission. Ad formats used are a banner, an
-occasional interstitial, an optional rewarded ad you choose to watch, and an app-open ad.</p>
+<p>The game <strong>does not</strong> request GPS or precise location permission, and it does not
+send your scores or your play history to AdMob. The developer receives no personal data from
+AdMob — only aggregated, anonymous reporting such as impression and revenue totals.</p>
+<p>Because ads require an advertising identifier, the game declares the
+<code>com.google.android.gms.permission.AD_ID</code> permission. Ad formats used are a banner on
+the menu screens, an occasional interstitial between games, an optional rewarded ad you can choose
+to watch to continue a lost game, and an app-open ad. No ad is ever shown on the board while you
+are playing.</p>
 <p>How Google handles this data is governed by Google's own policies, not by this one:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
@@ -209,37 +211,39 @@ occasional interstitial, an optional rewarded ad you choose to watch, and an app
 </ul>
 
 <h2>Purchases — Google Play Billing</h2>
-<p>The app offers one optional, one-time, non-consumable purchase that permanently removes ads.
-There is no subscription and nothing recurring.</p>
+<p>The game offers one optional, one-time, non-consumable purchase that permanently removes the
+interrupting ads. There is no subscription and nothing recurring. The rewarded continue remains
+available after the purchase — it only ever plays when you ask it to.</p>
 <p>The transaction is handled entirely by Google Play Billing. <strong>The developer never sees
 or receives your card number, bank details, billing address or full name.</strong> Google reports
-only aggregated sales figures. Inside the app, the purchase is recorded as a single true/false flag
-on your device, restored from your Google Play account when you reinstall or move to a new device.
-Your handling of payment data by Google is covered by the
+only aggregated sales figures. Inside the game, the purchase is recorded as a single true/false flag
+on your device, restored from your Google Play account when you reinstall or move to a new device.</p>
+<p>Google's handling of payment data is covered by the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and Google Play's terms.</p>
 
 <h2>Your advertising choices</h2>
 
 <h3>If you are in the EEA, the UK or Switzerland</h3>
-<p>Before personalised ads are requested, the app shows a consent form built with Google's User
+<p>Before personalised ads are requested, the game shows a consent form built with Google's User
 Messaging Platform, where you choose what you allow. Your choice is stored on your device by
 Google's component and is respected on later launches.</p>
-<p><strong>You can change your decision at any time:</strong> open the app, go to
-<em>Settings → Privacy options</em>, and the same form reappears. You may withdraw consent there.
-Withdrawing consent does not disable the app; you will still be able to convert your files, and
-ads may still be shown in a non-personalised form.</p>
+<p>You can change your decision at any time: open the game, go to
+<strong>Settings → Privacy options</strong>, and the same form reappears. You may withdraw consent
+there. Withdrawing consent does not disable the game; you can keep playing, and ads may still be
+shown in a non-personalised form.</p>
 
 <h3>Everywhere else</h3>
 <p>The privacy options entry appears only where a consent choice is legally required, so you may
 not see it. You can still control advertising at the operating-system level: open Android
-<em>Settings → Privacy → Ads</em> (the exact path varies by manufacturer and Android version) to
-reset your advertising ID, or to delete it entirely, which stops apps from receiving a stable
-advertising identifier.</p>
+<strong>Settings → Privacy → Ads</strong> (the exact path varies by manufacturer and Android
+version) to reset your advertising ID, or to delete it entirely, which stops apps from receiving a
+stable advertising identifier.</p>
 
 <h3>Removing ads completely</h3>
-<p>Buying the one-time ad removal stops ad requests from the app altogether.</p>
+<p>Buying the one-time ad removal stops the banner, interstitial and app-open ads altogether. The
+only ad request left is the rewarded continue, and that happens only when you tap its button.</p>
 
-<h2>Permissions the app requests</h2>
+<h2>Permissions the game requests</h2>
 <div class="card">
 <ul>
   <li><code>INTERNET</code> — required to fetch ads and to communicate with Google Play Billing.
@@ -248,22 +252,21 @@ advertising identifier.</p>
   available before trying to load.</li>
   <li><code>com.google.android.gms.permission.AD_ID</code> — access to the advertising identifier,
   used by AdMob as described above.</li>
-  <li><code>WRITE_EXTERNAL_STORAGE</code>, limited to Android 9 and older — needed there to save
-  your output files. It is not requested on Android 10 or newer.</li>
 </ul>
 </div>
-<p>The app requests no camera, contacts, microphone, precise location or account permissions.</p>
+<p>That is the complete list. The game requests no storage, camera, contacts, microphone,
+location or account permissions on any Android version.</p>
 
 <h2>Children</h2>
-<p>This app is a general-purpose utility. It is <strong>not directed at children under 13</strong>
+<p>This is a general-audience game. It is <strong>not directed at children</strong> under 13
 (or the equivalent minimum age in your country), it is not listed in a children's category, and it
 is not designed for or marketed to children. The developer does not knowingly collect any personal
 information from children. If you believe a child has provided personal information through the ad
-services in this app, contact the address below and contact Google, whose services would hold it.</p>
+services in this game, contact the address below and contact Google, whose services would hold it.</p>
 
 <h2>Data retention</h2>
 <p>The developer stores no user data at all, so there is nothing on the developer's side to retain
-or delete. Data held on your device stays there until you clear the app's data or uninstall the app.
+or delete. Data held on your device stays there until you clear the game's data or uninstall it.
 Data collected by Google through AdMob and Google Play is retained according to Google's own
 retention schedules, described in the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
@@ -285,22 +288,22 @@ that holds it, using the tools in the
 help finding the right route, write to the address below.</p>
 
 <h2>Changes to this policy</h2>
-<p>If the app's data practices change — for example if a new third-party service is added — this
+<p>If the game's data practices change — for example if a new third-party service is added — this
 page will be updated and the "last updated" date at the top will change. Material changes will also
-be reflected in the app's Google Play listing. Continuing to use the app after an update means you
+be reflected in the game's Google Play listing. Continuing to play after an update means you
 accept the revised policy.</p>
 
 <h2 id="contact">Contact</h2>
-<p>For any question about this policy or about privacy in this app, write to:</p>
+<p>For any question about this policy or about privacy in this game, write to:</p>
 <div class="card">
   <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
-  <p>This is the same address listed on the app's Google Play page. Bug reports, privacy questions
+  <p>This is the same address listed on the game's Google Play page. Bug reports, privacy questions
   and data requests all reach us here.</p>
 </div>
 
 <footer>
-  <p>ImageToPdf — no watermark, no subscription, no cloud. This policy describes the app as
-  released at version 1.0.0.</p>
+  Grid Smash — no account, no subscription, fully offline. This policy describes the game as
+  released at version 1.0.0.
 </footer>
 
 </main>

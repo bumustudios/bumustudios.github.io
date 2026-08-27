@@ -18,6 +18,8 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | PdfPages gizlilik politikası (TR) | <https://bumustudios.github.io/pdfpages/privacy/tr/> |
 | Grid Smash privacy policy (EN) | <https://bumustudios.github.io/gridsmash/privacy/> |
 | Grid Smash gizlilik politikası (TR) | <https://bumustudios.github.io/gridsmash/privacy/tr/> |
+| Arrow Rush privacy policy (EN) | <https://bumustudios.github.io/arrowrush/privacy/> |
+| Arrow Rush gizlilik politikası (TR) | <https://bumustudios.github.io/arrowrush/privacy/tr/> |
 
 ## Read this before editing a policy page
 
@@ -52,6 +54,8 @@ pdfpages/privacy/       PdfPages policy, English
 pdfpages/privacy/tr/    PdfPages policy, Turkish
 gridsmash/privacy/      Grid Smash policy, English
 gridsmash/privacy/tr/   Grid Smash policy, Turkish
+arrowrush/privacy/      Arrow Rush policy, English
+arrowrush/privacy/tr/   Arrow Rush policy, Turkish
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll
 ```
 
@@ -64,6 +68,7 @@ rather than one file.
 - [ImageToPdf](https://github.com/bumustudios/ImageToPdf) *(private)*
 - [PdfPages](https://github.com/bumustudios/PdfPages) *(private)*
 - [GridSmash](https://github.com/bumustudios/GridSmash) *(private)*
+- [ArrowRush](https://github.com/bumustudios/ArrowRush) *(private)*
 
 ## Licence
 

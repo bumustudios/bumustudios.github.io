@@ -24,6 +24,8 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | Color Pour gizlilik politikası (TR) | <https://bumustudios.github.io/colorpour/privacy/tr/> |
 | Fortify privacy policy (EN) | <https://bumustudios.github.io/fortify/privacy/> |
 | Fortify gizlilik politikası (TR) | <https://bumustudios.github.io/fortify/privacy/tr/> |
+| Hill Rush privacy policy (EN) | <https://bumustudios.github.io/hillrush/privacy/> |
+| Hill Rush gizlilik politikası (TR) | <https://bumustudios.github.io/hillrush/privacy/tr/> |
 
 ## Read this before editing a policy page
 
@@ -64,6 +66,8 @@ colorpour/privacy/      Color Pour policy, English
 colorpour/privacy/tr/   Color Pour policy, Turkish
 fortify/privacy/        Fortify policy, English
 fortify/privacy/tr/     Fortify policy, Turkish
+hillrush/privacy/       Hill Rush policy, English
+hillrush/privacy/tr/    Hill Rush policy, Turkish
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll
 ```
 
@@ -79,6 +83,7 @@ rather than one file.
 - [ArrowRush](https://github.com/bumustudios/ArrowRush) *(private)*
 - [ColorPour](https://github.com/bumustudios/ColorPour) *(private)*
 - [Fortify](https://github.com/bumustudios/Fortify) *(private)*
+- [HillRush](https://github.com/bumustudios/HillRush) *(private)*
 
 ## Licence
 

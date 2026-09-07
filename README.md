@@ -90,3 +90,18 @@ rather than one file.
 The site content is proprietary; see [LICENSE](LICENSE). The policy text is
 published so that users and Google Play can read it, not so that it can be
 reused.
+
+## app-ads.txt
+
+ sitenin **kökünde** durur: https://bumustudios.github.io/app-ads.txt
+
+AdMob, bir uygulamanın mağaza kaydındaki **geliştirici web sitesi** alanından alan adını
+alır ve dosyayı orada arar. Dosya alan adı başına birdir, uygulama başına değil — tek satır
+bütün uygulamalarımızı kapsar. Bu yüzden iki koşul birlikte sağlanmalı:
+
+1. Dosya kökte yayında kalmalı (alt klasöre taşınmamalı, silinmemeli).
+2. Her uygulamanın Play Console mağaza kaydında **Web sitesi** alanı
+    olmalı.
+
+Yeni bir reklam ağı eklenirse satırı buraya eklemek gerekir; AdMob tarafında
+**Uygulamalar → app-ads.txt → Güncellemeleri kontrol et** ile tarama tetiklenir.

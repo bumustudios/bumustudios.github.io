@@ -93,15 +93,15 @@ reused.
 
 ## app-ads.txt
 
- sitenin **kökünde** durur: https://bumustudios.github.io/app-ads.txt
+`app-ads.txt` sitenin **kökünde** durur: https://bumustudios.github.io/app-ads.txt
 
 AdMob, bir uygulamanın mağaza kaydındaki **geliştirici web sitesi** alanından alan adını
-alır ve dosyayı orada arar. Dosya alan adı başına birdir, uygulama başına değil — tek satır
-bütün uygulamalarımızı kapsar. Bu yüzden iki koşul birlikte sağlanmalı:
+alır ve dosyayı orada arar. Dosya alan adı başına birdir, uygulama başına değil — tek
+satır bütün uygulamalarımızı kapsar. Bu yüzden iki koşul birlikte sağlanmalı:
 
 1. Dosya kökte yayında kalmalı (alt klasöre taşınmamalı, silinmemeli).
 2. Her uygulamanın Play Console mağaza kaydında **Web sitesi** alanı
-    olmalı.
+   `https://bumustudios.github.io` olmalı.
 
 Yeni bir reklam ağı eklenirse satırı buraya eklemek gerekir; AdMob tarafında
 **Uygulamalar → app-ads.txt → Güncellemeleri kontrol et** ile tarama tetiklenir.

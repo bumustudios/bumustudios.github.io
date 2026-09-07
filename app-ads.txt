@@ -1,0 +1,6 @@
+# BumuStudios — authorized digital sellers for our mobile apps.
+# https://iabtechlab.com/ads-txt/
+# This file must stay at the root of the domain listed as the developer
+# website on every store listing, or AdMob cannot find it.
+
+google.com, pub-6707898486985587, DIRECT, f08c47fec0942fa0

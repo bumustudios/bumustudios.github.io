@@ -145,8 +145,10 @@ kısa stage'lerden oluşan Macera. Hesap yok, abonelik yok, enerji sistemi yok.<
   <li><strong>Oyun hiçbir dosya okumaz.</strong> Hiçbir Android sürümünde depolama, kamera,
   mikrofon, kişiler veya konum izni istemez.</li>
   <li><strong>Parça üreteci sizi izleyemez.</strong> Rastgele parçalar, oyun başlamadan önce
-  sabitlenmiş tohumlu bir diziden çekilir ve tahtanız onları şekillendirmez. Tek istisna yalnızca
-  bir tehlikeyi ortadan kaldırır: tahtada iki zehirli blok varken üçüncüsü gelmez. Bu bir
+  sabitlenmiş tohumlu bir diziden çekilir; tahtanıza ve skorunuza yalnızca şu üç kuralı
+  uygulamak için bakılır: tahtada iki zehirli ya da iki sert blok varken üçüncüsü gelmez, sert
+  bloklar Klasik'te ancak 15.000 puandan itibaren gelir ve bir sert bloğun kaç vuruşta kırılacağını
+  skorunuz belirler (20.000 puandan itibaren daha çok). Bu bir
   gizlilikten çok adillik özelliğidir ama aynı sözün parçasıdır: hamlelerinizi ne oyun analiz eder
   ne de aşağıda anlatılan kullanım istatistikleri — onlar hamlelerinizi hiç görmez.</li>
 </ul>
@@ -205,9 +207,11 @@ AdMob'a göndermez. Geliştirici AdMob'dan hiçbir kişisel veri almaz — yaln�
 toplamları gibi toplulaştırılmış, anonim raporlar.</p>
 <p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden oyun
 <code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Kullanılan reklam biçimleri:
-menü ve sonuç ekranlarında bir banner, oyunlar arasında ara sıra bir geçiş reklamı, kaybedilen bir oyuna
-devam etmek için izlemeyi kendinizin seçebileceği isteğe bağlı bir ödüllü reklam ve bir uygulama
-açılış reklamı. Siz oynarken tahtada asla reklam gösterilmez.</p>
+menü ve sonuç ekranlarında bir banner, oyunlar arasında ara sıra bir geçiş reklamı ve Klasik'te her
+2.000 puandan sonra en fazla bir geçiş reklamı (o hamle bittiğinde bir kartla duyurulur ve
+yalnızca kartın Devam düğmesine dokununca gösterilir), kaybedilen bir oyuna devam etmek
+için izlemeyi kendinizin seçebileceği isteğe bağlı bir ödüllü reklam ve bir uygulama açılış reklamı.
+Siz bir parçayı sürüklerken ya da bir pencere açıkken asla reklam çıkmaz.</p>
 <p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>

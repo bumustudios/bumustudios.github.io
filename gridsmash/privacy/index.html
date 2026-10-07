@@ -145,9 +145,10 @@ ten themed chapters. No account, no subscription, no energy system.</p>
   <li><strong>The game reads no files.</strong> It requests no storage, camera, microphone,
   contacts or location permission — not on any Android version.</li>
   <li><strong>The piece generator cannot watch you.</strong> The random pieces are drawn from a
-  seeded sequence fixed before the game starts, and your board does not shape them — with one
-  exception that only ever takes a hazard away: no third poison block is dealt while two are on
-  the board. This is a fairness property rather than a privacy one, but it is part of the same
+  seeded sequence fixed before the game starts, and your board and score are looked at only to
+  apply three rules: no third poison or hard block is dealt while two are on the board, hard blocks
+  are dealt only from 15,000 points in Classic, and your score sets how many hits one takes (more
+  from 20,000). This is a fairness property rather than a privacy one, but it is part of the same
   promise: your moves are not analysed — not by the game, and not by the usage statistics
   described below, which never see them.</li>
 </ul>
@@ -206,9 +207,11 @@ send your scores or your play history to AdMob. The developer receives no person
 AdMob — only aggregated, anonymous reporting such as impression and revenue totals.</p>
 <p>Because ads require an advertising identifier, the game declares the
 <code>com.google.android.gms.permission.AD_ID</code> permission. Ad formats used are a banner on
-the menu and result screens, an occasional interstitial between games, an optional rewarded ad you can choose
-to watch to continue a lost game, and an app-open ad. No ad is ever shown on the board while you
-are playing.</p>
+the menu and result screens, an occasional interstitial between games and, in Classic, at most one
+after every 2,000 points, announced by a card once that move is over and shown only when you
+tap its Continue button, an optional rewarded ad you can choose to watch to
+continue a lost game, and an app-open ad. No ad ever appears while you are dragging a piece or over
+a dialog.</p>
 <p>How Google handles this data is governed by Google's own policies, not by this one:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>

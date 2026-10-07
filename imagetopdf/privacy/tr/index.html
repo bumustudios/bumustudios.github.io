@@ -106,16 +106,18 @@
 <header>
   <h1>Gizlilik Politikası — ImageToPdf</h1>
   <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.imgtopdf</code></p>
-  <p class="dates"><span>Yürürlük tarihi: 16 Ağustos 2026.</span> <span>Son güncelleme: 16 Ağustos 2026.</span></p>
+  <p class="dates"><span>Yürürlük tarihi: 16 Ağustos 2026.</span> <span>Son güncelleme: 7 Ekim 2026.</span></p>
 </header>
 
 <div class="callout">
-  <p><strong>Bu uygulamanın geliştiricisi hiçbir veri toplamaz.</strong> Fotoğraflarınız ve
-  oluşturduğunuz PDF'ler cihazınızdan hiç çıkmaz. Hesap açmanız gerekmez, giriş yapmanız gerekmez,
-  uygulamaya ait hiçbir sunucu yoktur ve geliştiricinin yazdığı hiçbir analiz veya takip kodu
-  bulunmaz. Dönüştürme işlemlerinin tamamı çevrimdışı olarak, telefonunuzda yapılır.</p>
-  <p>Tek istisna, Google'ın sağladığı reklam ve ödeme hizmetleridir; bunlar aşağıda ayrıntılı
-  olarak anlatılmıştır. Tek seferlik reklam kaldırma satın alırsanız bunlar da devre dışı kalır.</p>
+  <p><strong>Fotoğraflarınız ve oluşturduğunuz PDF'ler cihazınızdan hiç çıkmaz.</strong> Hesap
+  açmanız gerekmez, giriş yapmanız gerekmez ve uygulamaya ait hiçbir sunucu yoktur. Dönüştürme
+  işlemlerinin tamamı çevrimdışı olarak, telefonunuzda yapılır.</p>
+  <p>Cihazınızdan çıkan her şey aşağıda ayrıntılı olarak anlatılmıştır: Google'ın sağladığı reklam
+  ve ödeme hizmetleri ile geliştiricinin Google Firebase aracılığıyla topladığı kullanım
+  istatistikleri ve çökme raporları. Dosyalarınız, adları ve içerikleri bunların hiçbirine girmez.
+  Tek seferlik reklam kaldırma satın alırsanız reklamlar tamamen durur; kullanım istatistikleri ve
+  çökme raporları buna bağlı değildir.</p>
 </div>
 
 <h2>Bu politika kime ait</h2>
@@ -135,31 +137,36 @@ belirlersiniz. Filigran yoktur, abonelik yoktur, kalite sınırı yoktur.</p>
 <ul>
   <li><strong>Görseller hiçbir zaman yüklenmez.</strong> Uygulamanın kendine ait bir sunucusu
   yoktur. Fotoğraflarınızı, PDF'lerinizi, bunların içeriğini, dosya adlarını veya meta verilerini
-  hiçbir yere göndermez.</li>
+  hiçbir yere göndermez; aşağıda anlatılan kullanım istatistikleri ve çökme raporları da bunları asla
+  içermez: bir çökme raporu, dosyalarınızı değil, çökmenin kodun neresinde olduğunu gösterir.</li>
   <li><strong>Görseller Android Fotoğraf Seçici üzerinden okunur.</strong> İstediğiniz fotoğrafları
   siz seçersiniz. Uygulamaya yalnızca seçtiğiniz öğelere erişim verilir; galeriniz taranmaz.</li>
-  <li><strong>Çıktılar MediaStore üzerinden yazılır:</strong> PDF'ler
+  <li><strong>Çıktılar normalde MediaStore üzerinden yazılır:</strong> PDF'ler
   <code>Documents/Image to PDF</code>, PDF'ten dışa aktarılan sayfalar <code>Pictures/Image to PDF</code>
   klasörüne, yani cihazınızın kendi depolama alanına kaydedilir. Sistemin Paylaş penceresi ve
   önizlemeler için uygulamanın özel önbelleğine geçici kopyalar konabilir; bunlar uygulamanın
   korumalı alanına aittir ve önbellek temizlendiğinde veya uygulama kaldırıldığında silinir.</li>
-  <li><strong>Android 10 ve sonrasında depolama izni istenmez.</strong> Fotoğraf Seçici ve
-  MediaStore bunu gereksiz kılar. Android 9 ve öncesinde ise eski
-  <code>WRITE_EXTERNAL_STORAGE</code> izni yalnızca dosyaları kaydedebilmek için tanımlanmıştır.</li>
+  <li><strong>Hiçbir Android sürümünde depolama izni istenmez.</strong> Fotoğraf Seçici ve
+  MediaStore bunu gereksiz kılar. Android 9 ve öncesinde, ayrıca ortak klasör bir dosyayı kabul
+  etmediğinde, uygulama dosyayı izin gerektirmeyen kendi klasörüne, yine cihazınıza kaydeder;
+  oradaki dosyalar uygulama kaldırılırsa silinir.</li>
 </ul>
 
 <h3>Uygulamanın cihazda sakladıkları</h3>
 <p>Uygulama, cihazdaki kendi özel alanında az miktarda durum bilgisi tutar. Bunların hiçbiri kişisel
 veri değildir ve hiçbiri hiçbir yere gönderilmez:</p>
 <ul>
+  <li>tema, yazı boyutu ve dil tercihleriniz;</li>
   <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı;</li>
-  <li>ödüllü reklam izleyerek kazanılan geçici reklamsız sürenin bitiş zamanı;</li>
   <li>reklam sıklığını düşük tutmak için kullanılan, gösterilen geçiş reklamı sayacı.</li>
 </ul>
 <p>Bu yerel veriler, Android bulut yedeklemesinin ve cihazdan cihaza aktarımın dışında bırakılmıştır;
 yani Google Drive hesabınıza kopyalanmaz. Google'ın reklam ve rıza bileşenleri de kendi ayarlarını
-cihazda, Google'ın denetiminde tutar. Uygulamayı kaldırmak veya verilerini temizlemek, uygulamanın
-sakladığı her şeyi siler.</p>
+cihazda, Google'ın denetiminde tutar; aşağıda anlatılan Google Firebase bileşenleri ise
+uygulamanın özel alanında üç rastgele tanımlayıcı saklar: bir Firebase kurulum kimliği, Analytics
+uygulama örneği kimliği ve bir Crashlytics kurulum kimliği. Yukarıdaki listenin aksine bu
+tanımlayıcılar kullanım istatistikleri ve çökme raporlarıyla birlikte gönderilir. Uygulamayı
+kaldırmak veya verilerini temizlemek, bu tanımlayıcılar dahil uygulamanın sakladığı her şeyi siler.</p>
 
 <h2>Reklamlar — Google AdMob</h2>
 <p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
@@ -199,8 +206,7 @@ veya belge içeriğinizi AdMob'a göndermez. Geliştirici, AdMob'dan hiçbir ki�
 yalnızca gösterim ve gelir toplamları gibi toplulaştırılmış, anonim raporlar görür.</p>
 <p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden uygulama
 <code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Kullanılan reklam biçimleri:
-banner, ara sıra gösterilen geçiş reklamı, izlemeyi kendiniz seçtiğiniz ödüllü reklam ve uygulama
-açılış reklamı.</p>
+banner, ara sıra gösterilen geçiş reklamı ve uygulama açılış reklamı.</p>
 <p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
@@ -209,12 +215,96 @@ açılış reklamı.</p>
   <li><a href="https://support.google.com/admob/answer/6128543">AdMob ve üçüncü taraf reklamcılık</a></li>
 </ul>
 
+<h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
+<p>Uygulamanın nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici uygulamaya
+iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
+Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca uygulamanın
+Google Play üzerinden dağıtılan sürümünde çalışır. Uygulama, bu hizmetlerin topladıklarına
+kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
+log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Uygulama örneği kimliği — Analytics'in bu kurulum için oluşturduğu rastgele bir
+      tanımlayıcı</td>
+      <td>Kim olduğunuzu bilmeden kurulumları ve oturumları saymak</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği — yukarıda anlatılan sıfırlanabilir tanımlayıcı; uygulama AdMob için
+      <code>AD_ID</code> iznini tanımladığından Analytics de ona erişebilir</td>
+      <td>Kullanım istatistikleri; reklam amaçlı kullanım yalnızca rıza seçimlerinizin izin
+      verdiği ölçüde (aşağıda)</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, maskelenmiş IP adresinizden türetilen ülke veya bölge</td>
+      <td>Ülkeye ve bölgeye göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Cihaz ve uygulama bilgileri — cihaz modeli, işletim sistemi sürümü, dil, uygulama
+      sürümü</td>
+      <td>Cihaza, Android sürümüne, dile ve uygulama sürümüne göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Kullanım olayları — ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi,
+      uygulamanın güncellenmesi ve kaldırılması</td>
+      <td>Uygulamayı kaç kişinin, ne sıklıkla ve ne kadar süre kullandığı, hangi ekranları
+      açtığı</td>
+    </tr>
+    <tr>
+      <td>Uygulamanın nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
+      sayfası ya da bir kampanya bağlantısı)</td>
+      <td>Kurulumların nereden geldiğini saymak</td>
+    </tr>
+    <tr>
+      <td>Google Play'in bildirdiği satın alma olayları — tek seferlik "reklamları kaldır" satın
+      almasının ürünü, adı ve fiyatı</td>
+      <td>Satın almaları saymak; kart veya ödeme bilgisi içermez</td>
+    </tr>
+    <tr>
+      <td>Çökme raporları; yalnızca uygulama çöktüğünde ya da ölümcül bir hatayla
+      karşılaştığında gönderilir — yığın izi (stack trace), uygulamanın o andaki durumu, cihaz
+      bilgileri (model, işletim sistemi sürümü, ekran yönü, boş bellek ve disk alanı) ve rastgele
+      bir Crashlytics kurulum kimliği</td>
+      <td>Çökmeleri bulup düzeltmek ve bir çökmenin kaç kurulumu etkilediğini saymak</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını kaydeder, o ekranda ne
+yaptığınızı değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, içeriğinizi
+değil. İki hizmet de adınızı, e-posta adresinizi veya herhangi bir hesap bilginizi almaz.</p>
+<p>AEA'da, Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan
+rıza formu Analytics'i de kapsar: oradaki seçimleriniz, Analytics'in tanımlayıcılarını cihazınızda
+saklayıp saklayamayacağını ve verilerin reklam amacıyla kullanılıp kullanılamayacağını belirler.
+Verilerin reklam için kullanılması ("ad user data") ve reklam kişiselleştirmesi bu bölgelerde siz
+rıza verene kadar kapalı kalır. Seçiminizi dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan değiştirebilirsiniz; bu giriş gerekli olduğu yerlerde görünür.
+Uygulamada kullanım istatistikleri veya çökme raporları için ayrı bir anahtar yoktur; uygulamayı
+kaldırmak ikisini de durdurur.</p>
+<p>Analytics, bir kurulumun tanımlayıcılarına bağlı verileri en fazla 14 ay saklar; tanımlayıcı
+içermeyen toplu raporlar daha uzun tutulabilir. Crashlytics çökme raporlarını 90 gün saklar.</p>
+<p>Google bu verileri geliştirici adına, veri işleyen sıfatıyla, Firebase ve Google Analytics veri
+işleme koşulları kapsamında işler. Veriler, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz
+dışındaki Google sunucularında işlenebilir ve aktarım sırasında şifrelenir (TLS).</p>
+<p>Google bu hizmetleri şu sayfalarda anlatır:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+</ul>
+
 <h2>Satın alma — Google Play Faturalandırma</h2>
 <p>Uygulamada, reklamları kalıcı olarak kaldıran tek seferlik ve isteğe bağlı tek bir satın alma
 vardır. Abonelik veya yinelenen hiçbir ödeme yoktur.</p>
 <p>İşlemin tamamı Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
 numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı asla görmez ve almaz.</strong>
-Google yalnızca toplulaştırılmış satış rakamlarını bildirir. Uygulama içinde satın alma, cihazınızda
+Google Play
+yalnızca toplulaştırılmış satış rakamlarını bildirir; Google Analytics for Firebase de satın
+almanın yapıldığını — ürünü, adını ve fiyatını, hiçbir ödeme bilgisi olmadan — kaydeder
+(yukarıya bakın). Uygulama içinde satın alma, cihazınızda
 tek bir doğru/yanlış işareti olarak tutulur; uygulamayı yeniden kurduğunuzda veya yeni bir cihaza
 geçtiğinizde Google Play hesabınızdan geri yüklenir. Ödeme verilerinizin Google tarafından işlenmesi
 <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
@@ -229,8 +319,9 @@ bileşeni tarafından cihazınızda saklanır ve sonraki açılışlarda dikkate
 <p><strong>Kararınızı istediğiniz zaman değiştirebilirsiniz:</strong> uygulamayı açın,
 <em>Ayarlar → Gizlilik seçenekleri</em> bölümüne gidin; aynı form yeniden görünür. Rızanızı buradan
 geri çekebilirsiniz. Rızayı geri çekmek uygulamayı devre dışı bırakmaz; dönüştürme işlemlerini
-yapmaya devam edebilirsiniz ve reklamlar kişiselleştirilmemiş biçimde gösterilmeye devam
-edebilir.</p>
+yapmaya devam edebilirsiniz ve reklamlar
+kişiselleştirilmemiş biçimde gösterilmeye devam edebilir. Aynı seçimler, yukarıda anlatıldığı gibi
+Google Analytics for Firebase için de geçerlidir.</p>
 
 <h3>Diğer ülkelerde</h3>
 <p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak zorunlu olduğu yerlerde göründüğü
@@ -245,28 +336,34 @@ uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
 <h2>Uygulamanın istediği izinler</h2>
 <div class="card">
 <ul>
-  <li><code>INTERNET</code> — reklamların alınması ve Google Play Faturalandırma ile iletişim için
-  gereklidir. Ağ üzerinden başka hiçbir şey gönderilmez.</li>
+  <li><code>INTERNET</code> — reklamların alınması, Google Play Faturalandırma ile iletişim ve yukarıda
+  anlatılan kullanım istatistikleriyle çökme raporlarının gönderilmesi için gereklidir. Ağ
+  üzerinden başka hiçbir şey gönderilmez.</li>
   <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yükleme denemesinden önce bağlantı
   olup olmadığını kontrol etmesini sağlar.</li>
-  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un
-  kullandığı reklam tanımlayıcısına erişim.</li>
-  <li><code>WRITE_EXTERNAL_STORAGE</code>, yalnızca Android 9 ve öncesinde — çıktı dosyalarınızı
-  kaydedebilmek için gereklidir. Android 10 ve sonrasında istenmez.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un ve
+  Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına erişim.</li>
 </ul>
 </div>
-<p>Uygulama kamera, kişiler, mikrofon, hassas konum veya hesap izni istemez.</p>
+<p>Uygulamanın kendisinin tanımladığı izinler bunlardır. İçindeki Google bileşenleri, Android'in
+kurulum sırasında size sormadan verdiği birkaç izin daha ekler (örneğin Google Play'in
+faturalandırma izni ve Android'in reklam hizmetleri izinleri); ama uygulama hiçbir Android
+sürümünde depolama, kamera, kişiler, mikrofon, hassas konum veya hesap izni istemez.</p>
 
 <h2>Çocuklar</h2>
 <p>Bu uygulama genel amaçlı bir araçtır. <strong>13 yaşın altındaki çocuklara yönelik değildir</strong>
 (veya ülkenizdeki eşdeğer asgari yaş), çocuklara yönelik bir kategoride listelenmemiştir ve çocuklar
 için tasarlanmamış, çocuklara pazarlanmamıştır. Geliştirici, çocuklardan bilerek hiçbir kişisel veri
-toplamaz. Bir çocuğun bu uygulamadaki reklam hizmetleri aracılığıyla kişisel veri verdiğini
+toplamaz. Bir çocuğun bu uygulamadaki reklam, analiz veya çökme
+raporlama hizmetleri aracılığıyla kişisel veri verdiğini
 düşünüyorsanız aşağıdaki adrese ve verinin bulunduğu taraf olan Google'a başvurun.</p>
 
 <h2>Verilerin saklanması</h2>
-<p>Geliştirici hiçbir kullanıcı verisi saklamadığı için geliştirici tarafında saklanacak veya
-silinecek bir şey yoktur. Cihazınızdaki veriler, uygulamanın verilerini temizleyene veya uygulamayı
+<p>Geliştiricinin bir sunucusu yoktur ve kendi elinde hiçbir kullanıcı verisi saklamaz. Kullanım
+istatistikleri ve çökme raporları geliştirici adına Google'da tutulur: bir kurulumun
+tanımlayıcılarına bağlı Analytics verileri en fazla 14 ay (tanımlayıcı içermeyen toplu raporlar
+daha uzun tutulabilir), çökme raporları ise 90 gün.
+Cihazınızdaki veriler, uygulamanın verilerini temizleyene veya uygulamayı
 kaldırana kadar orada kalır. AdMob ve Google Play aracılığıyla Google'ın topladığı veriler,
 <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'nda açıklanan
 kendi saklama sürelerine tabidir.</p>
@@ -276,14 +373,23 @@ kendi saklama sürelerine tabidir.</p>
 anlatılan formla alınan ve istediğiniz zaman geri çekebileceğiniz açık rızanızdır.
 Kişiselleştirilmemiş reklam, dolandırıcılık önleme ve reklam hizmetlerinin güvenliği meşru menfaate
 dayanır. Satın alma işleminizin yürütülmesi, reklam kaldırmayı satın aldığınızda kurulan sözleşmenin
-ifası için gereklidir.</p>
+ifası için gereklidir. Kullanım istatistikleri ve çökme raporları, geliştiricinin uygulamayı
+çalışır durumda tutma ve nasıl kullanıldığını toplu olarak anlama yönündeki meşru menfaatine
+dayanır; Analytics tanımlayıcılarının cihazınızda saklanması ve verilerin reklam amacıyla
+kullanılması ise rıza formundaki seçimlerinize bağlıdır.</p>
 <p>GDPR kapsamında ve Türkiye'de 6698 sayılı KVKK kapsamında eşdeğer biçimde; kişisel verilerinizin
 işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini isteme, işlenmesini
 kısıtlama veya işlenmesine itiraz etme, veri taşınabilirliği ve rızanızı geri çekme haklarına
 sahipsiniz. Ayrıca ulusal veri koruma otoritesine şikâyette bulunabilirsiniz; Türkiye'de bu kurum
 Kişisel Verileri Koruma Kurumu'dur (KVKK).</p>
-<p>Geliştirici hakkınızda hiçbir kişisel veri tutmadığı için geliştiricinin getirebileceği veya
-silebileceği bir kayıt yoktur. Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran
+<p>Kullanım istatistikleri ve çökme raporları takma adlıdır: adınızı ya da e-posta adresinizi değil,
+rastgele tanımlayıcılar taşır; bu yüzden geliştirici hangi kayıtların size ait olduğunu bilemez.
+Rıza formunun gösterildiği yerlerde rızanızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz etmek ya da bu konuda
+soru sormak için aşağıdaki adrese yazabilirsiniz. Uygulamayı kaldırmak ya da verilerini temizlemek
+eski tanımlayıcılarla bağı koparır; daha önce gönderilmiş veriler de yukarıdaki sürelerin sonunda
+silinir.
+Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran
 taraf olan Google'a,
 <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'ndaki araçlar
 kullanılarak iletilmelidir. Diğer tüm konular için veya doğru yolu bulmak üzere yardım almak için
@@ -294,6 +400,9 @@ aşağıdaki adrese yazabilirsiniz.</p>
 sayfa güncellenir ve en üstteki "son güncelleme" tarihi değişir. Önemli değişiklikler ayrıca
 uygulamanın Google Play sayfasına da yansıtılır. Güncellemeden sonra uygulamayı kullanmaya devam
 etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+<p>7 Ekim 2026 tarihli güncellemeyle Google Firebase aracılığıyla toplanan kullanım istatistikleri
+ve çökme raporları eklendi (yukarıdaki Google Firebase bölümüne bakın) ve sayfanın geri kalanı
+uygulamanın güncel sürümüne uyarlandı.</p>
 
 <h2 id="contact">İletişim</h2>
 <p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>
@@ -304,8 +413,8 @@ etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
 </div>
 
 <footer>
-  <p>ImageToPdf — filigran yok, abonelik yok, bulut yok. Bu politika, uygulamanın 1.0.0
-  sürümündeki halini açıklar.</p>
+  <p>ImageToPdf — filigran yok, abonelik yok, dosyalarınız cihazınızda kalır. Bu politika,
+  uygulamanın Google Firebase'in eklendiği güncellemeden itibaren yayımlanan sürümlerini açıklar.</p>
 </footer>
 
 </main>

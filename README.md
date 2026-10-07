@@ -77,13 +77,13 @@ rather than one file.
 
 ## Related repositories
 
-- [ImageToPdf](https://github.com/bumustudios/ImageToPdf) *(private)*
-- [PdfPages](https://github.com/bumustudios/PdfPages) *(private)*
-- [GridSmash](https://github.com/bumustudios/GridSmash) *(private)*
-- [ArrowRush](https://github.com/bumustudios/ArrowRush) *(private)*
-- [ColorPour](https://github.com/bumustudios/ColorPour) *(private)*
-- [Fortify](https://github.com/bumustudios/Fortify) *(private)*
-- [HillRush](https://github.com/bumustudios/HillRush) *(private)*
+- [ImageToPdf](https://github.com/bumustudios-dev/ImageToPdf) *(private)*
+- [PdfPages](https://github.com/bumustudios-dev/PdfPages) *(private)*
+- [GridSmash](https://github.com/bumustudios-dev/GridSmash) *(private)*
+- [ArrowRush](https://github.com/bumustudios-dev/ArrowRush) *(private)*
+- [ColorPour](https://github.com/bumustudios-dev/ColorPour) *(private)*
+- [Fortify](https://github.com/bumustudios-dev/Fortify) *(private)*
+- [HillRush](https://github.com/bumustudios-dev/HillRush) *(private)*
 
 ## Licence
 

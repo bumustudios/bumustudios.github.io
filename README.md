@@ -26,6 +26,8 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | Fortify gizlilik politikası (TR) | <https://bumustudios.github.io/fortify/privacy/tr/> |
 | Hill Rush privacy policy (EN) | <https://bumustudios.github.io/hillrush/privacy/> |
 | Hill Rush gizlilik politikası (TR) | <https://bumustudios.github.io/hillrush/privacy/tr/> |
+| Pulse Runner privacy policy (EN) | <https://bumustudios.github.io/pulserunner/privacy/> |
+| Pulse Runner gizlilik politikası (TR) | <https://bumustudios.github.io/pulserunner/privacy/tr/> |
 
 ## Read this before editing a policy page
 
@@ -68,6 +70,8 @@ fortify/privacy/        Fortify policy, English
 fortify/privacy/tr/     Fortify policy, Turkish
 hillrush/privacy/       Hill Rush policy, English
 hillrush/privacy/tr/    Hill Rush policy, Turkish
+pulserunner/privacy/    Pulse Runner policy, English
+pulserunner/privacy/tr/ Pulse Runner policy, Turkish
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll
 ```
 
@@ -84,6 +88,7 @@ rather than one file.
 - [ColorPour](https://github.com/bumustudios-dev/ColorPour) *(private)*
 - [Fortify](https://github.com/bumustudios-dev/Fortify) *(private)*
 - [HillRush](https://github.com/bumustudios-dev/HillRush) *(private)*
+- [PulseRunner](https://github.com/bumustudios-dev/PulseRunner) *(private)*
 
 ## Licence
 

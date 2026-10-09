@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — PaperLite</title>
+<meta name="description" content="PaperLite belge tarayıcı Android uygulamasının gizlilik politikası. Taramalarınız cihazınızdan hiç çıkmaz.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/imagetopdf/privacy/tr/">ImageToPdf politikası</a><span class="sep">·</span><a href="/pdfpages/privacy/tr/">PdfPages politikası</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — PaperLite</h1>
+  <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.paperlite</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 9 Ekim 2026.</span> <span>Son güncelleme: 9 Ekim 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Taramalarınız ve onlardan okunan metin, siz kendiniz kaydetmedikçe veya
+  paylaşmadıkça cihazınızdan hiç çıkmaz.</strong> Hesap açmanız gerekmez, giriş yapmanız gerekmez ve
+  uygulamaya ait hiçbir sunucu yoktur. Tarama, metin tanıma ve PDF oluşturma işlemlerinin tamamı
+  telefonunuzda yapılır.</p>
+  <p>Cihazınızdan çıkan her şey aşağıda ayrıntılı olarak anlatılmıştır: Google'ın reklam hizmeti ve
+  onun birlikte çalıştığı reklam ağları, Google'ın ödeme hizmeti, geliştiricinin Google Firebase
+  aracılığıyla topladığı kullanım istatistikleri ve çökme raporları ile Google'ın ML Kit
+  bileşenlerinin Google'a gönderdiği sınırlı kullanım ölçümleri. Taramalarınız, tanınan metin,
+  belge adları ve dosya içerikleri bunların hiçbirine girmez. Tek seferlik reklam kaldırma satın
+  alırsanız reklamlar tamamen durur; kullanım istatistikleri, çökme raporları ve ML Kit ölçümleri
+  buna bağlı değildir.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play üzerinden <code>com.bumustudios.paperlite</code> paket adıyla dağıtılan
+<em>PaperLite: PDF Scanner &amp; OCR</em> Android uygulamasını (ana ekranınızda <em>PaperLite</em>
+adıyla görünür) kapsar. Uygulamanın bağımsız geliştiricisi BumuStudios tarafından yazılmıştır.
+Sorularınızı <a href="#contact">İletişim</a> bölümündeki adrese iletebilirsiniz.</p>
+
+<h2>Uygulama ne yapar</h2>
+<p>PaperLite bir belge tarayıcıdır. Kâğıt belgeleri Google'ın belge tarayıcısıyla (kenar algılama,
+kırpma, perspektif düzeltme, filtreler, çok sayfa) yakalar ya da galerinizden seçtiğiniz veya başka
+bir uygulamadan ona paylaştığınız fotoğrafları alır. Bunları klasörlü bir kitaplıkta tutar, her
+sayfadaki metni cihazınızda okuyarak aramanızı, görüntülemenizi ve kopyalamanızı sağlar; belgeleri
+aranabilir PDF (isteğe bağlı olarak parolayla korunan) veya JPEG görsel olarak dışa aktarır.
+Filigran yoktur, sayfa sınırı yoktur, abonelik yoktur.</p>
+
+<h2>Taramalarınız ve dosyalarınız cihazınızda kalır</h2>
+<p>En önemli bölüm bu olduğu için açıkça yazıyoruz:</p>
+<ul>
+  <li><strong>Taramalar hiçbir zaman yüklenmez.</strong> Uygulamanın kendine ait bir sunucusu yoktur.
+  Sayfa görsellerinizi, bunlarda tanınan metni, belge veya klasör adlarınızı ya da dışa aktardığınız
+  dosyaları hiçbir yere göndermez; aşağıda anlatılan kullanım istatistikleri ve çökme raporları da
+  bunları asla içermez: bir çökme raporu, belgelerinizi değil, çökmenin kodun neresinde olduğunu
+  gösterir.</li>
+  <li><strong>Çekim uygulamada değil, Google'ın belge tarayıcısında yapılır.</strong> Tara'ya
+  dokunduğunuzda uygulama, Google Play hizmetlerinin sağladığı bir ekran olan Google ML Kit belge
+  tarayıcısını açar. Kamera, Google Play hizmetlerinin kendi işleminde ve Play hizmetlerinin kendi
+  kamera erişimiyle çalıştırılır. <strong>PaperLite'ın kendisi hiçbir kamera iznine sahip
+  değildir</strong> ve kamera görüntüsünü hiç görmez; yalnızca tarayıcıda onayladığınız bitmiş sayfa
+  görsellerini alır ve bunları hemen kendi özel depolama alanına kopyalar. Tarayıcı, kendi ekranından
+  galerinizdeki fotoğrafları eklemenize de olanak tanır.</li>
+  <li><strong>Fotoğraflar Android Fotoğraf Seçici üzerinden okunur.</strong> Tarayıcının
+  çalışamadığı durumlarda (örneğin Google Play hizmetleri olmayan bir cihazda) ve Fotoğraf içe aktar'ı her
+  seçtiğinizde, istediğiniz fotoğrafları Fotoğraf Seçici'de siz seçersiniz. Uygulamaya yalnızca
+  seçtiğiniz öğelere erişim verilir; galeriniz taranmaz. Tarayıcı kullanılamıyorsa her fotoğrafı
+  uygulamanın kendi kırpma ekranında, cihaz üzerinde siz düzeltirsiniz.</li>
+  <li><strong>Uygulamaya paylaşılan görseller.</strong> Başka bir uygulamadan PaperLite'a bir veya
+  daha fazla görsel paylaştığınızda, uygulama yalnızca paylaştığınız görselleri okur ve bunlardan
+  yeni bir belge oluşturur.</li>
+  <li><strong>İçe aktarılan görseller temiz kopyalar olarak saklanır.</strong> Her sayfa çözülür,
+  dik konuma getirilir, uzun kenarı en fazla 3.508 piksel olacak şekilde küçültülür ve uygulamanın
+  özel depolama alanına yeniden JPEG olarak kaydedilir. Yalnızca resmin kendisi tutulur: özgün
+  fotoğrafın çekildiği konum veya kamera modeli gibi meta verileri kopyalanmaz.</li>
+  <li><strong>Hiçbir Android sürümünde depolama izni istenmez.</strong> Tarayıcı, Fotoğraf Seçici,
+  paylaşım amaçları (intent), MediaStore ve sistemin dosya seçicisi bunu gereksiz kılar.</li>
+</ul>
+
+<h3>Kaydetme, paylaşma ve dışa aktarma</h3>
+<p>Bir tarama, uygulamanın özel depolama alanından yalnızca siz onu dışa aktardığınızda ve yalnızca
+gönderdiğiniz yere çıkar:</p>
+<ul>
+  <li><strong>Cihaza kaydet</strong>, dosyayı MediaStore üzerinden cihazınızın kendi depolama
+  alanındaki <code>Documents/PaperLite</code> (PDF'ler) veya <code>Pictures/PaperLite</code> (JPEG
+  sayfalar) klasörüne yazar. Android 7–9'da, ayrıca ortak klasör bir dosyayı kabul etmediğinde,
+  uygulama dosyayı bunun yerine cihazdaki kendi klasörüne kaydeder; sonuç ekranı bunu size söyler,
+  oradaki dosyaların uygulama kaldırılırsa silineceği konusunda uyarır ve "Farklı kaydet…"
+  seçeneğini sunar.</li>
+  <li><strong>Farklı kaydet…</strong>, Android'in sistem dosya seçicisini açar ve dosya yalnızca
+  orada seçtiğiniz konuma yazılır. Bir bulut depolama sağlayıcısı seçerseniz, ona verdiğiniz kopyaya
+  o sağlayıcının kendi koşulları ve gizlilik politikası uygulanır.</li>
+  <li><strong>Paylaş</strong>, Android'in paylaşım penceresini açar. Uygulama bunun için kendi özel
+  önbelleğinde geçici kopyalar hazırlar; bunlar bir sonraki paylaşımdan önce silinir. Paylaştığınız
+  uygulamanın dosyayla ne yaptığı o uygulamaya tabidir.</li>
+  <li>Sayfa görüntüleyicideki <strong>Sayfayı kopyala</strong> ve <strong>Tüm metni
+  kopyala</strong>, tanınan metni başka bir uygulamaya yapıştırabilmeniz için Android panosuna
+  koyar.</li>
+</ul>
+<p>Dışa aktarılan bir PDF, sayfa görsellerinizi ve aranabilir olduğunda tanınan metnin bulunduğu
+görünmez bir katmanı içerir. Belge özelliklerinde belgenin başlığı, oluşturulma tarihi ve
+oluşturan uygulama olarak "PaperLite" yer alır.</p>
+<p><strong>İsteğe bağlı PDF parolası.</strong> Bir PDF'i korursanız, yazdığınız parola yalnızca o
+dosya yazılırken onu şifrelemek için (AES-128, PDF standart güvenlik işleyicisi) kullanılır.
+Parola, yalnızca dışa aktarma ekranı açıkken uygulamanın belleğinde bulunur: cihaza hiçbir zaman
+kaydedilmez, hiçbir yere gönderilmez ve geliştirici tarafından hiç görülmez; bu yüzden unutursanız
+kurtarılamaz.</p>
+
+<h3>Uygulamanın cihazda sakladıkları</h3>
+<p>Aşağıdakilerin tamamı, uygulamanın cihazdaki ve diğer uygulamaların okuyamadığı kendi özel
+depolama alanında tutulur; hiçbiri hiçbir yere gönderilmez:</p>
+<ul>
+  <li>taramalarınız: uygulamanın özel depolama alanındaki <code>docs</code> klasöründe bulunan sayfa
+  görselleri;</li>
+  <li>kitaplık veritabanı: belge ve klasör adları, tarihler, sayfa sırası ve döndürme bilgisi, bir
+  belge için seçilen OCR dili ve her sayfada tanınan metin ile metnin konumu, ayrıca bu metin
+  üzerinde bir arama dizini;</li>
+  <li>bir belgeden sildiğiniz sayfalar; Geri al ile geri getirilebilmeleri için o belgeden çıkana
+  kadar (en geç uygulama bir sonraki açılışına kadar) tutulur;</li>
+  <li>henüz bekleyen arka plan metin tanıma işlerinin kuyruğu;</li>
+  <li>tema, yazı boyutu, dil, OCR dili, varsayılan sayfa boyutu ve kalite, kitaplık sıralama
+  tercihleriniz ve karşılama ekranının tamamlanıp tamamlanmadığı;</li>
+  <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı, ödüllü reklamla kazanılan
+  24 saatlik reklamsız sürenin ne zaman bittiği ve reklam sıklığını düşük tutmak için kullanılan,
+  gösterilen geçiş reklamı sayacı;</li>
+  <li>Google Play üzerinden sunulan bir uygulama güncellemesini ertelerseniz, bunun hangi sürüm
+  olduğu ve ne zaman ertelendiği; böylece teklif birkaç gün tekrarlanmaz.</li>
+</ul>
+<p>Uygulamanın yedekleme kuralları (Android 7–11 için <code>backup_rules.xml</code>, Android 12 ve
+sonrası için <code>data_extraction_rules.xml</code>), taramaları, tanınan metni içeren kitaplık
+veritabanını, ayar dosyalarını ve tüm tercih dosyalarını Android bulut yedeklemesinin ve cihazdan
+cihaza aktarımın dışında bırakır; yani bunlar Google Drive hesabınıza veya yeni bir telefona
+kopyalanmaz. Uygulamanın kendi klasörüne kaydettiği dışa aktarılmış dosyalar (Android 7–9'da ya da
+ortak klasör bir dosyayı kabul etmediğinde) bu kuralların kapsamında değildir ve yedekleme açıksa
+diğer uygulama dosyaları gibi Android yedeğine dahil edilebilir. Google'ın reklam ve rıza
+bileşenleri de kendi ayarlarını cihazda, Google'ın denetiminde tutar; aşağıda anlatılan Google
+Firebase bileşenleri ise uygulamanın özel alanında üç rastgele tanımlayıcı saklar: bir Firebase
+kurulum kimliği, Analytics uygulama örneği kimliği ve bir Crashlytics kurulum kimliği. Yukarıdaki
+listenin aksine bu tanımlayıcılar kullanım istatistikleri ve çökme raporlarıyla birlikte
+gönderilir.</p>
+<p>Uygulamayı kaldırmak veya verilerini temizlemek, bu tanımlayıcılar ve uygulamanın kendi dışa
+aktarma klasörü dahil uygulamanın sakladığı her şeyi siler. <code>Documents/PaperLite</code>,
+<code>Pictures/PaperLite</code> klasörlerine veya "Farklı kaydet…" ile başka bir konuma kaydettiğiniz
+dosyalar size aittir ve koyduğunuz yerde kalır.</p>
+
+<h2>Tarama ve metin tanıma — Google ML Kit</h2>
+<p>Uygulama, ikisi de Google Play hizmetleri üzerinden sağlanan iki Google ML Kit özelliği kullanır:</p>
+<ul>
+  <li><strong>Belge tarayıcı</strong> — yukarıda anlatılan çekim ekranı. Kodu Google Play
+  hizmetleri tarafından indirilir (ilk taramanın bunu beklememesi için uygulama, karşılama ekranı
+  sırasında Play hizmetlerinden indirmeyi başlatmasını ister).</li>
+  <li><strong>Metin tanıma (OCR)</strong> — her içe aktarmadan sonra arka planda, Latin alfabesi,
+  Japonca ve Korece modelleriyle sayfalarınızdaki metni okur. Yazı sistemi uygulama dilini izler;
+  Ayarlar'dan veya belge bazında değiştirilebilir.</li>
+</ul>
+<p>İkisi de <strong>cihazınızda</strong> çalışır. Görselleriniz ve tanınan metin yerel olarak
+işlenir; Google'a veya geliştiriciye gönderilmez. Tanıma modelleri uygulamanın içinde gelmez:
+bunları Google Play hizmetleri indirir (uygulama, Latin, Japonca ve Korece modellerinin kurulum
+sırasında indirilmesini ister) ve cihazda tutar. Google'ın
+<a href="https://developers.google.com/ml-kit/terms">ML Kit koşulları</a> uyarınca bu bileşenler,
+ML Kit özelliklerini sürdürmek ve geliştirmek amacıyla, özelliklerin nasıl kullanıldığı ve nasıl
+performans gösterdiğine ilişkin cihaz ve uygulama bilgileri ile yanıt süreleri gibi sınırlı
+ölçümleri Google'a gönderebilir. Bu ölçümler görsellerinizi veya tanınan metni asla içermez.</p>
+
+<h2>Reklamlar — Google AdMob ve aracılık (mediation) ortakları</h2>
+<p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
+üzerinden sunulan reklamlarla desteklenir. AdMob, uygulamaya bir yazılım geliştirme kiti olarak
+gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>. Reklamlar gösterilirken
+AdMob ve Google'ın reklam iş ortakları şunları toplayıp işleyebilir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Veri</th><th>Kullanım amacı</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reklam kimliği (Android'in atadığı, sıfırlanabilir tanımlayıcı)</td>
+      <td>Reklam sunumu, gösterim sıklığı sınırlama, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, IP adresinden türetilen kaba konum</td>
+      <td>Ülkenize veya bölgenize uygun reklam sunumu ve yasal uyumluluk</td>
+    </tr>
+    <tr>
+      <td>Cihaz bilgileri — model, işletim sistemi sürümü, dil, ekran ve ağ özellikleri</td>
+      <td>Reklamların doğru görüntülenmesi, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Uygulama etkileşim olayları — bir reklamın istendiği, gösterildiği, tıklandığı veya
+      kapatıldığı bilgisi</td>
+      <td>Reklam ölçümü, reklamverenlerin faturalandırılması, dolandırıcılık önleme</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Aracılık ortakları</h3>
+<p>Uygulama, AdMob'un aracılık (mediation) özelliğiyle başvurabildiği başka reklam ağlarının
+yazılımlarını da içerir. Uygulama bir reklam istediğinde AdMob bu isteği bu ortaklardan birine
+iletebilir; reklamı sunan ortak da yukarıdaki tabloda sayılan veri türlerinin aynısını (reklam
+kimliği, IP adresinizden türetilen yaklaşık konum, cihaz bilgileri ve reklam etkileşim olayları)
+alır ve kendi gizlilik politikasına göre işler:</p>
+<ul>
+  <li>AppLovin — <a href="https://legal.applovin.com/privacy/">AppLovin Gizlilik Politikası</a></li>
+  <li>Unity Ads — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity
+  Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a></li>
+  <li>Liftoff Monetize (eski adıyla Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff
+  Gizlilik Politikası</a></li>
+  <li>Meta Audience Network — <a href="https://www.facebook.com/privacy/policy/">Meta Gizlilik
+  Politikası</a></li>
+  <li>Mintegral — <a href="https://www.mintegral.com/en/privacy">Mintegral Gizlilik Politikası</a></li>
+  <li>Pangle — <a href="https://www.pangleglobal.com/privacy">Pangle Gizlilik Politikası</a></li>
+</ul>
+<p>Belirli bir reklamı hangi ortağın sunacağına (ya da hiçbirinin sunmayacağına) AdMob karar verir.
+"Reklam tercihleriniz" bölümünde anlatılan rıza formundaki seçimleriniz, Google'ın rıza aracının
+cihazda sakladığı standart rıza sinyali aracılığıyla bu ortaklara iletilir.</p>
+<p>Uygulama GPS veya herhangi bir konum izni <strong>istemez</strong> ve taramalarınızı, tanınan
+metni, belge adlarını veya dosya içeriklerini AdMob'a ya da herhangi bir ortağa göndermez.
+Geliştirici, AdMob'dan veya ortaklardan hiçbir kişisel veri almaz; yalnızca gösterim ve gelir
+toplamları gibi toplulaştırılmış, anonim raporlar görür.</p>
+
+<h3>Reklamların göründüğü yerler</h3>
+<p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden uygulama
+<code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Reklam biçimleri ve
+yerleri:</p>
+<ul>
+  <li><strong>Banner</strong> — Kitaplık'ın ve bir belgenin sayfa ızgarasının altında. Tarayıcıda,
+  kırpma ekranında, sayfa görüntüleyicide veya onun metninde, dışa aktarma ekranında, sonuç
+  ekranında, Ayarlar'da veya karşılama ekranında asla gösterilmez.</li>
+  <li><strong>Geçiş reklamı</strong> (tam ekran) — bir "Cihaza kaydet" veya "Farklı kaydet…" dışa
+  aktarması bittikten sonra, sonucu gösterilmeden önce en fazla bir tane. İlk iki dışa aktarmanızda
+  hiç gösterilmez, iki geçiş reklamı arasında her zaman en az üç dakika bulunur ve paylaşım
+  penceresinden önce ya da tarama, metin tanıma veya düzenleme sırasında hiç gösterilmez.</li>
+  <li><strong>Ödüllü reklam</strong> (isteğe bağlı) — yalnızca Ayarlar'da veya sonuç ekranında
+  "Reklamsız bir gün"ü seçerseniz: bir reklam izlersiniz ve uygulama sonraki 24 saat boyunca reklam
+  göstermez. Hiçbir özelliği açmak veya kullanmak için şart değildir.</li>
+  <li><strong>Uygulama açılış reklamı</strong> — uygulamadan çıkıp ona geri döndüğünüzde, en fazla
+  dört saatte bir. Uygulama ilk açıldığında ve uygulamanın kendisinin açtığı bir şeyden (tarayıcı,
+  Fotoğraf Seçici, paylaşım penceresi, "Farklı kaydet…" veya dışa aktarılmış bir dosya) geri
+  döndüğünüzde asla gösterilmez.</li>
+</ul>
+<p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites">Google, hizmetlerimizi
+  kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543">AdMob ve üçüncü taraf reklamcılık</a></li>
+</ul>
+
+<h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
+<p>Uygulamanın nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici uygulamaya
+iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
+Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca uygulamanın
+Google Play üzerinden dağıtılan sürümünde çalışır. Uygulama, bu hizmetlerin topladıklarına
+kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
+log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Uygulama örneği kimliği — Analytics'in bu kurulum için oluşturduğu rastgele bir
+      tanımlayıcı</td>
+      <td>Kim olduğunuzu bilmeden kurulumları ve oturumları saymak</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği — yukarıda anlatılan sıfırlanabilir tanımlayıcı; uygulama AdMob için
+      <code>AD_ID</code> iznini tanımladığından Analytics de ona erişebilir</td>
+      <td>Kullanım istatistikleri; reklam amaçlı kullanım yalnızca rıza seçimlerinizin izin
+      verdiği ölçüde (aşağıda)</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, maskelenmiş IP adresinizden türetilen ülke veya bölge</td>
+      <td>Ülkeye ve bölgeye göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Cihaz ve uygulama bilgileri — cihaz modeli, işletim sistemi sürümü, dil, uygulama
+      sürümü</td>
+      <td>Cihaza, Android sürümüne, dile ve uygulama sürümüne göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Kullanım olayları — ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi,
+      uygulamanın güncellenmesi ve kaldırılması</td>
+      <td>Uygulamayı kaç kişinin, ne sıklıkla ve ne kadar süre kullandığı, hangi ekranları
+      açtığı</td>
+    </tr>
+    <tr>
+      <td>Uygulamanın nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
+      sayfası ya da bir kampanya bağlantısı)</td>
+      <td>Kurulumların nereden geldiğini saymak</td>
+    </tr>
+    <tr>
+      <td>Google Play'in bildirdiği satın alma olayları — tek seferlik "reklamları kaldır" satın
+      almasının ürünü, adı ve fiyatı</td>
+      <td>Satın almaları saymak; kart veya ödeme bilgisi içermez</td>
+    </tr>
+    <tr>
+      <td>Çökme raporları; yalnızca uygulama çöktüğünde ya da ölümcül bir hatayla
+      karşılaştığında gönderilir — yığın izi (stack trace), uygulamanın o andaki durumu, cihaz
+      bilgileri (model, işletim sistemi sürümü, ekran yönü, boş bellek ve disk alanı) ve rastgele
+      bir Crashlytics kurulum kimliği</td>
+      <td>Çökmeleri bulup düzeltmek ve bir çökmenin kaç kurulumu etkilediğini saymak</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını kaydeder, o ekranda ne
+yaptığınızı değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, taramalarınızı
+veya onların metnini değil. İki hizmet de adınızı, e-posta adresinizi veya herhangi bir hesap
+bilginizi almaz.</p>
+<p>AEA'da, Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan
+rıza formu Analytics'i de kapsar: oradaki seçimleriniz, Analytics'in tanımlayıcılarını cihazınızda
+saklayıp saklayamayacağını ve verilerin reklam amacıyla kullanılıp kullanılamayacağını belirler.
+Verilerin reklam için kullanılması ("ad user data") ve reklam kişiselleştirmesi bu bölgelerde siz
+rıza verene kadar kapalı kalır. Seçiminizi dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan değiştirebilirsiniz; bu giriş gerekli olduğu yerlerde görünür.
+Uygulamada kullanım istatistikleri veya çökme raporları için ayrı bir anahtar yoktur; uygulamayı
+kaldırmak ikisini de durdurur.</p>
+<p>Analytics, bir kurulumun tanımlayıcılarına bağlı verileri en fazla 14 ay saklar; tanımlayıcı
+içermeyen toplu raporlar daha uzun tutulabilir. Crashlytics çökme raporlarını 90 gün saklar.</p>
+<p>Google bu verileri geliştirici adına, veri işleyen sıfatıyla, Firebase ve Google Analytics veri
+işleme koşulları kapsamında işler. Veriler, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz
+dışındaki Google sunucularında işlenebilir ve aktarım sırasında şifrelenir (TLS).</p>
+<p>Google bu hizmetleri şu sayfalarda anlatır:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Satın alma — Google Play Faturalandırma</h2>
+<p>Uygulamada, Ayarlar'da ve dışa aktarma sonuç ekranında sunulan, reklamları kalıcı olarak
+kaldıran tek seferlik ve isteğe bağlı tek bir satın alma vardır. Abonelik veya yinelenen hiçbir
+ödeme yoktur.</p>
+<p>İşlemin tamamı Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
+numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı asla görmez ve almaz.</strong>
+Google Play
+yalnızca toplulaştırılmış satış rakamlarını bildirir; Google Analytics for Firebase de satın
+almanın yapıldığını — ürünü, adını ve fiyatını, hiçbir ödeme bilgisi olmadan — kaydeder
+(yukarıya bakın). Uygulama içinde satın alma, cihazınızda
+tek bir doğru/yanlış işareti olarak tutulur; uygulamayı yeniden kurduğunuzda veya yeni bir cihaza
+geçtiğinizde Google Play hesabınızdan geri yüklenir. Ödeme verilerinizin Google tarafından işlenmesi
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
+koşulları kapsamındadır.</p>
+
+<h2>Reklam tercihleriniz</h2>
+
+<h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
+<p>Kişiselleştirilmiş reklam istenmeden önce uygulama, Google'ın User Messaging Platform altyapısıyla
+hazırlanmış bir rıza formu gösterir; yukarıda sayılan reklam ortakları da dahil olmak üzere neye
+izin vereceğinizi burada seçersiniz. Seçiminiz Google'ın bileşeni tarafından cihazınızda saklanır
+ve sonraki açılışlarda dikkate alınır.</p>
+<p><strong>Kararınızı istediğiniz zaman değiştirebilirsiniz:</strong> uygulamayı açın,
+<em>Ayarlar → Gizlilik seçenekleri</em> bölümüne gidin; aynı form yeniden görünür. Rızanızı buradan
+geri çekebilirsiniz. Rızayı geri çekmek uygulamayı devre dışı bırakmaz; belgelerinizi taramaya,
+aramaya ve dışa aktarmaya devam edebilirsiniz ve reklamlar kişiselleştirilmemiş biçimde
+gösterilmeye devam edebilir. Aynı seçimler, yukarıda anlatıldığı gibi Google Analytics for Firebase
+için de geçerlidir.</p>
+
+<h3>Gizlilik yasası bulunan bir ABD eyaletindeyseniz</h3>
+<p>Bir ABD eyaletinin gizlilik yasasının uygulandığı yerlerde (örneğin Kaliforniya'da), aynı Google
+rıza aracı, bilgilerinizin hedefli reklamcılık için kullanılmasına ilişkin bir bildirim gösterebilir
+ve bilgilerinizin satışını veya paylaşılmasını reddetmenize olanak tanır. Bunun geçerli olduğu
+yerlerde <em>Ayarlar → Gizlilik seçenekleri</em> girişi görünür ve seçimlerinizi yeniden açar.</p>
+
+<h3>Diğer ülkelerde</h3>
+<p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak zorunlu olduğu yerlerde göründüğü
+için sizde görünmeyebilir. Reklamları yine de işletim sistemi düzeyinde denetleyebilirsiniz: Android
+<em>Ayarlar → Gizlilik → Reklamlar</em> bölümünden (tam yol üreticiye ve Android sürümüne göre
+değişir) reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz; silmeniz durumunda
+uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
+
+<h3>Reklamları tamamen kaldırmak</h3>
+<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın reklam istemesini tümüyle durdurur. Ödüllü
+reklamla kazanılan 24 saatlik reklamsız süre ise reklam isteklerini o gün için durdurur.</p>
+
+<h2>Uygulamanın istediği izinler</h2>
+<div class="card">
+<ul>
+  <li><code>INTERNET</code> — reklamların alınması, Google Play Faturalandırma ile iletişim, Google
+  Play'e bir uygulama güncellemesi olup olmadığının sorulması ve yukarıda anlatılan kullanım
+  istatistikleriyle çökme raporlarının gönderilmesi için gereklidir. Taramalarınız ve metinleri ağ
+  üzerinden asla gönderilmez.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yükleme denemesinden önce bağlantı
+  olup olmadığını kontrol etmesini sağlar.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
+  aracılık ortaklarının ve Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına
+  erişim.</li>
+</ul>
+</div>
+<p>Uygulamanın kendisinin tanımladığı izinler bunlardır. İçindeki Google ve reklam ağı bileşenleri,
+Android'in kurulum sırasında size sormadan verdiği birkaç izin daha ekler; örneğin Google Play'in
+faturalandırma ve kurulum yönlendiricisi izinleri, Android'in reklam hizmetleri izinleri ve Wi-Fi
+durumunu denetleme ile arka plan işlerini çalışır tutma izinleri. Uygulama, siz onu kullanırken
+sizden hiçbir izin istemez ve hiçbir Android sürümünde kamera, depolama, fotoğraf ve medya, kişiler,
+mikrofon, konum, bildirim veya hesap izni <strong>istemez</strong>. Tarama için kullanılan kamera,
+yukarıda anlatıldığı gibi Google Play hizmetlerine aittir.</p>
+
+<h2>Çocuklar</h2>
+<p>Bu uygulama genel amaçlı bir araçtır. <strong>13 yaşın altındaki çocuklara yönelik değildir</strong>
+(AEA'da 16 yaşın altındakilere), çocuklara yönelik bir kategoride listelenmemiştir ve çocuklar için
+tasarlanmamış, çocuklara pazarlanmamıştır. Geliştirici, çocuklardan bilerek hiçbir kişisel veri
+toplamaz. Bir çocuğun bu uygulamadaki reklam, analiz veya çökme raporlama hizmetleri aracılığıyla
+kişisel veri verdiğini düşünüyorsanız aşağıdaki adrese ve verinin bulunduğu taraf olan Google'a
+başvurun.</p>
+
+<h2>Verilerin saklanması</h2>
+<p>Geliştiricinin bir sunucusu yoktur ve kendi elinde hiçbir kullanıcı verisi saklamaz.
+Taramalarınız, metinleri ve ayarlarınız, siz onları uygulamada silene, uygulamanın verilerini
+temizleyene veya uygulamayı kaldırana kadar cihazınızda kalır. Kullanım istatistikleri ve çökme
+raporları geliştirici adına Google'da tutulur: bir kurulumun tanımlayıcılarına bağlı Analytics
+verileri en fazla 14 ay (tanımlayıcı içermeyen toplu raporlar daha uzun tutulabilir), çökme
+raporları ise 90 gün. AdMob, ML Kit ve Google Play aracılığıyla Google'ın topladığı veriler,
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'nda açıklanan
+kendi saklama sürelerine; bir aracılık ortağının topladığı veriler ise yukarıda bağlantısı verilen
+o ortağın politikasına tabidir.</p>
+
+<h2>Hukuki dayanaklar ve haklarınız</h2>
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde, aracılık ortaklarınınki dahil kişiselleştirilmiş reklamın
+hukuki dayanağı, yukarıda anlatılan formla alınan ve istediğiniz zaman geri çekebileceğiniz açık
+rızanızdır. Kişiselleştirilmemiş reklam, dolandırıcılık önleme ve reklam hizmetlerinin güvenliği
+meşru menfaate dayanır. Satın alma işleminizin yürütülmesi, reklam kaldırmayı satın aldığınızda
+kurulan sözleşmenin ifası için gereklidir. Kullanım istatistikleri ve çökme raporları,
+geliştiricinin uygulamayı çalışır durumda tutma ve nasıl kullanıldığını toplu olarak anlama
+yönündeki meşru menfaatine dayanır; Analytics tanımlayıcılarının cihazınızda saklanması ve
+verilerin reklam amacıyla kullanılması ise rıza formundaki seçimlerinize bağlıdır. Tarama ve metin
+tanıma, sizin isteğiniz üzerine cihazınızda yapılır ve geliştirici bu verilerin hiçbirini almaz.</p>
+<p>GDPR kapsamında ve Türkiye'de 6698 sayılı KVKK kapsamında eşdeğer biçimde; kişisel verilerinizin
+işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini isteme, işlenmesini
+kısıtlama veya işlenmesine itiraz etme, veri taşınabilirliği ve rızanızı geri çekme haklarına
+sahipsiniz. Ayrıca ulusal veri koruma otoritesine şikâyette bulunabilirsiniz; Türkiye'de bu kurum
+Kişisel Verileri Koruma Kurumu'dur (KVKK).</p>
+<p>Kullanım istatistikleri ve çökme raporları takma adlıdır: adınızı ya da e-posta adresinizi değil,
+rastgele tanımlayıcılar taşır; bu yüzden geliştirici hangi kayıtların size ait olduğunu bilemez.
+Rıza formunun gösterildiği yerlerde rızanızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz etmek ya da bu konuda
+soru sormak için aşağıdaki adrese yazabilirsiniz. Reklam kimliğinizi Android ayarlarından
+dilediğiniz zaman sıfırlayabilir veya silebilirsiniz. Uygulamayı kaldırmak ya da verilerini
+temizlemek eski tanımlayıcılarla bağı koparır; daha önce gönderilmiş veriler de yukarıdaki
+sürelerin sonunda silinir.
+Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran taraf olan Google'a veya ilgili
+aracılık ortağına, yukarıda bağlantısı verilen politikalardaki araçlar kullanılarak iletilmelidir.
+Diğer tüm konular için veya doğru yolu bulmak üzere yardım almak için aşağıdaki adrese
+yazabilirsiniz.</p>
+
+<h2>Güvenlik</h2>
+<p>Taramalarınız, metinleri ve kitaplık veritabanı, Android'in diğer uygulamalardan yalıttığı
+uygulamaya özel depolama alanında tutulur. Uygulamanın hesabı ve sunucusu olmadığından,
+belgelerinizin başka bir yerde açığa çıkabilecek bir kopyası yoktur. Google'a ve reklam
+ortaklarına gönderilen veriler şifreli olarak (TLS) aktarılır. Parolayla koruduğunuz bir PDF,
+AES-128 ile şifrelenir. Hiçbir saklama veya aktarım yöntemi kusursuz derecede güvenli değildir;
+cihazınızı kilitli ve güncel tutun, dışa aktardığınız dosyaları nereye kaydettiğinize ve kiminle
+paylaştığınıza dikkat edin.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Uygulamanın veri uygulamaları değişirse — örneğin yeni bir üçüncü taraf hizmet eklenirse — bu
+sayfa güncellenir ve en üstteki "son güncelleme" tarihi değişir. Önemli değişiklikler ayrıca
+uygulamanın Google Play sayfasına da yansıtılır. Güncellemeden sonra uygulamayı kullanmaya devam
+etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+<p>Bu, uygulamanın ilk sürümüyle birlikte yayımlanan, bu politikanın ilk sürümüdür.</p>
+
+<h2 id="contact">İletişim</h2>
+<p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Bu adres, uygulamanın Google Play sayfasında yazan adresle aynıdır. Hata bildirimleri,
+  gizlilikle ilgili sorular ve veri talepleri buraya ulaşır.</p>
+</div>
+
+<footer>
+  <p>PaperLite — hesap yok, filigran yok, abonelik yok; taramalarınız cihazınızda kalır. Bu politika,
+  uygulamanın ilk sürümünden itibaren yayımlanan sürümlerini açıklar.</p>
+</footer>
+
+</main>
+</body>
+</html>

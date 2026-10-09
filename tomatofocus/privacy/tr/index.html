@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Tomato Focus</title>
+<meta name="description" content="Tomato Focus Android uygulamasının gizlilik politikası. Görevleriniz ve odak geçmişiniz cihazınızda kalır.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/imagetopdf/privacy/tr/">ImageToPdf politikası</a><span class="sep">·</span><a href="/pdfpages/privacy/tr/">PdfPages politikası</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — Tomato Focus</h1>
+  <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.tomatofocus</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 9 Ekim 2026.</span> <span>Son güncelleme: 9 Ekim 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Görevleriniz, odak geçmişiniz ve istatistikleriniz ne geliştiriciye ne de herhangi
+  bir reklam veya analiz hizmetine gönderilir.</strong> Hesap açmanız gerekmez, giriş yapmanız
+  gerekmez ve uygulamaya ait hiçbir sunucu yoktur. Zamanlayıcı, görevler, istatistikler ve ortam
+  sesleri telefonunuzda, çevrimdışı olarak çalışır.</p>
+  <p>Cihazınızdan çıkan her şey aşağıda ayrıntılı olarak anlatılmıştır: Google'ın reklam hizmeti
+  ve onun birlikte çalıştığı reklam ağları, Google Play'in ödeme ve güncelleme hizmetleri ile
+  geliştiricinin Google Firebase aracılığıyla topladığı kullanım istatistikleri ve çökme
+  raporları. Android'in kendi yedeklemesi açıksa, odak geçmişiniz ve ayarlarınız Google
+  hesabınıza da kopyalanabilir. Tek seferlik reklam kaldırma satın alırsanız reklamlar tamamen
+  durur; kullanım istatistikleri ve çökme raporları buna bağlı değildir.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play üzerinden <code>com.bumustudios.tomatofocus</code> paket adıyla
+dağıtılan <em>Tomato Focus</em> Android uygulamasını (Google Play'deki adıyla "Tomato Focus: Focus
+Timer") kapsar. Uygulamanın bağımsız geliştiricisi BumuStudios tarafından yazılmıştır.
+Sorularınızı <a href="#contact">İletişim</a> bölümündeki adrese iletebilirsiniz.</p>
+
+<h2>Uygulama ne yapar</h2>
+<p>Tomato Focus bir odak zamanlayıcısıdır: odak oturumları (varsayılan olarak 25 dakika) kısa
+molalarla dönüşümlü ilerler; belirli sayıda oturumdan sonra uzun bir mola gelir. Hazır bir ayarı
+veya kendi sürelerinizi seçebilir, küçük bir görev listesi tutup oturumları bir göreve
+saydırabilir, bugün, bu hafta, seri ve tüm zamanlar için istatistikleri görebilir ve odaklanırken
+yağmur veya beyaz gürültü gibi ortam sesleri çalabilirsiniz. Hesap yoktur, abonelik yoktur.</p>
+
+<h2>Odak verileriniz cihazınızda kalır</h2>
+<p>En önemli bölüm bu olduğu için açıkça yazıyoruz:</p>
+<ul>
+  <li><strong>Görevleriniz ve oturum geçmişiniz hiçbir zaman yüklenmez.</strong> Uygulamanın
+  kendine ait bir sunucusu yoktur. Görev başlıklarınızı, odak oturumlarınızı, istatistiklerinizi
+  veya zamanlayıcı ayarlarınızı hiçbir yere göndermez; aşağıda anlatılan kullanım istatistikleri
+  ve çökme raporları da bunları asla içermez: bir çökme raporu, görevlerinizi değil, çökmenin
+  kodun neresinde olduğunu gösterir.</li>
+  <li><strong>Zamanlayıcı, alarmları ve bildirimleri cihazda çalışır.</strong> Bir oturumun bitiş
+  zamanı telefonunuzdaki Android alarm hizmetiyle planlanır; geri sayım ve "süre doldu"
+  bildirimlerini uygulama telefonunuzda gösterir. Bunlarla ilgili hiçbir şey bir sunucuya
+  gönderilmez.</li>
+  <li><strong>Ortam sesleri cihazda üretilir.</strong> Yağmur, kahverengi, pembe ve beyaz gürültü
+  ile okyanus dalgaları, çalarken uygulama tarafından anlık olarak hesaplanır; kayıt değildir ve
+  internetten akışla gelmez. Uygulama mikrofonu hiçbir zaman kullanmaz. Ortam sesi yalnızca bir
+  odak oturumu sürerken ve uygulama ekrandayken çalar.</li>
+  <li><strong>Dışa aktarma, paylaşma veya eşitleme özelliği yoktur.</strong> Verileriniz uygulama
+  tarafından hiçbir yere kopyalanmaz; cihazdan çıkabilecek tek kopya, aşağıda anlatılan Android'in
+  kendi yedeklemesidir.</li>
+</ul>
+
+<h3>Uygulamanın cihazda sakladıkları</h3>
+<p>Uygulama verilerini cihazdaki kendi özel alanında tutar. Bunların hiçbiri geliştiriciye, reklam
+ağlarına veya analiz hizmetlerine gönderilmez:</p>
+<ul>
+  <li>zamanlayıcı ayarlarınız — oturum süreleri, uzun moladan önceki tur sayısı, otomatik başlatma
+  seçenekleri ve günlük hedefiniz — ile zamanlayıcının durumu (geçerli aşamanın ne zaman
+  biteceği dahil);</li>
+  <li>görevleriniz — yazdığınız başlık, tahmini oturum sayısı, görevin tamamlanıp tamamlanmadığı,
+  oluşturulma ve tamamlanma zamanı;</li>
+  <li>tamamlanan odak oturumlarınızın kaydı — her birinin ne zaman başlayıp bittiği, ne kadar
+  sürdüğü ve hangi göreve sayıldığı; tüm istatistikler bu kayıttan cihazda hesaplanır;</li>
+  <li>telefonun dahili saatinden alınan bir referans ölçüm; yalnızca tarih veya saat
+  değiştirildiğinde çalışan bir zamanlayıcının doğru kalması için kullanılır;</li>
+  <li>tema, yazı boyutu ve dil tercihleriniz, ses, titreşim ve ekranı açık tutma ayarlarınız, ortam
+  sesiniz ve ses düzeyi, ayrıca uygulamanın bildirim iznini daha önce sorup sormadığı;</li>
+  <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı, bir "24 saat reklamsız"
+  döneminin ne zaman bittiği ve reklam sıklığını düşük tutmak için kullanılan, gösterilen geçiş
+  reklamı sayacı.</li>
+</ul>
+<p>Uygulama veri dosyasını bir gün bozuk bulursa, geçmişiniz sessizce kaybolmasın diye o dosyanın
+üzerine yazmak yerine bir kopyasını aynı özel alanda saklar.</p>
+<p><strong>Yedekleme.</strong> Zamanlayıcı ayarlarınız, görevleriniz, odak geçmişiniz ve uygulama
+ayarlarınız, yeni bir telefonun istatistiklerinizi geri yükleyebilmesi için Android
+yedeklemesine ve cihazdan cihaza aktarıma dahildir. Bu yedekler Android tarafından alınır ve
+cihazınızın yedekleme ayarlarına göre Google hesabınızda saklanır; geliştiricinin bunlara erişimi
+yoktur ve yedeklemeyi Android ayarlarından kapatabilirsiniz. Yukarıdaki listenin sonunda yer alan
+reklam ve satın alma durumu yedeklemenin ve aktarımın dışında bırakılmıştır; uygulamanın veya
+bileşenlerinin Android'in paylaşılan tercihlerinde (shared preferences) ve veritabanlarında
+tuttuğu her şey de dışarıda bırakılmıştır — reklam, rıza ve güncelleme kayıtları da bunlara
+dahildir; bunlar oluşturuldukları cihaza aittir.</p>
+<p>Google'ın reklam ve rıza bileşenleri de kendi ayarlarını cihazda, Google'ın denetiminde tutar;
+aşağıda anlatılan Google Firebase bileşenleri ise uygulamanın özel alanında üç rastgele
+tanımlayıcı saklar: bir Firebase kurulum kimliği, Analytics uygulama örneği kimliği ve bir
+Crashlytics kurulum kimliği. Odak verilerinizin aksine bu tanımlayıcılar kullanım istatistikleri
+ve çökme raporlarıyla birlikte gönderilir. Uygulamayı kaldırmak veya verilerini temizlemek, bu
+tanımlayıcılar dahil uygulamanın cihazda sakladığı her şeyi siler; Android yedeğinizdeki bir
+kopya ise Android'in yedekleme hizmetince yönetilir.</p>
+
+<h2>Bildirimler ve alarmlar</h2>
+<p>Android 13 ve sonrasında uygulama, bir zamanlayıcıyı ilk kez başlattığınızda, nedenini anlatan
+kısa bir ekranın ardından bildirim gösterme izni ister; "Şimdi değil" seçeneğini de seçebilirsiniz.
+Zamanlayıcı izin olmadan da aynı şekilde çalışır — yalnızca uygulama kapalıyken uyarı almazsınız.
+Bildirimleri dilediğiniz zaman Android ayarlarından açıp kapatabilirsiniz; uygulamadaki
+<em>Ayarlar → Bildirimler</em> girişi bu ayarları açar.</p>
+<p>İzin verildiğinde uygulama, bir zamanlayıcı çalışırken ve uygulama ekranda değilken Duraklat ve
+Atla (veya Devam et ve Durdur) düğmeleri olan sessiz bir geri sayım bildirimi, bir oturum veya
+mola bittiğinde de zil sesli bir bildirim gösterir. Geri sayım bildirimi üzerinde çalıştığınız
+görevin başlığını gösterebilir; hassas içeriği gizleyecek şekilde ayarlanmış bir kilit ekranında
+ise görev başlığı olmadan yalnızca geri sayımı gösterir.</p>
+<p>Oturum sonu uyarısı Android'in olağan (tam zamanlı olmayan) alarmlarını kullanır; bu yüzden
+uygulama özel "alarmlar ve hatırlatıcılar" erişimini istemez. Android, telefon yeniden
+başlatıldığında veya uygulama güncellendiğinde planlanmış alarmları sildiği için uygulama
+<code>RECEIVE_BOOT_COMPLETED</code> iznini tanımlar: yeniden başlatmadan sonra zamanlayıcıyı
+günceller, arada biten her oturum için sizi uyarır ve bir sonraki uyarıyı yeniden planlar.
+Uygulama güncellendikten sonra da aynısını yapar ve çalışan bir zamanlayıcının doğru kalması için
+tarih veya saat değişikliklerini fark eder. Bunların hepsi cihazda gerçekleşir.</p>
+
+<h2>Reklamlar — Google AdMob ve aracılık iş ortakları</h2>
+<p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
+tarafından sunulan reklamlarla desteklenir. AdMob, uygulamaya bir yazılım geliştirme kiti olarak
+gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>. Reklamlar gösterilirken
+AdMob ve Google'ın reklam iş ortakları şunları toplayıp işleyebilir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Veri</th><th>Kullanım amacı</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reklam kimliği (Android'in atadığı, sıfırlanabilir tanımlayıcı)</td>
+      <td>Reklam sunumu, gösterim sıklığı sınırlama, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, IP adresinden türetilen kaba konum</td>
+      <td>Ülkenize veya bölgenize uygun reklam sunumu ve yasal uyumluluk</td>
+    </tr>
+    <tr>
+      <td>Cihaz bilgileri — model, işletim sistemi sürümü, dil, ekran ve ağ özellikleri</td>
+      <td>Reklamların doğru görüntülenmesi, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Uygulama etkileşim olayları — bir reklamın istendiği, gösterildiği, tıklandığı veya
+      kapatıldığı bilgisi</td>
+      <td>Reklam ölçümü, reklamverenlerin faturalandırılması, dolandırıcılık önleme</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Uygulama GPS veya hassas konum izni <strong>istemez</strong> ve görevlerinizi, görev
+başlıklarınızı veya odak geçmişinizi AdMob'a ya da herhangi bir reklam ağına göndermez.
+Geliştirici, AdMob'dan hiçbir kişisel veri almaz; yalnızca gösterim ve gelir toplamları gibi
+toplulaştırılmış, anonim raporlar görür.</p>
+<p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden uygulama
+<code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Reklam biçimleri ve
+göründükleri yerler:</p>
+<ul>
+  <li><strong>Banner</strong> — Görevler ve İstatistik sekmelerinin altında. Zamanlayıcı veya
+  Ayarlar sekmesinde hiçbir zaman banner yoktur.</li>
+  <li><strong>Geçiş reklamı</strong> (tam ekran) — yalnızca tamamlanan bir odak oturumundan sonra,
+  oturum özetinden bir düğmeyle çıktığınızda; hiçbir zaman bir odak oturumu sırasında, o düğme bir
+  sonraki odak oturumunu başlattığında veya özeti Geri tuşuyla ya da dışına dokunarak
+  kapattığınızda gösterilmez. Uygulamanın ömrü boyunca ilk ikisi atlanır ve iki geçiş reklamı
+  arasında en az iki dakika olur.</li>
+  <li><strong>Ödüllü video</strong> — yalnızca siz seçerseniz, <em>Ayarlar → 24 saat
+  reklamsız</em> girişinden; videoyu sonuna kadar izlemek diğer reklamları 24 saat boyunca kapatır.
+  Bu giriş yalnızca böyle bir reklam hazır olduğunda gösterilir.</li>
+  <li><strong>Uygulama açılış reklamı</strong> — uygulamaya arka plandan döndüğünüzde, en fazla dört
+  saatte bir; bir odak oturumu çalışırken veya duraklatılmışken hiçbir zaman gösterilmez.</li>
+</ul>
+
+<h3>Aracılık iş ortakları</h3>
+<p>AdMob aracılık (mediation) kullanır: herhangi bir reklam isteğini, yazılım geliştirme kitleri
+bu amaçla uygulamaya eklenmiş olan aşağıdaki reklam ağlarından birine iletebilir ve reklamı o ağın
+sunmasına izin verebilir. İsteği alan ağ, yukarıdaki tabloda yer alan veri kategorilerinin
+aynısını — reklam kimliği, IP adresinizden türetilen yaklaşık konum, cihaz bilgileri ve reklam
+etkileşim olayları — alır ve bunları kendi gizlilik politikası kapsamında işler. Rıza seçimleriniz
+(aşağıda), Google'ın rıza aracının yazdığı sektör standardı rıza sinyaliyle bu ağlara iletilir.</p>
+<ul>
+  <li>AppLovin — <a href="https://legal.applovin.com/privacy/">AppLovin Gizlilik Politikası</a></li>
+  <li>Unity Ads — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity
+  Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a></li>
+  <li>Liftoff Monetize (eski adıyla Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff
+  Gizlilik Politikası</a></li>
+  <li>Meta Audience Network — <a href="https://www.facebook.com/privacy/policy/">Meta Gizlilik
+  Politikası</a></li>
+  <li>Mintegral — <a href="https://www.mintegral.com/en/privacy">Mintegral Gizlilik Politikası</a></li>
+  <li>Pangle — <a href="https://www.pangleglobal.com/privacy">Pangle Gizlilik Politikası</a></li>
+</ul>
+<p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites">Google, hizmetlerimizi
+  kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543">AdMob ve üçüncü taraf reklamcılık</a></li>
+</ul>
+
+<h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
+<p>Uygulamanın nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici uygulamaya
+iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
+Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca uygulamanın
+Google Play üzerinden dağıtılan sürümünde çalışır. Uygulama, bu hizmetlerin topladıklarına
+kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
+log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Uygulama örneği kimliği — Analytics'in bu kurulum için oluşturduğu rastgele bir
+      tanımlayıcı</td>
+      <td>Kim olduğunuzu bilmeden kurulumları ve oturumları saymak</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği — yukarıda anlatılan sıfırlanabilir tanımlayıcı; uygulama AdMob için
+      <code>AD_ID</code> iznini tanımladığından Analytics de ona erişebilir</td>
+      <td>Kullanım istatistikleri; reklam amaçlı kullanım yalnızca rıza seçimlerinizin izin
+      verdiği ölçüde (aşağıda)</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, maskelenmiş IP adresinizden türetilen ülke veya bölge</td>
+      <td>Ülkeye ve bölgeye göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Cihaz ve uygulama bilgileri — cihaz modeli, işletim sistemi sürümü, dil, uygulama
+      sürümü</td>
+      <td>Cihaza, Android sürümüne, dile ve uygulama sürümüne göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Kullanım olayları — ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi,
+      uygulamanın güncellenmesi ve kaldırılması</td>
+      <td>Uygulamayı kaç kişinin, ne sıklıkla ve ne kadar süre kullandığı, hangi ekranları
+      açtığı</td>
+    </tr>
+    <tr>
+      <td>Uygulamanın nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
+      sayfası ya da bir kampanya bağlantısı)</td>
+      <td>Kurulumların nereden geldiğini saymak</td>
+    </tr>
+    <tr>
+      <td>Google Play'in bildirdiği satın alma olayları — tek seferlik "reklamları kaldır" satın
+      almasının ürünü, adı ve fiyatı</td>
+      <td>Satın almaları saymak; kart veya ödeme bilgisi içermez</td>
+    </tr>
+    <tr>
+      <td>Çökme raporları; yalnızca uygulama çöktüğünde ya da ölümcül bir hatayla
+      karşılaştığında gönderilir — yığın izi (stack trace), uygulamanın o andaki durumu, cihaz
+      bilgileri (model, işletim sistemi sürümü, ekran yönü, boş bellek ve disk alanı) ve rastgele
+      bir Crashlytics kurulum kimliği</td>
+      <td>Çökmeleri bulup düzeltmek ve bir çökmenin kaç kurulumu etkilediğini saymak</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Burada sayılan "oturumlar", odak oturumlarınız değil, uygulamanın açıldığı zamanlardır.
+Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını kaydeder, o ekranda ne
+yaptığınızı değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, görevlerinizi
+veya geçmişinizi değil. İki hizmet de adınızı, e-posta adresinizi veya herhangi bir hesap
+bilginizi almaz.</p>
+<p>AEA'da, Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan
+rıza formu Analytics'i de kapsar: oradaki seçimleriniz, Analytics'in tanımlayıcılarını cihazınızda
+saklayıp saklayamayacağını ve verilerin reklam amacıyla kullanılıp kullanılamayacağını belirler.
+Verilerin reklam için kullanılması ("ad user data") ve reklam kişiselleştirmesi bu bölgelerde siz
+rıza verene kadar kapalı kalır. Seçiminizi dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan değiştirebilirsiniz; bu giriş gerekli olduğu yerlerde görünür.
+Uygulamada kullanım istatistikleri veya çökme raporları için ayrı bir anahtar yoktur; uygulamayı
+kaldırmak ikisini de durdurur.</p>
+<p>Analytics, bir kurulumun tanımlayıcılarına bağlı verileri en fazla 14 ay saklar; tanımlayıcı
+içermeyen toplu raporlar daha uzun tutulabilir. Crashlytics çökme raporlarını 90 gün saklar.</p>
+<p>Google bu verileri geliştirici adına, veri işleyen sıfatıyla, Firebase ve Google Analytics veri
+işleme koşulları kapsamında işler. Veriler, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz
+dışındaki Google sunucularında işlenebilir ve aktarım sırasında şifrelenir (TLS).</p>
+<p>Google bu hizmetleri şu sayfalarda anlatır:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Satın alma — Google Play Faturalandırma</h2>
+<p>Uygulamada, reklamları kalıcı olarak kaldıran tek seferlik ve isteğe bağlı tek bir satın alma
+vardır. Abonelik veya yinelenen hiçbir ödeme yoktur.</p>
+<p>İşlemin tamamı Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
+numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı asla görmez ve almaz.</strong>
+Google Play
+yalnızca toplulaştırılmış satış rakamlarını bildirir; Google Analytics for Firebase de satın
+almanın yapıldığını — ürünü, adını ve fiyatını, hiçbir ödeme bilgisi olmadan — kaydeder
+(yukarıya bakın). Uygulama içinde satın alma, cihazınızda
+tek bir doğru/yanlış işareti olarak tutulur; uygulamayı yeniden kurduğunuzda veya yeni bir cihaza
+geçtiğinizde Google Play hesabınızdan geri yüklenir. Ödeme verilerinizin Google tarafından işlenmesi
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
+koşulları kapsamındadır.</p>
+<p>Uygulama ayrıca Google Play'in uygulama içi güncelleme hizmetini kullanır; bu hizmet, daha yeni
+bir sürüm olduğunu Google Play'in size uygulama içinde bildirmesini ve kabul ederseniz onu
+indirmesini sağlar. Bu alışveriş cihazınız ile Google Play arasında gerçekleşir.</p>
+
+<h2>Reklam tercihleriniz</h2>
+
+<h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
+<p>Herhangi bir reklam istenmeden önce uygulama, Google'ın User Messaging Platform altyapısıyla
+hazırlanmış bir rıza formu gösterir; neye izin vereceğinizi burada seçersiniz. Seçiminiz Google'ın
+bileşeni tarafından cihazınızda saklanır, sonraki açılışlarda dikkate alınır ve yukarıda sayılan
+aracılık iş ortaklarına iletilir.</p>
+<p><strong>Kararınızı istediğiniz zaman değiştirebilirsiniz:</strong> uygulamayı açın,
+<em>Ayarlar → Gizlilik seçenekleri</em> bölümüne gidin; aynı form yeniden görünür. Rızanızı buradan
+geri çekebilirsiniz. Rızayı geri çekmek uygulamayı devre dışı bırakmaz; zamanlayıcı, görevler,
+istatistikler ve ortam sesleri çalışmaya devam eder ve reklamlar
+kişiselleştirilmemiş biçimde gösterilmeye devam edebilir. Aynı seçimler, yukarıda anlatıldığı gibi
+Google Analytics for Firebase için de geçerlidir.</p>
+
+<h3>Gizlilik yasası olan ABD eyaletlerinde</h3>
+<p>Bir ABD eyaletinin gizlilik yasası size kişisel bilgilerin satışını veya paylaşılmasını ya da
+hedefli reklamı reddetme hakkı tanıyorsa, bu seçim uygun olduğu yerlerde aynı Google rıza
+aracıyla sunulur ve <em>Ayarlar → Gizlilik seçenekleri</em> girişi bu seçimi gözden geçirmenizi
+sağlar.</p>
+
+<h3>Diğer ülkelerde</h3>
+<p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak zorunlu olduğu yerlerde göründüğü
+için sizde görünmeyebilir. Reklamları yine de işletim sistemi düzeyinde denetleyebilirsiniz: Android
+<em>Ayarlar → Gizlilik → Reklamlar</em> bölümünden (tam yol üreticiye ve Android sürümüne göre
+değişir) reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz; silmeniz durumunda
+uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
+
+<h3>Reklamları tamamen kaldırmak</h3>
+<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın reklam istemesini tümüyle durdurur. Bunun
+yerine isteğe bağlı ödüllü videoyu izlemek, banner, geçiş ve uygulama açılış reklamlarını 24 saat
+boyunca kapatır.</p>
+
+<h2>Uygulamanın istediği izinler</h2>
+<div class="card">
+<ul>
+  <li><code>INTERNET</code> — reklamların alınması, Google Play Faturalandırma ve Google Play'in
+  güncelleme hizmetiyle iletişim ve yukarıda anlatılan kullanım istatistikleriyle çökme
+  raporlarının gönderilmesi için gereklidir. Ağ üzerinden başka hiçbir şey gönderilmez.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yükleme denemesinden önce bağlantı
+  olup olmadığını kontrol etmesini sağlar.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
+  aracılık iş ortaklarının ve Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına
+  erişim.</li>
+  <li><code>POST_NOTIFICATIONS</code> — Android 13 ve sonrasında geri sayım ve "süre doldu"
+  bildirimlerini göstermek için. Bir zamanlayıcıyı ilk kez başlattığınızda, bağlamı içinde
+  istenir; uygulama bu izin olmadan da çalışır.</li>
+  <li><code>RECEIVE_BOOT_COMPLETED</code> — kurulum sırasında size sorulmadan verilir; "Bildirimler
+  ve alarmlar" bölümünde anlatıldığı gibi, telefon yeniden başlatıldıktan sonra zamanlayıcının
+  oturum sonu uyarısını geri yüklemesini sağlar.</li>
+</ul>
+</div>
+<p>Uygulamanın kendisinin tanımladığı izinler bunlardır. İçindeki Google ve reklam ağı bileşenleri,
+Android'in kurulum sırasında size sormadan verdiği birkaç izin daha ekler; örneğin Google Play'in
+faturalandırma ve lisans denetimi izinleri, Android'in reklam hizmetleri izinleri ve Wi-Fi
+durumunu okuma, işlemciyi kısa süre uyanık tutma, titreşim, arka plan işi çalıştırma ve Play
+kurulum yönlendiricisini okuma izinleri. Uygulama özel tam zamanlı alarm erişimini kullanmaz ve
+hiçbir Android sürümünde depolama, kamera, mikrofon, kişiler, konum veya hesap izni istemez.</p>
+
+<h2>Çocuklar</h2>
+<p>Bu uygulama genel amaçlı bir araçtır. <strong>13 yaşın altındaki çocuklara yönelik değildir</strong>
+(AEA'da 16 yaşın altındakilere veya ülkenizdeki eşdeğer asgari yaşın altındakilere de),
+çocuklara yönelik bir kategoride listelenmemiştir ve çocuklar için tasarlanmamış, çocuklara
+pazarlanmamıştır. Geliştirici, çocuklardan bilerek hiçbir kişisel veri toplamaz. Bir çocuğun bu
+uygulamadaki reklam, analiz veya çökme raporlama hizmetleri aracılığıyla kişisel veri verdiğini
+düşünüyorsanız aşağıdaki adrese ve verinin bulunduğu taraf olan Google'a başvurun.</p>
+
+<h2>Verilerin saklanması</h2>
+<p>Geliştiricinin bir sunucusu yoktur ve kendi elinde hiçbir kullanıcı verisi saklamaz. Kullanım
+istatistikleri ve çökme raporları geliştirici adına Google'da tutulur: bir kurulumun
+tanımlayıcılarına bağlı Analytics verileri en fazla 14 ay (tanımlayıcı içermeyen toplu raporlar
+daha uzun tutulabilir), çökme raporları ise 90 gün.
+Görevler uygulama içinden silinebilir; cihazınızdaki diğer veriler, uygulamanın verilerini
+temizleyene veya uygulamayı kaldırana kadar orada kalır; Android yedeğinizdeki bir kopya ise
+cihazınızın yedekleme ayarlarına tabidir. Google'ın AdMob ve Google Play aracılığıyla, aracılık
+iş ortaklarının ise kendi hizmetleri aracılığıyla topladığı veriler, yukarıda bağlantısı verilen
+gizlilik politikalarında açıklanan kendi saklama sürelerine tabidir.</p>
+
+<h2>Güvenlik</h2>
+<p>Odak verileriniz, Android'in diğer uygulamalardan koruduğu, uygulamanın özel alanında tutulur.
+Uygulamanın kendisi verilerinizin hiçbirini ağ üzerinden göndermez. Uygulamanın kullandığı Google
+hizmetleri — AdMob, Google Play ve Firebase — verileri şifreli bağlantılar (TLS) üzerinden
+iletir; aracılık iş ortakları kendi güvenlik uygulamalarını gizlilik politikalarında anlatır.
+Uygulamada hesap bulunmadığı ve geliştirici verilerinizin bir kopyasını tutmadığı için,
+görevlerinizin veya geçmişinizin açığa çıkabileceği, geliştiriciye ait bir veritabanı yoktur.</p>
+
+<h2>Hukuki dayanaklar ve haklarınız</h2>
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde kişiselleştirilmiş reklamın hukuki dayanağı, yukarıda
+anlatılan formla alınan ve istediğiniz zaman geri çekebileceğiniz açık rızanızdır.
+Kişiselleştirilmemiş reklam, dolandırıcılık önleme ve reklam hizmetlerinin güvenliği meşru menfaate
+dayanır. Satın alma işleminizin yürütülmesi, reklam kaldırmayı satın aldığınızda kurulan sözleşmenin
+ifası için gereklidir. Kullanım istatistikleri ve çökme raporları, geliştiricinin uygulamayı
+çalışır durumda tutma ve nasıl kullanıldığını toplu olarak anlama yönündeki meşru menfaatine
+dayanır; Analytics tanımlayıcılarının cihazınızda saklanması ve verilerin reklam amacıyla
+kullanılması ise rıza formundaki seçimlerinize bağlıdır.</p>
+<p>GDPR kapsamında ve Türkiye'de 6698 sayılı KVKK kapsamında eşdeğer biçimde; kişisel verilerinizin
+işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini isteme, işlenmesini
+kısıtlama veya işlenmesine itiraz etme, veri taşınabilirliği ve rızanızı geri çekme haklarına
+sahipsiniz. Ayrıca ulusal veri koruma otoritesine şikâyette bulunabilirsiniz; Türkiye'de bu kurum
+Kişisel Verileri Koruma Kurumu'dur (KVKK).</p>
+<p>Kullanım istatistikleri ve çökme raporları takma adlıdır: adınızı ya da e-posta adresinizi değil,
+rastgele tanımlayıcılar taşır; bu yüzden geliştirici hangi kayıtların size ait olduğunu bilemez.
+Rıza formunun gösterildiği yerlerde rızanızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz etmek ya da bu konuda
+soru sormak için aşağıdaki adrese yazabilirsiniz. Uygulamayı kaldırmak ya da verilerini temizlemek
+eski tanımlayıcılarla bağı koparır; daha önce gönderilmiş veriler de yukarıdaki sürelerin sonunda
+silinir.
+Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran taraf olan Google'a veya ilgili
+aracılık iş ortağına, yukarıda bağlantısı verilen gizlilik politikalarındaki araçlar kullanılarak
+iletilmelidir. Diğer tüm konular için veya doğru yolu bulmak üzere yardım almak için aşağıdaki
+adrese yazabilirsiniz.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Uygulamanın veri uygulamaları değişirse — örneğin yeni bir üçüncü taraf hizmet eklenirse — bu
+sayfa güncellenir ve en üstteki "son güncelleme" tarihi değişir. Önemli değişiklikler ayrıca
+uygulamanın Google Play sayfasına da yansıtılır. Güncellemeden sonra uygulamayı kullanmaya devam
+etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+
+<h2 id="contact">İletişim</h2>
+<p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Bu adres, uygulamanın Google Play sayfasında yazan adresle aynıdır. Hata bildirimleri,
+  gizlilikle ilgili sorular ve veri talepleri buraya ulaşır.</p>
+</div>
+
+<footer>
+  <p>Tomato Focus — hesap yok, abonelik yok, görevleriniz ve odak geçmişiniz cihazınızda kalır.
+  Bu politika, uygulamayı ilk sürümü olan 1.0'dan itibaren açıklar.</p>
+</footer>
+
+</main>
+</body>
+</html>

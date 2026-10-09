@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Polyglance</title>
+<meta name="description" content="Polyglance Android uygulamasının gizlilik politikası. Fotoğraflarınız ve metinleriniz cihazınızda çevrilir ve cihazınızdan hiç çıkmaz.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/imagetopdf/privacy/tr/">ImageToPdf politikası</a><span class="sep">·</span><a href="/pdfpages/privacy/tr/">PdfPages politikası</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — Polyglance</h1>
+  <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.linguasnap</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 9 Ekim 2026.</span> <span>Son güncelleme: 9 Ekim 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Fotoğraflarınız ve çevirdiğiniz metinler cihazınızdan hiç çıkmaz.</strong> Hesap
+  açmanız gerekmez, giriş yapmanız gerekmez ve uygulamaya ait hiçbir sunucu yoktur. Metin tanıma,
+  dil algılama ve çeviri işlemlerinin tamamı telefonunuzda yapılır; bir dil bir kez indirildikten
+  sonra çevrimdışı çalışır.</p>
+  <p>Cihazınızdan çıkan her şey aşağıda ayrıntılı olarak anlatılmıştır: Google'dan bir kez indirilen
+  dil modelleri ve metin tanıma modülleri, Google ML Kit'in Google'a gönderdiği tanılama verileri,
+  Google'ın reklam (iş ortağı reklam ağlarıyla birlikte) ve ödeme hizmetleri ile geliştiricinin
+  Google Firebase aracılığıyla topladığı kullanım istatistikleri ve çökme raporları. Fotoğraflarınız,
+  içlerindeki metin ve çevirileriniz bunların hiçbirine girmez. Tek seferlik reklam kaldırma satın
+  alırsanız reklamlar tamamen durur; geri kalanı buna bağlı değildir.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play üzerinden <code>com.bumustudios.linguasnap</code> paket adıyla dağıtılan
+<em>Polyglance</em> Android uygulamasını kapsar. Uygulamanın bağımsız geliştiricisi BumuStudios
+tarafından yazılmıştır. Sorularınızı <a href="#contact">İletişim</a> bölümündeki adrese
+iletebilirsiniz.</p>
+
+<h2>Uygulama ne yapar</h2>
+<p>Polyglance, fotoğraflardaki metinleri ve yazdığınız metinleri çevirir. Bir tabelayı, menüyü veya
+sayfayı tarayabilir, bir fotoğraf seçebilir, 5.000 karaktere kadar metin yazıp yapıştırabilir,
+başka bir uygulamadan uygulamaya görsel veya metin paylaşabilir ya da herhangi bir uygulamada metin
+seçip <em>Polyglance ile çevir</em> seçeneğine dokunabilirsiniz. Uygulama metni okur, dilini
+belirler ve çeviriyi fotoğrafın üzerine blok blok yerleştirir; ayrıca her bloğun çevirisini ve
+aslını kopyalanabilir bir liste olarak gösterir. 59 çeviri dilini destekler, aranabilir bir geçmişi
+ve favorileri telefonunuzda tutar; kullanım sınırı ve abonelik yoktur.</p>
+
+<h2>Fotoğraflarınız ve metinleriniz cihazınızda kalır</h2>
+<p>En önemli bölüm bu olduğu için açıkça yazıyoruz:</p>
+<ul>
+  <li><strong>Fotoğraflar ve metinler hiçbir zaman yüklenmez.</strong> Uygulamanın kendine ait bir
+  sunucusu yoktur. Fotoğraflarınızı, onlarda tanınan metni, yazdığınız veya yapıştırdığınız metni ve
+  çevirilerinizi hiçbir yere göndermez; aşağıda anlatılan ML Kit tanılama verileri, reklamlar,
+  kullanım istatistikleri ve çökme raporları da bunları içermez.</li>
+  <li><strong>Tarama, uygulamanın kendi kamera erişimiyle değil, Google'ın belge tarayıcısıyla
+  yapılır.</strong> <em>Tara</em>, Google Play hizmetlerinin sağladığı ML Kit Belge Tarayıcı
+  ekranını açar; fotoğrafı çekme (veya galerinizden içe aktarma) işi Play hizmetlerinin kendi içinde
+  yapılır. Uygulama kamera iznine sahip değildir ve kameraya hiç erişmez; yalnızca sizin onayladığınız
+  tek bir hazır görseli alır.</li>
+  <li><strong>Fotoğraflar Android Fotoğraf Seçici üzerinden seçilir.</strong> Bir fotoğrafı siz
+  seçersiniz; uygulamaya yalnızca o öğeye erişim verilir, galeriniz taranmaz.</li>
+  <li><strong>Paylaşılan içerik.</strong> Uygulamaya bir görsel veya metin paylaştığınızda ya da onu
+  başka bir uygulamanın metin seçim menüsünden seçtiğinizde, uygulama yalnızca o görseli veya metni
+  alır. Bir çeviriyi dışarı paylaştığınızda, Android paylaşım penceresi üzerinden seçtiğiniz
+  uygulamaya gider; Polyglance yalnızca bir paylaşım yapıldığını not eder, nereye yapıldığını değil.
+  <em>Kopyala</em>, metni cihazınızın panosuna koyar.</li>
+  <li><strong>Özel bir çalışma kopyası.</strong> Uygulama bir fotoğrafı okumak için kendi
+  depolama alanında özel bir JPEG kopyası oluşturur; kopya, uzun kenarı en fazla 2.048 piksel
+  olacak şekilde küçültülür ve düz çevrilir. Kopya yalnızca piksellerden yeniden kodlandığı için
+  özgün dosyanın konum etiketleri gibi meta verileri ona aktarılmaz. Kopya uygulamanın önbelleğinde
+  durur ve kaydedilmeyen bir çeviriden çıktığınızda (veya bir sonraki açılışta) silinir; yalnızca
+  çeviri Geçmiş'e kaydedildiğinde uygulamanın özel dosyalarına taşınır ve o Geçmiş kaydıyla birlikte
+  silinir.</li>
+  <li><strong>Hiçbir Android sürümünde kamera veya depolama izni istenmez.</strong> Belge tarayıcı
+  ve Fotoğraf Seçici ikisini de gereksiz kılar.</li>
+</ul>
+
+<h3>Geçmiş</h3>
+<p>Tamamlanan çeviriler cihazınızdaki Geçmiş'e kaydedilir: özgün metin, çeviri, diller (ve kaynak
+dilin otomatik algılanıp algılanmadığı), her metin bloğunun fotoğraftaki konumu, tarih, favori olup
+olmadığı ve fotoğrafın özel kopyası. Geçmiş'te arama yapılabilir, kayıtlar tek tek silinebilir;
+<em>Geçmişi temizle</em> favoriler dışındaki tüm kayıtları fotoğraflarıyla birlikte siler.</p>
+<p>Bunu <strong>Ayarlar → Geçmişi sakla</strong> ile kapatabilirsiniz. Kapalıyken yeni çeviriler
+kaydedilmez; yıldızladığınız bir çeviri yine de favori olarak saklanır, yıldızı aynı oturumda geri
+aldığınızda tekrar silinir. Daha önce kaydedilmiş kayıtlar siz silene kadar kalır.</p>
+
+<h3>Uygulamanın cihazda sakladıkları</h3>
+<p>Uygulama, Geçmiş dışında cihazdaki kendi özel alanında az miktarda durum bilgisi tutar. Bunların
+hiçbiri hiçbir yere gönderilmez:</p>
+<ul>
+  <li>tema, yazı boyutu ve uygulama dili tercihleriniz, seçili kaynak ve hedef diller ile son
+  kullanılan dillerin kısa bir listesi;</li>
+  <li><em>Dilleri yalnızca Wi-Fi ile indir</em>, <em>Geçmişi sakla</em> ve tamamlanma sesi
+  ayarları;</li>
+  <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı ve ödüllü "24 saat
+  reklamsız" sürenin ne zamana kadar sürdüğü;</li>
+  <li>reklam sıklığını düşük tutmak için kullanılan, gösterilen geçiş reklamı sayacı.</li>
+</ul>
+<p>Geçmiş, fotoğrafları ve yukarıdaki ayarlar, Android bulut yedeklemesinin ve cihazdan cihaza
+aktarımın bilerek dışında bırakılmıştır (uygulamanın yedekleme kuralları veritabanını, fotoğraf
+klasörünü, ayar dosyalarını ve paylaşılan tercihlerini hariç tutar); yani Google Drive hesabınıza
+veya yeni bir telefona kopyalanmaz. İndirilen dil modellerini ML Kit yönetir; gerektiğinde yeniden
+indirilir. Google'ın reklam ve rıza bileşenleri de kendi ayarlarını cihazda, Google'ın denetiminde
+tutar; aşağıda anlatılan Google Firebase bileşenleri ise uygulamanın özel alanında üç rastgele
+tanımlayıcı saklar: bir Firebase kurulum kimliği, Analytics uygulama örneği kimliği ve bir
+Crashlytics kurulum kimliği. Yukarıdaki listenin aksine bu tanımlayıcılar kullanım istatistikleri ve
+çökme raporlarıyla birlikte gönderilir. Uygulamayı kaldırmak veya verilerini temizlemek; Geçmiş,
+fotoğraflar, ayarlar, indirilen dil modelleri ve bu tanımlayıcılar dahil uygulamanın sakladığı her
+şeyi siler.</p>
+
+<h2>Cihaz üzerinde tanıma ve çeviri — Google ML Kit</h2>
+<p>Uygulamadaki metin tanıma, dil algılama ve çeviri işlemlerini <strong>cihazınızda</strong>
+çalışan Google ML Kit yapar. Fotoğraflarınız ve metinleriniz yerel olarak işlenir; Google'a veya
+başka birine gönderilmez.</p>
+<ul>
+  <li><strong>Metin tanıma</strong> (Latin, Çince, Japonca, Korece ve Devanagari yazıları), Google
+  Play hizmetleri üzerinden kurulan tanıyıcı modüllerle yapılır. Latin modülü uygulama kurulurken
+  istenir; diğerleri bir fotoğraf onlara ilk kez ihtiyaç duyduğunda indirilir. <em>Yalnızca
+  Wi-Fi</em> ayarı bu indirmeler için de geçerlidir.</li>
+  <li><strong>Dil algılama</strong>, uygulamanın içinde gelen bir modelle yapılır ve ilk açılıştan
+  itibaren çevrimdışı çalışır.</li>
+  <li><strong>Çeviri</strong>, dil başına yaklaşık 30 MB'lık bir dil modeliyle yapılır; model, o
+  dile ilk ihtiyaç duyduğunuzda veya <em>Çevrimdışı diller</em> ekranından bir kez Google
+  sunucularından indirilir (İngilizce uygulamayla birlikte gelir). İndirme isteği yalnızca model
+  dosyasını ister; metniniz bu isteğe girmez. İndirilen modeller cihazda kalır,
+  <em>Çevrimdışı diller</em> ekranından silinebilir ve bağlantı olmadan çeviri yapar. Varsayılan
+  olarak modeller yalnızca Wi-Fi veya ücretlendirilmeyen başka bir ağ üzerinden indirilir; mobil
+  veride uygulama önce size sorar.</li>
+</ul>
+<p>Google'ın ML Kit koşullarında belirtildiği gibi, ML Kit'in kendisi Google'a HTTPS üzerinden
+sınırlı tanılama ve kullanım bilgisi gönderir: cihaz bilgileri (model ve işletim sistemi sürümü
+gibi), uygulamanın paket adı ve sürümü, tanılama ve kullanım analizi için kullanılan bir cihaz
+tanımlayıcısı, performans ölçümleri ve hata kodları; dil algılama ve çeviri için de ilgili diller
+(algılanan dil ile seçilen kaynak ve hedef diller). İşlenen görseller ve metinler bunlara asla
+girmez. Google bunu <a href="https://developers.google.com/ml-kit/terms">ML Kit koşullarında</a> ve
+<a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit veri
+açıklamasında</a> anlatır.</p>
+<p>ML Kit çeviri koşullarının gerektirdiği gibi sonuçlarda "Powered by Google Translate" notu yer
+alır; çeviri temel düzeyde bir makine çevirisidir: tabelalar, menüler ve bir metnin ana fikri için
+yeterlidir, doğruluğun önemli olduğu belgeler için uygun değildir.</p>
+
+<h2>Reklamlar — Google AdMob ve aracılık (mediation) ortakları</h2>
+<p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
+tarafından sunulan reklamlarla desteklenir. AdMob, uygulamaya bir yazılım geliştirme kiti olarak
+gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>.</p>
+<p>Uygulama ayrıca altı iş ortağı reklam ağının aracılık adaptörlerini ve SDK'larını içerir:
+AppLovin, Unity Ads, Liftoff Monetize (Vungle), Meta Audience Network, Mintegral ve Pangle. AdMob,
+aracılık (mediation) yoluyla bir reklam isteğini, o isteği karşılayabilecek olan bu ortaklardan
+birine iletebilir. İsteği alan ortak, aşağıda listelenen ve AdMob'un topladığıyla aynı türdeki
+verileri toplar ve kendi gizlilik politikasına göre işler. Reklamlar gösterilirken AdMob, ortakları
+ve Google'ın reklam iş ortakları şunları toplayıp işleyebilir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Veri</th><th>Kullanım amacı</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reklam kimliği (Android'in atadığı, sıfırlanabilir tanımlayıcı)</td>
+      <td>Reklam sunumu, gösterim sıklığı sınırlama, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, IP adresinden türetilen kaba konum</td>
+      <td>Ülkenize veya bölgenize uygun reklam sunumu ve yasal uyumluluk</td>
+    </tr>
+    <tr>
+      <td>Cihaz bilgileri — model, işletim sistemi sürümü, dil, ekran ve ağ özellikleri</td>
+      <td>Reklamların doğru görüntülenmesi, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Uygulama etkileşim olayları — bir reklamın istendiği, gösterildiği, tıklandığı veya
+      kapatıldığı bilgisi</td>
+      <td>Reklam ölçümü, reklamverenlerin faturalandırılması, dolandırıcılık önleme</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Uygulama GPS veya hassas konum izni <strong>istemez</strong> ve fotoğraflarınızı, tanınan
+metinleri veya çevirilerinizi AdMob'a ya da herhangi bir reklam ortağına göndermez. Geliştirici,
+AdMob'dan veya ortaklarından hiçbir kişisel veri almaz; yalnızca gösterim ve gelir toplamları gibi
+toplulaştırılmış, anonim raporlar görür.</p>
+<p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden uygulama
+<code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Reklam biçimleri ve
+göründükleri yerler:</p>
+<ul>
+  <li><strong>Banner</strong> — Ana sayfa ve Geçmiş ekranlarının altında, gezinme çubuğunun
+  altında; Geçmiş'te yalnızca en az bir çeviri kaydedilmişse.</li>
+  <li><strong>Geçiş reklamı</strong> — yalnızca o oturumda yapılan bir çeviri kaydedildikten veya
+  paylaşıldıktan sonra sonuç ekranından çıkarken. Bu türden ilk iki anınızda hiç gösterilmez, iki
+  geçiş reklamı arasında her zaman en az iki dakika olur; eski bir Geçmiş kaydını yalnızca yeniden
+  açtığınızda veya sonuç ekranından çıkmak uygulamayı kapattığında gösterilmez.</li>
+  <li><strong>Ödüllü reklam</strong> — isteğe bağlıdır, <em>Ayarlar → 24 saat reklamsız</em>
+  bölümündedir: kısa bir video izlemek reklamları 24 saat kapatır. Bu giriş yalnızca bir video hazır
+  olduğunda görünür.</li>
+  <li><strong>Uygulama açılış reklamı</strong> — uygulamaya geri döndüğünüzde, en fazla dört saatte
+  bir; uygulama sıfırdan açıldığında, uygulamanın kendi açtığı belge tarayıcı, fotoğraf seçici,
+  paylaşım penceresi, satın alma ekranı veya web tarayıcısından döndüğünüzde ve uygulama kendisine
+  paylaşılan bir şeyi çevirmek için açıldığında asla gösterilmez.</li>
+</ul>
+<p>Hiçbir reklam tarama, metin tanıma, çeviri, kopyalama, Geçmiş veya dil indirme işlemlerinin
+önüne geçmez.</p>
+<p>Google'ın ve ortakların bu verileri nasıl işlediği bu politikaya değil, kendi politikalarına
+tabidir:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites">Google, hizmetlerimizi
+  kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543">AdMob ve üçüncü taraf reklamcılık</a></li>
+  <li><a href="https://legal.applovin.com/privacy/">AppLovin Gizlilik Politikası</a></li>
+  <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Oyuncu ve
+  Uygulama Kullanıcısı Gizlilik Politikası</a></li>
+  <li><a href="https://liftoff.ai/privacy-policy/">Liftoff (Vungle) Gizlilik Politikası</a></li>
+  <li><a href="https://www.facebook.com/privacy/policy/">Meta Gizlilik Politikası</a> (Meta Audience
+  Network)</li>
+  <li><a href="https://www.mintegral.com/en/privacy">Mintegral Gizlilik Politikası</a></li>
+  <li><a href="https://www.pangleglobal.com/privacy">Pangle Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
+<p>Uygulamanın nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici uygulamaya
+iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
+Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca uygulamanın
+Google Play üzerinden dağıtılan sürümünde çalışır. Uygulama, bu hizmetlerin topladıklarına
+kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
+log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Uygulama örneği kimliği — Analytics'in bu kurulum için oluşturduğu rastgele bir
+      tanımlayıcı</td>
+      <td>Kim olduğunuzu bilmeden kurulumları ve oturumları saymak</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği — yukarıda anlatılan sıfırlanabilir tanımlayıcı; uygulama AdMob için
+      <code>AD_ID</code> iznini tanımladığından Analytics de ona erişebilir</td>
+      <td>Kullanım istatistikleri; reklam amaçlı kullanım yalnızca rıza seçimlerinizin izin
+      verdiği ölçüde (aşağıda)</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, maskelenmiş IP adresinizden türetilen ülke veya bölge</td>
+      <td>Ülkeye ve bölgeye göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Cihaz ve uygulama bilgileri — cihaz modeli, işletim sistemi sürümü, dil, uygulama
+      sürümü</td>
+      <td>Cihaza, Android sürümüne, dile ve uygulama sürümüne göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Kullanım olayları — ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi,
+      uygulamanın güncellenmesi ve kaldırılması</td>
+      <td>Uygulamayı kaç kişinin, ne sıklıkla ve ne kadar süre kullandığı, hangi ekranları
+      açtığı</td>
+    </tr>
+    <tr>
+      <td>Uygulamanın nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
+      sayfası ya da bir kampanya bağlantısı)</td>
+      <td>Kurulumların nereden geldiğini saymak</td>
+    </tr>
+    <tr>
+      <td>Google Play'in bildirdiği satın alma olayları — tek seferlik "reklamları kaldır" satın
+      almasının ürünü, adı ve fiyatı</td>
+      <td>Satın almaları saymak; kart veya ödeme bilgisi içermez</td>
+    </tr>
+    <tr>
+      <td>Çökme raporları; yalnızca uygulama çöktüğünde ya da ölümcül bir hatayla
+      karşılaştığında gönderilir — yığın izi (stack trace), uygulamanın o andaki durumu, cihaz
+      bilgileri (model, işletim sistemi sürümü, ekran yönü, boş bellek ve disk alanı) ve rastgele
+      bir Crashlytics kurulum kimliği</td>
+      <td>Çökmeleri bulup düzeltmek ve bir çökmenin kaç kurulumu etkilediğini saymak</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını kaydeder, o ekranda ne
+yaptığınızı değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, içeriğinizi
+değil: hiçbir fotoğraf, tanınan metin veya çeviri ikisine de girmez. İki hizmet de adınızı, e-posta
+adresinizi veya herhangi bir hesap bilginizi almaz.</p>
+<p>AEA'da, Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan
+rıza formu Analytics'i de kapsar: oradaki seçimleriniz, Analytics'in tanımlayıcılarını cihazınızda
+saklayıp saklayamayacağını ve verilerin reklam amacıyla kullanılıp kullanılamayacağını belirler.
+Verilerin reklam için kullanılması ("ad user data") ve reklam kişiselleştirmesi bu bölgelerde siz
+rıza verene kadar kapalı kalır. Seçiminizi dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan değiştirebilirsiniz; bu giriş gerekli olduğu yerlerde görünür.
+Uygulamada kullanım istatistikleri veya çökme raporları için ayrı bir anahtar yoktur; uygulamayı
+kaldırmak ikisini de durdurur.</p>
+<p>Analytics, bir kurulumun tanımlayıcılarına bağlı verileri en fazla 14 ay saklar; tanımlayıcı
+içermeyen toplu raporlar daha uzun tutulabilir. Crashlytics çökme raporlarını 90 gün saklar.</p>
+<p>Google bu verileri geliştirici adına, veri işleyen sıfatıyla, Firebase ve Google Analytics veri
+işleme koşulları kapsamında işler. Veriler, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz
+dışındaki Google sunucularında işlenebilir ve aktarım sırasında şifrelenir (TLS).</p>
+<p>Google bu hizmetleri şu sayfalarda anlatır:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Satın alma ve güncellemeler — Google Play</h2>
+<p>Uygulamada, reklamları kalıcı olarak kaldıran tek seferlik ve isteğe bağlı tek bir satın alma
+vardır. Abonelik veya yinelenen hiçbir ödeme yoktur.</p>
+<p>İşlemin tamamı Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
+numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı asla görmez ve almaz.</strong>
+Google Play yalnızca toplulaştırılmış satış rakamlarını bildirir; Google Analytics for Firebase de
+satın almanın yapıldığını — ürünü, adını ve fiyatını, hiçbir ödeme bilgisi olmadan — kaydeder
+(yukarıya bakın). Uygulama içinde satın alma, cihazınızda tek bir doğru/yanlış işareti olarak
+tutulur; uygulamayı yeniden kurduğunuzda veya yeni bir cihaza geçtiğinizde Google Play hesabınızdan
+geri yüklenir. Uygulama ayrıca Google Play'in uygulama içi güncelleme hizmetini kullanır; bu hizmet
+daha yeni bir sürüm olup olmadığını Google Play'e sorar ve sürümü arka planda indirir. Ödeme
+verilerinizin Google tarafından işlenmesi
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
+koşulları kapsamındadır.</p>
+
+<h2>Reklam tercihleriniz</h2>
+
+<h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
+<p>Kişiselleştirilmiş reklam istenmeden önce uygulama, Google'ın User Messaging Platform altyapısıyla
+hazırlanmış bir rıza formu gösterir; neye izin vereceğinizi burada seçersiniz. Seçiminiz Google'ın
+bileşeni tarafından cihazınızda saklanır, sonraki açılışlarda dikkate alınır ve aracılık
+ortaklarının okuduğu sektör standardı rıza sinyaliyle (IAB TCF) onlara da iletilir.</p>
+<p><strong>Kararınızı istediğiniz zaman değiştirebilirsiniz:</strong> uygulamayı açın,
+<em>Ayarlar → Gizlilik seçenekleri</em> bölümüne gidin; aynı form yeniden görünür. Rızanızı buradan
+geri çekebilirsiniz. Rızayı geri çekmek uygulamayı devre dışı bırakmaz; tarama ve çeviri yapmaya
+devam edebilirsiniz ve reklamlar kişiselleştirilmemiş biçimde gösterilmeye devam edebilir. Aynı
+seçimler, yukarıda anlatıldığı gibi Google Analytics for Firebase için de geçerlidir.</p>
+
+<h3>Gizlilik yasası olan bir ABD eyaletindeyseniz</h3>
+<p>ABD eyalet gizlilik yasalarının uygulandığı yerlerde aynı Google rıza aracı, kişisel
+bilgilerinizin reklam amacıyla satılmasını veya paylaşılmasını reddetmenizi sağlayan bir bildirim
+gösterebilir. Gösterdiği durumlarda bu seçiminizi daha sonra <em>Ayarlar → Gizlilik seçenekleri</em>
+bölümünden gözden geçirebilirsiniz.</p>
+
+<h3>Diğer ülkelerde</h3>
+<p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak zorunlu olduğu yerlerde göründüğü
+için sizde görünmeyebilir. Reklamları yine de işletim sistemi düzeyinde denetleyebilirsiniz: Android
+<em>Ayarlar → Gizlilik → Reklamlar</em> bölümünden (tam yol üreticiye ve Android sürümüne göre
+değişir) reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz; silmeniz durumunda
+uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
+
+<h3>Reklamları tamamen kaldırmak</h3>
+<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın AdMob'dan ve tüm aracılık ortaklarından
+reklam istemesini tümüyle durdurur. Ödüllü "24 saat reklamsız" süre de 24 saat boyunca aynısını
+yapar.</p>
+
+<h2>Uygulamanın istediği izinler</h2>
+<div class="card">
+<ul>
+  <li><code>INTERNET</code> — dil modellerinin ve metin tanıma modüllerinin indirilmesi, reklamların
+  alınması, Google Play ile iletişim (satın alma ve güncellemeler) ve yukarıda anlatılan kullanım
+  istatistikleri, çökme raporları ve ML Kit tanılama verilerinin gönderilmesi için gereklidir.
+  Fotoğraflarınız, metinleriniz ve çevirileriniz asla gönderilmez.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — dil indirmelerinin <em>Yalnızca Wi-Fi</em> ayarına uyması
+  için uygulamanın çevrimiçi olup olmadığınızı ve bağlantının ücretlendirilip
+  ücretlendirilmediğini kontrol etmesini, reklam bileşenlerinin de yükleme denemesinden önce bağlantı
+  olup olmadığını kontrol etmesini sağlar.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
+  aracılık ortaklarının ve Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına
+  erişim.</li>
+</ul>
+</div>
+<p>Uygulamanın kendisinin tanımladığı izinler bunlardır. İçindeki Google ve reklam ağı bileşenleri,
+Android'in kurulum sırasında size sormadan verdiği birkaç izin daha ekler; örneğin Google Play'in
+faturalandırma ve kurulum yönlendiricisi izinleri, reklam SDK'larının kullandığı Wi-Fi durumu,
+uyanık tutma (wake lock) ve titreşim izinleri ile Android'in reklam hizmetleri izinleri. Uygulama
+bildirim izni istemez, cihaz açılışında hiçbir şey çalıştırmaz ve hiçbir Android sürümünde kamera,
+depolama, fotoğraflar, kişiler, mikrofon, hassas konum veya hesap izni istemez. <em>Tara</em>
+özelliğinin kullandığı kamera, yukarıda anlatıldığı gibi Google Play hizmetlerinin belge
+tarayıcısına aittir.</p>
+
+<h2>Çocuklar</h2>
+<p>Bu uygulama genel amaçlı bir araçtır. <strong>13 yaşın altındaki çocuklara yönelik değildir</strong>
+(AEA'da 16 yaşın altındakilere veya ülkenizdeki eşdeğer asgari yaşın altındakilere de), çocuklara
+yönelik bir kategoride listelenmemiştir ve çocuklar için tasarlanmamış, çocuklara pazarlanmamıştır.
+Geliştirici, çocuklardan bilerek hiçbir kişisel veri toplamaz. Bir çocuğun bu uygulamadaki reklam,
+analiz veya çökme raporlama hizmetleri aracılığıyla kişisel veri verdiğini düşünüyorsanız aşağıdaki
+adrese ve verinin bulunduğu taraf olan Google'a başvurun.</p>
+
+<h2>Verilerin saklanması</h2>
+<p>Geliştiricinin bir sunucusu yoktur ve kendi elinde hiçbir kullanıcı verisi saklamaz. Kullanım
+istatistikleri ve çökme raporları geliştirici adına Google'da tutulur: bir kurulumun
+tanımlayıcılarına bağlı Analytics verileri en fazla 14 ay (tanımlayıcı içermeyen toplu raporlar
+daha uzun tutulabilir), çökme raporları ise 90 gün.
+Geçmiş, fotoğrafları ve cihazınızdaki diğer her şey, siz uygulama içinden silene, uygulamanın
+verilerini temizleyene veya uygulamayı kaldırana kadar orada kalır. Google'ın AdMob, ML Kit ve
+Google Play aracılığıyla ve aracılık ortaklarının topladığı veriler, yukarıda bağlantısı verilen
+politikalarda açıklanan kendi saklama sürelerine tabidir.</p>
+
+<h2>Hukuki dayanaklar ve haklarınız</h2>
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde kişiselleştirilmiş reklamın hukuki dayanağı, yukarıda
+anlatılan formla alınan ve istediğiniz zaman geri çekebileceğiniz açık rızanızdır.
+Kişiselleştirilmemiş reklam, dolandırıcılık önleme ve reklam hizmetlerinin güvenliği meşru menfaate
+dayanır. Satın alma işleminizin yürütülmesi, reklam kaldırmayı satın aldığınızda kurulan sözleşmenin
+ifası için gereklidir. Kullanım istatistikleri, çökme raporları ve ML Kit tanılama verileri,
+geliştiricinin uygulamayı çalışır durumda tutma ve nasıl kullanıldığını toplu olarak anlama
+yönündeki meşru menfaatine dayanır; Analytics tanımlayıcılarının cihazınızda saklanması ve
+verilerin reklam amacıyla kullanılması ise rıza formundaki seçimlerinize bağlıdır.</p>
+<p>GDPR kapsamında ve Türkiye'de 6698 sayılı KVKK kapsamında eşdeğer biçimde; kişisel verilerinizin
+işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini isteme, işlenmesini
+kısıtlama veya işlenmesine itiraz etme, veri taşınabilirliği ve rızanızı geri çekme haklarına
+sahipsiniz. Ayrıca ulusal veri koruma otoritesine şikâyette bulunabilirsiniz; Türkiye'de bu kurum
+Kişisel Verileri Koruma Kurumu'dur (KVKK).</p>
+<p>Kullanım istatistikleri ve çökme raporları takma adlıdır: adınızı ya da e-posta adresinizi değil,
+rastgele tanımlayıcılar taşır; bu yüzden geliştirici hangi kayıtların size ait olduğunu bilemez.
+Rıza formunun gösterildiği yerlerde rızanızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz etmek ya da bu konuda
+soru sormak için aşağıdaki adrese yazabilirsiniz. Reklam kimliğinizi Android ayarlarından dilediğiniz
+zaman sıfırlayabilir veya silebilirsiniz. Uygulamayı kaldırmak ya da verilerini temizlemek eski
+tanımlayıcılarla bağı koparır; daha önce gönderilmiş veriler de yukarıdaki sürelerin sonunda silinir.
+Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran taraf olan Google'a veya ilgili
+aracılık ortağına, yukarıda bağlantısı verilen gizlilik politikalarındaki araçlar kullanılarak
+iletilmelidir. Diğer tüm konular için veya doğru yolu bulmak üzere yardım almak için aşağıdaki
+adrese yazabilirsiniz.</p>
+
+<h2>Güvenlik</h2>
+<p>Geçmiş, fotoğraflar ve ayarlar, Android'in diğer uygulamalardan yalıttığı uygulamaya özel
+depolama alanında tutulur ve yedeklemelerin dışında bırakılır. Uygulamanın bileşenlerinin ağ
+üzerinden gönderdiği her şey — dil modeli indirmeleri, reklamlar, Google Play, ML Kit tanılama
+verileri ve Firebase — şifreli olarak (HTTPS/TLS) iletilir. Hiçbir depolama veya iletim yöntemi
+kusursuz biçimde güvenli değildir; ancak en hassas kısım olan fotoğraflarınız ve metinleriniz zaten
+cihazdan hiç çıkmaz.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Uygulamanın veri uygulamaları değişirse — örneğin yeni bir üçüncü taraf hizmet eklenirse — bu
+sayfa güncellenir ve en üstteki "son güncelleme" tarihi değişir. Önemli değişiklikler ayrıca
+uygulamanın Google Play sayfasına da yansıtılır. Güncellemeden sonra uygulamayı kullanmaya devam
+etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+<p>Bu, politikanın ilk sürümüdür; uygulamanın ilk yayını için 9 Ekim 2026 tarihinde
+yayımlanmıştır.</p>
+
+<h2 id="contact">İletişim</h2>
+<p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Bu adres, uygulamanın Hakkında ekranında ve Google Play sayfasında yazan adresle aynıdır. Hata
+  bildirimleri, gizlilikle ilgili sorular ve veri talepleri buraya ulaşır.</p>
+</div>
+
+<footer>
+  <p>Polyglance — telefonunuzda fotoğraf ve metin çevirisi; hesap yok, sınır yok, fotoğraflarınız ve
+  metinleriniz cihazınızda kalır. Bu politika, uygulamanın ilk yayınından (1.0.0 sürümü) itibaren
+  yayımlanan sürümlerini açıklar.</p>
+</footer>
+
+</main>
+</body>
+</html>

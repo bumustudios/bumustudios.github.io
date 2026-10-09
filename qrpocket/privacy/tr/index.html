@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — QR Pocket</title>
+<meta name="description" content="QR Pocket Android uygulamasının gizlilik politikası. Taramalarınız ve kodlarınız cihazınızdan hiç çıkmaz.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/imagetopdf/privacy/tr/">ImageToPdf politikası</a><span class="sep">·</span><a href="/pdfpages/privacy/tr/">PdfPages politikası</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — QR Pocket</h1>
+  <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.qrpocket</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 9 Ekim 2026.</span> <span>Son güncelleme: 9 Ekim 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Taradıklarınız ve oluşturduğunuz kodlar cihazınızdan hiç çıkmaz.</strong> Hesap
+  açmanız gerekmez, giriş yapmanız gerekmez ve uygulamaya ait hiçbir sunucu yoktur. Kodlar
+  telefonunuzda okunur ve oluşturulur; tarama geçmişiniz yalnızca telefonunuzda tutulur. Uygulama
+  kamera iznine sahip değildir.</p>
+  <p>Cihazınızdan çıkan her şey aşağıda ayrıntılı olarak anlatılmıştır: Google AdMob ve aracılık
+  (mediation) iş ortakları üzerinden sunulan reklamlar, Google'ın ödeme hizmetleri ile geliştiricinin
+  Google Firebase aracılığıyla topladığı kullanım istatistikleri ve çökme raporları. Taramalarınızın
+  içeriği, geçmişiniz, görselleriniz ve Wi-Fi şifreleriniz bunların hiçbirine girmez. Tek seferlik
+  reklam kaldırma satın alırsanız reklamlar tamamen durur; kullanım istatistikleri ve çökme
+  raporları buna bağlı değildir.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play üzerinden <code>com.bumustudios.qrpocket</code> paket adıyla dağıtılan
+<em>QR Pocket: Scanner &amp; Generator</em> (telefonunuzda <em>QR Pocket</em> adıyla görünür)
+Android uygulamasını kapsar. Uygulamanın geliştiricisi olan bağımsız geliştirici BumuStudios
+tarafından yazılmıştır. Sorularınızı <a href="#contact">İletişim</a> bölümündeki adrese
+iletebilirsiniz.</p>
+
+<h2>Uygulama ne yapar</h2>
+<p>QR Pocket, QR kodlarını ve barkodları kamerayla, seçtiğiniz bir fotoğraftan veya uygulamaya
+paylaştığınız bir görselden tarar ve içeriklerini gösterir: bağlantılar, Wi-Fi ağları, kişiler,
+e-posta, telefon ve SMS bilgileri, konumlar, takvim etkinlikleri, ürün kodları ve düz metin.
+Ayrıca görsel olarak kaydedebileceğiniz veya paylaşabileceğiniz kodlar oluşturur (metin, bağlantı,
+Wi-Fi, kişi, e-posta, telefon, SMS, konum, EAN-13 ve Code 128). Taranan ve oluşturulan kodlar,
+arama ve favori özellikleri olan bir geçmişte tutulabilir. Abonelik yoktur.</p>
+
+<h2>Taramalarınız ve kodlarınız cihazınızda kalır</h2>
+<p>En önemli bölüm bu olduğu için açıkça yazıyoruz:</p>
+<ul>
+  <li><strong>Taradığınız veya oluşturduğunuz hiçbir şey yüklenmez.</strong> Uygulamanın kendine ait
+  bir sunucusu yoktur. Bir kodun içeriğini, geçmişinizi, görsellerinizi veya kod oluşturucuya
+  yazdıklarınızı hiçbir yere göndermez; aşağıda anlatılan kullanım istatistikleri ve çökme raporları
+  da bunları asla içermez: bir çökme raporu, içeriğinizi değil, çökmenin kodun neresinde olduğunu
+  gösterir.</li>
+  <li><strong>Kamera tarayıcısı Google'a aittir ve Google Play hizmetlerinde çalışır.</strong>
+  <em>Kamerayla tara</em>, Google Play hizmetlerinin sağladığı bir ekran olan Google Code Scanner'ı
+  açar. Kamera önizlemesi ve kodun algılanması Google Play hizmetlerinin kendi işleminde gerçekleşir;
+  QR Pocket hiçbir kamera karesi almaz, yalnızca kodun çözülmüş metnini ve biçimini alır. QR Pocket
+  <code>CAMERA</code> iznini tanımlamaz ve bu izne sahip değildir. Kamera erişimi gerekirse bunu
+  Google Play hizmetleri kendi tarayıcısı için ister; bu izin bu uygulamaya değil, Google Play
+  hizmetlerine aittir. Google Play hizmetleri, tarayıcı modülünü uygulama kurulurken veya ilk
+  kullanımda arka planda indirebilir.</li>
+  <li><strong>Görseller Android Fotoğraf Seçici üzerinden ya da siz paylaştığınız için okunur.</strong>
+  <em>Görselden tara</em> ile tek bir resim seçersiniz; uygulamaya yalnızca o öğeye erişim verilir,
+  galeriniz taranmaz. Başka bir uygulamadan QR Pocket'a bir görsel de paylaşabilirsiniz; o görsel de
+  aynı şekilde taranır. Görsel yalnızca içindeki kodları bulmak için okunur; kopyalanmaz ve
+  saklanmaz.</li>
+  <li><strong>Görsel tarama cihazda yapılır.</strong> Bir görseldeki kodlar, modeli uygulamanın
+  içinde bulunan ve çevrimdışı çalışan Google ML Kit barkod tarama ile bulunur; ML Kit'in
+  kaçırdığı görseller için ikinci çözücü olarak açık kaynaklı ZXing kütüphanesi kullanılır.
+  Oluşturduğunuz her kodu da ZXing çizer. Aşağıdaki
+  <a href="#mlkit">Google ML Kit ve Code Scanner</a> bölümüne bakın.</li>
+  <li><strong>Kaydedilen kodlar MediaStore üzerinden yazılır:</strong> PNG görsel olarak,
+  cihazınızın kendi depolama alanındaki <code>Pictures/QR Pocket</code> klasörüne kaydedilir.
+  Android 9 ve öncesinde, ayrıca ortak klasör bir dosyayı kabul etmediğinde, görsel uygulamanın
+  cihazdaki kendi klasörüne kaydedilir ve uygulama bunu size söyler; oradaki dosyalar uygulama
+  kaldırılırsa silinir, <code>Pictures/QR Pocket</code> içindeki görseller ise siz silene kadar
+  kalır. Hiçbir Android sürümünde depolama izni istenmez.</li>
+  <li><strong>Paylaşılanlar yalnızca sizin seçtiğiniz yere gider.</strong> Bir koddaki
+  <em>Paylaş</em> ve Geçmiş'teki <em>CSV olarak dışa aktar</em>, dosyayı sistemin Paylaş penceresine
+  verir; dosya yalnızca orada seçtiğiniz uygulamaya veya kişiye gider. Bunun için dosya önce
+  uygulamanın özel önbelleğine konur (bir sonraki paylaşımda üzerine yazılır; önbellek
+  temizlendiğinde veya uygulama kaldırıldığında silinir).</li>
+</ul>
+
+<h3>Bağlantılar yalnızca siz dokunduğunuzda ve önce denetlenerek açılır</h3>
+<p>Bir kodu taramak kendiliğinden hiçbir şey açmaz. Sonuç ekranı önce içeriğin tamamını ve bir
+bağlantı söz konusuysa gerçekte gittiği web adresini büyük harflerle gösterir. Uygulama bağlantıyı
+çevrimdışı olarak, cihazda denetler — hiçbir şey sorgulanmaz, hiçbir şey hiçbir yere gönderilmez —
+ve kötü amaçlı kodlarda kullanılan bilinen hilelere karşı sizi uyarır: alan adı yerine çıplak bir
+IP adresi, benzer görünen uluslararası karakterler (punycode), gerçek hedefi gizleyen bilinen
+bağlantı kısaltıcılar, <code>@</code> işaretinden önce yazılmış sahte bir adres, şifrelenmemiş
+<code>http</code> ve alışılmadık portlar. Uyarı taşıyan bir bağlantı açılmadan önce onayınızı
+ister. <code>javascript:</code>, <code>data:</code>, <code>file:</code> veya <code>intent:</code>
+gibi şemaları kullanan bağlantılar hiçbir zaman açılmaz. Bu denetimler riski azaltır ama bir sitenin
+güvenli olduğunu garanti edemez; lütfen açmadan önce adrese bakın.</p>
+<p>Bir bağlantıyı açmayı seçtiğinizde bağlantı tarayıcınızda açılır; ziyaret ettiğiniz web sitesinin
+bu politikanın kapsamadığı kendi gizlilik uygulamaları vardır. Aynı durum bir sonuçtaki diğer
+işlemler için de geçerlidir: bir numarayı aramak, e-posta veya SMS yazmak, bir konumu haritada
+göstermek, bir ürün kodunu web'de aramak, kişi veya takvim etkinliği eklemek. Bunların her biri
+yalnızca siz dokunduğunuzda gerçekleşir ve bilgileri telefonunuzdaki başka bir uygulamaya
+(arama, e-posta, harita, tarayıcı, kişiler veya takvim uygulamanıza) iletir; onayı orada siz
+verirsiniz. QR Pocket bunların hiçbiri için kişiler, takvim, telefon, SMS veya konum izni
+gerektirmez; kişilerinizi veya takviminizi okuyamaz.</p>
+
+<h3>Wi-Fi kodları</h3>
+<p>Bir Wi-Fi kodu için uygulama ağ adını, güvenlik türünü ve siz göstermeyi seçene kadar gizli
+kalan şifreyi gösterir. <em>Bu ağa bağlan</em> (Android 11 ve sonrası), bilgileri doldurulmuş olarak
+Android'in kendi "ağ ekle" ekranını açar ve onayı orada siz verirsiniz; <em>Wi-Fi ayarlarını
+aç</em> sistem ayarlarını açar. Uygulama Wi-Fi bağlantılarınızı kendisi okumaz, taramaz veya
+değiştirmez ve Wi-Fi ayarlarını değiştirme iznine sahip değildir. Bir Wi-Fi şifresini
+kopyaladığınızda uygulama onu hassas olarak işaretler; böylece Android 13 ve sonrası pano
+önizlemesinde onu gizler.</p>
+<p>Wi-Fi şifresi kodun içeriğinin bir parçasıdır; bu yüzden <em>Geçmişi sakla</em> açıksa, diğer
+taramalar gibi cihazdaki geçmişinizde saklanır. Geçmişin bulut yedeklemesinin dışında tutulmasının
+nedenlerinden biri budur (aşağıda).</p>
+
+<h3>Uygulamanın cihazda sakladıkları</h3>
+<p>Uygulama, cihazdaki kendi özel alanında aşağıdakileri tutar. Bunların hiçbiri hiçbir yere
+gönderilmez:</p>
+<ul>
+  <li><strong>Geçmişiniz</strong>, <em>Ayarlar → Geçmişi sakla</em> açık olduğu sürece (varsayılan
+  olarak açıktır): taradığınız her kod ile oluşturup kaydettiğiniz veya paylaştığınız her kod için
+  içeriği, biçimi, türü, kameradan mı, bir görselden mi yoksa kod oluşturucudan mı geldiği, kısa bir
+  başlık, zamanı ve favori olarak işaretleyip işaretlemediğiniz. En yeni 5.000 kayıt tutulur;
+  favoriler hiçbir zaman kendiliğinden silinmez. Tek tek kayıtları silebilir, geçmişin tamamını
+  (favorileri koruyarak veya korumadan) temizleyebilir ya da <em>Geçmişi sakla</em>'yı
+  kapatabilirsiniz; kapattığınızda yeni taramalar ve kodlar artık kaydedilmez.</li>
+  <li>ayarlarınız: tema, yazı boyutu, dil, tarama sesi ve titreşim, <em>Geçmişi sakla</em> ve
+  <em>Otomatik kopyala</em>;</li>
+  <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı ve ödüllü videoyla
+  kazanılan 24 saatlik reklamsız sürenin ne zaman bittiği;</li>
+  <li>reklam sıklığını düşük tutmak için kullanılan, gösterilen geçiş reklamı sayacı.</li>
+</ul>
+<p><em>Otomatik kopyala</em>'yı açarsanız (varsayılan olarak kapalıdır), her taramanın içeriği
+telefonunuzun panosuna da konur; kopyaladığınız her şeyde olduğu gibi, kullandığınız başka
+uygulamalar onu okuyabilir.</p>
+<p>Geçmiş veritabanı ve uygulamanın ayar dosyaları, hem Android 12 ve sonrasında hem de daha eski
+sürümlerde Android bulut yedeklemesinin ve cihazdan cihaza aktarımın dışında bırakılmıştır; yani
+Google Drive hesabınıza veya yeni bir telefona kopyalanmaz. Google'ın reklam ve rıza bileşenleri de
+kendi ayarlarını cihazda, Google'ın denetiminde tutar; aşağıda anlatılan Google Firebase
+bileşenleri ise uygulamanın özel alanında üç rastgele tanımlayıcı saklar: bir Firebase kurulum
+kimliği, Analytics uygulama örneği kimliği ve bir Crashlytics kurulum kimliği. Yukarıdaki listenin
+aksine bu tanımlayıcılar kullanım istatistikleri ve çökme raporlarıyla birlikte gönderilir.
+Uygulamayı kaldırmak veya verilerini temizlemek, geçmişiniz ve bu tanımlayıcılar dahil uygulamanın
+sakladığı her şeyi siler. <code>Pictures/QR Pocket</code> klasörüne kaydettiğiniz görseller ile
+başka uygulamalara paylaştığınız veya dışa aktardığınız dosyalar size aittir ve silinmez.</p>
+
+<h2 id="mlkit">Google ML Kit ve Code Scanner</h2>
+<p>İki tarama yöntemi de cihazda çalışan Google teknolojisini kullanır:</p>
+<ul>
+  <li><strong>Görselden tara</strong>, Google ML Kit barkod taramayı kullanır. Modeli uygulamanın
+  içinde gelir; bu nedenle görseller telefonunuzda, çevrimdışı olarak işlenir ve Google'a ya da
+  geliştiriciye gönderilmez.</li>
+  <li><strong>Kamerayla tara</strong>, Google Play hizmetlerinin bir parçası olan Google Code
+  Scanner'ı kullanır; modülü Google Play hizmetleri aracılığıyla indirilip güncellenebilir. Kamera
+  görüntüsü cihazda Google Play hizmetleri tarafından işlenir ve QR Pocket'a yalnızca çözülmüş
+  sonuç iletilir.</li>
+</ul>
+<p>Google'ın <a href="https://developers.google.com/ml-kit/terms">ML Kit koşulları</a> uyarınca
+Google, bu özellikleri sürdürmek ve geliştirmek için onlar hakkında sınırlı kullanım ve performans
+bilgileri (örneğin hangi API'nin kullanıldığı, işlemin ne kadar sürdüğü, cihaz ve uygulama
+bilgileri) toplayabilir. Bunlar hiçbir zaman görselleri, kamera karelerini veya kodların içeriğini
+kapsamaz.</p>
+
+<h2>Reklamlar — Google AdMob ve aracılık iş ortakları</h2>
+<p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
+üzerinden sunulan reklamlarla desteklenir. AdMob, uygulamaya bir yazılım geliştirme kiti olarak
+gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>. Reklamlar gösterilirken
+AdMob ve Google'ın reklam iş ortakları şunları toplayıp işleyebilir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Veri</th><th>Kullanım amacı</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reklam kimliği (Android'in atadığı, sıfırlanabilir tanımlayıcı)</td>
+      <td>Reklam sunumu, gösterim sıklığı sınırlama, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, IP adresinden türetilen kaba konum</td>
+      <td>Ülkenize veya bölgenize uygun reklam sunumu ve yasal uyumluluk</td>
+    </tr>
+    <tr>
+      <td>Cihaz bilgileri — model, işletim sistemi sürümü, dil, ekran ve ağ özellikleri</td>
+      <td>Reklamların doğru görüntülenmesi, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Uygulama etkileşim olayları — bir reklamın istendiği, gösterildiği, tıklandığı veya
+      kapatıldığı bilgisi</td>
+      <td>Reklam ölçümü, reklamverenlerin faturalandırılması, dolandırıcılık önleme</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Aracılık iş ortakları</h3>
+<p>Uygulama ayrıca AdMob aracılığı (mediation) üzerinden bağlanan başka reklam ağlarının yazılım
+geliştirme kitlerini de içerir: <strong>AppLovin, Unity Ads, Liftoff Monetize (Vungle), Meta
+Audience Network, Mintegral ve Pangle</strong>. Uygulama bir reklam istediğinde AdMob bu isteği
+bu iş ortaklarından birine iletebilir; o iş ortağı da reklamı kendisi sunar. Bunu yapan bir iş
+ortağı yukarıdaki tabloda sayılan aynı veri türlerini — reklam kimliği, IP adresinizden türetilen
+yaklaşık konum, cihaz bilgileri ve reklam etkileşim olayları — alır ve bunları bağımsız bir şirket
+olarak kendi gizlilik politikası kapsamında işler:</p>
+<ul>
+  <li><a href="https://legal.applovin.com/privacy/">AppLovin Gizlilik Politikası</a></li>
+  <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity oyuncu ve uygulama kullanıcısı gizlilik politikası</a></li>
+  <li><a href="https://liftoff.ai/privacy-policy/">Liftoff Gizlilik Politikası</a></li>
+  <li><a href="https://www.facebook.com/privacy/policy/">Meta Gizlilik İlkesi</a></li>
+  <li><a href="https://www.mintegral.com/en/privacy">Mintegral Gizlilik Politikası</a></li>
+  <li><a href="https://www.pangleglobal.com/privacy">Pangle Gizlilik Politikası</a></li>
+</ul>
+<p>"Reklam tercihleriniz" bölümünde anlatılan rıza seçimleriniz, Google'ın rıza formunun kaydettiği
+standart rıza sinyali aracılığıyla bu iş ortaklarına da iletilir.</p>
+
+<p>Uygulama GPS veya herhangi bir konum izni <strong>istemez</strong> ve taramalarınızın içeriğini,
+geçmişinizi, görsellerinizi veya Wi-Fi bilgilerinizi AdMob'a ya da herhangi bir aracılık iş
+ortağına göndermez. Geliştirici bunlardan hiçbir kişisel veri almaz; yalnızca gösterim ve gelir
+toplamları gibi toplulaştırılmış, anonim raporlar görür.</p>
+<p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden uygulama
+<code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Reklam biçimleri ve
+göründükleri yerler:</p>
+<ul>
+  <li><strong>Banner</strong> — <em>Oluştur</em> ve <em>Geçmiş</em> sekmelerinin en altında,
+  gezinme çubuğunun altında.</li>
+  <li><strong>Geçiş reklamı</strong> (tam ekran) — yalnızca <em>Oluştur</em> sekmesinde yaptığınız
+  bir kodu kaydettikten veya paylaştıktan sonra: ilk ikisinde hiç gösterilmez ve iki geçiş reklamı
+  arasında en az iki dakika olur.</li>
+  <li><strong>Ödüllü video</strong> — isteğe bağlıdır, yalnızca <em>Ayarlar → 24 saat
+  reklamsız</em>'ı seçerseniz: kısa bir video izlemek tüm reklamları 24 saat boyunca kaldırır.</li>
+  <li><strong>Uygulama açılış reklamı</strong> — uygulamaya geri döndüğünüzde, en fazla dört saatte
+  bir; tarayıcıdan, fotoğraf seçiciden, bir paylaşım penceresinden, açtığınız bir bağlantıdan veya
+  uygulamanın sizin için açtığı başka bir ekrandan dönerken hiçbir zaman gösterilmez, bir sonucun
+  üzerinde de hiçbir zaman gösterilmez.</li>
+</ul>
+<p><em>Tara</em> sekmesinde ve bir taramanın sonucunda hiçbir zaman reklam gösterilmez.</p>
+<p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites">Google, hizmetlerimizi
+  kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543">AdMob ve üçüncü taraf reklamcılık</a></li>
+</ul>
+
+<h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
+<p>Uygulamanın nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici uygulamaya
+iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
+Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca uygulamanın
+Google Play üzerinden dağıtılan sürümünde çalışır. Uygulama, bu hizmetlerin topladıklarına
+kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
+log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Uygulama örneği kimliği — Analytics'in bu kurulum için oluşturduğu rastgele bir
+      tanımlayıcı</td>
+      <td>Kim olduğunuzu bilmeden kurulumları ve oturumları saymak</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği — yukarıda anlatılan sıfırlanabilir tanımlayıcı; uygulama AdMob için
+      <code>AD_ID</code> iznini tanımladığından Analytics de ona erişebilir</td>
+      <td>Kullanım istatistikleri; reklam amaçlı kullanım yalnızca rıza seçimlerinizin izin
+      verdiği ölçüde (aşağıda)</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, maskelenmiş IP adresinizden türetilen ülke veya bölge</td>
+      <td>Ülkeye ve bölgeye göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Cihaz ve uygulama bilgileri — cihaz modeli, işletim sistemi sürümü, dil, uygulama
+      sürümü</td>
+      <td>Cihaza, Android sürümüne, dile ve uygulama sürümüne göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Kullanım olayları — ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi,
+      uygulamanın güncellenmesi ve kaldırılması</td>
+      <td>Uygulamayı kaç kişinin, ne sıklıkla ve ne kadar süre kullandığı, hangi ekranları
+      açtığı</td>
+    </tr>
+    <tr>
+      <td>Uygulamanın nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
+      sayfası ya da bir kampanya bağlantısı)</td>
+      <td>Kurulumların nereden geldiğini saymak</td>
+    </tr>
+    <tr>
+      <td>Google Play'in bildirdiği satın alma olayları — tek seferlik "reklamları kaldır" satın
+      almasının ürünü, adı ve fiyatı</td>
+      <td>Satın almaları saymak; kart veya ödeme bilgisi içermez</td>
+    </tr>
+    <tr>
+      <td>Çökme raporları; yalnızca uygulama çöktüğünde ya da ölümcül bir hatayla
+      karşılaştığında gönderilir — yığın izi (stack trace), uygulamanın o andaki durumu, cihaz
+      bilgileri (model, işletim sistemi sürümü, ekran yönü, boş bellek ve disk alanı) ve rastgele
+      bir Crashlytics kurulum kimliği</td>
+      <td>Çökmeleri bulup düzeltmek ve bir çökmenin kaç kurulumu etkilediğini saymak</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını kaydeder, o ekranda ne
+yaptığınızı değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, içeriğinizi
+değil. İki hizmet de taramalarınızın veya kodlarınızın içeriğini, geçmişinizi, adınızı, e-posta
+adresinizi veya herhangi bir hesap bilginizi almaz.</p>
+<p>AEA'da, Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan
+rıza formu Analytics'i de kapsar: oradaki seçimleriniz, Analytics'in tanımlayıcılarını cihazınızda
+saklayıp saklayamayacağını ve verilerin reklam amacıyla kullanılıp kullanılamayacağını belirler.
+Verilerin reklam için kullanılması ("ad user data") ve reklam kişiselleştirmesi bu bölgelerde siz
+rıza verene kadar kapalı kalır. Seçiminizi dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan değiştirebilirsiniz; bu giriş gerekli olduğu yerlerde görünür.
+Uygulamada kullanım istatistikleri veya çökme raporları için ayrı bir anahtar yoktur; uygulamayı
+kaldırmak ikisini de durdurur.</p>
+<p>Analytics, bir kurulumun tanımlayıcılarına bağlı verileri en fazla 14 ay saklar; tanımlayıcı
+içermeyen toplu raporlar daha uzun tutulabilir. Crashlytics çökme raporlarını 90 gün saklar.</p>
+<p>Google bu verileri geliştirici adına, veri işleyen sıfatıyla, Firebase ve Google Analytics veri
+işleme koşulları kapsamında işler. Veriler, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz
+dışındaki Google sunucularında işlenebilir ve aktarım sırasında şifrelenir (TLS).</p>
+<p>Google bu hizmetleri şu sayfalarda anlatır:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Satın alma — Google Play Faturalandırma</h2>
+<p>Uygulamada, reklamları kalıcı olarak kaldıran tek seferlik ve isteğe bağlı tek bir satın alma
+vardır. Abonelik veya yinelenen hiçbir ödeme yoktur.</p>
+<p>İşlemin tamamı Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
+numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı asla görmez ve almaz.</strong>
+Google Play
+yalnızca toplulaştırılmış satış rakamlarını bildirir; Google Analytics for Firebase de satın
+almanın yapıldığını — ürünü, adını ve fiyatını, hiçbir ödeme bilgisi olmadan — kaydeder
+(yukarıya bakın). Uygulama içinde satın alma, cihazınızda
+tek bir doğru/yanlış işareti olarak tutulur; uygulamayı yeniden kurduğunuzda veya yeni bir cihaza
+geçtiğinizde Google Play hesabınızdan geri yüklenir. Ödeme verilerinizin Google tarafından işlenmesi
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
+koşulları kapsamındadır.</p>
+<p>Uygulama ayrıca, size güncellemeyi önerebilmek için uygulamanın daha yeni bir sürümünün olup
+olmadığını Google Play'in uygulama içi güncelleme hizmetiyle denetler; bu denetim telefonunuzdaki
+Google Play uygulaması üzerinden yapılır.</p>
+
+<h2>Reklam tercihleriniz</h2>
+
+<h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
+<p>Reklam istenmeden önce uygulama, Google'ın User Messaging Platform altyapısıyla hazırlanmış bir
+rıza formu gösterir; neye izin vereceğinizi burada seçersiniz. Seçiminiz Google'ın bileşeni
+tarafından cihazınızda saklanır, sonraki açılışlarda dikkate alınır ve yukarıda sayılan aracılık
+iş ortakları için de geçerlidir.</p>
+<p><strong>Kararınızı istediğiniz zaman değiştirebilirsiniz:</strong> uygulamayı açın,
+<em>Ayarlar → Gizlilik seçenekleri</em> bölümüne gidin; aynı form yeniden görünür. Rızanızı buradan
+geri çekebilirsiniz. Rızayı geri çekmek uygulamayı devre dışı bırakmaz; kod taramaya ve oluşturmaya
+devam edebilirsiniz ve reklamlar kişiselleştirilmemiş biçimde gösterilmeye devam edebilir. Aynı
+seçimler, yukarıda anlatıldığı gibi Google Analytics for Firebase için de geçerlidir.</p>
+
+<h3>Gizlilik yasası olan bir ABD eyaletindeyseniz</h3>
+<p>Bir ABD eyaletinin gizlilik yasası size kişisel bilgilerinizin satışını veya paylaşılmasını ya da
+hedefli reklamı reddetme hakkı tanıyorsa, uygulama bu seçimi uygulanabildiği yerlerde aynı Google
+rıza araçlarıyla sunar ve sizin için gerekli olduğunda <em>Ayarlar → Gizlilik seçenekleri</em>
+girişi görünür.</p>
+
+<h3>Diğer ülkelerde</h3>
+<p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak zorunlu olduğu yerlerde göründüğü
+için sizde görünmeyebilir. Reklamları yine de işletim sistemi düzeyinde denetleyebilirsiniz: Android
+<em>Ayarlar → Gizlilik → Reklamlar</em> bölümünden (tam yol üreticiye ve Android sürümüne göre
+değişir) reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz; silmeniz durumunda
+uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
+
+<h3>Reklamları tamamen kaldırmak</h3>
+<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın reklam istemesini tümüyle durdurur. Ödüllü
+video (yukarıda) bunu 24 saat boyunca durdurur.</p>
+
+<h2>Uygulamanın istediği izinler</h2>
+<div class="card">
+<ul>
+  <li><code>INTERNET</code> — reklamların alınması, Google Play Faturalandırma ile iletişim ve yukarıda
+  anlatılan kullanım istatistikleriyle çökme raporlarının gönderilmesi için gereklidir. Taramalarınızın
+  ve kodlarınızın içeriği ağ üzerinden hiçbir zaman gönderilmez.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yükleme denemesinden önce bağlantı
+  olup olmadığını kontrol etmesini sağlar.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
+  aracılık iş ortaklarının ve Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına
+  erişim.</li>
+</ul>
+</div>
+<p>Uygulamanın kendisinin tanımladığı izinler bunlardır. İçindeki Google ve reklam bileşenleri,
+Android'in kurulum sırasında size sormadan verdiği birkaç izin daha ekler: örneğin Google Play'in
+faturalandırma ve kurulum yönlendiricisi izinleri, Android'in reklam hizmetleri izinleri ve bir reklam
+veya analiz bileşeninin Wi-Fi durumunu kontrol etmesine, işlemciyi kısa süre uyanık tutmasına ya da
+titreşim kullanmasına olanak tanıyan izinler. Ama uygulama hiçbir Android sürümünde <strong>kamera</strong>
+(kamerayla tarama, yukarıda anlatıldığı gibi Google Play hizmetleri tarafından yapılır), depolama,
+fotoğraf, kişiler, takvim, telefon, SMS, mikrofon, konum, Wi-Fi ayarlarını değiştirme, bildirim veya
+hesap izni istemez.</p>
+
+<h2>Çocuklar</h2>
+<p>Bu uygulama genel amaçlı bir araçtır. <strong>13 yaşın altındaki çocuklara</strong>, AEA'da ise
+16 yaşın altındakilere (veya ülkenizdeki eşdeğer asgari yaşın altındakilere)
+<strong>yönelik değildir</strong>, çocuklara yönelik bir kategoride listelenmemiştir ve çocuklar
+için tasarlanmamış, çocuklara pazarlanmamıştır. Geliştirici, çocuklardan bilerek hiçbir kişisel veri
+toplamaz. Bir çocuğun bu uygulamadaki reklam, analiz veya çökme raporlama hizmetleri aracılığıyla
+kişisel veri verdiğini düşünüyorsanız aşağıdaki adrese ve verinin bulunduğu taraf olan Google'a ya
+da ilgili reklam iş ortağına başvurun.</p>
+
+<h2>Verilerin saklanması</h2>
+<p>Geliştiricinin bir sunucusu yoktur ve kendi elinde hiçbir kullanıcı verisi saklamaz. Kullanım
+istatistikleri ve çökme raporları geliştirici adına Google'da tutulur: bir kurulumun
+tanımlayıcılarına bağlı Analytics verileri en fazla 14 ay (tanımlayıcı içermeyen toplu raporlar
+daha uzun tutulabilir), çökme raporları ise 90 gün.
+Geçmişiniz dahil cihazınızdaki veriler, siz silene, uygulamanın verilerini temizleyene veya
+uygulamayı kaldırana kadar orada kalır. AdMob ve Google Play aracılığıyla Google'ın topladığı
+veriler <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'nda
+açıklanan kendi saklama sürelerine, bir aracılık iş ortağının topladığı veriler ise yukarıda
+bağlantısı verilen o iş ortağının gizlilik politikasına tabidir.</p>
+
+<h2>Güvenlik</h2>
+<p>Geçmişiniz ve ayarlarınız, Android'in diğer uygulamalara karşı koruduğu uygulamaya özel alanda
+bulunur ve bulut yedeklemesinin ve cihaz aktarımının dışında tutulur. Firebase hizmetleri
+gönderdikleri verileri aktarım sırasında şifreler (TLS). Hiçbir saklama veya aktarım yöntemi
+kusursuz derecede güvenli değildir; ancak geliştirici taramalarınızdan veya kodlarınızdan hiçbirini
+almadığı için bunların telefonunuz dışında korunması gereken bir kopyası yoktur.</p>
+
+<h2>Hukuki dayanaklar ve haklarınız</h2>
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde kişiselleştirilmiş reklamın hukuki dayanağı, yukarıda
+anlatılan formla alınan ve istediğiniz zaman geri çekebileceğiniz açık rızanızdır.
+Kişiselleştirilmemiş reklam, dolandırıcılık önleme ve reklam hizmetlerinin güvenliği meşru menfaate
+dayanır. Satın alma işleminizin yürütülmesi, reklam kaldırmayı satın aldığınızda kurulan sözleşmenin
+ifası için gereklidir. Kullanım istatistikleri ve çökme raporları, geliştiricinin uygulamayı
+çalışır durumda tutma ve nasıl kullanıldığını toplu olarak anlama yönündeki meşru menfaatine
+dayanır; Analytics tanımlayıcılarının cihazınızda saklanması ve verilerin reklam amacıyla
+kullanılması ise rıza formundaki seçimlerinize bağlıdır.</p>
+<p>GDPR kapsamında ve Türkiye'de 6698 sayılı KVKK kapsamında eşdeğer biçimde; kişisel verilerinizin
+işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini isteme, işlenmesini
+kısıtlama veya işlenmesine itiraz etme, veri taşınabilirliği ve rızanızı geri çekme haklarına
+sahipsiniz. Ayrıca ulusal veri koruma otoritesine şikâyette bulunabilirsiniz; Türkiye'de bu kurum
+Kişisel Verileri Koruma Kurumu'dur (KVKK).</p>
+<p>Kullanım istatistikleri ve çökme raporları takma adlıdır: adınızı ya da e-posta adresinizi değil,
+rastgele tanımlayıcılar taşır; bu yüzden geliştirici hangi kayıtların size ait olduğunu bilemez.
+Rıza formunun gösterildiği yerlerde rızanızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz etmek ya da bu konuda
+soru sormak için aşağıdaki adrese yazabilirsiniz. Uygulamayı kaldırmak ya da verilerini temizlemek
+eski tanımlayıcılarla bağı koparır; daha önce gönderilmiş veriler de yukarıdaki sürelerin sonunda
+silinir. Reklam kimliğinizi de Android ayarlarından dilediğiniz zaman sıfırlayabilir veya
+silebilirsiniz.
+Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran taraf olan Google'a veya ilgili
+aracılık iş ortağına, yukarıda bağlantısı verilen gizlilik politikalarındaki araçlar kullanılarak
+iletilmelidir. Diğer tüm konular için veya doğru yolu bulmak üzere yardım almak için aşağıdaki
+adrese yazabilirsiniz.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Uygulamanın veri uygulamaları değişirse — örneğin yeni bir üçüncü taraf hizmet eklenirse — bu
+sayfa güncellenir ve en üstteki "son güncelleme" tarihi değişir. Önemli değişiklikler ayrıca
+uygulamanın Google Play sayfasına da yansıtılır. Güncellemeden sonra uygulamayı kullanmaya devam
+etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+<p>Bu, uygulamanın ilk sürümüyle birlikte yayımlanan, bu politikanın ilk sürümüdür.</p>
+
+<h2 id="contact">İletişim</h2>
+<p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Bu adres, uygulamanın Google Play sayfasında yazan adresle aynıdır. Hata bildirimleri,
+  gizlilikle ilgili sorular ve veri talepleri buraya ulaşır.</p>
+</div>
+
+<footer>
+  <p>QR Pocket — hesap yok, kamera izni yok, taramalarınız cihazınızda kalır. Bu politika,
+  uygulamayı ilk sürümünden itibaren açıklar.</p>
+</footer>
+
+</main>
+</body>
+</html>

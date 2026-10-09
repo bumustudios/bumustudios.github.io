@@ -28,6 +28,26 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | Hill Rush gizlilik politikası (TR) | <https://bumustudios.github.io/hillrush/privacy/tr/> |
 | Pulse Runner privacy policy (EN) | <https://bumustudios.github.io/pulserunner/privacy/> |
 | Pulse Runner gizlilik politikası (TR) | <https://bumustudios.github.io/pulserunner/privacy/tr/> |
+| PaperLite privacy policy (EN) | <https://bumustudios.github.io/paperlite/privacy/> |
+| PaperLite gizlilik politikası (TR) | <https://bumustudios.github.io/paperlite/privacy/tr/> |
+| QR Pocket privacy policy (EN) | <https://bumustudios.github.io/qrpocket/privacy/> |
+| QR Pocket gizlilik politikası (TR) | <https://bumustudios.github.io/qrpocket/privacy/tr/> |
+| Polyglance privacy policy (EN) | <https://bumustudios.github.io/linguasnap/privacy/> |
+| Polyglance gizlilik politikası (TR) | <https://bumustudios.github.io/linguasnap/privacy/tr/> |
+| Habit Loom privacy policy (EN) | <https://bumustudios.github.io/habitloom/privacy/> |
+| Habit Loom gizlilik politikası (TR) | <https://bumustudios.github.io/habitloom/privacy/tr/> |
+| PennyLeaf privacy policy (EN) | <https://bumustudios.github.io/pennyleaf/privacy/> |
+| PennyLeaf gizlilik politikası (TR) | <https://bumustudios.github.io/pennyleaf/privacy/tr/> |
+| Tomato Focus privacy policy (EN) | <https://bumustudios.github.io/tomatofocus/privacy/> |
+| Tomato Focus gizlilik politikası (TR) | <https://bumustudios.github.io/tomatofocus/privacy/tr/> |
+| Mahjong Solitaire privacy policy (EN) | <https://bumustudios.github.io/mahjong/privacy/> |
+| Mahjong Solitaire gizlilik politikası (TR) | <https://bumustudios.github.io/mahjong/privacy/tr/> |
+| Solitaire Grove privacy policy (EN) | <https://bumustudios.github.io/solitairegrove/privacy/> |
+| Solitaire Grove gizlilik politikası (TR) | <https://bumustudios.github.io/solitairegrove/privacy/tr/> |
+| 2048 Zen privacy policy (EN) | <https://bumustudios.github.io/zen2048/privacy/> |
+| 2048 Zen gizlilik politikası (TR) | <https://bumustudios.github.io/zen2048/privacy/tr/> |
+| Word Lantern privacy policy (EN) | <https://bumustudios.github.io/wordhunt/privacy/> |
+| Word Lantern gizlilik politikası (TR) | <https://bumustudios.github.io/wordhunt/privacy/tr/> |
 
 ## Read this before editing a policy page
 
@@ -50,6 +70,10 @@ Consequences of that:
   keep it identical across the two languages.
 - Keep the apps' pages structurally parallel. They are deliberately the same
   template, which is what makes a difference between them readable as meaningful.
+- **Name every ad network the app can serve ads from.** The apps published from
+  October 2026 (Mahjong Solitaire onwards) use AdMob mediation with AppLovin, Unity Ads,
+  Liftoff, Meta Audience Network, Mintegral and Pangle; their policies list each one. If a
+  network is added to or removed from an app's mediation, its policy changes with it.
 
 ## Layout
 
@@ -72,6 +96,26 @@ hillrush/privacy/       Hill Rush policy, English
 hillrush/privacy/tr/    Hill Rush policy, Turkish
 pulserunner/privacy/    Pulse Runner policy, English
 pulserunner/privacy/tr/ Pulse Runner policy, Turkish
+paperlite/privacy/      PaperLite policy, English
+paperlite/privacy/tr/   PaperLite policy, Turkish
+qrpocket/privacy/       QR Pocket policy, English
+qrpocket/privacy/tr/    QR Pocket policy, Turkish
+linguasnap/privacy/     Polyglance policy, English
+linguasnap/privacy/tr/  Polyglance policy, Turkish
+habitloom/privacy/      Habit Loom policy, English
+habitloom/privacy/tr/   Habit Loom policy, Turkish
+pennyleaf/privacy/      PennyLeaf policy, English
+pennyleaf/privacy/tr/   PennyLeaf policy, Turkish
+tomatofocus/privacy/    Tomato Focus policy, English
+tomatofocus/privacy/tr/ Tomato Focus policy, Turkish
+mahjong/privacy/        Mahjong Solitaire policy, English
+mahjong/privacy/tr/     Mahjong Solitaire policy, Turkish
+solitairegrove/privacy/ Solitaire Grove policy, English
+solitairegrove/privacy/tr/Solitaire Grove policy, Turkish
+zen2048/privacy/        2048 Zen policy, English
+zen2048/privacy/tr/     2048 Zen policy, Turkish
+wordhunt/privacy/       Word Lantern policy, English
+wordhunt/privacy/tr/    Word Lantern policy, Turkish
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll
 ```
 
@@ -89,6 +133,16 @@ rather than one file.
 - [Fortify](https://github.com/bumustudios-dev/Fortify) *(private)*
 - [HillRush](https://github.com/bumustudios-dev/HillRush) *(private)*
 - [PulseRunner](https://github.com/bumustudios-dev/PulseRunner) *(private)*
+- [PaperLite](https://github.com/bumustudios-dev/PaperLite) *(private)*
+- [QrPocket](https://github.com/bumustudios-dev/QrPocket) *(private)*
+- [LinguaSnap](https://github.com/bumustudios-dev/LinguaSnap) *(private)*
+- [HabitNest](https://github.com/bumustudios-dev/HabitNest) *(private)*
+- [PennyLeaf](https://github.com/bumustudios-dev/PennyLeaf) *(private)*
+- [TomatoFocus](https://github.com/bumustudios-dev/TomatoFocus) *(private)*
+- [Mahjong](https://github.com/bumustudios-dev/Mahjong) *(private)*
+- [SolitaireGrove](https://github.com/bumustudios-dev/SolitaireGrove) *(private)*
+- [Zen2048](https://github.com/bumustudios-dev/Zen2048) *(private)*
+- [WordHunt](https://github.com/bumustudios-dev/WordHunt) *(private)*
 
 ## Licence
 
@@ -110,3 +164,12 @@ satır bütün uygulamalarımızı kapsar. Bu yüzden iki koşul birlikte sağla
 
 Yeni bir reklam ağı eklenirse satırı buraya eklemek gerekir; AdMob tarafında
 **Uygulamalar → app-ads.txt → Güncellemeleri kontrol et** ile tarama tetiklenir.
+
+### Mediation ortakları
+
+Mahjong Solitaire ve sonrasındaki uygulamalar AdMob mediation ile şu ağlardan da reklam
+alır: **AppLovin, Unity Ads, Liftoff Monetize, Meta Audience Network, Mintegral, Pangle**.
+Her ağın hesabı açıldığında, o ağın panelinin verdiği app-ads.txt satır(lar)ı dosyadaki
+ilgili yorumun altına eklenmeli — bizim yayıncı/hesap kimliklerimizle, başka yerden
+kopyalanmadan. Satırı eksik olan ağ, Tier-1 alıcıların büyük kısmına "doğrulanmamış
+envanter" görünür ve o ağdan gelen gelir belirgin düşer.

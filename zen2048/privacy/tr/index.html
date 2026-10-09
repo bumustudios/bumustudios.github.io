@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — 2048 Zen</title>
+<meta name="description" content="2048 Zen Android oyununun gizlilik politikası. Hesap ve oyuna ait sunucu yok; reklamlar (Google AdMob ve aracılık ortakları), satın almalar, kullanım istatistikleri ve çökme raporları Google üzerinden yürür.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/imagetopdf/privacy/tr/">ImageToPdf politikası</a><span class="sep">·</span><a href="/pdfpages/privacy/tr/">PdfPages politikası</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — 2048 Zen</h1>
+  <p class="lede">Android oyunu, paket adı <code>com.bumustudios.zen2048</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 9 Ekim 2026.</span> <span>Son güncelleme: 9 Ekim 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Hesap yok; oyunlarınız sizinle kalır.</strong> Giriş ekranı ve bu oyuna ait bir
+  sunucu yoktur. Oyun dosyalarınızı, fotoğraflarınızı veya kişilerinizi okumaz ve hiçbir izin
+  penceresi göstermez. Her tahta, puan ve istatistik telefonunuzda, çevrimdışı hesaplanır ve
+  orada tutulur.</p>
+  <p>Telefonunuzdan çıkan her şey aşağıda ayrıntısıyla anlatılmıştır: Google'ın reklam hizmeti ve
+  onun birlikte çalıştığı reklam ağları, Google Play'in ödeme hizmeti ile geliştiricinin Google
+  Firebase aracılığıyla topladığı kullanım istatistikleri ve çökme raporları. Tek seferlik reklam
+  kaldırma satın alınırsa araya giren reklamlar durur; geriye kalan tek reklam, daha fazla geri alma
+  hakkı için izlemeyi kendinizin seçebileceği isteğe bağlı videodur.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play üzerinden <code>com.bumustudios.zen2048</code> paket adıyla dağıtılan
+<em>2048 Zen</em> Android oyununu (Google Play'deki adıyla <em>2048 Zen – Calm Number Puzzle</em>)
+kapsar. Oyunun bağımsız geliştiricisi BumuStudios tarafından yazılmıştır. Sorularınızı
+<a href="#contact">İletişim</a> bölümündeki adrese iletebilirsiniz.</p>
+
+<h2>Oyun nedir</h2>
+<p>2048 Zen, klasik kaydırmalı sayı bulmacasıdır: ekranı kaydırırsınız, her taş gidebildiği kadar
+kayar, eşit iki taş toplamlarına birleşir ve her hamleden sonra yeni bir taş belirir. Her birinin
+kendi hedef taşı ve kendi kayıtlı oyunu olan dört tahta boyutu vardır — 3×3, 4×4, 5×5 ve 6×6 —;
+bunlara ek olarak geri alma, istatistikler ile açık ve koyu temalar bulunur. Hesap yok, abonelik
+yok, enerji sistemi yok.</p>
+
+<h2>Oyun tamamen cihazınızda çalışır</h2>
+<p>En önemli bölüm bu, o yüzden açıkça yazıyoruz:</p>
+<ul>
+  <li><strong>Oyunlarınız ve puanlarınız yüklenmez.</strong> Oyunun kendine ait bir sunucusu ve
+  çevrimiçi bir liderlik tablosu yoktur. Tahtalarınız, puanlarınız ve istatistikleriniz oyun
+  tarafından hiçbir yere gönderilmez. Aşağıda anlatılan kullanım istatistikleri oyunun ne zaman
+  açıldığını ve ne kadar süre kullanıldığını kaydeder; hamlelerinizi, tahtalarınızı ya da
+  puanlarınızı asla kaydetmez.</li>
+  <li><strong>Oyun hiçbir dosya okumaz.</strong> Hiçbir Android sürümünde depolama, kamera,
+  mikrofon, kişiler, konum veya bildirim izni istemez.</li>
+  <li><strong>Taş üreteci sizi izleyemez.</strong> Her yeni taş, rastgele boş bir hücreye konan
+  bir 2 (on seferde dokuz) ya da bir 4'tür ve devam eden oyuna ait tohumlu bir rastgele diziden
+  çekilir. Puanınıza, becerinize ya da geçmişinize bakmaz; geri alma bu diziyi de geri sardığından
+  bir hamleyi geri almak sıradaki taşı asla değiştirmez. Bu bir gizlilikten çok adillik özelliğidir
+  ama aynı sözün parçasıdır: oyununuz analiz edilmez.</li>
+</ul>
+
+<h3>Oyunun cihazda sakladıkları</h3>
+<p>Oyun, cihazdaki kendi özel alanında az miktarda durum bilgisi tutar. Bunların hiçbiri kişisel
+bilgi değildir ve oyunun kendisi hiçbirini bir yere göndermez:</p>
+<ul>
+  <li>yeniden açılışta devam edebilmek için her tahta boyutundaki devam eden oyun — tahta, puan,
+  hamle sayısı, en fazla 20 hamlelik geri alma geçmişi, kalan geri alma hakları ve rastgele dizinin
+  durumu;</li>
+  <li>her tahta boyutu için istatistikleriniz — en yüksek puan, en büyük taş, oynanan oyunlar,
+  hedef taşa ulaştığınız oyunlar, biten oyunların toplam puanı, yapılan hamleler ve oynama süresi —
+  ile en son seçtiğiniz tahta boyutu;</li>
+  <li>tema, yazı boyutu, dil, ses, titreşim ve animasyon tercihleriniz;</li>
+  <li>tek seferlik "reklamları kaldır" satın almasının etkin olup olmadığı;</li>
+  <li>ilk oyunlarınızı tam ekran reklamlardan uzak tutmak için kullanılan, tam ekran reklam
+  fırsatlarını sayan bir sayaç (aşağıya bakın).</li>
+</ul>
+<p><strong>Android yedeklemesi.</strong> Oyun, yukarıdakilerin Android'in kendi yedeklemesine ve
+cihazdan cihaza aktarımına dahil edilmesine izin verir; böylece kayıtlı oyunlarınız, en yüksek
+puanlarınız ve istatistikleriniz yeni bir telefona sizinle birlikte geçebilir. Bu yedek, yedekleme
+açıksa Android tarafından Google hesabınızda alınır; geliştirici tarafından değil, Android ve Google
+tarafından yürütülür, geliştiricinin ona erişimi yoktur ve Android ayarlarından kapatılabilir.
+Oyunun yedekleme kuralları, Google'ın rıza bileşeninin rıza seçimlerinizi tuttuğu paylaşılan
+tercihler (shared preferences) ve veritabanı alanlarını yedeklemenin dışında bırakır; bu yüzden yeni
+bir cihazda rızanız yeniden sorulur. Satın alma bayrağına da güvenilmez: satın alma, oyun her
+açıldığında Google Play ile yeniden doğrulanır.</p>
+<p>Google'ın reklam ve rıza bileşenleri de kendi ayarlarını cihazda, Google'ın denetiminde tutar;
+aşağıda anlatılan Google Firebase bileşenleri ise oyunun özel alanında üç rastgele tanımlayıcı
+saklar: bir Firebase kurulum kimliği, Analytics uygulama örneği kimliği ve bir Crashlytics kurulum
+kimliği. Yukarıdaki listenin aksine bu tanımlayıcılar kullanım istatistikleri ve çökme raporlarıyla
+birlikte gönderilir. Oyunu kaldırmak veya verilerini temizlemek, bu tanımlayıcılar dahil oyunun
+cihazda sakladığı her şeyi siler. İstatistiklerinizi İstatistikler ekranından dilediğiniz zaman
+sıfırlayabilirsiniz.</p>
+
+<h2>Reklamlar — Google AdMob ve aracılık ortakları</h2>
+<p>Oyun ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
+üzerinden sunulan reklamlarla desteklenir. AdMob oyuna bir yazılım geliştirme kiti olarak
+gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>. Reklamlar sunulurken
+AdMob ve Google'ın reklam ortakları şunları toplayıp işleyebilir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Reklam kimliği (Android tarafından atanan, sıfırlanabilir tanımlayıcı)</td>
+      <td>Reklam sunumu, sıklık sınırlama, reklam ölçümü, sahtekârlık önleme</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, IP adresinizden türetilen kaba konum</td>
+      <td>Ülkenize veya bölgenize uygun reklam sunumu ve yasal uyum</td>
+    </tr>
+    <tr>
+      <td>Cihaz bilgileri — model, işletim sistemi sürümü, dil, ekran ve ağ özellikleri</td>
+      <td>Reklamların doğru görüntülenmesi, reklam ölçümü, sahtekârlık önleme</td>
+    </tr>
+    <tr>
+      <td>Uygulama etkileşim olayları — bir reklamın istendiği, gösterildiği, tıklandığı veya
+      kapatıldığı bilgisi</td>
+      <td>Reklam ölçümü, reklamverenlere faturalama, sahtekârlık önleme</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Aracılık (mediation) ortakları</h3>
+<p>Oyun ayrıca, AdMob'un bir reklam isteğini karşılamak için kullanabileceği altı başka reklam
+ağının yazılımını da içerir ("aracılık"). AdMob bir isteği bunlardan birine yönlendirdiğinde reklamı
+o ağ sunar ve yukarıda sayılan veri türlerinin aynısını — reklam kimliği, IP adresinizden türetilen
+yaklaşık konum, cihaz bilgileri ve reklam etkileşim olayları — alıp kendi gizlilik politikasına göre
+işler:</p>
+<ul>
+  <li>AppLovin — <a href="https://legal.applovin.com/privacy/">AppLovin Gizlilik Politikası</a></li>
+  <li>Unity Ads (Unity Technologies) — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a></li>
+  <li>Liftoff Monetize (eski adıyla Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff Gizlilik Politikası</a></li>
+  <li>Meta Audience Network (Meta Platforms) — <a href="https://www.facebook.com/privacy/policy/">Meta Gizlilik Politikası</a></li>
+  <li>Mintegral — <a href="https://www.mintegral.com/en/privacy">Mintegral Gizlilik Politikası</a></li>
+  <li>Pangle — <a href="https://www.pangleglobal.com/privacy">Pangle Gizlilik Politikası</a></li>
+</ul>
+<p>Hangi isteği hangi ağın sunacağına oyun değil, AdMob karar verir. AEA'da, Birleşik Krallık'ta ve
+İsviçre'de, aşağıda anlatılan rıza formundaki seçimleriniz bu ağlara, Google'ın formunun cihazınızda
+sakladığı sektör standardı rıza sinyali (IAB TCF) aracılığıyla ulaşır.</p>
+
+<p>Oyun GPS veya hassas konum izni <strong>istemez</strong>; oyunlarınızı, puanlarınızı ya da oyun
+geçmişinizi AdMob'a veya bu ağlardan herhangi birine göndermez. Geliştirici bunlardan hiçbir
+kişisel veri almaz — yalnızca gösterim ve gelir toplamları gibi toplulaştırılmış, anonim
+raporlar.</p>
+<p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden oyun
+<code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Açılıştaki rıza adımı
+tamamlanmadan hiçbir reklam istenmez. Kullanılan reklam biçimleri tam olarak şunlardır:</p>
+<ul>
+  <li><strong>Banner</strong> — yalnızca ana ekranın en altında. Oyun ekranında, istatistikler,
+  ayarlar veya hakkında ekranlarında banner yoktur.</li>
+  <li><strong>Geçiş reklamı (tam ekran)</strong> — yalnızca, bu oturumda oyun sonu ekranıyla ya da
+  kazanma kartıyla biten bir oyunun yerine yeni bir oyun başlattığınızda. Cihazınızdaki bu türden
+  ilk iki anda reklam gösterilmez, başka bir tam ekran reklamdan sonraki 45 saniye içinde asla
+  gösterilmez ve uygulamayı açtığınızda zaten bitmiş olan bir oyun sayılmaz. Bir oyunun ortasında,
+  bir oyuna devam ederken ya da ana ekrana dönerken asla geçiş reklamı çıkmaz.</li>
+  <li><strong>Ödüllü reklam (isteğe bağlı)</strong> — her oyun bir ücretsiz geri alma hakkıyla
+  başlar. Bu hak kullanıldıktan sonra Geri al düğmesi ve oyun sonu kartındaki "Son hamleyi geri al"
+  düğmesi, onayınızı sorduktan sonra kısa bir video önerir. Videoyu sonuna kadar izlerseniz iki geri
+  alma hakkı kazanırsınız: biri son hamleyi hemen geri alır, diğeri sonraya saklanır. Öneri yalnızca
+  bir video hazır olduğunda görünür; aksi halde düğme hiç gösterilmez. Yeni oyun her zaman
+  ücretsizdir ve oyun sonu hiçbir zaman reklam gerektirmez.</li>
+  <li><strong>Uygulama açılış reklamı</strong> — oyundan çıkıp geri döndüğünüzde (oyunu ilk
+  açtığınızda değil) ve yalnızca son dört saat içinde herhangi bir türde tam ekran reklam
+  gösterilmemişse.</li>
+</ul>
+<p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google, hizmetlerimizi
+  kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543?hl=tr">AdMob ve üçüncü taraf reklamcılık</a></li>
+</ul>
+
+<h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
+<p>Oyunun nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici oyuna
+iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
+Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca oyunun
+Google Play üzerinden dağıtılan sürümünde çalışır. Oyun, bu hizmetlerin topladıklarına
+kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
+log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Uygulama örneği kimliği — Analytics'in bu kurulum için oluşturduğu rastgele bir
+      tanımlayıcı</td>
+      <td>Kim olduğunuzu bilmeden kurulumları ve oturumları saymak</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği — yukarıda anlatılan sıfırlanabilir tanımlayıcı; oyun AdMob için
+      <code>AD_ID</code> iznini tanımladığından Analytics de ona erişebilir</td>
+      <td>Kullanım istatistikleri; reklam amaçlı kullanım yalnızca rıza seçimlerinizin izin
+      verdiği ölçüde (aşağıda)</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, maskelenmiş IP adresinizden türetilen ülke veya bölge</td>
+      <td>Ülkeye ve bölgeye göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Cihaz ve oyun bilgileri — cihaz modeli, işletim sistemi sürümü, dil, oyun
+      sürümü</td>
+      <td>Cihaza, Android sürümüne, dile ve oyun sürümüne göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Kullanım olayları — ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi,
+      oyunun güncellenmesi ve kaldırılması</td>
+      <td>Oyunu kaç kişinin, ne sıklıkla ve ne kadar süre kullandığı</td>
+    </tr>
+    <tr>
+      <td>Oyunun nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
+      sayfası ya da bir kampanya bağlantısı)</td>
+      <td>Kurulumların nereden geldiğini saymak</td>
+    </tr>
+    <tr>
+      <td>Google Play'in bildirdiği satın alma olayları — tek seferlik "reklamları kaldır" satın
+      almasının ürünü, adı ve fiyatı</td>
+      <td>Satın almaları saymak; kart veya ödeme bilgisi içermez</td>
+    </tr>
+    <tr>
+      <td>Çökme raporları; yalnızca oyun çöktüğünde ya da ölümcül bir hatayla
+      karşılaştığında gönderilir — yığın izi (stack trace), cihaz bilgileri (model, işletim
+      sistemi sürümü, ekran yönü, boş bellek ve disk alanı) ve rastgele bir Crashlytics kurulum
+      kimliği</td>
+      <td>Çökmeleri bulup düzeltmek ve bir çökmenin kaç kurulumu etkilediğini saymak</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Analytics oyunun kullanıldığını ve ne kadar süre kullanıldığını kaydeder, oyunda ne yaptığınızı
+değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, oyunlarınızı değil. İki
+hizmet de adınızı, e-posta adresinizi veya herhangi bir hesap bilginizi almaz.</p>
+<p>AEA'da, Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan
+rıza formu Analytics'i de kapsar: oradaki seçimleriniz, Analytics'in tanımlayıcılarını cihazınızda
+saklayıp saklayamayacağını ve verilerin reklam amacıyla kullanılıp kullanılamayacağını belirler.
+AEA'da ve Birleşik Krallık'ta Analytics, siz formu yanıtlayana kadar cihazınızda hiçbir tanımlayıcı
+saklamaz; verilerin reklam için kullanılması ("ad user data") ve reklam kişiselleştirmesi de bu
+bölgelerde siz rıza verene kadar kapalı kalır. Seçiminizi dilediğiniz zaman <strong>Ayarlar →
+Gizlilik seçenekleri</strong> yolundan değiştirebilirsiniz; bu giriş gerekli olduğu yerlerde
+görünür. Oyunda kullanım istatistikleri veya çökme raporları için ayrı bir anahtar yoktur; oyunu
+kaldırmak ikisini de durdurur.</p>
+<p>Analytics, bir kurulumun tanımlayıcılarına bağlı verileri en fazla 14 ay saklar; tanımlayıcı
+içermeyen toplu raporlar daha uzun tutulabilir. Crashlytics çökme raporlarını 90 gün saklar.</p>
+<p>Google bu verileri geliştirici adına, veri işleyen sıfatıyla, Firebase ve Google Analytics veri
+işleme koşulları kapsamında işler. Veriler, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz
+dışındaki Google sunucularında işlenebilir ve aktarım sırasında şifrelenir (TLS).</p>
+<p>Google bu hizmetleri şu sayfalarda anlatır:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Satın almalar — Google Play Faturalandırma</h2>
+<p>Oyun, Ayarlar'da, araya giren reklamları kalıcı olarak kaldıran isteğe bağlı, tek seferlik ve
+tüketilemez tek bir satın alma sunar. Abonelik ya da yinelenen hiçbir ödeme yoktur. İsteğe bağlı
+geri alma videosu satın almadan sonra da kullanılabilir kalır — o reklam yalnızca siz istediğinizde
+oynatılır.</p>
+<p>İşlem tamamen Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
+numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı hiçbir zaman görmez ya da
+almaz.</strong> Google Play yalnızca toplulaştırılmış satış rakamlarını bildirir; Google Analytics
+for Firebase de satın almanın yapıldığını — ürünü, adını ve fiyatını, hiçbir ödeme bilgisi
+olmadan — kaydeder (yukarıya bakın). Oyun içinde satın alma, cihazınızda tek bir doğru/yanlış
+bayrağı olarak kaydedilir ve oyun her açıldığında Google Play hesabınızla yeniden doğrulanır; böylece
+yeniden kurduğunuzda veya yeni bir cihaza geçtiğinizde geri yüklenir.</p>
+<p>Ödeme verilerinizin Google tarafından işlenmesi
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
+koşulları kapsamındadır.</p>
+
+<h2>Reklam tercihleriniz</h2>
+
+<h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
+<p>Oyun açıldığında ve herhangi bir reklam istenmeden önce, gerekli olduğu yerde Google'ın User
+Messaging Platform'uyla oluşturulmuş bir rıza formu gösterir ve neye izin vereceğinizi orada
+seçersiniz. Seçiminiz Google'ın bileşeni tarafından cihazınızda saklanır ve sonraki açılışlarda
+dikkate alınır.</p>
+<p>Kararınızı dilediğiniz zaman değiştirebilirsiniz: oyunu açın,
+<strong>Ayarlar → Gizlilik seçenekleri</strong> yolunu izleyin, aynı form yeniden görünür. Rızanızı
+oradan geri çekebilirsiniz. Rızayı geri çekmek oyunu devre dışı bırakmaz; oynamaya devam
+edebilirsiniz ve reklamlar kişiselleştirilmemiş biçimde gösterilmeye devam edebilir. Aynı seçimler,
+yukarıda anlatıldığı gibi aracılık ortakları ve Google Analytics for Firebase için de geçerlidir.</p>
+
+<h3>Kendi gizlilik yasaları olan ABD eyaletlerindeyseniz</h3>
+<p>Google'ın rıza araçlarının eyaletiniz için geçerli olduğu durumlarda, aynı <strong>Ayarlar →
+Gizlilik seçenekleri</strong> girişi seçimlerinizi gözden geçirmenizi ve bilgilerinizin hedefli
+reklamcılıkta kullanılmasını reddetmenizi sağlar.</p>
+
+<h3>Diğer her yerde</h3>
+<p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak gerekli olduğu yerlerde
+görünür, dolayısıyla siz görmeyebilirsiniz. Reklamları yine de işletim sistemi düzeyinde
+denetleyebilirsiniz: Android <strong>Ayarlar → Gizlilik → Reklamlar</strong> yolundan (kesin
+konum üreticiye ve Android sürümüne göre değişir) reklam kimliğinizi sıfırlayabilir ya da tamamen
+silebilirsiniz; silmek uygulamaların sabit bir reklam tanımlayıcısı almasını durdurur.</p>
+
+<h3>Reklamları tamamen kaldırmak</h3>
+<p>Tek seferlik reklam kaldırma satın alındığında banner, geçiş ve uygulama açılış reklamları
+tümüyle durur. Geriye kalan tek reklam isteğe bağlı geri alma videosudur ve yalnızca siz izlemeyi
+seçtiğinizde oynatılır; hazır olsun diye oyun onu önceden yükler.</p>
+
+<h2>Oyunun istediği izinler</h2>
+<div class="card">
+<ul>
+  <li><code>INTERNET</code> — reklamların alınması, Google Play Faturalandırma ile iletişim ve yukarıda
+  anlatılan kullanım istatistikleriyle çökme raporlarının gönderilmesi için gereklidir. Ağ
+  üzerinden başka hiçbir şey gönderilmez.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yüklemeye çalışmadan önce bağlantı
+  olup olmadığını denetlemesini sağlar.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
+  aracılık ortaklarının ve Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına
+  erişim.</li>
+</ul>
+</div>
+<p>Oyunun kendisinin tanımladığı izinler bunlardır ve hiçbiri izin penceresi göstermez. İçindeki
+bileşenler, Android'in kurulum sırasında size sormadan verdiği birkaç izin daha ekler: Google Play'in
+faturalandırma ve kurulum yönlendiricisi izinleri, Android'in reklam hizmetleri izinleri (reklam
+kimliği, ilişkilendirme ve konular), Google bileşenlerinin arka plan işleri için kullandığı uyanık
+tutma (wake lock) ve ön plan hizmeti izinleri ile AppLovin ve Liftoff reklam kitlerinden gelen Wi-Fi
+durumu, titreşim, Google Play lisans denetimi ve bir cihaz doğrulama izni. Oyun hiçbir Android
+sürümünde depolama, kamera, kişiler, mikrofon, konum, bildirim veya hesap izni istemez.</p>
+
+<h2>Çocuklar</h2>
+<p>Bu, genel kitleye yönelik bir oyundur. 13 yaş altındaki (AEA'da 16 yaş altındaki veya
+ülkenizdeki eşdeğer asgari yaştaki) <strong>çocuklara yönelik değildir</strong>, bir çocuk
+kategorisinde listelenmez ve çocuklar için tasarlanmamış, çocuklara pazarlanmamıştır. Geliştirici
+çocuklardan bilerek hiçbir kişisel bilgi toplamaz. Bir çocuğun bu oyundaki reklam, analiz veya
+çökme raporlama hizmetleri aracılığıyla kişisel bilgi verdiğini düşünüyorsanız aşağıdaki adrese ve
+bu bilgiyi tutacak olan Google'a yazın.</p>
+
+<h2>Verilerin saklanması</h2>
+<p>Geliştiricinin bir sunucusu yoktur ve kendi elinde hiçbir kullanıcı verisi saklamaz. Kullanım
+istatistikleri ve çökme raporları geliştirici adına Google'da tutulur: bir kurulumun
+tanımlayıcılarına bağlı Analytics verileri en fazla 14 ay (tanımlayıcı içermeyen toplu raporlar
+daha uzun tutulabilir), çökme raporları ise 90 gün.
+Cihazınızdaki veriler, oyunun verilerini temizleyene ya da oyunu kaldırana kadar orada kalır;
+Android yedeğinizdeki kopya ise Android'in ve Google'ın yedekleme ayarlarına göre saklanır ve
+silinir. Google'ın AdMob ve Google Play üzerinden, aracılık ortaklarının ise kendi hizmetleri
+üzerinden topladığı veriler, yukarıda bağlantısı verilen gizlilik politikalarında anlatılan kendi
+saklama takvimlerine göre tutulur.</p>
+
+<h2>Hukuki dayanaklar ve haklarınız</h2>
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde kişiselleştirilmiş reklamların hukuki dayanağı, yukarıda
+anlatılan formla alınan ve dilediğiniz zaman geri çekebileceğiniz rızanızdır. Kişiselleştirilmemiş
+reklamcılık, sahtekârlık önleme ve reklam hizmetlerinin güvenliği meşru menfaate dayanır. Satın
+almanızın işlenmesi, reklam kaldırma satın aldığınızda kurulan sözleşmenin
+ifası için gereklidir. Kullanım istatistikleri ve çökme raporları, geliştiricinin oyunu
+çalışır durumda tutma ve nasıl kullanıldığını toplu olarak anlama yönündeki meşru menfaatine
+dayanır; Analytics tanımlayıcılarının cihazınızda saklanması ve verilerin reklam amacıyla
+kullanılması ise rıza formundaki seçimlerinize bağlıdır.</p>
+<p>GDPR kapsamında ve eşdeğer koşullarla Türkiye'de KVKK (6698 sayılı Kanun) kapsamında; kişisel
+verilerinizin işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini
+isteme, işlenmesini kısıtlama veya buna itiraz etme, veri taşınabilirliği ve rızanızı geri çekme
+haklarına sahipsiniz. Ayrıca ulusal veri koruma otoritenize şikâyette bulunabilirsiniz — Türkiye'de
+Kişisel Verileri Koruma Kurumu (KVKK).</p>
+<p>Kullanım istatistikleri ve çökme raporları takma adlıdır: adınızı ya da e-posta adresinizi değil,
+rastgele tanımlayıcılar taşır; bu yüzden geliştirici hangi kayıtların size ait olduğunu bilemez.
+Rıza formunun gösterildiği yerlerde rızanızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz etmek ya da bu konuda
+soru sormak için aşağıdaki adrese yazabilirsiniz. Oyunu kaldırmak ya da verilerini temizlemek
+eski tanımlayıcılarla bağı koparır; daha önce gönderilmiş veriler de yukarıdaki sürelerin sonunda
+silinir.
+Reklam verilerine ilişkin talepler, bu verileri elinde tutan taraf olarak Google'a ya da ilgili
+aracılık ortağına, yukarıda bağlantısı verilen gizlilik politikalarındaki araçlar kullanılarak
+iletilmelidir. Bunun dışındaki her şey için ya da doğru yolu bulmakta yardım için aşağıdaki adrese
+yazın.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Oyunun veri uygulamaları değişirse — örneğin yeni bir üçüncü taraf hizmet eklenirse — bu sayfa
+güncellenir ve en üstteki "son güncelleme" tarihi değişir. Esaslı değişiklikler ayrıca oyunun
+Google Play sayfasına da yansıtılır. Güncellemeden sonra oynamaya devam etmeniz, gözden geçirilmiş
+politikayı kabul ettiğiniz anlamına gelir.</p>
+<p>Bu, oyunun ilk sürümüyle birlikte yayımlanan, bu politikanın ilk sürümüdür.</p>
+
+<h2 id="contact">İletişim</h2>
+<p>Bu politikayla veya oyundaki gizlilikle ilgili her soru için:</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Bu adres, oyunun Google Play sayfasında da yazan adrestir. Hata bildirimleri, gizlilik
+  soruları ve veri talepleri buraya ulaşır.</p>
+</div>
+
+<footer>
+  2048 Zen — hesap yok, abonelik yok, tamamen çevrimdışı oynanır. Bu politika, oyunun ilk
+  sürümünden (1.0) itibaren yayımlanan sürümlerini anlatır.
+</footer>
+
+</main>
+</body>
+</html>

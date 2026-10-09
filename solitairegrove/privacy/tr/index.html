@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Solitaire Grove</title>
+<meta name="description" content="Solitaire Grove Android kart oyununun (Klondike, Spider, FreeCell) gizlilik politikası. Hesap ve oyuna ait sunucu yok; reklamlar (Google AdMob ve aracılık ortakları), satın almalar, kullanım istatistikleri ve çökme raporları Google üzerinden yürür.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/imagetopdf/privacy/tr/">ImageToPdf politikası</a><span class="sep">·</span><a href="/pdfpages/privacy/tr/">PdfPages politikası</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — Solitaire Grove</h1>
+  <p class="lede">Android oyunu, paket adı <code>com.bumustudios.solitairegrove</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 9 Ekim 2026.</span> <span>Son güncelleme: 9 Ekim 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Hesap yok; oyunlarınız telefonunuzda kalır.</strong> Giriş ekranı ve bu oyuna ait bir
+  sunucu yoktur. Oyun dosyalarınızı, fotoğraflarınızı veya kişilerinizi okumaz — hiçbir depolama
+  izni istemez.
+  Her dağıtım, her ipucu ve kazanan yolu bulan çözücü telefonunuzda, çevrimdışı
+  hesaplanır.</p>
+  <p>Telefonunuzdan çıkan her şey aşağıda ayrıntısıyla anlatılmıştır: Google reklam ve ödeme
+  hizmetleri, Google'ın bir reklam isteğini iletebileceği reklam ortakları ile geliştiricinin
+  Google Firebase aracılığıyla topladığı kullanım istatistikleri ve çökme raporları. Tek seferlik
+  reklam kaldırma satın alınırsa araya giren reklamlar durur; geriye yalnızca Çözüm yolu veya
+  kazanılabilir bir konuma geri dönmek için izlemeyi kendinizin seçebileceği isteğe bağlı
+  reklamlar kalır.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play üzerinden <code>com.bumustudios.solitairegrove</code> paket adıyla
+dağıtılan <em>Solitaire Grove</em> Android oyununu kapsar. Oyunun bağımsız geliştiricisi
+BumuStudios tarafından yazılmıştır. Sorularınızı <a href="#contact">İletişim</a> bölümündeki
+adrese iletebilirsiniz.</p>
+
+<h2>Oyun nedir</h2>
+<p>Solitaire Grove üç solitaire kart oyunundan oluşan bir derlemedir: Klondike (1 veya 3 kart
+çekme), Spider (1, 2 veya 4 renk) ve FreeCell. Her dağıtım, oyunun çözücüsünün önceden kazandığı
+dağıtımlardan oluşan yerleşik bir katalogdan gelir; bu yüzden her biri kazanılabilir. Geri alma
+sınırsız ve ücretsizdir, her oyun için bir günlük dağıtım vardır ve her varyant için istatistik
+tutulur. Hesap yok, abonelik yok, enerji sistemi yok.</p>
+
+<h2>Oyun tamamen cihazınızda çalışır</h2>
+<p>En önemli bölüm bu, o yüzden açıkça yazıyoruz:</p>
+<ul>
+  <li><strong>Hamleleriniz ve istatistikleriniz yüklenmez.</strong> Oyunun kendine ait bir
+  sunucusu yoktur. Oyunlarınız, istatistikleriniz ve serileriniz ve devam eden dağıtımınız hiçbir
+  yere gönderilmez; çevrimiçi bir liderlik tablosu yoktur. Aşağıda anlatılan kullanım
+  istatistikleri oyunun ne zaman açıldığını, hangi ekranların gösterildiğini ve ne kadar süre açık
+  kaldığını kaydeder; hamlelerinizi, dağıtımlarınızı ya da istatistiklerinizi asla kaydetmez.</li>
+  <li><strong>Dağıtımların ve günlük dağıtımın sunucuya ihtiyacı yoktur.</strong> Dağıtım
+  kataloğu oyunun kendi içindedir; günlük dağıtım cihazınızda tarihe göre seçilir. Böylece aynı
+  gün herkes aynı kartları alır ve hiçbir ağ isteği yapılmaz.</li>
+  <li><strong>İpuçları ve Çözüm yolu telefonunuzda hesaplanır.</strong> Ücretsiz ipucu ile Çözüm
+  yolu'nun ve "Kazanılabilir konuma geri dön"ün arkasındaki çözücü cihazınızda çalışır.
+  Kartlarınızın dizilişi çözülmek üzere hiçbir yere gönderilmez.</li>
+  <li><strong>Oyun hiçbir dosya okumaz.</strong> Hiçbir Android sürümünde depolama, kamera,
+  mikrofon, kişiler, konum veya bildirim izni istemez.</li>
+  <li><strong>Güncellemeler Google Play üzerinden yürür.</strong> Oyun, telefonunuzdaki Google
+  Play Store'a daha yeni bir sürüm olup olmadığını sorar ve varsa indirmeyi önerir (Google Play
+  Uygulama İçi Güncellemeler). Bu işleme hiçbir oyun verisi katılmaz.</li>
+</ul>
+
+<h3>Oyunun cihazda sakladıkları</h3>
+<p>Oyun, cihazdaki kendi özel alanında az miktarda durum bilgisi tutar. Bunların hiçbiri kişisel
+bilgi değildir ve hiçbiri bir yere gönderilmez:</p>
+<ul>
+  <li>tema, yazı boyutu, dil, ses ve titreşim tercihleriniz; Büyük kartlar, kartların temellere
+  otomatik taşınması ve solak düzeni ayarları; Klondike çekme ve Spider renk sayısı
+  seçimleriniz;</li>
+  <li>her varyant için istatistikleriniz (oynanan ve kazanılan oyunlar, seriler, en iyi süre, en
+  az hamle) ile günlük dağıtım kayıtlarınız ve serileriniz;</li>
+  <li>devam eden dağıtım; yeniden açılışta geri alma geçmişiyle birlikte sürdürülebilmesi için
+  her hamleden sonra dağıtım ve hamlelerinizin listesi olarak kaydedilir;</li>
+  <li>her varyantta sıradaki katalog dağıtımının hangisi olduğu ve oyun ilk dağıtımı yaptığında
+  oluşturulan, bu kurulumdaki dağıtımların sırasını karıştıran rastgele bir sayı;</li>
+  <li>tek seferlik "reklamları kaldır" satın almasının etkin olup olmadığı;</li>
+  <li>aşağıda anlatılan reklamsız ilk dağıtımlar için kaç geçiş reklamı gösterildiğini tutan bir
+  sayaç.</li>
+</ul>
+<p>Ayarlarınız, istatistikleriniz, serileriniz, günlük dağıtım kayıtlarınız ve devam eden
+dağıtım Android yedeklemesine ve cihazdan cihaza aktarıma dahildir; böylece yeni bir telefon
+galibiyetlerinizi ve serilerinizi silmez. Android bu yedeği Google hesabınızda saklar; yedeklemeyi
+telefonunuzun ayarlarından kapatabilirsiniz. Satın alma bayrağı ve reklam sayacı, yedeklemenin ve
+aktarımın bilerek dışında bırakılmıştır; Google'ın reklam, rıza ve Analytics bileşenlerinin kendi
+ayarlarını tuttuğu alanın tamamı da öyle — rıza yeni bir cihazda yeniden sorulur, satın alma ise
+Google Play'den geri yüklenir. Aşağıda anlatılan Google Firebase bileşenleri de oyunun özel
+alanında üç rastgele tanımlayıcı saklar: bir Firebase kurulum kimliği, Analytics uygulama örneği
+kimliği ve bir Crashlytics kurulum kimliği. Yukarıdaki listenin aksine bu tanımlayıcılar kullanım
+istatistikleri ve çökme raporlarıyla birlikte gönderilir. İstatistiklerinizi İstatistikler
+ekranındaki <strong>İstatistikleri sıfırla</strong> ile kendiniz silebilirsiniz. Oyunu kaldırmak
+veya verilerini temizlemek, bu tanımlayıcılar dahil oyunun cihazda sakladığı her şeyi siler.</p>
+
+<h2>Reklamlar — Google AdMob ve aracılık ortakları</h2>
+<p>Oyun ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
+üzerinden sunulan reklamlarla desteklenir. AdMob oyuna bir yazılım geliştirme kiti olarak
+gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>. Reklamlar sunulurken
+AdMob ve Google'ın reklam ortakları şunları toplayıp işleyebilir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Reklam kimliği (Android tarafından atanan, sıfırlanabilir tanımlayıcı)</td>
+      <td>Reklam sunumu, sıklık sınırlama, reklam ölçümü, sahtekârlık önleme</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, IP adresinizden türetilen kaba konum</td>
+      <td>Ülkenize veya bölgenize uygun reklam sunumu ve yasal uyum</td>
+    </tr>
+    <tr>
+      <td>Cihaz bilgileri — model, işletim sistemi sürümü, dil, ekran ve ağ özellikleri</td>
+      <td>Reklamların doğru görüntülenmesi, reklam ölçümü, sahtekârlık önleme</td>
+    </tr>
+    <tr>
+      <td>Uygulama etkileşim olayları — bir reklamın istendiği, gösterildiği, tıklandığı veya
+      kapatıldığı bilgisi</td>
+      <td>Reklam ölçümü, reklamverenlere faturalama, sahtekârlık önleme</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Aracılık (mediation) ortakları</h3>
+<p>Oyun ayrıca, AdMob'un aracılık (mediation) özelliğiyle kullanabildiği altı reklam ağının
+yazılım geliştirme kitlerini de içerir: <strong>AppLovin</strong>, <strong>Unity Ads</strong>,
+<strong>Liftoff Monetize</strong> (eski adıyla Vungle), <strong>Meta Audience Network</strong>,
+<strong>Mintegral</strong> ve <strong>Pangle</strong>. Oyun bir reklam istediğinde AdMob bu
+isteği bu ortaklardan birine iletebilir; reklamı sunan ortak da yukarıdaki tablodaki aynı veri
+türlerini — reklam kimliği, IP adresinizden türetilen yaklaşık konum, cihaz bilgileri ve reklam
+etkileşim olayları — alır ve kendi gizlilik politikası kapsamında işler. Rıza seçimleriniz
+(aşağıda), Google'ın rıza formunun cihazınızda sakladığı sektör standardı rıza sinyaliyle bu
+ortaklara ulaşır. Oyunun kendisi bu ortaklara doğrudan hiçbir şey göndermez.</p>
+
+<p>Oyun GPS veya hassas konum izni <strong>istemez</strong>; hamlelerinizi, dağıtımlarınızı ya da
+istatistiklerinizi AdMob'a veya herhangi bir ortağa göndermez. Geliştirici AdMob'dan ya da
+ortaklarından hiçbir kişisel veri almaz — yalnızca gösterim ve gelir toplamları gibi
+toplulaştırılmış, anonim raporlar.</p>
+
+<h3>Reklamların göründüğü yerler</h3>
+<p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden oyun
+<code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Reklam biçimleri, oyunun
+onları kullandığı şekliyle şunlardır:</p>
+<ul>
+  <li><strong>Banner</strong> — Ana ekranın ve İstatistikler ekranının altında uyarlanabilir bir
+  banner. Oyun ekranında banner yoktur.</li>
+  <li><strong>Geçiş reklamı</strong> — yalnızca biten bir dağıtımdan ayrılırken: bir galibiyetten
+  sonra (Yeni dağıtım, Bu dağıtımı tekrar oyna veya Ana ekrana dön) ya da "Hamle kalmadı"
+  kartından (Yeni dağıtım veya Ana ekrana dön). Kurulumdan sonraki bu türden ilk iki durumda
+  reklam gösterilmez ve bir geçiş reklamı, başka bir tam ekran reklamdan sonraki 45 saniye içinde
+  asla gösterilmez. Bir dağıtımın ortasında geçiş reklamı çıkmaz.</li>
+  <li><strong>Ödüllü — Çözüm yolu.</strong> <strong>Çözüm yolu</strong> düğmesi oyunda yalnızca
+  bir reklam hazır olduğunda görünür. Düğmeye dokunduğunuzda oyun önce cihazınızda, bulunduğunuz
+  konumdan kazanan bir yol arar; bulamazsa hiçbir reklam gösterilmez, size bu bildirilir ve düğme
+  o konum için geri çekilir. Bulursa reklam oynatılır; reklamı izledikten sonra İpucu düğmesi o
+  dağıtımın geri kalanında — aynı dağıtımı yeniden başlatsanız da — çözücüden adım adım
+  yönlendirmeye ("Sonraki adım") dönüşür. Temel ipucu her zaman ücretsizdir.</li>
+  <li><strong>Ödüllü — Kazanılabilir konuma geri dön.</strong> "Hamle kalmadı" kartı göründüğünde,
+  "Kısa bir reklam izle" notuyla bu seçeneği sunabilir; ancak yalnızca bir reklam hazırsa ve en az
+  bir hamle yapmışsanız. Reklamdan sonra oyun, çözücüsünün dağıtımı kazanabildiği en son konuma
+  geri döner; bu konum şu anki konumunuz ya da dağıtımın başlangıcıysa Çözüm yolu da açılır. Aynı
+  karttaki Son hamleyi geri al, Bu dağıtımı yeniden başlat ve Yeni dağıtım her zaman
+  ücretsizdir.</li>
+  <li><strong>Uygulama açılış reklamı</strong> — oyundan başka bir yere geçip geri döndüğünüzde
+  görünebilen bir reklam; oyunu ilk açtığınızda asla görünmez ve yalnızca önceki dört saat içinde
+  hiçbir tam ekran reklam gösterilmemişse çıkar.</li>
+</ul>
+<p>Ödüllü reklamlar yalnızca düğmelerine siz dokunduğunuzda oynatılır. Oyun, gerektiğinde hazır
+olmaları için reklamları önceden yükler.</p>
+
+<p>Google'ın ve ortaklarının bu verileri nasıl işlediği bu politikaya değil, kendi politikalarına
+tabidir:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google, hizmetlerimizi
+  kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543?hl=tr">AdMob ve üçüncü taraf reklamcılık</a></li>
+  <li><a href="https://legal.applovin.com/privacy/">AppLovin Gizlilik Politikası</a></li>
+  <li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Oyuncu ve
+  Uygulama Kullanıcısı Gizlilik Politikası</a></li>
+  <li><a href="https://liftoff.ai/privacy-policy/">Liftoff Gizlilik Politikası</a></li>
+  <li><a href="https://www.facebook.com/privacy/policy/">Meta Gizlilik Politikası</a></li>
+  <li><a href="https://www.mintegral.com/en/privacy">Mintegral Gizlilik Politikası</a></li>
+  <li><a href="https://www.pangleglobal.com/privacy">Pangle Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
+<p>Oyunun nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici oyuna
+iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
+Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca oyunun
+Google Play üzerinden dağıtılan sürümünde çalışır. Oyun, bu hizmetlerin topladıklarına
+kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
+log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Uygulama örneği kimliği — Analytics'in bu kurulum için oluşturduğu rastgele bir
+      tanımlayıcı</td>
+      <td>Kim olduğunuzu bilmeden kurulumları ve oturumları saymak</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği — yukarıda anlatılan sıfırlanabilir tanımlayıcı; oyun AdMob için
+      <code>AD_ID</code> iznini tanımladığından Analytics de ona erişebilir</td>
+      <td>Kullanım istatistikleri; reklam amaçlı kullanım yalnızca rıza seçimlerinizin izin
+      verdiği ölçüde (aşağıda)</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, maskelenmiş IP adresinizden türetilen ülke veya bölge</td>
+      <td>Ülkeye ve bölgeye göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Cihaz ve oyun bilgileri — cihaz modeli, işletim sistemi sürümü, dil, oyun
+      sürümü</td>
+      <td>Cihaza, Android sürümüne, dile ve oyun sürümüne göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Kullanım olayları — ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi,
+      oyunun güncellenmesi ve kaldırılması</td>
+      <td>Oyunu kaç kişinin, ne sıklıkla ve ne kadar süre kullandığı, hangi ekranları
+      açtığı</td>
+    </tr>
+    <tr>
+      <td>Oyunun nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
+      sayfası ya da bir kampanya bağlantısı)</td>
+      <td>Kurulumların nereden geldiğini saymak</td>
+    </tr>
+    <tr>
+      <td>Google Play'in bildirdiği satın alma olayları — tek seferlik "reklamları kaldır" satın
+      almasının ürünü, adı ve fiyatı</td>
+      <td>Satın almaları saymak; kart veya ödeme bilgisi içermez</td>
+    </tr>
+    <tr>
+      <td>Çökme raporları; yalnızca oyun çöktüğünde ya da ölümcül bir hatayla
+      karşılaştığında gönderilir — yığın izi (stack trace), uygulamanın o andaki durumu (örneğin
+      ön planda olup olmadığı), cihaz bilgileri (model, işletim sistemi sürümü, ekran yönü, boş
+      bellek ve disk alanı) ve rastgele bir Crashlytics kurulum kimliği</td>
+      <td>Çökmeleri bulup düzeltmek ve bir çökmenin kaç kurulumu etkilediğini saymak</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını kaydeder, o ekranda ne
+yaptığınızı değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, kartlarınızı
+ya da hamlelerinizi değil. İki hizmet de adınızı, e-posta adresinizi veya herhangi bir hesap
+bilginizi almaz.</p>
+<p>AEA'da, Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan
+rıza formu Analytics'i de kapsar: oradaki seçimleriniz, Analytics'in tanımlayıcılarını cihazınızda
+saklayıp saklayamayacağını ve verilerin reklam amacıyla kullanılıp kullanılamayacağını belirler.
+Verilerin reklam için kullanılması ("ad user data") ve reklam kişiselleştirmesi bu bölgelerde siz
+rıza verene kadar kapalı kalır. Seçiminizi dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan değiştirebilirsiniz; bu giriş gerekli olduğu yerlerde görünür.
+Oyunda kullanım istatistikleri veya çökme raporları için ayrı bir anahtar yoktur; oyunu
+kaldırmak ikisini de durdurur.</p>
+<p>Analytics, bir kurulumun tanımlayıcılarına bağlı verileri en fazla 14 ay saklar; tanımlayıcı
+içermeyen toplu raporlar daha uzun tutulabilir. Crashlytics çökme raporlarını 90 gün saklar.</p>
+<p>Google bu verileri geliştirici adına, veri işleyen sıfatıyla, Firebase ve Google Analytics veri
+işleme koşulları kapsamında işler. Veriler, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz
+dışındaki Google sunucularında işlenebilir ve aktarım sırasında şifrelenir (TLS).</p>
+<p>Google bu hizmetleri şu sayfalarda anlatır:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Satın almalar — Google Play Faturalandırma</h2>
+<p>Oyun, Ayarlar'daki <strong>Reklamları kaldır</strong> seçeneğiyle, araya giren reklamları
+kalıcı olarak kaldıran isteğe bağlı, tek seferlik ve tüketilemez tek bir satın alma sunar.
+Abonelik ya da yinelenen hiçbir ödeme yoktur. Çözüm yolu ve Kazanılabilir konuma geri dön satın
+almadan sonra da kullanılabilir kalır — bunların reklamları yalnızca siz istediğinizde
+oynatılır.</p>
+<p>İşlem tamamen Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
+numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı hiçbir zaman görmez ya da
+almaz.</strong> Google Play
+yalnızca toplulaştırılmış satış rakamlarını bildirir; Google Analytics for Firebase de satın
+almanın yapıldığını — ürünü, adını ve fiyatını, hiçbir ödeme bilgisi olmadan — kaydeder
+(yukarıya bakın). Oyun içinde satın
+alma, cihazınızda tek bir doğru/yanlış bayrağı olarak kaydedilir ve yeniden kurduğunuzda veya yeni
+bir cihaza geçtiğinizde Google Play hesabınızdan geri yüklenir.</p>
+<p>Ödeme verilerinizin Google tarafından işlenmesi
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
+koşulları kapsamındadır.</p>
+
+<h2>Reklam tercihleriniz</h2>
+
+<h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
+<p>Kişiselleştirilmiş reklamlar istenmeden önce oyun, Google'ın User Messaging Platform'uyla
+oluşturulmuş bir rıza formu gösterir ve yukarıda sayılan aracılık ortakları dahil neye izin
+vereceğinizi orada seçersiniz. Bu adım tamamlanana kadar hiçbir reklam istenmez. Seçiminiz
+Google'ın bileşeni tarafından cihazınızda saklanır ve sonraki açılışlarda dikkate alınır.</p>
+<p>Kararınızı dilediğiniz zaman değiştirebilirsiniz: oyunu açın,
+<strong>Ayarlar → Gizlilik seçenekleri</strong> yolunu izleyin, aynı form yeniden görünür. Rızanızı
+oradan geri çekebilirsiniz. Rızayı geri çekmek oyunu devre dışı bırakmaz; oynamaya devam
+edebilirsiniz ve reklamlar
+kişiselleştirilmemiş biçimde gösterilmeye devam edebilir. Aynı seçimler, yukarıda anlatıldığı gibi
+Google Analytics for Firebase için de geçerlidir.</p>
+
+<h3>Gizlilik yasası olan bir ABD eyaletindeyseniz</h3>
+<p>Bir ABD eyaletinin gizlilik yasasının uygulandığı yerlerde seçimlerinizi aynı Google rıza
+araçları yönetir: gerekli olduğu yerlerde <strong>Ayarlar → Gizlilik seçenekleri</strong>,
+kişisel bilgilerinizin hedefli reklamcılık için satılmasını veya paylaşılmasını reddetmenizi
+sağlar.</p>
+
+<h3>Diğer her yerde</h3>
+<p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak gerekli olduğu yerlerde
+görünür, dolayısıyla siz görmeyebilirsiniz. Reklamları yine de işletim sistemi düzeyinde
+denetleyebilirsiniz: Android <strong>Ayarlar → Gizlilik → Reklamlar</strong> yolundan (kesin
+konum üreticiye ve Android sürümüne göre değişir) reklam kimliğinizi sıfırlayabilir ya da tamamen
+silebilirsiniz; silmek uygulamaların sabit bir reklam tanımlayıcısı almasını durdurur.</p>
+
+<h3>Reklamları tamamen kaldırmak</h3>
+<p>Tek seferlik reklam kaldırma satın alındığında banner, geçiş ve uygulama açılış reklamları
+tümüyle durur. Geriye yalnızca Çözüm yolu ve Kazanılabilir konuma geri dön için ödüllü reklamlar
+kalır; bunlar yalnızca düğmelerine siz dokunduğunuzda oynatılır, hazır olsun diye oyun bir
+tanesini önceden yükler.</p>
+
+<h2>Oyunun istediği izinler</h2>
+<div class="card">
+<ul>
+  <li><code>INTERNET</code> — reklamların alınması, Google Play Faturalandırma ile iletişim ve yukarıda
+  anlatılan kullanım istatistikleriyle çökme raporlarının gönderilmesi için gereklidir. Ağ
+  üzerinden başka hiçbir şey gönderilmez.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yüklemeye çalışmadan önce bağlantı
+  olup olmadığını denetlemesini sağlar.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
+  aracılık ortaklarının ve Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına
+  erişim.</li>
+</ul>
+</div>
+<p>Oyunun kendisinin tanımladığı izinler bunlardır. İçindeki Google bileşenleri ve reklam
+ortaklarının yazılım kitleri, Android'in kurulum sırasında size sormadan verdiği birkaç izin daha
+ekler: Google Play'in faturalandırma, lisans denetimi ve kurulum yönlendiricisi izinleri,
+Android'in reklam hizmetleri izinleri ile Wi-Fi durumunu denetleme, cihazı kısa süre uyanık
+tutma, titreşim ve ön plan hizmeti çalıştırma izinleri. Oyun hiçbir Android sürümünde depolama,
+kamera, kişiler, mikrofon, konum, bildirim veya hesap izni istemez.</p>
+
+<h2>Çocuklar</h2>
+<p>Bu, genel kitleye yönelik bir oyundur. 13 yaş altındaki (AEA'da 16 yaş altındaki veya
+ülkenizdeki eşdeğer asgari yaştaki) <strong>çocuklara yönelik değildir</strong>, bir çocuk
+kategorisinde listelenmez ve çocuklar için tasarlanmamış, çocuklara pazarlanmamıştır. Geliştirici
+çocuklardan bilerek hiçbir kişisel bilgi toplamaz. Bir çocuğun bu oyundaki reklam, analiz veya
+çökme raporlama hizmetleri aracılığıyla kişisel bilgi verdiğini düşünüyorsanız aşağıdaki adrese
+ve bu bilgiyi tutacak olan Google'a yazın.</p>
+
+<h2>Verilerin saklanması</h2>
+<p>Geliştiricinin bir sunucusu yoktur ve kendi elinde hiçbir kullanıcı verisi saklamaz. Kullanım
+istatistikleri ve çökme raporları geliştirici adına Google'da tutulur: bir kurulumun
+tanımlayıcılarına bağlı Analytics verileri en fazla 14 ay (tanımlayıcı içermeyen toplu raporlar
+daha uzun tutulabilir), çökme raporları ise 90 gün.
+Cihazınızdaki veriler, istatistiklerinizi sıfırlayana, oyunun verilerini temizleyene ya da oyunu
+kaldırana kadar orada kalır; Android yedeğinizdeki kopya ise Google hesabınızın yedekleme
+ayarlarına bağlıdır. Google'ın AdMob ve Google Play üzerinden, aracılık ortaklarının da kendi
+hizmetleri üzerinden topladığı veriler, <a href="https://policies.google.com/privacy?hl=tr">Google
+Gizlilik Politikası</a>'nda ve yukarıda bağlantısı verilen ortak politikalarında anlatılan kendi
+saklama takvimlerine göre tutulur.</p>
+
+<h2>Hukuki dayanaklar ve haklarınız</h2>
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde kişiselleştirilmiş reklamların hukuki dayanağı, yukarıda
+anlatılan formla alınan ve dilediğiniz zaman geri çekebileceğiniz rızanızdır. Kişiselleştirilmemiş
+reklamcılık, sahtekârlık önleme ve reklam hizmetlerinin güvenliği meşru menfaate dayanır. Satın
+almanızın işlenmesi, reklam kaldırma satın aldığınızda kurulan sözleşmenin
+ifası için gereklidir. Kullanım istatistikleri ve çökme raporları, geliştiricinin oyunu
+çalışır durumda tutma ve nasıl kullanıldığını toplu olarak anlama yönündeki meşru menfaatine
+dayanır; Analytics tanımlayıcılarının cihazınızda saklanması ve verilerin reklam amacıyla
+kullanılması ise rıza formundaki seçimlerinize bağlıdır.</p>
+<p>GDPR kapsamında ve eşdeğer koşullarla Türkiye'de KVKK (6698 sayılı Kanun) kapsamında; kişisel
+verilerinizin işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini
+isteme, işlenmesini kısıtlama veya buna itiraz etme, veri taşınabilirliği ve rızanızı geri çekme
+haklarına sahipsiniz. Ayrıca ulusal veri koruma otoritenize şikâyette bulunabilirsiniz — Türkiye'de
+Kişisel Verileri Koruma Kurumu (KVKK).</p>
+<p>Kullanım istatistikleri ve çökme raporları takma adlıdır: adınızı ya da e-posta adresinizi değil,
+rastgele tanımlayıcılar taşır; bu yüzden geliştirici hangi kayıtların size ait olduğunu bilemez.
+Rıza formunun gösterildiği yerlerde rızanızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz etmek ya da bu konuda
+soru sormak için aşağıdaki adrese yazabilirsiniz. Reklam kimliğinizi Android ayarlarından
+sıfırlamak ya da silmek, sonraki reklam isteklerinin öncekilerle bağını koparır. Oyunu kaldırmak
+ya da verilerini temizlemek eski Firebase tanımlayıcılarıyla bağı koparır; daha önce gönderilmiş
+veriler de yukarıdaki sürelerin sonunda silinir.
+Reklam verilerine ilişkin talepler, bu verileri elinde tutan taraf olarak Google'a ya da ilgili
+aracılık ortağına, yukarıda bağlantısı verilen gizlilik politikalarındaki araçlar kullanılarak
+iletilmelidir. Bunun dışındaki her şey için ya da doğru yolu bulmakta yardım için aşağıdaki
+adrese yazın.</p>
+
+<h2>Güvenlik</h2>
+<p>Oyunun sakladığı her şey, Android'in diğer uygulamaların erişiminden uzak tuttuğu özel uygulama
+alanında durur. Kullanım istatistikleri ve çökme raporları Google'a aktarım sırasında
+şifrelenerek (TLS) gönderilir; reklam kitlerinin bağlantıları ise sağlayıcılarının yukarıda
+bağlantısı verilen politikalarında anlatılan kendi uygulamalarıyla korunur. Geliştirici
+verilerinizin bir kopyasını tutmaz; bu yüzden ele geçirilebilecek bir geliştirici veritabanı
+yoktur.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Oyunun veri uygulamaları değişirse — örneğin yeni bir üçüncü taraf hizmet eklenirse — bu sayfa
+güncellenir ve en üstteki "son güncelleme" tarihi değişir. Esaslı değişiklikler ayrıca oyunun
+Google Play sayfasına da yansıtılır. Güncellemeden sonra oynamaya devam etmeniz, gözden geçirilmiş
+politikayı kabul ettiğiniz anlamına gelir.</p>
+
+<h2 id="contact">İletişim</h2>
+<p>Bu politikayla veya oyundaki gizlilikle ilgili her soru için:</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Bu adres, oyunun Google Play sayfasında da yazan adrestir. Hata bildirimleri, gizlilik
+  soruları ve veri talepleri buraya ulaşır.</p>
+</div>
+
+<footer>
+  Solitaire Grove — hesap yok, abonelik yok, tamamen çevrimdışı oynanır. Bağımsız geliştirici
+  BumuStudios tarafından yayımlanır.
+</footer>
+
+</main>
+</body>
+</html>

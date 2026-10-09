@@ -4,3 +4,8 @@
 # website on every store listing, or AdMob cannot find it.
 
 google.com, pub-6707898486985587, DIRECT, f08c47fec0942fa0
+
+# AdMob mediation partners (apps from Mahjong Solitaire onwards). When each partner
+# account is opened, paste the line(s) its dashboard gives for app-ads.txt below this
+# comment — with our own publisher/account ids, never copied from elsewhere:
+#   AppLovin, Unity Ads, Liftoff Monetize, Meta Audience Network, Mintegral, Pangle.

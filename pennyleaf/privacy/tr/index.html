@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — PennyLeaf</title>
+<meta name="description" content="PennyLeaf Android uygulamasının gizlilik politikası. Finansal kayıtlarınız cihazınızda kalır.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/imagetopdf/privacy/tr/">ImageToPdf politikası</a><span class="sep">·</span><a href="/pdfpages/privacy/tr/">PdfPages politikası</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — PennyLeaf</h1>
+  <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.pennyleaf</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 9 Ekim 2026.</span> <span>Son güncelleme: 9 Ekim 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Finansal kayıtlarınız geliştiriciye, hiçbir reklam ağına veya analiz hizmetine
+  ulaşmaz.</strong> Tutarlar, kategoriler, notlar, bütçeler ve tekrarlayan kayıtlar telefonunuzda,
+  uygulamanın özel alanında tutulur. Hesap açmanız gerekmez, giriş yapmanız gerekmez, banka
+  bağlantısı yoktur ve uygulamaya ait hiçbir sunucu yoktur. Tüm özellikler çevrimdışı çalışır.</p>
+  <p>Cihazınızdan çıkan her şey aşağıda ayrıntılı olarak anlatılmıştır: Google AdMob ve aracılık
+  (mediation) iş ortaklarının sunduğu reklamlar, Google Play'in ödeme ve güncelleme hizmetleri,
+  geliştiricinin Google Firebase aracılığıyla topladığı kullanım istatistikleri ve çökme raporları
+  ve — yalnızca açık tutuyorsanız — telefonunuzun Google hesabınıza yaptığı kendi Android
+  yedeklemesi. Tek seferlik reklam kaldırma satın alırsanız reklamlar tamamen durur; kullanım
+  istatistikleri ve çökme raporları buna bağlı değildir.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play üzerinden <code>com.bumustudios.pennyleaf</code> paket adıyla dağıtılan
+<em>PennyLeaf: Budget &amp; Expenses</em> (<em>PennyLeaf</em>) Android uygulamasını kapsar.
+Uygulamanın bağımsız geliştiricisi BumuStudios tarafından yazılmıştır. Sorularınızı
+<a href="#contact">İletişim</a> bölümündeki adrese iletebilirsiniz.</p>
+
+<h2>Uygulama ne yapar</h2>
+<p>PennyLeaf, çevrimdışı çalışan bir harcama ve bütçe takip uygulamasıdır. Giderlerinizi ve
+gelirlerinizi tutar, kategori, isteğe bağlı bir not ve tarihle kaydedersiniz; gider kategorileri
+için aylık bütçeler belirler, tekrarlayan kayıtlar (günlük, haftalık, aylık veya yıllık)
+eklersiniz; ayınızı veya yılınızı özet ekranında, grafikli raporlarda ve aranabilir
+geçmişte görürsünüz. Defterin tamamı için seçtiğiniz tek bir para birimi kullanılır; döviz kuru
+sorgulanmaz. Kayıtlarınızı bir hesap tablosuna (CSV) aktarabilir, eksiksiz bir yedek dosyası
+kaydedip geri yükleyebilirsiniz. Abonelik yoktur ve hiçbir özellik ödemeye bağlı değildir.</p>
+
+<h2>Finansal verileriniz cihazınızda kalır</h2>
+<p>En önemli bölüm bu olduğu için açıkça yazıyoruz:</p>
+<ul>
+  <li><strong>Kayıtlarınız uygulama tarafından hiçbir zaman yüklenmez.</strong> Uygulamanın kendine
+  ait bir sunucusu yoktur. Tutarlarınızı, kategorilerinizi, notlarınızı, bütçelerinizi, tekrarlayan
+  kayıtlarınızı veya para biriminizi geliştiriciye, reklam ağlarına ya da Google Firebase'e
+  göndermez; aşağıda anlatılan kullanım istatistikleri ve çökme raporları da bunları asla içermez:
+  bir çökme raporu, kayıtlarınızı değil, çökmenin kodun neresinde olduğunu gösterir.</li>
+  <li><strong>Banka bağlantısı yoktur.</strong> Uygulama banka, kart veya internet bankacılığı
+  bilgilerinizi hiçbir zaman istemez, hiçbir bankaya veya finansal hizmete bağlanmaz, SMS'lerinizi
+  veya bildirimlerinizi okumaz. Defterdeki her şey sizin kendi girdiğiniz bilgilerdir.</li>
+  <li><strong>Dışa aktarma ve yedekler yalnızca sizin seçtiğiniz yere gider.</strong> "Tabloya
+  aktar (CSV)" ve "Yedekle" seçenekleri Android'in sistem dosya seçicisini açar; dosya
+  yalnızca orada seçtiğiniz konuma — telefonunuzun depolama alanına ya da seçicide seçtiğiniz bir
+  bulut klasörüne — yazılır. "Yedekten geri yükle" de yalnızca seçtiğiniz tek dosyayı okur. Dosya
+  seçici aracılığıyla Android, uygulamaya yalnızca o tek dosyaya erişim verir, başka hiçbir şeye
+  değil.</li>
+  <li><strong>Hiçbir Android sürümünde depolama izni istenmez.</strong> Sistem dosya seçicisi bunu
+  gereksiz kılar.</li>
+</ul>
+
+<h3>Uygulamanın cihazda sakladıkları</h3>
+<p>Uygulama, cihazdaki kendi özel alanında aşağıdakileri tutar. Bunların hiçbiri geliştiriciye veya
+herhangi bir reklam ya da analiz hizmetine gönderilmez:</p>
+<ul>
+  <li>defteriniz, telefondaki bir veritabanında: kayıtlar (tür, tutar, kategori, not, tarih),
+  kategoriler (ad, simge, renk), aylık bütçeler, tekrarlama kuralları ve defterin para birimi;</li>
+  <li>ayarlarınız: tema, yazı boyutu, dil, para birimi seçimi ve seslerin açık olup olmadığı;</li>
+  <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı, ödüllü reklamla
+  kazanılan 24 saatlik reklamsız sürenin ne zaman bittiği ve reklam sıklığını düşük tutmak için
+  kullanılan, gösterilen geçiş reklamı sayacı.</li>
+</ul>
+<p>Google'ın reklam ve rıza bileşenleri de kendi ayarlarını cihazda, Google'ın denetiminde tutar;
+aşağıda anlatılan Google Firebase bileşenleri ise uygulamanın özel alanında üç rastgele tanımlayıcı
+saklar: bir Firebase kurulum kimliği, Analytics uygulama örneği kimliği ve bir Crashlytics kurulum
+kimliği. Yukarıdaki listenin aksine bu tanımlayıcılar kullanım istatistikleri ve çökme raporlarıyla
+birlikte gönderilir. Uygulamayı kaldırmak veya verilerini temizlemek, bu tanımlayıcılar dahil
+uygulamanın cihazda sakladığı her şeyi siler — aşağıda anlatılan kendi Android yedeğinizdeki kopya
+ve kendi kaydettiğiniz dışa aktarma veya yedek dosyaları hariç.</p>
+
+<h3>Android yedeklemesi</h3>
+<p>Telefon değiştirirken yılların kayıtlarını kaybetmek gerçek bir risk olduğundan uygulama,
+Android'in kendi yedeklemesine katılır — ama yalnızca defter ve ayarlarınız için. Yedekleme
+kuralları bir izin listesidir: Google bulut yedeklemesi ve cihazdan cihaza aktarım için tam olarak
+defter veritabanını ve ayarlar dosyasını kapsar. Geri kalan her şey bilerek dışarıda bırakılmıştır:
+satın alma ve reklam sıklığı durumu, reklam SDK'larının verileri ve rıza seçimleriniz (bunlar her
+cihazda yeniden alınır; satın alma Google Play'den geri yüklenir).</p>
+<ul>
+  <li>Bu kopyayı uygulama değil Android oluşturur ve yalnızca telefonunuzun ayarlarında yedekleme
+  açıksa oluşturur. Kopya, Google'ın yedekleme hizmeti kapsamında kendi Google hesabınızda saklanır;
+  geliştiricinin buna erişimi yoktur.</li>
+  <li>Android 12 ve sonrasında telefonunuzda ekran kilidi yoksa defter ve ayarlar bulut
+  yedeklemesinin tamamen dışında bırakılır; böylece ekran kilidinin sağladığı uçtan uca şifreleme
+  olmadan hiçbir zaman yüklenmez. Cihazdan cihaza aktarım bundan etkilenmez.</li>
+  <li>Android yedeklemesini telefonunuzun ayarlarından ve Google hesabınızdan kapatabilir,
+  yedekleri yönetebilir ve silebilirsiniz. Bir yedek varsa Android, uygulamayı yeniden
+  kurduğunuzda veya yeni bir telefon kurarken defterinizi geri yükleyebilir.</li>
+</ul>
+
+<h3>Dışa aktarma ve yedek dosyalarınız</h3>
+<p>Bir CSV dışa aktarımı her kayıt için tarihi, türü, kategoriyi, tutarı, para birimini ve notu
+içerir. Bir yedek dosyası (JSON) defterin tamamını içerir: kategoriler, kayıtlar, bütçeler,
+tekrarlama kuralları ve para birimi. Bu dosyalar şifrelenmez ve kaydedildikten sonra sizindir:
+nereye koyduysanız orada, o konumun kurallarına tabi olarak durur; geliştirici bunları hiçbir zaman
+almaz. Bir yedeğin geri yüklenmesi, telefondaki verileri ancak dosya baştan sona denetlendikten ve
+siz onayladıktan sonra değiştirir.</p>
+
+<h2>Reklamlar — Google AdMob ve aracılık iş ortakları</h2>
+<p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
+tarafından sunulan reklamlarla desteklenir. AdMob, uygulamaya bir yazılım geliştirme kiti olarak
+gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>. Reklamlar gösterilirken
+AdMob ve Google'ın reklam iş ortakları şunları toplayıp işleyebilir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Veri</th><th>Kullanım amacı</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Reklam kimliği (Android'in atadığı, sıfırlanabilir tanımlayıcı)</td>
+      <td>Reklam sunumu, gösterim sıklığı sınırlama, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, IP adresinden türetilen kaba konum</td>
+      <td>Ülkenize veya bölgenize uygun reklam sunumu ve yasal uyumluluk</td>
+    </tr>
+    <tr>
+      <td>Cihaz bilgileri — model, işletim sistemi sürümü, dil, ekran ve ağ özellikleri</td>
+      <td>Reklamların doğru görüntülenmesi, reklam ölçümü, dolandırıcılık önleme</td>
+    </tr>
+    <tr>
+      <td>Uygulama etkileşim olayları — bir reklamın istendiği, gösterildiği, tıklandığı veya
+      kapatıldığı bilgisi</td>
+      <td>Reklam ölçümü, reklamverenlerin faturalandırılması, dolandırıcılık önleme</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Aracılık iş ortakları</h3>
+<p>Uygulama, AdMob aracılığı (mediation) yoluyla altı başka reklam ağının yazılımını da içerir.
+AdMob herhangi bir reklam isteğini bu ağlardan birine iletebilir; bu durumda reklamı o ağ sunar ve
+yukarıdaki tabloda sayılan veri türlerinin aynısını (reklam kimliği, IP adresinden türetilen
+yaklaşık konum, cihaz bilgileri ve reklam etkileşim olayları) alır. Her ağ bu verileri kendi
+gizlilik politikasına göre işler:</p>
+<ul>
+  <li>AppLovin — <a href="https://legal.applovin.com/privacy/">AppLovin Gizlilik Politikası</a></li>
+  <li>Unity Ads — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity
+  Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a></li>
+  <li>Liftoff Monetize (eski adıyla Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff
+  Gizlilik Politikası</a></li>
+  <li>Meta Audience Network — <a href="https://www.facebook.com/privacy/policy/">Meta Gizlilik
+  Politikası</a></li>
+  <li>Mintegral — <a href="https://www.mintegral.com/en/privacy">Mintegral Gizlilik Politikası</a></li>
+  <li>Pangle — <a href="https://www.pangleglobal.com/privacy">Pangle Gizlilik Politikası</a></li>
+</ul>
+<p>"Reklam tercihleriniz" bölümünde anlatılan formda yaptığınız rıza seçimleri, bu iş ortaklarına
+onların okuduğu sektör standardı biçimde iletilir.</p>
+
+<h3>Reklam ağlarının asla almadıkları</h3>
+<p>Uygulama GPS veya hassas konum izni <strong>istemez</strong> ve kayıtlarınızı, tutarlarınızı,
+kategorilerinizi, notlarınızı veya defterin başka herhangi bir içeriğini reklam isteğine eklemez:
+her reklam isteği, uygulamadan anahtar kelime veya içerik bilgisi eklenmeden yapılır. Geliştirici,
+AdMob'dan veya iş ortaklarından hiçbir kişisel veri almaz; yalnızca gösterim ve gelir toplamları
+gibi toplulaştırılmış, anonim raporlar görür.</p>
+<p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden uygulama
+<code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Reklam SDK'ları ancak aşağıda
+anlatılan rıza adımı tamamlandıktan sonra başlatılır.</p>
+
+<h3>Reklamların göründüğü yerler</h3>
+<ul>
+  <li><strong>Banner</strong> — dört ana sekmede (Özet, Geçmiş, Bütçeler, Ayarlar) alt
+  gezinme çubuğunun altında tek bir uyarlanabilir banner. Kayıt formunda, Raporlar'da,
+  Kategoriler'de, Düzenli kayıtlar'da ve Hakkında ekranında banner yoktur; bir listenin içinde de asla
+  yer almaz.</li>
+  <li><strong>Geçiş reklamı</strong> — bir raporu gerçekten inceledikten sonra (raporda veri
+  vardır ve en az 12 saniye kalmış ya da raporla etkileşime geçmişsinizdir) Raporlar ekranından
+  çıkarken ara sıra görünebilen tam ekran reklam. Bu anların ilk ikisinde hiçbir zaman reklam
+  gösterilmez ve iki geçiş reklamı arasında her zaman en az iki dakika bulunur.</li>
+  <li><strong>Ödüllü reklam</strong> — isteğe bağlı: Ayarlar → "24 saat reklamsız". Ödüllü bir
+  reklamı izlemeyi seçerseniz banner, geçiş ve uygulama açılış reklamları sonraki 24 saat boyunca
+  durur.</li>
+  <li><strong>Uygulama açılış reklamı</strong> — uygulamaya geri döndüğünüzde en fazla dört saatte
+  bir görünebilen reklam; uygulamanın kendi açtığı bir şeyden (dosya seçici, satın alma, tarayıcı,
+  Play Store, e-posta uygulamanız veya bir Play güncellemesi) döndüğünüzde asla gösterilmez.</li>
+</ul>
+<p>Uygulamanın hiçbir özelliği reklama bağlı değildir.</p>
+<p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites">Google, hizmetlerimizi
+  kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543">AdMob ve üçüncü taraf reklamcılık</a></li>
+</ul>
+
+<h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
+<p>Uygulamanın nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici uygulamaya
+iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
+Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca uygulamanın
+Google Play üzerinden dağıtılan sürümünde çalışır. Uygulama, bu hizmetlerin topladıklarına
+kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
+log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir ve
+kayıtlarınız asla bunun bir parçası değildir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Uygulama örneği kimliği — Analytics'in bu kurulum için oluşturduğu rastgele bir
+      tanımlayıcı</td>
+      <td>Kim olduğunuzu bilmeden kurulumları ve oturumları saymak</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği — yukarıda anlatılan sıfırlanabilir tanımlayıcı; uygulama AdMob için
+      <code>AD_ID</code> iznini tanımladığından Analytics de ona erişebilir</td>
+      <td>Kullanım istatistikleri; reklam amaçlı kullanım yalnızca rıza seçimlerinizin izin
+      verdiği ölçüde (aşağıda)</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, maskelenmiş IP adresinizden türetilen ülke veya bölge</td>
+      <td>Ülkeye ve bölgeye göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Cihaz ve uygulama bilgileri — cihaz modeli, işletim sistemi sürümü, dil, uygulama
+      sürümü</td>
+      <td>Cihaza, Android sürümüne, dile ve uygulama sürümüne göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Kullanım olayları — ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi,
+      uygulamanın güncellenmesi ve kaldırılması</td>
+      <td>Uygulamayı kaç kişinin, ne sıklıkla ve ne kadar süre kullandığı, hangi ekranları
+      açtığı</td>
+    </tr>
+    <tr>
+      <td>Uygulamanın nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
+      sayfası ya da bir kampanya bağlantısı)</td>
+      <td>Kurulumların nereden geldiğini saymak</td>
+    </tr>
+    <tr>
+      <td>Google Play'in bildirdiği satın alma olayları — tek seferlik "reklamları kaldır" satın
+      almasının ürünü, adı ve fiyatı</td>
+      <td>Satın almaları saymak; kart veya ödeme bilgisi içermez</td>
+    </tr>
+    <tr>
+      <td>Çökme raporları; yalnızca uygulama çöktüğünde ya da ölümcül bir hatayla
+      karşılaştığında gönderilir — yığın izi (stack trace), uygulamanın o andaki durumu, cihaz
+      bilgileri (model, işletim sistemi sürümü, ekran yönü, boş bellek ve disk alanı) ve rastgele
+      bir Crashlytics kurulum kimliği</td>
+      <td>Çökmeleri bulup düzeltmek ve bir çökmenin kaç kurulumu etkilediğini saymak</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını kaydeder, o ekranda ne
+yaptığınızı değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, içeriğinizi
+değil. İki hizmet de adınızı, e-posta adresinizi, herhangi bir hesap bilginizi veya defterinizden
+herhangi bir şeyi almaz.</p>
+<p>AEA'da, Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan
+rıza formu Analytics'i de kapsar: oradaki seçimleriniz, Analytics'in tanımlayıcılarını cihazınızda
+saklayıp saklayamayacağını ve verilerin reklam amacıyla kullanılıp kullanılamayacağını belirler.
+Verilerin reklam için kullanılması ("ad user data") ve reklam kişiselleştirmesi bu bölgelerde siz
+rıza verene kadar kapalı kalır. Seçiminizi dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan değiştirebilirsiniz; bu giriş gerekli olduğu yerlerde görünür.
+Uygulamada kullanım istatistikleri veya çökme raporları için ayrı bir anahtar yoktur; uygulamayı
+kaldırmak ikisini de durdurur.</p>
+<p>Analytics, bir kurulumun tanımlayıcılarına bağlı verileri en fazla 14 ay saklar; tanımlayıcı
+içermeyen toplu raporlar daha uzun tutulabilir. Crashlytics çökme raporlarını 90 gün saklar.</p>
+<p>Google bu verileri geliştirici adına, veri işleyen sıfatıyla, Firebase ve Google Analytics veri
+işleme koşulları kapsamında işler. Veriler, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz
+dışındaki Google sunucularında işlenebilir ve aktarım sırasında şifrelenir (TLS).</p>
+<p>Google bu hizmetleri şu sayfalarda anlatır:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Satın alma ve güncellemeler — Google Play</h2>
+<p>Uygulamada, reklamları kalıcı olarak kaldıran tek seferlik ve isteğe bağlı tek bir satın alma
+vardır. Abonelik veya yinelenen hiçbir ödeme yoktur.</p>
+<p>İşlemin tamamı Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
+numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı asla görmez ve almaz.</strong>
+Google Play
+yalnızca toplulaştırılmış satış rakamlarını bildirir; Google Analytics for Firebase de satın
+almanın yapıldığını — ürünü, adını ve fiyatını, hiçbir ödeme bilgisi olmadan — kaydeder
+(yukarıya bakın). Uygulama içinde satın alma, cihazınızda
+tek bir doğru/yanlış işareti olarak tutulur; uygulamayı yeniden kurduğunuzda veya yeni bir cihaza
+geçtiğinizde Google Play hesabınızdan geri yüklenir. Ödeme verilerinizin Google tarafından işlenmesi
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
+koşulları kapsamındadır.</p>
+<p>Uygulama ayrıca daha yeni bir sürüm olup olmadığını denetlemek ve kabul ederseniz onu indirmek
+için Google Play'in uygulama içi güncelleme hizmetini kullanır. Bu denetimi Google Play yapar ve
+defterinizden hiçbir veri içermez.</p>
+
+<h2>Reklam tercihleriniz</h2>
+
+<h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
+<p>Reklam istenmeden önce uygulama, Google'ın User Messaging Platform altyapısıyla hazırlanmış bir
+rıza formu gösterir; neye izin vereceğinizi burada seçersiniz. Seçiminiz Google'ın bileşeni
+tarafından cihazınızda saklanır, yukarıda sayılan aracılık iş ortaklarına iletilir ve sonraki
+açılışlarda dikkate alınır.</p>
+<p><strong>Kararınızı istediğiniz zaman değiştirebilirsiniz:</strong> uygulamayı açın,
+<em>Ayarlar → Gizlilik seçenekleri</em> bölümüne gidin; aynı form yeniden görünür. Rızanızı buradan
+geri çekebilirsiniz. Rızayı geri çekmek uygulamayı devre dışı bırakmaz; tüm özellikleri
+kullanmaya devam edebilirsiniz ve reklamlar kişiselleştirilmemiş biçimde gösterilmeye devam
+edebilir. Aynı seçimler, yukarıda anlatıldığı gibi Google Analytics for Firebase için de
+geçerlidir.</p>
+
+<h3>Gizlilik yasası olan bir ABD eyaletindeyseniz</h3>
+<p>Bir ABD eyaletinin gizlilik yasası size kişisel bilgilerin satışını veya paylaşımını ya da
+hedefli reklamcılığı reddetme hakkı tanıyorsa, bu seçim uygun olduğu durumlarda aynı Google rıza
+araçlarıyla sunulur ve <em>Ayarlar → Gizlilik seçenekleri</em> girişi gerekli olduğu yerlerde
+görünür.</p>
+
+<h3>Diğer ülkelerde</h3>
+<p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak zorunlu olduğu yerlerde göründüğü
+için sizde görünmeyebilir. Reklamları yine de işletim sistemi düzeyinde denetleyebilirsiniz: Android
+<em>Ayarlar → Gizlilik → Reklamlar</em> bölümünden (tam yol üreticiye ve Android sürümüne göre
+değişir) reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz; silmeniz durumunda
+uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
+
+<h3>Reklamları tamamen kaldırmak</h3>
+<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın reklam istemesini tümüyle durdurur. İsteğe
+bağlı ödüllü reklamı izlemek ise banner, geçiş ve uygulama açılış reklamlarını 24 saat boyunca
+durdurur.</p>
+
+<h2>Uygulamanın istediği izinler</h2>
+<div class="card">
+<ul>
+  <li><code>INTERNET</code> — reklamların alınması, Google Play Faturalandırma ve Google Play'in
+  güncelleme hizmetiyle iletişim ve yukarıda anlatılan kullanım istatistikleriyle çökme raporlarının
+  gönderilmesi için gereklidir. Ağ üzerinden başka hiçbir şey gönderilmez; defterin kendisi hiçbir
+  zaman bağlantıya ihtiyaç duymaz.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yükleme denemesinden önce bağlantı
+  olup olmadığını kontrol etmesini sağlar.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
+  aracılık iş ortaklarının ve Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına
+  erişim.</li>
+</ul>
+</div>
+<p>Uygulamanın kendisinin tanımladığı izinler bunlardır. İçindeki Google ve reklam ağı bileşenleri,
+Android'in kurulum sırasında size sormadan verdiği birkaç izin daha ekleyebilir (örneğin Google
+Play'in faturalandırma izni ve Android'in reklam hizmetleri izinleri); ama uygulama hiçbir Android
+sürümünde depolama, kamera, kişiler, SMS, mikrofon, konum veya hesap izni istemez ve hiçbir izin
+penceresi göstermez.</p>
+
+<h2>Çocuklar</h2>
+<p>Bu uygulama genel amaçlı bir araçtır. <strong>13 yaşın altındaki çocuklara yönelik değildir</strong>
+(AEA'da 16 yaşın altı veya ülkenizdeki eşdeğer asgari yaş), çocuklara yönelik bir kategoride
+listelenmemiştir ve çocuklar için tasarlanmamış, çocuklara pazarlanmamıştır. Geliştirici,
+çocuklardan bilerek hiçbir kişisel veri toplamaz. Bir çocuğun bu uygulamadaki reklam, analiz veya
+çökme raporlama hizmetleri aracılığıyla kişisel veri verdiğini düşünüyorsanız aşağıdaki adrese ve
+verinin bulunduğu taraf olan Google'a başvurun.</p>
+
+<h2>Verilerin saklanması</h2>
+<p>Geliştiricinin bir sunucusu yoktur, kendi elinde hiçbir kullanıcı verisi saklamaz ve defterinizin
+bir kopyasını hiçbir zaman tutmaz. Kullanım istatistikleri ve çökme raporları geliştirici adına
+Google'da tutulur: bir kurulumun tanımlayıcılarına bağlı Analytics verileri en fazla 14 ay
+(tanımlayıcı içermeyen toplu raporlar daha uzun tutulabilir), çökme raporları ise 90 gün.
+Cihazınızdaki veriler, siz uygulamada silene, uygulamanın verilerini temizleyene veya uygulamayı
+kaldırana kadar orada kalır. Android yedeğinizdeki kopya Google hesabınızın yedekleme ayarlarına
+göre tutulur; dışa aktarma ve yedek dosyaları da siz silene kadar kaydettiğiniz yerde kalır.
+AdMob ve Google Play aracılığıyla Google'ın ve aracılık iş ortaklarının topladığı veriler, yukarıda
+bağlantıları verilen gizlilik politikalarında açıklanan kendi saklama sürelerine tabidir.</p>
+
+<h2>Güvenlik</h2>
+<p>Defteriniz, Android'in uygulamanın korumalı alanı içinde, diğer uygulamaların erişemeyeceği
+şekilde tuttuğu özel depolama alanında bulunur. Google'a ve reklam ağlarına gönderilen veriler
+aktarım sırasında şifrelenir. Dışa aktarma ve yedek dosyaları şifrelenmemiş düz dosyalardır;
+bunları güvendiğiniz bir yerde tutun, çünkü böyle bir dosyayı açabilen herkes kayıtlarınızı
+okuyabilir. Hiçbir saklama veya aktarım yöntemi kusursuz derecede güvenli değildir; ancak uygulama,
+finansal verilerinizin telefonunuzdan sizin seçtikleriniz dışında hiçbir yolla çıkamayacağı
+şekilde tasarlanmıştır.</p>
+
+<h2>Hukuki dayanaklar ve haklarınız</h2>
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde kişiselleştirilmiş reklamın hukuki dayanağı, yukarıda
+anlatılan formla alınan ve istediğiniz zaman geri çekebileceğiniz açık rızanızdır.
+Kişiselleştirilmemiş reklam, dolandırıcılık önleme ve reklam hizmetlerinin güvenliği meşru menfaate
+dayanır. Satın alma işleminizin yürütülmesi, reklam kaldırmayı satın aldığınızda kurulan sözleşmenin
+ifası için gereklidir. Kullanım istatistikleri ve çökme raporları, geliştiricinin uygulamayı
+çalışır durumda tutma ve nasıl kullanıldığını toplu olarak anlama yönündeki meşru menfaatine
+dayanır; Analytics tanımlayıcılarının cihazınızda saklanması ve verilerin reklam amacıyla
+kullanılması ise rıza formundaki seçimlerinize bağlıdır. Defteriniz geliştirici tarafından hiç
+işlenmez.</p>
+<p>GDPR kapsamında ve Türkiye'de 6698 sayılı KVKK kapsamında eşdeğer biçimde; kişisel verilerinizin
+işlenip işlenmediğini öğrenme, bunlara erişme, düzeltilmesini veya silinmesini isteme, işlenmesini
+kısıtlama veya işlenmesine itiraz etme, veri taşınabilirliği ve rızanızı geri çekme haklarına
+sahipsiniz. Ayrıca ulusal veri koruma otoritesine şikâyette bulunabilirsiniz; Türkiye'de bu kurum
+Kişisel Verileri Koruma Kurumu'dur (KVKK). Defteriniz zaten sizin elinizdedir: herhangi bir kaydı
+uygulamada düzenleyebilir veya silebilir, CSV dışa aktarımı ya da bir yedek dosyasıyla yanınızda
+götürebilir, uygulamanın verilerini temizleyerek veya uygulamayı kaldırarak silebilirsiniz.</p>
+<p>Kullanım istatistikleri ve çökme raporları takma adlıdır: adınızı ya da e-posta adresinizi değil,
+rastgele tanımlayıcılar taşır; bu yüzden geliştirici hangi kayıtların size ait olduğunu bilemez.
+Rıza formunun gösterildiği yerlerde rızanızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz etmek ya da bu konuda
+soru sormak için aşağıdaki adrese yazabilirsiniz. Uygulamayı kaldırmak ya da verilerini temizlemek
+eski tanımlayıcılarla bağı koparır; daha önce gönderilmiş veriler de yukarıdaki sürelerin sonunda
+silinir. Reklam kimliğinizi de dilediğiniz zaman Android ayarlarından sıfırlayabilir veya
+silebilirsiniz.
+Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran Google'a veya ilgili aracılık iş
+ortağına, yukarıda bağlantıları verilen gizlilik politikalarındaki araçlar kullanılarak
+iletilmelidir. Diğer tüm konular için veya doğru yolu bulmak üzere yardım almak için aşağıdaki
+adrese yazabilirsiniz.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Uygulamanın veri uygulamaları değişirse — örneğin yeni bir üçüncü taraf hizmet eklenirse — bu
+sayfa güncellenir ve en üstteki "son güncelleme" tarihi değişir. Önemli değişiklikler ayrıca
+uygulamanın Google Play sayfasına da yansıtılır. Güncellemeden sonra uygulamayı kullanmaya devam
+etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+<p>Bu, PennyLeaf'in ilk sürümüyle birlikte yayımlanan politikanın ilk sürümüdür.</p>
+
+<h2 id="contact">İletişim</h2>
+<p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Bu adres, uygulamanın Google Play sayfasında yazan adresle aynıdır. Hata bildirimleri,
+  gizlilikle ilgili sorular ve veri talepleri buraya ulaşır.</p>
+</div>
+
+<footer>
+  <p>PennyLeaf — hesap yok, banka girişi yok, abonelik yok; defteriniz telefonunuzda kalır. Bu
+  politika, uygulamanın ilk sürümünden itibaren yayımlanan sürümlerini açıklar.</p>
+</footer>
+
+</main>
+</body>
+</html>

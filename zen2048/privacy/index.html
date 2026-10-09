@@ -165,13 +165,14 @@ personal information, and the game itself sends none of it anywhere:</p>
   <li>a counter of full-screen ad opportunities, used to keep your first games free of them (see
   below).</li>
 </ul>
-<p><strong>Android backup.</strong> The game lets the items above be included in Android's own backup and device-to-device transfer, so that your saved games, best
+<p><strong>Android backup.</strong> The game lets your games in progress, statistics and settings be included in Android's own backup and device-to-device transfer, so that your saved games, best
 scores and statistics can follow you to a new phone. That backup is made by Android in your Google
 account if you have backup switched on; it is handled by Android and Google, not by the developer,
 who has no access to it, and you can switch it off in Android's settings. The game's backup rules
 exclude its shared-preferences and database storage, which is where Google's consent component keeps
-your consent choices, so you are asked for consent again on a new device. The purchase flag is not
-relied on either: the purchase is checked again with Google Play every time the game starts.</p>
+your consent choices, so you are asked for consent again on a new device. The purchase flag and the
+counter of full-screen ad opportunities are excluded from that backup as well and stay on this
+device; the purchase itself is checked again with Google Play every time the game starts.</p>
 <p>Google's advertising and consent components also keep their own settings on the device, under
 Google's control, and the Google Firebase components described below keep three random
 identifiers in the game's private storage: a Firebase installation ID, the Analytics app-instance

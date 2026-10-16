@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hesabınızı silme — Tabula Domino</title>
+<meta name="description" content="Tabula Domino hesabınızı uygulamanın içinden ya da uygulama olmadan e-postayla nasıl silersiniz; neler silinir, neler kalır, ne kadar süre.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/tabula-domino/privacy/tr/">Gizlilik politikası</a></p>
+
+<header>
+  <h1>Hesabınızı silme — Tabula Domino</h1>
+  <p class="lede">Tabula Domino: Online Oyna, BumuStudios — Android, paket adı <code>com.bumustudios.domino</code></p>
+  <p class="dates"><span>Son güncelleme: 16 Ekim 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Tabula Domino hesabınızı ve verilerini iki yoldan silebilirsiniz:</strong> uygulamanın içinden
+  ya da uygulama artık elinizde değilse e-postayla. İki yolda da hesabınız önce dondurulur ve
+  <strong>14 gün</strong> sonra silinir; o zamana kadar fikrinizi değiştirebilirsiniz.</p>
+</div>
+
+<h2>Uygulamanın içinden silme</h2>
+<ol>
+  <li>Tabula Domino'yu açın ve <strong>Ayarlar</strong>'a dokunun.</li>
+  <li><strong>Hesap</strong> bölümünde <strong>Hesabı sil</strong>'e dokunun.</li>
+  <li><strong>Hesabını sil</strong> ekranı ne olacağını ve neyin kalacağını gösterir. İsterseniz önce oradan
+  verilerinizin bir kopyasını indirin.</li>
+  <li><strong>Hesabımı silmek için basılı tut</strong> ile onaylayın ya da <strong>Basılı tutamıyor musun?
+  Yazarak onayla</strong>'ya dokunup <code>SİL</code> yazın ve <strong>Hesabımı sil</strong>'e dokunun.</li>
+</ol>
+<p>Hesabınız hemen dondurulur: oynayamaz, adınızı değiştiremez ve arkadaş listelerinde görünmezsiniz.
+Uygulama silinme tarihini ve saatini gösterir. <strong>İptal etmek için</strong> 14 gün içinde uygulamayı
+açıp <strong>Silmeyi iptal et</strong>'e dokunun; her şey olduğu gibi geri gelir. 14 gün dolunca silme
+kendiliğinden yapılır.</p>
+
+<h2>Uygulama olmadan silme isteme</h2>
+<p>Oyunu kaldırdıysanız ya da telefonunuzu kaybettiyseniz herhangi bir e-posta adresinden
+<a href="mailto:bumustudios@gmail.com?subject=Tabula%20Domino%20hesab%C4%B1m%C4%B1%20silin">bumustudios@gmail.com</a>
+adresine "Tabula Domino hesabımı silin" konulu bir e-posta yazın. Şunları ekleyin:</p>
+<ul>
+  <li>uygulamada <strong>Ayarlar → Hesap → Hesap ve profil</strong> altında "Oyuncu etiketin" yanında görünen
+  <strong>oyuncu etiketiniz</strong> (örneğin <code>#K7M2Q9XA</code>);</li>
+  <li>görünen adınız ve Google, Apple, Facebook ya da X bağlayıp bağlamadığınız.</li>
+</ul>
+<p>Hesabınıza bağlı bir e-posta adresi olmadığından, bir şey silmeden önce hesabın size ait olduğunu
+doğrularız. Örneğin bağladığınız Google, Apple, Facebook ya da X hesabıyla giriş yapmanızı ya da
+verdiğimiz kısa bir kodu uygulamadaki <strong>Ayarlar → Hesap → Destek ve itiraz</strong> formundan
+göndermenizi isteyebiliriz. Asla parola istemeyiz. Sahiplik doğrulanınca uygulamadakiyle aynı silmeyi
+başlatır, ne zaman gerçekleşeceğini size bildiririz; 14 gün içinde yanıt vererek yine iptal edebilirsiniz.
+Her başvuruyu en geç 30 gün içinde yanıtlarız.</p>
+<p>Hiç bağlanmamış bir misafir hesap yalnızca açıldığı telefondan kullanılabilir. Siz ona artık
+ulaşamıyorsanız başkası da ulaşamaz; <strong>24 ay</strong> kullanılmayan misafir hesap da aynı şekilde
+kendiliğinden silinir.</p>
+
+<h2>Neler silinir</h2>
+<ul>
+  <li>Görünen adınız, maç kayıtlarındaki kopyaları dahil</li>
+  <li>Oyuncu etiketiniz, avatar seçiminiz ve profil fotoğrafınız</li>
+  <li>Bağlı Google, Apple, Facebook ya da X girişiniz ve bütün oturumlarınız</li>
+  <li>Ad geçmişiniz</li>
+  <li>Arkadaşlarınız, arkadaşlık istekleriniz, engelleriniz ve davetleriniz</li>
+  <li>Hazır mesaj kayıtlarınız ve eşleştirme kayıtlarınız</li>
+  <li>Destek talepleriniz ve yanıtlarımız</li>
+  <li>Analitik izni cevabınız</li>
+</ul>
+
+<h2>Neler kalır, ne kadar süre</h2>
+<p>Bazı kayıtlar diğer oyuncuların da geçmişidir ya da adil oyun ve hukuki talepler için gereklidir. Bunlar
+<strong>adınız olmadan</strong> tutulur: adınız ve bağlı hesaplarınız çıkarılır, yalnızca rastgele bir
+numara kalır.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Nasıl tutulur</th><th>Ne kadar süre</th></tr></thead>
+  <tbody>
+    <tr><td>Maç sonuçları, istatistik ve rating toplamları</td><td>Adınız olmadan, rastgele bir numarayla</td>
+    <td>Oyun maç geçmişini tuttuğu sürece</td></tr>
+    <tr><td>Maç hamle günlükleri</td><td>Adınız olmadan, rastgele bir numarayla</td><td>Maçtan sonra en çok 2 yıl</td></tr>
+    <tr><td>Ekip kararlarının kayıtları (askıya alma, kapatma, destek işlemleri)</td><td>Adınız olmadan,
+    rastgele bir numarayla</td><td>En çok 5 yıl</td></tr>
+    <tr><td>Başka bir oyuncunun hakkınızda yaptığı şikâyet</td><td>Numaranız, size geri götürülemeyen yeni
+    bir numarayla değiştirilir</td><td>Şikâyetten 1 yıl sonrasına kadar; sonra kanıt çıkarılır</td></tr>
+    <tr><td>Uygulama içi analitik olayları ve sunucu tarafındaki sayımlar</td><td>Oyuncu numaranız çıkarılarak</td>
+    <td>Analitik olayları alındıktan sonra en çok 13 ay</td></tr>
+    <tr><td>Kenar kayıtları (IP adresi, user-agent) ve izleme kayıtları</td><td>Olduğu gibi</td>
+    <td>7 gün ve 14 gün, sonra silinir</td></tr>
+    <tr><td>Veritabanı yedekleri</td><td>Olduğu gibi</td><td>En çok 14 gün; verileriniz yedeklerin süresi
+    doldukça onlardan da kalkar</td></tr>
+    <tr><td>Silinmiş hesaplar listesindeki kayıt: rastgele numara, hesap türü, açılış, son kullanım ve
+    silinme zamanları; ad yerine yer tutucu</td><td>Ad yok, bağlı hesap yok</td>
+    <td>Süresiz; silinmiş bir hesabın gecikmeli sistem iletileriyle yeniden oluşmaması için</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Oyunun neleri ve neden işlediğinin tam listesi
+<a href="/tabula-domino/privacy/tr/">Tabula Domino gizlilik politikasındadır</a>.</p>
+
+<h2 id="contact">İletişim</h2>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Tabula Domino'nun geliştiricisi ve oyuncularının verileri bakımından veri sorumlusu BumuStudios.</p>
+</div>
+
+<footer>
+  Tabula Domino, BumuStudios — hesap silme uygulamada Ayarlar → Hesap → Hesabı sil altından ya da
+  bumustudios@gmail.com adresine e-postayla.
+</footer>
+
+</main>
+</body>
+</html>

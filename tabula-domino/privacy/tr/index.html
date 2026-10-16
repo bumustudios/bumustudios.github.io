@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — Tabula Domino</title>
+<meta name="description" content="Tabula Domino çevrim içi domino oyununun gizlilik politikası. Misafir hesap, e-posta ya da gerçek ad yok; maçlar, rating ve profiller Almanya&#x27;daki (AB) kendi sunucularımızda; bu sürümde reklam, satın alma ve anlık bildirim yok.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/tabula-domino/delete-account/tr/">Hesabınızı silme</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — Tabula Domino</h1>
+  <p class="lede">Android için çevrim içi domino oyunu, paket adı <code>com.bumustudios.domino</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 16 Ekim 2026.</span> <span>Son güncelleme: 16 Ekim 2026.</span> <span>Politika sürümü 1.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>E-posta adresi, telefon numarası ya da gerçek ad istemiyoruz.</strong> Bir misafir hesapla ve
+  kendi seçtiğiniz görünen adla oynarsınız. Google, Apple, Facebook ya da X ile giriş isteğe bağlıdır ve
+  yalnızca hesabınızı başka bir cihazda geri almanızı sağlar.</p>
+  <p>Tabula Domino çevrim içi bir oyundur; maçlarınız Almanya'da (AB) Hetzner'in işlettiği kendi
+  sunucularımızda oynanır. Bu sayfa o sunucuların neyi, neden ve ne kadar süre tuttuğunu eksiksiz anlatır.
+  Oyunun bu sürümünde <strong>reklam, satın alma, anlık bildirim ve Google Firebase yoktur</strong>.
+  Verilerinizi satmayız.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play'de <code>com.bumustudios.domino</code> paket adıyla dağıtılan
+<em>Tabula Domino: Online Oyna</em> Android oyununu (telefonunuzda <em>Tabula Domino</em> olarak görünür)
+kapsar. Oyunun geliştiricisi olan bağımsız geliştirici BumuStudios tarafından yazılmıştır; BumuStudios,
+burada anlatılan kişisel veriler bakımından 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve AB
+Genel Veri Koruma Tüzüğü ("GDPR") uyarınca <strong>veri sorumlusudur</strong>. Sorular ve veri talepleri
+<a href="#contact">İletişim</a> bölümündeki adrese ya da uygulamadaki
+<strong>Ayarlar → Hesap → Destek ve itiraz</strong> formuna gönderilebilir.</p>
+
+<h2>Oyun nedir</h2>
+<p>Tabula Domino çevrim içi bir domino oyunudur. Rating'inize göre başka oyuncularla eşleşirsiniz ya da
+arkadaşlarınız için kodlu özel masa açarsınız. Maçlar, rating'ler ve liderlik tabloları, adil olsun ve
+bağlantı koptuğunda oyununuz kaybolmasın diye sunucularımızda tutulur. Uygun rakip bulunamadığında
+bilgisayar rakiplere karşı oynayabilirsiniz.</p>
+
+<h2>Oyunun bu sürümü</h2>
+<p>Bu politika, oyunun Google Play kapalı testindeki sürümünü anlatır. Oyuna sonradan gelecek bazı
+özellikler <strong>bu sürümde yoktur</strong>; bunlardan herhangi biri gelmeden önce bu politika yeni bir
+"son güncelleme" tarihiyle güncellenecektir:</p>
+<ul>
+  <li><strong>Reklamlar.</strong> Yoktur. Reklam eklendiğinde bu sayfa reklam ağlarını ve ne topladıklarını
+  sayacak; kişiselleştirilmiş reklam yalnızca izninizle gösterilecektir.</li>
+  <li><strong>Uygulama içi satın alma.</strong> Yoktur; hiçbir şey satın alınamaz.</li>
+  <li><strong>Anlık bildirimler.</strong> Oyun bildirim göndermez ve bildirim adresi kaydetmez.</li>
+  <li><strong>Google Firebase ve çökme raporları.</strong> Oyunda Firebase, Crashlytics ya da başka bir
+  üçüncü taraf analitik veya çökme raporlama bileşeni yoktur.</li>
+</ul>
+
+<h2>Neleri işliyoruz</h2>
+<p>Yalnızca oyunun ihtiyaç duyduğunu toplarız. Sunucularımızdaki her kayıt size adınızla değil, rastgele
+bir oyuncu numarasıyla bağlıdır.</p>
+
+<h3>Hesap ve profil</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Neden</th></tr></thead>
+  <tbody>
+    <tr><td>Oyuncu numarası — hesabınızla birlikte üretilen rastgele bir numara</td>
+    <td>Sizi maçlar arasında tanımak</td></tr>
+    <tr><td>Görünen ad — sizin yazdığınız 2–20 karakter; gerçek adınız olması gerekmez</td>
+    <td>Sizi diğer oyunculara göstermek</td></tr>
+    <tr><td>Oyuncu etiketi — <code>#K7M2Q9XA</code> gibi rastgele bir etiket — ve seçtiğiniz hazır avatar</td>
+    <td>Arkadaşlarınızın sizi bulması; profilinizin görünümü</td></tr>
+    <tr><td>Profil fotoğrafı (isteğe bağlı) — yüklediğiniz ya da çektiğiniz fotoğraf veya bağladığınız Google,
+    Facebook ya da X hesabından almayı seçtiğiniz fotoğraf. Sunucumuzun yeniden kodladığı iki kare kopya
+    tutulur; konum, kamera ve tarih bilgileri (EXIF/GPS) ve diğer bütün üst veriler silinir. Fotoğrafın
+    nereden geldiği ve ne zaman konduğu da tutulur</td>
+    <td>Sizi diğer oyunculara göstermek. İstediğiniz an değiştirebilir ya da kaldırabilirsiniz</td></tr>
+    <tr><td>Hesap türü, durumu ve zamanları — misafir mi bağlı mı, etkin mi, ne zaman açıldı ve en son ne
+    zaman kullanıldı</td>
+    <td>Hesabı yönetmek; botları insanlardan ayırmak</td></tr>
+    <tr><td>Oturum kayıtları — cihazınızdaki oturum anahtarının yalnızca özeti (anahtarın kendisi asla),
+    ayrıca her oturumun cihaz etiketi, platformu, uygulama sürümü ve zamanları</td>
+    <td>Oturumunuzu açık tutmak; nerede oturum açık olduğunu görüp kapatabilmeniz</td></tr>
+    <tr><td>Bağlı giriş (isteğe bağlı) — Google, Apple, Facebook ya da X'in sizin için verdiği hesap
+    numarası</td>
+    <td>Hesabınızı başka bir cihazda geri getirmek</td></tr>
+    <tr><td>Ad geçmişi — önceki görünen adlarınız ve ne zaman değiştirdiğiniz</td>
+    <td>Ad değiştirerek şikâyetten kaçılmasını önlemek</td></tr>
+    <tr><td>Ülke — hesabı açtığınız bağlantının IP adresinden tahmin edilen iki harfli kod (ör. <code>TR</code>)</td>
+    <td>Liderlik tablosundaki bayrak; bölgesel içerik; oyunun hangi ülkelerde oynandığını bilmek</td></tr>
+  </tbody>
+</table>
+</div>
+<p><strong>IP adresiniz hesabınızla birlikte saklanmaz.</strong> Yalnızca o anda ülkeyi tahmin etmek için
+okunur ve bırakılır. Tahmin, kendi sunucumuzda DB-IP'nin "IP to Country Lite" veritabanıyla yapılır
+(<a href="https://db-ip.com">IP Geolocation by DB-IP</a>,
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> lisansıyla); adresiniz bunun için
+kimseye gönderilmez. Tahmin yanlış olabilir, örneğin VPN kullanırken.</p>
+<p>Google, Apple, Facebook ya da X bağladığınızda girişi o sağlayıcıyla doğrular ve yalnızca sizin için
+verdiği hesap numarasını tutarız. E-posta adresinizi okumayız ve saklamayız; sağlayıcıya oyun verisi
+göndermeyiz. Profil fotoğrafı o hesaptan yalnızca siz seçerseniz ve yalnızca bir kez alınır; oradaki
+fotoğraf sonradan değişirse bizdeki kopya değişmez.</p>
+
+<h3>Maçlar, rating'ler ve liderlik tabloları</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Neden</th></tr></thead>
+  <tbody>
+    <tr><td>Maç kayıtları — oyun, mod, kural sürümü, başlangıç ve bitiş, sonuç ve skor; koltuğunuz,
+    takımınız ve o andaki görünen adınızın bir kopyası</td>
+    <td>Oyunun kendisi; sizin ve rakiplerinizin maç geçmişi</td></tr>
+    <tr><td>Maç durumu ve hamle günlüğü — masadaki taşlar, elinizdeki taşlar, her hamle</td>
+    <td>Oyunu sunucu yürütür; bağlantı koptuğunda maçı geri getirmek; anlaşmazlıkları ve hileyi incelemek</td></tr>
+    <tr><td>Özel masa kodları ve rövanş teklifleri</td>
+    <td>Arkadaşınızın masasına katılmak; rövanş özelliği</td></tr>
+    <tr><td>İstatistik ve rating — oynanan, kazanılan ve kaybedilen maçlar, seriler, rating'iniz ve
+    geçmişi, liderlik tablolarındaki yeriniz</td>
+    <td>İlerlemeniz; dengeli rakip bulmak; liderlik tabloları</td></tr>
+    <tr><td>Eşleştirme kayıtları — ne zaman ve hangi sırada aradığınız, o andaki rating'iniz, kiminle
+    eşleştiğiniz, nasıl sonuçlandığı</td>
+    <td>Sizi eşleştirmek; aynı eşleşmenin tekrar tekrar olmasını önlemek; bekleme sürelerini ölçmek</td></tr>
+    <tr><td>Adil oyun sayaçları — kısa sürede iptal edilen aramalar, yerleştirildiğiniz ama katılmadığınız maçlar</td>
+    <td>Eşleştirmeyi herkes için adil tutmak</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Taşlarınız sunucuda kalır; rakipleriniz elinizi asla görmez.</p>
+
+<h3>Arkadaşlar, hazır mesajlar ve şikâyetler</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Neden</th></tr></thead>
+  <tbody>
+    <tr><td>Arkadaş listesi, arkadaşlık istekleri, özel masa davetleri, engellediğiniz oyuncular</td>
+    <td>Oyun içi arkadaşlık özelliği. Bu, oyunun içindeki bir listedir: <strong>oyun telefonunuzun rehberini
+    asla okumaz</strong></td></tr>
+    <tr><td>Son oyuncular — yakın zamanda kimlerle oynadığınız</td>
+    <td>"Son oyuncular" listesi; arkadaşlık isteği ve şikâyet yalnızca karşılaştığınız kişiler için mümkündür</td></tr>
+    <tr><td>Hazır mesajlar — hangi hazır ifadeyi ya da emojiyi ne zaman gönderdiğiniz</td>
+    <td>Gönderim sınırı; biri kötüye kullanım bildirirse kanıt. <strong>Serbest yazılı sohbet yoktur</strong>:
+    yalnızca hazır mesajlar gönderilebilir</td></tr>
+    <tr><td>Şikâyetler — kategori (maçı bırakma, hazır mesajlarla kötü davranış, hile şüphesi, uygunsuz
+    profil fotoğrafı), maç ve o maçın hazır mesajları kanıt olarak</td>
+    <td>Moderasyon</td></tr>
+    <tr><td>Çevrim içi görünürlük ayarı</td>
+    <td>Arkadaşlarınızın sizi çevrim içi görüp göremeyeceği. Çevrim içi olmanız yalnızca bellekte tutulur,
+    hiçbir yere yazılmaz</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Şikâyet ettiğiniz ya da engellediğiniz oyuncuya bu söylenmez; sizi kimin şikâyet ettiği ya da engellediği
+de size söylenmez.</p>
+
+<h3>Destek talepleri, itirazlar ve moderasyon</h3>
+<p>Uygulamadaki formu (<strong>Ayarlar → Hesap → Destek ve itiraz</strong>) kullandığınızda konuyu,
+<strong>yazdığınız metni</strong> (en çok 2.000 karakter), ilgili maç ya da kararı, uygulamanın platformunu
+ve sürümünü ve yanıtımızı tutarız. Lütfen bu forma parola ya da başka kişisel bilgi yazmayın. Ekibimiz bir
+hesapla ilgili işlem yaptığında (askıya alma, kapatma, eşleştirme beklemesini kaldırma, bir fotoğrafı
+gizleme) kararın, gerekçesinin ve kararı hangi ekip üyesinin verdiğinin kaydını tutarız.</p>
+
+<h3>Uygulama içi analitik — yalnızca izninizle</h3>
+<p>Oyun, "ilerleme ekranı açıldı" gibi kullanım olaylarını uygulama sürümü, platform ve her açılışta
+yenilenen bir oturum numarasıyla birlikte <strong>yalnızca siz izin verirseniz</strong> gönderebilir. Soru
+uygulamada çıkar; cevabınızı istediğiniz an <strong>Ayarlar → Gizlilik → Oyunu birlikte geliştirelim</strong>
+altından değiştirebilirsiniz. Bu olaylar yalnızca kendi sunucularımıza gider; hiçbir üçüncü taraf analitik
+hizmeti bunları almaz. Adınız, IP adresiniz, reklam kimliğiniz, yazdığınız herhangi bir şey ve elinizdeki
+taşlar hiçbir analitik olayına girmez. Cevabınızı, hangi metin sürümüne verildiğini ve zamanını, ona uymak
+ve bunu gösterebilmek için tutarız.</p>
+<p>Bundan ayrı olarak sunucularımız, hizmetin nasıl çalıştığını ölçmek için (maç sayısı, bekleme süreleri)
+kendi üzerlerinde zaten gerçekleşen "eşleşme bulundu", "maç bitti" gibi olayları sayar. Analitiği
+reddederseniz ya da hesabınızı silerseniz bu kayıtlar oyuncu numaranız çıkarılarak tutulur.</p>
+
+<h3>Teknik kayıtlar</h3>
+<ul>
+  <li><strong>IP adresi.</strong> Uygulama sunucularımız onu yalnızca bellekte kullanır: isteği yanıtlamak
+  ve en çok bir saat boyunca, hizmeti kötüye kullanıma karşı koruyan bir istek sınırı sayacının anahtarı
+  olarak. Veritabanımıza asla yazılmaz ve hesabınıza bağlanmaz.</li>
+  <li><strong>Kenar kayıtları.</strong> Sunucularımızın önündeki ağ katmanı, güvenlik ve arıza incelemesi için
+  IP adresini ve uygulamanın tanıtım dizesini (user-agent) içeren erişim kayıtlarını <strong>7 gün</strong>
+  tutar, sonra siler.</li>
+  <li><strong>İzleme kayıtları.</strong> Sunucularımızın hata ve izleme kayıtları bir oyuncu numarası
+  içerebilir, ad ya da oturum anahtarı asla içermez; <strong>14 gün</strong> tutulur.</li>
+  <li><strong>Uygulama sürümü.</strong> Sunucu eski bir uygulamaya güncelleme gerektiğini söyleyebilsin diye
+  her istekle gönderilir.</li>
+  <li><strong>Yedekler.</strong> Veritabanı yedeklerimiz en çok <strong>14 gün</strong> tutulur.</li>
+</ul>
+
+<h3>Telefonunuzda kalanlar</h3>
+<p>Oturum anahtarınız (Android'in güvenli deposunda), ses, titreşim ve tema ayarlarınız ve gördüğünüz
+ipuçları. Oyun, arayüzü sizin dilinizde göstermek için telefonunuzun dilini okur. Kameraya ya da
+fotoğraflarınıza yalnızca profil fotoğrafı koymayı seçerseniz erişmek ister; konum, rehber ya da mikrofon
+izni istemez.</p>
+
+<h2>Neleri toplamıyoruz</h2>
+<p>E-posta adresi, telefon numarası, gerçek ad, posta adresi, hassas (GPS) konum, telefonunuzun rehberi,
+fotoğraflarınız ve dosyalarınız (seçtiğiniz profil fotoğrafı dışında), ses kaydı, ödeme bilgileri, tarama
+geçmişi. Sağlık verisi gibi özel nitelikli kişisel veri işlemeyiz.</p>
+
+<h2>Diğer oyuncular neyi görür</h2>
+<ul>
+  <li><strong>Masada:</strong> görünen adınız, profil fotoğrafınız ya da avatarınız, ülke bayrağınız,
+  hamleleriniz (eliniz asla), gönderdiğiniz hazır mesajlar ve sonuç.</li>
+  <li><strong>Herkes:</strong> liderlik tablolarında ve arkadaş listelerinde görünen adınız, profil
+  fotoğrafınız ya da avatarınız, ülkeniz ve sıranız. Profil fotoğrafı <strong>koyduğunuz anda diğer
+  oyunculara görünür</strong>; profilinizden istediğiniz an kaldırabilirsiniz. Diğer oyuncular uygunsuz
+  buldukları bir fotoğrafı şikâyet edebilir, ekibimiz onu gizleyebilir ya da silebilir.</li>
+  <li><strong>Arkadaşlarınız:</strong> çevrim içi ya da maçta olup olmadığınızı, siz kapatmadıkça.</li>
+  <li><strong>Yakın zamanda karşılaştığınız oyuncular ve oyuncu etiketinizi bilen herkes:</strong> size
+  arkadaşlık isteği gönderebilir.</li>
+</ul>
+
+<h2>Botlar</h2>
+<p>Uygun rakip bulunamadığında ya da alıştırmada bilgisayar rakiplere (bot) karşı oynayabilirsiniz. Botlar
+adlarının yanında ve maç sonu ekranında <strong>her zaman BOT olarak işaretlenir</strong>; gizli bot
+yoktur. Bot profilleri uydurmadır ve gerçek kişilere ait değildir.</p>
+
+<h2>Amaçlar ve hukuki sebepler</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Amaç</th><th>KVKK</th><th>GDPR</th></tr></thead>
+  <tbody>
+    <tr><td>Hesabınızın, maçların, eşleştirmenin, rating'lerin, liderlik tablolarının, profil fotoğrafının,
+    arkadaşlık, davet ve hazır mesajların yürütülmesi; destek taleplerinin yanıtlanması</td>
+    <td>m.5/2(c) — sözleşmenin ifası</td><td>m.6/1(b) — sözleşme</td></tr>
+    <tr><td>Adil oyun, hile ve kötüye kullanımın önlenmesi, güvenlik, kenar ve izleme kayıtları, ad geçmişi,
+    şikâyetler ve moderasyon, ekip kararlarının kayıtları</td>
+    <td>m.5/2(f) — meşru menfaat</td><td>m.6/1(f) — meşru menfaat</td></tr>
+    <tr><td>Ülkenin IP adresinden tahmin edilmesi</td>
+    <td>m.5/2(f) — meşru menfaat</td><td>m.6/1(f) — meşru menfaat</td></tr>
+    <tr><td>Uygulama içi analitik</td>
+    <td>m.5/1 — açık rıza</td><td>m.6/1(a) — rıza</td></tr>
+    <tr><td>Sunucu tarafındaki işletme sayımları</td>
+    <td>m.5/2(f) — meşru menfaat</td><td>m.6/1(f) — meşru menfaat</td></tr>
+    <tr><td>Hesap silindikten sonra tutulan kayıtlar (bkz. <a href="#retention">Ne kadar saklıyoruz</a>)</td>
+    <td>m.5/2(f); kararlar ve uyuşmazlıklar için ayrıca m.5/2(e)</td><td>m.6/1(f); m.17/3(e)</td></tr>
+    <tr><td>Hukuki talepler ve resmî makamların istekleri</td>
+    <td>m.5/2(ç) ve (e)</td><td>m.6/1(c) ve (f)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Meşru menfaatlerimiz şunlardır: maçları adil ve hizmeti güvenli tutmak, oyuncuları tacizden ve hileden
+korumak, hizmetin ne kadar iyi çalıştığını toplu olarak anlamak ve diğer oyuncuların maç kayıtlarını
+eksiksiz tutmak. Bu işlemeye itiraz edebilirsiniz (bkz. <a href="#rights">Haklarınız</a>).</p>
+
+<h2>Veriyi kimler alır, nerede saklanır</h2>
+<p>Kişisel verilerinizi <strong>satmayız</strong> ve reklamcılara kiralamayız.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Alıcı</th><th>Ne</th><th>Nerede</th></tr></thead>
+  <tbody>
+    <tr><td>Hetzner Online GmbH — barındırma ve depolama; bizim adımıza veri işleyen olarak</td>
+    <td>Sunucularımızdaki bütün veriler, profil fotoğrafları dahil</td><td>Almanya (AB)</td></tr>
+    <tr><td>Google, Apple, Meta (Facebook), X — yalnızca onlarla giriş yaparsanız</td>
+    <td>Oyun verisi göndermeyiz. Verdikleri giriş belgesini doğrularız; Facebook ve X için bunu onlara
+    sorarak yaparız. O hesabın fotoğrafını kullanmayı seçerseniz fotoğrafı onlardan bir kez indiririz</td>
+    <td>Sağlayıcıya bağlı</td></tr>
+    <tr><td>Yetkili kamu kurumları ve mahkemeler</td><td>Kanunun gerektirdiği</td><td>Türkiye ya da ilgili ülke</td></tr>
+  </tbody>
+</table>
+</div>
+<p><strong>Yurt dışına aktarım (KVKK).</strong> Sunucularımız Almanya'da olduğundan Türkiye'deki oyuncuların
+verisi yurt dışına aktarılır. Bu aktarım KVKK m.9 uyarınca, barındırma sağlayıcımızla yapılan ve kanunun
+öngördüğü şekilde Kişisel Verileri Koruma Kurulu'na bildirilen standart sözleşmeye dayanılarak yapılır.
+AB'deki oyuncuların verisi AB içinde kalır. Bu güvencelerin bir kopyasını <a href="#contact">İletişim</a>
+bölümündeki adresten isteyebilirsiniz.</p>
+
+<h2 id="retention">Ne kadar saklıyoruz</h2>
+<p>Saklama süreleri kendiliğinden uygulanır. Süre dolunca veri ya <strong>silinir</strong>, ya
+<strong>anonimleştirilir</strong> (bütün oyuncu numaraları ve sizi tekil olarak gösterebilecek her şey
+çıkarılır) ya da <strong>adınız olmadan</strong> tutulur: adınız ve bağlı hesaplarınız çıkarılır, kayıt
+yalnızca rastgele bir oyuncu numarasıyla kalır. Bu şekilde adsız tutulan kayıt kişisel veri olmayı
+sürdürür.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Süre</th><th>Sonra</th></tr></thead>
+  <tbody>
+    <tr><td>Hesap ve profil</td><td>Hesabınız var oldukça</td>
+    <td>Hesap silinince silinir (bkz. <a href="#deletion">Hesabınızı silme</a>)</td></tr>
+    <tr><td>Uzun süre kullanılmayan misafir hesap</td><td>Son kullanımdan 24 ay sonra</td>
+    <td>Siz silmişsiniz gibi silinir</td></tr>
+    <tr><td>Profil fotoğrafı</td><td>Siz kaldırana ya da değiştirene, ekibimiz silene ya da hesap silinene kadar</td>
+    <td>Dakikalar içinde silinir; yedeklerden, yedeklerin süresi dolunca çıkar</td></tr>
+    <tr><td>Sona ermiş oturum kayıtları</td><td>Sona erdikten sonra en çok 30 gün</td><td>Silinir</td></tr>
+    <tr><td>Ad geçmişi</td><td>En çok 180 gün</td><td>Silinir</td></tr>
+    <tr><td>Maç sonuçları, istatistik, rating</td><td>Hesabınız var oldukça</td>
+    <td>Hesap silindikten sonra adınız olmadan tutulur</td></tr>
+    <tr><td>Maç hamle günlüğü</td><td>En çok 2 yıl</td><td>Adınız olmadan tutulur</td></tr>
+    <tr><td>Eşleştirme kayıtları</td><td>90 gün</td><td>Silinir</td></tr>
+    <tr><td>Adil oyun sayaçları</td><td>Son bekleme bittikten 30 gün sonra</td><td>Silinir</td></tr>
+    <tr><td>Arkadaşlar, engeller, görünürlük ayarı</td><td>Hesabınız var oldukça</td><td>Hesapla birlikte silinir</td></tr>
+    <tr><td>Arkadaşlık istekleri</td><td>Yanıttan ya da süre bitiminden 30 gün sonra</td><td>Silinir</td></tr>
+    <tr><td>Davetler</td><td>Süre bitiminden 7 gün sonra</td><td>Silinir</td></tr>
+    <tr><td>Son oyuncular, hazır mesaj kayıtları</td><td>30 gün</td>
+    <td>Silinir; şikâyete kanıt olarak eklenen kopyalar hariç</td></tr>
+    <tr><td>Şikâyetler</td><td>1 yıl</td><td>Oyuncu numaraları ve kanıt çıkarılır; kategori, sonuç ve maç
+    numarası kalır</td></tr>
+    <tr><td>Destek talepleri ve yanıtlar</td><td>Yanıtlanmış ya da kapanmış talepte son değişiklikten 365 gün sonra</td>
+    <td>Silinir; hesabınızı silerseniz hemen silinir</td></tr>
+    <tr><td>Ekip kararlarının kayıtları (askıya alma, kapatma, destek işlemleri)</td><td>En çok 5 yıl</td><td>Silinir</td></tr>
+    <tr><td>Uygulama içi analitik olayları</td><td>13 ay</td><td>Silinir</td></tr>
+    <tr><td>Analitik cevabınız</td><td>Hesabınız var oldukça</td><td>Hesapla birlikte silinir</td></tr>
+    <tr><td>Kenar kayıtları (IP adresi, user-agent)</td><td>7 gün</td><td>Silinir</td></tr>
+    <tr><td>İzleme kayıtları</td><td>14 gün</td><td>Silinir</td></tr>
+    <tr><td>Veritabanı yedekleri</td><td>En çok 14 gün</td><td>Silinen veri, yedeğin süresi dolunca yedekten de kalkar</td></tr>
+    <tr><td>Silinmiş hesaplar listesi — rastgele numara, hesap türü, açılış, son kullanım ve silinme
+    zamanları; ad yerine sabit bir yer tutucu</td><td>Süresiz</td>
+    <td>Gecikmeli sistem iletilerinin silinmiş bir hesabı yeniden oluşturmaması ve adsız tutulan maç
+    geçmişlerinin tutarlı kalması için tutulur</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="deletion">Hesabınızı silme</h2>
+<p>Hesabınızı uygulamanın içinden silebilirsiniz: <strong>Ayarlar → Hesap → Hesabı sil</strong>. Hesabınız
+hemen dondurulur ve <strong>14 gün</strong> sonra silinir; bu 14 gün içinde uygulamayı açıp
+<strong>Silmeyi iptal et</strong>'e dokunursanız her şey olduğu gibi geri gelir. Uygulama olmadan e-postayla
+da silme isteyebilirsiniz. Adım adım anlatım ve neyin silinip neyin kaldığının tam listesi
+<a href="/tabula-domino/delete-account/tr/">hesap silme sayfasındadır</a>.</p>
+<ul>
+  <li><strong>Silinenler:</strong> görünen adınız (maç kayıtlarındaki kopyaları dahil), oyuncu etiketiniz,
+  avatar seçiminiz, profil fotoğrafınız, bağlı girişleriniz, oturumlarınız, ad geçmişiniz, arkadaşlarınız,
+  istekleriniz, engelleriniz, davetleriniz, hazır mesaj kayıtlarınız, eşleştirme kayıtlarınız, destek
+  talepleriniz ve analitik cevabınız.</li>
+  <li><strong>Adınız olmadan, yalnızca rastgele bir numarayla kalanlar:</strong> maç kayıtları ve hamle
+  günlükleri (bunlar diğer oyuncuların da kaydıdır), istatistik ve rating toplamları ve ekip kararlarının
+  kayıtları; yukarıdaki sürelerle.</li>
+  <li><strong>Oyuncu numarası da çıkarılanlar:</strong> analitik olayları ve sunucu tarafındaki sayımlar.</li>
+  <li>Hakkınızda yapılmış bir şikâyet süresi dolana kadar kalır; içindeki oyuncu numaranız, size geri
+  götürülemeyen yeni bir numarayla değiştirilir.</li>
+  <li>Silme, yedeklerimize yedeklerin süresi dolunca, 14 gün içinde ulaşır.</li>
+</ul>
+
+<h2>Çocuklar ve korumalı mod</h2>
+<p>Oyun çocuklara yönelik değildir. Oynamak için <strong>en az 13 yaşında</strong> olmalısınız.
+<strong>13–17 yaşındaki</strong> oyuncular <strong>korumalı modda</strong> oynar: kişiselleştirilmiş reklam
+yok (oyuna reklam geldiğinde), analitik izni sorusu yok, dolayısıyla uygulama içi analitik gönderilmez, ve
+pazarlama bildirimi yok (oyuna bildirim geldiğinde). Uygulamada verdiğiniz yaş bilgisini yalnızca bu
+kuralları uygulamak için kullanırız. 13 yaşından küçük bir oyuncunun hesabı olduğunu öğrenirsek hesabı
+sileriz. 13 yaşından küçük bir çocuğun oyunu kullandığını düşünüyorsanız aşağıdaki adrese yazın.</p>
+
+<h2>Güvenlik</h2>
+<ul>
+  <li>Uygulama ile sunucularımız arasındaki bütün trafik şifrelidir (TLS).</li>
+  <li>Parola yoktur. Oturum anahtarınız telefonunuzun güvenli deposunda durur; sunucumuz yalnızca özetini
+  tutar ve oturum anahtarları hiçbir kayda yazılmaz.</li>
+  <li>Görünen adınız ve bağlı girişleriniz veritabanının tek bir bölümünde tutulur; diğer bölümler yalnızca
+  oyuncu numaranızı bilir.</li>
+  <li>Eliniz ve diğer gizli bilgiler sunucuda kalır; telefonunuza yalnızca görmeniz gereken gelir.</li>
+</ul>
+<p>Hiçbir sistem kusursuz güvenli değildir. Sizi etkileyen bir veri ihlali olursa kanunun gerektirdiği
+şekilde Kurul'a ve size bildiririz.</p>
+
+<h2>Otomatik kararlar</h2>
+<ul>
+  <li><strong>Eşleştirme</strong> rakibinizi rating'e göre kendiliğinden seçer.</li>
+  <li>Kısa sürede çok sayıda aramayı iptal ederseniz ya da yerleştirildiğiniz maçlara katılmazsanız
+  eşleştirme, yeniden aramadan önce sizi <strong>kısa bir süre bekletebilir</strong>. Bu bir yaptırım
+  değildir; özel masalarda oynamaya devam edebilirsiniz ve ekibimiz kaldırabilir.</li>
+  <li><strong>Şikâyetler hiçbir zaman otomatik yaptırım doğurmaz.</strong> Her askıya alma ya da kapatma
+  kararını ekibimizden bir kişi verir ve uygulamadan itiraz edebilirsiniz.</li>
+</ul>
+
+<h2 id="rights">Haklarınız</h2>
+<p><strong>İtiraz hakkınız.</strong> Meşru menfaatimize dayanan işlemeye, özel durumunuzla ilgili
+gerekçelerle her zaman itiraz edebilirsiniz. Menfaatlerinizden üstün zorlayıcı meşru gerekçeler olmadıkça
+ya da veri hukuki talepler için gerekmedikçe işlemeyi durdururuz.</p>
+<p><strong>KVKK m.11</strong> uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse buna
+ilişkin bilgi talep etme, işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,
+yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse
+düzeltilmesini isteme, m.7 çerçevesinde silinmesini veya yok edilmesini isteme, bu işlemlerin aktarıldığı
+üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhinize
+bir sonuç çıkmasına itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğramanız hâlinde zararın
+giderilmesini talep etme haklarına sahipsiniz.</p>
+<p><strong>GDPR</strong> uyarınca AB'deki oyuncular erişim, düzeltme, silme, işlemeyi kısıtlama, veri
+taşınabilirliği ve itiraz haklarına; önceki işlemeyi etkilemeden rızayı her zaman geri alma hakkına ve
+yaşadıkları ülkenin veri koruma otoritesine şikâyet hakkına sahiptir.</p>
+<p>Nasıl kullanırsınız:</p>
+<ul>
+  <li><strong>Uygulamada:</strong> görünen adınızı ve fotoğrafınızı değiştirin; hesabınızı silin; analitiği
+  açıp kapatın; uygulamanın sunduğu yerde verilerinizin kopyasını <strong>Ayarlar → Hesap → Hesap ve profil
+  → Gizlilik ve veriler</strong> altından indirin.</li>
+  <li><strong>E-postayla</strong>, herhangi bir adresten, aşağıdaki adrese. <strong>Ayarlar → Hesap → Hesap
+  ve profil</strong> altında görünen <strong>oyuncu etiketinizi</strong> yazın. Misafir hesaba bağlı bir
+  e-posta adresi olmadığından, işlem yapmadan önce hesabın size ait olduğunu doğrularız; örneğin
+  uygulamadaki destek formundan kısa bir kod göndermenizi ya da bağladığınız hesapla giriş yapmanızı
+  isteyebiliriz. Asla parola istemeyiz.</li>
+  <li>Başvurunuzu en geç <strong>30 gün</strong> içinde ücretsiz sonuçlandırırız.</li>
+  <li>Başvurunuz reddedilirse, yanıtı yetersiz bulursanız ya da süresinde yanıt verilmezse Kişisel Verileri
+  Koruma Kurulu'na, AB'de ise ülkenizin veri koruma otoritesine şikâyette bulunabilirsiniz.</li>
+</ul>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Bu politikanın her sürümünün bir numarası ve yürürlük tarihi vardır. Oyunun veri uygulamaları
+değiştiğinde (örneğin reklam, satın alma, bildirim ya da çökme raporu eklendiğinde) önce bu sayfa
+güncellenir ve üstteki "son güncelleme" tarihi değişir. Önemli değişiklikler oyunda da duyurulur. Analitik
+sorusu esaslı biçimde değişirse oyun size yeniden sorar.</p>
+
+<h2 id="contact">İletişim</h2>
+<p>Bu politikayla ilgili her soru ya da veri talebi için:</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Tabula Domino'nun veri sorumlusu BumuStudios. Uygulamada <strong>Ayarlar → Hesap → Destek ve
+  itiraz</strong> altından da bize yazabilirsiniz.</p>
+</div>
+
+<footer>
+  Tabula Domino, BumuStudios — e-posta yok, gerçek ad yok; bu sürümde reklam ve satın alma yok. Bu politika,
+  oyunu ilk kapalı test sürümünden itibaren anlatır.
+</footer>
+
+</main>
+</body>
+</html>

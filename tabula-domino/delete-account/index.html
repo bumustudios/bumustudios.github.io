@@ -106,7 +106,7 @@
 <header>
   <h1>Delete your account — Tabula Domino</h1>
   <p class="lede">Tabula Domino: Online Oyna, by BumuStudios — Android, package <code>com.bumustudios.domino</code></p>
-  <p class="dates"><span>Last updated: 16 October 2026.</span></p>
+  <p class="dates"><span>Last updated: 17 October 2026.</span></p>
 </header>
 
 <div class="callout">
@@ -159,6 +159,9 @@ is deleted automatically in the same way.</p>
   <li>Your support requests and our replies</li>
   <li>Your analytics consent answer</li>
 </ul>
+<p>Deleting your account in the game does not reset your phone's advertising ID or the choices you made in
+Google's ad consent form; you can change those under <strong>Settings → Privacy → Ad choices</strong> before
+you delete, or reset the advertising ID in your phone's Google settings.</p>
 
 <h2>What is kept, and for how long</h2>
 <p>Some records are also part of other players' history or are needed for fair play and legal claims. They
@@ -179,8 +182,14 @@ number remains.</p>
     <td>Analytics events up to 13 months after they were received</td></tr>
     <tr><td>Edge logs (IP address, user-agent) and monitoring logs</td><td>As written</td>
     <td>7 days and 14 days, then deleted</td></tr>
-    <tr><td>Database backups</td><td>As written</td><td>Up to 14 days; your data disappears from them as they
+    <tr><td>Database backups</td><td>As written</td><td>Up to 16 days; your data disappears from them as they
     expire</td></tr>
+    <tr><td>Crash reports sent to Google Firebase Crashlytics (only if you allowed them)</td><td>Not linked to
+    your player number</td><td>90 days at Google, then deleted</td></tr>
+    <tr><td>Usage events sent to Google Analytics for Firebase (only if you allowed analytics)</td><td>Not
+    linked to your player number</td><td>Up to 14 months at Google, then deleted</td></tr>
+    <tr><td>Ad data held by Google AdMob (advertising ID, ad interactions)</td><td>Held by Google as an
+    independent controller, not by us</td><td>Under Google's own policy</td></tr>
     <tr><td>Entry in the list of deleted accounts: the random number, account type, creation, last-use and
     deletion times, with a placeholder instead of the name</td><td>No name, no linked accounts</td>
     <td>Indefinitely, so that a deleted account cannot be recreated by delayed system messages</td></tr>

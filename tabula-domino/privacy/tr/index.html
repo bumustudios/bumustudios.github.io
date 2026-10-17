@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gizlilik Politikası — Tabula Domino</title>
-<meta name="description" content="Tabula Domino çevrim içi domino oyununun gizlilik politikası. Misafir hesap, e-posta ya da gerçek ad yok; maçlar, rating ve profiller Almanya&#x27;daki (AB) kendi sunucularımızda; bu sürümde reklam, satın alma ve anlık bildirim yok.">
+<meta name="description" content="Tabula Domino çevrim içi domino oyununun gizlilik politikası. Misafir hesap, e-posta ya da gerçek ad yok; maçlar, rating ve profiller Almanya&#x27;daki (AB) kendi sunucularımızda; Google AdMob reklamları Google&#x27;ın izin formuyla; Firebase çökme raporları ve analitik yalnızca izninizle; bu sürümde satın alma ve anlık bildirim yok.">
 <meta name="color-scheme" content="light dark">
 <style>
   :root {
@@ -106,7 +106,7 @@
 <header>
   <h1>Gizlilik Politikası — Tabula Domino</h1>
   <p class="lede">Android için çevrim içi domino oyunu, paket adı <code>com.bumustudios.domino</code></p>
-  <p class="dates"><span>Yürürlük tarihi: 16 Ekim 2026.</span> <span>Son güncelleme: 16 Ekim 2026.</span> <span>Politika sürümü 1.</span></p>
+  <p class="dates"><span>Yürürlük tarihi: 17 Ekim 2026.</span> <span>Son güncelleme: 17 Ekim 2026.</span> <span>Politika sürümü 2.</span></p>
 </header>
 
 <div class="callout">
@@ -115,8 +115,12 @@
   yalnızca hesabınızı başka bir cihazda geri almanızı sağlar.</p>
   <p>Tabula Domino çevrim içi bir oyundur; maçlarınız Almanya'da (AB) Hetzner'in işlettiği kendi
   sunucularımızda oynanır. Bu sayfa o sunucuların neyi, neden ve ne kadar süre tuttuğunu eksiksiz anlatır.
-  Oyunun bu sürümünde <strong>reklam, satın alma, anlık bildirim ve Google Firebase yoktur</strong>.
   Verilerinizi satmayız.</p>
+  <p><strong>Reklamlar ve Google hizmetleri.</strong> Oyun, menülerde ve en çok her üç bitmiş maçta bir maç
+  aralarında Google AdMob reklamları gösterir; <strong>maç sırasında ve uygulama açılırken asla</strong>.
+  Reklamlar yalnızca Google'ın izin formunda kabul ederseniz kişiselleştirilir. Çökme raporları (Google
+  Firebase Crashlytics) ve kullanım ölçümü (Google Analytics for Firebase) <strong>yalnızca izin
+  verirseniz</strong> gönderilir. 13–17 yaşındaki oyunculara isteğe bağlı kısımların hiçbiri uygulanmaz.</p>
 </div>
 
 <h2>Bu politika kime ait</h2>
@@ -135,16 +139,20 @@ bağlantı koptuğunda oyununuz kaybolmasın diye sunucularımızda tutulur. Uyg
 bilgisayar rakiplere karşı oynayabilirsiniz.</p>
 
 <h2>Oyunun bu sürümü</h2>
-<p>Bu politika, oyunun Google Play kapalı testindeki sürümünü anlatır. Oyuna sonradan gelecek bazı
-özellikler <strong>bu sürümde yoktur</strong>; bunlardan herhangi biri gelmeden önce bu politika yeni bir
-"son güncelleme" tarihiyle güncellenecektir:</p>
+<p>Bu politika, oyunun Google Play kapalı testindeki sürümünü anlatır. Bu sürümde şunlar vardır:</p>
 <ul>
-  <li><strong>Reklamlar.</strong> Yoktur. Reklam eklendiğinde bu sayfa reklam ağlarını ve ne topladıklarını
-  sayacak; kişiselleştirilmiş reklam yalnızca izninizle gösterilecektir.</li>
-  <li><strong>Uygulama içi satın alma.</strong> Yoktur; hiçbir şey satın alınamaz.</li>
+  <li><strong>Reklamlar (Google AdMob).</strong> Menülerde (ana ekran, profil, ayarlar) küçük bir afiş ve
+  maç aralarında, en çok her üç bitmiş maçta bir ve en az 3 dakika arayla bir reklam. Maç sırasında ve
+  uygulama açılırken reklam yoktur. Bkz. <a href="#ads">Reklamlar</a>.</li>
+  <li><strong>Çökme raporları ve kullanım ölçümü (Google Firebase).</strong> Yalnızca izninizle, Android'de.
+  Bkz. <a href="#analytics">Uygulama içi analitik</a> ve <a href="#crash">Çökme raporları</a>.</li>
+</ul>
+<p>Oyuna sonradan gelecek bazı özellikler <strong>bu sürümde yoktur</strong>; bunlardan herhangi biri
+gelmeden önce bu politika yeni bir "son güncelleme" tarihiyle güncellenecektir:</p>
+<ul>
+  <li><strong>Uygulama içi satın alma.</strong> Reklamsız Paket Ayarlar'da görünür, ama bu sürümde hiçbir
+  şey satın alınamaz; ödeme alınmaz.</li>
   <li><strong>Anlık bildirimler.</strong> Oyun bildirim göndermez ve bildirim adresi kaydetmez.</li>
-  <li><strong>Google Firebase ve çökme raporları.</strong> Oyunda Firebase, Crashlytics ya da başka bir
-  üçüncü taraf analitik veya çökme raporlama bileşeni yoktur.</li>
 </ul>
 
 <h2>Neleri işliyoruz</h2>
@@ -250,18 +258,47 @@ ve sürümünü ve yanıtımızı tutarız. Lütfen bu forma parola ya da başka
 hesapla ilgili işlem yaptığında (askıya alma, kapatma, eşleştirme beklemesini kaldırma, bir fotoğrafı
 gizleme) kararın, gerekçesinin ve kararı hangi ekip üyesinin verdiğinin kaydını tutarız.</p>
 
-<h3>Uygulama içi analitik — yalnızca izninizle</h3>
+<h3 id="analytics">Uygulama içi analitik — yalnızca izninizle</h3>
 <p>Oyun, "ilerleme ekranı açıldı" gibi kullanım olaylarını uygulama sürümü, platform ve her açılışta
 yenilenen bir oturum numarasıyla birlikte <strong>yalnızca siz izin verirseniz</strong> gönderebilir. Soru
 uygulamada çıkar; cevabınızı istediğiniz an <strong>Ayarlar → Gizlilik → Oyunu birlikte geliştirelim</strong>
-altından değiştirebilirsiniz. Bu olaylar yalnızca kendi sunucularımıza gider; hiçbir üçüncü taraf analitik
-hizmeti bunları almaz. Adınız, IP adresiniz, reklam kimliğiniz, yazdığınız herhangi bir şey ve elinizdeki
-taşlar hiçbir analitik olayına girmez. Cevabınızı, hangi metin sürümüne verildiğini ve zamanını, ona uymak
-ve bunu gösterebilmek için tutarız.</p>
+altından değiştirebilirsiniz. Bu olaylar kendi sunucularımıza gider. Adınız, IP adresiniz, reklam
+kimliğiniz, yazdığınız herhangi bir şey ve elinizdeki taşlar hiçbir analitik olayına girmez. Cevabınızı,
+hangi metin sürümüne verildiğini ve zamanını, ona uymak ve bunu gösterebilmek için tutarız.</p>
+<p>Android'de, <strong>aynı izinle</strong>, Google Analytics for Firebase (Google LLC, bizim adımıza veri
+işleyen) da uygulamanın nasıl kullanıldığını ölçer: uygulamanın açılması gibi kendiliğinden oluşan olaylar,
+oturum ve kullanım süresi, cihaz modeli, işletim sistemi ve uygulama sürümü, kuruluma özgü rastgele bir
+numara ve IP adresinden çıkarılan kaba konum (ülke, şehir). Reklam kimliği toplanmaz ve bunların hiçbiri
+reklam için kullanılmaz. İzin vermezseniz ya da geri alırsanız Firebase'e hiçbir şey gönderilmez. 13–17
+yaşındaki oyuncular için hiçbir şey gönderilmez.</p>
 <p>Bundan ayrı olarak sunucularımız, hizmetin nasıl çalıştığını ölçmek için (maç sayısı, bekleme süreleri)
 kendi üzerlerinde zaten gerçekleşen "eşleşme bulundu", "maç bitti" gibi olayları sayar. Analitiği
 reddederseniz ya da hesabınızı silerseniz bu kayıtlar oyuncu numaranız çıkarılarak tutulur.</p>
 
+<h3 id="crash">Çökme raporları — yalnızca izninizle</h3>
+<p><strong>Ayarlar → Gizlilik → Çökme raporları</strong> anahtarını açarsanız (başta kapalıdır), uygulama
+çöktüğünde sorunu bulabilmemiz için Google Firebase Crashlytics'e (Google LLC, veri işleyen) teknik bir rapor
+gönderilir: hata izi, cihaz modeli, işletim sistemi ve uygulama sürümü ve kuruluma özgü rastgele bir numara.
+Raporda adınız, oyuncu numaranız, yazdığınız bir şey ya da elinizdeki taşlar yer almaz. Anahtarı kapatmak
+henüz gönderilmemiş raporları siler. Çökme raporları şimdilik yalnızca Android'de gönderilir; 13–17
+yaşındaki oyuncular için asla gönderilmez.</p>
+<h3 id="ads">Reklamlar</h3>
+<p>Reklamları <strong>Google AdMob</strong> (Google LLC ve Google Ireland Limited) sunar: menülerde (ana
+ekran, profil, ayarlar) küçük bir afiş, maç aralarında bir reklam (en çok her üç bitmiş maçta bir, en az 3
+dakika arayla) ve uygulamanın sunduğu yerde, yalnızca siz isterseniz izlediğiniz ödüllü reklam.
+<strong>Maç sırasında ve uygulama açılırken reklam gösterilmez.</strong></p>
+<p>AdMob, reklam göstermek, ne sıklıkla gördüğünüzü sınırlamak, reklamları ölçmek ve sahtekârlığı önlemek
+için cihazınızın reklam kimliğini, IP adresinizi, cihaz bilgilerini ve reklam etkileşimlerinizi işler. Reklam
+kimliğiniz <strong>kişiselleştirilmiş reklam için yalnızca kabul ederseniz</strong> kullanılır: kabul,
+yasanın seçim istediği yerlerde (örneğin AB, Birleşik Krallık ve bazı ABD eyaletleri) ilk bitmiş maçınızdan
+sonra gösterilen Google izin formunda (Google User Messaging Platform) sorulur. Formu istediğiniz an
+<strong>Ayarlar → Gizlilik → Reklam tercihleri</strong> altından yeniden açıp izninizi verebilir ya da geri
+alabilirsiniz. Kabul etmezseniz yine reklam görürsünüz, ama kişiselleştirilmez. Seçim sorulmayan ülkelerde
+(Türkiye dahil) reklamlar şimdilik her zaman kişiselleştirilmemiştir. 13–17 yaşındaki oyunculara yalnızca
+kişiselleştirilmemiş reklam gösterilir ve reklam ağına oyuncunun reşit olmadığı bildirilir. Reklam kimliğiniz
+sunucularımıza ya da analitiğimize asla ulaşmaz. Google'ın verileri nasıl kullandığı
+<a href="https://policies.google.com/technologies/partner-sites?hl=tr">Google'ın, hizmetlerini kullanan site ve
+uygulamalardaki bilgileri nasıl kullandığı</a> sayfasında anlatılır.</p>
 <h3>Teknik kayıtlar</h3>
 <ul>
   <li><strong>IP adresi.</strong> Uygulama sunucularımız onu yalnızca bellekte kullanır: isteği yanıtlamak
@@ -274,19 +311,20 @@ reddederseniz ya da hesabınızı silerseniz bu kayıtlar oyuncu numaranız çı
   içerebilir, ad ya da oturum anahtarı asla içermez; <strong>14 gün</strong> tutulur.</li>
   <li><strong>Uygulama sürümü.</strong> Sunucu eski bir uygulamaya güncelleme gerektiğini söyleyebilsin diye
   her istekle gönderilir.</li>
-  <li><strong>Yedekler.</strong> Veritabanı yedeklerimiz en çok <strong>14 gün</strong> tutulur.</li>
+  <li><strong>Yedekler.</strong> Veritabanı yedeklerimiz en çok <strong>16 gün</strong> tutulur.</li>
 </ul>
 
 <h3>Telefonunuzda kalanlar</h3>
-<p>Oturum anahtarınız (Android'in güvenli deposunda), ses, titreşim ve tema ayarlarınız ve gördüğünüz
-ipuçları. Oyun, arayüzü sizin dilinizde göstermek için telefonunuzun dilini okur. Kameraya ya da
+<p>Oturum anahtarınız (Android'in güvenli deposunda), ses, titreşim ve tema ayarlarınız, gördüğünüz
+ipuçları, yaş ekranındaki cevabınız ve Google'ın reklam izni formunda yaptığınız seçimler (Google'ın izin
+kitaplığı telefonda tutar). Oyun, arayüzü sizin dilinizde göstermek için telefonunuzun dilini okur. Kameraya ya da
 fotoğraflarınıza yalnızca profil fotoğrafı koymayı seçerseniz erişmek ister; konum, rehber ya da mikrofon
 izni istemez.</p>
 
 <h2>Neleri toplamıyoruz</h2>
 <p>E-posta adresi, telefon numarası, gerçek ad, posta adresi, hassas (GPS) konum, telefonunuzun rehberi,
 fotoğraflarınız ve dosyalarınız (seçtiğiniz profil fotoğrafı dışında), ses kaydı, ödeme bilgileri, tarama
-geçmişi. Sağlık verisi gibi özel nitelikli kişisel veri işlemeyiz.</p>
+geçmişi. Reklam kimliğinizi sunucularımızda toplamayız. Sağlık verisi gibi özel nitelikli kişisel veri işlemeyiz.</p>
 
 <h2>Diğer oyuncular neyi görür</h2>
 <ul>
@@ -319,7 +357,13 @@ yoktur. Bot profilleri uydurmadır ve gerçek kişilere ait değildir.</p>
     <td>m.5/2(f) — meşru menfaat</td><td>m.6/1(f) — meşru menfaat</td></tr>
     <tr><td>Ülkenin IP adresinden tahmin edilmesi</td>
     <td>m.5/2(f) — meşru menfaat</td><td>m.6/1(f) — meşru menfaat</td></tr>
-    <tr><td>Uygulama içi analitik</td>
+    <tr><td>Uygulama içi analitik, Google Analytics for Firebase dahil</td>
+    <td>m.5/1 — açık rıza</td><td>m.6/1(a) — rıza</td></tr>
+    <tr><td>Çökme raporları (Firebase Crashlytics)</td>
+    <td>m.5/1 — açık rıza</td><td>m.6/1(a) — rıza</td></tr>
+    <tr><td>Kişiselleştirilmemiş reklam, gösterim sıklığının sınırlanması, reklam sahtekârlığının önlenmesi</td>
+    <td>m.5/2(f) — meşru menfaat</td><td>m.6/1(f) — meşru menfaat</td></tr>
+    <tr><td>Kişiselleştirilmiş reklam</td>
     <td>m.5/1 — açık rıza</td><td>m.6/1(a) — rıza</td></tr>
     <tr><td>Sunucu tarafındaki işletme sayımları</td>
     <td>m.5/2(f) — meşru menfaat</td><td>m.6/1(f) — meşru menfaat</td></tr>
@@ -331,11 +375,11 @@ yoktur. Bot profilleri uydurmadır ve gerçek kişilere ait değildir.</p>
 </table>
 </div>
 <p>Meşru menfaatlerimiz şunlardır: maçları adil ve hizmeti güvenli tutmak, oyuncuları tacizden ve hileden
-korumak, hizmetin ne kadar iyi çalıştığını toplu olarak anlamak ve diğer oyuncuların maç kayıtlarını
-eksiksiz tutmak. Bu işlemeye itiraz edebilirsiniz (bkz. <a href="#rights">Haklarınız</a>).</p>
+korumak, hizmetin ne kadar iyi çalıştığını toplu olarak anlamak, ücretsiz bir oyunu reklamla finanse etmek
+ve diğer oyuncuların maç kayıtlarını eksiksiz tutmak. Bu işlemeye itiraz edebilirsiniz (bkz. <a href="#rights">Haklarınız</a>).</p>
 
 <h2>Veriyi kimler alır, nerede saklanır</h2>
-<p>Kişisel verilerinizi <strong>satmayız</strong> ve reklamcılara kiralamayız.</p>
+<p>Kişisel verilerinizi para karşılığı <strong>satmayız</strong>.</p>
 <div class="table-wrap">
 <table>
   <thead><tr><th>Alıcı</th><th>Ne</th><th>Nerede</th></tr></thead>
@@ -346,14 +390,24 @@ eksiksiz tutmak. Bu işlemeye itiraz edebilirsiniz (bkz. <a href="#rights">Hakla
     <td>Oyun verisi göndermeyiz. Verdikleri giriş belgesini doğrularız; Facebook ve X için bunu onlara
     sorarak yaparız. O hesabın fotoğrafını kullanmayı seçerseniz fotoğrafı onlardan bir kez indiririz</td>
     <td>Sağlayıcıya bağlı</td></tr>
+    <tr><td>Google AdMob ve Google'ın reklam ortakları — bağımsız veri sorumluları</td>
+    <td>Reklam kimliği, IP adresi, cihaz bilgileri, reklam etkileşimleri; izin seçimleriniz</td>
+    <td>ABD ve diğer ülkeler</td></tr>
+    <tr><td>Google Firebase Crashlytics — veri işleyen, yalnızca izninizle (Android)</td>
+    <td>Çökme raporları</td><td>ABD</td></tr>
+    <tr><td>Google Analytics for Firebase — veri işleyen, yalnızca izninizle (Android)</td>
+    <td>Uygulama kullanım olayları, cihaz bilgileri, kurulum numarası, IP adresinden kaba konum</td>
+    <td>ABD</td></tr>
     <tr><td>Yetkili kamu kurumları ve mahkemeler</td><td>Kanunun gerektirdiği</td><td>Türkiye ya da ilgili ülke</td></tr>
   </tbody>
 </table>
 </div>
 <p><strong>Yurt dışına aktarım (KVKK).</strong> Sunucularımız Almanya'da olduğundan Türkiye'deki oyuncuların
 verisi yurt dışına aktarılır. Bu aktarım KVKK m.9 uyarınca, barındırma sağlayıcımızla yapılan ve kanunun
-öngördüğü şekilde Kişisel Verileri Koruma Kurulu'na bildirilen standart sözleşmeye dayanılarak yapılır.
-AB'deki oyuncuların verisi AB içinde kalır. Bu güvencelerin bir kopyasını <a href="#contact">İletişim</a>
+öngördüğü şekilde Kişisel Verileri Koruma Kurulu'na bildirilen standart sözleşmeye dayanılarak yapılır;
+yukarıdaki Google hizmetleri için de aynısı geçerlidir. AB'deki oyuncuların sunucularımızdaki verisi AB
+içinde kalır; ABD'deki Google'a aktarımlar AB–ABD Veri Gizliliği Çerçevesine ve/veya Avrupa Komisyonu'nun
+standart sözleşme maddelerine dayanır. Bu güvencelerin bir kopyasını <a href="#contact">İletişim</a>
 bölümündeki adresten isteyebilirsiniz.</p>
 
 <h2 id="retention">Ne kadar saklıyoruz</h2>
@@ -391,9 +445,11 @@ sürdürür.</p>
     <tr><td>Ekip kararlarının kayıtları (askıya alma, kapatma, destek işlemleri)</td><td>En çok 5 yıl</td><td>Silinir</td></tr>
     <tr><td>Uygulama içi analitik olayları</td><td>13 ay</td><td>Silinir</td></tr>
     <tr><td>Analitik cevabınız</td><td>Hesabınız var oldukça</td><td>Hesapla birlikte silinir</td></tr>
+    <tr><td>Google Analytics for Firebase olayları</td><td>En çok 14 ay</td><td>Google tarafından silinir</td></tr>
+    <tr><td>Çökme raporları (Crashlytics)</td><td>90 gün</td><td>Google tarafından silinir</td></tr>
     <tr><td>Kenar kayıtları (IP adresi, user-agent)</td><td>7 gün</td><td>Silinir</td></tr>
     <tr><td>İzleme kayıtları</td><td>14 gün</td><td>Silinir</td></tr>
-    <tr><td>Veritabanı yedekleri</td><td>En çok 14 gün</td><td>Silinen veri, yedeğin süresi dolunca yedekten de kalkar</td></tr>
+    <tr><td>Veritabanı yedekleri</td><td>En çok 16 gün</td><td>Silinen veri, yedeğin süresi dolunca yedekten de kalkar</td></tr>
     <tr><td>Silinmiş hesaplar listesi — rastgele numara, hesap türü, açılış, son kullanım ve silinme
     zamanları; ad yerine sabit bir yer tutucu</td><td>Süresiz</td>
     <td>Gecikmeli sistem iletilerinin silinmiş bir hesabı yeniden oluşturmaması ve adsız tutulan maç
@@ -419,14 +475,17 @@ da silme isteyebilirsiniz. Adım adım anlatım ve neyin silinip neyin kaldığ�
   <li><strong>Oyuncu numarası da çıkarılanlar:</strong> analitik olayları ve sunucu tarafındaki sayımlar.</li>
   <li>Hakkınızda yapılmış bir şikâyet süresi dolana kadar kalır; içindeki oyuncu numaranız, size geri
   götürülemeyen yeni bir numarayla değiştirilir.</li>
-  <li>Silme, yedeklerimize yedeklerin süresi dolunca, 14 gün içinde ulaşır.</li>
+  <li>Silme, yedeklerimize yedeklerin süresi dolunca, 16 gün içinde ulaşır.</li>
+  <li>Çökme raporları ve Firebase kullanım olayları oyuncu numaranıza bağlı değildir; Google'da 90 gün ve
+  14 ay sonra silinir. Reklam verilerini Google kendi politikasıyla tutar.</li>
 </ul>
 
 <h2>Çocuklar ve korumalı mod</h2>
 <p>Oyun çocuklara yönelik değildir. Oynamak için <strong>en az 13 yaşında</strong> olmalısınız.
-<strong>13–17 yaşındaki</strong> oyuncular <strong>korumalı modda</strong> oynar: kişiselleştirilmiş reklam
-yok (oyuna reklam geldiğinde), analitik izni sorusu yok, dolayısıyla uygulama içi analitik gönderilmez, ve
-pazarlama bildirimi yok (oyuna bildirim geldiğinde). Uygulamada verdiğiniz yaş bilgisini yalnızca bu
+<strong>13–17 yaşındaki</strong> oyuncular <strong>korumalı modda</strong> oynar: yalnızca kişiselleştirilmemiş
+reklam, reklam ağına oyuncunun reşit olmadığı bildirilerek; reklam, analitik ya da çökme raporu izni sorusu
+yok, dolayısıyla uygulama içi analitik, Firebase verisi ve çökme raporu gönderilmez; pazarlama bildirimi yok
+(oyuna bildirim geldiğinde). Uygulamada verdiğiniz yaş bilgisini yalnızca bu
 kuralları uygulamak için kullanırız. 13 yaşından küçük bir oyuncunun hesabı olduğunu öğrenirsek hesabı
 sileriz. 13 yaşından küçük bir çocuğun oyunu kullandığını düşünüyorsanız aşağıdaki adrese yazın.</p>
 
@@ -469,7 +528,8 @@ yaşadıkları ülkenin veri koruma otoritesine şikâyet hakkına sahiptir.</p>
 <p>Nasıl kullanırsınız:</p>
 <ul>
   <li><strong>Uygulamada:</strong> görünen adınızı ve fotoğrafınızı değiştirin; hesabınızı silin; analitiği
-  açıp kapatın; uygulamanın sunduğu yerde verilerinizin kopyasını <strong>Ayarlar → Hesap → Hesap ve profil
+  ve çökme raporlarını açıp kapatın; reklam iznini <strong>Ayarlar → Gizlilik → Reklam tercihleri</strong>
+  altından verin ya da geri alın; uygulamanın sunduğu yerde verilerinizin kopyasını <strong>Ayarlar → Hesap → Hesap ve profil
   → Gizlilik ve veriler</strong> altından indirin.</li>
   <li><strong>E-postayla</strong>, herhangi bir adresten, aşağıdaki adrese. <strong>Ayarlar → Hesap → Hesap
   ve profil</strong> altında görünen <strong>oyuncu etiketinizi</strong> yazın. Misafir hesaba bağlı bir
@@ -480,12 +540,18 @@ yaşadıkları ülkenin veri koruma otoritesine şikâyet hakkına sahiptir.</p>
   <li>Başvurunuz reddedilirse, yanıtı yetersiz bulursanız ya da süresinde yanıt verilmezse Kişisel Verileri
   Koruma Kurulu'na, AB'de ise ülkenizin veri koruma otoritesine şikâyette bulunabilirsiniz.</li>
 </ul>
+<p><strong>ABD eyaletleri (Kaliforniya ve benzer yasası olanlar):</strong> bilme, silme ve düzeltme
+haklarınız ve kişisel bilgilerin "satışını ya da paylaşımını" reddetme hakkınız vardır. Verilerinizi para
+karşılığı satmayız; ama bazı eyalet yasalarında kişiselleştirilmiş reklam "paylaşım" sayılır;
+<strong>Ayarlar → Gizlilik → Reklam tercihleri</strong> altından durdurabilirsiniz. <strong>Brezilya:</strong>
+LGPD m.18'deki haklarınız vardır ve ANPD'ye şikâyette bulunabilirsiniz.</p>
 
 <h2>Bu politikadaki değişiklikler</h2>
 <p>Bu politikanın her sürümünün bir numarası ve yürürlük tarihi vardır. Oyunun veri uygulamaları
-değiştiğinde (örneğin reklam, satın alma, bildirim ya da çökme raporu eklendiğinde) önce bu sayfa
-güncellenir ve üstteki "son güncelleme" tarihi değişir. Önemli değişiklikler oyunda da duyurulur. Analitik
-sorusu esaslı biçimde değişirse oyun size yeniden sorar.</p>
+değiştiğinde (örneğin satın alma ya da bildirim eklendiğinde) önce bu sayfa güncellenir ve üstteki "son
+güncelleme" tarihi değişir. Önemli değişiklikler oyunda da duyurulur. Analitik, çökme raporu ya da reklam
+soruları esaslı biçimde değişirse oyun size yeniden sorar. Sürüm 2 (17 Ekim 2026) Google AdMob
+reklamlarını, Google'ın izin formunu, Firebase Crashlytics'i ve Google Analytics for Firebase'i ekledi.</p>
 
 <h2 id="contact">İletişim</h2>
 <p>Bu politikayla ilgili her soru ya da veri talebi için:</p>
@@ -496,8 +562,9 @@ sorusu esaslı biçimde değişirse oyun size yeniden sorar.</p>
 </div>
 
 <footer>
-  Tabula Domino, BumuStudios — e-posta yok, gerçek ad yok; bu sürümde reklam ve satın alma yok. Bu politika,
-  oyunu ilk kapalı test sürümünden itibaren anlatır.
+  Tabula Domino, BumuStudios — e-posta yok, gerçek ad yok; bu sürümde satın alma yok; Google AdMob
+  reklamları yalnızca izninizle kişiselleştirilir. Bu politika, oyunu ilk kapalı test sürümünden itibaren
+  anlatır.
 </footer>
 
 </main>

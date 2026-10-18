@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--
+  Tabula Domino - a friend's invitation to a private table: /tabula-domino/join/?c=CODE
+
+  The app shares this link. With the app installed, Android opens it in the app (an App Link,
+  once /.well-known/assetlinks.json names the app); otherwise this page shows the table code and
+  two ways on: "Take your seat" opens the app through its own domino:// address, falling back to
+  Google Play; the Google Play button installs it, carrying the code in the install referrer
+  (referrer=join%3DCODE), so the app's first run opens the join screen with the code filled in.
+
+  No cookies, no analytics, no third-party requests: fonts and pictures are served from here.
+  The code is only read from the address and handed to the app or to Google Play.
+  Source of the design: DominoOnline docs/design/U4-tasarim.md section 9, L1-davet-baglantisi.md.
+-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; font-src 'self'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#2a170a">
+<title>Masada sana yer var · Tabula Domino</title>
+<meta name="description" content="Bir arkadaşın seni Tabula Domino'da özel masasına çağırıyor.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tabula Domino">
+<meta property="og:title" content="Masada sana yer var · Tabula Domino">
+<meta property="og:description" content="Bir arkadaşın seni özel domino masasına çağırıyor.">
+<meta property="og:image" content="https://bumustudios.github.io/tabula-domino/join/assets/og-tr.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<style>
+  @font-face { font-family: "Alegreya Black"; src: url("assets/alegreya-black.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Alegreya Sans XB"; src: url("assets/alegreya-sans-extrabold.woff2") format("woff2"); font-display: swap; }
+  :root {
+    --gold: #f2d48f; --cream: #fff3dc; --cream-dim: #f3dfbd; --ink: #2a170a; --ink-soft: #5a3a1e;
+    --paper: #fbf0d9; --paper-deep: #efdcb4; --paper-edge: #b98d4a; --felt: #3f9a5c; --night: #2a170a;
+    --body: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    min-height: 100vh; min-height: 100dvh; font-family: var(--body); color: var(--cream); background-color: var(--night);
+    background-image: linear-gradient(rgba(120, 66, 28, 0.45), rgba(50, 26, 10, 0.9) 55%, var(--night) 100%), url("assets/kahvehane-tophane.jpg");
+    background-size: cover, cover; background-position: center top; background-repeat: no-repeat; background-attachment: scroll;
+  }
+  main { max-width: 26rem; margin: 0 auto; padding: max(28px, env(safe-area-inset-top)) 16px max(24px, env(safe-area-inset-bottom));
+    display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .mark { width: 76px; height: 76px; border-radius: 20px; box-shadow: 0 0 0 2.5px var(--gold), 0 8px 18px rgba(10, 4, 0, 0.55); }
+  .brand { margin-top: 10px; font: 15px "Alegreya Sans XB", var(--body); color: var(--cream-dim); letter-spacing: 0.06em; }
+  h1 { margin-top: 16px; font: 30px/1.12 "Alegreya Black", Georgia, serif; color: var(--gold); text-wrap: balance; }
+  .lead { margin-top: 8px; font: 16px/1.45 var(--body); max-width: 21rem; }
+  .code { margin-top: 20px; width: 100%; padding: 14px 16px 12px; border-radius: 16px; color: var(--ink);
+    background: linear-gradient(180deg, var(--paper), var(--paper-deep));
+    box-shadow: 0 0 0 1.5px var(--paper-edge), inset 0 0 0 5px var(--paper), inset 0 0 0 6px rgba(185, 141, 74, 0.5), 0 10px 22px rgba(10, 4, 0, 0.5); }
+  .code small { display: block; font: 13px "Alegreya Sans XB", var(--body); color: var(--ink-soft); letter-spacing: 0.08em; text-transform: uppercase; }
+  .code output { display: block; margin-top: 2px; font: 40px/1.15 "Alegreya Black", Georgia, serif; letter-spacing: 0.16em; padding-left: 0.16em; }
+  .copy { margin-top: 2px; min-height: 44px; padding: 0 12px; border: 0; background: none; cursor: pointer;
+    font: 15px "Alegreya Sans XB", var(--body); color: var(--ink-soft); text-decoration: underline; text-underline-offset: 3px; }
+  .copy:focus-visible, .open:focus-visible, .play:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .open { margin-top: 20px; width: 100%; min-height: 60px; border-radius: 16px; display: grid; place-items: center; text-decoration: none;
+    font: 24px "Alegreya Black", Georgia, serif; letter-spacing: 0.03em; color: #fff7e2; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.35);
+    background-color: var(--felt);
+    background-image: radial-gradient(ellipse at 50% 30%, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0) 60%), url("assets/felt.jpg");
+    background-size: auto, 170px; background-blend-mode: normal, multiply;
+    box-shadow: inset 0 0 0 2px var(--gold), 0 0 0 3px rgba(80, 44, 16, 0.9), 0 8px 18px rgba(10, 4, 0, 0.5); }
+  .or { margin-top: 16px; font: 14px var(--body); color: var(--cream-dim); }
+  .play { margin-top: 10px; min-height: 52px; padding: 10px 22px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center;
+    background: #111; box-shadow: 0 0 0 1px #8a8a8a; color: #fff; text-decoration: none; font: 500 18px var(--body); }
+  .note { margin-top: 16px; font: 15px/1.45 var(--body); color: var(--cream); max-width: 21rem; }
+  .steps { margin-top: 22px; width: 100%; padding: 14px 16px; border-radius: 14px; background: rgba(40, 20, 8, 0.66);
+    box-shadow: inset 0 0 0 1px rgba(242, 212, 143, 0.35); text-align: start; list-style: none; counter-reset: step; display: flex; flex-direction: column; gap: 9px; }
+  .steps li { display: flex; gap: 10px; font: 14.5px/1.4 var(--body); counter-increment: step; }
+  .steps li::before { content: counter(step); flex: none; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center;
+    font: 13px "Alegreya Sans XB", var(--body); color: var(--ink); background: linear-gradient(180deg, #f6dc9c, #d9ae5a); }
+  footer { margin-top: 20px; font: 12.5px/1.5 var(--body); color: var(--cream-dim); }
+  footer a { color: var(--gold); }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main>
+  <img class="mark" src="assets/icon-192.png" width="76" height="76" alt="">
+  <div class="brand" lang="en">TABULA DOMINO</div>
+  <h1 data-t="title">Masada sana yer var</h1>
+  <p class="lead" data-t="lead">Bir arkadaşın seni özel domino masasına çağırıyor. Uygulama telefonundaysa masaya hemen oturursun.</p>
+
+  <section class="code" id="code" hidden aria-labelledby="code-label">
+    <small id="code-label" data-t="codeLabel">Masa kodu</small>
+    <output id="code-value" aria-live="polite"></output>
+    <button class="copy" id="copy" type="button" data-t="copy">Kodu kopyala</button>
+  </section>
+
+  <a class="open" id="open" hidden data-t="open">Masaya otur</a>
+
+  <p class="or" id="or" hidden data-t="or">Uygulama yok mu? Ücretsiz:</p>
+  <a class="play" id="play" href="https://play.google.com/store/apps/details?id=com.bumustudios.domino" rel="noopener">
+    <span data-t="getIt">Google Play'den indir</span>
+  </a>
+
+  <p class="note" id="ios" hidden data-t="ios">Tabula Domino şimdilik yalnızca Android'de. iPhone sürümü hazır olunca burada olacak.</p>
+
+  <ol class="steps" id="steps">
+    <li data-t="step1">Tabula Domino'yu indir ve aç.</li>
+    <li data-t="step2" id="step2">İlk açılıştan sonra bu masa kendiliğinden açılır; kod hazır gelir.</li>
+    <li id="step3"></li>
+  </ol>
+
+  <footer>
+    <p data-t="foot">Bu sayfa çerez ve takip kullanmaz; kod yalnızca uygulamaya ya da Google Play'e iletilir.</p>
+    <p><a id="privacy" href="../privacy/tr/" data-t="privacy">Gizlilik</a> · BumuStudios</p>
+  </footer>
+</main>
+<script>
+(function () {
+  "use strict";
+
+  var PACKAGE = "com.bumustudios.domino";
+  var PLAY = "https://play.google.com/store/apps/details?id=" + PACKAGE;
+  // The server's join code: six characters from an alphabet without lookalikes (contracts JOIN_CODE_ALPHABET).
+  var ALPHABET = "ABCDEFGHJKMNPQRSTUVWXYZ23456789";
+  var CODE_LENGTH = 6;
+
+  var TEXT = {
+    tr: {
+      title: "Masada sana yer var", titleNoCode: "Gel, bir el oynayalım",
+      lead: "Bir arkadaşın seni özel domino masasına çağırıyor. Uygulama telefonundaysa masaya hemen oturursun.",
+      leadIos: "Bir arkadaşın seni özel domino masasına çağırıyor.",
+      leadNoCode: "Arkadaşlarınla özel masada domino oyna. Bu bağlantıda masa kodu yok; kodu arkadaşından iste.",
+      codeLabel: "Masa kodu", copy: "Kodu kopyala", copied: "Kopyalandı", open: "Masaya otur",
+      or: "Uygulama yok mu? Ücretsiz:", getIt: "Google Play'den indir",
+      ios: "Tabula Domino şimdilik yalnızca Android'de. iPhone sürümü hazır olunca burada olacak.",
+      step1: "Tabula Domino'yu indir ve aç.",
+      step2: "İlk açılıştan sonra bu masa kendiliğinden açılır; kod hazır gelir.",
+      step3: "Açılmazsa: OYNA › Arkadaşla › Kodla katıl › {code}",
+      step3NoCode: "Kodu girmek için: OYNA › Arkadaşla › Kodla katıl",
+      foot: "Bu sayfa çerez ve takip kullanmaz; kod yalnızca uygulamaya ya da Google Play'e iletilir.",
+      privacy: "Gizlilik", privacyHref: "../privacy/tr/", doc: "Masada sana yer var · Tabula Domino"
+    },
+    en: {
+      title: "There's a seat for you", titleNoCode: "Come play a hand of dominoes",
+      lead: "A friend is inviting you to their private dominoes table. With the app on your phone, you sit down right away.",
+      leadIos: "A friend is inviting you to their private dominoes table.",
+      leadNoCode: "Play dominoes with your friends at a private table. This link carries no table code; ask your friend for it.",
+      codeLabel: "Table code", copy: "Copy the code", copied: "Copied", open: "Take your seat",
+      or: "No app yet? It's free:", getIt: "Get it on Google Play",
+      ios: "Tabula Domino is on Android for now. The iPhone version will be here once it is ready.",
+      step1: "Install Tabula Domino and open it.",
+      step2: "After the first start, this table opens by itself with the code filled in.",
+      step3: "If it doesn't: PLAY › With friends › Join with a code › {code}",
+      step3NoCode: "To enter a code: PLAY › With friends › Join with a code",
+      foot: "This page uses no cookies or tracking; the code only goes to the app or to Google Play.",
+      privacy: "Privacy", privacyHref: "../privacy/", doc: "There's a seat for you · Tabula Domino"
+    },
+    es: {
+      title: "Hay un lugar para ti", titleNoCode: "Ven a jugar una partida",
+      lead: "Un amigo te invita a su mesa privada de dominó. Si tienes la app en el teléfono, te sientas al instante.",
+      leadIos: "Un amigo te invita a su mesa privada de dominó.",
+      leadNoCode: "Juega dominó con tus amigos en una mesa privada. Este enlace no trae código de mesa; pídeselo a tu amigo.",
+      codeLabel: "Código de la mesa", copy: "Copiar el código", copied: "Copiado", open: "Sentarme a la mesa",
+      or: "¿Aún no tienes la app? Es gratis:", getIt: "Descárgalo en Google Play",
+      ios: "Por ahora Tabula Domino solo está en Android. La versión para iPhone estará aquí cuando esté lista.",
+      step1: "Instala Tabula Domino y ábrelo.",
+      step2: "Después del primer inicio, esta mesa se abre sola con el código ya puesto.",
+      step3: "Si no se abre: JUGAR › Con amigos › Unirme con un código › {code}",
+      step3NoCode: "Para ingresar un código: JUGAR › Con amigos › Unirme con un código",
+      foot: "Esta página no usa cookies ni rastreo; el código solo va a la app o a Google Play.",
+      privacy: "Privacidad", privacyHref: "../privacy/", doc: "Hay un lugar para ti · Tabula Domino"
+    },
+    pt: {
+      title: "Tem um lugar pra você", titleNoCode: "Vem jogar uma partida",
+      lead: "Um amigo está te chamando para a mesa particular de dominó dele. Com o app no celular, você senta na hora.",
+      leadIos: "Um amigo está te chamando para a mesa particular de dominó dele.",
+      leadNoCode: "Jogue dominó com os amigos numa mesa particular. Este link não traz código de mesa; peça ao seu amigo.",
+      codeLabel: "Código da mesa", copy: "Copiar o código", copied: "Copiado", open: "Sentar à mesa",
+      or: "Ainda não tem o app? É grátis:", getIt: "Baixe no Google Play",
+      ios: "Por enquanto o Tabula Domino está só no Android. A versão para iPhone vai estar aqui quando ficar pronta.",
+      step1: "Instale o Tabula Domino e abra.",
+      step2: "Depois da primeira abertura, esta mesa abre sozinha, com o código já preenchido.",
+      step3: "Se não abrir: JOGAR › Com amigos › Entrar com um código › {code}",
+      step3NoCode: "Para digitar um código: JOGAR › Com amigos › Entrar com um código",
+      foot: "Esta página não usa cookies nem rastreamento; o código só vai para o app ou para o Google Play.",
+      privacy: "Privacidade", privacyHref: "../privacy/", doc: "Tem um lugar pra você · Tabula Domino"
+    }
+  };
+
+  function pickLanguage() {
+    var asked = new URLSearchParams(location.search).get("lang");
+    var wanted = [];
+    if (asked) { wanted.push(asked); }
+    if (navigator.languages && navigator.languages.length) { wanted = wanted.concat(Array.prototype.slice.call(navigator.languages)); }
+    else if (navigator.language) { wanted.push(navigator.language); }
+    for (var i = 0; i < wanted.length; i++) {
+      var base = String(wanted[i]).toLowerCase().split("-")[0];
+      if (TEXT[base]) { return base; }
+    }
+    return "en";
+  }
+
+  // Exactly what the server would accept, or nothing: the address is anyone's to write.
+  function codeFrom(raw) {
+    if (typeof raw !== "string") { return null; }
+    var code = raw.trim().toUpperCase();
+    if (code.length !== CODE_LENGTH) { return null; }
+    for (var i = 0; i < code.length; i++) {
+      if (ALPHABET.indexOf(code.charAt(i)) < 0) { return null; }
+    }
+    return code;
+  }
+
+  var lang = pickLanguage();
+  var t = TEXT[lang];
+  var code = codeFrom(new URLSearchParams(location.search).get("c"));
+  var ua = navigator.userAgent || "";
+  var android = /Android/i.test(ua);
+  var ios = /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+
+  document.documentElement.lang = lang === "pt" ? "pt-BR" : lang;
+  document.title = t.doc;
+  Array.prototype.forEach.call(document.querySelectorAll("[data-t]"), function (el) {
+    var value = t[el.getAttribute("data-t")];
+    if (typeof value === "string") { el.textContent = value; }
+  });
+  document.getElementById("privacy").setAttribute("href", t.privacyHref);
+
+  var play = document.getElementById("play");
+  var step3 = document.getElementById("step3");
+
+  if (code) {
+    var playUrl = PLAY + "&referrer=" + encodeURIComponent("join=" + code);
+    play.setAttribute("href", playUrl);
+    document.getElementById("code").hidden = false;
+    document.getElementById("code-value").textContent = code;
+    step3.textContent = t.step3.replace("{code}", code);
+
+    if (android) {
+      // The app's own address; without the app Chrome goes to the store page, code and all.
+      var open = document.getElementById("open");
+      open.setAttribute("href", "intent://join/" + code + "#Intent;scheme=domino;package=" + PACKAGE +
+        ";S.browser_fallback_url=" + encodeURIComponent(playUrl) + ";end");
+      open.hidden = false;
+      document.getElementById("or").hidden = false;
+    }
+
+    var copy = document.getElementById("copy");
+    if (navigator.clipboard && window.isSecureContext) {
+      copy.addEventListener("click", function () {
+        navigator.clipboard.writeText(code).then(function () { copy.textContent = t.copied; }, function () { copy.hidden = true; });
+      });
+    } else {
+      copy.hidden = true;
+    }
+  } else {
+    document.querySelector(".lead").textContent = t.leadNoCode;
+    document.querySelector("h1").textContent = t.titleNoCode;
+    document.getElementById("step2").hidden = true;
+    step3.textContent = t.step3NoCode;
+  }
+
+  if (ios) {
+    play.hidden = true;
+    document.getElementById("open").hidden = true;
+    document.getElementById("or").hidden = true;
+    document.getElementById("ios").hidden = false;
+    document.getElementById("steps").hidden = true;
+    if (code) { document.querySelector(".lead").textContent = t.leadIos; }
+  }
+})();
+</script>
+</body>
+</html>

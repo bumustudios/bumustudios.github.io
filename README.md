@@ -48,6 +48,10 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | 2048 Zen gizlilik politikası (TR) | <https://bumustudios.github.io/zen2048/privacy/tr/> |
 | Word Lantern privacy policy (EN) | <https://bumustudios.github.io/wordhunt/privacy/> |
 | Word Lantern gizlilik politikası (TR) | <https://bumustudios.github.io/wordhunt/privacy/tr/> |
+| Tabula Domino privacy policy (EN) | <https://bumustudios.github.io/tabula-domino/privacy/> |
+| Tabula Domino gizlilik politikası (TR) | <https://bumustudios.github.io/tabula-domino/privacy/tr/> |
+| Tabula Domino account deletion | <https://bumustudios.github.io/tabula-domino/delete-account/> |
+| Tabula Domino table invitation (tr/en/es/pt) | <https://bumustudios.github.io/tabula-domino/join/?c=CODE> |
 
 ## Read this before editing a policy page
 
@@ -116,6 +120,9 @@ zen2048/privacy/        2048 Zen policy, English
 zen2048/privacy/tr/     2048 Zen policy, Turkish
 wordhunt/privacy/       Word Lantern policy, English
 wordhunt/privacy/tr/    Word Lantern policy, Turkish
+tabula-domino/privacy/  Tabula Domino policy, English (tr/ Turkish)
+tabula-domino/delete-account/  Tabula Domino account deletion
+tabula-domino/join/     Tabula Domino table invitation (see below)
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll
 ```
 
@@ -173,3 +180,24 @@ Her ağın hesabı açıldığında, o ağın panelinin verdiği app-ads.txt sat
 ilgili yorumun altına eklenmeli — bizim yayıncı/hesap kimliklerimizle, başka yerden
 kopyalanmadan. Satırı eksik olan ağ, Tier-1 alıcıların büyük kısmına "doğrulanmamış
 envanter" görünür ve o ağdan gelen gelir belirgin düşer.
+
+## Tabula Domino invitation page
+
+`tabula-domino/join/?c=CODE` is the link the Tabula Domino app shares for a private table
+(DominoOnline `docs/design/L1-davet-baglantisi.md`). It is **compiled into the app**: the app's
+Android intent filter names `bumustudios.github.io` + `/tabula-domino/join`, and every shared
+invitation carries this address. Never move or rename it.
+
+- No cookies, no analytics, no third-party requests: the fonts (Alegreya and Alegreya Sans, SIL OFL
+  1.1, subset to Latin; the licence texts sit beside them), the Tophane painting (public domain),
+  the felt texture (CC0) and the app icon are served from `tabula-domino/join/assets/`.
+- The code is checked against the server's alphabet and length; anything else shows the page
+  without a code. Languages: tr, en, es, pt (from the browser; `?lang=` overrides).
+- "Take your seat" (Android only) is `intent://join/CODE#Intent;scheme=domino;package=com.bumustudios.domino;S.browser_fallback_url=<Play>;end`.
+  The Google Play button is the store page with `&referrer=join%3DCODE`: the app reads it once
+  after install and opens the join screen with the code filled in.
+- **App Links (owner step, not done):** for Android to open this link straight in the app, the
+  site root needs `/.well-known/assetlinks.json` naming `com.bumustudios.domino` with the
+  SHA-256 fingerprint of the **Play app-signing key** (Play Console > Test and release > App
+  integrity > App signing). Until it exists the link opens this page, and the page's button opens
+  the app.

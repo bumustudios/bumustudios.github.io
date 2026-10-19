@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Color Pour: Android için su sıralama bulmacası</title>
+<meta name="description" content="Color Pour, Android için sakin bir su sıralama bulmacası: renkleri şişeler arasında dök, her şişe tek renk olsun. Her seviye çözülür, her gün yeni görev. Hesap yok.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/colorpour/tr/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/colorpour/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/colorpour/tr/">
+<link rel="alternate" hreflang="es" href="https://bumustudios.github.io/colorpour/es/">
+<link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/colorpour/pt/">
+<link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/colorpour/hi/">
+<link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/colorpour/ar/">
+<link rel="alternate" hreflang="de" href="https://bumustudios.github.io/colorpour/de/">
+<link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/colorpour/fr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/colorpour/">
+<link rel="icon" type="image/png" href="/colorpour/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/colorpour/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="Color Pour: Android için su sıralama bulmacası">
+<meta property="og:description" content="Color Pour, Android için sakin bir su sıralama bulmacası: renkleri şişeler arasında dök, her şişe tek renk olsun. Her seviye çözülür, her gün yeni görev. Hesap yok.">
+<meta property="og:url" content="https://bumustudios.github.io/colorpour/tr/">
+<meta property="og:image" content="https://bumustudios.github.io/colorpour/assets/feature-graphic-tr.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-play-app" content="app-id=com.bumustudios.colorpour">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://bumustudios.github.io/colorpour/#app",
+   "name": "Color Pour",
+   "alternateName": "Color Pour: Liquid Puzzle",
+   "description": "Color Pour, Android için sakin bir su sıralama bulmacası: renkleri şişeler arasında dök, her şişe tek renk olsun. Her seviye çözülür, her gün yeni görev. Hesap yok.",
+   "applicationCategory": "GameApplication",
+   "genre": "Puzzle",
+   "operatingSystem": "Android 7.0 or later",
+   "url": "https://bumustudios.github.io/colorpour/tr/",
+   "image": "https://bumustudios.github.io/colorpour/assets/icon-512.png",
+   "screenshot": [
+    "https://bumustudios.github.io/colorpour/assets/tr-01-sort-the-liquids.webp",
+    "https://bumustudios.github.io/colorpour/assets/tr-02-ten-colours.webp",
+    "https://bumustudios.github.io/colorpour/assets/tr-03-three-stars.webp",
+    "https://bumustudios.github.io/colorpour/assets/tr-04-colour-blind-patterns.webp",
+    "https://bumustudios.github.io/colorpour/assets/tr-05-endless-levels.webp",
+    "https://bumustudios.github.io/colorpour/assets/tr-06-daily-challenge.webp"
+   ],
+   "inLanguage": "tr",
+   "isAccessibleForFree": true,
+   "featureList": [
+    "Her seviye çözülür: Her tahta, çözülmüş bir tahtadan geriye dökülerek kurulur; çözüm, sen görmeden önce vardır.",
+    "Sonsuz seviye: Üç renkle başlarsın; her altı seviyede bir renk ve bir şişe eklenir, on iki şişede on renge kadar.",
+    "Günlük görev: Her gün herkese aynı, sekiz renkli yeni bir tahta ve sürdürülecek bir seri.",
+    "Geri almadan üç yıldız: İstediğin kadar geri al; ama temiz çözüm üç yıldız getirir, daha az hamle de daha yüksek skor.",
+    "Renk körlüğü desenleri: Tek bir ayar, her sıvı rengine ayırt edici bir sembol koyar.",
+    "İnternetsiz oynanır: Bütün seviyeler ve günlük görev uçak modunda da çalışır.",
+    "Hesap yok, süre yok: Kayıt yok, enerji yok, can yok, saat yok. Kendi hızında oyna.",
+    "Tek seferlik reklam kaldırma: Ücretsiz, reklamlı. İsteğe bağlı tek bir satın alma, istemediğin tüm reklamları kaldırır; abonelik yok."
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "BumuStudios",
+    "url": "https://bumustudios.github.io/",
+    "email": "bumustudios@gmail.com"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://bumustudios.github.io/colorpour/tr/#faq",
+   "inLanguage": "tr",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Su sıralama bulmacası nasıl oynanır?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Bir şişeye, sonra başka bir şişeye dokunarak dök. Sıvı yalnızca aynı rengin üstüne ya da boş bir şişeye gider ve her şişe dört katman alır. Her şişe tek renk ya da boş olduğunda seviye biter."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Color Pour'da her seviye çözülebilir mi?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Her tahta, çözülmüş bir tahtadan başlayıp kurallara uygun dökmelerle geriye oynanarak kurulur; çözüm, seviyeyi görmeden önce vardır. Yine de kendini bir çıkmaza dökebilirsin, ama Geri al ya da Baştan seni her zaman geri getirir."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Üç yıldız nasıl alınır?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Seviyeyi Geri al kullanmadan çöz. En fazla üç geri alma iki yıldız, daha fazlası bir yıldız getirir. Skor da her hamle ve her geri almayla düşer; kısa ve temiz bir çözüm en yüksek skoru alır."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Takılınca ne yapabilirim?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Geri al ile dökmeleri geri çek ya da seviyeyi Baştan başlat. Kısa bir reklam hazırsa İpucu iyi bir sonraki dökmeyi gösterir, Ek tüp de seviye başına bir kez boş bir tüp ekler. Hiçbir dökme yapılamadığında oyun bunu söyler ve aynı çıkış yollarını sunar."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Günlük görev nedir?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Her gün herkese aynı, sekiz renkli yeni bir tahta; telefonunda tarihten hesaplanır. Art arda günlerde çözerek seri yaparsın."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "İnternetsiz ya da Wi-Fi olmadan oynanır mı?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Bütün seviyeler ve günlük görev internetsiz çalışır. Bağlantı yalnızca reklamlar (dolayısıyla İpucu ve Ek tüp), Google Play üzerinden Reklamları kaldır satın alması ve güncellemeler, bir de Google'ın Firebase hizmetine giden kullanım istatistikleri ve çökme raporları için gerekir."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Color Pour ücretsiz mi?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Oyun ücretsizdir ve reklamlarla finanse edilir: ana ekranda ve sonuç kartında bir banner, bitmiş bir seviyeden çıkarken arada bir tam ekran reklam, oyuna geri döndüğünde de bazen bir reklam. Enerji, can ya da abonelik yok; bütün seviyeler ücretsiz."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Reklamları nasıl kaldırırım?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ayarlar'daki tek seferlik Reklamları kaldır satın almasını yap. Banner'ı, seviyeler arasındaki tam ekran reklamları ve oyuna dönüşteki reklamı kalıcı olarak kaldırır. İpucu ve Ek tüp kalır; yalnızca sen dokununca reklam oynatırlar. Oyunu yeniden kurarsan satın alma Google Play hesabından geri gelir."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "İlerlemem kaydediliyor mu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet, telefonunda: açtığın seviye, yıldızlar, en iyi skorlar, günlük serin ve yarıda bıraktığın tur. Hesap ya da bulut kaydı yok; oyunu silersen ya da verilerini temizlersen ilk seviyeden başlarsın."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hesap gerekiyor mu? Hangi veriler toplanıyor?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hesap yok, giriş yok ve oyun hiçbir izin istemez. Hamlelerin ve ilerlemen hiçbir yere yüklenmez. Google reklamlarının topladıkları gizlilik politikasında yazar; oyun ayrıca Google'ın Firebase hizmetiyle kullanım istatistikleri ve çökme raporları gönderir."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hangi telefonlarda çalışır? iPhone sürümü var mı?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Android 7.0 ve üstü, telefon ve tabletlerde; tablette dikey ekranda, telefondaki düzenle oynanır. Color Pour yalnızca Android'de var; iPhone ya da web sürümü yok."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Oyun hangi dillerde?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Türkçe ve İngilizce. Telefonunun dilini izler; Ayarlar'dan değiştirebilirsin."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#AD4420;--accent-soft:#FDEBE3;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#FF9A76;--accent-soft:#3A2620;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(10,40,38,.30)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.soon{display:inline-block;margin:0;padding:10px 16px;border-radius:12px;background:var(--accent-soft);color:var(--ink);font-weight:600}
+ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px}
+.shots img:only-child{grid-column:1/-1;justify-self:center;max-width:280px}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Dil">
+<a class="brand" href="/colorpour/tr/"><img src="/colorpour/assets/icon-192.png" width="36" height="36" alt="">Color Pour</a>
+<ul class="langs">
+<li><a href="/colorpour/" hreflang="en" lang="en">English</a></li>
+<li><a href="/colorpour/tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></li>
+<li><a href="/colorpour/es/" hreflang="es" lang="es">Español</a></li>
+<li><a href="/colorpour/pt/" hreflang="pt" lang="pt">Português</a></li>
+<li><a href="/colorpour/hi/" hreflang="hi" lang="hi">हिन्दी</a></li>
+<li><a href="/colorpour/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></li>
+<li><a href="/colorpour/de/" hreflang="de" lang="de">Deutsch</a></li>
+<li><a href="/colorpour/fr/" hreflang="fr" lang="fr">Français</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>Her seviyesi çözülebilen, rahatlatıcı bir su sıralama bulmacası</h1>
+<p class="lede">Renkli sıvıları cam şişeler arasında dök, her şişede tek bir renk kalsın. Color Pour her tahtayı, çözülmüş bir tahtayı geriye oynayarak kurar; yani çözüm her zaman vardır. Sonsuz seviye, günlük görev, süre yok, hesap yok.</p>
+<p class="soon">Yakında Google Play&#x27;de</p>
+<p class="note">Color Pour şu an Google Play&#x27;de kapalı testte, henüz herkese açık değil. Açıldığında bu sayfa doğrudan ona bağlantı verecek.</p>
+</div>
+<img class="phone" src="/colorpour/assets/tr-01-sort-the-liquids.webp" width="540" height="960" alt="Color Pour seviye 13: maviye mavi sıvı döken bir şişe" fetchpriority="high" decoding="async">
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">Neler var</h2>
+<ul class="facts">
+<li><b>Her seviye çözülür</b><span>Her tahta, çözülmüş bir tahtadan geriye dökülerek kurulur; çözüm, sen görmeden önce vardır.</span></li>
+<li><b>Sonsuz seviye</b><span>Üç renkle başlarsın; her altı seviyede bir renk ve bir şişe eklenir, on iki şişede on renge kadar.</span></li>
+<li><b>Günlük görev</b><span>Her gün herkese aynı, sekiz renkli yeni bir tahta ve sürdürülecek bir seri.</span></li>
+<li><b>Geri almadan üç yıldız</b><span>İstediğin kadar geri al; ama temiz çözüm üç yıldız getirir, daha az hamle de daha yüksek skor.</span></li>
+<li><b>Renk körlüğü desenleri</b><span>Tek bir ayar, her sıvı rengine ayırt edici bir sembol koyar.</span></li>
+<li><b>İnternetsiz oynanır</b><span>Bütün seviyeler ve günlük görev uçak modunda da çalışır.</span></li>
+<li><b>Hesap yok, süre yok</b><span>Kayıt yok, enerji yok, can yok, saat yok. Kendi hızında oyna.</span></li>
+<li><b>Tek seferlik reklam kaldırma</b><span>Ücretsiz, reklamlı. İsteğe bağlı tek bir satın alma, istemediğin tüm reklamları kaldırır; abonelik yok.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">Su sıralama nasıl oynanır</h2>
+<ol class="steps">
+<li>Bir şişeye dokunup onu al, sonra dökmek için başka bir şişeye dokun.</li>
+<li>Sıvı yalnızca <b>aynı rengin üstüne</b> ya da <b>boş bir şişeye</b> dökülür. O rengin üstteki bütün katmanı, sığdığı kadar geçer; her şişe dört katman alır.</li>
+<li>Seviyeyi bitirmek için her rengi kendi dolu şişesinde topla. Yer açmak için her seviyede renk sayısından iki fazla şişe vardır.</li>
+<li>Yanlış mı döktün? <b>Geri al</b> ile geri çek ya da <b>Baştan</b> ile yeniden başla. Hiçbir dökme yapılamıyorsa oyun bunu söyler.</li>
+<li>Takıldın mı? Kısa bir reklam izle: <b>İpucu</b> iyi bir sonraki dökmeyi gösterir, <b>Ek tüp</b> ise seviye başına bir kez boş bir tüp ekler.</li>
+</ol>
+<div class="shots"><img src="/colorpour/assets/tr-02-ten-colours.webp" width="540" height="960" alt="On iki şişede on renkli seviye 43" loading="lazy" decoding="async"><img src="/colorpour/assets/tr-03-three-stars.webp" width="540" height="960" alt="Üç yıldız ve 3.160 skorlu Seviye tamamlandı kartı" loading="lazy" decoding="async"></div>
+</section>
+
+<section aria-labelledby="levels">
+<h2 id="levels">Seviyeler, günlük görev ve yıldızlar</h2>
+<ul class="plain">
+<li><b>Sonsuz numaralı seviye.</b> İlk seviyede üç renk var; her altı seviyede bir renk eklenir, on iki şişede on renge kadar, sonra karışım derinleşmeye devam eder. Seviye 217 her oyuncu için aynı tahtadır.</li>
+<li><b>Günlük görev.</b> Her gün herkese aynı, sekiz renkli tek bir tahta; telefonunda tarihten hesaplanır. Art arda günlerde çözerek serini büyüt.</li>
+<li><b>Yıldızlar.</b> Hiç Geri al kullanmadan çözüme üç yıldız, en fazla üç geri almaya iki, daha fazlasına bir yıldız.</li>
+<li><b>Skor.</b> Daha az hamle ve daha az geri alma, daha yüksek skor demek; her seviyedeki en iyi skorun saklanır. Çözdüğün seviyeleri Seviyeler listesinden yeniden oynayabilirsin.</li>
+</ul>
+<div class="shots"><img src="/colorpour/assets/tr-05-endless-levels.webp" width="540" height="960" alt="Yıldızlı seviye listesi; seviye 1 (3 renk) ve seviye 43 (10 renk) tahtaları" loading="lazy" decoding="async"><img src="/colorpour/assets/tr-06-daily-challenge.webp" width="540" height="960" alt="Günlük görev tahtası ve ana ekranda 6 günlük seri" loading="lazy" decoding="async"></div>
+</section>
+
+<section aria-labelledby="calm">
+<h2 id="calm">Sakin ve erişilebilir</h2>
+<ul class="plain">
+<li><b>Süre yok.</b> Turun ortasında çıkarsan ana ekrandaki <b>Devam et</b> ile kaldığın yerden sürdürürsün.</li>
+<li>Ayarlar'daki <b>Renk körlüğü desenleri</b>, on sıvı renginin her birine ayırt edici bir sembol işler.</li>
+<li>Dört yazı boyutu, sakin ve koyu bir görünüm; her dökmede yumuşak ses efektleri ve hafif bir titreşim. İkisini de Ayarlar'dan kapatabilirsin.</li>
+</ul>
+<div class="shots"><img src="/colorpour/assets/tr-04-colour-blind-patterns.webp" width="540" height="960" alt="Renk körlüğü desenleri açık: her sıvı renginde bir sembol" loading="lazy" decoding="async"></div>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">Sık sorulan sorular</h2>
+<div class="faq">
+<div><h3>Su sıralama bulmacası nasıl oynanır?</h3><p>Bir şişeye, sonra başka bir şişeye dokunarak dök. Sıvı yalnızca aynı rengin üstüne ya da boş bir şişeye gider ve her şişe dört katman alır. Her şişe tek renk ya da boş olduğunda seviye biter.</p></div>
+<div><h3>Color Pour&#x27;da her seviye çözülebilir mi?</h3><p>Evet. Her tahta, çözülmüş bir tahtadan başlayıp kurallara uygun dökmelerle geriye oynanarak kurulur; çözüm, seviyeyi görmeden önce vardır. Yine de kendini bir çıkmaza dökebilirsin, ama Geri al ya da Baştan seni her zaman geri getirir.</p></div>
+<div><h3>Üç yıldız nasıl alınır?</h3><p>Seviyeyi Geri al kullanmadan çöz. En fazla üç geri alma iki yıldız, daha fazlası bir yıldız getirir. Skor da her hamle ve her geri almayla düşer; kısa ve temiz bir çözüm en yüksek skoru alır.</p></div>
+<div><h3>Takılınca ne yapabilirim?</h3><p>Geri al ile dökmeleri geri çek ya da seviyeyi Baştan başlat. Kısa bir reklam hazırsa İpucu iyi bir sonraki dökmeyi gösterir, Ek tüp de seviye başına bir kez boş bir tüp ekler. Hiçbir dökme yapılamadığında oyun bunu söyler ve aynı çıkış yollarını sunar.</p></div>
+<div><h3>Günlük görev nedir?</h3><p>Her gün herkese aynı, sekiz renkli yeni bir tahta; telefonunda tarihten hesaplanır. Art arda günlerde çözerek seri yaparsın.</p></div>
+<div><h3>İnternetsiz ya da Wi-Fi olmadan oynanır mı?</h3><p>Evet. Bütün seviyeler ve günlük görev internetsiz çalışır. Bağlantı yalnızca reklamlar (dolayısıyla İpucu ve Ek tüp), Google Play üzerinden Reklamları kaldır satın alması ve güncellemeler, bir de Google&#x27;ın Firebase hizmetine giden kullanım istatistikleri ve çökme raporları için gerekir.</p></div>
+<div><h3>Color Pour ücretsiz mi?</h3><p>Evet. Oyun ücretsizdir ve reklamlarla finanse edilir: ana ekranda ve sonuç kartında bir banner, bitmiş bir seviyeden çıkarken arada bir tam ekran reklam, oyuna geri döndüğünde de bazen bir reklam. Enerji, can ya da abonelik yok; bütün seviyeler ücretsiz.</p></div>
+<div><h3>Reklamları nasıl kaldırırım?</h3><p>Ayarlar&#x27;daki tek seferlik Reklamları kaldır satın almasını yap. Banner&#x27;ı, seviyeler arasındaki tam ekran reklamları ve oyuna dönüşteki reklamı kalıcı olarak kaldırır. İpucu ve Ek tüp kalır; yalnızca sen dokununca reklam oynatırlar. Oyunu yeniden kurarsan satın alma Google Play hesabından geri gelir.</p></div>
+<div><h3>İlerlemem kaydediliyor mu?</h3><p>Evet, telefonunda: açtığın seviye, yıldızlar, en iyi skorlar, günlük serin ve yarıda bıraktığın tur. Hesap ya da bulut kaydı yok; oyunu silersen ya da verilerini temizlersen ilk seviyeden başlarsın.</p></div>
+<div><h3>Hesap gerekiyor mu? Hangi veriler toplanıyor?</h3><p>Hesap yok, giriş yok ve oyun hiçbir izin istemez. Hamlelerin ve ilerlemen hiçbir yere yüklenmez. Google reklamlarının topladıkları gizlilik politikasında yazar; oyun ayrıca Google&#x27;ın Firebase hizmetiyle kullanım istatistikleri ve çökme raporları gönderir.</p></div>
+<div><h3>Hangi telefonlarda çalışır? iPhone sürümü var mı?</h3><p>Android 7.0 ve üstü, telefon ve tabletlerde; tablette dikey ekranda, telefondaki düzenle oynanır. Color Pour yalnızca Android&#x27;de var; iPhone ya da web sürümü yok.</p></div>
+<div><h3>Oyun hangi dillerde?</h3><p>Türkçe ve İngilizce. Telefonunun dilini izler; Ayarlar&#x27;dan değiştirebilirsin.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>Color Pour</p>
+<p class="soon">Yakında Google Play&#x27;de</p>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/colorpour/privacy/tr/">Gizlilik politikası</a><a href="/">BumuStudios uygulamaları</a><a href="mailto:bumustudios@gmail.com">İletişim: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-10-19">2026-10-19</time></p>
+<p>Google Play ve Google Play logosu, Google LLC&#x27;nin ticari markalarıdır.</p>
+</footer>
+</body>
+</html>

@@ -123,6 +123,7 @@ wordhunt/privacy/tr/    Word Lantern policy, Turkish
 tabula-domino/privacy/  Tabula Domino policy, English (tr/ Turkish)
 tabula-domino/delete-account/  Tabula Domino account deletion
 tabula-domino/join/     Tabula Domino table invitation (see below)
+.well-known/assetlinks.json  Android App Links (Tabula Domino; see below)
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll
 ```
 
@@ -196,8 +197,9 @@ invitation carries this address. Never move or rename it.
 - "Take your seat" (Android only) is `intent://join/CODE#Intent;scheme=domino;package=com.bumustudios.domino;S.browser_fallback_url=<Play>;end`.
   The Google Play button is the store page with `&referrer=join%3DCODE`: the app reads it once
   after install and opens the join screen with the code filled in.
-- **App Links (owner step, not done):** for Android to open this link straight in the app, the
-  site root needs `/.well-known/assetlinks.json` naming `com.bumustudios.domino` with the
-  SHA-256 fingerprint of the **Play app-signing key** (Play Console > Test and release > App
-  integrity > App signing). Until it exists the link opens this page, and the page's button opens
-  the app.
+- **App Links:** `/.well-known/assetlinks.json` names `com.bumustudios.domino` with two SHA-256
+  fingerprints: the **Play app-signing key** (`65:94:EF:…:91:A6`, the one installs from Play carry) and
+  the upload key (`14:6A:3E:…:48:DB`, for sideloaded release builds). Both come from Play Console >
+  Test and release > App integrity > App signing. Public certificates, not secrets. Another studio app
+  that wants App Links adds its own object to the same array; never remove an entry. `.nojekyll` is
+  what lets Pages serve the dot-folder. Check: <https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://bumustudios.github.io&relation=delegate_permission/common.handle_all_urls>.

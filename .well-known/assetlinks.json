@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bumustudios.domino",
+      "sha256_cert_fingerprints": [
+        "65:94:EF:8C:1A:86:97:00:94:5E:1D:05:5D:6B:D5:3D:2F:1F:44:AE:97:3A:45:8A:59:D4:87:FB:9A:33:91:A6",
+        "14:6A:3E:23:E3:87:BE:B2:35:FC:D4:9A:79:37:C0:D3:78:13:22:98:F4:08:FC:DE:EE:7A:0D:B1:96:19:48:DB"
+      ]
+    }
+  }
+]

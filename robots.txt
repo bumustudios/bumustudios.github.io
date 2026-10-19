@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bumustudios.github.io/sitemap.xml

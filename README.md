@@ -12,6 +12,7 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | Page | Address |
 | --- | --- |
 | Studio landing | <https://bumustudios.github.io/> |
+| ImageToPdf landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/imagetopdf/> |
 | ImageToPdf privacy policy (EN) | <https://bumustudios.github.io/imagetopdf/privacy/> |
 | ImageToPdf gizlilik politikası (TR) | <https://bumustudios.github.io/imagetopdf/privacy/tr/> |
 | PdfPages privacy policy (EN) | <https://bumustudios.github.io/pdfpages/privacy/> |
@@ -86,6 +87,7 @@ Consequences of that:
 ```
 index.html              studio landing page
 404.html                served for any unknown path, at any depth
+imagetopdf/             ImageToPdf landing page + FAQ, English (tr/ es/ pt/ hi/ ar/ de/ fr/; assets/)
 imagetopdf/privacy/     ImageToPdf policy, English
 imagetopdf/privacy/tr/  ImageToPdf policy, Turkish
 pdfpages/privacy/       PdfPages policy, English
@@ -126,6 +128,8 @@ tabula-domino/privacy/  Tabula Domino policy, English (tr/ Turkish, ar/ Arabic, 
 tabula-domino/delete-account/  Tabula Domino account deletion (tr/, ar/, fr/)
 tabula-domino/join/     Tabula Domino table invitation (see below)
 .well-known/assetlinks.json  Android App Links (Tabula Domino; see below)
+robots.txt, sitemap.xml  crawler hints; the sitemap lists the studio page and the ImageToPdf pages
+llms.txt                plain facts about the apps for AI assistants (llmstxt.org format)
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll
 ```
 
@@ -205,3 +209,25 @@ invitation carries this address. Never move or rename it.
   Test and release > App integrity > App signing. Public certificates, not secrets. Another studio app
   that wants App Links adds its own object to the same array; never remove an entry. `.nojekyll` is
   what lets Pages serve the dot-folder. Check: <https://digitalassetlinks.googleapis.com/v1/statements:list?source.web.site=https://bumustudios.github.io&relation=delegate_permission/common.handle_all_urls>.
+
+## ImageToPdf landing page
+
+`imagetopdf/` (English, x-default) and `imagetopdf/<lang>/` for tr, es, pt, hi, ar (RTL), de, fr are
+the app's public page: what it does, how-to steps with store screenshots, an FAQ, and schema.org
+`SoftwareApplication` + `FAQPage` JSON-LD. Added 2026-10-19 because almost all of the app's Play
+visitors arrive from outside Play, a third of them from AI assistants.
+
+- **Generated, not hand-edited.** The copy is in `Yayin Panosu/magaza-metinleri/imgtopdf/web/content.py`
+  (YayinPanosu repo) and `build.py` there writes the eight `index.html` files:
+  `python3 -I build.py <path-to-this-repo>`. Edit the copy there and rebuild, or the next build undoes
+  a hand edit.
+- **Only true claims.** Everything on the page is in the store listing or the app (1.2.4). When the app
+  changes (a feature, the ads, the languages), update the page with it.
+- **No scripts, no trackers, no external requests.** Images are in `imagetopdf/assets/`: WebP copies of
+  the store screenshots, the icon, the feature graphics (og:image) and Google's official, unmodified
+  "Get it on Google Play" badges per language (with the trademark line in the footer, as Google's badge
+  guidelines require).
+- **Play link** carries `utm_source=bumustudios_site&utm_medium=web&utm_campaign=landing&utm_content=<lang>`
+  (and `hl=` on the translated pages), so this page's traffic is visible in Play Console's UTM report.
+  `llms.txt` and the JSON-LD use the plain Play URL on purpose, so AI-assistant referrals keep their own
+  `utm_source`.

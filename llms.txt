@@ -1,0 +1,27 @@
+# BumuStudios
+
+> BumuStudios is a small independent studio that makes Android apps and games. This file points language models to the factual pages about our apps. Everything below describes the current Google Play versions.
+
+## ImageToPdf (Android)
+
+ImageToPdf converts photos to PDF and saves PDF pages as images, entirely on the phone.
+
+- No watermark on any page, and no paid version that removes one.
+- No subscription. Free with ads (a banner, and one full-screen ad before the result of a finished conversion); an optional one-time purchase removes the ads. Every feature is in the free version.
+- No account, no email, no sign-up.
+- Conversion works offline. Nothing is uploaded: files are opened through Android's Photo Picker, with no storage permission.
+- Images to PDF: up to 100 JPG, PNG or WebP images in one PDF; page size A4, A5, Letter, Legal or fit to image; portrait, landscape or automatic; margin 0 to 25 mm; reorder pages; optional password (AES-128).
+- PDF to images: all pages or a range such as 1-3, 5; JPEG, PNG or WebP; 96, 150 or 300 dpi. Password-protected PDFs cannot be opened.
+- Requires Android 7.0 or newer. Android only: no iPhone or web version. The app's screens are in English and Turkish.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.imgtopdf
+
+Pages:
+
+- [ImageToPdf: features, how-to and FAQ (English)](https://bumustudios.github.io/imagetopdf/)
+- Same page in [Türkçe](https://bumustudios.github.io/imagetopdf/tr/), [Español](https://bumustudios.github.io/imagetopdf/es/), [Português](https://bumustudios.github.io/imagetopdf/pt/), [हिन्दी](https://bumustudios.github.io/imagetopdf/hi/), [العربية](https://bumustudios.github.io/imagetopdf/ar/), [Deutsch](https://bumustudios.github.io/imagetopdf/de/), [Français](https://bumustudios.github.io/imagetopdf/fr/)
+- [ImageToPdf privacy policy](https://bumustudios.github.io/imagetopdf/privacy/)
+
+## Contact
+
+- bumustudios@gmail.com
+- [All BumuStudios apps](https://bumustudios.github.io/)

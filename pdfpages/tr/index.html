@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Android&#x27;de PDF sayfalarını sırala, sil, birleştir: PdfPages</title>
+<meta name="description" content="PdfPages, Android&#x27;de PDF sayfalarını düzenler: sürükleyip sırala, sil, döndür, sayfa ekle, PDF birleştir ya da sayfa çıkar. Filigran yok, hesap yok, hiçbir şey yüklenmez.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/pdfpages/tr/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfpages/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfpages/tr/">
+<link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfpages/es/">
+<link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfpages/pt/">
+<link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfpages/hi/">
+<link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfpages/ar/">
+<link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfpages/de/">
+<link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfpages/fr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfpages/">
+<link rel="icon" type="image/png" href="/pdfpages/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/pdfpages/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="Android&#x27;de PDF sayfalarını sırala, sil, birleştir: PdfPages">
+<meta property="og:description" content="PdfPages, Android&#x27;de PDF sayfalarını düzenler: sürükleyip sırala, sil, döndür, sayfa ekle, PDF birleştir ya da sayfa çıkar. Filigran yok, hesap yok, hiçbir şey yüklenmez.">
+<meta property="og:url" content="https://bumustudios.github.io/pdfpages/tr/">
+<meta property="og:image" content="https://bumustudios.github.io/pdfpages/assets/feature-graphic-tr.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-play-app" content="app-id=com.bumustudios.pdfpages">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://bumustudios.github.io/pdfpages/#app",
+   "name": "PdfPages",
+   "alternateName": "PdfPages: PDF Page Editor",
+   "description": "PdfPages, Android'de PDF sayfalarını düzenler: sürükleyip sırala, sil, döndür, sayfa ekle, PDF birleştir ya da sayfa çıkar. Filigran yok, hesap yok, hiçbir şey yüklenmez.",
+   "applicationCategory": "UtilitiesApplication",
+   "operatingSystem": "Android 7.0 or later",
+   "url": "https://bumustudios.github.io/pdfpages/tr/",
+   "installUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.pdfpages",
+   "downloadUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.pdfpages",
+   "image": "https://bumustudios.github.io/pdfpages/assets/icon-512.png",
+   "screenshot": [
+    "https://bumustudios.github.io/pdfpages/assets/tr-01-drag-pages-into-order.webp",
+    "https://bumustudios.github.io/pdfpages/assets/tr-02-select-and-act-at-once.webp",
+    "https://bumustudios.github.io/pdfpages/assets/tr-03-add-pages.webp",
+    "https://bumustudios.github.io/pdfpages/assets/tr-04-merge-pdfs.webp",
+    "https://bumustudios.github.io/pdfpages/assets/tr-05-every-change-can-be-undone.webp",
+    "https://bumustudios.github.io/pdfpages/assets/tr-06-pages-stay-pages.webp"
+   ],
+   "inLanguage": "tr",
+   "isAccessibleForFree": true,
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "featureList": [
+    "Sürükleyerek sırala: Sayfanın köşesindeki tutamağı tut, istediğin yere bırak; kenara gelince ızgara kendiliğinden kayar.",
+    "Sil ve döndür: Tek bir sayfayı X ile kaldır ya da birkaç sayfayı seçip birlikte sil veya döndür.",
+    "Sayfa ekle: Başka bir PDF'in bütün sayfalarını, galerinden bir fotoğrafı ya da boş bir A4 sayfasını ekle.",
+    "Birleştir ve çıkar: Birkaç PDF'i tek belge olarak aç ya da yalnızca seçtiğin sayfaları yeni bir PDF olarak kaydet.",
+    "Orijinal dosyan değişmez: Kaydetmek her zaman yeni bir PDF oluşturur; o ana kadar her değişikliği geri alıp yineleyebilirsin.",
+    "Sayfalar gerçek sayfa kalır: Sayfalar resme çevrilmez: metin seçilebilir kalır, çizgiler keskin kalır, dosya şişmez.",
+    "Filigran yok, hesap yok: Sayfalarına hiçbir şey basılmaz. Kayıt yok, e-posta yok; uygulamayı aç ve kullan.",
+    "Belgeler telefonda kalır: PDF'ler telefonda açılır ve yeniden oluşturulur, hiçbir yere yüklenmez. Uygulama depolama izni istemez."
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "BumuStudios",
+    "url": "https://bumustudios.github.io/",
+    "email": "bumustudios@gmail.com"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://bumustudios.github.io/pdfpages/tr/#faq",
+   "inLanguage": "tr",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Android'de PDF sayfalarının sırası nasıl değiştirilir?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "PDF'i PdfPages'te aç; her sayfa bir karo olarak görünür. Sayfayı köşesindeki tutamaktan sürükleyip istediğin yere bırak; kenara gelince ızgara kendiliğinden kayar. Birkaç sayfayı birden taşımak için onları seçip Başa ya da Sona'ya dokun, sonra Kaydet'e bas."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "PDF'ten sayfa nasıl silinir?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sayfanın üzerindeki X'e dokun ya da bir sayfayı basılı tutup silmek istediğin diğer sayfaları da seç ve Sil'e dokun. Geri al silinen sayfayı geri getirir; yeni bir kopya kaydedene kadar hiçbir şey yazılmaz."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Telefonda PDF dosyaları nasıl birleştirilir?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ana ekranda PDF'leri birleştir'e dokunup birkaç PDF'i birden seç ya da başka bir uygulamadan birkaç PDF'i PdfPages'e paylaş. Hepsi tek belge olarak açılır; tek PDF olarak kaydetmeden önce sayfaları yeniden sıralayabilirsin. Şifreli PDF'ler açılamaz."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Bir PDF'ten sayfaları yeni bir dosyaya çıkarabilir miyim?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. İhtiyacın olan sayfaları seç ve Yeni dosyaya çıkar'a dokun: yalnızca o sayfalar yeni bir PDF olarak kaydedilir, üzerinde çalıştığın belge olduğu gibi kalır. Sayfa aralığına göre bölme aracı yok; sayfaları dokunarak seçersin."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "PDF'e fotoğraf ya da boş sayfa ekleyebilir miyim?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Sayfa ekle'ye dokun ve Fotoğraftan (her resim A4'e sığdırılmış bir sayfa olur), Boş sayfa (boş bir A4 sayfası) ya da Başka bir PDF'ten (o dosyanın bütün sayfaları) seçeneğini seç. Tek bir sayfa seçiliyse yeni sayfalar hemen onun arkasına, değilse sona eklenir."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Orijinal PDF'im değişiyor mu? Yeni dosya nereye kaydediliyor?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Orijinal dosyan asla değiştirilmez: kaydetmek her zaman yeni bir PDF oluşturur. Android 10 ve üstünde dosya, herhangi bir dosya yöneticisiyle açılabilen Documents/PDF Pages klasörüne gider; Android 9 ve altında uygulamanın kendi klasöründe tutulur ve ona Aç, Paylaş ya da Geçmiş ile ulaşırsın."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "PdfPages ücretsiz mi?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Uygulama ücretsizdir ve reklamlarla finanse edilir: ekranın altında bir banner, bir belgeyi kaydettikten sonra bir tam ekran reklam ve uygulamaya geri döndüğünde en fazla birkaç saatte bir bir reklam. Abonelik yoktur. Ayarlar'daki isteğe bağlı tek seferlik satın alma bütün reklamları kalıcı olarak kaldırır ve yeniden kurduğunda Google Play hesabından geri gelir. Hiçbir özellik kısıtlanmaz."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "İnternetsiz çalışır mı?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. PDF açma, düzenleme ve kaydetme tamamen telefonunda olur, internet gerekmez. Bağlantı yalnızca reklamlar, reklam kaldırma satın alması ve dosyalarını asla içermeyen kullanım istatistikleri ile çökme raporları için kullanılır; uygulama bunlar olmadan da çalışır."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "PDF'lerim bir yere yükleniyor mu? Hesap gerekiyor mu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "İkisine de hayır. Belgeler telefonda açılır ve yeniden oluşturulur, hiçbir sunucuya gönderilmez. Kayıt yoktur ve uygulama depolama izni istemez: her dosyayı Android'in kendi dosya seçicisiyle sen verirsin."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Filigran ekliyor mu, PDF'i bulanıklaştırıyor mu?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hiçbir zaman filigran eklenmez. PdfPages sayfaları resme çevirmez, gerçek sayfa yapısını korur; metin seçilebilir, çizgiler keskin kalır. Kendi testimizde 794 kB boyutundaki bir rapor yine 794 kB olarak çıktı."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hangi telefonlarda çalışır? iPhone sürümü var mı?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Android 7.0 ve üstü; telefonda ve tablette, dikey ya da yatay. Sayfa ızgarası geniş ekranı kullanır. PdfPages yalnızca bir Android uygulamasıdır; iPhone ya da web sürümü yoktur."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Uygulama hangi dillerde?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Uygulama Türkçe ve İngilizce. Telefonunun dilini izler; Ayarlar'dan değiştirebilirsin."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#4a52e0;--accent-soft:#eef0ff;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#b9c0ff;--accent-soft:#24264a;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(74,82,224,.22)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Dil">
+<a class="brand" href="/pdfpages/tr/"><img src="/pdfpages/assets/icon-192.png" width="36" height="36" alt="">PdfPages</a>
+<ul class="langs">
+<li><a href="/pdfpages/" hreflang="en" lang="en">English</a></li>
+<li><a href="/pdfpages/tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></li>
+<li><a href="/pdfpages/es/" hreflang="es" lang="es">Español</a></li>
+<li><a href="/pdfpages/pt/" hreflang="pt" lang="pt">Português</a></li>
+<li><a href="/pdfpages/hi/" hreflang="hi" lang="hi">हिन्दी</a></li>
+<li><a href="/pdfpages/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></li>
+<li><a href="/pdfpages/de/" hreflang="de" lang="de">Deutsch</a></li>
+<li><a href="/pdfpages/fr/" hreflang="fr" lang="fr">Français</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>PDF sayfalarını Android telefonunda sırala, sil ve birleştir</h1>
+<p class="lede">PdfPages bir PDF&#x27;in her sayfasını sürükleyebileceğin, silebileceğin, döndürebileceğin ve yanına yenisini ekleyebileceğin bir karo olarak gösterir. Birkaç PDF&#x27;i tek dosyada birleştir ya da sayfaları yeni bir dosyaya çıkar. Orijinal dosyan hiç değişmez, belgelerin telefonundan çıkmaz.</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.pdfpages&amp;hl=tr&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=tr"><img src="/assets/play-badge/badge-tr.png" width="646" height="250" alt="Google Play&#x27;den alın"></a>
+<p class="note">Android 7.0 ve üstü için Google Play&#x27;de ücretsiz. Uygulamada reklam var; tek seferlik bir satın alma reklamları kaldırır. Abonelik yok.</p>
+</div>
+<img class="phone" src="/pdfpages/assets/tr-01-drag-pages-into-order.webp" width="540" height="960" alt="PdfPages düzenleyicisi: sayfa ızgarasında yeni yerine sürüklenen bir sayfa" fetchpriority="high" decoding="async">
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">Neler var</h2>
+<ul class="facts">
+<li><b>Sürükleyerek sırala</b><span>Sayfanın köşesindeki tutamağı tut, istediğin yere bırak; kenara gelince ızgara kendiliğinden kayar.</span></li>
+<li><b>Sil ve döndür</b><span>Tek bir sayfayı X ile kaldır ya da birkaç sayfayı seçip birlikte sil veya döndür.</span></li>
+<li><b>Sayfa ekle</b><span>Başka bir PDF&#x27;in bütün sayfalarını, galerinden bir fotoğrafı ya da boş bir A4 sayfasını ekle.</span></li>
+<li><b>Birleştir ve çıkar</b><span>Birkaç PDF&#x27;i tek belge olarak aç ya da yalnızca seçtiğin sayfaları yeni bir PDF olarak kaydet.</span></li>
+<li><b>Orijinal dosyan değişmez</b><span>Kaydetmek her zaman yeni bir PDF oluşturur; o ana kadar her değişikliği geri alıp yineleyebilirsin.</span></li>
+<li><b>Sayfalar gerçek sayfa kalır</b><span>Sayfalar resme çevrilmez: metin seçilebilir kalır, çizgiler keskin kalır, dosya şişmez.</span></li>
+<li><b>Filigran yok, hesap yok</b><span>Sayfalarına hiçbir şey basılmaz. Kayıt yok, e-posta yok; uygulamayı aç ve kullan.</span></li>
+<li><b>Belgeler telefonda kalır</b><span>PDF&#x27;ler telefonda açılır ve yeniden oluşturulur, hiçbir yere yüklenmez. Uygulama depolama izni istemez.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">PDF sayfaları nasıl sıralanır, silinir ve döndürülür</h2>
+<ol class="steps">
+<li>PdfPages'i aç, <b>PDF düzenle</b> kartına dokun ve bir dosya seç. Dosya yöneticisinden bir PDF'i PdfPages ile açabilir ya da uygulamaya paylaşabilirsin.</li>
+<li>Bir sayfayı köşesindeki tutamaktan sürükleyerek taşı. Sayfayı kaldırmak için üzerindeki <b>X</b>'e, tam ekran görmek için sayfanın kendisine dokun.</li>
+<li>Bir sayfayı seçmek için basılı tut, başka sayfalara ya da <b>Tümünü seç</b>'e dokun, sonra <b>Sil</b>, <b>Sola döndür</b>, <b>Sağa döndür</b>, <b>Başa</b> ya da <b>Sona</b>'yı seç.</li>
+<li>Fikrini mi değiştirdin? <b>Geri al</b> ve <b>Yinele</b> üst çubukta. Her şey yerindeyse <b>Kaydet</b>'e dokun: yeni PDF <i>Documents/PDF Pages</i> klasörüne gider, orijinal dosyan olduğu gibi kalır.</li>
+</ol>
+<div class="shots"><img src="/pdfpages/assets/tr-02-select-and-act-at-once.webp" width="540" height="960" alt="Seçili iki sayfa ve Yeni dosyaya çıkar, Sil, Döndür düğmeleri" loading="lazy" decoding="async"><img src="/pdfpages/assets/tr-05-every-change-can-be-undone.webp" width="540" height="960" alt="Düzenleyicinin üst çubuğunda geri al ve yinele" loading="lazy" decoding="async"></div>
+</section>
+
+<section aria-labelledby="add">
+<h2 id="add">Sayfa ekleme, PDF birleştirme ve sayfa çıkarma</h2>
+<ol class="steps">
+<li>Düzenleyicide <b>Sayfa ekle</b>'ye dokun ve <b>Başka bir PDF'ten</b>, <b>Fotoğraftan</b> (her resim için bir sayfa, A4'e sığdırılmış) ya da <b>Boş sayfa</b>'yı seç. Tek bir sayfa seçiliyse yeni sayfalar hemen onun arkasına, değilse sona eklenir.</li>
+<li>Birleştirmek için ana ekranda <b>PDF'leri birleştir</b>'e dokun ve birkaç dosyayı birden seç. Hepsi tek belge olarak açılır; sayfaları istediğin sıraya sürükle.</li>
+<li>Sayfaları ayırmak için onları seç ve <b>Yeni dosyaya çıkar</b>'a dokun. Yalnızca o sayfalar yeni bir PDF olarak kaydedilir; üzerinde çalıştığın belgeye dokunulmaz.</li>
+<li>Sonucu hemen aç ya da paylaş; kaydettiğin her dosyayı sonra <b>Geçmiş</b>'te yeniden bul.</li>
+</ol>
+<div class="shots"><img src="/pdfpages/assets/tr-03-add-pages.webp" width="540" height="960" alt="Sayfa ekle: başka bir PDF&#x27;ten, fotoğraftan ya da boş A4 sayfası" loading="lazy" decoding="async"><img src="/pdfpages/assets/tr-04-merge-pdfs.webp" width="540" height="960" alt="Tek belgede birleştirilmiş birkaç PDF, düzenlemeye hazır" loading="lazy" decoding="async"></div>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">Sık sorulan sorular</h2>
+<div class="faq">
+<div><h3>Android&#x27;de PDF sayfalarının sırası nasıl değiştirilir?</h3><p>PDF&#x27;i PdfPages&#x27;te aç; her sayfa bir karo olarak görünür. Sayfayı köşesindeki tutamaktan sürükleyip istediğin yere bırak; kenara gelince ızgara kendiliğinden kayar. Birkaç sayfayı birden taşımak için onları seçip Başa ya da Sona&#x27;ya dokun, sonra Kaydet&#x27;e bas.</p></div>
+<div><h3>PDF&#x27;ten sayfa nasıl silinir?</h3><p>Sayfanın üzerindeki X&#x27;e dokun ya da bir sayfayı basılı tutup silmek istediğin diğer sayfaları da seç ve Sil&#x27;e dokun. Geri al silinen sayfayı geri getirir; yeni bir kopya kaydedene kadar hiçbir şey yazılmaz.</p></div>
+<div><h3>Telefonda PDF dosyaları nasıl birleştirilir?</h3><p>Ana ekranda PDF&#x27;leri birleştir&#x27;e dokunup birkaç PDF&#x27;i birden seç ya da başka bir uygulamadan birkaç PDF&#x27;i PdfPages&#x27;e paylaş. Hepsi tek belge olarak açılır; tek PDF olarak kaydetmeden önce sayfaları yeniden sıralayabilirsin. Şifreli PDF&#x27;ler açılamaz.</p></div>
+<div><h3>Bir PDF&#x27;ten sayfaları yeni bir dosyaya çıkarabilir miyim?</h3><p>Evet. İhtiyacın olan sayfaları seç ve Yeni dosyaya çıkar&#x27;a dokun: yalnızca o sayfalar yeni bir PDF olarak kaydedilir, üzerinde çalıştığın belge olduğu gibi kalır. Sayfa aralığına göre bölme aracı yok; sayfaları dokunarak seçersin.</p></div>
+<div><h3>PDF&#x27;e fotoğraf ya da boş sayfa ekleyebilir miyim?</h3><p>Evet. Sayfa ekle&#x27;ye dokun ve Fotoğraftan (her resim A4&#x27;e sığdırılmış bir sayfa olur), Boş sayfa (boş bir A4 sayfası) ya da Başka bir PDF&#x27;ten (o dosyanın bütün sayfaları) seçeneğini seç. Tek bir sayfa seçiliyse yeni sayfalar hemen onun arkasına, değilse sona eklenir.</p></div>
+<div><h3>Orijinal PDF&#x27;im değişiyor mu? Yeni dosya nereye kaydediliyor?</h3><p>Orijinal dosyan asla değiştirilmez: kaydetmek her zaman yeni bir PDF oluşturur. Android 10 ve üstünde dosya, herhangi bir dosya yöneticisiyle açılabilen Documents/PDF Pages klasörüne gider; Android 9 ve altında uygulamanın kendi klasöründe tutulur ve ona Aç, Paylaş ya da Geçmiş ile ulaşırsın.</p></div>
+<div><h3>PdfPages ücretsiz mi?</h3><p>Evet. Uygulama ücretsizdir ve reklamlarla finanse edilir: ekranın altında bir banner, bir belgeyi kaydettikten sonra bir tam ekran reklam ve uygulamaya geri döndüğünde en fazla birkaç saatte bir bir reklam. Abonelik yoktur. Ayarlar&#x27;daki isteğe bağlı tek seferlik satın alma bütün reklamları kalıcı olarak kaldırır ve yeniden kurduğunda Google Play hesabından geri gelir. Hiçbir özellik kısıtlanmaz.</p></div>
+<div><h3>İnternetsiz çalışır mı?</h3><p>Evet. PDF açma, düzenleme ve kaydetme tamamen telefonunda olur, internet gerekmez. Bağlantı yalnızca reklamlar, reklam kaldırma satın alması ve dosyalarını asla içermeyen kullanım istatistikleri ile çökme raporları için kullanılır; uygulama bunlar olmadan da çalışır.</p></div>
+<div><h3>PDF&#x27;lerim bir yere yükleniyor mu? Hesap gerekiyor mu?</h3><p>İkisine de hayır. Belgeler telefonda açılır ve yeniden oluşturulur, hiçbir sunucuya gönderilmez. Kayıt yoktur ve uygulama depolama izni istemez: her dosyayı Android&#x27;in kendi dosya seçicisiyle sen verirsin.</p></div>
+<div><h3>Filigran ekliyor mu, PDF&#x27;i bulanıklaştırıyor mu?</h3><p>Hiçbir zaman filigran eklenmez. PdfPages sayfaları resme çevirmez, gerçek sayfa yapısını korur; metin seçilebilir, çizgiler keskin kalır. Kendi testimizde 794 kB boyutundaki bir rapor yine 794 kB olarak çıktı.</p></div>
+<div><h3>Hangi telefonlarda çalışır? iPhone sürümü var mı?</h3><p>Android 7.0 ve üstü; telefonda ve tablette, dikey ya da yatay. Sayfa ızgarası geniş ekranı kullanır. PdfPages yalnızca bir Android uygulamasıdır; iPhone ya da web sürümü yoktur.</p></div>
+<div><h3>Uygulama hangi dillerde?</h3><p>Uygulama Türkçe ve İngilizce. Telefonunun dilini izler; Ayarlar&#x27;dan değiştirebilirsin.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>PdfPages</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.pdfpages&amp;hl=tr&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=tr"><img src="/assets/play-badge/badge-tr.png" width="646" height="250" alt="Google Play&#x27;den alın"></a>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/pdfpages/privacy/tr/">Gizlilik politikası</a><a href="/">BumuStudios uygulamaları</a><a href="mailto:bumustudios@gmail.com">İletişim: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-10-19">2026-10-19</time></p>
+<p>Google Play ve Google Play logosu, Google LLC&#x27;nin ticari markalarıdır.</p>
+</footer>
+</body>
+</html>

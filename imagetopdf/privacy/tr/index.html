@@ -106,7 +106,7 @@
 <header>
   <h1>Gizlilik Politikası — ImageToPdf</h1>
   <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.imgtopdf</code></p>
-  <p class="dates"><span>Yürürlük tarihi: 16 Ağustos 2026.</span> <span>Son güncelleme: 7 Ekim 2026.</span></p>
+  <p class="dates"><span>Yürürlük tarihi: 16 Ağustos 2026.</span> <span>Son güncelleme: 19 Ekim 2026.</span></p>
 </header>
 
 <div class="callout">
@@ -219,9 +219,10 @@ banner, ara sıra gösterilen geçiş reklamı ve uygulama açılış reklamı.<
 <p>Uygulamanın nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici uygulamaya
 iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
 Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca uygulamanın
-Google Play üzerinden dağıtılan sürümünde çalışır. Uygulama, bu hizmetlerin topladıklarına
-kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
-log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir:</p>
+Google Play üzerinden dağıtılan sürümünde çalışır. Hizmetlerin kendiliğinden yaptığı toplamaya ek
+olarak uygulama, 1.2.5 sürümünden itibaren tabloda listelenen beş olayı kendisi kaydeder
+("Uygulama olayları"). Kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya log kaydı
+eklemez:</p>
 
 <div class="table-wrap">
 <table>
@@ -254,6 +255,16 @@ log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama 
       açtığı</td>
     </tr>
     <tr>
+      <td>Uygulama olayları (1.2.5 sürümünden itibaren) — bir PDF oluşturuldu (sayfa sayısı 2–5
+      gibi bir aralık olarak ve parola konulup konulmadığı; parolanın kendisi asla); PDF
+      sayfaları görsel olarak kaydedildi (sayfa sayısı aralık olarak ve görsel biçimi); bir PDF
+      paylaşıldı (kiminle ya da hangi uygulamayla paylaşıldığı değil); reklamları kaldırma
+      teklifi gösterildi (dönüştürme sonucunda ya da Ayarlar'da); uygulama Google Play puanı
+      istedi (o ana kadar kaç PDF ya da dışa aktarma yapıldığı)</td>
+      <td>Hangi özelliklerin ne sıklıkla kullanıldığını öğrenmek ve neyin iyileştirileceğine
+      karar vermek</td>
+    </tr>
+    <tr>
       <td>Uygulamanın nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
       sayfası ya da bir kampanya bağlantısı)</td>
       <td>Kurulumların nereden geldiğini saymak</td>
@@ -274,8 +285,9 @@ log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama 
 </table>
 </div>
 
-<p>Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını kaydeder, o ekranda ne
-yaptığınızı değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, içeriğinizi
+<p>Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını, bir de yukarıdaki
+uygulama olaylarını kaydeder; seçtiğiniz ya da oluşturduğunuz dosyaları, adlarını, içeriklerini
+veya bir parolayı asla almaz. Bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, içeriğinizi
 değil. İki hizmet de adınızı, e-posta adresinizi veya herhangi bir hesap bilginizi almaz.</p>
 <p>AEA'da, Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan
 rıza formu Analytics'i de kapsar: oradaki seçimleriniz, Analytics'in tanımlayıcılarını cihazınızda
@@ -403,6 +415,9 @@ etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
 <p>7 Ekim 2026 tarihli güncellemeyle Google Firebase aracılığıyla toplanan kullanım istatistikleri
 ve çökme raporları eklendi (yukarıdaki Google Firebase bölümüne bakın) ve sayfanın geri kalanı
 uygulamanın güncel sürümüne uyarlandı.</p>
+<p>19 Ekim 2026 tarihli güncelleme, 1.2.5 sürümünün kullanım istatistiklerine eklediği beş
+uygulama olayını anlatır (Google Firebase bölümündeki "Uygulama olayları"na bakın). Bu olaylar
+da Analytics'in geri kalanıyla aynı rıza tercihlerine tabidir.</p>
 
 <h2 id="contact">İletişim</h2>
 <p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>

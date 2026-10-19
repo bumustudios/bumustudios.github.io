@@ -106,7 +106,7 @@
 <header>
   <h1>Privacy Policy — ImageToPdf</h1>
   <p class="lede">Android app, package <code>com.bumustudios.imgtopdf</code></p>
-  <p class="dates"><span>Effective date: 16 August 2026.</span> <span>Last updated: 7 October 2026.</span></p>
+  <p class="dates"><span>Effective date: 16 August 2026.</span> <span>Last updated: 19 October 2026.</span></p>
 </header>
 
 <div class="callout">
@@ -219,9 +219,9 @@ occasional interstitial and an app-open ad.</p>
 <p>To see how the app is used and to find and fix crashes, the developer has built two Google
 Firebase services into it: Google Analytics for Firebase and Firebase Crashlytics. Google provides
 them as the developer's data processor, and they are active only in the version of the app
-distributed through Google Play. The app adds nothing of its own to what they collect — no
-custom events, no user ID or user properties, no custom keys or log messages — so only their
-automatic collection applies:</p>
+distributed through Google Play. Besides their automatic collection, from version 1.2.5 the app
+records five events of its own, listed in the table ("App events"). It adds no user ID or user
+properties, no custom keys or log messages:</p>
 
 <div class="table-wrap">
 <table>
@@ -254,6 +254,15 @@ automatic collection applies:</p>
       open</td>
     </tr>
     <tr>
+      <td>App events (from version 1.2.5) — a PDF was created (the number of pages as a range
+      such as 2–5, and whether a password was set, never the password itself); PDF pages were
+      saved as images (the number of pages as a range, and the image format); a PDF was shared
+      (not with whom or through which app); the remove-ads offer was shown (on the conversion
+      result or in Settings); the app asked for a Google Play rating (how many PDFs or exports
+      had been made by then)</td>
+      <td>Learning which features are used and how often, to decide what to improve</td>
+    </tr>
+    <tr>
       <td>How the app was installed — the Google Play install referrer (for example the store
       listing or a campaign link)</td>
       <td>Counting where installations come from</td>
@@ -274,7 +283,8 @@ automatic collection applies:</p>
 </table>
 </div>
 
-<p>Analytics records that a screen was shown and for how long, not what you do on it, and a crash
+<p>Analytics records that a screen was shown and for how long, plus the app events above; it never
+receives the files you pick or create, their names or contents, or a password. A crash
 report shows where in the code the crash happened, not your content. Neither service receives your
 name, your email address or any account details.</p>
 <p>In the EEA, the UK and Switzerland, the consent form described below under "Your advertising
@@ -398,6 +408,9 @@ accept the revised policy.</p>
 <p>The update of 7 October 2026 added the usage statistics and crash reports collected through
 Google Firebase (see the Google Firebase section above) and brought the rest of this page in line
 with the current version of the app.</p>
+<p>The update of 19 October 2026 describes the five app events that version 1.2.5 adds to the
+usage statistics (see "App events" in the Google Firebase section). They follow the same consent
+choices as the rest of Analytics.</p>
 
 <h2 id="contact">Contact</h2>
 <p>For any question about this policy or about privacy in this app, write to:</p>

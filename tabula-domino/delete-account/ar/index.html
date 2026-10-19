@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>حذف حسابك — Tabula Domino</title>
+<meta name="description" content="كيفية حذف حسابك في Tabula Domino، داخل التطبيق أو بالبريد الإلكتروني دونه، وما يُحذف، وما يُحفظ وإلى متى.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Noto Naskh Arabic", "Noto Sans Arabic", "Geeza Pro", "Segoe UI", Tahoma, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: 0; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: 0; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-inline-start: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-inline-start: 3px solid var(--accent);
+    border-radius: 8px 0 0 8px;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: start; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="/tabula-domino/delete-account/" lang="en" dir="ltr">English</a><span class="sep">·</span><a href="/tabula-domino/delete-account/tr/" lang="tr" dir="ltr">Türkçe</a><span class="sep">·</span><a href="/tabula-domino/delete-account/fr/" lang="fr" dir="ltr">Français</a><span class="sep">·</span><a href="/tabula-domino/privacy/ar/">سياسة الخصوصية</a></p>
+
+<header>
+  <h1>حذف حسابك — Tabula Domino</h1>
+  <p class="lede">لعبة Tabula Domino: Online Oyna من BumuStudios — Android، اسم الحزمة <code>com.bumustudios.domino</code></p>
+  <p class="dates"><span>آخر تحديث: 17 أكتوبر 2026.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>يمكنك حذف حسابك في Tabula Domino وبياناته بطريقتين:</strong> داخل التطبيق، أو
+  بالبريد الإلكتروني إذا لم يعد التطبيق لديك. وفي الحالتين، يُجمَّد حسابك أولًا ويُحذف بعد
+  <strong>14 يومًا</strong>؛ ويمكنك حتى ذلك الحين أن تغيّر رأيك.</p>
+</div>
+
+<h2>احذفه داخل التطبيق</h2>
+<ol>
+  <li>افتح Tabula Domino وانقر على <strong>الإعدادات</strong>.</li>
+  <li>ضمن <strong>الحساب</strong>، انقر على <strong>حذف الحساب</strong>.</li>
+  <li>تعرض شاشة <strong>حذف حسابك</strong> ما سيحدث وما سيبقى. وإن شئت، نزّل أولًا
+  نسخة من بياناتك من هناك.</li>
+  <li>أكّد عبر <strong>اضغط مطوّلًا لحذف حسابي</strong>، أو انقر على <strong>لا تستطيع الضغط
+  المطوّل؟ أكّد بالكتابة</strong>، واكتب <code>حذف</code> وانقر على <strong>احذف حسابي</strong>.</li>
+</ol>
+<p>يُجمَّد حسابك فورًا: لا يمكنك اللعب ولا تغيير اسمك، ولا تظهر بعد ذلك في قوائم
+الأصدقاء. يعرض التطبيق تاريخ الحذف ووقته. <strong>للإلغاء</strong>، افتح التطبيق خلال
+الأيام الـ14 وانقر على <strong>ألغِ الحذف</strong>؛ فيعود كل شيء كما كان. وعند انقضاء الأيام
+الـ14، يُنفَّذ الحذف تلقائيًا.</p>
+
+<h2>اطلب الحذف دون التطبيق</h2>
+<p>إذا ألغيت تثبيت اللعبة أو فقدت هاتفك، فاكتب إلى
+<a href="mailto:bumustudios@gmail.com?subject=%D8%A7%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A%20%D9%81%D9%8A%20Tabula%20Domino">bumustudios@gmail.com</a>
+من أي عنوان بريد إلكتروني، واجعل موضوع الرسالة «احذف حسابي في Tabula Domino». وضمِّن رسالتك:</p>
+<ul>
+  <li><strong>معرّف اللاعب</strong> الخاص بك (مثل <code>#K7M2Q9XA</code>)، الظاهر في التطبيق في
+  <strong>الإعدادات ← الحساب ← الحساب والملف الشخصي</strong>، بجانب «معرّفك كلاعب»؛</li>
+  <li>اسمك الظاهر، وما إذا كنت قد ربطت Google أو Apple أو Facebook أو X.</li>
+</ul>
+<p>لا يرتبط بحسابك أي عنوان بريد إلكتروني، لذا نتحقق قبل حذف أي شيء من أن الحساب
+يخصك. فمثلًا، قد نطلب منك تسجيل الدخول بحساب Google أو Apple أو Facebook أو X الذي ربطته، أو
+إرسال رمز قصير نعطيك إياه عبر النموذج داخل التطبيق في <strong>الإعدادات ← الحساب ← الدعم
+والاعتراضات</strong>. لا نطلب كلمة مرور أبدًا. وبعد التأكد من الملكية، نبدأ الحذف نفسه
+كما في التطبيق، ونخبرك بتاريخ سريانه، ويظل بإمكانك الإلغاء بالرد خلال الأيام الـ14.
+نجيب عن كل طلب خلال 30 يومًا على الأكثر.</p>
+<p>لا يمكن فتح حساب الضيف الذي لم يُربط قط إلا من الهاتف الذي أُنشئ عليه. إذا لم يعد
+بإمكانك الوصول إليه، فلا يستطيع أحد غيرك ذلك أيضًا، وحساب الضيف الذي لا يُستخدم لمدة <strong>24 شهرًا</strong>
+يُحذف تلقائيًا بالطريقة نفسها.</p>
+
+<p>ما احتفظت به اللعبة على هاتفك (إعداداتك، والتلميحات التي رأيتها) يُزال عند إلغاء تثبيتها؛
+وبدءًا من الإصدار 1.0.2، لا تحتفظ اللعبة بأي نسخة منه في النسخ الاحتياطي السحابي لنظام Android.</p>
+
+<h2>ما يُحذف</h2>
+<ul>
+  <li>اسمك الظاهر، بما في ذلك النسخ الموجودة في سجلات المباريات</li>
+  <li>معرّف اللاعب الخاص بك، واختيار الصورة الرمزية، وصورة الملف الشخصي</li>
+  <li>تسجيل الدخول المرتبط عبر Google أو Apple أو Facebook أو X، وجميع جلساتك</li>
+  <li>سجل أسمائك</li>
+  <li>أصدقاؤك، وطلبات الصداقة، والحظر، والدعوات</li>
+  <li>سجلات رسائلك السريعة وسجلات البحث عن منافس</li>
+  <li>طلبات الدعم الخاصة بك وردودنا عليها</li>
+  <li>إجابتك بشأن الموافقة على التحليلات</li>
+  <li>سجلات أجهزتك (عنوان الإشعارات) وإعدادات الإشعارات</li>
+  <li>رصيدك من Akçe: تُغلق المحفظة ولا يمكن استعادتها</li>
+</ul>
+<p>لا يؤدي حذف حسابك في اللعبة إلى إعادة تعيين معرّف الإعلانات في هاتفك ولا الخيارات التي حدّدتها في
+نموذج الموافقة على الإعلانات من Google؛ ويمكنك تغييرها في <strong>الإعدادات ← الخصوصية ← خيارات الإعلانات</strong> قبل
+الحذف، أو إعادة تعيين معرّف الإعلانات من إعدادات Google في هاتفك.</p>
+
+<h2>ما يُحفظ، وإلى متى</h2>
+<p>بعض السجلات جزء أيضًا من سجل اللاعبين الآخرين، أو لازمة للعب النظيف وللمطالبات القانونية. وتُحفظ
+<strong>دون اسمك</strong>: يُزال اسمك وحساباتك المرتبطة ولا يبقى إلا رقم
+عشوائي.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>البيانات</th><th>طريقة الحفظ</th><th>المدة</th></tr></thead>
+  <tbody>
+    <tr><td>نتائج المباريات وإجماليات الإحصاءات والتصنيف</td><td>دون اسمك، تحت رقم عشوائي</td>
+    <td>ما دامت اللعبة تحتفظ بسجل المباريات</td></tr>
+    <tr><td>سجلات حركات المباريات</td><td>دون اسمك، تحت رقم عشوائي</td><td>حتى سنتين بعد المباراة</td></tr>
+    <tr><td>سجل Akçe (كل تغيير في رصيدك) وسجلات الإعلانات بمكافأة</td><td>دون اسمك،
+    تحت رقم عشوائي</td><td>طوال المدة التي يقتضيها قانون السجلات المالية، 10 سنوات على الأكثر</td></tr>
+    <tr><td>سجلات الشراء («الباقة بلا إعلانات» المشتراة عبر Google Play: المنتج، والوقت، وعمليات الاسترداد)</td>
+    <td>دون اسمك، تحت رقم عشوائي</td><td>طوال المدة التي يقتضيها قانون السجلات المالية،
+    10 سنوات على الأكثر</td></tr>
+    <tr><td>سجلات قرارات الفريق (التعليق، والحظر، وإجراءات الدعم)</td><td>دون اسمك، تحت
+    رقم عشوائي</td><td>حتى 5 سنوات</td></tr>
+    <tr><td>صورة ملف شخصي أُبلغ عنها للسلطات للاشتباه في أنها من مواد الاعتداء الجنسي على الأطفال</td>
+    <td>دليلًا لا يطّلع عليه أحد</td><td>طوال المدة التي يقتضيها القانون (سنة واحدة على الأقل)</td></tr>
+    <tr><td>بلاغ قدّمه لاعب آخر بحقك</td><td>يُستبدل رقمك برقم جديد لا يمكن
+    تتبّعه إليك</td><td>حتى مرور سنة واحدة على البلاغ؛ ثم تُزال الأدلة</td></tr>
+    <tr><td>أحداث التحليلات داخل التطبيق والعدّادات على الخادم</td><td>بعد إزالة رقم اللاعب الخاص بك</td>
+    <td>أحداث التحليلات حتى 13 شهرًا بعد تلقّيها</td></tr>
+    <tr><td>سجلات الطبقة الطرفية (عنوان IP، وuser-agent) وسجلات المراقبة</td><td>كما هي</td>
+    <td>7 أيام و14 يومًا على التوالي، ثم تُحذف</td></tr>
+    <tr><td>النسخ الاحتياطية لقاعدة البيانات</td><td>كما هي</td><td>حتى 16 يومًا؛ وتختفي بياناتك منها مع انتهاء
+    صلاحيتها</td></tr>
+    <tr><td>تقارير الأعطال المرسلة إلى Google Firebase Crashlytics (فقط إذا سمحت بها)</td><td>غير مرتبطة
+    برقم اللاعب الخاص بك</td><td>90 يومًا لدى Google، ثم تُحذف</td></tr>
+    <tr><td>أحداث الاستخدام المرسلة إلى Google Analytics for Firebase (فقط إذا سمحت بالتحليلات)</td><td>غير
+    مرتبطة برقم اللاعب الخاص بك</td><td>حتى 14 شهرًا لدى Google، ثم تُحذف</td></tr>
+    <tr><td>بيانات الإعلانات التي تحتفظ بها Google AdMob (معرّف الإعلانات، والتفاعلات مع الإعلانات)</td><td>تحتفظ بها Google بصفتها
+    جهة مسؤولة مستقلة عن معالجة البيانات، لا نحن</td><td>وفق سياسة Google الخاصة</td></tr>
+    <tr><td>قيد في قائمة الحسابات المحذوفة: الرقم العشوائي، ونوع الحساب، وأوقات الإنشاء وآخر استخدام
+    والحذف، مع عنصر نائب بدلًا من الاسم</td><td>بلا اسم، وبلا حسابات مرتبطة</td>
+    <td>إلى أجل غير مسمّى، كي لا تتمكن رسائل النظام المتأخرة من إعادة إنشاء حساب محذوف</td></tr>
+  </tbody>
+</table>
+</div>
+<p>القائمة الكاملة لما تعالجه اللعبة، وأسباب ذلك، موجودة في
+<a href="/tabula-domino/privacy/ar/">سياسة الخصوصية للعبة Tabula Domino</a>.</p>
+
+<h2 id="contact">التواصل</h2>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>مطوّر Tabula Domino والمسؤول عن معالجة بيانات لاعبيها: BumuStudios.</p>
+</div>
+
+<footer>
+  لعبة Tabula Domino من BumuStudios — حذف الحساب داخل التطبيق في الإعدادات ← الحساب ← حذف الحساب، أو
+  بالبريد الإلكتروني إلى <bdi>bumustudios@gmail.com</bdi>.
+</footer>
+
+</main>
+</body>
+</html>

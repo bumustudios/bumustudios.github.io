@@ -50,7 +50,9 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | Word Lantern gizlilik politikası (TR) | <https://bumustudios.github.io/wordhunt/privacy/tr/> |
 | Tabula Domino privacy policy (EN) | <https://bumustudios.github.io/tabula-domino/privacy/> |
 | Tabula Domino gizlilik politikası (TR) | <https://bumustudios.github.io/tabula-domino/privacy/tr/> |
-| Tabula Domino account deletion | <https://bumustudios.github.io/tabula-domino/delete-account/> |
+| Tabula Domino politique de confidentialité (FR) | <https://bumustudios.github.io/tabula-domino/privacy/fr/> |
+| Tabula Domino سياسة الخصوصية (AR) | <https://bumustudios.github.io/tabula-domino/privacy/ar/> |
+| Tabula Domino account deletion (EN; tr/, ar/, fr/) | <https://bumustudios.github.io/tabula-domino/delete-account/> |
 | Tabula Domino table invitation (tr/en/es/pt) | <https://bumustudios.github.io/tabula-domino/join/?c=CODE> |
 
 ## Read this before editing a policy page
@@ -120,8 +122,8 @@ zen2048/privacy/        2048 Zen policy, English
 zen2048/privacy/tr/     2048 Zen policy, Turkish
 wordhunt/privacy/       Word Lantern policy, English
 wordhunt/privacy/tr/    Word Lantern policy, Turkish
-tabula-domino/privacy/  Tabula Domino policy, English (tr/ Turkish)
-tabula-domino/delete-account/  Tabula Domino account deletion
+tabula-domino/privacy/  Tabula Domino policy, English (tr/ Turkish, ar/ Arabic, fr/ French)
+tabula-domino/delete-account/  Tabula Domino account deletion (tr/, ar/, fr/)
 tabula-domino/join/     Tabula Domino table invitation (see below)
 .well-known/assetlinks.json  Android App Links (Tabula Domino; see below)
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll

@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Tabula Domino</title>
+<meta name="description" content="Politique de confidentialité de Tabula Domino, le jeu de dominos en ligne pour Android. Comptes invités, sans e-mail ni nom réel ; parties, cotes et profils sur nos propres serveurs en Allemagne (UE) ; publicités Google AdMob avec le formulaire de consentement de Google ; rapports de plantage et mesure d’audience Firebase uniquement avec votre autorisation ; Akçe, une monnaie de jeu qui se gagne uniquement et ne peut jamais être achetée ; un Pack sans publicité facultatif acheté via Google Play ; des notifications uniquement si vous les autorisez ; des photos de profil vérifiées sur nos propres serveurs.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="/tabula-domino/privacy/" lang="en" dir="ltr">English</a><span class="sep">·</span><a href="/tabula-domino/privacy/tr/" lang="tr" dir="ltr">Türkçe</a><span class="sep">·</span><a href="/tabula-domino/privacy/ar/" lang="ar" dir="rtl">العربية</a><span class="sep">·</span><a href="/tabula-domino/delete-account/fr/">Supprimer votre compte</a></p>
+
+<header>
+  <h1>Politique de confidentialité — Tabula Domino</h1>
+  <p class="lede">Jeu de dominos en ligne pour Android, package <code>com.bumustudios.domino</code></p>
+  <p class="dates"><span>Date d’entrée en vigueur : 17 octobre 2026.</span> <span>Dernière mise à jour : 17 octobre 2026.</span> <span>Version 5 de la politique.</span></p>
+</header>
+
+<div class="callout">
+  <p><strong>Pas d’adresse e-mail, pas de numéro de téléphone, pas de nom réel.</strong> Vous jouez avec un
+  compte invité et un nom affiché que vous choisissez. La connexion avec Google, Apple, Facebook ou X est
+  facultative et sert uniquement à récupérer votre compte sur un autre appareil.</p>
+  <p>Tabula Domino est un jeu en ligne : vos parties se jouent donc sur nos propres serveurs, hébergés par
+  Hetzner en Allemagne (UE). Cette page indique tout ce que ces serveurs conservent, pourquoi et pendant
+  combien de temps. Nous ne vendons pas vos données.</p>
+  <p><strong>Publicités et services Google.</strong> Le jeu affiche des publicités Google AdMob dans les menus
+  et, au plus une fois toutes les trois parties terminées, entre les parties ; <strong>jamais pendant une
+  partie ni à l’ouverture de l’application</strong>. Les publicités ne sont personnalisées que si vous
+  l’acceptez dans le formulaire de consentement de Google. Les rapports de plantage (Google Firebase
+  Crashlytics) et la mesure d’audience (Google Analytics for Firebase) ne sont envoyés
+  <strong>que si vous les autorisez</strong>. Les joueurs de 13 à 17 ans ne reçoivent aucun de ces éléments
+  facultatifs.</p>
+  <p><strong>Akçe.</strong> La monnaie du jeu se gagne uniquement (en jouant, grâce au cadeau du jour et aux
+  publicités récompensées que vous choisissez de regarder). Elle ne peut être ni achetée, ni monnayée, ni
+  envoyée à un autre joueur. Nos serveurs enregistrent chaque variation de votre solde.</p>
+  <p><strong>À partir de la version 1.0.3 :</strong> un <strong>Pack sans publicité</strong> facultatif, que
+  vous pouvez acheter une seule fois via Google Play (Google encaisse le paiement ; nous ne voyons jamais votre
+  carte), <strong>des notifications uniquement si vous les autorisez</strong>, et une vérification automatique
+  des nouvelles photos de profil effectuée <strong>sur nos propres serveurs</strong>.</p>
+</div>
+
+<h2>De qui émane cette politique</h2>
+<p>Cette politique couvre le jeu Android <em>Tabula Domino: Online Oyna</em> (affiché sur votre téléphone sous
+le nom <em>Tabula Domino</em>), distribué via Google Play sous le nom de package
+<code>com.bumustudios.domino</code>. Elle est rédigée par le développeur du jeu, BumuStudios, développeur
+indépendant, qui est le <strong>responsable du traitement</strong> des données personnelles décrites ici au
+sens de la loi turque n° 6698 sur la protection des données personnelles (« KVKK ») et du règlement général
+de l’UE sur la protection des données (« RGPD »). Les questions et les demandes relatives aux données peuvent
+être envoyées à l’adresse indiquée dans <a href="#contact">Contact</a>, ou via le formulaire de l’application,
+sous <strong>Réglages → Compte → Assistance et recours</strong>.</p>
+<p>BumuStudios n’est pas encore une société : il n’a donc pas de numéro d’immatriculation au registre du
+commerce et aucune adresse postale n’est publiée ; lorsqu’une société sera créée, cette politique sera mise à
+jour avec ses coordonnées. Aucun représentant dans l’UE ni au Royaume-Uni (art. 27 du RGPD) n’a encore été
+désigné ; un représentant sera désigné avant que le jeu soit distribué dans l’UE ou au Royaume-Uni. D’ici
+là, nous répondons nous-mêmes à chaque demande à l’adresse indiquée dans <a href="#contact">Contact</a>.</p>
+
+<h2>Ce qu’est le jeu</h2>
+<p>Tabula Domino est un jeu de dominos en ligne. Vous êtes associé à d’autres joueurs selon votre cote, ou
+vous ouvrez une table privée avec un code pour vos amis. Les parties, les cotes et les classements sont
+conservés sur nos serveurs afin qu’ils soient équitables et qu’une connexion perdue ne vous fasse pas perdre
+votre partie. Lorsqu’aucun adversaire adapté n’est trouvé, vous pouvez jouer contre des adversaires contrôlés
+par l’ordinateur.</p>
+
+<h2>Cette version du jeu</h2>
+<p>Cette politique décrit la version du jeu proposée en test fermé sur Google Play. Elle comprend :</p>
+<ul>
+  <li><strong>Publicités (Google AdMob).</strong> Une petite bannière dans les menus (écran d’accueil, profil,
+  réglages) et une publicité entre les parties, au plus une fois toutes les trois parties terminées et à au
+  moins 3 minutes d’intervalle. Aucune publicité pendant une partie ni à l’ouverture de l’application. Voir
+  <a href="#ads">Publicités</a>.</li>
+  <li><strong>Rapports de plantage et mesure d’audience (Google Firebase).</strong> Uniquement avec votre
+  autorisation, sur Android. Voir <a href="#analytics">Mesure d’audience dans l’application</a> et
+  <a href="#crash">Rapports de plantage</a>.</li>
+  <li><strong>Akçe, la monnaie du jeu (à partir de la version 1.0.1).</strong> Elle se gagne uniquement ; les
+  tables auxquelles vous êtes associé par appariement prélèvent un droit d’entrée et récompensent les gagnants
+  en Akçe ; un cadeau du jour ; des publicités récompensées que vous pouvez choisir de regarder. Voir
+  <a href="#akce">Akçe</a> et <a href="#ads">Publicités</a>.</li>
+  <li><strong>Avis de mise à jour de Google Play (à partir de la version 1.0.2).</strong> Dans le salon, le jeu
+  demande à Google Play, sur votre téléphone, si une version plus récente est disponible ; si vous acceptez,
+  Google Play la télécharge et le jeu propose de redémarrer. Cela se passe entre votre téléphone et Google
+  Play ; rien n’en parvient à nos serveurs.</li>
+  <li><strong>Le Pack sans publicité via Google Play (à partir de la version 1.0.3).</strong> Un achat unique
+  sous <strong>Réglages → Achats</strong> : aucune publicité dans les menus ni entre les parties, plus deux
+  thèmes de table. Les publicités récompensées restent disponibles si vous choisissez d’en regarder une. Voir
+  <a href="#purchases">Achats</a>.</li>
+  <li><strong>Notifications (à partir de la version 1.0.3), uniquement si vous les autorisez.</strong> Par
+  exemple lorsque c’est votre tour alors que vous n’êtes pas dans le jeu, ou qu’un ami vous invite à une table.
+  Voir <a href="#notifications">Notifications</a>.</li>
+  <li><strong>Vérification automatique des photos (à partir du 17 octobre 2026).</strong> Une nouvelle photo
+  de profil est vérifiée par un modèle qui fonctionne sur nos propres serveurs avant que d’autres joueurs
+  puissent la voir. Voir <a href="#photo-check">Vérification des photos de profil</a>.</li>
+</ul>
+<p>Les fonctionnalités dont le jeu ne dispose pas encore, comme la connexion sur iPhone ou d’autres achats, ne
+sont pas décrites ici ; cette politique sera mise à jour, avec une nouvelle date de « dernière mise à jour »,
+avant l’arrivée de l’une d’entre elles.</p>
+
+<h2>Ce que nous traitons</h2>
+<p>Nous ne collectons que ce dont le jeu a besoin. Chaque enregistrement sur nos serveurs vous est rattaché
+par un numéro de joueur aléatoire, et non par votre nom.</p>
+
+<h3>Compte et profil</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Données</th><th>Pourquoi</th></tr></thead>
+  <tbody>
+    <tr><td>Numéro de joueur — un numéro aléatoire créé avec votre compte</td>
+    <td>Pour vous reconnaître d’une partie à l’autre</td></tr>
+    <tr><td>Nom affiché — 2 à 20 caractères que vous saisissez ; il ne doit pas nécessairement être votre vrai
+    nom</td>
+    <td>Pour vous présenter aux autres joueurs</td></tr>
+    <tr><td>Identifiant de joueur — un identifiant aléatoire tel que <code>#K7M2Q9XA</code>, et l’avatar
+    prédéfini que vous avez choisi</td>
+    <td>Pour que vos amis puissent vous trouver ; l’apparence de votre profil</td></tr>
+    <tr><td>Photo de profil (facultative) — une photo que vous importez ou prenez, ou que vous choisissez de
+    copier depuis un compte Google, Facebook ou X que vous avez associé. Nous conservons deux copies carrées
+    réencodées par notre serveur ; les données de lieu, d’appareil photo et de date (EXIF/GPS) et toutes les
+    autres métadonnées sont supprimées. Nous conservons aussi la provenance de la photo et la date à laquelle
+    vous l’avez définie</td>
+    <td>Pour vous présenter aux autres joueurs. Vous pouvez la changer ou la supprimer à tout moment</td></tr>
+    <tr><td>Type, statut et dates du compte — invité ou associé, actif ou non, date de création et de dernière
+    utilisation</td>
+    <td>Pour gérer le compte ; pour distinguer les bots des personnes</td></tr>
+    <tr><td>Enregistrements de session — uniquement une empreinte (hash) de la clé de session stockée sur votre
+    appareil (jamais la clé elle-même), ainsi que le libellé d’appareil, la plateforme, la version de
+    l’application et les dates de chaque session</td>
+    <td>Pour que vous restiez connecté ; pour que vous puissiez voir où vous êtes connecté et vous
+    déconnecter</td></tr>
+    <tr><td>Connexion associée (facultative) — le numéro de compte que Google, Apple, Facebook ou X vous
+    attribue</td>
+    <td>Pour restaurer votre compte sur un autre appareil</td></tr>
+    <tr><td>Historique des noms — vos anciens noms affichés et la date de chaque changement</td>
+    <td>Pour qu’un changement de nom ne permette pas d’échapper à un signalement</td></tr>
+    <tr><td>Pays — un code à deux lettres (par exemple <code>TR</code>) estimé à partir de l’adresse IP de
+    votre connexion lors de la création du compte</td>
+    <td>Le drapeau dans le classement ; le contenu régional ; savoir dans quels pays le jeu est joué</td></tr>
+  </tbody>
+</table>
+</div>
+<p><strong>Votre adresse IP n’est pas enregistrée avec votre compte.</strong> Elle n’est lue qu’à ce
+moment-là pour estimer votre pays, puis abandonnée. L’estimation est faite sur notre propre serveur avec la
+base de données « IP to Country Lite » de DB-IP (<a href="https://db-ip.com">IP Geolocation by DB-IP</a>,
+sous licence <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>) ; votre adresse n’est
+transmise à personne pour cela. L’estimation peut être erronée, par exemple si vous utilisez un VPN.</p>
+<p>Lorsque vous associez Google, Apple, Facebook ou X, nous vérifions la connexion auprès de ce fournisseur et
+ne conservons que le numéro de compte qu’il vous attribue. Nous ne lisons ni n’enregistrons votre adresse
+e-mail, et nous n’envoyons aucune donnée de jeu au fournisseur. Une photo de profil n’est copiée depuis ce
+compte que si vous la choisissez, et une seule fois : si elle change ensuite sur ce compte, notre copie ne
+change pas.</p>
+
+<h3 id="photo-check">Vérification des photos de profil</h3>
+<p>Chaque nouvelle photo de profil est vérifiée automatiquement par un modèle d’analyse d’images qui
+fonctionne <strong>sur nos propres serveurs</strong>. Il recherche uniquement la nudité et les contenus
+sexuels ; il <strong>ne reconnaît pas les visages</strong>, et la photo n’est envoyée à personne pour cette
+vérification. Ensuite :</p>
+<ul>
+  <li>une photo manifestement interdite est refusée et <strong>n’est pas conservée</strong> ; votre photo
+  précédente reste en place ;</li>
+  <li>si le résultat n’est pas clair, la photo n’est montrée <strong>qu’à vous</strong> jusqu’à ce qu’un
+  membre de notre équipe l’ait examinée et l’ait approuvée ou refusée ;</li>
+  <li>sinon, elle est montrée aux autres joueurs.</li>
+</ul>
+<p>Nous conservons le score et le résultat du modèle (approuvée, en attente d’examen, refusée), le nom du
+modèle, ainsi que la décision de notre équipe et sa date. Un seuil plus strict s’applique si vous avez entre
+13 et 17 ans ou si vous ne nous avez pas indiqué votre âge. La violence et les autres problèmes sont traités
+au moyen des signalements des joueurs et par notre équipe. Si une image est soupçonnée de constituer un
+contenu d’abus sexuel sur enfant, nous la signalons aux autorités compétentes comme la loi l’exige et la
+conservons comme preuve, sans la montrer à personne, aussi longtemps que la loi l’exige (au moins 1 an),
+même si le compte est supprimé.</p>
+
+<h3>Parties, cotes et classements</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Données</th><th>Pourquoi</th></tr></thead>
+  <tbody>
+    <tr><td>Enregistrements des parties — jeu, mode, version des règles, début et fin, résultat et score ; votre
+    place et votre équipe, et une copie de votre nom affiché à ce moment-là</td>
+    <td>Le jeu lui-même ; votre historique de parties et celui de vos adversaires</td></tr>
+    <tr><td>État de la partie et journal des coups — les dominos sur la table, votre main, chaque coup</td>
+    <td>Le serveur fait tourner le jeu ; pour rétablir une partie après une perte de connexion ; pour examiner
+    les litiges et la triche</td></tr>
+    <tr><td>Codes de table privée et propositions de revanche</td>
+    <td>Pour rejoindre la table d’un ami ; la fonction de revanche</td></tr>
+    <tr><td>Statistiques et cote — parties jouées, gagnées et perdues, séries, votre cote et son historique,
+    votre place dans les classements</td>
+    <td>Votre progression ; trouver un adversaire de même niveau ; les classements</td></tr>
+    <tr><td>Enregistrements d’appariement — quand et dans quelle file vous avez cherché, votre cote à ce
+    moment-là, avec qui vous avez été associé, comment cela s’est terminé</td>
+    <td>Pour vous trouver un adversaire ; pour éviter de répéter sans cesse les mêmes appariements ; pour
+    mesurer les temps d’attente</td></tr>
+    <tr><td>Compteurs de fair-play — recherches annulées en peu de temps, parties dans lesquelles vous avez été
+    placé sans les rejoindre</td>
+    <td>Pour que l’appariement reste équitable pour tous</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Vos dominos restent sur le serveur ; vos adversaires ne voient jamais votre main.</p>
+
+<h3 id="akce">Akçe (la monnaie du jeu)</h3>
+<p>Les Akçe ne peuvent que se gagner : vous commencez avec un solde, les tables d’appariement prélèvent un
+droit d’entrée et récompensent les gagnants, et il existe un cadeau du jour et des publicités récompensées. Les tables privées, les revanches et les tables contre des adversaires contrôlés par l’ordinateur
+ne prélèvent aucun droit d’entrée. Les Akçe <strong>ne peuvent pas être achetés</strong>, ni échangés contre
+de l’argent, ni monnayés, ni transférés à un autre joueur.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Données</th><th>Pourquoi</th></tr></thead>
+  <tbody>
+    <tr><td>Historique des Akçe — chaque variation de votre solde : quand, combien et pourquoi (droit d’entrée,
+    versement au gagnant, remboursement, cadeau du jour, publicité récompensée), avec la partie concernée ;
+    votre solde actuel</td>
+    <td>Tenir votre solde exact ; régler les tables équitablement ; prévenir la triche et les abus</td></tr>
+    <tr><td>Enregistrements de publicités récompensées — le numéro de récompense aléatoire à usage unique créé
+    avant l’annonce, son objet (une recharge, ou la moitié de votre droit d’entrée rendue après une partie
+    perdue), si la récompense a été accordée, ainsi que le numéro de transaction et le bloc d’annonces
+    figurant dans la confirmation de Google</td>
+    <td>Accorder la récompense une seule fois et uniquement pour une publicité réellement regardée</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h3>Amis, messages rapides et signalements</h3>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Données</th><th>Pourquoi</th></tr></thead>
+  <tbody>
+    <tr><td>Liste d’amis, demandes d’ami, invitations à une table privée, joueurs que vous avez bloqués</td>
+    <td>La fonction d’amis du jeu. Il s’agit d’une liste interne au jeu : <strong>le jeu ne lit jamais les
+    contacts de votre téléphone</strong></td></tr>
+    <tr><td>Joueurs récents — les joueurs avec qui vous avez joué récemment</td>
+    <td>La liste « Joueurs récents » ; les demandes d’ami et les signalements ne sont possibles que pour des
+    personnes que vous avez rencontrées</td></tr>
+    <tr><td>Messages rapides — quelle phrase prédéfinie ou quel emoji vous avez envoyé, et quand</td>
+    <td>Limitation du nombre d’envois ; preuve si quelqu’un signale un abus. <strong>Il n’y a pas de
+    discussion en texte libre</strong> : seuls des messages prédéfinis peuvent être envoyés</td></tr>
+    <tr><td>Signalements — la catégorie (abandon de parties, messages rapides injurieux, triche présumée, photo
+    de profil inappropriée), la partie, et les messages rapides de cette partie comme preuve</td>
+    <td>Modération</td></tr>
+    <tr><td>Paramètre de visibilité en ligne</td>
+    <td>Si vos amis peuvent voir que vous êtes en ligne. Le fait d’être en ligne n’est conservé qu’en mémoire
+    et n’est jamais enregistré</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Un joueur que vous signalez ou bloquez n’en est pas informé, et on ne vous dit pas qui vous a signalé ou
+bloqué.</p>
+
+<h3>Demandes d’assistance, recours et modération</h3>
+<p>Lorsque vous utilisez le formulaire de l’application (<strong>Réglages → Compte → Assistance et
+recours</strong>), nous conservons le sujet, <strong>les mots que vous écrivez</strong> (jusqu’à 2 000
+caractères), la partie ou la décision concernée, la plateforme et la version de l’application, ainsi que notre
+réponse. Merci de ne pas y écrire de mot de passe ni d’autres informations personnelles. Lorsque notre équipe
+intervient sur un compte — suspension, bannissement, levée d’une attente d’appariement, masquage d’une
+photo —, nous conservons une trace de la décision, de son motif et du membre de l’équipe qui l’a prise.</p>
+
+<h3 id="notifications">Notifications — uniquement si vous les autorisez</h3>
+<p>À partir de la version 1.0.3, le jeu peut envoyer des notifications lorsque vous n’y êtes pas : lorsqu’un
+adversaire est trouvé, que votre table est prête, que c’est votre tour, que votre table veut une revanche ou
+qu’un ami vous invite à sa table ; les joueurs de 18 ans ou plus peuvent aussi recevoir des annonces
+concernant le jeu. Sur Android 13 et versions ultérieures, le jeu vous demande d’abord, et vous pouvez
+refuser ; sur les versions plus anciennes d’Android, les notifications sont activées sauf si vous les
+désactivez dans les paramètres d’Android. Une notification ne contient <strong>le nom de personne</strong> :
+une invitation indique « Un ami vous invite à sa table », et vous voyez de qui il s’agit en ouvrant le jeu.
+Les notifications de tour, d’invitation et d’annonce n’arrivent pas pendant les heures calmes que vous pouvez
+définir, et vous pouvez désactiver chaque type sous <strong>Réglages → Notifications</strong>.</p>
+<p>Lorsque les notifications sont autorisées, nous conservons un <strong>enregistrement d’appareil</strong> :
+l’adresse de notification (jeton push) que Google Firebase Cloud Messaging attribue à votre téléphone, un
+numéro aléatoire pour l’installation, la plateforme, la version de l’application, la langue et le fuseau
+horaire du téléphone. Nous conservons aussi les types de notification que vous souhaitez recevoir, vos heures
+calmes, et quelle notification a été envoyée et quand. L’adresse de notification n’est créée qu’après que
+vous avez autorisé les notifications.</p>
+
+<h3 id="purchases">Achats</h3>
+<p>À partir de la version 1.0.3, vous pouvez acheter une seule fois le <strong>Pack sans publicité</strong>,
+sous <strong>Réglages → Achats</strong>. <strong>Google Play encaisse le paiement</strong> selon ses propres
+conditions ; nous ne recevons jamais vos coordonnées de carte ou bancaires. Notre serveur vérifie l’achat
+auprès de Google Play et conserve un enregistrement d’achat : une empreinte (hash) du jeton d’achat de Google
+Play (pas le jeton lui-même), le produit, la date, un éventuel remboursement, et le fait que le pack vous
+appartient. Avec l’achat, le jeu transmet à Google Play un code de compte aléatoire afin que l’achat puisse
+être restauré sur un nouveau téléphone ; ce n’est pas votre numéro de joueur et il n’apprend rien d’autre à
+Google sur vous. Les Akçe ne peuvent jamais être achetés. Les joueurs de 13 à 17 ans voient une explication
+supplémentaire avant d’acheter.</p>
+
+<h3 id="analytics">Mesure d’audience dans l’application — uniquement avec votre consentement</h3>
+<p>Le jeu peut envoyer des événements d’utilisation, comme « écran de progression ouvert », avec la version
+de l’application, la plateforme et un numéro de session qui change à chaque lancement, <strong>uniquement si
+vous l’autorisez</strong>. La question apparaît dans l’application, et vous pouvez modifier votre réponse à
+tout moment sous <strong>Réglages → Confidentialité → Aidez-nous à améliorer le jeu</strong>. Ces événements
+sont envoyés à nos propres serveurs. Votre nom, votre adresse IP, votre identifiant publicitaire, tout ce que
+vous saisissez et les dominos de votre main ne figurent jamais dans un événement de mesure d’audience. Nous
+conservons votre réponse, la version du texte pour laquelle elle a été donnée et sa date, afin de la
+respecter et de pouvoir la prouver.</p>
+<p>Sur Android, avec la <strong>même autorisation</strong>, Google Analytics for Firebase (Google LLC,
+agissant pour notre compte en tant que sous-traitant) mesure aussi l’utilisation de l’application : des
+événements automatiques comme l’ouverture de l’application, les sessions et la durée d’utilisation, le modèle
+de l’appareil, le système d’exploitation et la version de l’application, un numéro aléatoire pour
+l’installation, et une localisation approximative (pays, ville) déduite de l’adresse IP. Aucun identifiant
+publicitaire n’est collecté et rien de tout cela n’est utilisé à des fins publicitaires. Si vous ne
+l’autorisez pas, ou si vous retirez votre autorisation, rien n’est envoyé à Firebase. Rien n’est envoyé pour
+les joueurs de 13 à 17 ans.</p>
+<p>Par ailleurs, nos serveurs comptabilisent des événements qui s’y produisent déjà, comme « adversaire
+trouvé » et « partie terminée », pour mesurer le fonctionnement du service (nombre de parties, temps
+d’attente). Si vous refusez la mesure d’audience, ou si vous supprimez votre compte, ces enregistrements sont
+conservés sans votre numéro de joueur.</p>
+
+<h3 id="crash">Rapports de plantage — uniquement avec votre autorisation</h3>
+<p>Si vous activez <strong>Réglages → Confidentialité → Rapports de plantage</strong> (désactivé au départ), un
+rapport technique est envoyé à Google Firebase Crashlytics (Google LLC, sous-traitant) lorsque l’application
+plante, afin que nous puissions trouver le problème : la trace de l’erreur, le modèle de l’appareil, le
+système d’exploitation et la version de l’application, et un numéro aléatoire pour l’installation. Le
+rapport ne contient ni votre nom, ni votre numéro de joueur, ni rien de ce que vous avez écrit, ni les
+dominos de votre main. La désactivation supprime les rapports qui n’ont pas encore été envoyés. Pour
+l’instant, les rapports de plantage ne sont envoyés que sur Android, et jamais pour les joueurs de 13 à 17
+ans.</p>
+
+<h3 id="ads">Publicités</h3>
+<p>Les publicités sont diffusées par <strong>Google AdMob</strong> (Google LLC et Google Ireland Limited) : une
+petite bannière dans les menus (écran d’accueil, profil, réglages), une publicité entre les parties (au plus
+une fois toutes les trois parties terminées, à au moins 3 minutes d’intervalle) et, lorsque l’application en
+propose une, une publicité récompensée que vous ne regardez que si vous le choisissez. <strong>Aucune
+publicité n’est affichée pendant une partie ni à l’ouverture de l’application.</strong></p>
+<p>AdMob traite l’identifiant publicitaire de votre appareil, votre adresse IP, des informations sur
+l’appareil et vos interactions avec les publicités pour afficher les publicités, limiter la fréquence à
+laquelle vous les voyez, les mesurer et prévenir la fraude. Votre identifiant publicitaire n’est utilisé pour
+des <strong>publicités personnalisées que si vous l’acceptez</strong> dans le formulaire de consentement de
+Google (Google User Messaging Platform), que le jeu affiche après votre première partie terminée lorsque la
+loi exige un choix (par exemple dans l’UE, au Royaume-Uni et dans certains États américains). Vous pouvez le
+rouvrir à tout moment sous <strong>Réglages → Confidentialité → Choix publicitaires</strong> pour donner ou
+retirer votre consentement. Si vous n’acceptez pas, vous voyez toujours des publicités, mais elles ne sont pas
+personnalisées. Dans les pays où aucun choix n’est demandé (dont la Turquie), les publicités sont pour
+l’instant toujours non personnalisées. Les joueurs de 13 à 17 ans ne reçoivent que des publicités non
+personnalisées, et le réseau publicitaire est informé que le joueur est mineur. Votre identifiant publicitaire
+ne parvient jamais à nos serveurs ni à nos outils de mesure d’audience.</p>
+<p><strong>Publicités récompensées.</strong> Vous pouvez choisir d’en regarder une pour recharger vos Akçe
+lorsqu’ils ne suffisent plus pour la plus petite table, ou, après une partie perdue, pour récupérer la moitié
+de votre droit d’entrée. Avant la publicité, notre serveur crée un numéro de récompense aléatoire à usage
+unique, que l’application transmet à AdMob avec la publicité. Une fois la publicité regardée, le serveur de Google
+envoie à notre serveur un message signé par Google contenant ce numéro, et ce n’est qu’alors que les Akçe
+sont ajoutés. Le numéro de récompense n’est pas votre numéro de joueur et n’apprend rien à Google sur
+vous.</p>
+<p>L’utilisation que Google fait lui-même des données est décrite dans la page
+<a href="https://policies.google.com/technologies/partner-sites">Comment Google utilise les informations des
+sites ou applications qui utilisent ses services</a>.</p>
+
+<h3>Enregistrements techniques</h3>
+<ul>
+  <li><strong>Adresse IP.</strong> Nos serveurs d’application ne l’utilisent qu’en mémoire : pour répondre à
+  la requête et, pendant une heure au maximum, comme clé d’un compteur de limitation de débit qui protège le
+  service contre les abus. Elle n’est jamais écrite dans notre base de données ni rattachée à votre
+  compte.</li>
+  <li><strong>Journaux de périphérie.</strong> La couche réseau placée devant nos serveurs conserve des
+  journaux d’accès contenant l’adresse IP et la chaîne d’identification de l’application (user-agent) pendant
+  <strong>7 jours</strong>, pour la sécurité et l’analyse des pannes, puis les supprime.</li>
+  <li><strong>Journaux de surveillance.</strong> Les journaux d’erreurs et de surveillance de nos serveurs
+  peuvent contenir un numéro de joueur, jamais de noms ni de clés de session, et sont conservés
+  <strong>14 jours</strong>.</li>
+  <li><strong>Version de l’application.</strong> Envoyée avec chaque requête afin que le serveur puisse
+  demander à une application obsolète de se mettre à jour.</li>
+  <li><strong>Sauvegardes.</strong> Les sauvegardes de notre base de données sont conservées
+  <strong>16 jours</strong> au maximum.</li>
+</ul>
+
+<h3>Ce qui reste sur votre téléphone</h3>
+<p>Votre clé de session (dans le stockage sécurisé d’Android), vos réglages de son, de vibration et de thème,
+les astuces que vous avez déjà vues, le score cible que vous avez choisi en dernier, votre réponse à l’écran
+d’âge, et les choix que vous avez faits dans le formulaire de consentement publicitaire de Google
+(conservés sur le téléphone par la bibliothèque de consentement de Google). Le jeu lit la langue de votre
+téléphone pour afficher l’interface dans cette langue. Il ne demande l’accès à l’appareil photo ou à vos
+photos que si vous choisissez de définir une photo de profil, demande l’autorisation d’afficher des
+notifications (à partir de la version 1.0.3, sur Android 13 et versions ultérieures), et ne demande aucune
+autorisation de localisation, de contacts ou de micro. À partir de la version 1.0.2, rien de tout cela n’est
+copié dans la sauvegarde cloud d’Android ni sur un nouveau téléphone : le jeu désactive la sauvegarde
+d’Android, de sorte que la désinstallation du jeu supprime tout.</p>
+
+<h2>Ce que nous ne collectons pas</h2>
+<p>Adresse e-mail, numéro de téléphone, nom réel, adresse postale, localisation précise (GPS), contacts de
+votre téléphone, vos photos et fichiers (hormis une photo de profil que vous choisissez), enregistrements
+vocaux, données de paiement, historique de navigation. Nous ne collectons pas votre identifiant publicitaire
+sur nos serveurs. Nous ne traitons pas de catégories particulières de données personnelles, comme les données
+de santé.</p>
+
+<h2>Ce que voient les autres joueurs</h2>
+<ul>
+  <li><strong>À la table :</strong> votre nom affiché, votre photo de profil ou votre avatar, le drapeau de
+  votre pays, vos coups (jamais votre main), les messages rapides que vous envoyez, et le résultat.</li>
+  <li><strong>Tout le monde :</strong> votre nom affiché, votre photo de profil ou votre avatar, votre pays et
+  votre rang dans les classements et dans les listes d’amis. Une photo de profil est <strong>visible par les
+  autres joueurs une fois qu’elle a passé la vérification automatique</strong> (voir
+  <a href="#photo-check">Vérification des photos de profil</a>) ; vous pouvez la supprimer à tout moment
+  depuis votre profil. Les autres joueurs peuvent signaler une photo qu’ils jugent inappropriée, et notre
+  équipe peut la masquer ou la supprimer.</li>
+  <li><strong>Vos amis :</strong> si vous êtes en ligne ou en partie, sauf si vous désactivez cette
+  option.</li>
+  <li><strong>Les joueurs que vous avez rencontrés récemment, et toute personne qui connaît votre identifiant
+  de joueur :</strong> peuvent vous envoyer une demande d’ami.</li>
+</ul>
+
+<h2>Bots</h2>
+<p>Lorsqu’aucun adversaire adapté n’est trouvé, ou à l’entraînement, vous pouvez jouer contre des adversaires
+contrôlés par l’ordinateur (bots). Les bots sont <strong>toujours signalés par la mention BOT</strong> à côté de
+leur nom et sur l’écran de fin de partie ; il n’y a pas de bots cachés. Les profils des bots sont inventés et
+n’appartiennent pas à de vraies personnes.</p>
+
+<h2>Finalités et bases légales</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Finalité</th><th>KVKK</th><th>RGPD</th></tr></thead>
+  <tbody>
+    <tr><td>Création et gestion de votre compte, parties, appariement, cotes, classements, photo de profil,
+    amis, invitations et messages rapides ; réponse aux demandes d’assistance</td>
+    <td>Art. 5(2)(c) — exécution du contrat</td><td>Art. 6(1)(b) — contrat</td></tr>
+    <tr><td>Votre solde d’Akçe et son historique, droits d’entrée et versements aux gagnants, cadeau
+    du jour, récompenses des annonces que vous avez choisi de regarder</td>
+    <td>Art. 5(2)(c) — exécution du contrat</td><td>Art. 6(1)(b) — contrat</td></tr>
+    <tr><td>Notifications concernant vos parties et les invitations de vos amis</td>
+    <td>Art. 5(2)(c) — exécution du contrat</td><td>Art. 6(1)(b) — contrat</td></tr>
+    <tr><td>Notifications d’annonces (18 ans et plus ; vous pouvez les désactiver)</td>
+    <td>Art. 5(2)(f) — intérêt légitime</td><td>Art. 6(1)(f) — intérêt légitime</td></tr>
+    <tr><td>Vente et fourniture du Pack sans publicité, remboursements ; conservation des enregistrements
+    d’achat</td>
+    <td>Art. 5(2)(c) ; pour la conservation des enregistrements, art. 5(2)(ç) — obligation légale</td><td>Art.
+    6(1)(b) ; pour la conservation des enregistrements, art. 6(1)(c) — obligation légale</td></tr>
+    <tr><td>Vérification automatique des photos de profil ; signalement des contenus soupçonnés d’abus sexuels
+    sur enfants et leur conservation comme preuve</td>
+    <td>Art. 5(2)(f) ; pour les contenus illicites, art. 5(2)(ç)</td><td>Art. 6(1)(f) ; pour les contenus
+    illicites, art. 6(1)(c)</td></tr>
+    <tr><td>Fair-play, prévention de la triche et des abus, sécurité, journaux de périphérie et de
+    surveillance, historique des noms, signalements et modération, traces des décisions de l’équipe</td>
+    <td>Art. 5(2)(f) — intérêt légitime</td><td>Art. 6(1)(f) — intérêt légitime</td></tr>
+    <tr><td>Estimation de votre pays à partir de votre adresse IP</td>
+    <td>Art. 5(2)(f) — intérêt légitime</td><td>Art. 6(1)(f) — intérêt légitime</td></tr>
+    <tr><td>Mesure d’audience dans l’application, y compris Google Analytics for Firebase</td>
+    <td>Art. 5(1) — consentement explicite</td><td>Art. 6(1)(a) — consentement</td></tr>
+    <tr><td>Rapports de plantage (Firebase Crashlytics)</td>
+    <td>Art. 5(1) — consentement explicite</td><td>Art. 6(1)(a) — consentement</td></tr>
+    <tr><td>Publicités non personnalisées, limitation de leur fréquence d’affichage, prévention de la fraude
+    publicitaire</td>
+    <td>Art. 5(2)(f) — intérêt légitime</td><td>Art. 6(1)(f) — intérêt légitime</td></tr>
+    <tr><td>Publicités personnalisées</td>
+    <td>Art. 5(1) — consentement explicite</td><td>Art. 6(1)(a) — consentement</td></tr>
+    <tr><td>Comptages de fonctionnement côté serveur</td>
+    <td>Art. 5(2)(f) — intérêt légitime</td><td>Art. 6(1)(f) — intérêt légitime</td></tr>
+    <tr><td>Enregistrements conservés après la suppression d’un compte (voir <a href="#retention">Durée de
+    conservation des données</a>)</td>
+    <td>Art. 5(2)(f) ; pour les décisions et les litiges, également art. 5(2)(e)</td><td>Art. 6(1)(f) ;
+    art. 17(3)(e)</td></tr>
+    <tr><td>Constatation, exercice ou défense de droits en justice ; demandes des autorités</td>
+    <td>Art. 5(2)(ç) et (e)</td><td>Art. 6(1)(c) et (f)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Nos intérêts légitimes sont de garantir des parties équitables et un service sécurisé, de protéger les
+joueurs contre le harcèlement et la triche, de comprendre de manière agrégée le bon fonctionnement du
+service, de financer un jeu gratuit grâce à la publicité, et de préserver l’intégrité des historiques de
+parties des autres joueurs. Vous pouvez vous opposer à ce traitement (voir <a href="#rights">Vos droits</a>).</p>
+
+<h2>Qui reçoit les données, et où elles sont stockées</h2>
+<p>Nous <strong>ne vendons pas</strong> vos données personnelles contre de l’argent.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Destinataire</th><th>Quelles données</th><th>Où</th></tr></thead>
+  <tbody>
+    <tr><td>Hetzner Online GmbH — hébergement et stockage, agissant pour notre compte en tant que
+    sous-traitant</td>
+    <td>Toutes les données sur nos serveurs, y compris les photos de profil</td><td>Allemagne (UE)</td></tr>
+    <tr><td>Google, Apple, Meta (Facebook), X — uniquement si vous vous connectez avec eux</td>
+    <td>Nous n’envoyons aucune donnée de jeu. Nous vérifions le jeton de connexion qu’ils émettent ; pour
+    Facebook et X, nous leur demandons de le confirmer. Si vous choisissez d’utiliser la photo de ce compte,
+    nous la téléchargeons une fois auprès d’eux</td>
+    <td>Selon le fournisseur</td></tr>
+    <tr><td>Google AdMob et les partenaires publicitaires de Google — responsables du traitement
+    indépendants</td>
+    <td>Identifiant publicitaire, adresse IP, informations sur l’appareil, interactions avec les publicités ;
+    vos choix de consentement ; pour une publicité récompensée, le numéro de récompense aléatoire à usage
+    unique</td>
+    <td>États-Unis et autres pays</td></tr>
+    <tr><td>Google Play — la boutique depuis laquelle vous avez installé le jeu, responsable du traitement
+    indépendant</td>
+    <td>Lorsque le jeu vérifie s’il existe une mise à jour (à partir de la version 1.0.2), Google Play y répond
+    sur votre téléphone selon les propres conditions de Google ; nous ne recevons rien de cette
+    vérification</td>
+    <td>États-Unis et autres pays</td></tr>
+    <tr><td>Google Play Billing — le paiement du Pack sans publicité, encaissé par Google en tant que
+    responsable du traitement indépendant (à partir de la version 1.0.3)</td>
+    <td>Google encaisse votre paiement selon ses propres conditions. Notre serveur demande à Google Play de
+    confirmer un achat et de nous informer des remboursements ; le jeu transmet à Google un code de compte
+    aléatoire, et non votre numéro de joueur</td>
+    <td>États-Unis et autres pays</td></tr>
+    <tr><td>Google Firebase Cloud Messaging — sous-traitant, uniquement si vous autorisez les notifications (à
+    partir de la version 1.0.3)</td>
+    <td>L’adresse de notification et l’identifiant d’installation que Google attribue à votre téléphone à cet
+    effet, le texte et le type de la notification</td><td>États-Unis et autres pays</td></tr>
+    <tr><td>Google Firebase Crashlytics — sous-traitant, uniquement avec votre autorisation (Android)</td>
+    <td>Rapports de plantage</td><td>États-Unis</td></tr>
+    <tr><td>Google Analytics for Firebase — sous-traitant, uniquement avec votre autorisation (Android)</td>
+    <td>Événements d’utilisation de l’application, informations sur l’appareil, numéro d’installation,
+    localisation approximative issue de l’adresse IP</td>
+    <td>États-Unis</td></tr>
+    <tr><td>Autorités et juridictions compétentes</td><td>Ce que la loi exige</td><td>Turquie ou le pays
+    concerné</td></tr>
+  </tbody>
+</table>
+</div>
+<p><strong>Transfert à l’étranger (KVKK).</strong> Nos serveurs se trouvent en Allemagne : les données des
+joueurs en Turquie sont donc transférées à l’étranger. Ce transfert est effectué en vertu de l’article 9 de la
+KVKK sur la base d’un contrat type conclu avec notre hébergeur, notifié au Conseil turc de protection des
+données personnelles comme l’exige la loi, et il en va de même pour les services Google ci-dessus. Pour les
+joueurs dans l’UE, les données sur nos serveurs restent dans l’UE ; les transferts vers Google aux États-Unis
+reposent sur le cadre de protection des données UE–États-Unis (EU–US Data Privacy Framework) et/ou sur les
+clauses contractuelles types de la Commission européenne. Vous pouvez demander une copie de ces garanties à
+l’adresse indiquée dans <a href="#contact">Contact</a>.</p>
+
+<h2 id="retention">Durée de conservation des données</h2>
+<p>Les durées de conservation sont appliquées automatiquement. À la fin d’une durée, les données sont
+<strong>supprimées</strong>, <strong>anonymisées</strong> (tout numéro de joueur et tout ce qui pourrait
+permettre de vous distinguer sont supprimés), ou conservées <strong>sans votre nom</strong> : votre nom et vos
+comptes associés sont supprimés et l’enregistrement n’est conservé que sous un numéro de joueur aléatoire. Un
+enregistrement ainsi conservé sans votre nom reste une donnée personnelle.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Données</th><th>Conservation</th><th>Ensuite</th></tr></thead>
+  <tbody>
+    <tr><td>Compte et profil</td><td>Tant que votre compte existe</td>
+    <td>Supprimés lors de la suppression du compte (voir <a href="#deletion">Supprimer votre compte</a>)</td></tr>
+    <tr><td>Compte invité inutilisé pendant longtemps</td><td>24 mois après la dernière utilisation</td>
+    <td>Supprimé comme si vous l’aviez supprimé vous-même</td></tr>
+    <tr><td>Photo de profil</td><td>Jusqu’à ce que vous la supprimiez ou la changiez, que notre équipe la
+    supprime ou que le compte soit supprimé</td><td>Supprimée en quelques minutes ; disparaît des sauvegardes à
+    leur expiration</td></tr>
+    <tr><td>Résultats de la vérification des photos et décisions de l’équipe concernant une photo</td><td>Tant
+    que la photo, ou le compte, existe</td><td>Supprimés</td></tr>
+    <tr><td>Image signalée aux autorités comme contenu soupçonné d’abus sexuel sur enfant</td><td>Comme
+    preuve, sans être montrée à personne, aussi longtemps que la loi l’exige (au moins 1 an), même après la
+    suppression du compte</td><td>Supprimée</td></tr>
+    <tr><td>Enregistrement d’appareil et adresse de notification</td><td>Jusqu’à ce qu’elle cesse de
+    fonctionner, 60 jours sans renouvellement, votre déconnexion ou le retrait de l’autorisation</td><td>Supprimés
+    immédiatement</td></tr>
+    <tr><td>Enregistrements de notifications (quelle notification a été envoyée et quand)</td><td>30 jours</td><td>Supprimés</td></tr>
+    <tr><td>Enregistrements d’achat</td><td>Aussi longtemps que l’exige la loi sur les registres financiers,
+    10 ans au maximum</td><td>Après la suppression du compte, conservés sans votre nom ; supprimés à la fin de la
+    durée</td></tr>
+    <tr><td>Enregistrements des sessions terminées</td><td>Jusqu’à 30 jours après leur fin</td><td>Supprimés</td></tr>
+    <tr><td>Historique des noms</td><td>Jusqu’à 180 jours</td><td>Supprimé</td></tr>
+    <tr><td>Résultats des parties, statistiques, cote</td><td>Tant que votre compte existe</td>
+    <td>Après la suppression du compte, conservés sans votre nom</td></tr>
+    <tr><td>Journal des coups des parties</td><td>Jusqu’à 2 ans</td><td>Conservé sans votre nom</td></tr>
+    <tr><td>Historique des Akçe et enregistrements de publicités récompensées</td><td>Tant que votre compte
+    existe, puis aussi longtemps que l’exige la loi sur les registres financiers, 10 ans au maximum</td><td>Après
+    la suppression du compte, conservés sans votre nom ; supprimés à la fin de la durée</td></tr>
+    <tr><td>Enregistrements d’appariement</td><td>90 jours</td><td>Supprimés</td></tr>
+    <tr><td>Compteurs de fair-play</td><td>30 jours après la fin de la dernière attente</td><td>Supprimés</td></tr>
+    <tr><td>Amis, blocages, paramètre de visibilité</td><td>Tant que votre compte existe</td><td>Supprimés avec le compte</td></tr>
+    <tr><td>Demandes d’ami</td><td>30 jours après la réponse ou l’expiration</td><td>Supprimées</td></tr>
+    <tr><td>Invitations</td><td>7 jours après l’expiration</td><td>Supprimées</td></tr>
+    <tr><td>Joueurs récents, enregistrements de messages rapides</td><td>30 jours</td>
+    <td>Supprimés, sauf les copies jointes à un signalement comme preuve</td></tr>
+    <tr><td>Signalements</td><td>1 an</td><td>Numéros de joueur et preuves supprimés ; la catégorie, l’issue et
+    le numéro de la partie sont conservés</td></tr>
+    <tr><td>Demandes d’assistance et réponses</td><td>365 jours après la dernière modification d’une demande
+    traitée ou clôturée</td><td>Supprimées ; supprimées immédiatement si vous supprimez votre compte</td></tr>
+    <tr><td>Traces des décisions de l’équipe (suspensions, bannissements, actions d’assistance)</td><td>Jusqu’à 5 ans</td><td>Supprimées</td></tr>
+    <tr><td>Événements de mesure d’audience dans l’application</td><td>13 mois</td><td>Supprimés</td></tr>
+    <tr><td>Votre réponse concernant la mesure d’audience</td><td>Tant que votre compte existe</td><td>Supprimée avec le compte</td></tr>
+    <tr><td>Événements Google Analytics for Firebase</td><td>Jusqu’à 14 mois</td><td>Supprimés par Google</td></tr>
+    <tr><td>Rapports de plantage (Crashlytics)</td><td>90 jours</td><td>Supprimés par Google</td></tr>
+    <tr><td>Journaux de périphérie (adresse IP, user-agent)</td><td>7 jours</td><td>Supprimés</td></tr>
+    <tr><td>Journaux de surveillance</td><td>14 jours</td><td>Supprimés</td></tr>
+    <tr><td>Sauvegardes de la base de données</td><td>Jusqu’à 16 jours</td><td>Les données supprimées disparaissent des sauvegardes à leur expiration</td></tr>
+    <tr><td>Liste des comptes supprimés — le numéro aléatoire, le type de compte, les dates de création, de
+    dernière utilisation et de suppression, avec un texte de remplacement fixe à la place du nom</td><td>Indéfiniment</td>
+    <td>Conservée pour que des messages système retardés ne puissent pas recréer un compte supprimé, et pour
+    que les historiques de parties conservés sans nom restent cohérents</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="deletion">Supprimer votre compte</h2>
+<p>Vous pouvez supprimer votre compte depuis l’application : <strong>Réglages → Compte → Supprimer le
+compte</strong>. Votre compte est immédiatement gelé, puis supprimé au bout de <strong>14 jours</strong> ;
+pendant ces 14 jours, vous pouvez ouvrir l’application et toucher <strong>Annuler la suppression</strong>, et
+tout redevient comme avant. Vous pouvez aussi demander la suppression par e-mail, sans l’application. Les
+instructions pas à pas, ainsi que la liste complète de ce qui est supprimé et de ce qui est conservé, se
+trouvent sur la <a href="/tabula-domino/delete-account/fr/">page de suppression du compte</a>.</p>
+<ul>
+  <li><strong>Supprimés :</strong> votre nom affiché (y compris les copies dans les enregistrements des
+  parties), votre identifiant de joueur, votre choix d’avatar, votre photo de profil, vos connexions
+  associées, vos sessions, votre historique des noms, vos amis, demandes, blocages et invitations, vos
+  enregistrements de messages rapides et d’appariement, vos demandes d’assistance, votre réponse concernant la
+  mesure d’audience, vos enregistrements d’appareil et vos réglages de notification. Votre solde d’Akçe est
+  clôturé et ne peut pas être rétabli.</li>
+  <li><strong>Conservés sans votre nom</strong>, sous un simple numéro aléatoire : les enregistrements et
+  journaux des coups des parties (ce sont aussi les historiques des autres joueurs), les statistiques et les
+  totaux de cote, votre historique d’Akçe, les enregistrements d’achat et les traces des décisions de
+  l’équipe, pendant les durées indiquées ci-dessus. Une image conservée comme preuve pour les autorités (voir
+  <a href="#photo-check">Vérification des photos de profil</a>) est conservée pendant la durée exigée par la
+  loi.</li>
+  <li><strong>Numéro de joueur également supprimé :</strong> événements de mesure d’audience et comptages
+  côté serveur.</li>
+  <li>Un signalement vous concernant est conservé jusqu’à la fin de sa durée, votre numéro de joueur étant
+  remplacé par un nouveau numéro qui ne permet pas de remonter jusqu’à vous.</li>
+  <li>La suppression atteint nos sauvegardes à leur expiration, dans un délai de 16 jours.</li>
+  <li>Les rapports de plantage et les événements d’utilisation Firebase ne sont pas liés à votre numéro de
+  joueur ; ils expirent chez Google au bout de 90 jours et de 14 mois respectivement. Les données
+  publicitaires sont conservées par Google selon sa propre politique.</li>
+</ul>
+
+<h2>Enfants et mode protégé</h2>
+<p>Le jeu ne s’adresse pas aux enfants. Vous devez avoir <strong>au moins 13 ans</strong> pour jouer. Les
+joueurs de <strong>13 à 17 ans</strong> jouent en <strong>mode protégé</strong> : uniquement des publicités
+non personnalisées, le réseau publicitaire étant informé que le joueur est mineur ; aucune demande de
+consentement pour la publicité, la mesure d’audience ou les rapports de plantage, de sorte qu’aucune donnée de
+mesure d’audience dans l’application, aucune donnée Firebase et aucun rapport de plantage ne sont envoyés ;
+aucune notification d’annonces ; une vérification plus stricte des photos de profil ; et une explication
+supplémentaire avant un achat. Nous n’utilisons les informations d’âge que vous fournissez dans l’application
+que pour appliquer ces règles. Si nous apprenons qu’un joueur de moins de 13 ans a un compte, nous le
+supprimons. Si vous pensez qu’un enfant de moins de 13 ans utilise le jeu, écrivez à l’adresse
+ci-dessous.</p>
+
+<h2>Sécurité</h2>
+<ul>
+  <li>Tout le trafic entre l’application et nos serveurs est chiffré (TLS).</li>
+  <li>Il n’y a pas de mot de passe. Votre clé de session est conservée dans le stockage sécurisé de votre
+  téléphone ; notre serveur n’en conserve que l’empreinte (hash), et les clés de session ne sont jamais
+  écrites dans les journaux.</li>
+  <li>Votre nom affiché et vos connexions associées sont conservés dans une partie distincte de la base de
+  données ; les autres parties ne connaissent que votre numéro de joueur.</li>
+  <li>Votre main et les autres informations cachées restent sur le serveur ; votre téléphone ne reçoit que ce
+  que vous êtes autorisé à voir.</li>
+</ul>
+<p>Aucun système n’est parfaitement sûr. Si une violation de données vous concerne, nous en informerons les
+autorités et vous-même comme l’exige la loi.</p>
+
+<h2>Décisions automatisées</h2>
+<ul>
+  <li><strong>L’appariement</strong> choisit automatiquement votre adversaire, en fonction de la cote.</li>
+  <li>Si vous annulez de nombreuses recherches en peu de temps, ou si vous ne rejoignez pas les parties dans
+  lesquelles vous avez été placé, l’appariement peut vous faire <strong>patienter un court moment</strong>
+  avant de pouvoir chercher à nouveau. Ce n’est pas une sanction ; vous pouvez toujours jouer à des tables
+  privées, et notre équipe peut lever cette attente.</li>
+  <li><strong>Vérification des photos de profil :</strong> une nouvelle photo peut être refusée
+  automatiquement, ou montrée uniquement à vous jusqu’à ce qu’un membre de notre équipe l’ait examinée. Vous
+  pouvez contester cette décision dans l’application, sous <strong>Réglages → Compte → Assistance et
+  recours</strong>, et une personne l’examine.</li>
+  <li><strong>Les signalements ne déclenchent jamais de sanction automatique.</strong> Chaque suspension ou
+  bannissement est décidé par une personne de notre équipe, et vous pouvez former un recours dans
+  l’application.</li>
+</ul>
+
+<h2 id="rights">Vos droits</h2>
+<p><strong>Votre droit d’opposition.</strong> Vous pouvez vous opposer à tout moment, pour des raisons tenant
+à votre situation particulière, au traitement fondé sur notre intérêt légitime. Nous y mettons alors fin, sauf
+s’il existe des motifs légitimes impérieux qui prévalent sur vos intérêts ou si les données sont nécessaires
+à la constatation, à l’exercice ou à la défense de droits en justice.</p>
+<p>En vertu de l’<strong>article 11 de la KVKK</strong>, vous avez le droit de savoir si vos données
+personnelles sont traitées et de demander des informations à ce sujet ; de connaître la finalité du
+traitement et de savoir si elles sont utilisées conformément à cette finalité ; de connaître les tiers, en
+Turquie ou à l’étranger, auxquels elles sont transférées ; de demander la rectification de données
+incomplètes ou inexactes ; de demander leur suppression ou leur destruction dans les conditions de
+l’article 7 ; de demander que la rectification ou la suppression soit notifiée à ces tiers ; de vous opposer
+à un résultat qui vous est défavorable découlant exclusivement d’une analyse automatisée ; et de demander
+réparation du préjudice causé par un traitement illicite.</p>
+<p>En vertu du <strong>RGPD</strong>, les joueurs dans l’UE disposent des droits d’accès, de rectification,
+d’effacement, de limitation, de portabilité des données et d’opposition, du droit de retirer leur
+consentement à tout moment sans que cela affecte le traitement antérieur, et du droit d’introduire une
+réclamation auprès de l’autorité de protection des données du pays où ils résident.</p>
+<p>Comment les exercer :</p>
+<ul>
+  <li><strong>Dans l’application :</strong> modifiez votre nom affiché et votre photo ; supprimez votre
+  compte ; activez ou désactivez la mesure d’audience et les rapports de plantage ; donnez ou retirez votre
+  consentement publicitaire sous <strong>Réglages → Confidentialité → Choix publicitaires</strong> ;
+  téléchargez une copie de vos données sous <strong>Réglages → Compte → Compte et profil → Confidentialité et
+  données</strong> lorsque l’application le propose.</li>
+  <li><strong>Par e-mail</strong> à l’adresse ci-dessous, depuis n’importe quelle adresse. Indiquez votre
+  <strong>identifiant de joueur</strong>, affiché sous <strong>Réglages → Compte → Compte et profil</strong>.
+  Aucune adresse e-mail n’est associée à un compte invité : avant d’agir, nous vérifions donc que le compte
+  vous appartient, par exemple en vous demandant d’envoyer un code court via le formulaire d’assistance de
+  l’application, ou de vous connecter avec le compte que vous avez associé. Nous ne demandons jamais de mot de
+  passe.</li>
+  <li>Nous répondons gratuitement dans un délai de <strong>30 jours</strong> au plus.</li>
+  <li>Si votre demande est rejetée, si la réponse est insuffisante ou si nous ne répondons pas à temps, vous
+  pouvez adresser une réclamation au Conseil turc de protection des données personnelles (Kişisel Verileri
+  Koruma Kurulu) ou, dans l’UE, à votre autorité nationale de protection des données.</li>
+</ul>
+<p><strong>États américains (Californie et États dotés de lois similaires) :</strong> vous avez le droit de
+savoir, de supprimer et de corriger, ainsi que de refuser la « vente ou le partage » de vos informations
+personnelles. Nous ne vendons pas vos données contre de l’argent, mais la publicité personnalisée est
+considérée comme un « partage » par certaines lois d’État ; vous pouvez la désactiver sous
+<strong>Réglages → Confidentialité → Choix publicitaires</strong>. <strong>Brésil :</strong> vous disposez des
+droits prévus à l’article 18 de la LGPD et pouvez adresser une réclamation à l’ANPD.</p>
+
+<h2>Modifications de cette politique</h2>
+<p>Chaque version de cette politique porte un numéro et une date d’entrée en vigueur. Lorsque les pratiques
+du jeu en matière de données changent, par exemple lorsque des achats ou des notifications sont ajoutés,
+cette page est mise à jour en premier et la date de « dernière mise à jour » en haut de page change. Les
+modifications importantes sont également annoncées dans le jeu. Si les questions relatives à la mesure
+d’audience, aux rapports de plantage ou à la publicité changent de manière importante, le jeu vous les pose à
+nouveau. La version 2 (17 octobre 2026) a ajouté les publicités Google AdMob, le formulaire de consentement de
+Google, Firebase Crashlytics et Google Analytics for Firebase. La version 3 (17 octobre 2026) a ajouté les
+Akçe, la monnaie du jeu qui se gagne uniquement, et les publicités récompensées confirmées par le serveur de
+Google, et précise qu’il n’existe encore ni société, ni adresse postale, ni représentant dans l’UE ou au
+Royaume-Uni. La version 4 (17 octobre 2026) ajoute les avis de mise à jour de Google Play et indique que le
+jeu ne conserve rien dans la sauvegarde cloud d’Android (les deux à partir de la version 1.0.2) ; les données
+collectées n’ont pas changé. La version 5 (17 octobre 2026) ajoute, à partir de la version 1.0.3, le Pack
+sans publicité acheté via Google Play et les notifications que vous autorisez, ainsi que la vérification
+automatique des nouvelles photos de profil sur nos propres serveurs, avec conservation de preuves pour les
+autorités lorsque la loi l’exige.</p>
+
+<h2 id="contact">Contact</h2>
+<p>Pour toute question sur cette politique, ou pour faire une demande relative à vos données :</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>BumuStudios, responsable du traitement pour Tabula Domino. Dans l’application, vous pouvez aussi nous
+  écrire sous <strong>Réglages → Compte → Assistance et recours</strong>.</p>
+</div>
+
+<footer>
+  Tabula Domino, BumuStudios — pas d’e-mail ni de nom réel ; un Pack sans publicité facultatif via Google
+  Play ; des publicités Google AdMob, personnalisées uniquement avec votre consentement. Cette politique
+  décrit le jeu depuis sa première version de test fermé.
+</footer>
+
+</main>
+</body>
+</html>

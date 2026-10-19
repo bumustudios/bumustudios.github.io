@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse Runner: juego de volar de un solo toque para Android</title>
+<meta name="description" content="Pulse Runner es un juego de volar de un toque para Android: mantén pulsado para subir y suelta para caer. 10 niveles, modo infinito, sin conexión y sin cuenta.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/pulserunner/es/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pulserunner/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pulserunner/tr/">
+<link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pulserunner/es/">
+<link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pulserunner/pt/">
+<link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pulserunner/hi/">
+<link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pulserunner/ar/">
+<link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pulserunner/de/">
+<link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pulserunner/fr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pulserunner/">
+<link rel="icon" type="image/png" href="/pulserunner/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/pulserunner/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="Pulse Runner: juego de volar de un solo toque para Android">
+<meta property="og:description" content="Pulse Runner es un juego de volar de un toque para Android: mantén pulsado para subir y suelta para caer. 10 niveles, modo infinito, sin conexión y sin cuenta.">
+<meta property="og:url" content="https://bumustudios.github.io/pulserunner/es/">
+<meta property="og:image" content="https://bumustudios.github.io/pulserunner/assets/feature-graphic-en.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-play-app" content="app-id=com.bumustudios.pulserunner">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://bumustudios.github.io/pulserunner/#app",
+   "name": "Pulse Runner",
+   "alternateName": "Pulse Runner: Escape",
+   "description": "Pulse Runner es un juego de volar de un toque para Android: mantén pulsado para subir y suelta para caer. 10 niveles, modo infinito, sin conexión y sin cuenta.",
+   "applicationCategory": "GameApplication",
+   "genre": "Arcade",
+   "operatingSystem": "Android 7.0 or later",
+   "url": "https://bumustudios.github.io/pulserunner/es/",
+   "image": "https://bumustudios.github.io/pulserunner/assets/icon-512.png",
+   "screenshot": [
+    "https://bumustudios.github.io/pulserunner/assets/en-01-hold-to-rise.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-02-six-kinds-of-obstacles.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-03-ten-levels.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-04-same-course-every-try.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-05-clear-it-open-the-next.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-06-endless-mode.webp"
+   ],
+   "inLanguage": "es",
+   "isAccessibleForFree": true,
+   "featureList": [
+    "Control de un toque: Mantén pulsado en cualquier parte de la pantalla para subir y suelta para caer. No hay más botones.",
+    "10 niveles, de fácil a extremo: Cada nivel es más rápido que el anterior y sus huecos son más estrechos.",
+    "Seis tipos de obstáculos: Muros, dientes, peines, sierras giratorias, huecos que se deslizan y ranuras estrechas llegan nivel a nivel.",
+    "El mismo recorrido en cada intento: Una vez que empieza el nivel, nada es aleatorio: el nivel en el que sigues fallando es uno que puedes aprender.",
+    "Modo infinito: Sin meta: el mundo se acelera hasta su ritmo máximo. Se guarda tu mejor distancia.",
+    "Funciona sin conexión: Todos los niveles y el modo infinito funcionan sin internet.",
+    "Sin cuenta: Sin registro ni correo. Tu progreso se queda en tu teléfono.",
+    "Sin suscripción: Gratis con anuncios. Una compra única quita todos los anuncios que no has pedido."
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "BumuStudios",
+    "url": "https://bumustudios.github.io/",
+    "email": "bumustudios@gmail.com"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://bumustudios.github.io/pulserunner/es/#faq",
+   "inLanguage": "es",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Cómo se juega a Pulse Runner?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Mantén pulsado en cualquier parte de la pantalla y la nave sube; suelta y cae. Llévala por el hueco de cada obstáculo sin tocar nada, tampoco los raíles de neón de arriba y abajo, y llega a la meta para superar el nivel. Cada nivel superado desbloquea el siguiente."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cuántos niveles tiene?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Diez, en cuatro escalones: los niveles 1-3 son fáciles, 4-6 normales, 7-8 difíciles y 9-10 extremos. Cada uno es más rápido y con huecos más estrechos, y por el camino se suman obstáculos nuevos. Además de los diez niveles está el modo infinito."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Un nivel es igual cada vez que lo juego?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Cada nivel se construye a partir de su propia semilla fija y nada es aleatorio una vez que despegas, así que es igual en cada intento y para todos los jugadores. La excepción es el modo infinito, que traza un recorrido nuevo en cada partida."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Algún consejo para un nivel que no consigo pasar?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Aprovecha los choques para aprender el recorrido, porque nunca cambia; tu mejor porcentaje te dice hasta dónde has llegado. Empieza a subir un poco antes del hueco, ya que la nave necesita una fracción de segundo para subir a toda potencia. Los toques cortos corrigen poco y las pulsaciones largas suben mucho, y los raíles de los bordes también cuentan como obstáculo."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Pulse Runner es gratis?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. El juego es gratis y se financia con anuncios: un banner en la pantalla de inicio y en la tarjeta de final de partida, de vez en cuando un anuncio a pantalla completa al pasar a otra partida (nunca dos en 45 segundos) y, a veces, uno al volver al juego después de salir. Ningún anuncio aparece mientras vuelas. No hay suscripción, sistema de energía ni cajas de botín."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo quito los anuncios?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "En Settings hay una compra única, Remove ads, que no es una suscripción. Quita para siempre los banners, los anuncios a pantalla completa y el anuncio al volver al juego. El anuncio opcional Keep flying sigue disponible y solo se reproduce cuando lo tocas."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Funciona sin conexión?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Los diez niveles y el modo infinito se juegan sin internet, también en modo avión. La conexión solo se usa para los anuncios de Google, Google Play (la compra y las actualizaciones) y las estadísticas de uso e informes de fallos que se envían a Firebase de Google. Sin conexión no hay anuncios, así que tampoco se ofrece la segunda oportunidad de Keep flying."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Se guarda mi progreso? ¿Pasa a un teléfono nuevo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Los niveles superados, tu mejor resultado en cada uno y tu mejor distancia en el modo infinito se guardan en el propio teléfono. La copia de seguridad de Android está desactivada para este juego, así que el progreso no se copia a Google Drive ni a un teléfono nuevo, y se borra si desinstalas el juego: en un teléfono nuevo empiezas otra vez desde el nivel 1. La compra para quitar los anuncios no se pierde, porque Google Play la restaura en la misma cuenta de Google."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Necesito una cuenta? ¿Qué datos recoge?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No hay cuenta ni inicio de sesión de ningún tipo. Tus partidas y tu progreso nunca se envían a ningún sitio. Lo que sí sale del teléfono son los datos que recogen los anuncios de Google y las estadísticas de uso e informes de fallos enviados a través de Firebase, sin nombre ni correo; la política de privacidad lo detalla todo."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿En qué idiomas está el juego?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Las pantallas del juego están en inglés y turco. Esta página y la ficha de Google Play están en español."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Se puede jugar en una tablet?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Pulse Runner funciona en tablets Android y allí también se juega en vertical, como en un teléfono; no tiene diseño horizontal."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿En qué teléfonos funciona? ¿Hay versión para iPhone?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "En cualquier teléfono con Android 7.0 o posterior. Pulse Runner es solo para Android; no hay versión para iPhone, iPad ni web."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#006d86;--accent-soft:#d9f5fb;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#2be4ff;--accent-soft:#12303d;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(0,150,190,.28)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.soon{display:inline-block;margin:0;padding:10px 16px;border-radius:12px;background:var(--accent-soft);color:var(--ink);font-weight:600}
+ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="Idioma">
+<a class="brand" href="/pulserunner/es/"><img src="/pulserunner/assets/icon-192.png" width="36" height="36" alt="">Pulse Runner</a>
+<ul class="langs">
+<li><a href="/pulserunner/" hreflang="en" lang="en">English</a></li>
+<li><a href="/pulserunner/tr/" hreflang="tr" lang="tr">Türkçe</a></li>
+<li><a href="/pulserunner/es/" hreflang="es" lang="es" aria-current="page">Español</a></li>
+<li><a href="/pulserunner/pt/" hreflang="pt" lang="pt">Português</a></li>
+<li><a href="/pulserunner/hi/" hreflang="hi" lang="hi">हिन्दी</a></li>
+<li><a href="/pulserunner/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></li>
+<li><a href="/pulserunner/de/" hreflang="de" lang="de">Deutsch</a></li>
+<li><a href="/pulserunner/fr/" hreflang="fr" lang="fr">Français</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>Mantén pulsado para subir, suelta para caer: un juego de neón de un toque</h1>
+<p class="lede">Pulse Runner es un arcade de neón que se juega con un dedo. Mantén pulsado en cualquier parte y tu nave sube; suelta y cae. Supera diez niveles cada vez más rápidos y estrechos, y luego descubre hasta dónde llegas en el modo infinito. Funciona sin conexión y sin cuenta.</p>
+<p class="soon">Próximamente en Google Play</p>
+<p class="note">Pulse Runner está en fase de prueba en Google Play y todavía no es público. Esta página enlazará al juego en cuanto lo sea.</p>
+</div>
+<img class="phone" src="/pulserunner/assets/en-01-hold-to-rise.webp" width="540" height="960" alt="Pulse Runner: la nave sube sobre una sierra giratoria entre los raíles de neón" fetchpriority="high" decoding="async">
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">Qué ofrece</h2>
+<ul class="facts">
+<li><b>Control de un toque</b><span>Mantén pulsado en cualquier parte de la pantalla para subir y suelta para caer. No hay más botones.</span></li>
+<li><b>10 niveles, de fácil a extremo</b><span>Cada nivel es más rápido que el anterior y sus huecos son más estrechos.</span></li>
+<li><b>Seis tipos de obstáculos</b><span>Muros, dientes, peines, sierras giratorias, huecos que se deslizan y ranuras estrechas llegan nivel a nivel.</span></li>
+<li><b>El mismo recorrido en cada intento</b><span>Una vez que empieza el nivel, nada es aleatorio: el nivel en el que sigues fallando es uno que puedes aprender.</span></li>
+<li><b>Modo infinito</b><span>Sin meta: el mundo se acelera hasta su ritmo máximo. Se guarda tu mejor distancia.</span></li>
+<li><b>Funciona sin conexión</b><span>Todos los niveles y el modo infinito funcionan sin internet.</span></li>
+<li><b>Sin cuenta</b><span>Sin registro ni correo. Tu progreso se queda en tu teléfono.</span></li>
+<li><b>Sin suscripción</b><span>Gratis con anuncios. Una compra única quita todos los anuncios que no has pedido.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">Cómo se juega</h2>
+<ol class="steps">
+<li>Toca <b>Fly</b> en la pantalla de inicio para jugar tu siguiente nivel, o elige uno en <b>Levels</b>. Nada se mueve hasta que tocas la pantalla por primera vez.</li>
+<li>Mantén pulsado en cualquier parte para subir y suelta para caer. La nave tarda una fracción de segundo en subir a toda potencia, así que empieza a subir un poco antes.</li>
+<li>Pasa por el hueco de cada obstáculo. Tocar cualquier cosa acaba con la partida, también los raíles de neón de arriba y abajo del pasillo.</li>
+<li>Llega a la meta para superar el nivel y abrir el siguiente. Si te estrellas, <b>Try again</b> te devuelve al mismo recorrido, y una vez por partida <b>Keep flying</b> te deja ver un anuncio breve para seguir desde donde chocaste.</li>
+</ol>
+<div class="shots"><img src="/pulserunner/assets/en-02-six-kinds-of-obstacles.webp" width="540" height="960" alt="Los seis tipos de obstáculos: muro, diente, peine, sierra, hueco deslizante y ranura estrecha" loading="lazy" decoding="async"><img src="/pulserunner/assets/en-04-same-course-every-try.webp" width="540" height="960" alt="Choque al 73 %, con Try again y el mejor resultado del nivel" loading="lazy" decoding="async"></div>
+</section>
+
+<section aria-labelledby="levels">
+<h2 id="levels">Diez niveles y modo infinito</h2>
+<ul class="plain">
+<li>Los niveles 1-3 son <b>Easy</b> (fácil), 4-6 <b>Normal</b>, 7-8 <b>Hard</b> (difícil) y 9-10 <b>Extreme</b> (extremo). Cada nivel es más rápido que el anterior y sus huecos son más estrechos.</li>
+<li>Los muros y los dientes están desde el nivel 1. Los peines llegan en el nivel 3, las sierras giratorias en el 5, los huecos que se deslizan en el 7 y las ranuras estrechas en el 9.</li>
+<li>Se guarda tu mejor porcentaje en cada nivel, así ves lo cerca que estás de la meta.</li>
+<li>El modo <b>Endless</b> (infinito) no tiene meta y cada partida traza un recorrido nuevo. Se acelera y se estrecha hasta llegar a su ritmo máximo, y se guarda tu mejor distancia.</li>
+</ul>
+<div class="shots"><img src="/pulserunner/assets/en-03-ten-levels.webp" width="540" height="960" alt="Lista de niveles: diez niveles de fácil a extremo, los seis primeros superados" loading="lazy" decoding="async"><img src="/pulserunner/assets/en-06-endless-mode.webp" width="540" height="960" alt="Partida infinita en 1080, con el récord de 1286 en la esquina" loading="lazy" decoding="async"></div>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">Preguntas frecuentes</h2>
+<div class="faq">
+<div><h3>¿Cómo se juega a Pulse Runner?</h3><p>Mantén pulsado en cualquier parte de la pantalla y la nave sube; suelta y cae. Llévala por el hueco de cada obstáculo sin tocar nada, tampoco los raíles de neón de arriba y abajo, y llega a la meta para superar el nivel. Cada nivel superado desbloquea el siguiente.</p></div>
+<div><h3>¿Cuántos niveles tiene?</h3><p>Diez, en cuatro escalones: los niveles 1-3 son fáciles, 4-6 normales, 7-8 difíciles y 9-10 extremos. Cada uno es más rápido y con huecos más estrechos, y por el camino se suman obstáculos nuevos. Además de los diez niveles está el modo infinito.</p></div>
+<div><h3>¿Un nivel es igual cada vez que lo juego?</h3><p>Sí. Cada nivel se construye a partir de su propia semilla fija y nada es aleatorio una vez que despegas, así que es igual en cada intento y para todos los jugadores. La excepción es el modo infinito, que traza un recorrido nuevo en cada partida.</p></div>
+<div><h3>¿Algún consejo para un nivel que no consigo pasar?</h3><p>Aprovecha los choques para aprender el recorrido, porque nunca cambia; tu mejor porcentaje te dice hasta dónde has llegado. Empieza a subir un poco antes del hueco, ya que la nave necesita una fracción de segundo para subir a toda potencia. Los toques cortos corrigen poco y las pulsaciones largas suben mucho, y los raíles de los bordes también cuentan como obstáculo.</p></div>
+<div><h3>¿Pulse Runner es gratis?</h3><p>Sí. El juego es gratis y se financia con anuncios: un banner en la pantalla de inicio y en la tarjeta de final de partida, de vez en cuando un anuncio a pantalla completa al pasar a otra partida (nunca dos en 45 segundos) y, a veces, uno al volver al juego después de salir. Ningún anuncio aparece mientras vuelas. No hay suscripción, sistema de energía ni cajas de botín.</p></div>
+<div><h3>¿Cómo quito los anuncios?</h3><p>En Settings hay una compra única, Remove ads, que no es una suscripción. Quita para siempre los banners, los anuncios a pantalla completa y el anuncio al volver al juego. El anuncio opcional Keep flying sigue disponible y solo se reproduce cuando lo tocas.</p></div>
+<div><h3>¿Funciona sin conexión?</h3><p>Sí. Los diez niveles y el modo infinito se juegan sin internet, también en modo avión. La conexión solo se usa para los anuncios de Google, Google Play (la compra y las actualizaciones) y las estadísticas de uso e informes de fallos que se envían a Firebase de Google. Sin conexión no hay anuncios, así que tampoco se ofrece la segunda oportunidad de Keep flying.</p></div>
+<div><h3>¿Se guarda mi progreso? ¿Pasa a un teléfono nuevo?</h3><p>Los niveles superados, tu mejor resultado en cada uno y tu mejor distancia en el modo infinito se guardan en el propio teléfono. La copia de seguridad de Android está desactivada para este juego, así que el progreso no se copia a Google Drive ni a un teléfono nuevo, y se borra si desinstalas el juego: en un teléfono nuevo empiezas otra vez desde el nivel 1. La compra para quitar los anuncios no se pierde, porque Google Play la restaura en la misma cuenta de Google.</p></div>
+<div><h3>¿Necesito una cuenta? ¿Qué datos recoge?</h3><p>No hay cuenta ni inicio de sesión de ningún tipo. Tus partidas y tu progreso nunca se envían a ningún sitio. Lo que sí sale del teléfono son los datos que recogen los anuncios de Google y las estadísticas de uso e informes de fallos enviados a través de Firebase, sin nombre ni correo; la política de privacidad lo detalla todo.</p></div>
+<div><h3>¿En qué idiomas está el juego?</h3><p>Las pantallas del juego están en inglés y turco. Esta página y la ficha de Google Play están en español.</p></div>
+<div><h3>¿Se puede jugar en una tablet?</h3><p>Sí. Pulse Runner funciona en tablets Android y allí también se juega en vertical, como en un teléfono; no tiene diseño horizontal.</p></div>
+<div><h3>¿En qué teléfonos funciona? ¿Hay versión para iPhone?</h3><p>En cualquier teléfono con Android 7.0 o posterior. Pulse Runner es solo para Android; no hay versión para iPhone, iPad ni web.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>Pulse Runner</p>
+<p class="soon">Próximamente en Google Play</p>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/pulserunner/privacy/">Política de privacidad (inglés)</a><a href="/">Apps de BumuStudios</a><a href="mailto:bumustudios@gmail.com">Contacto: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-10-19">2026-10-19</time></p>
+<p>Google Play y el logotipo de Google Play son marcas comerciales de Google LLC.</p>
+</footer>
+</body>
+</html>

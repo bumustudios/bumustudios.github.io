@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="hi" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulse Runner: Android के लिए एक टच वाला उड़ने का गेम</title>
+<meta name="description" content="Pulse Runner, Android के लिए एक टच वाला उड़ने का गेम है: दबाए रखें तो ऊपर, छोड़ें तो नीचे। 10 लेवल, एंडलेस मोड, ऑफ़लाइन चलता है और अकाउंट नहीं चाहिए।">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/pulserunner/hi/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pulserunner/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pulserunner/tr/">
+<link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pulserunner/es/">
+<link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pulserunner/pt/">
+<link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pulserunner/hi/">
+<link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pulserunner/ar/">
+<link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pulserunner/de/">
+<link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pulserunner/fr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pulserunner/">
+<link rel="icon" type="image/png" href="/pulserunner/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/pulserunner/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="Pulse Runner: Android के लिए एक टच वाला उड़ने का गेम">
+<meta property="og:description" content="Pulse Runner, Android के लिए एक टच वाला उड़ने का गेम है: दबाए रखें तो ऊपर, छोड़ें तो नीचे। 10 लेवल, एंडलेस मोड, ऑफ़लाइन चलता है और अकाउंट नहीं चाहिए।">
+<meta property="og:url" content="https://bumustudios.github.io/pulserunner/hi/">
+<meta property="og:image" content="https://bumustudios.github.io/pulserunner/assets/feature-graphic-en.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-play-app" content="app-id=com.bumustudios.pulserunner">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://bumustudios.github.io/pulserunner/#app",
+   "name": "Pulse Runner",
+   "alternateName": "Pulse Runner: Escape",
+   "description": "Pulse Runner, Android के लिए एक टच वाला उड़ने का गेम है: दबाए रखें तो ऊपर, छोड़ें तो नीचे। 10 लेवल, एंडलेस मोड, ऑफ़लाइन चलता है और अकाउंट नहीं चाहिए।",
+   "applicationCategory": "GameApplication",
+   "genre": "Arcade",
+   "operatingSystem": "Android 7.0 or later",
+   "url": "https://bumustudios.github.io/pulserunner/hi/",
+   "image": "https://bumustudios.github.io/pulserunner/assets/icon-512.png",
+   "screenshot": [
+    "https://bumustudios.github.io/pulserunner/assets/en-01-hold-to-rise.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-02-six-kinds-of-obstacles.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-03-ten-levels.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-04-same-course-every-try.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-05-clear-it-open-the-next.webp",
+    "https://bumustudios.github.io/pulserunner/assets/en-06-endless-mode.webp"
+   ],
+   "inLanguage": "hi",
+   "isAccessibleForFree": true,
+   "featureList": [
+    "एक टच से कंट्रोल: ऊपर जाने के लिए स्क्रीन पर कहीं भी दबाए रखें, नीचे आने के लिए छोड़ दें। कोई और बटन नहीं है।",
+    "10 लेवल, आसान से एक्सट्रीम तक: हर लेवल पिछले से तेज़ है, और उसकी खाली जगहें ज़्यादा संकरी हैं।",
+    "छह तरह की रुकावटें: दीवारें, दाँते, कंघियाँ, घूमती आरियाँ, खिसकती खाली जगहें और संकरी दरारें लेवल दर लेवल जुड़ती हैं।",
+    "हर कोशिश में वही रास्ता: लेवल शुरू होने के बाद कुछ भी रैंडम नहीं होता, इसलिए जिस लेवल में आप बार-बार हारते हैं, उसे सीख सकते हैं।",
+    "एंडलेस मोड: कोई फ़िनिश लाइन नहीं: दुनिया अपनी सबसे तेज़ रफ़्तार तक तेज़ होती जाती है। आपका सबसे लंबा रन सेव रहता है।",
+    "ऑफ़लाइन चलता है: सभी लेवल और एंडलेस मोड बिना इंटरनेट के चलते हैं।",
+    "कोई अकाउंट नहीं: न साइन अप, न ईमेल। आपकी प्रगति आपके फ़ोन पर ही रहती है।",
+    "कोई सब्सक्रिप्शन नहीं: विज्ञापनों के साथ मुफ़्त। एक बार की खरीद से वे सारे विज्ञापन हट जाते हैं जो आपने नहीं माँगे।"
+   ],
+   "publisher": {
+    "@type": "Organization",
+    "name": "BumuStudios",
+    "url": "https://bumustudios.github.io/",
+    "email": "bumustudios@gmail.com"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://bumustudios.github.io/pulserunner/hi/#faq",
+   "inLanguage": "hi",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Pulse Runner कैसे खेलते हैं?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "स्क्रीन पर कहीं भी दबाए रखें, जहाज़ ऊपर उठता है; छोड़ें, तो नीचे आता है। उसे किसी भी चीज़ को छुए बिना, ऊपर-नीचे की नियॉन रेलों समेत, हर रुकावट की खाली जगह से निकालें और लेवल पूरा करने के लिए फ़िनिश लाइन तक पहुँचें। हर पूरा किया गया लेवल अगला लेवल खोल देता है।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "इसमें कितने लेवल हैं?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "दस, चार चरणों में: लेवल 1-3 आसान, 4-6 नॉर्मल, 7-8 कठिन और 9-10 एक्सट्रीम। हर लेवल ज़्यादा तेज़ है और उसकी खाली जगहें ज़्यादा संकरी, और रास्ते में नई रुकावटें जुड़ती हैं। इन दस लेवल के अलावा एंडलेस मोड भी है।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "क्या हर बार खेलने पर लेवल वही रहता है?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "हाँ। हर लेवल अपने तय सीड से बनता है और उड़ान शुरू होने के बाद कुछ भी रैंडम नहीं होता, इसलिए वह हर कोशिश में और हर खिलाड़ी के लिए एक जैसा रहता है। अपवाद एंडलेस मोड है, जो हर रन में नया रास्ता बनाता है।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "जो लेवल पार नहीं हो रहा, उसके लिए कोई टिप?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "रास्ता कभी नहीं बदलता, इसलिए हर टक्कर से उसे सीखें; आपका सबसे अच्छा प्रतिशत बताता है कि आप कितनी दूर पहुँचे। खाली जगह से थोड़ा पहले ऊपर उठना शुरू करें, क्योंकि जहाज़ को पूरी रफ़्तार से चढ़ने में पल भर लगता है। छोटे टैप से छोटा सुधार होता है और देर तक दबाने से बड़ी चढ़ाई, और किनारों की रेलें भी रुकावट गिनी जाती हैं।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "क्या Pulse Runner मुफ़्त है?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "हाँ। गेम मुफ़्त है और विज्ञापनों से चलता है: होम स्क्रीन और रन ख़त्म होने वाले कार्ड पर एक बैनर, किसी पूरे रन के बाद आगे बढ़ने पर कभी-कभी एक फ़ुल-स्क्रीन विज्ञापन (45 सेकंड में कभी दो नहीं), और गेम छोड़कर वापस आने पर कभी-कभी एक विज्ञापन। उड़ते समय कोई विज्ञापन नहीं चलता। कोई सब्सक्रिप्शन, एनर्जी सिस्टम या लूट बॉक्स नहीं है।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "विज्ञापन कैसे हटाएँ?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Settings में Remove ads नाम की एक बार की खरीद है, यह सब्सक्रिप्शन नहीं है। यह बैनर, फ़ुल-स्क्रीन विज्ञापन और गेम में लौटने पर आने वाला विज्ञापन हमेशा के लिए हटा देती है। वैकल्पिक Keep flying विज्ञापन बना रहता है और तभी चलता है जब आप उस पर टैप करें।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "क्या यह ऑफ़लाइन चलता है?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "हाँ। सभी दस लेवल और एंडलेस मोड बिना इंटरनेट के, एयरप्लेन मोड में भी चलते हैं। इंटरनेट सिर्फ़ Google के विज्ञापनों, Google Play (खरीद और अपडेट) और Google के Firebase को भेजे जाने वाले इस्तेमाल के आँकड़ों व क्रैश रिपोर्ट के लिए इस्तेमाल होता है। ऑफ़लाइन कोई विज्ञापन नहीं होता, इसलिए Keep flying वाला दूसरा मौका भी नहीं मिलता।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "क्या मेरी प्रगति सेव होती है? क्या वह नए फ़ोन में जाएगी?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "पूरे किए गए लेवल, हर लेवल पर आपका सबसे अच्छा नतीजा और एंडलेस मोड का सबसे लंबा रन फ़ोन पर ही सेव होते हैं। इस गेम के लिए Android बैकअप बंद है, इसलिए प्रगति Google Drive या नए फ़ोन में कॉपी नहीं होती, और गेम अनइंस्टॉल करने पर मिट जाती है: नए फ़ोन पर आप लेवल 1 से फिर शुरू करते हैं। विज्ञापन हटाने की खरीद नहीं खोती, क्योंकि Google Play उसे उसी Google अकाउंट पर वापस ले आता है।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "क्या अकाउंट चाहिए? कौन-सा डेटा इकट्ठा होता है?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "कोई अकाउंट या साइन-इन नहीं है। आपके रन और आपकी प्रगति कहीं नहीं भेजे जाते। फ़ोन से बाहर सिर्फ़ Google के विज्ञापनों का इकट्ठा किया गया डेटा और Firebase के ज़रिए भेजे गए इस्तेमाल के आँकड़े व क्रैश रिपोर्ट जाते हैं, जिनमें न नाम होता है न ईमेल; प्राइवेसी पॉलिसी में सब लिखा है।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "गेम किन भाषाओं में है?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "गेम की स्क्रीनें अंग्रेज़ी और तुर्की में हैं। यह पेज और Google Play पेज हिन्दी में हैं।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "क्या टैबलेट पर खेल सकते हैं?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "हाँ। Pulse Runner Android टैबलेट पर चलता है और वहाँ भी फ़ोन की तरह खड़ी (पोर्ट्रेट) स्क्रीन में खेला जाता है; इसका कोई लैंडस्केप लेआउट नहीं है।"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "यह किन फ़ोन पर चलता है? क्या iPhone वर्ज़न है?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Android 7.0 या नए किसी भी फ़ोन पर। Pulse Runner सिर्फ़ Android गेम है; iPhone, iPad या वेब वर्ज़न नहीं है।"
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#006d86;--accent-soft:#d9f5fb;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#2be4ff;--accent-soft:#12303d;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(0,150,190,.28)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.soon{display:inline-block;margin:0;padding:10px 16px;border-radius:12px;background:var(--accent-soft);color:var(--ink);font-weight:600}
+ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px}
+</style>
+</head>
+<body>
+<nav class="top" aria-label="भाषा">
+<a class="brand" href="/pulserunner/hi/"><img src="/pulserunner/assets/icon-192.png" width="36" height="36" alt="">Pulse Runner</a>
+<ul class="langs">
+<li><a href="/pulserunner/" hreflang="en" lang="en">English</a></li>
+<li><a href="/pulserunner/tr/" hreflang="tr" lang="tr">Türkçe</a></li>
+<li><a href="/pulserunner/es/" hreflang="es" lang="es">Español</a></li>
+<li><a href="/pulserunner/pt/" hreflang="pt" lang="pt">Português</a></li>
+<li><a href="/pulserunner/hi/" hreflang="hi" lang="hi" aria-current="page">हिन्दी</a></li>
+<li><a href="/pulserunner/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a></li>
+<li><a href="/pulserunner/de/" hreflang="de" lang="de">Deutsch</a></li>
+<li><a href="/pulserunner/fr/" hreflang="fr" lang="fr">Français</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>दबाए रखें तो ऊपर, छोड़ें तो नीचे: एक टच वाला नियॉन फ़्लाइंग गेम</h1>
+<p class="lede">Pulse Runner एक उंगली से खेला जाने वाला नियॉन आर्केड गेम है। स्क्रीन पर कहीं भी दबाए रखें, आपका जहाज़ ऊपर उठता है; छोड़ें, तो नीचे आता है। लगातार तेज़ और संकरे होते दस लेवल पार करें, फिर एंडलेस मोड में देखें कि आप कितनी दूर जा सकते हैं। यह ऑफ़लाइन चलता है, बिना अकाउंट के।</p>
+<p class="soon">जल्द ही Google Play पर</p>
+<p class="note">Pulse Runner अभी Google Play पर टेस्टिंग में है और सबके लिए उपलब्ध नहीं है। जैसे ही होगा, यह पेज उसका लिंक देगा।</p>
+</div>
+<img class="phone" src="/pulserunner/assets/en-01-hold-to-rise.webp" width="540" height="960" alt="Pulse Runner: नियॉन रेलों के बीच घूमती आरी के ऊपर से चढ़ता जहाज़" fetchpriority="high" decoding="async">
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">आपको क्या मिलता है</h2>
+<ul class="facts">
+<li><b>एक टच से कंट्रोल</b><span>ऊपर जाने के लिए स्क्रीन पर कहीं भी दबाए रखें, नीचे आने के लिए छोड़ दें। कोई और बटन नहीं है।</span></li>
+<li><b>10 लेवल, आसान से एक्सट्रीम तक</b><span>हर लेवल पिछले से तेज़ है, और उसकी खाली जगहें ज़्यादा संकरी हैं।</span></li>
+<li><b>छह तरह की रुकावटें</b><span>दीवारें, दाँते, कंघियाँ, घूमती आरियाँ, खिसकती खाली जगहें और संकरी दरारें लेवल दर लेवल जुड़ती हैं।</span></li>
+<li><b>हर कोशिश में वही रास्ता</b><span>लेवल शुरू होने के बाद कुछ भी रैंडम नहीं होता, इसलिए जिस लेवल में आप बार-बार हारते हैं, उसे सीख सकते हैं।</span></li>
+<li><b>एंडलेस मोड</b><span>कोई फ़िनिश लाइन नहीं: दुनिया अपनी सबसे तेज़ रफ़्तार तक तेज़ होती जाती है। आपका सबसे लंबा रन सेव रहता है।</span></li>
+<li><b>ऑफ़लाइन चलता है</b><span>सभी लेवल और एंडलेस मोड बिना इंटरनेट के चलते हैं।</span></li>
+<li><b>कोई अकाउंट नहीं</b><span>न साइन अप, न ईमेल। आपकी प्रगति आपके फ़ोन पर ही रहती है।</span></li>
+<li><b>कोई सब्सक्रिप्शन नहीं</b><span>विज्ञापनों के साथ मुफ़्त। एक बार की खरीद से वे सारे विज्ञापन हट जाते हैं जो आपने नहीं माँगे।</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">कैसे खेलें</h2>
+<ol class="steps">
+<li>अपना अगला लेवल खेलने के लिए होम स्क्रीन पर <b>Fly</b> पर टैप करें, या <b>Levels</b> में से कोई लेवल चुनें। जब तक आप पहली बार स्क्रीन नहीं छूते, कुछ नहीं हिलता।</li>
+<li>ऊपर जाने के लिए कहीं भी दबाए रखें और नीचे आने के लिए छोड़ दें। जहाज़ को पूरी रफ़्तार से चढ़ने में पल भर लगता है, इसलिए थोड़ा पहले ऊपर उठना शुरू करें।</li>
+<li>हर रुकावट की खाली जगह से निकलें। किसी भी चीज़ को छूते ही रन ख़त्म हो जाता है, गलियारे के ऊपर और नीचे की नियॉन रेलों को भी।</li>
+<li>लेवल पूरा करने और अगला खोलने के लिए फ़िनिश लाइन तक पहुँचें। टकरा जाएँ तो <b>Try again</b> आपको उसी रास्ते पर वापस ले आता है, और हर रन में एक बार <b>Keep flying</b> से एक छोटा विज्ञापन देखकर वहीं से आगे उड़ सकते हैं जहाँ टकराए थे।</li>
+</ol>
+<div class="shots"><img src="/pulserunner/assets/en-02-six-kinds-of-obstacles.webp" width="540" height="960" alt="छह तरह की रुकावटें: दीवार, दाँता, कंघी, आरी, खिसकती खाली जगह और संकरी दरार" loading="lazy" decoding="async"><img src="/pulserunner/assets/en-04-same-course-every-try.webp" width="540" height="960" alt="73% पर टक्कर, Try again और इस लेवल का सबसे अच्छा नतीजा" loading="lazy" decoding="async"></div>
+</section>
+
+<section aria-labelledby="levels">
+<h2 id="levels">दस लेवल और एंडलेस मोड</h2>
+<ul class="plain">
+<li>लेवल 1-3 <b>Easy</b> (आसान), 4-6 <b>Normal</b>, 7-8 <b>Hard</b> (कठिन) और 9-10 <b>Extreme</b> हैं। हर लेवल पिछले से तेज़ है और उसकी खाली जगहें ज़्यादा संकरी हैं।</li>
+<li>दीवारें और दाँते लेवल 1 से ही हैं। कंघियाँ लेवल 3 में आती हैं, घूमती आरियाँ लेवल 5 में, खिसकती खाली जगहें लेवल 7 में और संकरी दरारें लेवल 9 में।</li>
+<li>हर लेवल पर आपका सबसे अच्छा प्रतिशत सेव रहता है, ताकि आप देख सकें कि फ़िनिश लाइन कितनी दूर है।</li>
+<li><b>Endless</b> मोड में कोई फ़िनिश लाइन नहीं है और हर रन में नया रास्ता बनता है। यह अपनी सबसे तेज़ रफ़्तार तक तेज़ और संकरा होता जाता है, और आपका सबसे लंबा रन सेव रहता है।</li>
+</ul>
+<div class="shots"><img src="/pulserunner/assets/en-03-ten-levels.webp" width="540" height="960" alt="लेवल की सूची: आसान से एक्सट्रीम तक दस लेवल, पहले छह पूरे" loading="lazy" decoding="async"><img src="/pulserunner/assets/en-06-endless-mode.webp" width="540" height="960" alt="एंडलेस रन में 1080, कोने में 1286 का रिकॉर्ड" loading="lazy" decoding="async"></div>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">अक्सर पूछे जाने वाले सवाल</h2>
+<div class="faq">
+<div><h3>Pulse Runner कैसे खेलते हैं?</h3><p>स्क्रीन पर कहीं भी दबाए रखें, जहाज़ ऊपर उठता है; छोड़ें, तो नीचे आता है। उसे किसी भी चीज़ को छुए बिना, ऊपर-नीचे की नियॉन रेलों समेत, हर रुकावट की खाली जगह से निकालें और लेवल पूरा करने के लिए फ़िनिश लाइन तक पहुँचें। हर पूरा किया गया लेवल अगला लेवल खोल देता है।</p></div>
+<div><h3>इसमें कितने लेवल हैं?</h3><p>दस, चार चरणों में: लेवल 1-3 आसान, 4-6 नॉर्मल, 7-8 कठिन और 9-10 एक्सट्रीम। हर लेवल ज़्यादा तेज़ है और उसकी खाली जगहें ज़्यादा संकरी, और रास्ते में नई रुकावटें जुड़ती हैं। इन दस लेवल के अलावा एंडलेस मोड भी है।</p></div>
+<div><h3>क्या हर बार खेलने पर लेवल वही रहता है?</h3><p>हाँ। हर लेवल अपने तय सीड से बनता है और उड़ान शुरू होने के बाद कुछ भी रैंडम नहीं होता, इसलिए वह हर कोशिश में और हर खिलाड़ी के लिए एक जैसा रहता है। अपवाद एंडलेस मोड है, जो हर रन में नया रास्ता बनाता है।</p></div>
+<div><h3>जो लेवल पार नहीं हो रहा, उसके लिए कोई टिप?</h3><p>रास्ता कभी नहीं बदलता, इसलिए हर टक्कर से उसे सीखें; आपका सबसे अच्छा प्रतिशत बताता है कि आप कितनी दूर पहुँचे। खाली जगह से थोड़ा पहले ऊपर उठना शुरू करें, क्योंकि जहाज़ को पूरी रफ़्तार से चढ़ने में पल भर लगता है। छोटे टैप से छोटा सुधार होता है और देर तक दबाने से बड़ी चढ़ाई, और किनारों की रेलें भी रुकावट गिनी जाती हैं।</p></div>
+<div><h3>क्या Pulse Runner मुफ़्त है?</h3><p>हाँ। गेम मुफ़्त है और विज्ञापनों से चलता है: होम स्क्रीन और रन ख़त्म होने वाले कार्ड पर एक बैनर, किसी पूरे रन के बाद आगे बढ़ने पर कभी-कभी एक फ़ुल-स्क्रीन विज्ञापन (45 सेकंड में कभी दो नहीं), और गेम छोड़कर वापस आने पर कभी-कभी एक विज्ञापन। उड़ते समय कोई विज्ञापन नहीं चलता। कोई सब्सक्रिप्शन, एनर्जी सिस्टम या लूट बॉक्स नहीं है।</p></div>
+<div><h3>विज्ञापन कैसे हटाएँ?</h3><p>Settings में Remove ads नाम की एक बार की खरीद है, यह सब्सक्रिप्शन नहीं है। यह बैनर, फ़ुल-स्क्रीन विज्ञापन और गेम में लौटने पर आने वाला विज्ञापन हमेशा के लिए हटा देती है। वैकल्पिक Keep flying विज्ञापन बना रहता है और तभी चलता है जब आप उस पर टैप करें।</p></div>
+<div><h3>क्या यह ऑफ़लाइन चलता है?</h3><p>हाँ। सभी दस लेवल और एंडलेस मोड बिना इंटरनेट के, एयरप्लेन मोड में भी चलते हैं। इंटरनेट सिर्फ़ Google के विज्ञापनों, Google Play (खरीद और अपडेट) और Google के Firebase को भेजे जाने वाले इस्तेमाल के आँकड़ों व क्रैश रिपोर्ट के लिए इस्तेमाल होता है। ऑफ़लाइन कोई विज्ञापन नहीं होता, इसलिए Keep flying वाला दूसरा मौका भी नहीं मिलता।</p></div>
+<div><h3>क्या मेरी प्रगति सेव होती है? क्या वह नए फ़ोन में जाएगी?</h3><p>पूरे किए गए लेवल, हर लेवल पर आपका सबसे अच्छा नतीजा और एंडलेस मोड का सबसे लंबा रन फ़ोन पर ही सेव होते हैं। इस गेम के लिए Android बैकअप बंद है, इसलिए प्रगति Google Drive या नए फ़ोन में कॉपी नहीं होती, और गेम अनइंस्टॉल करने पर मिट जाती है: नए फ़ोन पर आप लेवल 1 से फिर शुरू करते हैं। विज्ञापन हटाने की खरीद नहीं खोती, क्योंकि Google Play उसे उसी Google अकाउंट पर वापस ले आता है।</p></div>
+<div><h3>क्या अकाउंट चाहिए? कौन-सा डेटा इकट्ठा होता है?</h3><p>कोई अकाउंट या साइन-इन नहीं है। आपके रन और आपकी प्रगति कहीं नहीं भेजे जाते। फ़ोन से बाहर सिर्फ़ Google के विज्ञापनों का इकट्ठा किया गया डेटा और Firebase के ज़रिए भेजे गए इस्तेमाल के आँकड़े व क्रैश रिपोर्ट जाते हैं, जिनमें न नाम होता है न ईमेल; प्राइवेसी पॉलिसी में सब लिखा है।</p></div>
+<div><h3>गेम किन भाषाओं में है?</h3><p>गेम की स्क्रीनें अंग्रेज़ी और तुर्की में हैं। यह पेज और Google Play पेज हिन्दी में हैं।</p></div>
+<div><h3>क्या टैबलेट पर खेल सकते हैं?</h3><p>हाँ। Pulse Runner Android टैबलेट पर चलता है और वहाँ भी फ़ोन की तरह खड़ी (पोर्ट्रेट) स्क्रीन में खेला जाता है; इसका कोई लैंडस्केप लेआउट नहीं है।</p></div>
+<div><h3>यह किन फ़ोन पर चलता है? क्या iPhone वर्ज़न है?</h3><p>Android 7.0 या नए किसी भी फ़ोन पर। Pulse Runner सिर्फ़ Android गेम है; iPhone, iPad या वेब वर्ज़न नहीं है।</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>Pulse Runner</p>
+<p class="soon">जल्द ही Google Play पर</p>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/pulserunner/privacy/">प्राइवेसी पॉलिसी (अंग्रेज़ी)</a><a href="/">BumuStudios के ऐप</a><a href="mailto:bumustudios@gmail.com">संपर्क: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-10-19">2026-10-19</time></p>
+<p>Google Play और Google Play लोगो, Google LLC के ट्रेडमार्क हैं।</p>
+</footer>
+</body>
+</html>

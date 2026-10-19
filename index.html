@@ -40,6 +40,10 @@
   .links a { color: var(--accent); }
   footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line);
            color: var(--ink-2); font-size: 14px; }
+  .app { display: grid; grid-template-columns: 56px 1fr; column-gap: 16px; align-items: start; }
+  .app img { grid-row: span 2; width: 56px; height: 56px; border-radius: 13px; }
+  .app.plain { display: block; }
+  .soon { color: var(--ink-2); font-size: 15px; margin: -4px 0 16px; }
 </style>
 </head>
 <body>
@@ -49,43 +53,148 @@
     <p class="tagline">Small, fast apps and games that respect your files — and your time.</p>
   </header>
 
-  <h2>Apps</h2>
+  <h2>Apps and games</h2>
 
   <a class="app" href="imagetopdf/">
+    <img src="imagetopdf/assets/icon-192.png" width="56" height="56" alt="">
     <b>ImageToPdf</b>
     <span>Convert photos into a PDF, and export PDF pages back out as images.
     No watermark, no subscription, everything on your device.</span>
   </a>
 
   <div class="links">
-    <a href="imagetopdf/">ImageToPdf: how it works and FAQ</a>
+    <a href="imagetopdf/">ImageToPdf: features, how-to and FAQ</a>
     <a href="imagetopdf/privacy/">ImageToPdf privacy policy</a>
     <a href="imagetopdf/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="pdfpages/privacy/">
+  <a class="app" href="pdfpages/">
+    <img src="pdfpages/assets/icon-192.png" width="56" height="56" alt="">
     <b>PdfPages</b>
     <span>Reorder, delete and add the pages inside a PDF, then save and share it.
     No watermark, no subscription, everything on your device.</span>
   </a>
 
   <div class="links">
+    <a href="pdfpages/">PdfPages: features, how-to and FAQ</a>
     <a href="pdfpages/privacy/">PdfPages privacy policy</a>
     <a href="pdfpages/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="paperlite/privacy/">
+  <a class="app" href="paperlite/">
+    <img src="paperlite/assets/icon-192.png" width="56" height="56" alt="">
     <b>PaperLite</b>
     <span>A document scanner with free on-device text recognition. Scan to searchable PDF —
     no watermark, no sign-up, your scans stay on your phone.</span>
   </a>
 
   <div class="links">
+    <a href="paperlite/">PaperLite: features, how-to and FAQ</a>
     <a href="paperlite/privacy/">PaperLite privacy policy</a>
     <a href="paperlite/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="qrpocket/privacy/">
+  <a class="app" href="tabula-domino/">
+    <img src="tabula-domino/assets/icon-192.png" width="56" height="56" alt="">
+    <b>Tabula Domino</b>
+    <span>Online domino against real players, matched by rating, or at a private table with
+    friends. Guest account, no email, bots always labelled.</span>
+  </a>
+
+  <div class="links">
+    <a href="tabula-domino/">Tabula Domino: how to play and FAQ</a>
+    <a href="tabula-domino/privacy/">Tabula Domino privacy policy</a>
+    <a href="tabula-domino/privacy/tr/">Gizlilik politikası (Türkçe)</a>
+    <a href="tabula-domino/privacy/ar/" lang="ar" dir="rtl">سياسة الخصوصية (العربية)</a>
+    <a href="tabula-domino/privacy/fr/" lang="fr">Politique de confidentialité (français)</a>
+    <a href="tabula-domino/delete-account/">Delete your account</a>
+    <a href="tabula-domino/delete-account/tr/">Hesap silme (Türkçe)</a>
+    <a href="tabula-domino/delete-account/ar/" lang="ar" dir="rtl">حذف حسابك (العربية)</a>
+    <a href="tabula-domino/delete-account/fr/" lang="fr">Supprimer votre compte (français)</a>
+  </div>
+
+  <a class="app" href="gridsmash/">
+    <img src="gridsmash/assets/icon-192.png" width="56" height="56" alt="">
+    <b>Grid Smash</b>
+    <span>A block puzzle game. Drag pieces onto an 8×8 board, clear lines, chase your best —
+    endless mode and a daily puzzle. No account, fully offline, honestly random.</span>
+  </a>
+
+  <div class="links">
+    <a href="gridsmash/">Grid Smash: how to play and FAQ</a>
+    <a href="gridsmash/privacy/">Grid Smash privacy policy</a>
+    <a href="gridsmash/privacy/tr/">Gizlilik politikası (Türkçe)</a>
+  </div>
+
+  <a class="app" href="arrowrush/">
+    <img src="arrowrush/assets/icon-192.png" width="56" height="56" alt="">
+    <b>Arrow Rush</b>
+    <span>An arrow-escape puzzle. Tap arrows free within the move limit — every level
+    provably solvable, endless numbered boards, a daily challenge. Fully offline.</span>
+  </a>
+
+  <div class="links">
+    <a href="arrowrush/">Arrow Rush: how to play and FAQ</a>
+    <a href="arrowrush/privacy/">Arrow Rush privacy policy</a>
+    <a href="arrowrush/privacy/tr/">Gizlilik politikası (Türkçe)</a>
+  </div>
+
+  <a class="app" href="colorpour/">
+    <img src="colorpour/assets/icon-192.png" width="56" height="56" alt="">
+    <b>Color Pour</b>
+    <span>A water-sort puzzle. Pour liquids between glass bottles until every colour is
+    sorted — every level provably solvable, with a daily challenge. Fully offline.</span>
+  </a>
+
+  <div class="links">
+    <a href="colorpour/">Color Pour: how to play and FAQ</a>
+    <a href="colorpour/privacy/">Color Pour privacy policy</a>
+    <a href="colorpour/privacy/tr/">Gizlilik politikası (Türkçe)</a>
+  </div>
+
+  <a class="app" href="fortify/">
+    <img src="fortify/assets/icon-192.png" width="56" height="56" alt="">
+    <b>Fortify</b>
+    <span>A tower-defence game. Place and upgrade towers to hold the line across three
+    campaign maps and a daily siege — deterministic battles, fully offline.</span>
+  </a>
+
+  <div class="links">
+    <a href="fortify/">Fortify: how to play and FAQ</a>
+    <a href="fortify/privacy/">Fortify privacy policy</a>
+    <a href="fortify/privacy/tr/">Gizlilik politikası (Türkçe)</a>
+  </div>
+
+  <a class="app" href="hillrush/">
+    <img src="hillrush/assets/icon-192.png" width="56" height="56" alt="">
+    <b>Hill Rush</b>
+    <span>A 2D physics driving game. Gas and brake over endless procedural hills, upgrade
+    the car, chase distance — honest physics, fully offline.</span>
+  </a>
+
+  <div class="links">
+    <a href="hillrush/">Hill Rush: how to play and FAQ</a>
+    <a href="hillrush/privacy/">Hill Rush privacy policy</a>
+    <a href="hillrush/privacy/tr/">Gizlilik politikası (Türkçe)</a>
+  </div>
+
+  <a class="app" href="pulserunner/">
+    <img src="pulserunner/assets/icon-192.png" width="56" height="56" alt="">
+    <b>Pulse Runner</b>
+    <span>A one-touch flying game. Hold to climb, let go to fall — ten hand-built levels and an
+    endless mode. Deterministic flight, fully offline.</span>
+  </a>
+
+  <div class="links">
+    <a href="pulserunner/">Pulse Runner: how to play and FAQ</a>
+    <a href="pulserunner/privacy/">Pulse Runner privacy policy</a>
+    <a href="pulserunner/privacy/tr/">Gizlilik politikası (Türkçe)</a>
+  </div>
+
+  <h2>In development</h2>
+  <p class="soon">Not on Google Play yet. Their privacy policies are already public.</p>
+
+  <a class="app plain" href="qrpocket/privacy/">
     <b>QR Pocket</b>
     <span>Create QR codes and barcodes — Wi-Fi, business cards, links, events — and scan them.
     Links are shown and checked before they open; your history stays on your device.</span>
@@ -96,7 +205,7 @@
     <a href="qrpocket/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="linguasnap/privacy/">
+  <a class="app plain" href="linguasnap/privacy/">
     <b>Polyglance</b>
     <span>Translate photos and text on your device. Language packs download once, then
     translation works offline.</span>
@@ -107,7 +216,7 @@
     <a href="linguasnap/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="habitloom/privacy/">
+  <a class="app plain" href="habitloom/privacy/">
     <b>Habit Loom</b>
     <span>A habit tracker with streaks, reminders and calendar stats. No account — your habits
     stay on your phone.</span>
@@ -118,7 +227,7 @@
     <a href="habitloom/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="pennyleaf/privacy/">
+  <a class="app plain" href="pennyleaf/privacy/">
     <b>PennyLeaf</b>
     <span>An offline budget and expense tracker. Categories, monthly budgets and charts — your
     numbers never leave your device.</span>
@@ -129,7 +238,7 @@
     <a href="pennyleaf/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="tomatofocus/privacy/">
+  <a class="app plain" href="tomatofocus/privacy/">
     <b>Tomato Focus</b>
     <span>A Pomodoro focus timer with breaks, tasks, statistics and ambient sounds. Fully
     offline.</span>
@@ -140,73 +249,7 @@
     <a href="tomatofocus/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="arrowrush/privacy/">
-    <b>Arrow Rush</b>
-    <span>An arrow-escape puzzle. Tap arrows free within the move limit — every level
-    provably solvable, endless numbered boards, a daily challenge. Fully offline.</span>
-  </a>
-
-  <div class="links">
-    <a href="arrowrush/privacy/">Arrow Rush privacy policy</a>
-    <a href="arrowrush/privacy/tr/">Gizlilik politikası (Türkçe)</a>
-  </div>
-
-  <a class="app" href="colorpour/privacy/">
-    <b>Color Pour</b>
-    <span>A water-sort puzzle. Pour liquids between glass bottles until every colour is
-    sorted — every level provably solvable, with a daily challenge. Fully offline.</span>
-  </a>
-
-  <div class="links">
-    <a href="colorpour/privacy/">Color Pour privacy policy</a>
-    <a href="colorpour/privacy/tr/">Gizlilik politikası (Türkçe)</a>
-  </div>
-
-  <a class="app" href="fortify/privacy/">
-    <b>Fortify</b>
-    <span>A tower-defence game. Place and upgrade towers to hold the line across three
-    campaign maps and a daily siege — deterministic battles, fully offline.</span>
-  </a>
-
-  <div class="links">
-    <a href="fortify/privacy/">Fortify privacy policy</a>
-    <a href="fortify/privacy/tr/">Gizlilik politikası (Türkçe)</a>
-  </div>
-
-  <a class="app" href="pulserunner/privacy/">
-    <b>Pulse Runner</b>
-    <span>A one-touch flying game. Hold to climb, let go to fall — ten hand-built levels and an
-    endless mode. Deterministic flight, fully offline.</span>
-  </a>
-
-  <div class="links">
-    <a href="pulserunner/privacy/">Pulse Runner privacy policy</a>
-    <a href="pulserunner/privacy/tr/">Gizlilik politikası (Türkçe)</a>
-  </div>
-
-  <a class="app" href="hillrush/privacy/">
-    <b>Hill Rush</b>
-    <span>A 2D physics driving game. Gas and brake over endless procedural hills, upgrade
-    the car, chase distance — honest physics, fully offline.</span>
-  </a>
-
-  <div class="links">
-    <a href="hillrush/privacy/">Hill Rush privacy policy</a>
-    <a href="hillrush/privacy/tr/">Gizlilik politikası (Türkçe)</a>
-  </div>
-
-  <a class="app" href="gridsmash/privacy/">
-    <b>Grid Smash</b>
-    <span>A block puzzle game. Drag pieces onto an 8×8 board, clear lines, chase your best —
-    endless mode and a daily puzzle. No account, fully offline, honestly random.</span>
-  </a>
-
-  <div class="links">
-    <a href="gridsmash/privacy/">Grid Smash privacy policy</a>
-    <a href="gridsmash/privacy/tr/">Gizlilik politikası (Türkçe)</a>
-  </div>
-
-  <a class="app" href="mahjong/privacy/">
+  <a class="app plain" href="mahjong/privacy/">
     <b>Mahjong Solitaire</b>
     <span>Classic tile matching on layered layouts. Every deal provably solvable, a daily
     challenge, large readable tiles. Fully offline.</span>
@@ -217,7 +260,7 @@
     <a href="mahjong/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="solitairegrove/privacy/">
+  <a class="app plain" href="solitairegrove/privacy/">
     <b>Solitaire Grove</b>
     <span>Klondike, Spider and FreeCell with winnable deals, unlimited undo and a daily deal.
     Fully offline.</span>
@@ -228,7 +271,7 @@
     <a href="solitairegrove/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="zen2048/privacy/">
+  <a class="app plain" href="zen2048/privacy/">
     <b>2048 Zen</b>
     <span>The calm 2048 merge puzzle, in four board sizes, with undo and saved games. Fully
     offline.</span>
@@ -239,7 +282,7 @@
     <a href="zen2048/privacy/tr/">Gizlilik politikası (Türkçe)</a>
   </div>
 
-  <a class="app" href="wordhunt/privacy/">
+  <a class="app plain" href="wordhunt/privacy/">
     <b>Word Lantern</b>
     <span>A word search in eight languages, with themed puzzles generated on your device and a
     daily puzzle. Fully offline.</span>
@@ -248,23 +291,6 @@
   <div class="links">
     <a href="wordhunt/privacy/">Word Lantern privacy policy</a>
     <a href="wordhunt/privacy/tr/">Gizlilik politikası (Türkçe)</a>
-  </div>
-
-  <a class="app" href="tabula-domino/privacy/">
-    <b>Tabula Domino</b>
-    <span>Online domino against real players, matched by rating, or at a private table with
-    friends. Guest account, no email, bots always labelled.</span>
-  </a>
-
-  <div class="links">
-    <a href="tabula-domino/privacy/">Tabula Domino privacy policy</a>
-    <a href="tabula-domino/privacy/tr/">Gizlilik politikası (Türkçe)</a>
-    <a href="tabula-domino/privacy/ar/" lang="ar" dir="rtl">سياسة الخصوصية (العربية)</a>
-    <a href="tabula-domino/privacy/fr/" lang="fr">Politique de confidentialité (français)</a>
-    <a href="tabula-domino/delete-account/">Delete your account</a>
-    <a href="tabula-domino/delete-account/tr/">Hesap silme (Türkçe)</a>
-    <a href="tabula-domino/delete-account/ar/" lang="ar" dir="rtl">حذف حسابك (العربية)</a>
-    <a href="tabula-domino/delete-account/fr/" lang="fr">Supprimer votre compte (français)</a>
   </div>
 
   <footer>

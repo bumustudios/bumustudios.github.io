@@ -1,6 +1,6 @@
 # BumuStudios
 
-> BumuStudios is a small independent studio that makes Android apps and games. This file points language models to the factual pages about our apps. Everything below describes the current Google Play versions.
+> BumuStudios is a small independent studio that makes Android apps and games. This file points language models to the factual pages about our apps. Everything below describes the current versions on Google Play; apps still in a closed test say so.
 
 ## ImageToPdf (Android)
 
@@ -20,6 +20,175 @@ Pages:
 - [ImageToPdf: features, how-to and FAQ (English)](https://bumustudios.github.io/imagetopdf/)
 - Same page in [Türkçe](https://bumustudios.github.io/imagetopdf/tr/), [Español](https://bumustudios.github.io/imagetopdf/es/), [Português](https://bumustudios.github.io/imagetopdf/pt/), [हिन्दी](https://bumustudios.github.io/imagetopdf/hi/), [العربية](https://bumustudios.github.io/imagetopdf/ar/), [Deutsch](https://bumustudios.github.io/imagetopdf/de/), [Français](https://bumustudios.github.io/imagetopdf/fr/)
 - [ImageToPdf privacy policy](https://bumustudios.github.io/imagetopdf/privacy/)
+
+## PdfPages (Android)
+
+PdfPages is a PDF page editor for Android: reorder, delete, rotate and add pages, merge PDFs and extract pages, entirely on the phone.
+
+- Reorder pages by dragging a handle; delete or rotate one page or a selection; move a selection to the start or end; undo and redo; full-screen page preview.
+- Add pages from another PDF, from photos (one page per picture, fitted to A4) or as a blank A4 page. Merge several PDFs by opening them together as one document. Extract selected pages to a new PDF. There is no split-by-range, compress, sign, OCR or convert feature.
+- The original file is never modified: saving always writes a new PDF, to Documents/PDF Pages on Android 10+ (the app's own folder on Android 9 and older). Pages are kept as real PDF pages, not turned into images, so text stays selectable. Password-protected PDFs cannot be opened.
+- No watermark, no account, no sign-up. Documents are processed on the phone and never uploaded; no storage permission is requested. Opening, editing and saving work offline.
+- Free with ads: a banner, a full-screen ad after saving, and an occasional app-open ad when returning to the app (at most every few hours). No subscription; an optional one-time purchase removes all ads and is restored from Google Play on reinstall. Every feature is in the free version.
+- Requires Android 7.0 or newer; phones and tablets, portrait and landscape. Android only: no iPhone or web version. The app's screens are in English and Turkish.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.pdfpages
+
+Pages:
+
+- [PdfPages: features, how-to and FAQ (English)](https://bumustudios.github.io/pdfpages/)
+- Same page in [Türkçe](https://bumustudios.github.io/pdfpages/tr/), [Español](https://bumustudios.github.io/pdfpages/es/), [Português](https://bumustudios.github.io/pdfpages/pt/), [हिन्दी](https://bumustudios.github.io/pdfpages/hi/), [العربية](https://bumustudios.github.io/pdfpages/ar/), [Deutsch](https://bumustudios.github.io/pdfpages/de/), [Français](https://bumustudios.github.io/pdfpages/fr/)
+- [PdfPages privacy policy](https://bumustudios.github.io/pdfpages/privacy/)
+
+## PaperLite (Android)
+
+PaperLite is an Android document scanner that reads the text on the phone (OCR) and exports searchable PDFs.
+
+- Scans with Google's ML Kit document scanner (edge detection, auto capture, crop, perspective, filters; up to 100 pages per scan), or imports photos and shared images. No camera or storage permission.
+- On-device OCR (Google ML Kit) for Latin-script languages, Japanese and Korean only; it does not read Arabic, Devanagari (Hindi), Chinese, Cyrillic or Greek script. Search covers document names and all recognised text; copy one page or the whole document. Documents name themselves from their first line of text.
+- Exports searchable PDFs (invisible text layer; Fit to scan, A4 or Letter; 150, 200 or 300 dpi; optional AES-128 password) or JPG images. No watermark, no limits on scans or pages.
+- Free with ads: a banner in the library and page grid, a full-screen ad after a save (never the first two, at least 3 minutes apart), an app-open ad at most every 4 hours, and an opt-in rewarded ad for 24 hours without ads. An optional one-time purchase removes all ads. No subscription.
+- No account. Scans and their text stay on the phone and are excluded from Android backup and device transfer; uninstalling deletes them unless they were exported.
+- Works offline once Google Play services has downloaded the scanner and recognition models. The network is used only for ads, the purchase, app updates, and Firebase usage statistics and crash reports.
+- Requires Android 7.0 or newer; phones and tablets. Android only. The app's screens are in English, Spanish, Portuguese, German, French, Japanese, Korean and Turkish.
+- Google Play: in closed testing, not publicly listed yet (package com.bumustudios.paperlite).
+
+Pages:
+
+- [PaperLite: features, how-to and FAQ (English)](https://bumustudios.github.io/paperlite/)
+- Same page in [Türkçe](https://bumustudios.github.io/paperlite/tr/), [Español](https://bumustudios.github.io/paperlite/es/), [Português](https://bumustudios.github.io/paperlite/pt/), [हिन्दी](https://bumustudios.github.io/paperlite/hi/), [العربية](https://bumustudios.github.io/paperlite/ar/), [Deutsch](https://bumustudios.github.io/paperlite/de/), [Français](https://bumustudios.github.io/paperlite/fr/), [日本語](https://bumustudios.github.io/paperlite/ja/), [한국어](https://bumustudios.github.io/paperlite/ko/)
+- [PaperLite privacy policy](https://bumustudios.github.io/paperlite/privacy/)
+
+## Tabula Domino (Android)
+
+Tabula Domino is an online multiplayer dominoes game for Android (classic draw dominoes with a double-six set), by BumuStudios.
+
+- Tables for 2, 3 or 4 players, each for themselves, or partners 2 against 2; the target score is 25, 50, 75 or 100 points.
+- Quick games matched by rating, private tables for friends with a code or invite link, and games against bots (Easy or Normal). Bots are always labelled BOT and never change your rating.
+- Akçe, the game currency, is earned only (playing, a daily gift, optional rewarded ads). It cannot be bought, cashed out or transferred and has no real-money value. Quick-game tables with people take an Akçe entry; private and bot tables are free.
+- Free with ads: a banner in the menus and an ad between matches (at most once every third finished match); no ads during a match or when the app opens. An optional one-time Ad-free Pack through Google Play removes them and adds two table themes; rewarded ads stay optional.
+- Online only: every match, bots included, runs on the game's servers in Germany. Guest account with a display name: no email, phone number or password.
+- Android 7.0 or newer, phones and tablets, landscape only. No iPhone version. For ages 13 and up; players aged 13 to 17 are in a protected mode.
+- The app's screens are in English, Turkish, Spanish and Brazilian Portuguese; French and Arabic are ready for a coming update.
+- Google Play: in closed testing, not publicly listed yet (package com.bumustudios.domino).
+
+Pages:
+
+- [Tabula Domino: how to play and FAQ (English)](https://bumustudios.github.io/tabula-domino/)
+- Same page in [Türkçe](https://bumustudios.github.io/tabula-domino/tr/), [Español](https://bumustudios.github.io/tabula-domino/es/), [Português](https://bumustudios.github.io/tabula-domino/pt/), [العربية](https://bumustudios.github.io/tabula-domino/ar/), [Français](https://bumustudios.github.io/tabula-domino/fr/)
+- [Tabula Domino privacy policy](https://bumustudios.github.io/tabula-domino/privacy/)
+- [Tabula Domino account deletion](https://bumustudios.github.io/tabula-domino/delete-account/)
+
+## Grid Smash (Android)
+
+Grid Smash is a block puzzle game for Android on an 8×8 board, with an endless Classic mode and a 100-stage Adventure.
+
+- Gameplay: drag pieces from a tray of three (no rotation) onto an 8×8 board; full rows and columns clear; clears at once or on consecutive moves build combos; bombs (5×5 blast), ×2/×3 and +100 blocks; a joker every 10 clearing moves (up to 3) swaps a tray piece for a chosen shape; the game ends when no piece fits.
+- Modes: Classic (endless; three levels, each unlocked by scoring 10,000 on the one before; ice and crystal blocks and poison blocks on Levels 2 and 3; hard blocks from 15,000 points) and Adventure (10 themed chapters of 10 stages, target scores 1,000 to 1,900, one to three stars by speed, no time limit).
+- Honestly random: pieces come from a bag shuffled before the game starts; the game never picks a piece based on the board.
+- Free with ads: a banner on the home and result screens (never under the board during play), a full-screen ad between games and, in Classic, at most one per 2,000 points (announced first), an app-open ad, and an optional rewarded ad once per game for one joker. A one-time Remove Ads purchase removes all ads except that optional rewarded one. No subscription, no energy system, no loot boxes.
+- Every mode works offline; the internet is used only for ads, Google Play, and Firebase usage statistics and crash reports. No account and no permissions.
+- Progress (saved game per mode, best scores, levels, stars) is stored only on the device and is excluded from Android backup, so it does not survive an uninstall or move to a new phone; the Remove Ads purchase is restored by Google Play.
+- Requires Android 7.0 or newer; portrait only, on phones and tablets. Android only: no iPhone or web version. The game's screens are in English and Turkish.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.gridsmash
+
+Pages:
+
+- [Grid Smash: how to play and FAQ (English)](https://bumustudios.github.io/gridsmash/)
+- Same page in [Türkçe](https://bumustudios.github.io/gridsmash/tr/), [Español](https://bumustudios.github.io/gridsmash/es/), [Português](https://bumustudios.github.io/gridsmash/pt/), [हिन्दी](https://bumustudios.github.io/gridsmash/hi/), [العربية](https://bumustudios.github.io/gridsmash/ar/), [Deutsch](https://bumustudios.github.io/gridsmash/de/), [Français](https://bumustudios.github.io/gridsmash/fr/)
+- [Grid Smash privacy policy](https://bumustudios.github.io/gridsmash/privacy/)
+
+## Arrow Rush (Android)
+
+Arrow Rush is an arrow-escape puzzle game for Android: tap arrows off the board in the right order before the move limit runs out.
+
+- Rules: a tapped arrow flies off when its path to the edge is clear; a blocked arrow stays put and the tap still costs a move. Three stars for a win with no wasted taps. No timer, no lives or energy.
+- Every level is solvable by construction (boards are generated by playing them backwards). Endless numbered levels, the same board for every player, growing from 4x4 to 8x8; plus one 7x7 daily challenge per day, the same for everyone, with a streak.
+- Free with ads: a banner on the home screen and the result card, an occasional full-screen ad when leaving a finished level, an app-open ad when returning to the game, and optional rewarded ads for a hint or five extra moves (once per level). A one-time Remove ads purchase removes every ad the player did not ask for. No subscription.
+- Every level and the daily challenge play without an internet connection; the internet is used only for ads, Google Play, and Firebase usage statistics and crash reports.
+- No account. Progress (unlocked level, stars, best scores, daily streak) is stored only on the device; since 1.0.4 Android backup is off, so progress does not move to a new phone or survive a reinstall. The Remove ads purchase is restored through Google Play.
+- Requires Android 7.0 or newer; phones and tablets, portrait only. Android only: no iPhone or web version. The game's screens are in English and Turkish.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.arrowrush
+
+Pages:
+
+- [Arrow Rush: how to play and FAQ (English)](https://bumustudios.github.io/arrowrush/)
+- Same page in [Türkçe](https://bumustudios.github.io/arrowrush/tr/), [Español](https://bumustudios.github.io/arrowrush/es/), [Português](https://bumustudios.github.io/arrowrush/pt/), [हिन्दी](https://bumustudios.github.io/arrowrush/hi/), [العربية](https://bumustudios.github.io/arrowrush/ar/), [Deutsch](https://bumustudios.github.io/arrowrush/de/), [Français](https://bumustudios.github.io/arrowrush/fr/)
+- [Arrow Rush privacy policy](https://bumustudios.github.io/arrowrush/privacy/)
+
+## Color Pour (Android)
+
+Color Pour is a relaxing water sort (liquid sort) puzzle game for Android in which every level is solvable by construction.
+
+- Rules: tap a bottle, then another to pour; liquid goes only onto the same color or into an empty bottle; four layers per bottle; a level is won when every bottle holds a single color.
+- Endless numbered levels, identical for every player: 3 colors at level 1, one more color every six levels up to 10 colors in 12 bottles. Boards are generated by playing a solved board backwards, so every level has a solution.
+- Daily challenge: one 8-color board per date, the same worldwide, with a streak. Three stars for a solve without Undo (two for up to three undos); the score falls with moves and undos; the best score per level is saved.
+- Help: Undo and Restart are free; Hint (shows a good next pour) and Extra tube (once per level) each cost one optional rewarded ad. Colour-blind patterns, four text sizes, no timers, no energy or lives.
+- Free with ads: a banner on the home and result screens, an occasional full-screen ad when leaving a finished level, an app-open ad on return, and optional rewarded ads. An optional one-time purchase removes all but the rewarded ads. No subscription.
+- Plays offline; the internet is used only for ads, Google Play (purchase, updates) and Firebase usage statistics and crash reports. No account, no permissions requested; progress stays on the phone and is not uploaded.
+- Requires Android 7.0 or newer; Android only (no iPhone version). The app's screens are in English and Turkish.
+- Google Play: in closed testing, not publicly listed yet (package com.bumustudios.colorpour).
+
+Pages:
+
+- [Color Pour: how to play and FAQ (English)](https://bumustudios.github.io/colorpour/)
+- Same page in [Türkçe](https://bumustudios.github.io/colorpour/tr/), [Español](https://bumustudios.github.io/colorpour/es/), [Português](https://bumustudios.github.io/colorpour/pt/), [हिन्दी](https://bumustudios.github.io/colorpour/hi/), [العربية](https://bumustudios.github.io/colorpour/ar/), [Deutsch](https://bumustudios.github.io/colorpour/de/), [Français](https://bumustudios.github.io/colorpour/fr/)
+- [Color Pour privacy policy](https://bumustudios.github.io/colorpour/privacy/)
+
+## Fortify (Android)
+
+Fortify is a tower defense strategy game for Android: build and upgrade towers and lead a hero through ten waves on six maps, plus a daily siege.
+
+- Four towers (Volt, Pierce, Ravager, Glacier) with three levels each; four heroes (Fire, Ice, Nature, Rock) that are free and cannot be killed, each with one skill usable twice per battle; eight enemy types, with a dragon at the end of every map.
+- Six campaign maps of ten waves, up to three stars each; a daily siege that is the same for everyone and is computed on the device from the date. Battles are fully deterministic: no random hits.
+- Free with ads: a banner on the home and result screens, a full-screen ad when leaving a finished battle, and an app-open ad when returning to the game. No ad on the board during play. An optional one-time Remove ads purchase removes every ad. No subscription, no energy system, no loot boxes.
+- Every map and the daily siege play without an internet connection; the internet is used only for ads, Google Play purchases and updates, and Firebase usage statistics and crash reports.
+- No account or sign-in. Progress is stored only on the phone and is excluded from Android backup, so it does not move to a new phone and is lost on uninstall.
+- Requires Android 7.0 or newer; phones and tablets, portrait only. Android only: no iPhone version. The game's screens are in English and Turkish.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.fortify
+
+Pages:
+
+- [Fortify: how to play and FAQ (English)](https://bumustudios.github.io/fortify/)
+- Same page in [Türkçe](https://bumustudios.github.io/fortify/tr/), [Español](https://bumustudios.github.io/fortify/es/), [Português](https://bumustudios.github.io/fortify/pt/), [हिन्दी](https://bumustudios.github.io/fortify/hi/), [العربية](https://bumustudios.github.io/fortify/ar/), [Deutsch](https://bumustudios.github.io/fortify/de/), [Français](https://bumustudios.github.io/fortify/fr/)
+- [Fortify privacy policy](https://bumustudios.github.io/fortify/privacy/)
+
+## Hill Rush (Android)
+
+Hill Rush is a 2D hill climb driving game for Android with deterministic car physics: two pedals, five stages, five cars, upgrades and a daily run.
+
+- Controls: hold GAS to drive and climb, REVERSE to brake or back up; in the air GAS tips the nose up and REVERSE tips it down. Landing more than 100 degrees off the slope, or on the roof, flips the car.
+- Five stages (Green Hills, Forest, Desert, Rocky Mountains, Snow) opened at 500, 600, 700 and 800 m in the stage before; five cars (Sedan free; SUV 500, Truck 800, Racer 1200, Prototype 2000 coins); five parts upgraded to level 5 with coins. A daily run on an opened stage, with a streak.
+- Free with ads: a banner on the home screen and result panel, an occasional interstitial when leaving a finished run, and an app-open ad when returning to the game; none while driving. A rewarded ad (Keep driving: stand the car up with half a tank, once per run) plays only when the player taps it.
+- An optional one-time Remove ads purchase removes the banner, interstitial and app-open ads; Keep driving stays available. No subscription, no energy system, no loot boxes, and coins cannot be bought.
+- Plays offline: every stage and the daily run work without internet. No account or sign-in.
+- Progress (coins, cars, upgrades, best distances, streak) is stored only on the phone and is not included in Android backup, so it does not survive an uninstall or a phone change; the Remove ads purchase is restored from Google Play.
+- Requires Android 7.0 or newer; portrait only. Android only: no iPhone or web version. The game's screens are in English and Turkish.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.hillrush
+
+Pages:
+
+- [Hill Rush: how to play and FAQ (English)](https://bumustudios.github.io/hillrush/)
+- Same page in [Türkçe](https://bumustudios.github.io/hillrush/tr/), [Español](https://bumustudios.github.io/hillrush/es/), [Português](https://bumustudios.github.io/hillrush/pt/), [हिन्दी](https://bumustudios.github.io/hillrush/hi/), [العربية](https://bumustudios.github.io/hillrush/ar/), [Deutsch](https://bumustudios.github.io/hillrush/de/), [Français](https://bumustudios.github.io/hillrush/fr/)
+- [Hill Rush privacy policy](https://bumustudios.github.io/hillrush/privacy/)
+
+## Pulse Runner (Android)
+
+Pulse Runner is a one-touch neon flying game for Android: hold anywhere to rise, let go to fall.
+
+- Ten levels in four bands (Easy 1-3, Normal 4-6, Hard 7-8, Extreme 9-10), six obstacle kinds (wall, tooth, comb, saw, sliding gap, narrow slot) and an Endless mode with no finish line.
+- Each level is built from a fixed seed and the flight is deterministic, so a level is the same on every attempt and for every player; Endless lays out a new course every run. The best percentage per level and the furthest Endless run are kept.
+- Free with ads: a banner on the home screen and the end-of-run card, an occasional interstitial between runs (never two full-screen ads within 45 seconds) and an app-open ad on returning to the game; no ad during a flight. Once per run an optional rewarded ad gives a second chance.
+- No subscription. An optional one-time Remove Ads purchase removes every ad the player did not ask for; the optional rewarded second chance stays available.
+- Plays fully offline. The internet is used only for Google ads, Google Play (purchase and updates) and Firebase usage statistics and crash reports.
+- No account. Progress is stored only on the device: Android backup is off, so it does not move to a new phone and is deleted on uninstall. Google Play restores the Remove Ads purchase.
+- Requires Android 7.0 or newer; portrait only, on tablets too. Android only: no iPhone or web version. The app's screens are in English and Turkish.
+- Google Play: in closed testing, not publicly listed yet (package com.bumustudios.pulserunner).
+
+Pages:
+
+- [Pulse Runner: how to play and FAQ (English)](https://bumustudios.github.io/pulserunner/)
+- Same page in [Türkçe](https://bumustudios.github.io/pulserunner/tr/), [Español](https://bumustudios.github.io/pulserunner/es/), [Português](https://bumustudios.github.io/pulserunner/pt/), [हिन्दी](https://bumustudios.github.io/pulserunner/hi/), [العربية](https://bumustudios.github.io/pulserunner/ar/), [Deutsch](https://bumustudios.github.io/pulserunner/de/), [Français](https://bumustudios.github.io/pulserunner/fr/)
+- [Pulse Runner privacy policy](https://bumustudios.github.io/pulserunner/privacy/)
 
 ## Contact
 

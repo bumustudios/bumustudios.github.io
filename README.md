@@ -13,6 +13,15 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | --- | --- |
 | Studio landing | <https://bumustudios.github.io/> |
 | ImageToPdf landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/imagetopdf/> |
+| PdfPages landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/pdfpages/> |
+| PaperLite landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/, ja/, ko/) | <https://bumustudios.github.io/paperlite/> |
+| Tabula Domino landing page + FAQ (EN; tr/, es/, pt/, ar/, fr/) | <https://bumustudios.github.io/tabula-domino/> |
+| Grid Smash landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/gridsmash/> |
+| Arrow Rush landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/arrowrush/> |
+| Color Pour landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/colorpour/> |
+| Fortify landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/fortify/> |
+| Hill Rush landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/hillrush/> |
+| Pulse Runner landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/pulserunner/> |
 | ImageToPdf privacy policy (EN) | <https://bumustudios.github.io/imagetopdf/privacy/> |
 | ImageToPdf gizlilik politikası (TR) | <https://bumustudios.github.io/imagetopdf/privacy/tr/> |
 | PdfPages privacy policy (EN) | <https://bumustudios.github.io/pdfpages/privacy/> |
@@ -88,6 +97,10 @@ Consequences of that:
 index.html              studio landing page
 404.html                served for any unknown path, at any depth
 imagetopdf/             ImageToPdf landing page + FAQ, English (tr/ es/ pt/ hi/ ar/ de/ fr/; assets/)
+<app>/                  landing page + FAQ of every app on Google Play or in a closed test, English, with
+                        language folders and assets/ (pdfpages paperlite tabula-domino gridsmash arrowrush
+                        colorpour fortify hillrush pulserunner); GENERATED, see "Landing pages" below
+assets/play-badge/      the official Google Play badges, one per language, shared by the landing pages
 imagetopdf/privacy/     ImageToPdf policy, English
 imagetopdf/privacy/tr/  ImageToPdf policy, Turkish
 pdfpages/privacy/       PdfPages policy, English
@@ -128,14 +141,32 @@ tabula-domino/privacy/  Tabula Domino policy, English (tr/ Turkish, ar/ Arabic, 
 tabula-domino/delete-account/  Tabula Domino account deletion (tr/, ar/, fr/)
 tabula-domino/join/     Tabula Domino table invitation (see below)
 .well-known/assetlinks.json  Android App Links (Tabula Domino; see below)
-robots.txt, sitemap.xml  crawler hints; the sitemap lists the studio page and the ImageToPdf pages
-llms.txt                plain facts about the apps for AI assistants (llmstxt.org format)
+robots.txt, sitemap.xml  crawler hints; the sitemap lists every indexable page with its hreflang group (GENERATED)
+llms.txt                plain facts about the apps for AI assistants (llmstxt.org format; GENERATED)
 .nojekyll               tells Pages to serve the files as-is, skipping Jekyll
 ```
 
 `.nojekyll` is not strictly required — nothing here starts with an underscore —
 but without it a stray `{{` anywhere in the copy would fail the whole Pages build
 rather than one file.
+
+## Landing pages (generated)
+
+The app landing pages (`<app>/index.html` and its language folders, `<app>/assets/`), `sitemap.xml` and
+`llms.txt` are generated; do not edit them by hand. The copy lives in the private workspace repo
+(`bumustudios-dev/YayinPanosu`) at `Yayin Panosu/magaza-metinleri/<app>/web/content.py`, and one shared
+engine builds every app: `Yayin Panosu/magaza-metinleri/web-engine/` (its README has the details). From the
+workspace root:
+
+```
+python3 -I "Yayin Panosu/magaza-metinleri/web-engine/build.py" bumustudios.github.io
+python3 -I "Yayin Panosu/magaza-metinleri/web-engine/check.py" bumustudios.github.io --online
+```
+
+The pages carry no scripts, cookies or third-party requests. Apps still in a closed test show "coming soon"
+instead of the Play badge; when one goes public, set its `APP['status']` to `'live'` and rebuild
+(`check.py --online` says when). The policy pages and the Tabula Domino join and delete-account pages are
+not generated; the landing pages only link to them.
 
 ## Related repositories
 

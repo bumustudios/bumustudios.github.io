@@ -199,9 +199,10 @@ send your progress or your play history to AdMob or to any of its mediation part
 AdMob or the partners — only aggregated, anonymous reporting such as impression and revenue totals.</p>
 <p>Because ads require an advertising identifier, the game declares the
 <code>com.google.android.gms.permission.AD_ID</code> permission. Ad formats used are a banner on
-the menu and result screens and an occasional interstitial between levels, announced by a card first
-and shown only when you tap its Continue button. No ad is ever shown on the board while you are
-playing.</p>
+the menu and result screens and an occasional interstitial between levels. An interstitial can appear only right after you tap a button on the card at the end of a battle,
+never by itself during play, and those buttons ignore taps for a moment after the card appears, so a
+stray tap cannot trigger one.
+No ad is ever shown on the board while you are playing.</p>
 <p>How Google handles this data is governed by Google's own policies, not by this one:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
@@ -431,7 +432,7 @@ Google Firebase (see the Google Firebase section above) and brought the rest of 
 with the current version of the game.</p>
 <p>The update of 1 November 2026 adds the other ad networks that AdMob can call on
 through mediation (see "Mediation partners" under Advertising), removes the app-open ad, which the
-game no longer shows, and says that interstitials are now announced by a card first.</p>
+game no longer shows, and describes when interstitials can appear.</p>
 
 <h2 id="contact">Contact</h2>
 <p>For any question about this policy or about privacy in this game, write to:</p>

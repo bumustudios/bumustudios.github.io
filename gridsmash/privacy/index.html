@@ -161,6 +161,7 @@ personal information, and none of it is sent anywhere:</p>
   <li>your theme, text size, language, sound, music and vibration choices;</li>
   <li>your best scores and unlocked levels, and your Adventure stars and chapters;</li>
   <li>a snapshot of an unfinished game, so it can be resumed after a restart;</li>
+  <li>whether the game has already asked for a Google Play rating;</li>
   <li>whether the one-time "remove ads" purchase is active;</li>
   <li>a counter of how many interstitial ads have been shown, used to keep ad frequency low.</li>
 </ul>
@@ -208,10 +209,14 @@ send your scores or your play history to AdMob or to any of its mediation partne
 AdMob or the partners — only aggregated, anonymous reporting such as impression and revenue totals.</p>
 <p>Because ads require an advertising identifier, the game declares the
 <code>com.google.android.gms.permission.AD_ID</code> permission. Ad formats used are a banner on
-the menu and result screens, an occasional interstitial between games and, in Classic, at most one
-after every 2,000 points once that move is over (both announced by a card first and shown only when
-you tap its Continue button), and an optional rewarded ad you can choose to watch to continue a lost
-game. No ad ever appears while you are dragging a piece or over a dialog.</p>
+the menu and result screens, an occasional interstitial between games, at most one interstitial
+after every 2,000 points in Classic, and an optional rewarded ad you can choose to watch to continue
+a lost game. An interstitial between games can appear only right after you tap a button on the
+game-over or stage-clear card, never by itself during play, and those buttons ignore taps for a
+moment after the card appears, so a stray tap cannot trigger one. For the Classic break, once the
+move that passed the 2,000 points is over, the round pauses, a card says a short ad is coming, and
+the ad plays when you tap Continue. The rewarded ad plays only when you choose the button that says
+it plays an ad. No ad ever appears while you are dragging a piece or over a dialog.</p>
 <p>How Google handles this data is governed by Google's own policies, not by this one:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
@@ -445,7 +450,7 @@ Google Firebase (see the Google Firebase section above) and brought the rest of 
 with the current version of the game.</p>
 <p>The update of 1 November 2026 adds the other ad networks that AdMob can call on
 through mediation (see "Mediation partners" under Advertising), removes the app-open ad, which the
-game no longer shows, and says that interstitials are now announced by a card first.</p>
+game no longer shows, and describes when interstitials can appear.</p>
 
 <h2 id="contact">Contact</h2>
 <p>For any question about this policy or about privacy in this game, write to:</p>

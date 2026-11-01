@@ -162,6 +162,7 @@ bilgi değildir ve hiçbiri bir yere gönderilmez:</p>
   <li>tema, yazı boyutu, dil, ses, müzik ve titreşim tercihleriniz;</li>
   <li>en yüksek puanlarınız ve açtığınız seviyeler, Macera yıldızlarınız ve bölümleriniz;</li>
   <li>yarım kalan oyunun, yeniden açılışta devam edebilmek için tutulan anlık görüntüsü;</li>
+  <li>oyunun sizden Google Play puanı isteyip istemediği;</li>
   <li>tek seferlik "reklamları kaldır" satın almasının etkin olup olmadığı;</li>
   <li>reklam sıklığını düşük tutmak için kaç geçiş reklamı gösterildiğini tutan bir sayaç.</li>
 </ul>
@@ -210,11 +211,15 @@ AdMob'dan veya ortaklardan hiçbir kişisel veri almaz — yalnızca gösterim v
 toplamları gibi toplulaştırılmış, anonim raporlar.</p>
 <p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden oyun
 <code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Kullanılan reklam biçimleri:
-menü ve sonuç ekranlarında bir banner, oyunlar arasında ara sıra bir geçiş reklamı ve Klasik'te her
-2.000 puandan sonra, o hamle bittiğinde, en fazla bir geçiş reklamı (ikisi de önce bir kartla
-duyurulur ve yalnızca kartın Devam düğmesine dokununca gösterilir) ve kaybedilen bir oyuna devam
-etmek için izlemeyi kendinizin seçebileceği isteğe bağlı bir ödüllü reklam. Siz bir parçayı
-sürüklerken ya da bir pencere açıkken asla reklam çıkmaz.</p>
+menü ve sonuç ekranlarında bir banner, oyunlar arasında ara sıra bir geçiş reklamı, Klasik'te her
+2.000 puandan sonra en fazla bir geçiş reklamı ve kaybedilen bir oyuna devam etmek için izlemeyi
+kendinizin seçebileceği isteğe bağlı bir ödüllü reklam. Oyunlar arasındaki geçiş reklamı yalnızca
+oyun sonu ya da stage sonu kartındaki bir düğmeye dokunduğunuzda, hemen ardından çıkabilir; oynarken
+kendiliğinden asla çıkmaz. Bu düğmeler kart belirdikten sonra kısa bir süre dokunuşları yok sayar,
+böylece yanlışlıkla yapılan bir dokunuş reklam açamaz. Klasik'teki reklam arasında ise 2.000 puanı
+geçiren hamle bittiğinde oyun durur, bir kart kısa bir reklamın geleceğini söyler ve reklam Devam
+düğmesine dokununca oynatılır. Ödüllü reklam yalnızca reklam oynatacağını söyleyen düğmeyi
+seçtiğinizde oynatılır. Siz bir parçayı sürüklerken ya da bir pencere açıkken asla reklam çıkmaz.</p>
 <p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
@@ -451,8 +456,8 @@ ve çökme raporları eklendi (yukarıdaki Google Firebase bölümüne bakın) v
 oyunun güncel sürümüne uyarlandı.</p>
 <p>1 Kasım 2026 tarihli güncellemeyle AdMob'un aracılık yoluyla başvurabildiği diğer
 reklam ağları eklendi (Reklamlar bölümündeki "Aracılık ortakları" kısmına bakın), oyunun artık
-göstermediği uygulama açılış reklamı çıkarıldı ve geçiş reklamlarının önce bir kartla
-duyurulduğu belirtildi.</p>
+göstermediği uygulama açılış reklamı çıkarıldı ve geçiş reklamlarının ne zaman
+çıkabileceği anlatıldı.</p>
 
 <h2 id="contact">İletişim</h2>
 <p>Bu politikayla veya oyundaki gizlilikle ilgili her soru için:</p>

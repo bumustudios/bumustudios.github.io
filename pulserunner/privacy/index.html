@@ -159,6 +159,7 @@ personal information, and none of it is sent anywhere:</p>
   <li>your theme, text size, language, sound, vibration and colour-blind choices;</li>
   <li>which levels you have unlocked, your best result on each, whether a level is finished, and
   your furthest endless run;</li>
+  <li>whether the game has already asked for a Google Play rating;</li>
   <li>whether the one-time "remove ads" purchase is active;</li>
   <li>a counter of how many interstitial ads have been shown, used to keep ad frequency low.</li>
 </ul>
@@ -206,10 +207,12 @@ send your progress or your play history to AdMob or to any of its mediation part
 AdMob or the partners — only aggregated, anonymous reporting such as impression and revenue totals.</p>
 <p>Because ads require an advertising identifier, the game declares the
 <code>com.google.android.gms.permission.AD_ID</code> permission. Ad formats used are a banner on
-the menu and game-over screens, an occasional interstitial between runs (announced by a card first
-and shown only when you tap its Continue button),
-and one optional rewarded ad per run that you can choose to watch (it puts your ship back where it
-died with the way ahead cleared). No ad is ever shown while you are flying.</p>
+the menu and game-over screens, an occasional interstitial between runs, and one optional rewarded
+ad per run that you can choose to watch (it puts your ship back where it died with the way ahead
+cleared). An interstitial can appear only right after you tap a button on the card at the end of a run,
+never by itself during play, and those buttons ignore taps for a moment after the card appears, so a
+stray tap cannot trigger one.
+A rewarded ad plays only when you choose a button that says it plays an ad. No ad is ever shown while you are flying.</p>
 <p>How Google handles this data is governed by Google's own policies, not by this one:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
@@ -443,7 +446,7 @@ Google Firebase (see the Google Firebase section above) and brought the rest of 
 with the current version of the game.</p>
 <p>The update of 1 November 2026 adds Google Play Games (see its own section above) and the other ad networks that AdMob can call on
 through mediation (see "Mediation partners" under Advertising), removes the app-open ad, which the
-game no longer shows, and says that interstitials are now announced by a card first.</p>
+game no longer shows, and describes when interstitials can appear.</p>
 
 <h2 id="contact">Contact</h2>
 <p>For any question about this policy or about privacy in this game, write to:</p>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hill Rush: hill climb driving game for Android, plays offline</title>
-<meta name="description" content="Hill Rush is a 2D hill climb driving game for Android with honest physics: five stages, five cars, upgrades and a daily run. Plays offline, no account.">
+<meta name="description" content="Hill Rush is a 2D hill climb driving game for Android with honest physics: fifteen stages, five cars, upgrades and achievements. Plays offline, no account.">
 <meta name="color-scheme" content="light dark">
 <link rel="canonical" href="https://bumustudios.github.io/hillrush/">
 <link rel="alternate" hreflang="en" href="https://bumustudios.github.io/hillrush/">
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BumuStudios">
 <meta property="og:title" content="Hill Rush: hill climb driving game for Android, plays offline">
-<meta property="og:description" content="Hill Rush is a 2D hill climb driving game for Android with honest physics: five stages, five cars, upgrades and a daily run. Plays offline, no account.">
+<meta property="og:description" content="Hill Rush is a 2D hill climb driving game for Android with honest physics: fifteen stages, five cars, upgrades and achievements. Plays offline, no account.">
 <meta property="og:url" content="https://bumustudios.github.io/hillrush/">
 <meta property="og:image" content="https://bumustudios.github.io/hillrush/assets/feature-graphic-en.jpg">
 <meta property="og:image:width" content="1024">
@@ -38,7 +38,7 @@
    "@id": "https://bumustudios.github.io/hillrush/#app",
    "name": "Hill Rush",
    "alternateName": "Hill Rush: Hill Climb",
-   "description": "Hill Rush is a 2D hill climb driving game for Android with honest physics: five stages, five cars, upgrades and a daily run. Plays offline, no account.",
+   "description": "Hill Rush is a 2D hill climb driving game for Android with honest physics: fifteen stages, five cars, upgrades and achievements. Plays offline, no account.",
    "applicationCategory": "GameApplication",
    "genre": "Racing",
    "operatingSystem": "Android 7.0 or later",
@@ -64,11 +64,11 @@
    "featureList": [
     "Two pedals: GAS and REVERSE do everything: climb, brake, back out of a ditch, and tilt the car in the air.",
     "Honest physics: The drive is fully deterministic: no rubber-banding, no hidden help. The same pedals on the same road always give the same run.",
-    "Five stages: Green Hills, Forest, Desert, Rocky Mountains and Snow, each rougher than the last, opened by the distance you reach.",
+    "Fifteen stages: From Green Hills to Moon Base and Crystal Caves, each driving its own way and opened by the distance you reach.",
     "Five cars, five upgrades: Sedan, SUV, Truck, Racer and Prototype, plus Engine, Suspension, Tires, Fuel tank and Stability, all paid for with coins.",
-    "Daily run and streak: A new road every day on a stage you have opened. Drive it on consecutive days to grow your streak.",
-    "Plays offline: Every stage and the daily run work with no internet connection at all.",
-    "No account: No sign-up and no sign-in. Coins, garage, best distances and streak stay on your phone.",
+    "Achievements and leaderboards: With the optional Google Play Games: 11 achievements and two leaderboards, Longest Drive and Grand Tour.",
+    "Plays offline: Every stage works with no internet connection at all.",
+    "No account needed: No sign-up. Coins, garage and best distances stay on your phone; the only sign-in is the optional Google Play Games.",
     "Fair by design: No energy system, no timers, no subscription, no loot boxes. An ad to keep driving plays only when you ask for it."
    ],
    "publisher": {
@@ -104,7 +104,7 @@
      "name": "What ads does Hill Rush show?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "A banner on the home screen and the result panel, a full-screen ad now and then when you leave a finished run, and an ad when you come back to the game after a while. No ad is shown while you drive. The Keep driving ad plays only when you tap it."
+      "text": "A banner on the home screen and the result panel, and now and then a full-screen ad when you tap a button to leave a finished run. No ad is shown while you drive. The Keep driving ad plays only when you tap it."
      }
     },
     {
@@ -112,7 +112,7 @@
      "name": "How do I remove the ads?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Buy Remove ads once in Settings. It removes the banner, the full-screen ads between runs and the ad when you come back, for good. Keep driving still offers a short ad when you ask for one. The purchase is restored from your Google Play account if you reinstall."
+      "text": "Buy Remove ads once in Settings. It removes the banner and the full-screen ads between runs, for good. Keep driving still offers a short ad when you ask for one. The purchase is restored from your Google Play account if you reinstall."
      }
     },
     {
@@ -120,7 +120,7 @@
      "name": "Can I play Hill Rush offline?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. Every stage and the daily run work without an internet connection. When you are online, the game uses the connection only for ads, Google Play (the purchase and updates), and anonymous usage statistics and crash reports."
+      "text": "Yes. Every stage works without an internet connection. When you are online, the game uses the connection only for ads (served through Google AdMob), Google Play (the purchase, updates and the optional Play Games), and usage statistics and crash reports sent to Google Firebase."
      }
     },
     {
@@ -128,7 +128,7 @@
      "name": "Do I need an account? What data does it collect?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "No account, no sign-in, no email. Your runs and progress are never uploaded. The game sends only usage statistics and crash reports through Google Firebase, and Google's ads collect what the privacy policy describes."
+      "text": "No account is needed, and the game reads none of your files. The only sign-in is the optional Google Play Games one, for achievements and leaderboards; nothing else in the game needs it. The game sends usage statistics and crash reports through Google Firebase, and the ads collect what the privacy policy describes. Your runs and progress are never uploaded; only if you sign in to Play Games do your achievements and leaderboard scores go to Google."
      }
     },
     {
@@ -136,7 +136,7 @@
      "name": "Is my progress saved? What happens if I reinstall or change phones?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Your coins, cars, upgrades, best distances and streak are saved on your phone automatically. They are not backed up to the cloud, so uninstalling the game or moving to a new phone starts you from the beginning. Only the Remove ads purchase comes back, from Google Play."
+      "text": "Your coins, cars, upgrades and best distances are saved on your phone automatically. They are not backed up to the cloud, so uninstalling the game or moving to a new phone starts you from the beginning. Only the Remove ads purchase comes back, from Google Play."
      }
     },
     {
@@ -144,7 +144,7 @@
      "name": "How do I unlock new stages?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Reach a set distance in the stage before: 500 m in Green Hills opens Forest, 600 m in Forest opens Desert, 700 m in Desert opens Rocky Mountains, and 800 m in Rocky Mountains opens Snow. Daily runs do not count toward this."
+      "text": "Reach a set distance in the stage a new one branches from. On the main road, 500 m in Green Hills opens Forest, 600 m in Forest opens Desert, 700 m in Desert opens Rocky Mountains and 800 m in Rocky Mountains opens Snow. The branches: Sunset Beach at 300 m in Green Hills, Misty Swamp at 250 m in Forest, Jungle Trail at 450 m in Misty Swamp, Red Canyon at 450 m in Desert, Highlands at 500 m in Red Canyon, Badlands at 550 m in Highlands, Volcano at 450 m in Rocky Mountains, Moon Base at 550 m in Volcano, Glacier at 150 m in Snow and Crystal Caves at 450 m in Glacier."
      }
     },
     {
@@ -259,11 +259,11 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <ul class="facts">
 <li><b>Two pedals</b><span>GAS and REVERSE do everything: climb, brake, back out of a ditch, and tilt the car in the air.</span></li>
 <li><b>Honest physics</b><span>The drive is fully deterministic: no rubber-banding, no hidden help. The same pedals on the same road always give the same run.</span></li>
-<li><b>Five stages</b><span>Green Hills, Forest, Desert, Rocky Mountains and Snow, each rougher than the last, opened by the distance you reach.</span></li>
+<li><b>Fifteen stages</b><span>From Green Hills to Moon Base and Crystal Caves, each driving its own way and opened by the distance you reach.</span></li>
 <li><b>Five cars, five upgrades</b><span>Sedan, SUV, Truck, Racer and Prototype, plus Engine, Suspension, Tires, Fuel tank and Stability, all paid for with coins.</span></li>
-<li><b>Daily run and streak</b><span>A new road every day on a stage you have opened. Drive it on consecutive days to grow your streak.</span></li>
-<li><b>Plays offline</b><span>Every stage and the daily run work with no internet connection at all.</span></li>
-<li><b>No account</b><span>No sign-up and no sign-in. Coins, garage, best distances and streak stay on your phone.</span></li>
+<li><b>Achievements and leaderboards</b><span>With the optional Google Play Games: 11 achievements and two leaderboards, Longest Drive and Grand Tour.</span></li>
+<li><b>Plays offline</b><span>Every stage works with no internet connection at all.</span></li>
+<li><b>No account needed</b><span>No sign-up. Coins, garage and best distances stay on your phone; the only sign-in is the optional Google Play Games.</span></li>
 <li><b>Fair by design</b><span>No energy system, no timers, no subscription, no loot boxes. An ad to keep driving plays only when you ask for it.</span></li>
 </ul>
 </section>
@@ -271,7 +271,7 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <section aria-labelledby="how">
 <h2 id="how">How to play</h2>
 <ol class="steps">
-<li>On the home screen, tap a stage to start a run. <b>Green Hills</b> is open from the start.</li>
+<li>On the home screen, open <b>Stages</b> and tap one to start a run. <b>Green Hills</b> is open from the start.</li>
 <li>Hold <b>GAS</b> to drive and climb. Hold <b>REVERSE</b> to brake; below walking pace it backs the car up, which gets you out of a ditch.</li>
 <li>In the air, <b>GAS</b> tips the nose up and <b>REVERSE</b> tips it down. Land with your wheels on the slope: land more than 100° off it, or touch the ground with the roof, and the car goes over.</li>
 <li>Watch the fuel gauge. The engine burns fuel the whole time it runs, less when you are off the pedals, and every fuel can puts back 12 seconds of gas.</li>
@@ -281,15 +281,15 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 </section>
 
 <section aria-labelledby="progress">
-<h2 id="progress">Stages, cars and the daily run</h2>
+<h2 id="progress">Stages, cars and achievements</h2>
 <ul class="plain">
-<li><b>Five stages.</b> Forest opens at 500 m in Green Hills, Desert at 600 m in Forest, Rocky Mountains at 700 m in Desert and Snow at 800 m in Rocky Mountains. Expect ramps in the Desert, pits in the Rocky Mountains, both on the Snow, and sand and ice that cut your grip.</li>
-<li><b>Five cars.</b> The Sedan is yours from the start; the SUV, Truck, Racer and Prototype cost 500, 800, 1,200 and 2,000 coins. Each has its own power, grip, suspension, stability and air control.</li>
+<li><b>Fifteen stages.</b> Five on the main road: Forest opens at 500 m in Green Hills, Desert at 600 m in Forest, Rocky Mountains at 700 m in Desert and Snow at 800 m in Rocky Mountains. Ten more branch off them, each driving its own way: Sunset Beach, Misty Swamp, Jungle Trail, Red Canyon, Highlands, Badlands, Volcano, Moon Base with low gravity, Glacier and Crystal Caves. The Stages screen shows what opens each one.</li>
+<li><b>Five cars.</b> The Sedan is yours from the start; the SUV, Truck, Racer and Prototype cost 500, 800, 1,200 and 2,000 coins. Each has its own power, grip, suspension, stability and air control, and the Garage shows each car in live 3D: drag to turn it.</li>
 <li><b>Five upgrades.</b> Engine, Suspension, Tires, Fuel tank and Stability go up to level 5, for 120, 260, 480 and 800 coins a level, and every level helps every car you own.</li>
-<li><b>Daily run.</b> One road a day, on one of the stages you have opened. It banks coins but does not open stages.</li>
+<li><b>Achievements and leaderboards.</b> Sign in to the optional Google Play Games to earn 11 achievements, from your first climb to all 15 stages, every car and 10,000 coins, and to compare your Longest Drive and Grand Tour (your best distances on every stage added up) with other players.</li>
 <li><b>Keep driving.</b> Once per run, after a crash or an empty tank, you can choose to watch a short ad to stand the car back up with half a tank and carry on from the same spot.</li>
 </ul>
-<div class="shots"><img src="/hillrush/assets/en-04-garage.webp" width="540" height="960" alt="The Garage: cars to buy and five parts to upgrade with coins" loading="lazy" decoding="async"><img src="/hillrush/assets/en-05-five-stages.webp" width="540" height="960" alt="The five stages: Green Hills, Forest, Desert, Rocky Mountains and Snow" loading="lazy" decoding="async"></div>
+<div class="shots"><img src="/hillrush/assets/en-04-garage.webp" width="540" height="960" alt="The Garage: cars to buy and five parts to upgrade with coins" loading="lazy" decoding="async"><img src="/hillrush/assets/en-05-five-stages.webp" width="540" height="960" alt="The first five stages: Green Hills, Forest, Desert, Rocky Mountains and Snow" loading="lazy" decoding="async"></div>
 </section>
 
 <section aria-labelledby="faq">
@@ -297,12 +297,12 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <div class="faq">
 <div><h3>How do you play Hill Rush?</h3><p>Hold GAS to drive uphill and REVERSE to brake or back up. In the air, GAS tips the nose up and REVERSE tips it down, so you can land on your wheels. Collect fuel cans to keep the engine running and coins to buy cars and upgrades, and try to beat your best distance.</p></div>
 <div><h3>Is Hill Rush free?</h3><p>Yes. The game is free on Google Play and supported by ads. There is no subscription, no energy system and no premium currency; the only purchase is an optional one-time Remove ads.</p></div>
-<div><h3>What ads does Hill Rush show?</h3><p>A banner on the home screen and the result panel, a full-screen ad now and then when you leave a finished run, and an ad when you come back to the game after a while. No ad is shown while you drive. The Keep driving ad plays only when you tap it.</p></div>
-<div><h3>How do I remove the ads?</h3><p>Buy Remove ads once in Settings. It removes the banner, the full-screen ads between runs and the ad when you come back, for good. Keep driving still offers a short ad when you ask for one. The purchase is restored from your Google Play account if you reinstall.</p></div>
-<div><h3>Can I play Hill Rush offline?</h3><p>Yes. Every stage and the daily run work without an internet connection. When you are online, the game uses the connection only for ads, Google Play (the purchase and updates), and anonymous usage statistics and crash reports.</p></div>
-<div><h3>Do I need an account? What data does it collect?</h3><p>No account, no sign-in, no email. Your runs and progress are never uploaded. The game sends only usage statistics and crash reports through Google Firebase, and Google&#x27;s ads collect what the privacy policy describes.</p></div>
-<div><h3>Is my progress saved? What happens if I reinstall or change phones?</h3><p>Your coins, cars, upgrades, best distances and streak are saved on your phone automatically. They are not backed up to the cloud, so uninstalling the game or moving to a new phone starts you from the beginning. Only the Remove ads purchase comes back, from Google Play.</p></div>
-<div><h3>How do I unlock new stages?</h3><p>Reach a set distance in the stage before: 500 m in Green Hills opens Forest, 600 m in Forest opens Desert, 700 m in Desert opens Rocky Mountains, and 800 m in Rocky Mountains opens Snow. Daily runs do not count toward this.</p></div>
+<div><h3>What ads does Hill Rush show?</h3><p>A banner on the home screen and the result panel, and now and then a full-screen ad when you tap a button to leave a finished run. No ad is shown while you drive. The Keep driving ad plays only when you tap it.</p></div>
+<div><h3>How do I remove the ads?</h3><p>Buy Remove ads once in Settings. It removes the banner and the full-screen ads between runs, for good. Keep driving still offers a short ad when you ask for one. The purchase is restored from your Google Play account if you reinstall.</p></div>
+<div><h3>Can I play Hill Rush offline?</h3><p>Yes. Every stage works without an internet connection. When you are online, the game uses the connection only for ads (served through Google AdMob), Google Play (the purchase, updates and the optional Play Games), and usage statistics and crash reports sent to Google Firebase.</p></div>
+<div><h3>Do I need an account? What data does it collect?</h3><p>No account is needed, and the game reads none of your files. The only sign-in is the optional Google Play Games one, for achievements and leaderboards; nothing else in the game needs it. The game sends usage statistics and crash reports through Google Firebase, and the ads collect what the privacy policy describes. Your runs and progress are never uploaded; only if you sign in to Play Games do your achievements and leaderboard scores go to Google.</p></div>
+<div><h3>Is my progress saved? What happens if I reinstall or change phones?</h3><p>Your coins, cars, upgrades and best distances are saved on your phone automatically. They are not backed up to the cloud, so uninstalling the game or moving to a new phone starts you from the beginning. Only the Remove ads purchase comes back, from Google Play.</p></div>
+<div><h3>How do I unlock new stages?</h3><p>Reach a set distance in the stage a new one branches from. On the main road, 500 m in Green Hills opens Forest, 600 m in Forest opens Desert, 700 m in Desert opens Rocky Mountains and 800 m in Rocky Mountains opens Snow. The branches: Sunset Beach at 300 m in Green Hills, Misty Swamp at 250 m in Forest, Jungle Trail at 450 m in Misty Swamp, Red Canyon at 450 m in Desert, Highlands at 500 m in Red Canyon, Badlands at 550 m in Highlands, Volcano at 450 m in Rocky Mountains, Moon Base at 550 m in Volcano, Glacier at 150 m in Snow and Crystal Caves at 450 m in Glacier.</p></div>
 <div><h3>How do I get new cars and upgrades? Can I buy coins?</h3><p>With coins from your runs only. The SUV, Truck, Racer and Prototype cost 500, 800, 1,200 and 2,000 coins, and each upgrade level costs 120, 260, 480 or 800. Coins cannot be bought with real money.</p></div>
 <div><h3>Any tips for driving further?</h3><p>Watch the car&#x27;s angle over crests and use GAS and REVERSE in the air to match the slope you land on. Coasting downhill burns less fuel than holding a pedal. Upgrades to the Fuel tank, Engine and Tires add up, and they help every car you own.</p></div>
 <div><h3>Which devices does it run on? Is there an iPhone version?</h3><p>Android 7.0 or newer. Hill Rush is made for phones and always plays in portrait. It is an Android game only: there is no iPhone or web version.</p></div>
@@ -317,7 +317,7 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 </main>
 <footer>
 <p class="links"><a href="/hillrush/privacy/">Privacy policy</a><a href="/">BumuStudios apps</a><a href="mailto:bumustudios@gmail.com">Contact: bumustudios@gmail.com</a></p>
-<p>© 2026 BumuStudios · <time datetime="2026-10-19">2026-10-19</time></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-02">2026-11-02</time></p>
 <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
 </footer>
 </body>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fortify: jogo de tower defense e estratégia para Android</title>
-<meta name="description" content="Fortify é um jogo de estratégia tower defense: construa e melhore quatro torres, comande um herói e segure dez ondas em seis mapas. Sem sorte, sem conta, joga offline.">
+<meta name="description" content="Fortify é um jogo de estratégia tower defense: construa e melhore quatro torres, comande um herói e segure dez ondas em 24 mapas. Sem sorte, sem conta, joga offline.">
 <meta name="color-scheme" content="light dark">
 <link rel="canonical" href="https://bumustudios.github.io/fortify/pt/">
 <link rel="alternate" hreflang="en" href="https://bumustudios.github.io/fortify/">
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BumuStudios">
 <meta property="og:title" content="Fortify: jogo de tower defense e estratégia para Android">
-<meta property="og:description" content="Fortify é um jogo de estratégia tower defense: construa e melhore quatro torres, comande um herói e segure dez ondas em seis mapas. Sem sorte, sem conta, joga offline.">
+<meta property="og:description" content="Fortify é um jogo de estratégia tower defense: construa e melhore quatro torres, comande um herói e segure dez ondas em 24 mapas. Sem sorte, sem conta, joga offline.">
 <meta property="og:url" content="https://bumustudios.github.io/fortify/pt/">
 <meta property="og:image" content="https://bumustudios.github.io/fortify/assets/feature-graphic-en.jpg">
 <meta property="og:image:width" content="1024">
@@ -38,7 +38,7 @@
    "@id": "https://bumustudios.github.io/fortify/#app",
    "name": "Fortify",
    "alternateName": "Fortify: Tower Defense",
-   "description": "Fortify é um jogo de estratégia tower defense: construa e melhore quatro torres, comande um herói e segure dez ondas em seis mapas. Sem sorte, sem conta, joga offline.",
+   "description": "Fortify é um jogo de estratégia tower defense: construa e melhore quatro torres, comande um herói e segure dez ondas em 24 mapas. Sem sorte, sem conta, joga offline.",
    "applicationCategory": "GameApplication",
    "genre": "Strategy",
    "operatingSystem": "Android 7.0 or later",
@@ -64,11 +64,11 @@
    "featureList": [
     "Quatro torres, três níveis: Volt, Pierce, Ravager e Glacier, cada uma com duas melhorias. Venda qualquer torre por 70% do que gastou nela.",
     "Quatro heróis: Fire, Ice, Nature e Rock: grátis, não podem ser derrotados e cada um tem uma grande habilidade para usar duas vezes por batalha.",
-    "Seis mapas, dez ondas: Cada mapa da campanha tem sua própria estrada e bioma, um dragão no fim e até três estrelas.",
-    "Cerco diário: Uma batalha nova todo dia, igual para todo mundo. Vença dia após dia para aumentar sua sequência.",
+    "24 mapas em quatro capítulos: Dez ondas em cada mapa, cada um com sua própria estrada e bioma, um dragão chefe no fim e até três estrelas.",
+    "Conquistas e placares: Google Play Games opcional: 11 conquistas e dois placares, de estrelas de campanha e de inimigos derrotados.",
     "Estratégia, não sorte: Sem acertos críticos aleatórios nem dados escondidos: toda batalha é totalmente determinística.",
-    "Joga offline: Todos os mapas e o cerco diário funcionam sem internet.",
-    "Sem energia nem caixas de loot: Jogue quantas batalhas quiser. Também não tem conta nem login.",
+    "Joga offline: Os 24 mapas funcionam sem internet.",
+    "Sem energia nem caixas de loot: Jogue quantas batalhas quiser, sem precisar de conta.",
     "Sem assinatura: Grátis com anúncios. Uma compra única e opcional remove todos os anúncios para sempre."
    ],
    "publisher": {
@@ -96,7 +96,7 @@
      "name": "Fortify é grátis?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Sim. O jogo é grátis e pago por anúncios: um banner na tela inicial e nos painéis de vitória e derrota, um anúncio em tela cheia ao sair de uma batalha terminada (nunca dois em menos de 45 segundos) e um anúncio ao voltar para o jogo vindo de outro app. Nenhum anúncio aparece no tabuleiro enquanto você joga."
+      "text": "Sim. O jogo é grátis e pago por anúncios: um banner na tela inicial e nos cartões de vitória e derrota, e um anúncio em tela cheia ao sair de uma batalha terminada por um dos botões do cartão (nunca dois em menos de 45 segundos). Esses botões ignoram toques por um instante depois que o cartão aparece, então um toque que era para a batalha nunca abre um anúncio. Nenhum anúncio aparece no tabuleiro enquanto você joga, nem quando você volta para o jogo."
      }
     },
     {
@@ -112,7 +112,7 @@
      "name": "Dá para jogar Fortify offline?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Sim. Todos os mapas e o cerco diário podem ser jogados sem internet. A conexão só é usada para os anúncios, para compras e atualizações do Google Play e para as estatísticas de uso e relatórios de falhas enviados ao Google Firebase."
+      "text": "Sim. Os 24 mapas podem ser jogados sem internet. A conexão só é usada para os anúncios, para o Google Play (compras, atualizações e o Play Games opcional) e para as estatísticas de uso e relatórios de falhas enviados ao Google Firebase."
      }
     },
     {
@@ -120,7 +120,7 @@
      "name": "Meu progresso fica salvo?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Sim, automaticamente, no seu celular: mapas liberados, estrelas, melhores pontuações e sua sequência diária. Não existe salvamento na nuvem: o progresso não entra no backup do Android, então não passa para um celular novo e é apagado se você desinstalar o jogo."
+      "text": "Sim, automaticamente, no seu celular: mapas liberados, estrelas e melhores pontuações. Não existe salvamento na nuvem: o progresso não entra no backup do Android, então não passa para um celular novo e é apagado se você desinstalar o jogo."
      }
     },
     {
@@ -128,7 +128,7 @@
      "name": "Preciso de conta? Que dados o jogo coleta?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Não tem conta nem login. Suas batalhas e seu progresso nunca saem do celular. Os anúncios do Google e as estatísticas de uso e relatórios de falhas do Firebase coletam alguns dados do aparelho, como o ID de publicidade e uma localização aproximada pelo IP; a política de privacidade lista tudo."
+      "text": "Não precisa de conta. O único login é o opcional do Google Play Games, para conquistas e placares; nada mais no jogo precisa dele. Suas batalhas e seu progresso nunca saem do celular; só se você entrar no Play Games suas conquistas e suas duas pontuações nos placares (estrelas de campanha e inimigos derrotados) vão para o Google. Os anúncios e as estatísticas de uso e relatórios de falhas do Firebase coletam alguns dados do aparelho, como o ID de publicidade e uma localização aproximada pelo IP; a política de privacidade lista tudo."
      }
     },
     {
@@ -149,10 +149,10 @@
     },
     {
      "@type": "Question",
-     "name": "O que é o cerco diário?",
+     "name": "Quantos mapas o Fortify tem?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Uma batalha nova todo dia: um dos seis mapas, com inimigos mais resistentes numa medida que muda de um dia para o outro. Todo mundo recebe o mesmo cerco na mesma data, calculado no seu celular a partir da própria data. Vença dia após dia para aumentar sua sequência."
+      "text": "24 mapas de campanha em quatro capítulos: The Old Kingdom, The Wild Frontier, The Deep Realms e The Dragon's Reach, que chegou na versão 1.1.4 e é o mais difícil. Cada mapa tem dez ondas, sua própria estrada e bioma, um dragão chefe no fim e até três estrelas: 72 no total. A partir do mapa 7, o inimigo traz seus exércitos: Swarm, Ironclad, Skyfall e Legion. Cada vitória libera o próximo mapa."
      }
     },
     {
@@ -160,7 +160,7 @@
      "name": "Alguma dica para uma onda difícil?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Pierce atravessa armadura, então cuida de orcs, golens e do dragão. Glacier segura um grupo para as outras torres acertarem, e Ravager atinge um trecho inteiro da estrada. Leve o herói para onde a pressão estiver maior, guarde a habilidade para uma onda grande e só chame a próxima onda antes da hora quando a defesa estiver folgada."
+      "text": "Pierce atravessa armadura, então cuida de orcs, golens e do dragão. Glacier segura um grupo para as outras torres acertarem, e Ravager atinge um trecho inteiro da estrada. Derrube primeiro o Fogo-fátuo, porque ele cura os inimigos ao redor. Leve o herói para onde a pressão estiver maior, guarde a habilidade para uma onda grande e só chame a próxima onda antes da hora quando a defesa estiver folgada."
      }
     },
     {
@@ -247,7 +247,7 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <section class="hero">
 <div>
 <h1>Tower defense no Android em que a estratégia vence, não a sorte</h1>
-<p class="lede">Os inimigos marcham por uma estrada sinuosa até o seu forte. Construa torres ao lado dela, melhore-as, mande um herói e segure a linha por dez ondas, com um dragão no fim de cada mapa. Não há dados escondidos: a mesma defesa sempre termina do mesmo jeito.</p>
+<p class="lede">Os inimigos marcham por uma estrada sinuosa até o seu forte. Construa torres ao lado dela, melhore-as, mande um herói e segure a linha por dez ondas, com um dragão chefe no fim de cada mapa. Não há dados escondidos: a mesma defesa sempre termina do mesmo jeito.</p>
 <a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.fortify&amp;hl=pt-BR&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=pt"><img src="/assets/play-badge/badge-pt-br.png" width="646" height="250" alt="Disponível no Google Play"></a>
 <p class="note">Grátis no Google Play para Android 7.0 ou mais recente. O jogo tem anúncios; uma compra única remove todos.</p>
 </div>
@@ -259,11 +259,11 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <ul class="facts">
 <li><b>Quatro torres, três níveis</b><span>Volt, Pierce, Ravager e Glacier, cada uma com duas melhorias. Venda qualquer torre por 70% do que gastou nela.</span></li>
 <li><b>Quatro heróis</b><span>Fire, Ice, Nature e Rock: grátis, não podem ser derrotados e cada um tem uma grande habilidade para usar duas vezes por batalha.</span></li>
-<li><b>Seis mapas, dez ondas</b><span>Cada mapa da campanha tem sua própria estrada e bioma, um dragão no fim e até três estrelas.</span></li>
-<li><b>Cerco diário</b><span>Uma batalha nova todo dia, igual para todo mundo. Vença dia após dia para aumentar sua sequência.</span></li>
+<li><b>24 mapas em quatro capítulos</b><span>Dez ondas em cada mapa, cada um com sua própria estrada e bioma, um dragão chefe no fim e até três estrelas.</span></li>
+<li><b>Conquistas e placares</b><span>Google Play Games opcional: 11 conquistas e dois placares, de estrelas de campanha e de inimigos derrotados.</span></li>
 <li><b>Estratégia, não sorte</b><span>Sem acertos críticos aleatórios nem dados escondidos: toda batalha é totalmente determinística.</span></li>
-<li><b>Joga offline</b><span>Todos os mapas e o cerco diário funcionam sem internet.</span></li>
-<li><b>Sem energia nem caixas de loot</b><span>Jogue quantas batalhas quiser. Também não tem conta nem login.</span></li>
+<li><b>Joga offline</b><span>Os 24 mapas funcionam sem internet.</span></li>
+<li><b>Sem energia nem caixas de loot</b><span>Jogue quantas batalhas quiser, sem precisar de conta.</span></li>
 <li><b>Sem assinatura</b><span>Grátis com anúncios. Uma compra única e opcional remove todos os anúncios para sempre.</span></li>
 </ul>
 </section>
@@ -271,11 +271,11 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <section aria-labelledby="how">
 <h2 id="how">Como jogar Fortify</h2>
 <ol class="steps">
-<li>Escolha um mapa, ou o <b>Daily siege</b> (cerco diário), e escolha seu herói. Os inimigos vão percorrer a estrada até o seu forte.</li>
+<li>Toque em <b>To battle</b> (para a batalha) para jogar o próximo mapa, ou escolha um liberado em <b>Maps</b> (mapas), e escolha seu herói. Os inimigos vão percorrer a estrada até o seu forte.</li>
 <li>Escolha uma torre na barra de baixo e toque ou arraste até um espaço livre ao lado da estrada.</li>
 <li>Posicione o herói com o cartão dele; depois toque nele para movê-lo. Quando estiver pronto, toque em <b>Start wave</b>.</li>
 <li>Cada inimigo abatido rende ouro. Toque numa torre para melhorar ou vender, use a habilidade do herói durante uma onda (duas vezes por batalha, com 40 segundos de intervalo) e toque em <b>Next wave</b> antes da hora para ganhar ouro extra.</li>
-<li>Sobreviva às 10 ondas para vencer. Seu forte tem 6 vidas: um inimigo que passa tira 1, um golem 2 e o dragão 4. Guarde 4 ou mais para levar três estrelas.</li>
+<li>Sobreviva às 10 ondas para vencer. Seu forte tem 6 vidas: um inimigo que passa tira 1, um golem ou um bruto 2 e o dragão 4. Guarde 4 ou mais para levar três estrelas.</li>
 </ol>
 <div class="shots"><img src="/fortify/assets/en-02-hero-skill.webp" width="540" height="960" alt="A habilidade Firestorm do herói Fire: dois usos por batalha, com 40 segundos de intervalo" loading="lazy" decoding="async"><img src="/fortify/assets/en-03-towers.webp" width="540" height="960" alt="As quatro torres, os três níveis da Volt e os botões de melhorar e vender uma torre" loading="lazy" decoding="async"></div>
 </section>
@@ -285,26 +285,26 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <ul class="plain">
 <li><b>Torres.</b> Volt atira muito rápido a curta distância, mas a armadura a enfraquece. Pierce dispara projéteis pesados de longo alcance que atravessam armadura. Ravager explode um trecho da estrada. Glacier deixa lento tudo o que acerta.</li>
 <li><b>Heróis.</b> Fire queima, Ice deixa lento, Nature ataca rápido e Rock bate forte. As habilidades são Firestorm, Deep Freeze, Bramble Surge e Earthshatter.</li>
-<li><b>Inimigos.</b> Gosmas, esqueletos, morcegos, goblins, aranhas, orcs blindados, golens e o dragão. A partir da onda 3, alguns chegam vermelhos e fortalecidos (Enhanced), um terço mais resistentes; a partir da onda 6, entram elites dourados (Elite), duas vezes mais resistentes. Os dois rendem mais ouro.</li>
-<li><b>Mapas.</b> The Bend, The Spiral, The Gauntlet, Frost Pass, Dune Road e Ember Hollow: campo, floresta, rochas, neve, deserto e brasas. Cada vitória libera o próximo mapa.</li>
+<li><b>Inimigos.</b> Gosmas, esqueletos, morcegos, goblins, aranhas que reduzem a cadência das suas torres, orcs blindados e golens e, a partir do mapa 7, o Bruto, que avança com fúria quando está ferido; o Diabrete, que explode em duas Faíscas; e o Fogo-fátuo, que cura os inimigos ao seu redor. A partir da onda 3, alguns chegam vermelhos e fortalecidos (Enhanced), um terço mais resistentes; a partir da onda 6, entram elites dourados (Elite), duas vezes mais resistentes. Os dois rendem mais ouro. O dragão é o chefe da décima onda, com sua própria barra de vida.</li>
+<li><b>Mapas.</b> 24 mapas em quatro capítulos: The Old Kingdom, The Wild Frontier, The Deep Realms e The Dragon's Reach. Os biomas vão do campo, da neve e do deserto à floresta de outono, ao pântano, ao cânion vermelho, à geleira, a uma caverna de cristal e a um vulcão. A partir do mapa 7, o inimigo manda seus exércitos: Swarm (enxames de tropas rápidas), Ironclad (colunas blindadas), Skyfall (hordas voadoras) e Legion, que traz todos de uma vez. Cada vitória libera o próximo mapa.</li>
 <li><b>Ritmo.</b> Três velocidades (1x, 1.5x, 2x) e pausa. Se sair de uma batalha, toque em <b>Continue</b> na tela inicial para retomar.</li>
 </ul>
-<div class="shots"><img src="/fortify/assets/en-04-heroes.webp" width="540" height="960" alt="Escolha de herói: Fire, Ice, Nature e Rock com suas habilidades" loading="lazy" decoding="async"><img src="/fortify/assets/en-06-maps.webp" width="540" height="960" alt="Os seis mapas da campanha com suas estrelas" loading="lazy" decoding="async"></div>
+<div class="shots"><img src="/fortify/assets/en-04-heroes.webp" width="540" height="960" alt="Escolha de herói: Fire, Ice, Nature e Rock com suas habilidades" loading="lazy" decoding="async"><img src="/fortify/assets/en-06-maps.webp" width="540" height="960" alt="Ember Hollow e Frost Pass sobre a lista de mapas, com as estrelas de cada um" loading="lazy" decoding="async"></div>
 </section>
 
 <section aria-labelledby="faq">
 <h2 id="faq">Perguntas frequentes</h2>
 <div class="faq">
 <div><h3>Como se joga Fortify?</h3><p>Construa torres ao lado da estrada por onde os inimigos marcham até o seu forte, melhore-as com o ouro que ganhar e posicione um herói para lutar junto delas. Sobreviva às dez ondas de um mapa para vencer. As regras completas estão em How to play, na tela inicial.</p></div>
-<div><h3>Fortify é grátis?</h3><p>Sim. O jogo é grátis e pago por anúncios: um banner na tela inicial e nos painéis de vitória e derrota, um anúncio em tela cheia ao sair de uma batalha terminada (nunca dois em menos de 45 segundos) e um anúncio ao voltar para o jogo vindo de outro app. Nenhum anúncio aparece no tabuleiro enquanto você joga.</p></div>
+<div><h3>Fortify é grátis?</h3><p>Sim. O jogo é grátis e pago por anúncios: um banner na tela inicial e nos cartões de vitória e derrota, e um anúncio em tela cheia ao sair de uma batalha terminada por um dos botões do cartão (nunca dois em menos de 45 segundos). Esses botões ignoram toques por um instante depois que o cartão aparece, então um toque que era para a batalha nunca abre um anúncio. Nenhum anúncio aparece no tabuleiro enquanto você joga, nem quando você volta para o jogo.</p></div>
 <div><h3>Como tirar os anúncios?</h3><p>Em Settings há a opção Remove ads: uma compra única e opcional que remove todos os anúncios para sempre. Não tem assinatura. O Google Play guarda a compra, então ela volta se você reinstalar com a mesma conta Google.</p></div>
-<div><h3>Dá para jogar Fortify offline?</h3><p>Sim. Todos os mapas e o cerco diário podem ser jogados sem internet. A conexão só é usada para os anúncios, para compras e atualizações do Google Play e para as estatísticas de uso e relatórios de falhas enviados ao Google Firebase.</p></div>
-<div><h3>Meu progresso fica salvo?</h3><p>Sim, automaticamente, no seu celular: mapas liberados, estrelas, melhores pontuações e sua sequência diária. Não existe salvamento na nuvem: o progresso não entra no backup do Android, então não passa para um celular novo e é apagado se você desinstalar o jogo.</p></div>
-<div><h3>Preciso de conta? Que dados o jogo coleta?</h3><p>Não tem conta nem login. Suas batalhas e seu progresso nunca saem do celular. Os anúncios do Google e as estatísticas de uso e relatórios de falhas do Firebase coletam alguns dados do aparelho, como o ID de publicidade e uma localização aproximada pelo IP; a política de privacidade lista tudo.</p></div>
+<div><h3>Dá para jogar Fortify offline?</h3><p>Sim. Os 24 mapas podem ser jogados sem internet. A conexão só é usada para os anúncios, para o Google Play (compras, atualizações e o Play Games opcional) e para as estatísticas de uso e relatórios de falhas enviados ao Google Firebase.</p></div>
+<div><h3>Meu progresso fica salvo?</h3><p>Sim, automaticamente, no seu celular: mapas liberados, estrelas e melhores pontuações. Não existe salvamento na nuvem: o progresso não entra no backup do Android, então não passa para um celular novo e é apagado se você desinstalar o jogo.</p></div>
+<div><h3>Preciso de conta? Que dados o jogo coleta?</h3><p>Não precisa de conta. O único login é o opcional do Google Play Games, para conquistas e placares; nada mais no jogo precisa dele. Suas batalhas e seu progresso nunca saem do celular; só se você entrar no Play Games suas conquistas e suas duas pontuações nos placares (estrelas de campanha e inimigos derrotados) vão para o Google. Os anúncios e as estatísticas de uso e relatórios de falhas do Firebase coletam alguns dados do aparelho, como o ID de publicidade e uma localização aproximada pelo IP; a política de privacidade lista tudo.</p></div>
 <div><h3>É pay to win? Tem energia ou caixas de loot?</h3><p>Não. Não há sistema de energia, nem caixas de loot, nem nada para comprar além da remoção de anúncios. As batalhas não têm sorte, então a mesma defesa sempre dá o mesmo resultado: o único jeito de vencer é um plano melhor.</p></div>
 <div><h3>Como ganhar três estrelas num mapa?</h3><p>Vença com 4 ou mais das 6 vidas do seu forte. Vencer com 3 vidas dá duas estrelas, e qualquer outra vitória dá uma. Cada vitória libera o próximo mapa, então dá para voltar depois atrás das estrelas.</p></div>
-<div><h3>O que é o cerco diário?</h3><p>Uma batalha nova todo dia: um dos seis mapas, com inimigos mais resistentes numa medida que muda de um dia para o outro. Todo mundo recebe o mesmo cerco na mesma data, calculado no seu celular a partir da própria data. Vença dia após dia para aumentar sua sequência.</p></div>
-<div><h3>Alguma dica para uma onda difícil?</h3><p>Pierce atravessa armadura, então cuida de orcs, golens e do dragão. Glacier segura um grupo para as outras torres acertarem, e Ravager atinge um trecho inteiro da estrada. Leve o herói para onde a pressão estiver maior, guarde a habilidade para uma onda grande e só chame a próxima onda antes da hora quando a defesa estiver folgada.</p></div>
+<div><h3>Quantos mapas o Fortify tem?</h3><p>24 mapas de campanha em quatro capítulos: The Old Kingdom, The Wild Frontier, The Deep Realms e The Dragon&#x27;s Reach, que chegou na versão 1.1.4 e é o mais difícil. Cada mapa tem dez ondas, sua própria estrada e bioma, um dragão chefe no fim e até três estrelas: 72 no total. A partir do mapa 7, o inimigo traz seus exércitos: Swarm, Ironclad, Skyfall e Legion. Cada vitória libera o próximo mapa.</p></div>
+<div><h3>Alguma dica para uma onda difícil?</h3><p>Pierce atravessa armadura, então cuida de orcs, golens e do dragão. Glacier segura um grupo para as outras torres acertarem, e Ravager atinge um trecho inteiro da estrada. Derrube primeiro o Fogo-fátuo, porque ele cura os inimigos ao redor. Leve o herói para onde a pressão estiver maior, guarde a habilidade para uma onda grande e só chame a próxima onda antes da hora quando a defesa estiver folgada.</p></div>
 <div><h3>Em quais idiomas está o jogo?</h3><p>As telas do jogo estão em inglês e turco. Esta página e a página do Google Play estão em português.</p></div>
 <div><h3>Em quais aparelhos funciona? Tem versão para iPhone?</h3><p>Android 7.0 ou mais recente, em celulares e tablets, sempre na vertical. Fortify é só para Android; não existe versão para iPhone nem para a web.</p></div>
 </div>
@@ -317,7 +317,7 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 </main>
 <footer>
 <p class="links"><a href="/fortify/privacy/">Política de privacidade (inglês)</a><a href="/">Apps da BumuStudios</a><a href="mailto:bumustudios@gmail.com">Contato: bumustudios@gmail.com</a></p>
-<p>© 2026 BumuStudios · <time datetime="2026-10-19">2026-10-19</time></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-02">2026-11-02</time></p>
 <p>Google Play e o logotipo do Google Play são marcas comerciais da Google LLC.</p>
 </footer>
 </body>

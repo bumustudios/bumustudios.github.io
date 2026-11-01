@@ -106,15 +106,15 @@
 <header>
   <h1>Gizlilik Politikası — ImageToPdf</h1>
   <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.imgtopdf</code></p>
-  <p class="dates"><span>Yürürlük tarihi: 16 Ağustos 2026.</span> <span>Son güncelleme: 19 Ekim 2026.</span></p>
+  <p class="dates"><span>Yürürlük tarihi: 16 Ağustos 2026.</span> <span>Son güncelleme: 1 Kasım 2026.</span></p>
 </header>
 
 <div class="callout">
   <p><strong>Fotoğraflarınız ve oluşturduğunuz PDF'ler cihazınızdan hiç çıkmaz.</strong> Hesap
   açmanız gerekmez, giriş yapmanız gerekmez ve uygulamaya ait hiçbir sunucu yoktur. Dönüştürme
   işlemlerinin tamamı çevrimdışı olarak, telefonunuzda yapılır.</p>
-  <p>Cihazınızdan çıkan her şey aşağıda ayrıntılı olarak anlatılmıştır: Google'ın sağladığı reklam
-  ve ödeme hizmetleri ile geliştiricinin Google Firebase aracılığıyla topladığı kullanım
+  <p>Cihazınızdan çıkan her şey aşağıda ayrıntılı olarak anlatılmıştır: Google'ın reklam hizmeti ve
+  onun birlikte çalıştığı reklam ağları, Google'ın ödeme hizmeti ile geliştiricinin Google Firebase aracılığıyla topladığı kullanım
   istatistikleri ve çökme raporları. Dosyalarınız, adları ve içerikleri bunların hiçbirine girmez.
   Tek seferlik reklam kaldırma satın alırsanız reklamlar tamamen durur; kullanım istatistikleri ve
   çökme raporları buna bağlı değildir.</p>
@@ -158,6 +158,7 @@ veri değildir ve hiçbiri hiçbir yere gönderilmez:</p>
 <ul>
   <li>tema, yazı boyutu ve dil tercihleriniz;</li>
   <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı;</li>
+  <li>ödüllü reklamla kazanılan 24 saatlik reklamsız sürenin ne zaman bittiği;</li>
   <li>reklam sıklığını düşük tutmak için kullanılan, gösterilen geçiş reklamı sayacı.</li>
 </ul>
 <p>Bu yerel veriler, Android bulut yedeklemesinin ve cihazdan cihaza aktarımın dışında bırakılmıştır;
@@ -168,9 +169,9 @@ uygulama örneği kimliği ve bir Crashlytics kurulum kimliği. Yukarıdaki list
 tanımlayıcılar kullanım istatistikleri ve çökme raporlarıyla birlikte gönderilir. Uygulamayı
 kaldırmak veya verilerini temizlemek, bu tanımlayıcılar dahil uygulamanın sakladığı her şeyi siler.</p>
 
-<h2>Reklamlar — Google AdMob</h2>
+<h2>Reklamlar — Google AdMob ve aracılık (mediation) ortakları</h2>
 <p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
-tarafından sunulan reklamlarla desteklenir. AdMob, uygulamaya bir yazılım geliştirme kiti olarak
+üzerinden sunulan reklamlarla desteklenir. AdMob, uygulamaya bir yazılım geliştirme kiti olarak
 gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>. Reklamlar gösterilirken
 AdMob ve Google'ın reklam iş ortakları şunları toplayıp işleyebilir:</p>
 
@@ -202,11 +203,15 @@ AdMob ve Google'ın reklam iş ortakları şunları toplayıp işleyebilir:</p>
 </div>
 
 <p>Uygulama GPS veya hassas konum izni <strong>istemez</strong> ve görsellerinizi, dosya adlarınızı
-veya belge içeriğinizi AdMob'a göndermez. Geliştirici, AdMob'dan hiçbir kişisel veri almaz;
+veya belge içeriğinizi AdMob'a ya da aşağıda sayılan aracılık ortaklarından herhangi birine göndermez. Geliştirici,
+AdMob'dan veya ortaklardan hiçbir kişisel veri almaz;
 yalnızca gösterim ve gelir toplamları gibi toplulaştırılmış, anonim raporlar görür.</p>
 <p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden uygulama
 <code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Kullanılan reklam biçimleri:
-banner, ara sıra gösterilen geçiş reklamı ve uygulama açılış reklamı.</p>
+banner, ara sıra gösterilen geçiş reklamı ve yalnızca siz seçerseniz ödüllü reklam. PDF
+dönüştürme bittiğinde çıkan sonuç ekranında ya da Ayarlar'da "Reklam izle, 24 saat reklamsız kullan" düğmesine dokunup
+bir reklam izlerseniz uygulama o cihazda sonraki 24 saat boyunca banner ya da geçiş reklamı
+göstermez. Ödüllü reklam hiçbir özelliği açmak veya kullanmak için şart değildir.</p>
 <p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
 <ul>
   <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
@@ -215,13 +220,34 @@ banner, ara sıra gösterilen geçiş reklamı ve uygulama açılış reklamı.<
   <li><a href="https://support.google.com/admob/answer/6128543">AdMob ve üçüncü taraf reklamcılık</a></li>
 </ul>
 
+<h3>Aracılık ortakları</h3>
+<p>Uygulama, AdMob'un aracılık (mediation) özelliğiyle başvurabildiği başka reklam ağlarının
+yazılımlarını da içerir. Uygulama bir reklam istediğinde AdMob bu isteği bu ortaklardan birine
+iletebilir; reklamı sunan ortak da yukarıdaki tabloda sayılan veri türlerinin aynısını (reklam
+kimliği, IP adresinizden türetilen yaklaşık konum, cihaz bilgileri ve reklam etkileşim olayları)
+alır ve kendi gizlilik politikasına göre işler:</p>
+<ul>
+  <li>AppLovin — <a href="https://legal.applovin.com/privacy/">AppLovin Gizlilik Politikası</a></li>
+  <li>Unity Ads — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity
+  Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a></li>
+  <li>Liftoff Monetize (eski adıyla Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff
+  Gizlilik Politikası</a></li>
+  <li>Meta Audience Network — <a href="https://www.facebook.com/privacy/policy/">Meta Gizlilik
+  Politikası</a></li>
+  <li>Mintegral — <a href="https://www.mintegral.com/en/privacy">Mintegral Gizlilik Politikası</a></li>
+  <li>Pangle — <a href="https://www.pangleglobal.com/privacy">Pangle Gizlilik Politikası</a></li>
+</ul>
+<p>Belirli bir reklamı hangi ortağın sunacağına (ya da hiçbirinin sunmayacağına) AdMob karar verir.
+"Reklam tercihleriniz" bölümünde anlatılan rıza formundaki seçimleriniz, Google'ın rıza aracının
+cihazda sakladığı standart rıza sinyali aracılığıyla bu ortaklara iletilir.</p>
+
 <h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
 <p>Uygulamanın nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici uygulamaya
 iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
 Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca uygulamanın
 Google Play üzerinden dağıtılan sürümünde çalışır. Hizmetlerin kendiliğinden yaptığı toplamaya ek
-olarak uygulama, 1.2.5 sürümünden itibaren tabloda listelenen beş olayı kendisi kaydeder
-("Uygulama olayları"). Kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya log kaydı
+olarak uygulama, tabloda listelenen altı olayı kendisi kaydeder ("Uygulama olayları"); bunlardan
+beşi 1.2.5 sürümünde, biri de 1.2.6 sürümünde eklendi. Kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya log kaydı
 eklemez:</p>
 
 <div class="table-wrap">
@@ -260,7 +286,9 @@ eklemez:</p>
       sayfaları görsel olarak kaydedildi (sayfa sayısı aralık olarak ve görsel biçimi); bir PDF
       paylaşıldı (kiminle ya da hangi uygulamayla paylaşıldığı değil); reklamları kaldırma
       teklifi gösterildi (dönüştürme sonucunda ya da Ayarlar'da); uygulama Google Play puanı
-      istedi (o ana kadar kaç PDF ya da dışa aktarma yapıldığı)</td>
+      istedi (o ana kadar kaç PDF ya da dışa aktarma yapıldığı); 24 saat reklamsız kullanım için
+      reklam izleme teklifi gösterildi (dönüştürme sonucunda ya da Ayarlar'da; 1.2.6 sürümünden
+      itibaren)</td>
       <td>Hangi özelliklerin ne sıklıkla kullanıldığını öğrenmek ve neyin iyileştirileceğine
       karar vermek</td>
     </tr>
@@ -326,7 +354,7 @@ koşulları kapsamındadır.</p>
 
 <h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
 <p>Kişiselleştirilmiş reklam istenmeden önce uygulama, Google'ın User Messaging Platform altyapısıyla
-hazırlanmış bir rıza formu gösterir; neye izin vereceğinizi burada seçersiniz. Seçiminiz Google'ın
+hazırlanmış bir rıza formu gösterir; yukarıda sayılan reklam ortakları da dahil olmak üzere neye izin vereceğinizi burada seçersiniz. Seçiminiz Google'ın
 bileşeni tarafından cihazınızda saklanır ve sonraki açılışlarda dikkate alınır.</p>
 <p><strong>Kararınızı istediğiniz zaman değiştirebilirsiniz:</strong> uygulamayı açın,
 <em>Ayarlar → Gizlilik seçenekleri</em> bölümüne gidin; aynı form yeniden görünür. Rızanızı buradan
@@ -343,7 +371,8 @@ değişir) reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz; sil
 uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
 
 <h3>Reklamları tamamen kaldırmak</h3>
-<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın reklam istemesini tümüyle durdurur.</p>
+<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın reklam istemesini tümüyle durdurur. Ödüllü
+reklamla kazanılan 24 saatlik reklamsız süre ise banner ve geçiş reklamlarını o gün için durdurur.</p>
 
 <h2>Uygulamanın istediği izinler</h2>
 <div class="card">
@@ -353,13 +382,13 @@ uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
   üzerinden başka hiçbir şey gönderilmez.</li>
   <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yükleme denemesinden önce bağlantı
   olup olmadığını kontrol etmesini sağlar.</li>
-  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un ve
-  Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına erişim.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
+  aracılık ortaklarının ve Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına erişim.</li>
 </ul>
 </div>
-<p>Uygulamanın kendisinin tanımladığı izinler bunlardır. İçindeki Google bileşenleri, Android'in
+<p>Uygulamanın kendisinin tanımladığı izinler bunlardır. İçindeki Google ve reklam ağı bileşenleri, Android'in
 kurulum sırasında size sormadan verdiği birkaç izin daha ekler (örneğin Google Play'in
-faturalandırma izni ve Android'in reklam hizmetleri izinleri); ama uygulama hiçbir Android
+faturalandırma izni, Android'in reklam hizmetleri izinleri ve Wi-Fi durumunu denetleme izni); ama uygulama hiçbir Android
 sürümünde depolama, kamera, kişiler, mikrofon, hassas konum veya hesap izni istemez.</p>
 
 <h2>Çocuklar</h2>
@@ -378,10 +407,11 @@ daha uzun tutulabilir), çökme raporları ise 90 gün.
 Cihazınızdaki veriler, uygulamanın verilerini temizleyene veya uygulamayı
 kaldırana kadar orada kalır. AdMob ve Google Play aracılığıyla Google'ın topladığı veriler,
 <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'nda açıklanan
-kendi saklama sürelerine tabidir.</p>
+kendi saklama sürelerine; bir aracılık ortağının topladığı veriler ise yukarıda bağlantısı verilen
+o ortağın politikasına tabidir.</p>
 
 <h2>Hukuki dayanaklar ve haklarınız</h2>
-<p>GDPR'ın (AB/BK) uygulandığı yerlerde kişiselleştirilmiş reklamın hukuki dayanağı, yukarıda
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde, aracılık ortaklarınınki dahil kişiselleştirilmiş reklamın hukuki dayanağı, yukarıda
 anlatılan formla alınan ve istediğiniz zaman geri çekebileceğiniz açık rızanızdır.
 Kişiselleştirilmemiş reklam, dolandırıcılık önleme ve reklam hizmetlerinin güvenliği meşru menfaate
 dayanır. Satın alma işleminizin yürütülmesi, reklam kaldırmayı satın aldığınızda kurulan sözleşmenin
@@ -401,10 +431,8 @@ seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz
 soru sormak için aşağıdaki adrese yazabilirsiniz. Uygulamayı kaldırmak ya da verilerini temizlemek
 eski tanımlayıcılarla bağı koparır; daha önce gönderilmiş veriler de yukarıdaki sürelerin sonunda
 silinir.
-Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran
-taraf olan Google'a,
-<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'ndaki araçlar
-kullanılarak iletilmelidir. Diğer tüm konular için veya doğru yolu bulmak üzere yardım almak için
+Reklam verilerine ilişkin talepler, bu verileri elinde bulunduran taraf olan Google'a ya da ilgili
+aracılık ortağına, yukarıda bağlantısı verilen politikalardaki araçlar kullanılarak iletilmelidir. Diğer tüm konular için veya doğru yolu bulmak üzere yardım almak için
 aşağıdaki adrese yazabilirsiniz.</p>
 
 <h2>Bu politikadaki değişiklikler</h2>
@@ -418,6 +446,11 @@ uygulamanın güncel sürümüne uyarlandı.</p>
 <p>19 Ekim 2026 tarihli güncelleme, 1.2.5 sürümünün kullanım istatistiklerine eklediği beş
 uygulama olayını anlatır (Google Firebase bölümündeki "Uygulama olayları"na bakın). Bu olaylar
 da Analytics'in geri kalanıyla aynı rıza tercihlerine tabidir.</p>
+<p>1 Kasım 2026 tarihli güncelleme 1.2.6 sürümünü anlatır: AdMob'un aracılık yoluyla
+başvurabildiği diğer reklam ağları (Reklamlar bölümündeki "Aracılık ortakları" kısmına bakın),
+banner ve geçiş reklamlarını 24 saat kapatan isteğe bağlı ödüllü reklam, bu teklif ekrandayken
+kaydedilen altıncı uygulama olayı ve uygulama açılış reklamlarının
+artık gösterilmemesi.</p>
 
 <h2 id="contact">İletişim</h2>
 <p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>

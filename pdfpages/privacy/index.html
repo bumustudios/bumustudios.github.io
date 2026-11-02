@@ -165,7 +165,7 @@ personal information, and none of it is sent anywhere:</p>
 <ul>
   <li>your theme, text size and language choices;</li>
   <li>whether the one-time "remove ads" purchase is active;</li>
-  <li>when a 24-hour ad-free period earned with a rewarded ad ends;</li>
+  <li>when a one-hour ad-free period earned with a rewarded ad ends;</li>
   <li>a counter of how many interstitial ads have been shown, used to keep ad frequency low.</li>
 </ul>
 <p>This local state is deliberately excluded from Android cloud backup and from device-to-device
@@ -213,8 +213,8 @@ data from AdMob or the partners — only aggregated, anonymous reporting such as
 <p>Because ads require an advertising identifier, the app declares the
 <code>com.google.android.gms.permission.AD_ID</code> permission. Ad formats used are a banner, an
 occasional interstitial and, only if you choose it, a rewarded ad: on the result screen after a save
-or in Settings you can tap "Watch one ad, get 24 hours ad-free", watch one ad, and the app then shows no
-banner or interstitial ads on that device for the next 24 hours. It never unlocks or gates any
+or in Settings you can tap "Watch one ad, get 1 hour ad-free", watch one ad, and the app then shows no
+banner or interstitial ads on that device for the next hour. It never unlocks or gates any
 feature.</p>
 <p>How Google handles this data is governed by Google's own policies, not by this one:</p>
 <ul>
@@ -359,8 +359,8 @@ version) to reset your advertising ID, or to delete it entirely, which stops app
 stable advertising identifier.</p>
 
 <h3>Removing ads completely</h3>
-<p>Buying the one-time ad removal stops ad requests from the app altogether. A 24-hour ad-free
-period earned with a rewarded ad stops the banner and interstitial ads for that day.</p>
+<p>Buying the one-time ad removal stops ad requests from the app altogether. A one-hour ad-free
+period earned with a rewarded ad stops the banner and interstitial ads for that hour.</p>
 
 <h2>Permissions the app requests</h2>
 <div class="card">
@@ -433,7 +433,7 @@ Google Firebase (see the Google Firebase section above) and brought the rest of 
 with the current version of the app.</p>
 <p>The update of 1 November 2026 describes version 1.2.5: the other ad networks that AdMob can
 call on through mediation (see "Mediation partners" under Advertising), the optional rewarded ad
-that turns off banner and interstitial ads for 24 hours, and the end of app-open ads, which the app
+that turns off banner and interstitial ads for 1 hour, and the end of app-open ads, which the app
 no longer shows.</p>
 
 <h2 id="contact">Contact</h2>

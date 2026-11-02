@@ -7,7 +7,7 @@
 ImageToPdf converts photos to PDF and saves PDF pages as images, entirely on the phone.
 
 - No watermark on any page, and no paid version that removes one.
-- No subscription. Free with ads: a banner, and one full-screen ad before the result of a finished conversion, announced by a short card and played only when the user taps Continue. No app-open ads. Opt-in: watch one rewarded ad to use the app without ads for 24 hours (PDF result or Settings). An optional one-time purchase removes the ads. Every feature is in the free version.
+- No subscription. Free with ads: a banner, and one full-screen ad before the result of a finished conversion, announced by a short card and played only when the user taps Continue. No app-open ads. Opt-in: watch one rewarded ad to use the app without ads for 1 hour (PDF result or Settings). An optional one-time purchase removes the ads. Every feature is in the free version.
 - No account, no email, no sign-up.
 - Conversion works offline. Nothing is uploaded: files are opened through Android's Photo Picker, with no storage permission.
 - Images to PDF: up to 100 JPG, PNG or WebP images in one PDF; page size A4, A5, Letter, Legal or fit to image; portrait, landscape or automatic; margin 0 to 25 mm; reorder pages; optional password (AES-128).
@@ -29,7 +29,7 @@ PdfPages is a PDF page editor for Android: reorder, delete, rotate and add pages
 - Add pages from another PDF, from photos (one page per picture, fitted to A4) or as a blank A4 page. Merge several PDFs by opening them together as one document. Extract selected pages to a new PDF. There is no split-by-range, compress, sign, OCR or convert feature.
 - The original file is never modified: saving always writes a new PDF, to Documents/PDF Pages on Android 10+ (the app's own folder on Android 9 and older). Pages are kept as real PDF pages, not turned into images, so text stays selectable. Password-protected PDFs cannot be opened.
 - No watermark, no account, no sign-up. Documents are processed on the phone and never uploaded; no storage permission is requested. Opening, editing and saving work offline.
-- Free with ads: a banner, and a full-screen ad after saving that a short card announces and that plays only when the user taps Continue. No app-open ads. Opt-in: watch one rewarded ad to use the app without ads for 24 hours (after saving or in Settings). No subscription; an optional one-time purchase removes all ads and is restored from Google Play on reinstall. Every feature is in the free version.
+- Free with ads: a banner, and a full-screen ad after saving that a short card announces and that plays only when the user taps Continue. No app-open ads. Opt-in: watch one rewarded ad to use the app without ads for 1 hour (after saving or in Settings). No subscription; an optional one-time purchase removes all ads and is restored from Google Play on reinstall. Every feature is in the free version.
 - Requires Android 7.0 or newer; phones and tablets, portrait and landscape. Android only: no iPhone or web version. The app's screens are in English and Turkish.
 - Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.pdfpages
 

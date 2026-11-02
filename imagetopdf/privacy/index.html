@@ -158,7 +158,7 @@ personal information, and none of it is sent anywhere:</p>
 <ul>
   <li>your theme, text size and language choices;</li>
   <li>whether the one-time "remove ads" purchase is active;</li>
-  <li>when a 24-hour ad-free period earned with a rewarded ad ends;</li>
+  <li>when a one-hour ad-free period earned with a rewarded ad ends;</li>
   <li>a counter of how many interstitial ads have been shown, used to keep ad frequency low.</li>
 </ul>
 <p>This local state is deliberately excluded from Android cloud backup and from device-to-device
@@ -208,8 +208,8 @@ data from AdMob or the partners — only aggregated, anonymous reporting such as
 <p>Because ads require an advertising identifier, the app declares the
 <code>com.google.android.gms.permission.AD_ID</code> permission. Ad formats used are a banner, an
 occasional interstitial and, only if you choose it, a rewarded ad: on the result screen of a PDF
-conversion or in Settings you can tap "Watch one ad, get 24 hours ad-free", watch one ad, and the app then
-shows no banner or interstitial ads on that device for the next 24 hours. It never unlocks or gates
+conversion or in Settings you can tap "Watch one ad, get 1 hour ad-free", watch one ad, and the app then
+shows no banner or interstitial ads on that device for the next hour. It never unlocks or gates
 any feature.</p>
 <p>How Google handles this data is governed by Google's own policies, not by this one:</p>
 <ul>
@@ -285,7 +285,7 @@ properties, no custom keys or log messages:</p>
       saved as images (the number of pages as a range, and the image format); a PDF was shared
       (not with whom or through which app); the remove-ads offer was shown (on the conversion
       result or in Settings); the app asked for a Google Play rating (how many PDFs or exports
-      had been made by then); the offer to watch one ad for 24 hours without ads was shown (on the
+      had been made by then); the offer to watch one ad for 1 hour without ads was shown (on the
       conversion result or in Settings; from version 1.2.6)</td>
       <td>Learning which features are used and how often, to decide what to improve</td>
     </tr>
@@ -366,8 +366,8 @@ reset your advertising ID, or to delete it entirely, which stops apps from recei
 advertising identifier.</p>
 
 <h3>Removing ads completely</h3>
-<p>Buying the one-time ad removal stops ad requests from the app altogether. A 24-hour ad-free
-period earned with a rewarded ad stops the banner and interstitial ads for that day.</p>
+<p>Buying the one-time ad removal stops ad requests from the app altogether. A one-hour ad-free
+period earned with a rewarded ad stops the banner and interstitial ads for that hour.</p>
 
 <h2>Permissions the app requests</h2>
 <div class="card">
@@ -443,7 +443,7 @@ usage statistics (see "App events" in the Google Firebase section). They follow 
 choices as the rest of Analytics.</p>
 <p>The update of 1 November 2026 describes version 1.2.6: the other ad networks that AdMob can
 call on through mediation (see "Mediation partners" under Advertising), the optional rewarded ad
-that turns off banner and interstitial ads for 24 hours, the sixth app event, recorded when that
+that turns off banner and interstitial ads for 1 hour, the sixth app event, recorded when that
 offer is on screen, and the end of app-open ads, which the app no longer shows.</p>
 
 <h2 id="contact">Contact</h2>

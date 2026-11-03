@@ -86,10 +86,11 @@ Consequences of that:
   keep it identical across the two languages.
 - Keep the apps' pages structurally parallel. They are deliberately the same
   template, which is what makes a difference between them readable as meaningful.
-- **Name every ad network the app can serve ads from.** The apps published from
-  October 2026 (Mahjong Solitaire onwards) use AdMob mediation with AppLovin, Unity Ads,
-  Liftoff, Meta Audience Network, Mintegral and Pangle; their policies list each one. If a
-  network is added to or removed from an app's mediation, its policy changes with it.
+- **Name every ad network the app can serve ads from.** The studio's apps use
+  AdMob mediation with Unity Ads and Liftoff Monetize (from the November 2026 versions;
+  Mintegral may follow once its account is approved). Each policy lists the networks its
+  app's live build can serve from: when a network is added to or removed from an app's
+  mediation, the policy changes with the version that goes live.
 
 ## Layout
 
@@ -212,8 +213,8 @@ Yeni bir reklam ağı eklenirse satırı buraya eklemek gerekir; AdMob tarafınd
 
 ### Mediation ortakları
 
-Mahjong Solitaire ve sonrasındaki uygulamalar AdMob mediation ile şu ağlardan da reklam
-alır: **AppLovin, Unity Ads, Liftoff Monetize, Meta Audience Network, Mintegral, Pangle**.
+Stüdyonun uygulamaları AdMob mediation ile **Unity Ads ve Liftoff Monetize**'dan da reklam
+alır (Kasım 2026 sürümlerinden beri; Mintegral hesabı onaylanırsa eklenebilir).
 Her ağın hesabı açıldığında, o ağın panelinin verdiği app-ads.txt satır(lar)ı dosyadaki
 ilgili yorumun altına eklenmeli — bizim yayıncı/hesap kimliklerimizle, başka yerden
 kopyalanmadan. Satırı eksik olan ağ, Tier-1 alıcıların büyük kısmına "doğrulanmamış

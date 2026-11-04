@@ -154,7 +154,7 @@ Pages:
 
 ## Hill Rush (Android)
 
-Hill Rush is a 2D hill climb driving game for Android with deterministic car physics: two pedals, fifteen stages, five cars and upgrades.
+Hill Rush (Hill Rush: Offroad Driving) is a 2D offroad driving game for Android with deterministic car physics: two pedals, fifteen stages, five cars and upgrades.
 
 - Controls: hold GAS to drive and climb, REVERSE to brake or back up; in the air GAS tips the nose up and REVERSE tips it down. Landing more than 100 degrees off the slope, or on the roof, flips the car.
 - Fifteen stages: five on the main road (Green Hills, Forest, Desert, Rocky Mountains, Snow, opened at 500, 600, 700 and 800 m in the stage before) and, since 1.1.3, ten branching off them (Sunset Beach, Misty Swamp, Jungle Trail, Red Canyon, Highlands, Badlands, Volcano, Moon Base with low gravity, Glacier, Crystal Caves), each opened by a distance in the stage it branches from. The daily run was removed in 1.1.3.

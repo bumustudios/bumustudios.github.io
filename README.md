@@ -87,8 +87,8 @@ Consequences of that:
 - Keep the apps' pages structurally parallel. They are deliberately the same
   template, which is what makes a difference between them readable as meaningful.
 - **Name every ad network the app can serve ads from.** The studio's apps use
-  AdMob mediation with Unity Ads and Liftoff Monetize (from the November 2026 versions;
-  Mintegral may follow once its account is approved). Each policy lists the networks its
+  AdMob mediation with Unity Ads and Liftoff Monetize (from the November 2026 versions).
+  Each policy lists the networks its
   app's live build can serve from: when a network is added to or removed from an app's
   mediation, the policy changes with the version that goes live.
 
@@ -214,7 +214,7 @@ Yeni bir reklam ağı eklenirse satırı buraya eklemek gerekir; AdMob tarafınd
 ### Mediation ortakları
 
 Stüdyonun uygulamaları AdMob mediation ile **Unity Ads ve Liftoff Monetize**'dan da reklam
-alır (Kasım 2026 sürümlerinden beri; Mintegral hesabı onaylanırsa eklenebilir).
+alır (Kasım 2026 sürümlerinden beri).
 Her ağın hesabı açıldığında, o ağın panelinin verdiği app-ads.txt satır(lar)ı dosyadaki
 ilgili yorumun altına eklenmeli — bizim yayıncı/hesap kimliklerimizle, başka yerden
 kopyalanmadan. Satırı eksik olan ağ, Tier-1 alıcıların büyük kısmına "doğrulanmamış

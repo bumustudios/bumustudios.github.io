@@ -9,8 +9,7 @@ google.com, pub-6707898486985587, DIRECT, f08c47fec0942fa0
 # from Mahjong Solitaire onwards). When each partner account is opened, paste the line(s)
 # its dashboard gives for app-ads.txt below this comment — with our own publisher/account
 # ids, never copied from elsewhere:
-#   Unity Ads, Liftoff Monetize, Mintegral.
-# Done: Unity Ads, Liftoff Monetize. Still to add: Mintegral (once its account is approved).
+#   Unity Ads, Liftoff Monetize (both done).
 
 # Unity Ads — from the Unity dashboard (Monetization → Settings → App-ads.txt), 2026-11-02
 unity.com, 146083080, DIRECT, 96cabb5fbdde37a7

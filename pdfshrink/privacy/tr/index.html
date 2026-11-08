@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası — PdfShrink</title>
+<meta name="description" content="PdfShrink Android uygulamasının gizlilik politikası. Uygulama belgelerinizi hiçbir yere yüklemez.">
+<meta name="color-scheme" content="light dark">
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f4f6f8;
+    --surface-strong: #e9eef2;
+    --text: #14181c;
+    --muted: #55606a;
+    --rule: #d9e0e6;
+    --accent: #0b6b4f;
+    --accent-soft: #e6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111417;
+      --surface: #191d21;
+      --surface-strong: #22282d;
+      --text: #e8ecef;
+      --muted: #a3adb6;
+      --rule: #2c3338;
+      --accent: #57d3a4;
+      --accent-soft: #172a23;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 1.75rem 1.15rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; margin-bottom: 1.5rem; }
+  h1 { font-size: 1.85rem; line-height: 1.25; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; line-height: 1.3; margin: 2.4rem 0 .7rem;
+    letter-spacing: -.01em; padding-top: .2rem;
+  }
+  h3 { font-size: 1rem; margin: 1.6rem 0 .4rem; }
+  p, ul, ol { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.35rem; }
+  li { margin-bottom: .45rem; }
+  a { color: var(--accent); text-overflow: ellipsis; overflow-wrap: break-word; }
+  a:hover { text-decoration: none; }
+  .lede { font-size: 1.05rem; color: var(--muted); margin-bottom: 0; }
+  .dates { font-size: .9rem; color: var(--muted); margin: .9rem 0 0; }
+  .dates span { white-space: nowrap; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.15rem .35rem;
+    margin: 1.5rem 0 2rem;
+  }
+  .callout p:last-child { margin-bottom: .65rem; }
+  .callout strong { font-weight: 650; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 1rem 1.15rem .3rem;
+    margin: 1.1rem 0 1.4rem;
+  }
+  .card p:last-child, .card ul:last-child { margin-bottom: 1rem; }
+  code {
+    background: var(--surface-strong);
+    padding: .12em .38em;
+    border-radius: 4px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .88em;
+  }
+  .table-wrap { overflow-x: auto; margin: 1rem 0 1.4rem; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .7rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 650; background: var(--surface); }
+  .lang { font-size: .93rem; margin: 0 0 1.5rem; }
+  .lang .sep { color: var(--muted); margin: 0 .45rem; }
+  footer {
+    margin-top: 3rem; padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-size: .88rem; color: var(--muted);
+  }
+  @media (min-width: 40rem) {
+    body { padding: 3rem 2rem 5rem; font-size: 18px; }
+    h1 { font-size: 2.25rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<p class="lang"><a href="/">BumuStudios</a><span class="sep">·</span><a href="../">English version</a><span class="sep">·</span><a href="/imagetopdf/privacy/tr/">ImageToPdf politikası</a><span class="sep">·</span><a href="/gridsmash/privacy/tr/">Grid Smash politikası</a></p>
+
+<header>
+  <h1>Gizlilik Politikası — PdfShrink</h1>
+  <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.pdfshrink</code></p>
+  <p class="dates"><span>Yürürlük tarihi: 8 Kasım 2026.</span> <span>Son güncelleme: 8 Kasım 2026.</span></p>
+<p class="dates">Veri sorumlusu: Burak Gökgöz (BumuStudios), Türkiye — <a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+</header>
+
+<div class="callout">
+  <p><strong>Uygulama açtığınız ve kaydettiğiniz belgeleri hiçbir yere yüklemez.</strong>
+  Oluşturulacak bir hesap, giriş ekranı ya da bu uygulamaya ait bir sunucu yoktur. Tüm küçültme
+  işlemleri telefonunuzda, çevrimdışı yapılır. Tek istisna, telefonunuzda açıksa Android'in kendi
+  yedeklemesidir: uygulamanın kendi klasörüne kaydettiği dosyalar bu yedeğe girebilir ("Uygulamanın
+  cihazda sakladıkları" bölümüne bakın).</p>
+  <p>Cihazınızdan çıkan her şey aşağıda ayrıntısıyla anlatılmıştır: Google'ın reklam hizmeti ve
+  onun birlikte çalıştığı reklam ağları, Google'ın ödeme hizmeti ile geliştiricinin Google Firebase aracılığıyla topladığı kullanım istatistikleri ve
+  çökme raporları. Belgeleriniz, adları ve içerikleri bunların hiçbirine girmez. Tek seferlik
+  reklam kaldırma satın alınırsa reklamlar tamamen durur; kullanım istatistikleri ve çökme
+  raporları buna bağlı değildir.</p>
+</div>
+
+<h2>Bu politika kime ait</h2>
+<p>Bu politika, Google Play üzerinden <code>com.bumustudios.pdfshrink</code> paket adıyla dağıtılan
+<em>PdfShrink</em> Android uygulamasını kapsar. Uygulamanın bağımsız geliştiricisi tarafından
+yazılmıştır. Sorularınızı <a href="#contact">İletişim</a> bölümündeki adrese iletebilirsiniz.</p>
+<p>Bu politikada anlatılan kişisel verilerin veri sorumlusu, yani GDPR ve KVKK dahil veri
+koruma mevzuatı karşısında bu verilerden sorumlu taraf, uygulamayı BumuStudios adıyla yayımlayan
+Burak Gökgöz'dür (Türkiye). İletişim: <a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a>.</p>
+
+<h2>Uygulama ne yapar</h2>
+<p>PdfShrink bir PDF'i küçültür. Bir belge açar ve ya bir boyut sınırı (örneğin 200 KB) ya da bir
+kalite düzeyi seçersiniz; uygulama PDF'in içindeki görselleri yeniden kodlar, en güçlü ayarda ise
+sayfaları görüntüye çevirir ve sonucu paylaşabileceğiniz yeni bir belge olarak kaydeder. Filigran,
+abonelik ya da sayfa sınırı yoktur.</p>
+
+<h2>Belgeleriniz cihazınızda kalır</h2>
+<p>En önemli bölüm bu, o yüzden açıkça yazıyoruz:</p>
+<ul>
+  <li><strong>Belgeler hiçbir zaman yüklenmez.</strong> Uygulamanın kendine ait bir sunucusu
+  yoktur. PDF'lerinizi, içeriklerini, metinlerini, dosya adlarını veya üstverilerini hiçbir yere
+  göndermez; aşağıda anlatılan kullanım istatistikleri ve çökme raporları da bunları asla
+  içermez: bir çökme raporu, dosyalarınızı değil, çökmenin kodun neresinde olduğunu gösterir.</li>
+  <li><strong>Belgeler Android belge seçici üzerinden okunur.</strong> İstediğiniz dosyayı siz
+  seçersiniz. Uygulamaya yalnızca o dosyaya erişim verilir; depolamanızda gezinmez.</li>
+  <li><strong>Uygulamanın özel önbelleğinde bir çalışma kopyası oluşturulur.</strong> İlk sayfanın önizlemesini
+  çizmek ve belgeyi küçültmek için uygulama, açtığınız dosyayı kendi korumalı
+  alanına, <code>cache/pdfshrink-work/</code> konumuna kopyalar. Her küçültme denemesi bu kopyadan yeniden başlar; denemeler
+  <code>cache/shrink-attempts/</code> konumuna yazılır ve sonuç kaydedilir kaydedilmez silinir. Kopya ise belgeyle işiniz bittiğinde, önbellek temizlendiğinde ya da uygulama kaldırıldığında
+  silinir. Android da dilediği anda geri alabilir.</li>
+  <li><strong>Orijinal dosyanız hiçbir zaman değiştirilmez.</strong> Kaydetmek her zaman
+  yeni bir belge yazar; bu belge normalde MediaStore üzerinden, cihazınızın kendi depolamasındaki
+  <code>Documents/PDF Shrink</code> klasörüne gider. Açtığınız dosya olduğu gibi kalır.</li>
+  <li><strong>Hiçbir Android sürümünde depolama izni istenmez.</strong> Belge seçici ve
+  MediaStore bunu gereksiz kılar. Android 9 ve öncesinde, ayrıca ortak klasör bir dosyayı kabul
+  etmediğinde, uygulama dosyayı izin gerektirmeyen kendi klasörüne, yine cihazınıza kaydeder;
+  oradaki dosyalar uygulama kaldırılırsa cihazdan silinir; ancak bir kopyası Android yedeğinizde
+  kalabilir (aşağıya bakın).</li>
+</ul>
+<p>Uygulama çıktısını, içine gömülü açık kaynaklı PdfBox-Android kütüphanesiyle oluşturur. Bu
+kütüphane tamamen cihazınızda çalışır ve kendine ait bir ağ erişimi yoktur; bir hizmet değil, yerel
+bir kod parçasıdır.</p>
+
+<h3>Uygulamanın cihazda sakladıkları</h3>
+<p>Uygulama, cihazdaki kendi özel alanında az miktarda durum bilgisi tutar. Bunların hiçbiri kişisel
+bilgi değildir ve hiçbiri bir yere gönderilmez:</p>
+<ul>
+  <li>tema, yazı boyutu ve dil tercihleriniz;</li>
+  <li>tek seferlik "reklamları kaldır" satın almasının etkin olup olmadığı;</li>
+  <li>ödüllü reklamla kazanılan 1 saatlik reklamsız sürenin ne zaman bittiği;</li>
+  <li>reklam sıklığını düşük tutmak için kaç geçiş reklamı gösterildiğini tutan bir sayaç.</li>
+</ul>
+<p>Bu yerel veriler Android bulut yedeklemesinin ve cihazdan cihaza aktarımın dışında
+bırakılmıştır. Uygulamanın özel alanının geri kalanı bırakılmamıştır: uygulama Android yedeklemesine
+izin verir; bu yüzden telefonunuzda yedekleme açıksa, Google Hesabınıza yapılan Android yedeği ve yeni
+bir telefona aktarım, uygulamanın kendi klasörüne kaydettiği dosyaları (yukarıya bakın) ve Google
+Firebase ile reklam bileşenlerinin uygulamanın alanında tuttuğu dosyaları da içerebilir. Google'ın
+reklam ve rıza bileşenleri de kendi ayarlarını cihazda, Google'ın denetiminde tutar; aşağıda anlatılan
+Google Firebase bileşenleri ise uygulamanın özel alanında üç rastgele tanımlayıcı saklar: bir Firebase
+kurulum kimliği, Analytics uygulama örneği kimliği ve bir Crashlytics kurulum kimliği. Yukarıdaki
+listenin aksine bu tanımlayıcılar kullanım istatistikleri ve çökme raporlarıyla birlikte gönderilir ve
+Android yedeğinizde bulunabilir. Uygulamayı kaldırmak veya verilerini temizlemek, bu tanımlayıcılar
+dahil uygulamanın cihazda sakladığı her şeyi siler; Android yedeğinizdeki bir kopya ise Google'ın
+yedekleme kurallarına göre Google Hesabınızda kalır ve uygulamayı yeniden kurarsanız geri
+yüklenebilir.</p>
+
+<h2>Reklamlar — Google AdMob ve aracılık (mediation) ortakları</h2>
+<p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
+üzerinden sunulan reklamlarla desteklenir. AdMob uygulamaya bir yazılım geliştirme kiti olarak
+gömülüdür ve <strong>geliştiriciden bağımsız olarak veri toplar</strong>. Reklamlar sunulurken
+AdMob ve Google'ın reklam ortakları şunları toplayıp işleyebilir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Reklam kimliği (Android tarafından atanan, sıfırlanabilir tanımlayıcı)</td>
+      <td>Reklam sunumu, sıklık sınırlama, reklam ölçümü, sahtekârlık önleme</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, IP adresinizden türetilen kaba konum</td>
+      <td>Ülkenize veya bölgenize uygun reklam sunumu ve yasal uyum</td>
+    </tr>
+    <tr>
+      <td>Cihaz bilgileri — model, işletim sistemi sürümü, dil, ekran ve ağ özellikleri</td>
+      <td>Reklamların doğru görüntülenmesi, reklam ölçümü, sahtekârlık önleme</td>
+    </tr>
+    <tr>
+      <td>Uygulama etkileşim olayları — bir reklamın istendiği, gösterildiği, tıklandığı veya
+      kapatıldığı bilgisi</td>
+      <td>Reklam ölçümü, reklamverenlere faturalama, sahtekârlık önleme</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Uygulama GPS veya hassas konum izni <strong>istemez</strong> ve belgelerinizi, dosya adlarınızı
+ya da sayfa içeriklerinizi AdMob'a ya da aşağıda sayılan aracılık ortaklarından herhangi birine göndermez. Geliştirici
+AdMob'dan veya ortaklardan hiçbir kişisel veri almaz —
+yalnızca gösterim ve gelir toplamları gibi toplulaştırılmış, anonim raporlar.</p>
+<p>Reklamlar bir reklam tanımlayıcısı gerektirdiğinden uygulama
+<code>com.google.android.gms.permission.AD_ID</code> iznini tanımlar. Kullanılan reklam biçimleri:
+bir banner, ara sıra bir geçiş reklamı ve yalnızca siz seçerseniz bir ödüllü reklam. Kaydetme
+bittiğinde çıkan sonuç ekranında ya da Ayarlar'da "Reklam izleyin, 1 saat reklamsız kullanın" düğmesine dokunup bir reklam
+izlerseniz uygulama o cihazda sonraki bir saat boyunca banner ya da geçiş reklamı göstermez. Ödüllü
+reklam hiçbir özelliği açmak veya kullanmak için şart değildir.</p>
+<p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+  <li><a href="https://policies.google.com/technologies/partner-sites">Google, hizmetlerimizi
+  kullanan site ve uygulamalardan gelen bilgileri nasıl kullanır</a></li>
+  <li><a href="https://support.google.com/admob/answer/6128543">AdMob ve üçüncü taraf reklamcılık</a></li>
+</ul>
+
+<h3>Aracılık ortakları</h3>
+<p>Uygulama, AdMob'un aracılık (mediation) özelliğiyle başvurabildiği iki reklam
+ağının yazılımını da içerir. Uygulama bir reklam istediğinde AdMob bu isteği bu ortaklardan birine
+iletebilir; reklamı sunan ortak da yukarıdaki tabloda sayılan veri türlerinin aynısını (reklam
+kimliği, IP adresinizden türetilen yaklaşık konum, cihaz bilgileri ve reklam etkileşim olayları)
+alır ve kendi gizlilik politikasına göre işler:</p>
+<ul>
+  <li>Unity Ads — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity
+  Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a></li>
+  <li>Liftoff Monetize (eski adıyla Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff
+  Gizlilik Politikası</a></li>
+</ul>
+<p>Google Play'in veri güvenliği bölümü için yayımladıkları yanıtlarda Unity Ads, yazılımının satın alma geçmişini, kullanıcı kimliklerini, uygulama etkileşimlerini
+(ör. reklamının içindeki dokunuşlar), uygulama kullanım sürelerini (yalnızca Unity'nin optimizasyon
+özellikleri açıksa) ve teşhis verilerini de reklam, analiz, dolandırıcılığın önlenmesi ve uygulama
+işlevleri için toplayabildiğini belirtir; Liftoff Monetize ise yaklaşık konumu analiz, uygulama
+işlevleri ve reklam için topladığını belirtir. Uygulamanın Google Play'deki veri güvenliği bölümü bu
+yanıtları da içerir.</p>
+<p>Belirli bir reklamı hangi ortağın sunacağına (ya da hiçbirinin sunmayacağına) AdMob karar verir.
+"Reklam tercihleriniz" bölümünde anlatılan rıza formundaki seçimleriniz, Google'ın rıza aracının
+cihazda sakladığı standart rıza sinyali aracılığıyla bu ortaklara iletilir.</p>
+
+<h2>Kullanım istatistikleri ve çökme raporları — Google Firebase</h2>
+<p>Uygulamanın nasıl kullanıldığını görmek ve çökmeleri bulup düzeltmek için geliştirici uygulamaya
+iki Google Firebase hizmeti eklemiştir: Google Analytics for Firebase ve Firebase Crashlytics.
+Google bu hizmetleri geliştiricinin veri işleyeni olarak sağlar; hizmetler yalnızca uygulamanın
+Google Play üzerinden dağıtılan sürümünde çalışır. Uygulama, bu hizmetlerin topladıklarına
+kendinden hiçbir şey eklemez — özel olay, kullanıcı kimliği, kullanıcı özelliği, özel anahtar veya
+log kaydı yoktur; yani yalnızca hizmetlerin kendiliğinden yaptığı toplama geçerlidir:</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Uygulama örneği kimliği — Analytics'in bu kurulum için oluşturduğu rastgele bir
+      tanımlayıcı</td>
+      <td>Kim olduğunuzu bilmeden kurulumları ve oturumları saymak</td>
+    </tr>
+    <tr>
+      <td>Reklam kimliği — yukarıda anlatılan sıfırlanabilir tanımlayıcı; uygulama AdMob için
+      <code>AD_ID</code> iznini tanımladığından Analytics de ona erişebilir</td>
+      <td>Kullanım istatistikleri; reklam amaçlı kullanım yalnızca rıza seçimlerinizin izin
+      verdiği ölçüde (aşağıda)</td>
+    </tr>
+    <tr>
+      <td>Yaklaşık konum — GPS değil, maskelenmiş IP adresinizden türetilen ülke veya bölge</td>
+      <td>Ülkeye ve bölgeye göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Cihaz ve uygulama bilgileri — cihaz modeli, işletim sistemi sürümü, dil, uygulama
+      sürümü</td>
+      <td>Cihaza, Android sürümüne, dile ve uygulama sürümüne göre istatistikler</td>
+    </tr>
+    <tr>
+      <td>Kullanım olayları — ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi,
+      uygulamanın güncellenmesi ve kaldırılması</td>
+      <td>Uygulamayı kaç kişinin, ne sıklıkla ve ne kadar süre kullandığı, hangi ekranları
+      açtığı</td>
+    </tr>
+    <tr>
+      <td>Uygulamanın nasıl kurulduğu — Google Play kurulum yönlendiricisi (örneğin mağaza
+      sayfası ya da bir kampanya bağlantısı)</td>
+      <td>Kurulumların nereden geldiğini saymak</td>
+    </tr>
+    <tr>
+      <td>Google Play'in bildirdiği satın alma olayları — tek seferlik "reklamları kaldır" satın
+      almasının ürünü, adı ve fiyatı</td>
+      <td>Satın almaları saymak; kart veya ödeme bilgisi içermez</td>
+    </tr>
+    <tr>
+      <td>Çökme raporları; yalnızca uygulama çöktüğünde ya da ölümcül bir hatayla
+      karşılaştığında gönderilir — yığın izi (stack trace), uygulamanın o andaki durumu, cihaz
+      bilgileri (model, işletim sistemi sürümü, ekran yönü, boş bellek ve disk alanı) ve rastgele
+      bir Crashlytics kurulum kimliği</td>
+      <td>Çökmeleri bulup düzeltmek ve bir çökmenin kaç kurulumu etkilediğini saymak</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Analytics bir ekranın gösterildiğini ve ne kadar süre açık kaldığını kaydeder, o ekranda ne
+yaptığınızı değil; bir çökme raporu da çökmenin kodun neresinde olduğunu gösterir, içeriğinizi
+değil. İki hizmet de adınızı, e-posta adresinizi veya herhangi bir hesap bilginizi almaz.</p>
+<p><strong>Ne zaman çalışırlar?</strong> İki hizmet de uygulamanın ilk açılışından itibaren, her
+bölgede ve herhangi bir rıza formu yanıtlanmadan önce çalışmaya başlar: uygulama yanıtınızı beklemeden
+onları başlatır. AEA, Birleşik Krallık ve İsviçre dışında Analytics varsayılan olarak çalışır. AEA'da,
+Birleşik Krallık'ta ve İsviçre'de, aşağıda "Reklam tercihleriniz" bölümünde anlatılan rıza formunu
+yanıtladığınızda Analytics yanıtınıza uyar: tanımlayıcısını cihazınızda saklayıp saklayamayacağı
+("analytics storage") ve verilerin reklam amacıyla ("ad user data") ve reklam kişiselleştirmesi için
+kullanılıp kullanılamayacağı buna göre belirlenir; bu iki reklam amaçlı kullanım, bu bölgelerde siz
+izin verene kadar kapalı kalır. Yanıtınızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan değiştirebilirsiniz; bu giriş gerekli olduğu yerlerde görünür. Çökme
+raporları yanıtınızdan bağımsız olarak gönderilir: Crashlytics, geliştiricinin çökmeleri bulup düzeltme
+yönündeki meşru menfaatine dayanır.</p>
+<p>Uygulamada kullanım istatistikleri veya çökme raporları için ayrı bir anahtar yoktur. Bunlara itiraz
+etmek için <a href="#contact">İletişim</a> bölümündeki adrese yazabilirsiniz; uygulamayı kaldırmak
+ikisini de durdurur.</p>
+<p>Analytics, bir kurulumun tanımlayıcılarına bağlı verileri en fazla 14 ay saklar; tanımlayıcı
+içermeyen toplu raporlar daha uzun tutulabilir. Crashlytics çökme raporlarını 90 gün saklar.</p>
+<p>Google bu verileri geliştirici adına, veri işleyen sıfatıyla, Firebase ve Google Analytics veri
+işleme koşulları kapsamında işler. Veriler, Amerika Birleşik Devletleri dahil olmak üzere ülkeniz
+dışındaki Google sunucularında işlenebilir ve aktarım sırasında şifrelenir (TLS).</p>
+<p>Google bu hizmetleri şu sayfalarda anlatır:</p>
+<ul>
+  <li><a href="https://firebase.google.com/support/privacy">Firebase gizlilik ve güvenlik bilgileri</a></li>
+  <li><a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a></li>
+</ul>
+
+<h2>Satın almalar — Google Play Faturalandırma</h2>
+<p>Uygulama, reklamları kalıcı olarak kaldıran isteğe bağlı, tek seferlik ve tüketilemez tek bir
+satın alma sunar. Abonelik ya da yinelenen hiçbir ödeme yoktur.</p>
+<p>İşlem tamamen Google Play Faturalandırma tarafından yürütülür. <strong>Geliştirici kart
+numaranızı, banka bilgilerinizi, fatura adresinizi veya tam adınızı hiçbir zaman görmez ya da
+almaz.</strong> Google Play
+yalnızca toplulaştırılmış satış rakamlarını bildirir; Google Analytics for Firebase de satın
+almanın yapıldığını — ürünü, adını ve fiyatını, hiçbir ödeme bilgisi olmadan — kaydeder
+(yukarıya bakın). Uygulama içinde satın
+alma, cihazınızda tek bir doğru/yanlış bayrağı olarak kaydedilir ve yeniden kurduğunuzda veya yeni
+bir cihaza geçtiğinizde Google Play hesabınızdan geri yüklenir.</p>
+<p>Ödeme verilerinizin Google tarafından işlenmesi
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> ve Google Play
+koşulları kapsamındadır.</p>
+
+<h2>Güncellemeler — Google Play</h2>
+<p>Uygulama, Google Play'in Uygulama İçi Güncellemeler (In-App Updates) kitaplığını kullanır. Bu
+kitaplık Google Play'e uygulamanın daha yeni bir sürümünün olup olmadığını sorar ve varsa Google Play'in
+bunu size sunmasını, indirmesini ve kurmasını sağlar.
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> kapsamındadır.</p>
+
+<h2>Reklam tercihleriniz</h2>
+
+<h3>AEA, Birleşik Krallık veya İsviçre'deyseniz</h3>
+<p>Kişiselleştirilmiş reklamlar istenmeden önce uygulama, Google'ın User Messaging Platform'uyla
+oluşturulmuş bir rıza formu gösterir ve yukarıda sayılan reklam ortakları da dahil olmak üzere neye izin vereceğinizi orada seçersiniz. Seçiminiz
+Google'ın bileşeni tarafından cihazınızda saklanır ve sonraki açılışlarda dikkate alınır.</p>
+<p>Kararınızı dilediğiniz zaman değiştirebilirsiniz: uygulamayı açın,
+<strong>Ayarlar → Gizlilik seçenekleri</strong> yolunu izleyin, aynı form yeniden görünür. Rızanızı
+oradan geri çekebilirsiniz. Rızayı geri çekmek uygulamayı devre dışı bırakmaz; belgelerinizi
+küçültmeye devam edebilirsiniz ve reklamlar
+kişiselleştirilmemiş biçimde gösterilmeye devam edebilir. Oradaki yanıtınız, yukarıda anlatıldığı gibi Google Analytics for Firebase için de geçerlidir;
+çökme raporlarını kapatmaz.</p>
+
+<h3>Gizlilik yasası bulunan bir ABD eyaletindeyseniz</h3>
+<p>Bir ABD eyaletinin gizlilik yasasının uygulandığı yerlerde (örneğin Kaliforniya'da), aynı Google rıza
+aracı, bilgilerinizin hedefli reklamcılık için kullanılmasına ilişkin bir bildirim gösterebilir ve
+bilgilerinizin satışını veya paylaşılmasını reddetmenize olanak tanır. Bunun geçerli olduğu yerlerde
+<strong>Ayarlar → Gizlilik seçenekleri</strong> girişi görünür ve seçimlerinizi yeniden açar. Bu
+eyaletlerdeki haklarınız aşağıda <a href="#us">ABD eyaletlerindeki gizlilik hakları</a> bölümünde
+anlatılır.</p>
+
+<h3>Diğer her yerde</h3>
+<p>Gizlilik seçenekleri girişi yalnızca rıza seçiminin yasal olarak gerekli olduğu yerlerde
+görünür, dolayısıyla siz görmeyebilirsiniz. Reklamları yine de işletim sistemi düzeyinde
+denetleyebilirsiniz: Android <strong>Ayarlar → Gizlilik → Reklamlar</strong> yolundan (kesin
+konum üreticiye ve Android sürümüne göre değişir) reklam kimliğinizi sıfırlayabilir ya da tamamen
+silebilirsiniz; silmek uygulamaların sabit bir reklam tanımlayıcısı almasını durdurur.</p>
+
+<h3>Reklamları tamamen kaldırmak</h3>
+<p>Tek seferlik reklam kaldırma satın alındığında uygulama reklam istemeyi tümüyle bırakır. Ödüllü
+reklamla kazanılan 1 saatlik reklamsız süre ise banner ve geçiş reklamlarını o bir saat boyunca durdurur.</p>
+
+<h2>Uygulamanın istediği izinler</h2>
+<div class="card">
+<ul>
+  <li><code>INTERNET</code> — reklamların alınması, Google Play Faturalandırma ile iletişim ve yukarıda
+  anlatılan kullanım istatistikleriyle çökme raporlarının gönderilmesi için gereklidir. Ağ
+  üzerinden başka hiçbir şey gönderilmez.</li>
+  <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yüklemeye çalışmadan önce bağlantı
+  olup olmadığını denetlemesini sağlar.</li>
+  <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
+  aracılık ortaklarının ve Google Analytics for Firebase'in kullandığı reklam tanımlayıcısına erişim.</li>
+</ul>
+</div>
+<p>Uygulamanın kendisinin tanımladığı izinler bunlardır. İçindeki Google ve reklam ağı bileşenleri, Android'in
+kurulum sırasında size sormadan verdiği birkaç izin daha ekler (örneğin Google Play'in
+faturalandırma izni ve Android'in reklam hizmetleri izinleri); ama uygulama hiçbir Android
+sürümünde depolama, kamera, kişiler, mikrofon, hassas konum veya hesap izni istemez.</p>
+
+<h2>Çocuklar</h2>
+<p>Bu uygulama genel amaçlı bir araçtır. 13 yaş altındaki (veya ülkenizdeki eşdeğer asgari yaştaki)
+<strong>çocuklara yönelik değildir</strong>, bir çocuk kategorisinde listelenmez ve çocuklar için
+tasarlanmamış, çocuklara pazarlanmamıştır. Geliştirici çocuklardan bilerek hiçbir kişisel bilgi
+toplamaz. Bir çocuğun bu uygulamadaki reklam, analiz veya çökme
+raporlama hizmetleri aracılığıyla kişisel bilgi verdiğini
+düşünüyorsanız aşağıdaki adrese ve bu bilgiyi tutacak olan Google'a yazın.</p>
+
+<h2>Verilerin saklanması</h2>
+<p>Geliştiricinin bir sunucusu yoktur ve kendi elinde hiçbir kullanıcı verisi saklamaz. Kullanım
+istatistikleri ve çökme raporları geliştirici adına Google'da tutulur: bir kurulumun
+tanımlayıcılarına bağlı Analytics verileri en fazla 14 ay (tanımlayıcı içermeyen toplu raporlar
+daha uzun tutulabilir), çökme raporları ise 90 gün.
+Cihazınızdaki veriler, uygulamanın verilerini temizleyene ya da
+uygulamayı kaldırana kadar orada kalır. Google'ın AdMob ve Google Play üzerinden topladığı veriler
+<a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a>'nda anlatılan kendi
+saklama takvimlerine göre; bir aracılık ortağının topladığı veriler ise yukarıda bağlantısı
+verilen o ortağın politikasına göre tutulur.</p>
+
+<h2>Hukuki dayanaklar ve haklarınız</h2>
+<p>GDPR'ın (AB/BK) uygulandığı yerlerde, aracılık ortaklarınınki dahil kişiselleştirilmiş reklamların hukuki dayanağı, yukarıda
+anlatılan formla alınan ve dilediğiniz zaman geri çekebileceğiniz rızanızdır. Kişiselleştirilmemiş
+reklamcılık, sahtekârlık önleme ve reklam hizmetlerinin güvenliği meşru menfaate dayanır. Satın
+almanızın işlenmesi, reklam kaldırma satın aldığınızda kurulan sözleşmenin
+ifası için gereklidir. Kullanım istatistikleri ve çökme raporları, geliştiricinin uygulamayı
+çalışır durumda tutma ve nasıl kullanıldığını toplu olarak anlama yönündeki meşru menfaatine
+dayanır; AEA'da, Birleşik Krallık'ta ve İsviçre'de Analytics'in tanımlayıcısını cihazınızda saklaması ve
+verilerin reklam amacıyla kullanılması, rıza formunu yanıtladığınızda rızanıza (GDPR md. 6/1-a) dayanır;
+siz yanıt verene kadar Analytics ilk açılıştan itibaren zaten çalışır.</p>
+<p>GDPR kapsamında kişisel verilerinizin işlenip işlenmediğini öğrenme, bunlara erişme,
+düzeltilmesini veya silinmesini isteme, işlenmesini kısıtlama veya işlenmesine itiraz etme, veri
+taşınabilirliği ve rızanızı dilediğiniz zaman geri çekme haklarına sahipsiniz; ayrıca ülkenizin veri
+koruma otoritesine şikâyette bulunabilirsiniz. Türkiye'deki kullanıcıların KVKK kapsamındaki hakları ve
+başvuru yolu aşağıdaki <a href="#kvkk">KVKK Aydınlatma Metni</a> bölümündedir.</p>
+<p>Kullanım istatistikleri ve çökme raporları takma adlıdır: adınızı ya da e-posta adresinizi değil,
+rastgele tanımlayıcılar taşır; bu yüzden geliştirici hangi kayıtların size ait olduğunu bilemez.
+Rıza formunun gösterildiği yerlerde rızanızı dilediğiniz zaman <strong>Ayarlar → Gizlilik
+seçenekleri</strong> yolundan geri çekebilirsiniz; ayrıca bu işlemeye itiraz etmek ya da bu konuda
+soru sormak için aşağıdaki adrese yazabilirsiniz. Uygulamayı kaldırmak ya da verilerini temizlemek
+eski tanımlayıcılarla bağı koparır; daha önce gönderilmiş veriler de yukarıdaki sürelerin sonunda
+silinir.
+Reklam verilerine ilişkin talepler, bu verileri elinde tutan taraf olarak Google'a ya da ilgili
+aracılık ortağına, yukarıda bağlantısı verilen politikalardaki araçlar kullanılarak iletilmelidir. Bunun dışındaki her şey için ya da doğru yolu bulmakta yardım için
+aşağıdaki adrese yazın.</p>
+
+<h2 id="transfers">Türkiye ve AEA dışına aktarım</h2>
+<p>Geliştirici Türkiye'den çalışır ve bir sunucusu yoktur. Bu politikada anlatılan veriler cihazınızdan
+doğrudan aşağıdaki sağlayıcılara gider; bu sağlayıcılar verileri Türkiye ve Avrupa Ekonomik Alanı
+dışında, özellikle Amerika Birleşik Devletleri'nde işler. Geliştirici, kullanım istatistiklerini ve
+çökme raporlarını Firebase konsolunda Türkiye'den görüntüler.</p>
+<ul>
+  <li>Google (Google Ireland Limited / Google LLC): AdMob, Google Analytics for Firebase, Firebase Crashlytics ve Google Play Faturalandırma —
+  <a href="https://policies.google.com/privacy/frameworks?hl=tr">Google'ın veri aktarım çerçeveleri</a>,
+  <a href="https://firebase.google.com/support/privacy">Firebase'de gizlilik ve güvenlik</a>;</li>
+  <li>Unity (Unity Ads) — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a>;</li>
+  <li>Liftoff (Liftoff Monetize, eski adıyla Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff Gizlilik Politikası</a>.</li>
+</ul>
+<p>Bu sağlayıcılar politikalarında, AEA, Birleşik Krallık ve İsviçre'den yapılan aktarımlar için Avrupa
+Komisyonu'nun Standart Sözleşme Maddeleri gibi güvencelere ve sertifikalı oldukları ölçüde AB–ABD Veri
+Gizliliği Çerçevesi'ne dayandıklarını belirtir. Ayrıntılar yukarıda bağlantısı verilen
+politikalardadır.</p>
+
+<h2 id="kvkk">KVKK Aydınlatma Metni</h2>
+<p>Bu bölüm, 6698 sayılı Kişisel Verilerin Korunması Kanunu'nun (KVKK) 10. maddesi uyarınca hazırlanmış
+aydınlatma metnidir ve yukarıdaki bölümleri özetler.</p>
+<ul>
+  <li><strong>Veri sorumlusu:</strong> Burak Gökgöz (BumuStudios), Türkiye — <a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a>.</li>
+  <li><strong>İşlenen kişisel veriler:</strong> cihaz ve kurulum tanımlayıcıları (Android reklam kimliği, Firebase kurulum kimliği, Analytics uygulama örneği kimliği, Crashlytics kurulum kimliği); IP adresi ve ondan türetilen yaklaşık konum (ülke ya da bölge); cihaz ve uygulama bilgileri (model, işletim sistemi sürümü, dil, sürüm); kullanım olayları (ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi) ve reklam etkileşim olayları; çökme raporları; tek seferlik "reklamları kaldır" satın almasının ürünü, adı ve fiyatı (ödeme bilgisi olmadan); bize yazarsanız e-posta adresiniz ve mesajınız. Hesap ve ödeme bilgileriniz işlenmez.</li>
+  <li><strong>Toplama yöntemi:</strong> Veriler, uygulama ve içindeki yazılım bileşenleri (SDK'lar:
+  Google AdMob, Unity Ads, Liftoff Monetize, Google Analytics for Firebase, Firebase Crashlytics, Google Play Faturalandırma) aracılığıyla elektronik ortamda, otomatik yollarla toplanır. Bize yazdığınız
+  e-posta, sizin gönderdiğiniz yolla bize ulaşır.</li>
+  <li><strong>Amaçlar:</strong> uygulamayı çalışır durumda tutmak, çökmeleri bulup düzeltmek; uygulamanın nasıl kullanıldığını toplu olarak anlamak; uygulamayı ücretsiz sunan reklamları göstermek, ölçmek ve sahtekârlığı önlemek; reklam kaldırma satın almasını yürütmek; başvurularınızı ve sorularınızı yanıtlamak.</li>
+  <li><strong>Hukuki sebepler:</strong> Kullanım istatistikleri, çökme raporları,
+  kişiselleştirilmemiş reklam, sahtekârlığın önlenmesi ve başvurularınızın yanıtlanması
+  için, temel hak ve özgürlüklerinize zarar vermemek kaydıyla veri sorumlusunun meşru menfaati (KVKK
+  md. 5/2-f); satın almanın yürütülmesi için bir sözleşmenin kurulması veya ifası (md. 5/2-c); kişiselleştirilmiş
+  reklam ile AEA, Birleşik Krallık ve İsviçre'de Analytics'in tanımlayıcısını saklaması ve verilerin
+  reklam amacıyla kullanılması için açık rıza (md. 5/1). Bu açık rıza AEA, Birleşik Krallık ve
+  İsviçre'de uygulamanın gösterdiği Google rıza formuyla alınır ve <strong>Ayarlar → Gizlilik
+  seçenekleri</strong> yolundan geri çekilebilir. Türkiye'de uygulama bu formu göstermez; reklamların
+  kişiselleştirilmesini Android'in <strong>Ayarlar → Gizlilik → Reklamlar</strong> yolundan reklam
+  kimliğinizi silerek sınırlayabilirsiniz.</li>
+  <li><strong>Aktarılan taraflar ve amaçları:</strong> Google (Google Ireland Limited / Google LLC): Google Analytics for Firebase ve Firebase Crashlytics'te geliştirici adına veri işleyen olarak istatistik ve çökme raporları için; AdMob'da reklamların sunulması, ölçülmesi ve sahtekârlığın önlenmesi için; Google Play Faturalandırma'da satın almanın yürütülmesi için. Unity (Unity Ads) ve Liftoff (Liftoff Monetize): AdMob aracılığıyla reklam sunduklarında reklamların sunulması, ölçülmesi ve sahtekârlığın önlenmesi için. AdMob, Unity ve Liftoff reklam
+  verilerini kendi politikalarına göre kendi adlarına da işler. Geliştirici kişisel verileri bunlar
+  dışında kimseye aktarmaz ve para karşılığı satmaz.</li>
+  <li><strong>Yurt dışına aktarım:</strong> Bu sağlayıcılar verileri Türkiye dışında, özellikle Amerika
+  Birleşik Devletleri'nde işler; ayrıntılar ve sağlayıcıların belirttiği güvenceler
+  <a href="#transfers">Türkiye ve AEA dışına aktarım</a> bölümündedir.</li>
+  <li><strong>Saklama süreleri:</strong> "Verilerin saklanması" bölümünde anlatıldığı gibidir.</li>
+</ul>
+<p><strong>KVKK md. 11 kapsamındaki haklarınız.</strong> Veri sorumlusuna başvurarak:</p>
+<ul>
+  <li>kişisel verilerinizin işlenip işlenmediğini öğrenme,</li>
+  <li>işlenmişse buna ilişkin bilgi talep etme,</li>
+  <li>işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+  <li>yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+  <li>eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
+  <li>KVKK md. 7'de öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</li>
+  <li>düzeltme, silme veya yok etme işlemlerinin, verilerin aktarıldığı üçüncü kişilere bildirilmesini
+  isteme,</li>
+  <li>işlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize
+  bir sonucun ortaya çıkmasına itiraz etme,</li>
+  <li>kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın
+  giderilmesini talep etme</li>
+</ul>
+<p>haklarına sahipsiniz. Açık rızanızı dilediğiniz zaman geri çekebilirsiniz.</p>
+<p><strong>Başvuru yolu.</strong> Haklarınızı kullanmak için önce veri sorumlusuna, <a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a> adresine
+e-postayla başvurun. Başvurunuz en geç 30 gün içinde ve kural olarak ücretsiz sonuçlandırılır (KVKK
+md. 13). Kullanım istatistikleri ve çökme raporları adınızla değil rastgele tanımlayıcılarla tutulur;
+bu yüzden geliştirici bu kayıtlardan hangilerinin size ait olduğunu kendiliğinden bilemez. Başvurunuz
+reddedilirse, verilen yanıtı yetersiz bulursanız ya da süresinde yanıt verilmezse, yanıtı öğrendiğiniz
+tarihten itibaren 30 gün içinde ve her hâlde başvuru tarihinden itibaren 60 gün içinde Kişisel Verileri
+Koruma Kurulu'na şikâyette bulunabilirsiniz (KVKK md. 14).</p>
+
+<h2 id="us">ABD eyaletlerindeki gizlilik hakları</h2>
+<p>Bu bölüm, Kaliforniya'da ve tüketici gizliliği yasası bulunan diğer ABD eyaletlerinde yaşayanlar
+içindir ve bu yasaların geliştiriciye uygulandığı ölçüde geçerlidir.</p>
+<ul>
+  <li><strong>Toplananlar ve kaynağı:</strong> tanımlayıcılar (reklam kimliği; Firebase, Analytics ve Crashlytics kurulum tanımlayıcıları; IP adresiniz); internet veya diğer elektronik ağ etkinliği (kullanım olayları ve reklam etkileşimleri); yaklaşık konum (IP adresinden türetilen ülke ya da bölge); ticari bilgi ("reklamları kaldır" satın almasının ürünü, adı ve fiyatı); cihaz bilgileri ve çökme raporları. Hepsi cihazınızdan, uygulama ve
+  içindeki yazılım bileşenleri aracılığıyla gelir. Hassas kişisel bilgi toplanmaz.</li>
+  <li><strong>Neden:</strong> yukarıda anlatılan amaçlar: reklamları sunmak, ölçmek ve sahtekârlığı
+  önlemek; uygulamayı çalışır tutmak ve çökmeleri bulmak; nasıl kullanıldığını toplu olarak
+  anlamak; satın almanızı yürütmek.</li>
+  <li><strong>Satış ve paylaşım:</strong> Geliştirici kişisel bilgileri para karşılığı satmaz. Uygulamadaki
+  reklam bileşenleri (Google AdMob, Unity Ads ve Liftoff Monetize) reklam sunmak ve ölçmek için
+  tanımlayıcıları, ağ etkinliğini ve yaklaşık konumu alır; bu, bağlamlar arası davranışsal (hedefli)
+  reklamcılığı içerebilir. Kaliforniya yasasına göre bu "paylaşım" sayılır; diğer eyalet yasaları bunu
+  "satış" ya da hedefli reklamcılık olarak görebilir. Geliştirici 16 yaşından küçük tüketicilerin kişisel
+  bilgilerini bilerek satmaz veya paylaşmaz.</li>
+  <li><strong>Seçimleriniz:</strong> Kişisel bilgilerinizin satışını veya paylaşılmasını ve hedefli
+  reklamcılığı reddedebilirsiniz: Google'ın gizlilik mesajının geçerli olduğu yerlerde uygulamadaki
+  <strong>Ayarlar → Gizlilik seçenekleri</strong> girişinden; her telefonda Android'in
+  <strong>Ayarlar → Gizlilik → Reklamlar</strong> yolundan reklam kimliğinizi silerek; ya da bize
+  yazarak.</li>
+  <li><strong>Haklarınız:</strong> Hangi kişisel bilgilerin toplandığını, nasıl kullanıldığını ve kime
+  açıklandığını öğrenme, bunlara erişme, silinmesini veya düzeltilmesini isteme. Taleplerinizi <a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a>
+  adresine gönderin. Kayıtlar yalnızca rastgele tanımlayıcılar taşıdığından ilgili kayıtları bulmamızı
+  sağlayacak bilgiyi isteyebiliriz. Yetkili bir temsilci kullanabilirsiniz. Bir talebi reddedersek
+  yanıtımıza cevap vererek itiraz edebilirsiniz.</li>
+  <li><strong>Ayrımcılık yok:</strong> Bu hakları kullanmanız uygulamanın sizin için nasıl çalıştığını ya
+  da fiyatını değiştirmez.</li>
+  <li><strong>Saklama:</strong> Yukarıdaki "Verilerin saklanması" bölümünde anlatıldığı gibidir.</li>
+</ul>
+
+<h2>Güvenlik</h2>
+<p>Uygulamanın sakladıkları, Android'in diğer uygulamalardan yalıttığı, cihazınızdaki özel depolama
+alanında tutulur. Uygulamanın hesabı ve sunucusu yoktur; başka yerdeki kopyalar yalnızca sizin
+kaydederek ya da paylaşarak oluşturduklarınız ve yedekleme açıksa yukarıda anlatılan Android
+yedeğidir. Google'a ve reklam ortaklarına gönderilen veriler şifreli olarak (TLS)
+aktarılır. Hiçbir saklama veya aktarım yöntemi kusursuz derecede güvenli değildir; cihazınızı kilitli ve
+güncel tutun.</p>
+
+<h2>Bu politikadaki değişiklikler</h2>
+<p>Uygulamanın veri uygulamaları değişirse — örneğin yeni bir üçüncü taraf hizmet eklenirse — bu
+sayfa güncellenir ve en üstteki "son güncelleme" tarihi değişir. Esaslı değişiklikler ayrıca
+uygulamanın Google Play sayfasına da yansıtılır.</p>
+<p>Bu politika, PdfShrink'in ilk sürümüyle birlikte 8 Kasım 2026'da yayımlandı.</p>
+
+<h2 id="contact">İletişim</h2>
+<p>Bu politikayla veya uygulamadaki gizlilikle ilgili her soru için:</p>
+<div class="card">
+  <p><a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
+  <p>Bu adres, uygulamanın Google Play sayfasında da yazan adrestir. Hata bildirimleri, gizlilik
+  soruları ve veri talepleri buraya ulaşır.</p>
+</div>
+
+<footer>
+  PdfShrink — filigran yok, abonelik yok, uygulama belgelerinizi hiçbir yere yüklemez. Bu politika,
+  uygulamayı ilk sürümünden itibaren anlatır.
+</footer>
+
+</main>
+</body>
+</html>

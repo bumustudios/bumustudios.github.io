@@ -39,6 +39,24 @@ Pages:
 - Same page in [Türkçe](https://bumustudios.github.io/pdfpages/tr/), [Español](https://bumustudios.github.io/pdfpages/es/), [Português](https://bumustudios.github.io/pdfpages/pt/), [हिन्दी](https://bumustudios.github.io/pdfpages/hi/), [العربية](https://bumustudios.github.io/pdfpages/ar/), [Deutsch](https://bumustudios.github.io/pdfpages/de/), [Français](https://bumustudios.github.io/pdfpages/fr/)
 - [PdfPages privacy policy](https://bumustudios.github.io/pdfpages/privacy/)
 
+## PdfShrink (Android)
+
+PdfShrink compresses a PDF on an Android phone to the size a form or e-mail asks for: pick a limit (100 KB, 200 KB, 500 KB, 1 MB, 2 MB or any size from 20 KB) or a quality level (Light, Recommended, Strong).
+
+- To a size: the app tries the lightest setting first and keeps the most quality that still fits under the limit; if even the strongest setting does not fit, it gives the smallest file and says it is still over.
+- Light and Recommended re-encode only the pictures inside the PDF, so text stays selectable and searchable and links keep working. Strong (and very small limits) turns pages into images. A text-only PDF is usually already small; the app then says so instead of making it worse.
+- The original file is never modified: the smaller copy is a new PDF in Documents/PDF Shrink. Password-protected PDFs cannot be opened.
+- No watermark, no account, no sign-up. Documents are processed on the phone and never uploaded; works offline.
+- Free with ads (a banner, and an announced full-screen ad after a finished job). Opt-in: one rewarded ad for 1 hour without ads. An optional one-time purchase removes all ads. No subscription.
+- Requires Android 7.0 or newer. Android only. The app is in 30 languages, including English, Türkçe, Español, Português, العربية, हिन्दी, فارسی, Bahasa Indonesia, Русский and 日本語.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.pdfshrink
+
+Pages:
+
+- [PdfShrink: compress a PDF to 100 KB or 200 KB on Android, how-to and FAQ (English)](https://bumustudios.github.io/pdfshrink/)
+- Same page in [Türkçe](https://bumustudios.github.io/pdfshrink/tr/), [Español](https://bumustudios.github.io/pdfshrink/es/), [Português](https://bumustudios.github.io/pdfshrink/pt/), [Français](https://bumustudios.github.io/pdfshrink/fr/), [Deutsch](https://bumustudios.github.io/pdfshrink/de/), [Italiano](https://bumustudios.github.io/pdfshrink/it/), [Nederlands](https://bumustudios.github.io/pdfshrink/nl/), [Polski](https://bumustudios.github.io/pdfshrink/pl/), [Čeština](https://bumustudios.github.io/pdfshrink/cs/), [Magyar](https://bumustudios.github.io/pdfshrink/hu/), [Norsk](https://bumustudios.github.io/pdfshrink/nb/), [Bahasa Indonesia](https://bumustudios.github.io/pdfshrink/id/), [Tiếng Việt](https://bumustudios.github.io/pdfshrink/vi/), [Azərbaycan](https://bumustudios.github.io/pdfshrink/az/), [Oʻzbek](https://bumustudios.github.io/pdfshrink/uz/), [Ελληνικά](https://bumustudios.github.io/pdfshrink/el/), [Русский](https://bumustudios.github.io/pdfshrink/ru/), [Українська](https://bumustudios.github.io/pdfshrink/uk/), [Български](https://bumustudios.github.io/pdfshrink/bg/), [Српски](https://bumustudios.github.io/pdfshrink/sr/), [العربية](https://bumustudios.github.io/pdfshrink/ar/), [فارسی](https://bumustudios.github.io/pdfshrink/fa/), [हिन्दी](https://bumustudios.github.io/pdfshrink/hi/), [ગુજરાતી](https://bumustudios.github.io/pdfshrink/gu/), [ไทย](https://bumustudios.github.io/pdfshrink/th/), [日本語](https://bumustudios.github.io/pdfshrink/ja/), [한국어](https://bumustudios.github.io/pdfshrink/ko/), [简体中文](https://bumustudios.github.io/pdfshrink/zh-CN/), [繁體中文](https://bumustudios.github.io/pdfshrink/zh-TW/)
+- [PdfShrink privacy policy](https://bumustudios.github.io/pdfshrink/privacy/)
+
 ## PaperLite (Android)
 
 PaperLite is an Android document scanner that reads the text on the phone (OCR) and exports searchable PDFs.

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gizlilik Politikası — PaperLite</title>
-<meta name="description" content="PaperLite belge tarayıcı Android uygulamasının gizlilik politikası. Taramalarınız cihazınızdan hiç çıkmaz.">
+<meta name="description" content="PaperLite belge tarayıcı Android uygulamasının gizlilik politikası. Taramalarınız cihazınızda kalır; bir sayfanın metni yalnızca Yapay zekâyla düzelt'i seçtiğinizde gönderilir ve saklanmaz.">
 <meta name="color-scheme" content="light dark">
 <style>
   :root {
@@ -106,17 +106,20 @@
 <header>
   <h1>Gizlilik Politikası — PaperLite</h1>
   <p class="lede">Android uygulaması, paket adı <code>com.bumustudios.paperlite</code></p>
-  <p class="dates"><span>Yürürlük tarihi: 9 Ekim 2026.</span> <span>Son güncelleme: 4 Kasım 2026.</span></p>
+  <p class="dates"><span>Yürürlük tarihi: 9 Ekim 2026.</span> <span>Son güncelleme: 12 Kasım 2026.</span></p>
 <p class="dates">Veri sorumlusu: Burak Gökgöz (BumuStudios), Türkiye — <a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
 </header>
 
 <div class="callout">
-  <p><strong>Taramalarınız ve onlardan okunan metin, siz kendiniz kaydetmedikçe veya
-  paylaşmadıkça cihazınızdan hiç çıkmaz.</strong> Hesap açmanız gerekmez, giriş yapmanız gerekmez ve
-  uygulamaya ait hiçbir sunucu yoktur. Tarama, metin tanıma ve PDF oluşturma işlemlerinin tamamı
-  telefonunuzda yapılır.</p>
-  <p>Cihazınızdan çıkan her şey aşağıda ayrıntılı olarak anlatılmıştır: Google'ın reklam hizmeti ve
-  onun birlikte çalıştığı reklam ağları, Google'ın ödeme hizmeti, geliştiricinin Google Firebase
+  <p><strong>Taramalarınız, siz kendiniz kaydetmedikçe veya paylaşmadıkça cihazınızdan hiç çıkmaz.
+  Bir sayfadan okunan metin ise yalnızca o sayfada "Yapay zekâyla düzelt"e dokunduğunuzda cihazdan
+  çıkar.</strong> Hesap açmanız veya giriş yapmanız gerekmez. Tarama, metin tanıma, tanınan metnin
+  otomatik temizlenmesi ve düzeltilmesi, yazım önerileri ve PDF oluşturma işlemlerinin tamamı
+  telefonunuzda yapılır. Tek istisna isteğe bağlı <a href="#ai-fix">Yapay zekâyla düzelt</a>
+  özelliğidir: seçtiğiniz sayfanın görselini değil yalnızca metnini, tanıma hatalarının düzeltilmesi
+  için geliştiricinin sunucusuna gönderir ve bu metin saklanmaz.</p>
+  <p>Cihazınızdan çıkan diğer her şey aşağıda ayrıntılı olarak anlatılmıştır: Google'ın reklam hizmeti
+  ve onun birlikte çalıştığı reklam ağları, Google'ın ödeme hizmeti, geliştiricinin Google Firebase
   aracılığıyla topladığı kullanım istatistikleri ve çökme raporları ile Google'ın ML Kit
   bileşenlerinin Google'a gönderdiği sınırlı kullanım ölçümleri. Taramalarınız, tanınan metin,
   belge adları ve dosya içerikleri bunların hiçbirine girmez. Tek seferlik reklam kaldırma satın
@@ -140,15 +143,21 @@ bir uygulamadan ona paylaştığınız fotoğrafları alır. Bunları klasörlü
 sayfadaki metni cihazınızda okuyarak aramanızı, görüntülemenizi ve kopyalamanızı sağlar; belgeleri
 aranabilir PDF (isteğe bağlı olarak parolayla korunan) veya JPEG görsel olarak dışa aktarır.
 Filigran yoktur, sayfa sınırı yoktur, abonelik yoktur.</p>
+<p>1.1.0 sürümünden itibaren yeni taramaların tanınan metnini de düzenler (satır sonunda bölünen
+kelimeleri ve cümle ortasında kırılan satırları birleştirir), içindeki bariz yazım hatalarını cihazda
+düzeltir, olası yazım hatalarının altını çizip telefonunuzun yazım denetiminden öneriler sunar ve
+yalnızca siz istediğinizde tanıma hatalarını <a href="#ai-fix">Yapay zekâyla düzelt</a> ile düzeltir.
+Araçlar sekmesi, stüdyonun diğer PDF uygulamalarının Google Play sayfalarına bağlantı verir.</p>
 
 <h2>Taramalarınız ve dosyalarınız cihazınızda kalır</h2>
 <p>En önemli bölüm bu olduğu için açıkça yazıyoruz:</p>
 <ul>
-  <li><strong>Taramalar hiçbir zaman yüklenmez.</strong> Uygulamanın kendine ait bir sunucusu yoktur.
-  Sayfa görsellerinizi, bunlarda tanınan metni, belge veya klasör adlarınızı ya da dışa aktardığınız
-  dosyaları hiçbir yere göndermez; aşağıda anlatılan kullanım istatistikleri ve çökme raporları da
-  bunları asla içermez: bir çökme raporu, belgelerinizi değil, çökmenin kodun neresinde olduğunu
-  gösterir.</li>
+  <li><strong>Taramalar hiçbir zaman yüklenmez.</strong> Uygulama sayfa görsellerinizi, belge veya
+  klasör adlarınızı ya da dışa aktardığınız dosyaları hiçbir yere göndermez; aşağıda anlatılan
+  kullanım istatistikleri ve çökme raporları da bunları ve tanınan metni asla içermez: bir çökme
+  raporu, belgelerinizi değil, çökmenin kodun neresinde olduğunu gösterir. Bir sayfada tanınan metin
+  ise yalnızca o sayfada "Yapay zekâyla düzelt"e dokunursanız cihazınızdan çıkar; bkz.
+  <a href="#ai-fix">Yapay zekâyla düzelt</a>.</li>
   <li><strong>Çekim uygulamada değil, Google'ın belge tarayıcısında yapılır.</strong> Tara'ya
   dokunduğunuzda uygulama, Google Play hizmetlerinin sağladığı bir ekran olan Google ML Kit belge
   tarayıcısını açar. Kamera, Google Play hizmetlerinin kendi işleminde ve Play hizmetlerinin kendi
@@ -203,7 +212,8 @@ kurtarılamaz.</p>
 
 <h3>Uygulamanın cihazda sakladıkları</h3>
 <p>Aşağıdakilerin tamamı, uygulamanın cihazdaki ve diğer uygulamaların okuyamadığı kendi özel
-depolama alanında tutulur; hiçbiri hiçbir yere gönderilmez:</p>
+depolama alanında tutulur; Yapay zekâyla düzelt isteklerinizle birlikte giden rastgele kurulum kimliği
+dışında hiçbiri hiçbir yere gönderilmez:</p>
 <ul>
   <li>taramalarınız: uygulamanın özel depolama alanındaki <code>docs</code> klasöründe bulunan sayfa
   görselleri;</li>
@@ -215,15 +225,22 @@ depolama alanında tutulur; hiçbiri hiçbir yere gönderilmez:</p>
   <li>henüz bekleyen arka plan metin tanıma işlerinin kuyruğu;</li>
   <li>tema, yazı boyutu, dil, OCR dili, varsayılan sayfa boyutu ve kalite, kitaplık sıralama
   tercihleriniz ve karşılama ekranının tamamlanıp tamamlanmadığı;</li>
-  <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı, ödüllü reklamla kazanılan
-  bir saatlik reklamsız sürenin ne zaman bittiği ve reklam sıklığını düşük tutmak için kullanılan,
-  gösterilen geçiş reklamı sayacı;</li>
+  <li>tek seferlik "reklamları kaldır" satın alımının etkin olup olmadığı ve reklam sıklığını düşük
+  tutmak için kullanılan, gösterilen geçiş reklamı sayacı;</li>
+  <li>her sayfa için otomatik düzeltmenin yaptığı değişiklikler (her kelimeyi tek tek geri
+  yükleyebilmeniz veya hepsini geri alabilmeniz için); geri yüklediğiniz ve bir daha otomatik olarak
+  düzeltilmeyecek en fazla 500 kelime; otomatik düzeltmenin açık olup olmadığı;</li>
+  <li>Yapay zekâyla düzelt için: uygulamanın ilk gerektiğinde oluşturduğu rastgele bir kurulum kimliği
+  ve bugün kaç düzeltme hakkının kaldığı; saklamayı seçtiğiniz düzeltilmiş metin, kitaplık
+  veritabanında sayfanın metninin yerine geçer;</li>
+  <li>uygulamanın sizden en son ne zaman Google Play puanı istediği ve kaç kaydın başarılı olduğu;
+  böylece en fazla 30 günde bir sorar;</li>
   <li>Google Play üzerinden sunulan bir uygulama güncellemesini ertelerseniz, bunun hangi sürüm
   olduğu ve ne zaman ertelendiği; böylece teklif birkaç gün tekrarlanmaz.</li>
 </ul>
 <p>Uygulamanın yedekleme kuralları (Android 7–11 için <code>backup_rules.xml</code>, Android 12 ve
 sonrası için <code>data_extraction_rules.xml</code>), taramaları, tanınan metni içeren kitaplık
-veritabanını, ayar dosyalarını ve tüm tercih dosyalarını Android bulut yedeklemesinin ve cihazdan
+veritabanını, ayar dosyalarını ve Yapay zekâyla düzelt'in kurulum kimliği dahil tüm tercih dosyalarını Android bulut yedeklemesinin ve cihazdan
 cihaza aktarımın dışında bırakır; yani bunlar Google Drive hesabınıza veya yeni bir telefona
 kopyalanmaz. Uygulamanın kendi klasörüne kaydettiği dışa aktarılmış dosyalar (Android 7–9'da ya da
 ortak klasör bir dosyayı kabul etmediğinde) da aynı şekilde yedeklemenin dışında tutulur; tarayıcının
@@ -249,13 +266,62 @@ dosyalar size aittir ve koyduğunuz yerde kalır.</p>
   Ayarlar'dan veya belge bazında değiştirilebilir.</li>
 </ul>
 <p>İkisi de <strong>cihazınızda</strong> çalışır. Görselleriniz ve tanınan metin yerel olarak
-işlenir; Google'a veya geliştiriciye gönderilmez. Tanıma modelleri uygulamanın içinde gelmez:
+işlenir ve Google'a gönderilmez; geliştirici bir sayfanın metnini yalnızca siz onu
+<a href="#ai-fix">Yapay zekâyla düzelt</a> ile gönderirseniz alır. Tanıma modelleri uygulamanın içinde gelmez:
 bunları Google Play hizmetleri indirir (uygulama, Latin, Japonca ve Korece modellerinin kurulum
 sırasında indirilmesini ister) ve cihazda tutar. Google'ın
 <a href="https://developers.google.com/ml-kit/terms">ML Kit koşulları</a> uyarınca bu bileşenler,
 ML Kit özelliklerini sürdürmek ve geliştirmek amacıyla, özelliklerin nasıl kullanıldığı ve nasıl
 performans gösterdiğine ilişkin cihaz ve uygulama bilgileri ile yanıt süreleri gibi sınırlı
 ölçümleri Google'a gönderebilir. Bu ölçümler görsellerinizi veya tanınan metni asla içermez.</p>
+
+<h2>Temizleme, otomatik düzeltme ve yazım önerileri — cihazınızda</h2>
+<p>1.1.0 sürümünden itibaren yeni bir sayfa okunduktan sonra uygulama, okuduğunuz, kopyaladığınız ve
+aradığınız metinde satır sonunda tireyle bölünen kelimeleri ve cümle ortasında kırılan satırları
+birleştirir (dışa aktarılan PDF'in görünmez metin katmanı değişmez). Ardından bariz yazım hatalarını
+uygulamanın içinde gelen kelime listeleriyle (FrequencyWords listelerine dayanır, CC BY-SA 4.0)
+düzeltir ve değişen her kelimeyi işaretler; bunları tek tek veya hepsini birden geri alabilirsiniz.
+Bu özellik Ayarlar'dan kapatılabilir. Bir sayfanın metin görünümünde olası yazım hatalarının altı
+çizilir; öneriler telefonunuzun yazım denetiminden, yani genellikle klavye uygulamanızın sağladığı ve
+denetlenecek kelimeleri cihaz üzerinde alan Android sistem hizmetinden gelir. PaperLite bunların hiçbiri
+için ağ üzerinden bir şey göndermez; yazım denetimi hizmeti, sağlayıcısının kendi gizlilik politikasına
+tabidir.</p>
+
+<h2 id="ai-fix">Yapay zekâyla düzelt</h2>
+<p>Bir sayfanın metin görünümünde <strong>Yapay zekâyla düzelt</strong>'e dokunarak tanıma hatalarını
+düzeltebilirsiniz: yanlış veya karışmış harfler, eksik aksanlar, yanlışlıkla bölünen veya birleşen
+kelimeler, tireyle kopan satırlar. Özellik isteğe bağlıdır ve yalnızca siz dokunduğunuzda çalışır;
+reklam kaldırmayı satın almadıysanız önce bir ödüllü reklam izlersiniz. Kurulum başına günde en fazla
+20 kez kullanılabilir.</p>
+<ul>
+  <li><strong>Ne gönderilir:</strong> o sayfada tanınan metin — sayfa görseli, belge adı veya başka bir
+  sayfa asla — daha uzunsa en fazla 6.000 karakterlik parçalar hâlinde, şifreli bağlantıyla (HTTPS).
+  Metinle birlikte uygulama, kendisinin oluşturduğu ve adınıza, Google hesabınıza veya reklam
+  kimliğinize bağlı olmayan rastgele bir kurulum kimliği gönderir; Google Play sürümünde, isteğin
+  gerçek uygulamadan geldiğini sunucunun doğrulayabilmesi için Google Play Integrity'den alınan bir
+  Firebase App Check belirteci de ekleyebilir. Bir sayfanın metin görünümü açıkken uygulama, bugün kaç
+  düzeltme hakkının kaldığını da sunucuya sorar; bu istek yalnızca kurulum kimliğini taşır.</li>
+  <li><strong>Nereye gider:</strong> geliştiricinin kendi sunucusuna: <code>ocrfix.tabulastudios.com</code>
+  adresindeki (yedek adresi <code>workers.dev</code> üzerinde) bir Cloudflare Worker; Cloudflare, Inc.'in
+  ağında, geliştiricinin veri işleyeni olarak çalışır. Düzeltmeyi orada, Cloudflare Workers AI üzerinde
+  çalışan, herkese açık bir yapay zekâ modeli yapar (Mistral Small 3.1, yedek olarak Qwen3). Metin başka
+  hiçbir şirkete iletilmez. Her sunucuda olduğu gibi Cloudflare, isteği iletebilmek için IP adresinizi
+  alır.</li>
+  <li><strong>Ne saklanır:</strong> metin ne saklanır ne de kaydedilir (log); yalnızca düzeltmeyi
+  üretmek için kullanılır ve düzeltme doğrudan telefonunuza döner. Sunucu yalnızca sayaç tutar: her
+  kurulum kimliğinin bugün kaç düzeltme kullandığı ve tüm kullanıcılar için bir toplam; bunların hepsini
+  her UTC gününün başında siler.</li>
+  <li><strong>Ne görürsünüz:</strong> Orijinal ile Düzeltilmiş arasında geçiş yapabilirsiniz, değişen
+  kelimeler vurgulanır ve siz düzeltilmiş sürümü saklamayı seçmedikçe metniniz değişmez. Yalnızca
+  tanıma onarımına benzeyen düzeltmeler tutulur; bir yapay zekâ modeli yine de yanılabilir, sonucu
+  kontrol edin. Bir sonuç yanlış veya rahatsız ediciyse <strong>Bu sonuçla ilgili sorun bildir</strong>,
+  göndermeden önce okuyup düzenleyebileceğiniz bir e-postayı geliştiriciye açar.</li>
+  <li><strong>Nasıl kaçınılır:</strong> düğmeye dokunmayın. Uygulamanın geri kalanı onsuz ve
+  çevrimdışı çalışır.</li>
+</ul>
+<p>Uygulamanın Google Play'deki veri güvenliği bölümünde bu, "Dosyalar ve belgeler" (sayfa metni:
+toplanır, paylaşılmaz, geçici olarak işlenir, isteğe bağlıdır, uygulama işlevleri için) ve "Cihaz veya
+diğer kimlikler" (rastgele kurulum kimliği, uygulama işlevleri için) olarak görünür.</p>
 
 <h2>Reklamlar — Google AdMob ve aracılık (mediation) ortakları</h2>
 <p>Uygulama ücretsizdir ve Google AdMob (bölgenize göre Google Ireland Limited / Google LLC)
@@ -330,9 +396,9 @@ yerleri:</p>
   Devam düğmesine dokunduğunuzda (ya da Geri tuşuna bastığınızda) oynatılır. İlk iki dışa aktarmanızda
   hiç gösterilmez, iki geçiş reklamı arasında her zaman en az üç dakika bulunur ve paylaşım
   penceresinden önce ya da tarama, metin tanıma veya düzenleme sırasında hiç gösterilmez.</li>
-  <li><strong>Ödüllü reklam</strong> (isteğe bağlı) — yalnızca Ayarlar'da veya sonuç ekranında
-  "Reklamsız bir saat" seçeneğini seçerseniz: bir reklam izlersiniz ve uygulama sonraki bir saat boyunca reklam
-  göstermez. Hiçbir özelliği açmak veya kullanmak için şart değildir.</li>
+  <li><strong>Ödüllü reklam</strong> (isteğe bağlı) — yalnızca bir sayfada "Yapay zekâyla düzelt"e
+  dokunduğunuzda ve reklam kaldırmayı satın almadıysanız: bir reklam izlersiniz ve düzeltme çalışır.
+  Uygulamada başka hiçbir şey reklam gerektirmez.</li>
 </ul>
 <p>Google'ın bu verileri nasıl işlediği bu politikaya değil, Google'ın kendi politikalarına tabidir:</p>
 <ul>
@@ -450,6 +516,13 @@ koşulları kapsamındadır.</p>
 kitaplık Google Play'e uygulamanın daha yeni bir sürümünün olup olmadığını sorar ve varsa Google Play'in
 bunu size sunmasını, indirmesini ve kurmasını sağlar.
 <a href="https://policies.google.com/privacy?hl=tr">Google Gizlilik Politikası</a> kapsamındadır.</p>
+<p>1.1.0 sürümünden itibaren uygulama Google Play'in Uygulama İçi Değerlendirme (In-App Review)
+kitaplığını da kullanır: birkaç başarılı kayıttan sonra ve en fazla 30 günde bir, Google Play'den
+Google'ın kendi puanlama kutusunu göstermesini ister. Kutunun gösterilip gösterilmeyeceği ve verdiğiniz
+puan veya yorum Google Play tarafından yürütülür; uygulamaya ne seçtiğiniz bildirilmez. Araçlar sekmesi
+stüdyonun diğer PDF uygulamalarını, yüklü değillerse Google Play sayfalarını açar; bu bağlantılar,
+Google Play'in onlardan gelen kurulumları raporlayabilmesi için bir kampanya etiketi taşır, kişisel veri
+taşımaz.</p>
 
 <h2>Reklam tercihleriniz</h2>
 
@@ -480,16 +553,16 @@ değişir) reklam kimliğinizi sıfırlayabilir veya tamamen silebilirsiniz; sil
 uygulamalar sabit bir reklam tanımlayıcısı alamaz.</p>
 
 <h3>Reklamları tamamen kaldırmak</h3>
-<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın reklam istemesini tümüyle durdurur. Ödüllü
-reklamla kazanılan bir saatlik reklamsız süre ise reklam isteklerini o bir saat için durdurur.</p>
+<p>Tek seferlik reklam kaldırma satın alımı, uygulamanın reklam istemesini tümüyle durdurur; Yapay
+zekâyla düzelt de o zaman reklamsız çalışır.</p>
 
 <h2>Uygulamanın istediği izinler</h2>
 <div class="card">
 <ul>
   <li><code>INTERNET</code> — reklamların alınması, Google Play Faturalandırma ile iletişim, Google
-  Play'e bir uygulama güncellemesi olup olmadığının sorulması ve yukarıda anlatılan kullanım
-  istatistikleriyle çökme raporlarının gönderilmesi için gereklidir. Taramalarınız ve metinleri ağ
-  üzerinden asla gönderilmez.</li>
+  Play'e bir uygulama güncellemesi olup olmadığının sorulması, yukarıda anlatılan kullanım
+  istatistikleriyle çökme raporlarının gönderilmesi ve "Yapay zekâyla düzelt"e dokunduğunuzda bir
+  sayfanın metninin gönderilmesi için gereklidir. Taramalarınız ağ üzerinden asla gönderilmez.</li>
   <li><code>ACCESS_NETWORK_STATE</code> — reklam bileşenlerinin yükleme denemesinden önce bağlantı
   olup olmadığını kontrol etmesini sağlar.</li>
   <li><code>com.google.android.gms.permission.AD_ID</code> — yukarıda anlatıldığı gibi AdMob'un,
@@ -513,7 +586,8 @@ kişisel veri verdiğini düşünüyorsanız aşağıdaki adrese ve verinin bulu
 başvurun.</p>
 
 <h2>Verilerin saklanması</h2>
-<p>Geliştiricinin bir sunucusu yoktur ve kendi elinde hiçbir kullanıcı verisi saklamaz.
+<p>Geliştirici kendi elinde hiçbir kullanıcı verisi saklamaz: tek sunucusu olan Yapay zekâyla düzelt
+sunucusu metin saklamaz ve sayaçlarını her UTC gününün başında siler.
 Taramalarınız, metinleri ve ayarlarınız, siz onları uygulamada silene, uygulamanın verilerini
 temizleyene veya uygulamayı kaldırana kadar cihazınızda kalır. Kullanım istatistikleri ve çökme
 raporları geliştirici adına Google'da tutulur: bir kurulumun tanımlayıcılarına bağlı Analytics
@@ -533,7 +607,9 @@ geliştiricinin uygulamayı çalışır durumda tutma ve nasıl kullanıldığı
 yönündeki meşru menfaatine dayanır; AEA'da, Birleşik Krallık'ta ve İsviçre'de Analytics'in tanımlayıcısını cihazınızda saklaması ve
 verilerin reklam amacıyla kullanılması, rıza formunu yanıtladığınızda rızanıza (GDPR md. 6/1-a) dayanır;
 siz yanıt verene kadar Analytics ilk açılıştan itibaren zaten çalışır. Tarama ve metin
-tanıma, sizin isteğiniz üzerine cihazınızda yapılır ve geliştirici bu verilerin hiçbirini almaz.</p>
+tanıma, sizin isteğiniz üzerine cihazınızda yapılır ve geliştirici bu verilerin hiçbirini almaz.
+Yapay zekâyla düzelt, bir sayfanın metnini yalnızca istediğiniz düzeltmeyi sağlamak için işler (GDPR
+md. 6/1-b).</p>
 <p>GDPR kapsamında kişisel verilerinizin işlenip işlenmediğini öğrenme, bunlara erişme,
 düzeltilmesini veya silinmesini isteme, işlenmesini kısıtlama veya işlenmesine itiraz etme, veri
 taşınabilirliği ve rızanızı dilediğiniz zaman geri çekme haklarına sahipsiniz; ayrıca ülkenizin veri
@@ -554,24 +630,27 @@ yazabilirsiniz.</p>
 
 <h2>Güvenlik</h2>
 <p>Taramalarınız, metinleri ve kitaplık veritabanı, Android'in diğer uygulamalardan yalıttığı
-uygulamaya özel depolama alanında tutulur. Uygulamanın hesabı ve sunucusu olmadığından,
-belgelerinizin başka bir yerde açığa çıkabilecek bir kopyası yoktur. Google'a ve reklam
-ortaklarına gönderilen veriler şifreli olarak (TLS) aktarılır. Parolayla koruduğunuz bir PDF,
+uygulamaya özel depolama alanında tutulur. Uygulamanın hesabı yoktur ve Yapay zekâyla düzelt
+sunucusu metin saklamaz; bu yüzden belgelerinizin başka bir yerde açığa çıkabilecek bir kopyası yoktur.
+Google'a, reklam ortaklarına ve bu sunucuya gönderilen veriler şifreli olarak (TLS) aktarılır. Parolayla koruduğunuz bir PDF,
 AES-128 ile şifrelenir. Hiçbir saklama veya aktarım yöntemi kusursuz derecede güvenli değildir;
 cihazınızı kilitli ve güncel tutun, dışa aktardığınız dosyaları nereye kaydettiğinize ve kiminle
 paylaştığınıza dikkat edin.</p>
 
 <h2 id="transfers">Türkiye ve AEA dışına aktarım</h2>
-<p>Geliştirici Türkiye'den çalışır ve bir sunucusu yoktur. Bu politikada anlatılan veriler cihazınızdan
-doğrudan aşağıdaki sağlayıcılara gider; bu sağlayıcılar verileri Türkiye ve Avrupa Ekonomik Alanı
+<p>Geliştirici Türkiye'den çalışır; tek sunucusu olan Yapay zekâyla düzelt sunucusu Cloudflare'in
+ağında çalışır. Bu politikada anlatılan veriler cihazınızdan doğrudan aşağıdaki sağlayıcılara gider; bu sağlayıcılar verileri Türkiye ve Avrupa Ekonomik Alanı
 dışında, özellikle Amerika Birleşik Devletleri'nde işler. Geliştirici, kullanım istatistiklerini ve
 çökme raporlarını Firebase konsolunda Türkiye'den görüntüler.</p>
 <ul>
-  <li>Google (Google Ireland Limited / Google LLC): AdMob, Google Analytics for Firebase, Firebase Crashlytics, Google Play Faturalandırma ve ML Kit ölçümleri —
+  <li>Google (Google Ireland Limited / Google LLC): AdMob, Google Analytics for Firebase, Firebase Crashlytics, Firebase App Check, Google Play Faturalandırma ve ML Kit ölçümleri —
   <a href="https://policies.google.com/privacy/frameworks?hl=tr">Google'ın veri aktarım çerçeveleri</a>,
   <a href="https://firebase.google.com/support/privacy">Firebase'de gizlilik ve güvenlik</a>;</li>
   <li>Unity (Unity Ads) — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Oyuncu ve Uygulama Kullanıcısı Gizlilik Politikası</a>;</li>
-  <li>Liftoff (Liftoff Monetize, eski adıyla Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff Gizlilik Politikası</a>.</li>
+  <li>Liftoff (Liftoff Monetize, eski adıyla Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff Gizlilik Politikası</a>;</li>
+  <li>Cloudflare (Cloudflare, Inc.): Yapay zekâyla düzelt'in sunucusu ve yapay zekâ modeli, geliştiricinin
+  veri işleyeni olarak; istek, Türkiye ve AEA dışında da olabilen Cloudflare veri merkezlerinde
+  işlenir — <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Gizlilik Politikası</a>.</li>
 </ul>
 <p>Bu sağlayıcılar politikalarında, AEA, Birleşik Krallık ve İsviçre'den yapılan aktarımlar için Avrupa
 Komisyonu'nun Standart Sözleşme Maddeleri gibi güvencelere ve sertifikalı oldukları ölçüde AB–ABD Veri
@@ -583,22 +662,22 @@ politikalardadır.</p>
 aydınlatma metnidir ve yukarıdaki bölümleri özetler.</p>
 <ul>
   <li><strong>Veri sorumlusu:</strong> Burak Gökgöz (BumuStudios), Türkiye — <a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a>.</li>
-  <li><strong>İşlenen kişisel veriler:</strong> cihaz ve kurulum tanımlayıcıları (Android reklam kimliği, Firebase kurulum kimliği, Analytics uygulama örneği kimliği, Crashlytics kurulum kimliği); IP adresi ve ondan türetilen yaklaşık konum (ülke ya da bölge); cihaz ve uygulama bilgileri (model, işletim sistemi sürümü, dil, sürüm); kullanım olayları (ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi) ve reklam etkileşim olayları; çökme raporları; tek seferlik "reklamları kaldır" satın almasının ürünü, adı ve fiyatı (ödeme bilgisi olmadan); ML Kit bileşenlerinin Google'a gönderdiği kullanım ve performans ölçümleri (cihaz ve uygulama bilgisi, yanıt süreleri gibi); bize yazarsanız e-posta adresiniz ve mesajınız. Hesap ve ödeme bilgileriniz işlenmez.</li>
+  <li><strong>İşlenen kişisel veriler:</strong> cihaz ve kurulum tanımlayıcıları (Android reklam kimliği, Firebase kurulum kimliği, Analytics uygulama örneği kimliği, Crashlytics kurulum kimliği); IP adresi ve ondan türetilen yaklaşık konum (ülke ya da bölge); cihaz ve uygulama bilgileri (model, işletim sistemi sürümü, dil, sürüm); kullanım olayları (ilk açılış, oturumlar, görüntülenen ekranlar, etkileşim süresi) ve reklam etkileşim olayları; çökme raporları; tek seferlik "reklamları kaldır" satın almasının ürünü, adı ve fiyatı (ödeme bilgisi olmadan); ML Kit bileşenlerinin Google'a gönderdiği kullanım ve performans ölçümleri (cihaz ve uygulama bilgisi, yanıt süreleri gibi); "Yapay zekâyla düzelt" ile gönderdiğiniz sayfa metni (yalnızca düzeltme için işlenir, saklanmaz), bununla giden rastgele kurulum kimliği ve isteğin geldiği IP adresi; bize yazarsanız e-posta adresiniz ve mesajınız. Hesap ve ödeme bilgileriniz işlenmez.</li>
   <li><strong>Toplama yöntemi:</strong> Veriler, uygulama ve içindeki yazılım bileşenleri (SDK'lar:
-  Google AdMob, Unity Ads, Liftoff Monetize, Google Analytics for Firebase, Firebase Crashlytics, Google Play Faturalandırma, Google ML Kit) aracılığıyla elektronik ortamda, otomatik yollarla toplanır. Bize yazdığınız
+  Google AdMob, Unity Ads, Liftoff Monetize, Google Analytics for Firebase, Firebase Crashlytics, Firebase App Check, Google Play Faturalandırma, Google ML Kit) aracılığıyla elektronik ortamda, otomatik yollarla toplanır; Yapay zekâyla düzelt metni ise yalnızca siz düğmeye dokunduğunuzda, uygulama tarafından geliştiricinin sunucusuna gönderilir. Bize yazdığınız
   e-posta, sizin gönderdiğiniz yolla bize ulaşır.</li>
-  <li><strong>Amaçlar:</strong> uygulamayı çalışır durumda tutmak, çökmeleri bulup düzeltmek; uygulamanın nasıl kullanıldığını toplu olarak anlamak; uygulamayı ücretsiz sunan reklamları göstermek, ölçmek ve sahtekârlığı önlemek; reklam kaldırma satın almasını yürütmek; başvurularınızı ve sorularınızı yanıtlamak.</li>
+  <li><strong>Amaçlar:</strong> uygulamayı çalışır durumda tutmak, çökmeleri bulup düzeltmek; uygulamanın nasıl kullanıldığını toplu olarak anlamak; uygulamayı ücretsiz sunan reklamları göstermek, ölçmek ve sahtekârlığı önlemek; reklam kaldırma satın almasını yürütmek; istediğinizde bir sayfanın metnindeki tanıma hatalarını düzeltmek ve bu özelliğin günlük kullanım sınırını uygulamak; başvurularınızı ve sorularınızı yanıtlamak.</li>
   <li><strong>Hukuki sebepler:</strong> Kullanım istatistikleri, çökme raporları,
   kişiselleştirilmemiş reklam, sahtekârlığın önlenmesi, ML Kit ölçümleri ve başvurularınızın yanıtlanması
   için, temel hak ve özgürlüklerinize zarar vermemek kaydıyla veri sorumlusunun meşru menfaati (KVKK
-  md. 5/2-f); satın almanın yürütülmesi için bir sözleşmenin kurulması veya ifası (md. 5/2-c); kişiselleştirilmiş
+  md. 5/2-f); satın almanın yürütülmesi ve sizin talep ettiğiniz Yapay zekâyla düzelt hizmetinin sunulması (sayfa metni ve kurulum kimliği) için bir sözleşmenin kurulması veya ifası (md. 5/2-c); kişiselleştirilmiş
   reklam ile AEA, Birleşik Krallık ve İsviçre'de Analytics'in tanımlayıcısını saklaması ve verilerin
   reklam amacıyla kullanılması için açık rıza (md. 5/1). Bu açık rıza AEA, Birleşik Krallık ve
   İsviçre'de uygulamanın gösterdiği Google rıza formuyla alınır ve <strong>Ayarlar → Gizlilik
   seçenekleri</strong> yolundan geri çekilebilir. Türkiye'de uygulama bu formu göstermez; reklamların
   kişiselleştirilmesini Android'in <strong>Ayarlar → Gizlilik → Reklamlar</strong> yolundan reklam
   kimliğinizi silerek sınırlayabilirsiniz.</li>
-  <li><strong>Aktarılan taraflar ve amaçları:</strong> Google (Google Ireland Limited / Google LLC): Google Analytics for Firebase ve Firebase Crashlytics'te geliştirici adına veri işleyen olarak istatistik ve çökme raporları için; AdMob'da reklamların sunulması, ölçülmesi ve sahtekârlığın önlenmesi için; Google Play Faturalandırma'da satın almanın yürütülmesi için; ML Kit'te tarama ve metin tanıma bileşenlerinin bakımı ve iyileştirilmesi için. Unity (Unity Ads) ve Liftoff (Liftoff Monetize): AdMob aracılığıyla reklam sunduklarında reklamların sunulması, ölçülmesi ve sahtekârlığın önlenmesi için. AdMob, Unity ve Liftoff reklam
+  <li><strong>Aktarılan taraflar ve amaçları:</strong> Google (Google Ireland Limited / Google LLC): Google Analytics for Firebase ve Firebase Crashlytics'te geliştirici adına veri işleyen olarak istatistik ve çökme raporları için; AdMob'da reklamların sunulması, ölçülmesi ve sahtekârlığın önlenmesi için; Google Play Faturalandırma'da satın almanın yürütülmesi için; ML Kit'te tarama ve metin tanıma bileşenlerinin bakımı ve iyileştirilmesi için. Unity (Unity Ads) ve Liftoff (Liftoff Monetize): AdMob aracılığıyla reklam sunduklarında reklamların sunulması, ölçülmesi ve sahtekârlığın önlenmesi için. Cloudflare (Cloudflare, Inc.): Yapay zekâyla düzelt'te geliştirici adına veri işleyen olarak, metnin düzeltilmesi ve günlük sınırın uygulanması için. AdMob, Unity ve Liftoff reklam
   verilerini kendi politikalarına göre kendi adlarına da işler. Geliştirici kişisel verileri bunlar
   dışında kimseye aktarmaz ve para karşılığı satmaz.</li>
   <li><strong>Yurt dışına aktarım:</strong> Bu sağlayıcılar verileri Türkiye dışında, özellikle Amerika
@@ -634,11 +713,11 @@ Koruma Kurulu'na şikâyette bulunabilirsiniz (KVKK md. 14).</p>
 <p>Bu bölüm, Kaliforniya'da ve tüketici gizliliği yasası bulunan diğer ABD eyaletlerinde yaşayanlar
 içindir ve bu yasaların geliştiriciye uygulandığı ölçüde geçerlidir.</p>
 <ul>
-  <li><strong>Toplananlar ve kaynağı:</strong> tanımlayıcılar (reklam kimliği; Firebase, Analytics ve Crashlytics kurulum tanımlayıcıları; IP adresiniz); internet veya diğer elektronik ağ etkinliği (kullanım olayları ve reklam etkileşimleri); yaklaşık konum (IP adresinden türetilen ülke ya da bölge); ticari bilgi ("reklamları kaldır" satın almasının ürünü, adı ve fiyatı); cihaz bilgileri ve çökme raporları; yukarıda anlatılan ML Kit kullanım ve performans ölçümleri. Hepsi cihazınızdan, uygulama ve
+  <li><strong>Toplananlar ve kaynağı:</strong> tanımlayıcılar (reklam kimliği; Firebase, Analytics ve Crashlytics kurulum tanımlayıcıları; IP adresiniz); internet veya diğer elektronik ağ etkinliği (kullanım olayları ve reklam etkileşimleri); yaklaşık konum (IP adresinden türetilen ülke ya da bölge); ticari bilgi ("reklamları kaldır" satın almasının ürünü, adı ve fiyatı); cihaz bilgileri ve çökme raporları; yukarıda anlatılan ML Kit kullanım ve performans ölçümleri; Yapay zekâyla düzelt ile gönderdiğiniz sayfa metni (yalnızca düzeltmeyi döndürmek için kullanılır, saklanmaz) ve onunla giden rastgele kurulum kimliği. Hepsi cihazınızdan, uygulama ve
   içindeki yazılım bileşenleri aracılığıyla gelir. Hassas kişisel bilgi toplanmaz.</li>
   <li><strong>Neden:</strong> yukarıda anlatılan amaçlar: reklamları sunmak, ölçmek ve sahtekârlığı
   önlemek; uygulamayı çalışır tutmak ve çökmeleri bulmak; nasıl kullanıldığını toplu olarak
-  anlamak; satın almanızı yürütmek.</li>
+  anlamak; satın almanızı yürütmek; istediğinizde bir sayfanın metnini düzeltmek.</li>
   <li><strong>Satış ve paylaşım:</strong> Geliştirici kişisel bilgileri para karşılığı satmaz. Uygulamadaki
   reklam bileşenleri (Google AdMob, Unity Ads ve Liftoff Monetize) reklam sunmak ve ölçmek için
   tanımlayıcıları, ağ etkinliğini ve yaklaşık konumu alır; bu, bağlamlar arası davranışsal (hedefli)
@@ -677,6 +756,12 @@ ve çökme raporlarının ne zaman çalıştığını daha doğru anlatır (ilk 
 AEA'da, Birleşik Krallık'ta ve İsviçre'de Analytics, rıza formunu yanıtladığınızda yanıtınıza uyar);
 Türkiye ve AEA dışına aktarımı, KVKK Aydınlatma Metni'ni, ABD eyaletlerindeki hakları ve güncelleme için kullanılan Google Play kitaplıklarını ekler; kullanmaya devam etmeyi güncellenmiş politikanın kabulü sayan cümleyi kaldırır.</p>
 
+<p>12 Kasım 2026 tarihli güncelleme 1.1.0 sürümünü anlatır: seçtiğiniz bir sayfanın metnini
+geliştiricinin Cloudflare üzerindeki sunucusuna gönderen ve saklamayan isteğe bağlı
+<a href="#ai-fix">Yapay zekâyla düzelt</a>; cihazdaki temizleme, otomatik düzeltme ve yazım önerileri;
+Google Play puanlama isteği ve Araçlar sekmesi. Bir saatlik reklamsız teklif kaldırıldı; ödüllü
+reklamlar artık yalnızca bir yapay zekâ düzeltmesinden önce gelir.</p>
+
 <h2 id="contact">İletişim</h2>
 <p>Bu politikayla veya uygulamadaki gizlilikle ilgili her türlü soru için:</p>
 <div class="card">
@@ -686,7 +771,7 @@ Türkiye ve AEA dışına aktarımı, KVKK Aydınlatma Metni'ni, ABD eyaletlerin
 </div>
 
 <footer>
-  <p>PaperLite — hesap yok, filigran yok, abonelik yok; taramalarınız cihazınızda kalır. Bu politika,
+  <p>PaperLite — hesap yok, filigran yok, abonelik yok; taramalarınız cihazınızda kalır, bir sayfanın metni yalnızca Yapay zekâyla düzelt'i seçtiğinizde cihazdan çıkar. Bu politika,
   uygulamanın ilk sürümünden itibaren yayımlanan sürümlerini açıklar.</p>
 </footer>
 

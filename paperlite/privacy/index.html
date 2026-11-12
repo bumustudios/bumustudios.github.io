@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — PaperLite</title>
-<meta name="description" content="Privacy policy for the PaperLite document scanner Android app. Your scans never leave your device.">
+<meta name="description" content="Privacy policy for the PaperLite document scanner Android app. Your scans stay on your device; a page's text is sent only when you choose Fix text with AI, and it is not stored.">
 <meta name="color-scheme" content="light dark">
 <style>
   :root {
@@ -106,20 +106,24 @@
 <header>
   <h1>Privacy Policy — PaperLite</h1>
   <p class="lede">Android app, package <code>com.bumustudios.paperlite</code></p>
-  <p class="dates"><span>Effective date: 9 October 2026.</span> <span>Last updated: 4 November 2026.</span></p>
+  <p class="dates"><span>Effective date: 9 October 2026.</span> <span>Last updated: 12 November 2026.</span></p>
 <p class="dates">Controller: Burak Gökgöz (BumuStudios), Türkiye — <a href="mailto:bumustudios@gmail.com">bumustudios@gmail.com</a></p>
 </header>
 
 <div class="callout">
-  <p><strong>Your scans, and the text read from them, never leave your device unless you save or
-  share them yourself.</strong> There is no account to make, no sign-in and no server belonging to
-  this app. Scanning, text recognition and PDF creation all happen on your phone.</p>
-  <p>What does leave your device is described in full below: Google's advertising service and the
+  <p><strong>Your scans never leave your device unless you save or share them yourself. The text read
+  from a page leaves it only when you tap "Fix text with AI" on that page.</strong> There is no account
+  to make and no sign-in. Scanning, text recognition, the automatic clean-up and correction of the
+  recognised text, spell-check suggestions and PDF creation all happen on your phone. The one
+  exception is the optional <a href="#ai-fix">Fix text with AI</a>: it sends the text of the page you
+  choose, never its image, to the developer's server to have recognition errors corrected, and that
+  text is not stored.</p>
+  <p>What else leaves your device is described in full below: Google's advertising service and the
   ad networks it works with, Google's payment service, the usage statistics and crash reports that
   the developer collects through Google Firebase, and the limited usage metrics that Google's ML Kit
-  components send to Google — never your scans, the recognised text, document names or file
-  contents. If you buy the one-time ad removal, the ads stop altogether; the usage statistics,
-  crash reports and ML Kit metrics do not depend on it.</p>
+  components send to Google. None of these receive your scans, the recognised text, document names
+  or file contents. If you buy the one-time ad removal, the ads stop altogether; the usage
+  statistics, crash reports and ML Kit metrics do not depend on it.</p>
 </div>
 
 <h2>Who this policy is from</h2>
@@ -138,14 +142,21 @@ from your gallery or share to it from another app. It keeps them in a library wi
 the text on every page on your device so you can search, view and copy it, and exports documents as
 searchable PDFs (optionally protected with a password) or as JPEG images. There is no watermark, no
 page limit and no subscription.</p>
+<p>Since version 1.1.0 it also tidies the recognised text of new scans (joining words split across
+lines and lines broken inside a sentence), corrects obvious misspellings in it on the device,
+underlines likely misspellings with suggestions from your phone's spell checker, and, only when you
+ask, corrects recognition errors with <a href="#ai-fix">Fix text with AI</a>. A Tools tab links to the
+studio's other PDF apps on Google Play.</p>
 
 <h2>Your scans and files stay on your device</h2>
 <p>This is the most important section, so it is stated plainly:</p>
 <ul>
-  <li><strong>Scans are never uploaded.</strong> The app has no backend of its own. It does not
-  transmit your page images, the text recognised on them, your document or folder names, or your
-  exported files anywhere, and the usage statistics and crash reports described below never contain
-  them: a crash report shows where in the code a crash happened, not your documents.</li>
+  <li><strong>Scans are never uploaded.</strong> The app does not transmit your page images, your
+  document or folder names or your exported files anywhere, and the usage statistics and crash
+  reports described below never contain them, nor the recognised text: a crash report shows where in
+  the code a crash happened, not your documents. The text recognised on a page leaves your device
+  only if you tap "Fix text with AI" on that page, as described under
+  <a href="#ai-fix">Fix text with AI</a>.</li>
   <li><strong>Capture runs in Google's document scanner, not in the app.</strong> When you tap Scan,
   the app opens the Google ML Kit document scanner, a screen provided by Google Play services. The
   camera is operated inside Google Play services' own process, under Play services' own camera
@@ -195,7 +206,8 @@ sent anywhere and never seen by the developer, so it cannot be recovered if you 
 
 <h3>What the app stores locally</h3>
 <p>Everything below is kept in the app's own private storage on the device, which other apps cannot
-read, and none of it is sent anywhere:</p>
+read, and none of it is sent anywhere, except the AI fix's random install ID, which goes with your
+Fix text with AI requests:</p>
 <ul>
   <li>your scans: the page images, in the folder <code>docs</code> of the app's private storage;</li>
   <li>the library database: document and folder names, dates, page order and rotation, the OCR
@@ -206,15 +218,22 @@ read, and none of it is sent anywhere:</p>
   <li>the queue of background text-recognition jobs that are still pending;</li>
   <li>your theme, text size, language, OCR language, default page size and quality, library sort
   order, and whether the welcome screen has been completed;</li>
-  <li>whether the one-time "remove ads" purchase is active, when a one-hour ad-free period earned
-  with a rewarded ad ends, and a counter of how many interstitial ads have been shown, used to keep
-  ad frequency low;</li>
+  <li>whether the one-time "remove ads" purchase is active, and a counter of how many interstitial ads
+  have been shown, used to keep ad frequency low;</li>
+  <li>for each page, the corrections the automatic clean-up made, so that you can restore any word or
+  undo them all; up to 500 words you restored, which are never corrected automatically again; and
+  whether automatic correction is switched on;</li>
+  <li>for Fix text with AI: a random install ID that the app creates the first time it is needed, and
+  how many fixes are left today; a corrected text you choose to keep replaces the page's text in the
+  library database;</li>
+  <li>when the app last asked you for a Google Play rating and how many saves have succeeded, so that
+  it asks at most once every 30 days;</li>
   <li>if you postpone an app update offered through Google Play, which version that was and when, so
   the offer is not repeated for a few days.</li>
 </ul>
 <p>The app's backup rules (<code>backup_rules.xml</code> for Android 7 to 11 and
 <code>data_extraction_rules.xml</code> for Android 12 and later) exclude the scans, the library
-database with the recognised text, the settings files and all preference files from Android cloud
+database with the recognised text, the settings files and all preference files (the AI fix's install ID included) from Android cloud
 backup and from device-to-device transfer, so they are not copied to your Google Drive or to a new
 phone. Exported files that the app saves into its own folder (Android 7 to 9, or when the shared
 folder refuses a file) are excluded in the same way, and the temporary copies the scanner hands to
@@ -239,13 +258,60 @@ you put them.</p>
   and can be changed in Settings or per document.</li>
 </ul>
 <p>Both run <strong>on your device</strong>. Your images and the recognised text are processed
-locally and are not sent to Google or to the developer. The recognition models are not built into
+locally and are not sent to Google; the developer receives a page's text only if you send it with
+<a href="#ai-fix">Fix text with AI</a>. The recognition models are not built into
 the app: Google Play services downloads them (the app asks for the Latin, Japanese and Korean models
 to be fetched at installation) and keeps them on the device. Under Google's
 <a href="https://developers.google.com/ml-kit/terms">ML Kit terms</a>, these components may send
 Google limited metrics about how the ML Kit features are used and how they perform, such as device
 and app information and response times, to maintain and improve them. These metrics never contain
 your images or the recognised text.</p>
+
+<h2>Clean-up, auto-correct and spell suggestions — on your device</h2>
+<p>From version 1.1.0, when a new page has been read, the app joins words that were split across
+lines with a hyphen and lines that were broken inside a sentence, in the text you read, copy and
+search (the invisible text layer of an exported PDF is not changed). It then corrects obvious
+misspellings using word lists built into the app (based on the FrequencyWords lists, CC BY-SA 4.0)
+and marks every changed word, which you can restore one by one or all at once; this can be switched
+off in Settings. In a page's text view, likely misspellings are underlined and suggestions come from
+your phone's spell checker, the Android system service usually provided by your keyboard app, which
+receives the words to check on the device. PaperLite sends nothing over the network for any of this;
+the spell checker service is governed by its provider's own privacy policy.</p>
+
+<h2 id="ai-fix">Fix text with AI</h2>
+<p>On a page's text view you can tap <strong>Fix text with AI</strong> to have recognition errors
+corrected: wrong or confused letters, missing accents, words split or merged by mistake, hyphenated
+line breaks. It is optional and runs only when you tap it; if you have not bought the ad removal, you
+first watch one rewarded ad. You can use it up to 20 times a day per installation.</p>
+<ul>
+  <li><strong>What is sent:</strong> the text recognised on that page — never the page image, the
+  document name or any other page — split into parts of up to 6,000 characters if it is longer,
+  over an encrypted connection (HTTPS). With it the app sends a random install ID that it created
+  itself, which is not linked to your name, your Google account or your advertising ID, and, in the
+  Google Play version, may attach a Firebase App Check token from Google Play Integrity that lets the
+  server confirm the request comes from the genuine app. While a page's text view is open, the app
+  also asks the server how many fixes are left today; that request carries only the install ID.</li>
+  <li><strong>Where it goes:</strong> to the developer's own server, a Cloudflare Worker at
+  <code>ocrfix.tabulastudios.com</code> (with a fallback address on <code>workers.dev</code>), run on the
+  network of Cloudflare, Inc. as the developer's data processor. The correction is made there by an
+  openly available AI model running on Cloudflare Workers AI (Mistral Small 3.1, or Qwen3 as a
+  fallback). The text is not passed to any other company. Like any server, Cloudflare receives your
+  IP address to deliver the request.</li>
+  <li><strong>What is kept:</strong> the text is neither stored nor logged; it is used only to
+  produce the correction, which goes straight back to your phone. The server keeps only counters:
+  how many fixes each install ID has used today and a total for all users, and it deletes them all at
+  the start of each UTC day.</li>
+  <li><strong>What you see:</strong> you can switch between Original and Corrected, changed words are
+  highlighted, and nothing replaces your text unless you choose to keep the corrected version. Only
+  edits that look like recognition repairs are kept; an AI model can still be wrong, so check the
+  result. If a result is wrong or offensive, <strong>Report a problem with this result</strong> opens
+  an email to the developer that you can read and edit before sending.</li>
+  <li><strong>How to avoid it:</strong> do not tap the button. Everything else in the app works
+  without it, and offline.</li>
+</ul>
+<p>In the app's Google Play data safety section this appears as "Files and docs" (the page text:
+collected, not shared, processed ephemerally, optional, for app functionality) and as "Device or other
+IDs" (the random install ID, for app functionality).</p>
 
 <h2>Advertising — Google AdMob and its mediation partners</h2>
 <p>The app is free and is supported by ads served through Google AdMob (Google Ireland Limited /
@@ -318,9 +384,8 @@ placed:</p>
   is saved and that a short ad comes next; the ad plays only when you tap Continue (or press Back),
   never by itself. Your first two exports never show one, two are always at least three minutes apart, and none is shown before the share sheet or
   during scanning, text recognition or editing.</li>
-  <li><strong>Rewarded</strong> (opt-in) — only if you choose "An hour without ads" in Settings or on
-  the result screen: you watch one ad and the app shows no ads for the next hour. It never
-  unlocks or gates any feature.</li>
+  <li><strong>Rewarded</strong> (opt-in) — only when you tap "Fix text with AI" on a page and have not
+  bought the ad removal: you watch one ad and the fix runs. Nothing else in the app needs an ad.</li>
 </ul>
 <p>How Google handles this data is governed by Google's own policies, not by this one:</p>
 <ul>
@@ -433,6 +498,12 @@ Your handling of payment data by Google is covered by the
 <p>The app uses Google Play's In-App Updates library. It asks Google Play whether a newer version of
 the app is available and, when there is one, lets Google Play offer it to you, download it and install
 it. It is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>From version 1.1.0 the app also uses Google Play's In-App Review library: after a few successful
+saves, and at most once every 30 days, it asks Google Play to show Google's own rating box. Whether the
+box appears, and any rating or review you give, is handled by Google Play; the app is not told what you
+chose. The Tools tab opens the studio's other PDF apps, or their Google Play pages when they are not
+installed; those links carry a campaign tag so that Google Play can report installs that came from
+them, and no personal data.</p>
 
 <h2>Your advertising choices</h2>
 
@@ -461,15 +532,16 @@ reset your advertising ID, or to delete it entirely, which stops apps from recei
 advertising identifier.</p>
 
 <h3>Removing ads completely</h3>
-<p>Buying the one-time ad removal stops ad requests from the app altogether. A one-hour ad-free
-period earned with a rewarded ad stops them for that hour.</p>
+<p>Buying the one-time ad removal stops ad requests from the app altogether; Fix text with AI then runs
+without an ad.</p>
 
 <h2>Permissions the app requests</h2>
 <div class="card">
 <ul>
   <li><code>INTERNET</code> — required to fetch ads, to communicate with Google Play Billing, to ask
-  Google Play whether an app update is available and to send the usage statistics and crash reports
-  described above. Your scans and their text are never sent over the network.</li>
+  Google Play whether an app update is available, to send the usage statistics and crash reports
+  described above, and to send a page's text when you tap "Fix text with AI". Your scans are never sent
+  over the network.</li>
   <li><code>ACCESS_NETWORK_STATE</code> — lets the ad components check whether a connection is
   available before trying to load.</li>
   <li><code>com.google.android.gms.permission.AD_ID</code> — access to the advertising identifier,
@@ -493,7 +565,8 @@ crash-reporting services in this app, contact the address below and contact Goog
 would hold it.</p>
 
 <h2>Data retention</h2>
-<p>The developer runs no server and keeps no user data of its own. Your scans, their text and your
+<p>The developer keeps no user data of its own: its only server, the one behind Fix text with AI,
+stores no text and deletes its counters at the start of each UTC day. Your scans, their text and your
 settings stay on your device until you delete them in the app, clear the app's data or uninstall
 the app. The usage statistics and crash reports are held by Google on the developer's behalf:
 Analytics data linked to an installation's identifiers for no longer than 14 months (aggregated
@@ -513,7 +586,8 @@ legitimate interest in keeping the app working and understanding, in aggregate, 
 in the EEA, the UK and Switzerland, Analytics' storage of its identifier on your device and
 any advertising use of the data rely on your consent (GDPR Art. 6(1)(a)) once you answer the consent
 form; until you answer, Analytics already runs from the first launch. Scanning and text recognition are performed on your device at your
-request, and the developer receives none of that data.</p>
+request, and the developer receives none of that data. Fix text with AI processes a page's text only
+to provide the correction you ask for (GDPR Art. 6(1)(b)).</p>
 <p>Under the GDPR you have the right to ask whether your personal data is processed, to access
 it, to have it corrected or erased, to restrict or object to its processing, to data portability, and
 to withdraw consent at any time, and you may lodge a complaint with the data protection authority of
@@ -532,23 +606,27 @@ else, or for help finding the right route, write to the address below.</p>
 
 <h2>Security</h2>
 <p>Your scans, their text and the library database are kept in the app's private storage, which
-Android isolates from other apps. The app has no account and no server, so there is no copy of
-your documents elsewhere that could be exposed. Data sent to Google and to the ad partners travels
-encrypted (TLS). A PDF you protect with a password is encrypted with AES-128. No method of storage
+Android isolates from other apps. The app has no account, and the server behind Fix text with AI stores no text,
+so there is no copy of your documents elsewhere that could be exposed. Data sent to Google, to the ad
+partners and to that server travels encrypted (TLS). A PDF you protect with a password is encrypted with AES-128. No method of storage
 or transmission is perfectly secure; keep your device locked and up to date, and take care where
 you save or share exported files.</p>
 
 <h2 id="transfers">Transfers outside Türkiye and the EEA</h2>
-<p>The developer works from Türkiye and has no server. The data described in this policy goes from
-your device directly to the providers below, which process it outside Türkiye and outside the European
+<p>The developer works from Türkiye; its only server, the one behind Fix text with AI, runs on
+Cloudflare's network. The data described in this policy goes from your device directly to the
+providers below, which process it outside Türkiye and outside the European
 Economic Area, notably in the United States. The developer reads the usage statistics and crash reports
 in the Firebase console from Türkiye.</p>
 <ul>
-  <li>Google (Google Ireland Limited / Google LLC): AdMob, Google Analytics for Firebase, Firebase Crashlytics, Google Play Billing and the ML Kit metrics —
+  <li>Google (Google Ireland Limited / Google LLC): AdMob, Google Analytics for Firebase, Firebase Crashlytics, Firebase App Check, Google Play Billing and the ML Kit metrics —
   <a href="https://policies.google.com/privacy/frameworks">Google's data transfer frameworks</a>,
   <a href="https://firebase.google.com/support/privacy">Privacy and security in Firebase</a>;</li>
   <li>Unity (Unity Ads) — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a>;</li>
-  <li>Liftoff (Liftoff Monetize, formerly Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff Privacy Policy</a>.</li>
+  <li>Liftoff (Liftoff Monetize, formerly Vungle) — <a href="https://liftoff.ai/privacy-policy/">Liftoff Privacy Policy</a>;</li>
+  <li>Cloudflare (Cloudflare, Inc.): the server and AI model behind Fix text with AI, as the developer's
+  processor; the request is handled in Cloudflare data centres, which may be outside Türkiye and the
+  EEA — <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>.</li>
 </ul>
 <p>These providers state in their policies that, for transfers from the EEA, the UK and Switzerland,
 they rely on safeguards such as the European Commission's Standard Contractual Clauses and, where they
@@ -575,11 +653,11 @@ Metni) is in the <a href="tr/#kvkk">Turkish version of this page</a>.</p>
 <p>This section is for residents of California and of the other US states with a consumer privacy
 law, to the extent those laws apply to the developer.</p>
 <ul>
-  <li><strong>What is collected, and from where:</strong> identifiers (the advertising ID, the Firebase, Analytics and Crashlytics installation identifiers, and your IP address); internet or other electronic network activity (usage events and ad interactions); approximate geolocation (country or region, derived from the IP address); commercial information (the one-time "remove ads" purchase: product, name and price); device information and crash reports; the ML Kit usage and performance metrics described above. All of it comes from your
+  <li><strong>What is collected, and from where:</strong> identifiers (the advertising ID, the Firebase, Analytics and Crashlytics installation identifiers, and your IP address); internet or other electronic network activity (usage events and ad interactions); approximate geolocation (country or region, derived from the IP address); commercial information (the one-time "remove ads" purchase: product, name and price); device information and crash reports; the ML Kit usage and performance metrics described above; the text of a page you send with Fix text with AI (used only to return the correction, not stored) and the random install ID sent with it. All of it comes from your
   device, through the app and the software components in it. No sensitive personal information is
   collected.</li>
   <li><strong>Why:</strong> the purposes described above — serving and measuring ads and preventing
-  fraud, keeping the app working and finding crashes, understanding in aggregate how it is used, and processing your purchase.</li>
+  fraud, keeping the app working and finding crashes, understanding in aggregate how it is used, processing your purchase, and correcting a page's text when you ask for it.</li>
   <li><strong>Sale and sharing:</strong> the developer does not sell personal information for money.
   The ad components in the app — Google AdMob, Unity Ads and Liftoff Monetize — receive identifiers,
   network activity and approximate location to serve and measure ads, which can include
@@ -617,6 +695,12 @@ usage statistics and crash reports run (from the first launch, in every region; 
 Switzerland, Analytics follows your answer in the consent form once you give it); adds the transfers outside Türkiye and the EEA, the rights of users in Türkiye (KVKK) and in US states and the Google Play libraries used for updates;
 and removes the sentence that treated continued use as acceptance of a revised policy.</p>
 
+<p>The update of 12 November 2026 describes version 1.1.0: the optional
+<a href="#ai-fix">Fix text with AI</a>, which sends the text of a page you choose to the developer's
+server on Cloudflare and does not store it; the on-device clean-up, auto-correct and spell
+suggestions; Google Play's rating request and the Tools tab. The one-hour ad-free offer is gone, and
+rewarded ads now come only before an AI fix.</p>
+
 <h2 id="contact">Contact</h2>
 <p>For any question about this policy or about privacy in this app, write to:</p>
 <div class="card">
@@ -626,7 +710,7 @@ and removes the sentence that treated continued use as acceptance of a revised p
 </div>
 
 <footer>
-  <p>PaperLite — no account, no watermark, no subscription; your scans stay on your device. This
+  <p>PaperLite — no account, no watermark, no subscription; your scans stay on your device, and a page's text leaves it only when you choose Fix text with AI. This
   policy describes the app from its first release onwards.</p>
 </footer>
 

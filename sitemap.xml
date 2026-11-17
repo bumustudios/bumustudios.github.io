@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://bumustudios.github.io/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://bumustudios.github.io/arrowrush/</loc>
@@ -121,6 +121,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/arrowrush/privacy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/arrowrush/privacy/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/arrowrush/privacy/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/cdltest/privacy/</loc>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/citizenship/privacy/</loc>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://bumustudios.github.io/colorpour/</loc>
@@ -770,7 +778,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -785,7 +793,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/ar/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -800,7 +808,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/de/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -815,7 +823,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/es/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -830,7 +838,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/fr/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -845,7 +853,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/hi/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -860,7 +868,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/ja/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -875,7 +883,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/ko/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -890,7 +898,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/pt/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -905,7 +913,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/paperlite/tr/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/paperlite/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/paperlite/ar/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/paperlite/de/"/>
@@ -1049,6 +1057,250 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfpages/privacy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfpages/privacy/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfpages/privacy/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/ar/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/de/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/es/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/fr/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/hi/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/ja/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/ko/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/pt/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/tr/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/az/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/bg/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/cs/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/el/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/fa/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/gu/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/hu/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/id/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/it/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/nb/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/nl/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/pl/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/privacy/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/privacy/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/privacy/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/privacy/tr/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/privacy/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/privacy/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/ru/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/sr/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/th/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/uk/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/uz/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/vi/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/zh-CN/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/pdfshrink/zh-TW/</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://bumustudios.github.io/pennyleaf/privacy/</loc>
@@ -1212,7 +1464,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/tabula-domino/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/tabula-domino/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/tabula-domino/ar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/tabula-domino/es/"/>
@@ -1223,7 +1475,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/tabula-domino/ar/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/tabula-domino/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/tabula-domino/ar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/tabula-domino/es/"/>
@@ -1234,7 +1486,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/tabula-domino/es/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/tabula-domino/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/tabula-domino/ar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/tabula-domino/es/"/>
@@ -1245,7 +1497,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/tabula-domino/fr/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/tabula-domino/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/tabula-domino/ar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/tabula-domino/es/"/>
@@ -1256,7 +1508,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/tabula-domino/pt/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/tabula-domino/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/tabula-domino/ar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/tabula-domino/es/"/>
@@ -1267,7 +1519,7 @@
   </url>
   <url>
     <loc>https://bumustudios.github.io/tabula-domino/tr/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/tabula-domino/"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/tabula-domino/ar/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/tabula-domino/es/"/>
@@ -1389,160 +1641,5 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/zen2048/privacy/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/zen2048/privacy/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/zen2048/privacy/"/>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/</loc>
-    <lastmod>2026-11-09</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/pdfshrink/"/>
-    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/pdfshrink/tr/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://bumustudios.github.io/pdfshrink/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/pdfshrink/pt/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://bumustudios.github.io/pdfshrink/fr/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://bumustudios.github.io/pdfshrink/de/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://bumustudios.github.io/pdfshrink/it/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://bumustudios.github.io/pdfshrink/nl/"/>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://bumustudios.github.io/pdfshrink/pl/"/>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://bumustudios.github.io/pdfshrink/cs/"/>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://bumustudios.github.io/pdfshrink/hu/"/>
-    <xhtml:link rel="alternate" hreflang="nb" href="https://bumustudios.github.io/pdfshrink/nb/"/>
-    <xhtml:link rel="alternate" hreflang="id" href="https://bumustudios.github.io/pdfshrink/id/"/>
-    <xhtml:link rel="alternate" hreflang="vi" href="https://bumustudios.github.io/pdfshrink/vi/"/>
-    <xhtml:link rel="alternate" hreflang="az" href="https://bumustudios.github.io/pdfshrink/az/"/>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://bumustudios.github.io/pdfshrink/uz/"/>
-    <xhtml:link rel="alternate" hreflang="el" href="https://bumustudios.github.io/pdfshrink/el/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://bumustudios.github.io/pdfshrink/ru/"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://bumustudios.github.io/pdfshrink/uk/"/>
-    <xhtml:link rel="alternate" hreflang="bg" href="https://bumustudios.github.io/pdfshrink/bg/"/>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://bumustudios.github.io/pdfshrink/sr/"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/pdfshrink/ar/"/>
-    <xhtml:link rel="alternate" hreflang="fa" href="https://bumustudios.github.io/pdfshrink/fa/"/>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://bumustudios.github.io/pdfshrink/hi/"/>
-    <xhtml:link rel="alternate" hreflang="gu" href="https://bumustudios.github.io/pdfshrink/gu/"/>
-    <xhtml:link rel="alternate" hreflang="th" href="https://bumustudios.github.io/pdfshrink/th/"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://bumustudios.github.io/pdfshrink/ja/"/>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://bumustudios.github.io/pdfshrink/ko/"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://bumustudios.github.io/pdfshrink/zh-CN/"/>
-    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://bumustudios.github.io/pdfshrink/zh-TW/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/pdfshrink/"/>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/tr/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/es/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/pt/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/fr/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/de/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/it/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/nl/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/pl/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/cs/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/hu/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/nb/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/id/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/vi/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/az/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/uz/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/el/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/ru/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/uk/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/bg/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/sr/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/ar/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/fa/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/hi/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/gu/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/th/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/ja/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/ko/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/zh-CN/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/zh-TW/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
-    <loc>https://bumustudios.github.io/pdfshrink/privacy/</loc>
-    <lastmod>2026-11-08</lastmod>
   </url>
 </urlset>

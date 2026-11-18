@@ -177,13 +177,13 @@ Pages:
 
 ## Fortify (Android)
 
-Fortify is a tower defense strategy game for Android: build and upgrade towers and lead a hero through ten waves on each of 24 campaign maps in four chapters.
+Fortify is a tower defense strategy game for Android: build and upgrade towers and lead a hero through ten waves on each of 30 campaign maps in five chapters.
 
 - Four towers (Volt, Pierce, Ravager, Glacier) with three levels each; four heroes (Fire, Ice, Nature, Rock) that are free and cannot be killed, each with one skill usable twice per battle; eleven enemy types, plus a dragon boss at the end of every map.
-- 24 campaign maps of ten waves in four chapters (the fourth, The Dragon's Reach, maps 19-24, came in version 1.1.4), up to three stars each, 72 in all; from map 7 four enemy armies (Swarm, Ironclad, Skyfall, Legion). Battles are fully deterministic: no random hits.
+- 30 campaign maps of ten waves in five chapters (the fourth, The Dragon's Reach, maps 19-24, came in version 1.1.4; the fifth, The Last Stand, maps 25-30, in 1.2.0), up to three stars each, 90 in all; from map 7 five enemy armies (Swarm, Ironclad, Skyfall, Legion, Warhost). Since 1.2.0 the keep fires a ballista at enemies about to break in, and the Armory turns the stars won into permanent upgrades (towers, starting gold, kill gold, the keep, the hero skill). Battles are fully deterministic: no random hits.
 - Free with ads: a banner on the home and result screens, and a full-screen ad only after a tap on a button of the victory or defeat card, which ignores taps for a moment after it appears. No app-open ad, no rewarded ad, no ad on the board during play. An optional one-time Remove ads purchase removes every ad. No subscription, no energy system, no loot boxes.
 - Every map plays without an internet connection; the internet is used only for ads (Google AdMob and its mediation partners), Google Play purchases and updates, the optional Google Play Games, and Firebase usage statistics and crash reports.
-- No account needed; an optional Google Play Games sign-in gives 11 achievements and two leaderboards (Campaign Stars, Enemies Defeated). Progress is stored only on the phone and is excluded from Android backup, so it does not move to a new phone and is lost on uninstall.
+- No account needed; an optional Google Play Games sign-in gives 17 achievements and two leaderboards (Campaign Stars, Enemies Defeated). Progress is stored only on the phone and is excluded from Android backup, so it does not move to a new phone and is lost on uninstall.
 - Requires Android 7.0 or newer; phones and tablets, portrait only. Android only: no iPhone version. The game's screens are in English and Turkish.
 - Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.fortify
 

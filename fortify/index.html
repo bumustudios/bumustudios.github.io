@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fortify: tower defense strategy game for Android</title>
-<meta name="description" content="Fortify is a tower defense strategy game: build and upgrade four towers, lead a hero and hold ten waves on 24 maps. No luck, no energy, no account. Plays offline.">
+<meta name="description" content="Fortify is a tower defense strategy game: build and upgrade four towers, lead a hero and hold ten waves on 30 maps. No luck, no energy, no account. Plays offline.">
 <meta name="color-scheme" content="light dark">
 <link rel="canonical" href="https://bumustudios.github.io/fortify/">
 <link rel="alternate" hreflang="en" href="https://bumustudios.github.io/fortify/">
@@ -21,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="BumuStudios">
 <meta property="og:title" content="Fortify: tower defense strategy game for Android">
-<meta property="og:description" content="Fortify is a tower defense strategy game: build and upgrade four towers, lead a hero and hold ten waves on 24 maps. No luck, no energy, no account. Plays offline.">
+<meta property="og:description" content="Fortify is a tower defense strategy game: build and upgrade four towers, lead a hero and hold ten waves on 30 maps. No luck, no energy, no account. Plays offline.">
 <meta property="og:url" content="https://bumustudios.github.io/fortify/">
 <meta property="og:image" content="https://bumustudios.github.io/fortify/assets/feature-graphic-en.jpg">
 <meta property="og:image:width" content="1024">
@@ -38,7 +38,7 @@
    "@id": "https://bumustudios.github.io/fortify/#app",
    "name": "Fortify",
    "alternateName": "Fortify: Tower Defense",
-   "description": "Fortify is a tower defense strategy game: build and upgrade four towers, lead a hero and hold ten waves on 24 maps. No luck, no energy, no account. Plays offline.",
+   "description": "Fortify is a tower defense strategy game: build and upgrade four towers, lead a hero and hold ten waves on 30 maps. No luck, no energy, no account. Plays offline.",
    "applicationCategory": "GameApplication",
    "genre": "Strategy",
    "operatingSystem": "Android 7.0 or later",
@@ -64,10 +64,11 @@
    "featureList": [
     "Four towers, three levels: Volt, Pierce, Ravager and Glacier, each upgraded twice. Sell any tower for 70% of what you spent on it.",
     "Four heroes: Fire, Ice, Nature and Rock: free, cannot be killed, and each has one big skill you can use twice a battle.",
-    "24 maps in four chapters: Ten waves on every map, each with its own road and biome, a dragon boss at the end and up to three stars.",
-    "Achievements and leaderboards: Optional Google Play Games: 11 achievements and two leaderboards, Campaign Stars and Enemies Defeated.",
+    "30 maps in five chapters: Ten waves on every map, each with its own road and biome, a dragon boss at the end and up to three stars.",
+    "The Armory: Spend the stars you win on permanent upgrades: stronger towers, more starting gold, richer kills, a heavier keep ballista and a stronger hero skill.",
+    "Achievements and leaderboards: Optional Google Play Games: 17 achievements and two leaderboards, Campaign Stars and Enemies Defeated.",
     "Strategy, not luck: No random critical hits and no hidden dice: every battle is fully deterministic.",
-    "Plays offline: All 24 maps work without an internet connection.",
+    "Plays offline: All 30 maps work without an internet connection.",
     "No energy, no loot boxes: Play as many battles as you like, with no account needed.",
     "No subscription: Free with ads. One optional, one-time purchase removes every ad for good."
    ],
@@ -112,7 +113,7 @@
      "name": "Can I play Fortify offline?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Yes. All 24 maps can be played without an internet connection. The internet is used only for ads, for Google Play (purchases, updates and the optional Play Games) and for the usage statistics and crash reports sent to Google Firebase."
+      "text": "Yes. All 30 maps can be played without an internet connection. The internet is used only for ads, for Google Play (purchases, updates and the optional Play Games) and for the usage statistics and crash reports sent to Google Firebase."
      }
     },
     {
@@ -152,7 +153,7 @@
      "name": "How many maps does Fortify have?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "24 campaign maps in four chapters: The Old Kingdom, The Wild Frontier, The Deep Realms and The Dragon's Reach, which came with version 1.1.4 and is the hardest. Every map has ten waves, its own road and biome, a dragon boss at the end and up to three stars: 72 in all. From map 7 the enemy brings its armies, the Swarm, the Ironclad, the Skyfall and the Legion. Each win unlocks the next map."
+      "text": "30 campaign maps in five chapters: The Old Kingdom, The Wild Frontier, The Deep Realms, The Dragon's Reach (version 1.1.4) and The Last Stand, which came with version 1.2.0 and is the hardest. Every map has ten waves, its own road and biome, a dragon boss at the end and up to three stars: 90 in all. From map 7 the enemy brings its armies, the Swarm, the Ironclad, the Skyfall and the Legion. Each win unlocks the next map."
      }
     },
     {
@@ -204,7 +205,7 @@ h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margi
 .lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
 .badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
 .note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
-.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(150,60,15,.24)}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(150,60,15,.30)}
 h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
 .facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
 .facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
@@ -259,10 +260,11 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <ul class="facts">
 <li><b>Four towers, three levels</b><span>Volt, Pierce, Ravager and Glacier, each upgraded twice. Sell any tower for 70% of what you spent on it.</span></li>
 <li><b>Four heroes</b><span>Fire, Ice, Nature and Rock: free, cannot be killed, and each has one big skill you can use twice a battle.</span></li>
-<li><b>24 maps in four chapters</b><span>Ten waves on every map, each with its own road and biome, a dragon boss at the end and up to three stars.</span></li>
-<li><b>Achievements and leaderboards</b><span>Optional Google Play Games: 11 achievements and two leaderboards, Campaign Stars and Enemies Defeated.</span></li>
+<li><b>30 maps in five chapters</b><span>Ten waves on every map, each with its own road and biome, a dragon boss at the end and up to three stars.</span></li>
+<li><b>The Armory</b><span>Spend the stars you win on permanent upgrades: stronger towers, more starting gold, richer kills, a heavier keep ballista and a stronger hero skill.</span></li>
+<li><b>Achievements and leaderboards</b><span>Optional Google Play Games: 17 achievements and two leaderboards, Campaign Stars and Enemies Defeated.</span></li>
 <li><b>Strategy, not luck</b><span>No random critical hits and no hidden dice: every battle is fully deterministic.</span></li>
-<li><b>Plays offline</b><span>All 24 maps work without an internet connection.</span></li>
+<li><b>Plays offline</b><span>All 30 maps work without an internet connection.</span></li>
 <li><b>No energy, no loot boxes</b><span>Play as many battles as you like, with no account needed.</span></li>
 <li><b>No subscription</b><span>Free with ads. One optional, one-time purchase removes every ad for good.</span></li>
 </ul>
@@ -286,7 +288,7 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <li><b>Towers.</b> Volt fires fast at short range, but armor blunts it. Pierce sends heavy long-range bolts straight through armor. Ravager blasts a stretch of road. Glacier slows everything it hits.</li>
 <li><b>Heroes.</b> Fire burns, Ice slows, Nature strikes fast and Rock hits hard. Their skills are Firestorm, Deep Freeze, Bramble Surge and Earthshatter.</li>
 <li><b>Enemies.</b> Slimes, skeletons, bats, goblins, spiders that slow your towers, armored orcs and golems, and from map 7 the brute that charges when it is hurt, the imp that bursts into two sparks and the wisp that heals the enemies around it. From wave 3 some come red and Enhanced, a third tougher; from wave 6 gold Elites join them, twice as tough. Both pay more gold. The dragon is the boss of the tenth wave, with its own health bar.</li>
-<li><b>Maps.</b> 24 maps in four chapters: The Old Kingdom, The Wild Frontier, The Deep Realms and The Dragon's Reach. Their biomes run from meadow, snow and desert to autumn woods, swamp, red canyon, glacier, a crystal cavern and a volcano. From map 7 the enemy sends its armies: the Swarm, the Ironclad, the Skyfall and the Legion, which brings them all at once. Each win unlocks the next map.</li>
+<li><b>Maps.</b> 30 maps in five chapters: The Old Kingdom, The Wild Frontier, The Deep Realms, The Dragon's Reach and The Last Stand. Their biomes run from meadow, snow and desert to autumn woods, swamp, red canyon, glacier, a crystal cavern and a volcano. From map 7 the enemy sends its armies: the Swarm, the Ironclad, the Skyfall and the Legion, which brings them all at once. Each win unlocks the next map.</li>
 <li><b>Pace.</b> Three speeds (1x, 1.5x, 2x) and pause. Leave a battle and tap <b>Continue</b> on the home screen to pick it up again.</li>
 </ul>
 <div class="shots"><img src="/fortify/assets/en-04-heroes.webp" width="540" height="960" alt="Choosing a hero: Fire, Ice, Nature and Rock with their skills" loading="lazy" decoding="async"><img src="/fortify/assets/en-06-maps.webp" width="540" height="960" alt="Ember Hollow and Frost Pass over the map list, with each map&#x27;s stars" loading="lazy" decoding="async"></div>
@@ -298,12 +300,12 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 <div><h3>How do you play Fortify?</h3><p>Build towers beside the road that enemies walk toward your keep, upgrade them with the gold you earn and place a hero to fight beside them. Survive all ten waves of a map to win. The full rules are under How to play on the home screen.</p></div>
 <div><h3>Is Fortify free?</h3><p>Yes. The game is free and paid for by ads: a banner on the home screen and on the victory and defeat cards, and a full-screen ad when you leave a finished battle with one of the card&#x27;s buttons (never two within 45 seconds). Those buttons ignore taps for a moment after the card appears, so a tap meant for the battle never starts an ad. No ad is ever shown on the board while you play, and none when you come back to the game.</p></div>
 <div><h3>How do I remove the ads?</h3><p>Settings has a Remove ads option: one optional, one-time purchase that removes every ad for good. There is no subscription. Google Play keeps the purchase, so it comes back if you reinstall with the same Google account.</p></div>
-<div><h3>Can I play Fortify offline?</h3><p>Yes. All 24 maps can be played without an internet connection. The internet is used only for ads, for Google Play (purchases, updates and the optional Play Games) and for the usage statistics and crash reports sent to Google Firebase.</p></div>
+<div><h3>Can I play Fortify offline?</h3><p>Yes. All 30 maps can be played without an internet connection. The internet is used only for ads, for Google Play (purchases, updates and the optional Play Games) and for the usage statistics and crash reports sent to Google Firebase.</p></div>
 <div><h3>Is my progress saved?</h3><p>Yes, automatically, on your phone: unlocked maps, stars and best scores. There is no cloud save: progress is not included in Android backups, so it does not move to a new phone and is deleted if you uninstall the game.</p></div>
 <div><h3>Do I need an account? What data does it collect?</h3><p>No account is needed. The only sign-in is the optional Google Play Games one, for achievements and leaderboards; nothing else in the game needs it. Your battles and progress never leave the phone; only if you sign in to Play Games do your achievements and your two leaderboard scores (campaign stars and enemies defeated) go to Google. The ads and the Firebase usage statistics and crash reports collect some device data, such as the advertising ID and an approximate location from the IP address; the privacy policy lists all of it.</p></div>
 <div><h3>Is it pay to win? Are there energy limits or loot boxes?</h3><p>No. There is no energy system, no loot boxes and nothing to buy except the ad removal. Battles have no randomness, so the same defense always gives the same result: a better plan is the only way to win.</p></div>
 <div><h3>How do I get three stars on a map?</h3><p>Win with 4 or more of your keep&#x27;s 6 lives left. A win with 3 lives gives two stars, and any other win gives one. Every win unlocks the next map, so you can come back for the stars later.</p></div>
-<div><h3>How many maps does Fortify have?</h3><p>24 campaign maps in four chapters: The Old Kingdom, The Wild Frontier, The Deep Realms and The Dragon&#x27;s Reach, which came with version 1.1.4 and is the hardest. Every map has ten waves, its own road and biome, a dragon boss at the end and up to three stars: 72 in all. From map 7 the enemy brings its armies, the Swarm, the Ironclad, the Skyfall and the Legion. Each win unlocks the next map.</p></div>
+<div><h3>How many maps does Fortify have?</h3><p>30 campaign maps in five chapters: The Old Kingdom, The Wild Frontier, The Deep Realms, The Dragon&#x27;s Reach (version 1.1.4) and The Last Stand, which came with version 1.2.0 and is the hardest. Every map has ten waves, its own road and biome, a dragon boss at the end and up to three stars: 90 in all. From map 7 the enemy brings its armies, the Swarm, the Ironclad, the Skyfall and the Legion. Each win unlocks the next map.</p></div>
 <div><h3>Any tips for a hard wave?</h3><p>Pierce goes straight through armor, so it handles orcs, golems and the dragon. Glacier slows a crowd so the other towers can hit it, and Ravager hits a stretch of road at once. Kill a wisp first, because it heals the enemies around it. Move your hero to where the road is under pressure, save its skill for a big wave, and call the next wave early only when your defense is ahead.</p></div>
 <div><h3>Which languages is the game in?</h3><p>The game is in English and Turkish. It follows your phone&#x27;s language, and Settings lets you switch.</p></div>
 <div><h3>Which devices does it run on? Is there an iPhone version?</h3><p>Android 7.0 or newer, on phones and tablets, always in portrait. Fortify is an Android game only; there is no iPhone or web version.</p></div>
@@ -317,7 +319,7 @@ ul.plain{margin:0 0 20px;padding-inline-start:22px}ul.plain li{margin-bottom:8px
 </main>
 <footer>
 <p class="links"><a href="/fortify/privacy/">Privacy policy</a><a href="https://creativecommons.org/licenses/by/4.0/">Enemy models made with Meshy (meshy.ai), CC BY 4.0, modified</a><a href="/">BumuStudios apps</a><a href="mailto:bumustudios@gmail.com">Contact: bumustudios@gmail.com</a></p>
-<p>© 2026 BumuStudios · <time datetime="2026-11-02">2026-11-02</time></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-18">2026-11-18</time></p>
 <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
 </footer>
 </body>

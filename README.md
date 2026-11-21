@@ -22,6 +22,10 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | Fortify landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/fortify/> |
 | Hill Rush landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/hillrush/> |
 | Pulse Runner landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/pulserunner/> |
+| Link-in-bio: games (social bios, noindex) | <https://bumustudios.github.io/links/games/> |
+| Link-in-bio: tools (social bios, noindex) | <https://bumustudios.github.io/links/tools/> |
+| Link-in-bio: learn (social bios, noindex) | <https://bumustudios.github.io/links/learn/> |
+| Link-in-bio: online (social bios, noindex) | <https://bumustudios.github.io/links/online/> |
 | ImageToPdf privacy policy (EN) | <https://bumustudios.github.io/imagetopdf/privacy/> |
 | ImageToPdf gizlilik politikası (TR) | <https://bumustudios.github.io/imagetopdf/privacy/tr/> |
 | PdfPages privacy policy (EN) | <https://bumustudios.github.io/pdfpages/privacy/> |

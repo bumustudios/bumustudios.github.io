@@ -15,6 +15,7 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | ImageToPdf landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/imagetopdf/> |
 | PdfPages landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/pdfpages/> |
 | PaperLite landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/, ja/, ko/) | <https://bumustudios.github.io/paperlite/> |
+| DocLeaf landing page + FAQ (EN; tr/; hand-written, not generated; ES, PT, AR pages still to do) | <https://bumustudios.github.io/docleaf/> |
 | Tabula Domino landing page + FAQ (EN; tr/, es/, pt/, ar/, fr/) | <https://bumustudios.github.io/tabula-domino/> |
 | Grid Smash landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/gridsmash/> |
 | Arrow Rush landing page + FAQ (EN; tr/, es/, pt/, hi/, ar/, de/, fr/) | <https://bumustudios.github.io/arrowrush/> |
@@ -62,6 +63,8 @@ dependencies: every page carries its own `<style>` block. Edit the HTML, push to
 | 2048 Zen gizlilik politikası (TR) | <https://bumustudios.github.io/zen2048/privacy/tr/> |
 | Word Lantern privacy policy (EN) | <https://bumustudios.github.io/wordhunt/privacy/> |
 | Word Lantern gizlilik politikası (TR) | <https://bumustudios.github.io/wordhunt/privacy/tr/> |
+| DocLeaf privacy policy (EN) | <https://bumustudios.github.io/docleaf/privacy/> |
+| DocLeaf gizlilik politikası (TR) | <https://bumustudios.github.io/docleaf/privacy/tr/> |
 | Tabula Domino privacy policy (EN) | <https://bumustudios.github.io/tabula-domino/privacy/> |
 | Tabula Domino gizlilik politikası (TR) | <https://bumustudios.github.io/tabula-domino/privacy/tr/> |
 | Tabula Domino politique de confidentialité (FR) | <https://bumustudios.github.io/tabula-domino/privacy/fr/> |
@@ -138,6 +141,9 @@ mahjong/privacy/        Mahjong Solitaire policy, English
 mahjong/privacy/tr/     Mahjong Solitaire policy, Turkish
 solitairegrove/privacy/ Solitaire Grove policy, English
 solitairegrove/privacy/tr/Solitaire Grove policy, Turkish
+docleaf/                DocLeaf landing page + FAQ, English (tr/; assets/), hand-written
+docleaf/privacy/        DocLeaf policy, English
+docleaf/privacy/tr/     DocLeaf policy, Turkish
 zen2048/privacy/        2048 Zen policy, English
 zen2048/privacy/tr/     2048 Zen policy, Turkish
 wordhunt/privacy/       Word Lantern policy, English

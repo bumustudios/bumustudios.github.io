@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF to Word Converter for Android, no upload: DocLeaf</title>
+<meta name="description" content="DocLeaf converts PDF files to editable Word (.docx) documents on your Android phone. Real Word tables, pictures and on-device OCR for scanned pages. The PDF is never uploaded.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/docleaf/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/docleaf/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/docleaf/tr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/docleaf/">
+<link rel="icon" type="image/png" href="/docleaf/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/docleaf/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="PDF to Word Converter for Android, no upload: DocLeaf">
+<meta property="og:description" content="DocLeaf converts PDF files to editable Word (.docx) documents on your Android phone. Real Word tables, pictures and on-device OCR for scanned pages. The PDF is never uploaded.">
+<meta property="og:url" content="https://bumustudios.github.io/docleaf/">
+<meta property="og:image" content="https://bumustudios.github.io/docleaf/assets/icon-512.png">
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#0e6b67;--accent-soft:#d3eeea;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#7fd6cf;--accent-soft:#163533;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(14,107,103,.20)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.shots img:only-child{grid-column:1/-1;justify-self:center;max-width:280px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "DocLeaf", "alternateName": "PDF to Word Converter: DocLeaf", "operatingSystem": "Android 7.0 and later", "applicationCategory": "UtilitiesApplication", "inLanguage": ["en", "tr", "es", "pt", "ar"], "description": "DocLeaf is an Android app that converts PDF files to editable Word (.docx) documents on the phone, with real Word tables, pictures and on-device OCR for scanned pages. The PDF is not uploaded.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "downloadUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.docleaf", "installUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.docleaf", "url": "https://bumustudios.github.io/docleaf/", "image": "https://bumustudios.github.io/docleaf/assets/icon-512.png", "publisher": {"@type": "Organization", "name": "BumuStudios", "url": "https://bumustudios.github.io/"}, "featureList": ["PDF to Word (.docx) on the phone", "Real Word tables", "On-device OCR for scanned pages", "No upload, no account", "No watermark, no page limit set by the app"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I convert a PDF to Word on Android without uploading it?", "acceptedAnswer": {"@type": "Answer", "text": "Install DocLeaf, choose the PDF and tap Convert to Word. The conversion runs on your phone, so the file is never uploaded, and you do not need an account."}}, {"@type": "Question", "name": "Which app keeps tables when converting PDF to Word?", "acceptedAnswer": {"@type": "Answer", "text": "DocLeaf rebuilds tables as real Word tables, with merged cells, borders and shading. Nested tables are flattened to one level, and complex layouts may need touching up in Word."}}, {"@type": "Question", "name": "Can I convert a scanned PDF to editable Word on my phone?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Pages that are pictures are read on the phone with Google ML Kit OCR and rebuilt as Word text and tables. It reads Latin, Chinese, Japanese, Korean and Devanagari scripts; Arabic, Hebrew, Cyrillic, Greek and Thai scans are not supported yet."}}, {"@type": "Question", "name": "Does it work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Text PDFs convert with no connection. Scanned pages need a small recognition model, which Google Play services downloads once the first time a script is used."}}, {"@type": "Question", "name": "Is there a page limit or a watermark?", "acceptedAnswer": {"@type": "Answer", "text": "No. The app adds no watermark and sets no page limit. A very large PDF can exceed the memory of an older phone; convert a page range instead."}}, {"@type": "Question", "name": "Is DocLeaf free? What ads are there?", "acceptedAnswer": {"@type": "Answer", "text": "It is free to use. A banner sits at the bottom of Home, History and Settings, and one short full-screen ad plays after a conversion when you tap Continue. A one-time purchase removes the ads. There is no subscription."}}, {"@type": "Question", "name": "Does it open password-protected PDFs?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Remove the password in the app that created the file, then convert it."}}, {"@type": "Question", "name": "Where are my files kept? Are they backed up?", "acceptedAnswer": {"@type": "Answer", "text": "The PDF is copied to a private scratch folder only for the conversion and deleted afterwards. The Word file is saved in Documents/DocLeaf, or where you choose with Save as. The app is left out of Android cloud backup and phone-to-phone transfer."}}, {"@type": "Question", "name": "Which phones does it run on? Is there an iPhone version?", "acceptedAnswer": {"@type": "Answer", "text": "Android 7.0 or newer, on phones and tablets. DocLeaf is an Android app only; there is no iPhone or web version."}}, {"@type": "Question", "name": "Which languages is the app in?", "acceptedAnswer": {"@type": "Answer", "text": "English, Turkish, Spanish, Portuguese and Arabic. It follows your phone language, and Settings lets you switch."}}, {"@type": "Question", "name": "Is it affiliated with Microsoft?", "acceptedAnswer": {"@type": "Answer", "text": "No. Word is a trademark of Microsoft Corporation. DocLeaf writes standard .docx files that open in Word and other editors."}}]}</script>
+</head>
+<body>
+<nav class="top" aria-label="Language">
+<a class="brand" href="/docleaf/"><img src="/docleaf/assets/icon-192.png" width="36" height="36" alt="">DocLeaf</a>
+<ul class="langs">
+<li><a href="/docleaf/" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="/docleaf/tr/" hreflang="tr" lang="tr">Türkçe</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>Convert PDF to Word on Android, without uploading the file</h1>
+<p class="lede">DocLeaf is an Android app that converts PDF files to editable Word (.docx) documents on your phone. Text stays text, tables become real Word tables, pictures stay where they were, and scanned pages are read with on-device text recognition (OCR). The PDF is processed on the phone and is never uploaded. No account is needed.</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.docleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=en"><img src="/assets/play-badge/badge-en.png" width="646" height="250" alt="Get it on Google Play"></a>
+<p class="note">Free to use on Google Play for Android 7.0 or newer. The app shows ads; a one-time purchase removes them. In closed testing: the Play listing opens when it is public.</p>
+</div>
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">What you get</h2>
+<ul class="facts">
+<li><b>Real Word tables</b><span>Tables are rebuilt as real Word tables, with merged cells, borders and shading, not as pictures or tab-separated text.</span></li>
+<li><b>Text stays text</b><span>Headings, bullet and numbered lists, web links, columns, headers and footers, and right-to-left text such as Arabic and Hebrew carry over.</span></li>
+<li><b>Pictures in place</b><span>Pictures stay where they were in the PDF, with their size, cropping and transparency.</span></li>
+<li><b>Scanned PDFs</b><span>Pages that are pictures are read on the phone with Google ML Kit OCR: Latin, Chinese, Japanese, Korean and Devanagari scripts.</span></li>
+<li><b>Nothing is uploaded</b><span>The conversion runs on the phone. Your PDF and your Word file are never sent anywhere, and the app asks for no storage permission.</span></li>
+<li><b>Works offline</b><span>Text PDFs convert without a connection. Scans need a one-time download of a small recognition model through Google Play services.</span></li>
+<li><b>No watermark, no page limit</b><span>The app stamps nothing on the Word file and sets no page limit. Pick all pages or a range such as 1-5, 9.</span></li>
+<li><b>No account, no subscription</b><span>Free with ads: a banner and a short ad after each conversion. One optional, one-time purchase removes them.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">How to convert a PDF to Word</h2>
+<ol class="steps">
+<li>Open DocLeaf and tap <b>Choose a PDF</b>, or share a PDF to DocLeaf from any app.</li>
+<li>Pick <b>All pages</b> or a <b>Range</b>, and a layout: <b>Keep layout</b> follows the page, <b>Flowing text</b> reflows the words and is easier to edit. Leave <b>Scanned pages (OCR)</b> on Auto.</li>
+<li>Tap <b>Convert to Word</b>. A notification shows the progress and a Cancel button; you can leave the app while it runs.</li>
+<li>Tap <b>Continue</b> after the short ad, then <b>Open</b>, <b>Share</b> or <b>Save as</b>. The file is in <i>Documents/DocLeaf</i>, and History lists it.</li>
+</ol>
+</section>
+
+<section aria-labelledby="limits">
+<h2 id="limits">What converts well, and what is not supported yet</h2>
+<h3>Converts well</h3>
+<ul>
+<li>Text PDFs: contracts, reports, papers, invoices, letters.</li>
+<li>Tables with ruled lines, zebra shading or none; tables that continue across pages.</li>
+<li>Two-column text, headings and lists, links, headers and footers.</li>
+<li>Scanned pages in Latin, Chinese, Japanese, Korean and Devanagari scripts.</li>
+</ul>
+<h3>Not supported yet</h3>
+<ul>
+<li>Password-protected PDFs: remove the password first.</li>
+<li>Scans in Arabic, Hebrew, Cyrillic, Greek or Thai.</li>
+<li>Nested tables: they are flattened to one level.</li>
+<li>Links that jump inside the document. Web links work.</li>
+<li>Very large PDFs can exceed the memory of an older phone: convert a page range instead.</li>
+<li>Complex designs may need touching up in Word. Look through the result before you rely on it.</li>
+</ul>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">Questions people ask</h2>
+<div class="faq">
+<div><h3>How do I convert a PDF to Word on Android without uploading it?</h3><p>Install DocLeaf, choose the PDF and tap Convert to Word. The conversion runs on your phone, so the file is never uploaded, and you do not need an account.</p></div>
+<div><h3>Which app keeps tables when converting PDF to Word?</h3><p>DocLeaf rebuilds tables as real Word tables, with merged cells, borders and shading. Nested tables are flattened to one level, and complex layouts may need touching up in Word.</p></div>
+<div><h3>Can I convert a scanned PDF to editable Word on my phone?</h3><p>Yes. Pages that are pictures are read on the phone with Google ML Kit OCR and rebuilt as Word text and tables. It reads Latin, Chinese, Japanese, Korean and Devanagari scripts; Arabic, Hebrew, Cyrillic, Greek and Thai scans are not supported yet.</p></div>
+<div><h3>Does it work offline?</h3><p>Text PDFs convert with no connection. Scanned pages need a small recognition model, which Google Play services downloads once the first time a script is used.</p></div>
+<div><h3>Is there a page limit or a watermark?</h3><p>No. The app adds no watermark and sets no page limit. A very large PDF can exceed the memory of an older phone; convert a page range instead.</p></div>
+<div><h3>Is DocLeaf free? What ads are there?</h3><p>It is free to use. A banner sits at the bottom of Home, History and Settings, and one short full-screen ad plays after a conversion when you tap Continue. A one-time purchase removes the ads. There is no subscription.</p></div>
+<div><h3>Does it open password-protected PDFs?</h3><p>Not yet. Remove the password in the app that created the file, then convert it.</p></div>
+<div><h3>Where are my files kept? Are they backed up?</h3><p>The PDF is copied to a private scratch folder only for the conversion and deleted afterwards. The Word file is saved in Documents/DocLeaf, or where you choose with Save as. The app is left out of Android cloud backup and phone-to-phone transfer.</p></div>
+<div><h3>Which phones does it run on? Is there an iPhone version?</h3><p>Android 7.0 or newer, on phones and tablets. DocLeaf is an Android app only; there is no iPhone or web version.</p></div>
+<div><h3>Which languages is the app in?</h3><p>English, Turkish, Spanish, Portuguese and Arabic. It follows your phone language, and Settings lets you switch.</p></div>
+<div><h3>Is it affiliated with Microsoft?</h3><p>No. Word is a trademark of Microsoft Corporation. DocLeaf writes standard .docx files that open in Word and other editors.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>DocLeaf</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.docleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=en"><img src="/assets/play-badge/badge-en.png" width="646" height="250" alt="Get it on Google Play"></a>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/docleaf/privacy/">Privacy policy</a><a href="/">BumuStudios apps</a><a href="mailto:bumustudios@gmail.com">Contact: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-23">2026-11-23</time></p>
+<p>Google Play and the Google Play logo are trademarks of Google LLC. Word is a trademark of Microsoft Corporation; DocLeaf is not affiliated with Microsoft.</p>
+</footer>
+</body>
+</html>

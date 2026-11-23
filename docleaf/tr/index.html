@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF&#x27;den Word&#x27;e Çevirici, Android, yükleme yok: DocLeaf</title>
+<meta name="description" content="DocLeaf, PDF dosyalarını Android telefonunuzda düzenlenebilir Word (.docx) belgelerine dönüştürür. Gerçek Word tabloları, resimler ve taranmış sayfalar için cihazda OCR. PDF hiçbir zaman yüklenmez.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/docleaf/tr/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/docleaf/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/docleaf/tr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/docleaf/">
+<link rel="icon" type="image/png" href="/docleaf/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/docleaf/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="PDF&#x27;den Word&#x27;e Çevirici, Android, yükleme yok: DocLeaf">
+<meta property="og:description" content="DocLeaf, PDF dosyalarını Android telefonunuzda düzenlenebilir Word (.docx) belgelerine dönüştürür. Gerçek Word tabloları, resimler ve taranmış sayfalar için cihazda OCR. PDF hiçbir zaman yüklenmez.">
+<meta property="og:url" content="https://bumustudios.github.io/docleaf/tr/">
+<meta property="og:image" content="https://bumustudios.github.io/docleaf/assets/icon-512.png">
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#0e6b67;--accent-soft:#d3eeea;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#7fd6cf;--accent-soft:#163533;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(14,107,103,.20)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.shots img:only-child{grid-column:1/-1;justify-self:center;max-width:280px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "DocLeaf", "alternateName": "PDF to Word Converter: DocLeaf", "operatingSystem": "Android 7.0 and later", "applicationCategory": "UtilitiesApplication", "inLanguage": ["en", "tr", "es", "pt", "ar"], "description": "DocLeaf is an Android app that converts PDF files to editable Word (.docx) documents on the phone, with real Word tables, pictures and on-device OCR for scanned pages. The PDF is not uploaded.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "downloadUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.docleaf", "installUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.docleaf", "url": "https://bumustudios.github.io/docleaf/", "image": "https://bumustudios.github.io/docleaf/assets/icon-512.png", "publisher": {"@type": "Organization", "name": "BumuStudios", "url": "https://bumustudios.github.io/"}, "featureList": ["PDF to Word (.docx) on the phone", "Real Word tables", "On-device OCR for scanned pages", "No upload, no account", "No watermark, no page limit set by the app"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Android'de PDF'yi yüklemeden nasıl Word'e çeviririm?", "acceptedAnswer": {"@type": "Answer", "text": "DocLeaf'i kurun, PDF'yi seçin ve Word'e dönüştür'e dokunun. Dönüştürme telefonunuzda çalışır; dosya hiçbir zaman yüklenmez ve hesap gerekmez."}}, {"@type": "Question", "name": "PDF'yi Word'e çevirirken tabloları hangi uygulama korur?", "acceptedAnswer": {"@type": "Answer", "text": "DocLeaf tabloları birleşik hücreler, kenarlıklar ve gölgelendirmeyle gerçek Word tabloları olarak yeniden kurar. İç içe tablolar tek düzeye düzleştirilir; karmaşık düzenler Word'de rötuş gerektirebilir."}}, {"@type": "Question", "name": "Taranmış bir PDF'yi telefonda düzenlenebilir Word'e çevirebilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Resim olan sayfalar telefonda Google ML Kit OCR ile okunur ve Word metni ile tabloları olarak yeniden kurulur. Latin, Çince, Japonca, Korece ve Devanagari yazı sistemlerini okur; Arapça, İbranice, Kiril, Yunan ve Tay taramaları henüz desteklenmiyor."}}, {"@type": "Question", "name": "Çevrimdışı çalışır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Metin PDF'leri bağlantı olmadan dönüşür. Taranmış sayfalar küçük bir tanıma modeli gerektirir; Google Play hizmetleri bunu bir yazı sistemi ilk kullanıldığında bir kez indirir."}}, {"@type": "Question", "name": "Sayfa sınırı ya da filigran var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Uygulama filigran eklemez ve sayfa sınırı koymaz. Çok büyük bir PDF eski bir telefonun belleğini aşabilir; bunun yerine bir sayfa aralığı dönüştürün."}}, {"@type": "Question", "name": "DocLeaf ücretsiz mi? Hangi reklamlar var?", "acceptedAnswer": {"@type": "Answer", "text": "Kullanımı ücretsizdir. Ana sayfanın, Geçmiş'in ve Ayarlar'ın altında bir banner durur ve Devam'a dokunduğunuzda bir dönüştürmeden sonra kısa bir tam ekran reklam oynar. Tek seferlik bir satın alma reklamları kaldırır. Abonelik yok."}}, {"@type": "Question", "name": "Parola korumalı PDF'leri açar mı?", "acceptedAnswer": {"@type": "Answer", "text": "Henüz değil. Parolayı dosyayı oluşturan uygulamada kaldırın, sonra dönüştürün."}}, {"@type": "Question", "name": "Dosyalarım nerede tutulur? Yedeklenir mi?", "acceptedAnswer": {"@type": "Answer", "text": "PDF yalnızca dönüştürme için özel bir çalışma klasörüne kopyalanır ve sonra silinir. Word dosyası Documents/DocLeaf klasörüne ya da Farklı kaydet ile seçtiğiniz yere kaydedilir. Uygulama Android bulut yedeğinin ve telefondan telefona aktarımın dışında tutulur."}}, {"@type": "Question", "name": "Hangi telefonlarda çalışır? iPhone sürümü var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Android 7.0 ve üzeri, telefon ve tabletlerde. DocLeaf yalnızca Android uygulamasıdır; iPhone ya da web sürümü yoktur."}}, {"@type": "Question", "name": "Uygulama hangi dillerde?", "acceptedAnswer": {"@type": "Answer", "text": "İngilizce, Türkçe, İspanyolca, Portekizce ve Arapça. Telefonunuzun diline uyar; Ayarlar'dan değiştirebilirsiniz."}}, {"@type": "Question", "name": "Microsoft ile bağlantılı mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Word, Microsoft Corporation'ın ticari markasıdır. DocLeaf, Word'de ve diğer düzenleyicilerde açılan standart .docx dosyaları yazar."}}]}</script>
+</head>
+<body>
+<nav class="top" aria-label="Language">
+<a class="brand" href="/docleaf/"><img src="/docleaf/assets/icon-192.png" width="36" height="36" alt="">DocLeaf</a>
+<ul class="langs">
+<li><a href="/docleaf/" hreflang="en" lang="en">English</a></li><li><a href="/docleaf/tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>Android&#x27;de PDF&#x27;yi dosyayı yüklemeden Word&#x27;e çevirin</h1>
+<p class="lede">DocLeaf, PDF dosyalarını telefonunuzda düzenlenebilir Word (.docx) belgelerine dönüştüren bir Android uygulamasıdır. Metin metin olarak kalır, tablolar gerçek Word tablosu olur, resimler yerinde durur ve taranmış sayfalar cihazda metin tanıma (OCR) ile okunur. PDF telefonda işlenir ve hiçbir zaman yüklenmez. Hesap gerekmez.</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.docleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=tr"><img src="/assets/play-badge/badge-tr.png" width="646" height="250" alt="Google Play&#x27;den edinin"></a>
+<p class="note">Google Play&#x27;de kullanımı ücretsiz, Android 7.0 ve üzeri. Uygulama reklam gösterir; tek seferlik bir satın alma reklamları kaldırır. Kapalı testte: Play sayfası herkese açıldığında bağlantı çalışır.</p>
+</div>
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">Neler var</h2>
+<ul class="facts">
+<li><b>Gerçek Word tabloları</b><span>Tablolar, birleşik hücreler, kenarlıklar ve gölgelendirmeyle gerçek Word tabloları olarak yeniden kurulur; resim ya da sekmeyle ayrılmış metin olarak değil.</span></li>
+<li><b>Metin metin kalır</b><span>Başlıklar, madde işaretli ve numaralı listeler, web bağlantıları, sütunlar, üst ve alt bilgiler ile Arapça ve İbranice gibi sağdan sola metinler aktarılır.</span></li>
+<li><b>Resimler yerinde</b><span>Resimler PDF&#x27;teki yerinde kalır; boyutları, kırpmaları ve saydamlıkları korunur.</span></li>
+<li><b>Taranmış PDF&#x27;ler</b><span>Resim olan sayfalar telefonda Google ML Kit OCR ile okunur: Latin, Çince, Japonca, Korece ve Devanagari yazı sistemleri.</span></li>
+<li><b>Hiçbir şey yüklenmez</b><span>Dönüştürme telefonda çalışır. PDF&#x27;niz ve Word dosyanız hiçbir yere gönderilmez; uygulama depolama izni istemez.</span></li>
+<li><b>Çevrimdışı çalışır</b><span>Metin PDF&#x27;leri bağlantı olmadan dönüşür. Taramalar, Google Play hizmetleri üzerinden küçük bir tanıma modelinin tek seferlik indirilmesini gerektirir.</span></li>
+<li><b>Filigran yok, sayfa sınırı yok</b><span>Uygulama Word dosyasına hiçbir şey basmaz ve sayfa sınırı koymaz. Tüm sayfaları ya da 1-5, 9 gibi bir aralığı seçin.</span></li>
+<li><b>Hesap yok, abonelik yok</b><span>Reklamlarla ücretsiz: bir banner ve her dönüştürmeden sonra kısa bir reklam. İsteğe bağlı tek seferlik bir satın alma reklamları kaldırır.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">PDF Word&#x27;e nasıl çevrilir</h2>
+<ol class="steps">
+<li>DocLeaf'i açın ve <b>PDF seç</b>'e dokunun ya da herhangi bir uygulamadan bir PDF'yi DocLeaf'e paylaşın.</li>
+<li><b>Tüm sayfalar</b> ya da bir <b>Aralık</b> ile bir düzen seçin: <b>Düzeni koru</b> sayfayı izler, <b>Akan metin</b> kelimeleri yeniden akıtır ve düzenlemesi kolaydır. <b>Taranmış sayfalar (OCR)</b> ayarını Otomatik bırakın.</li>
+<li><b>Word'e dönüştür</b>'e dokunun. Bir bildirim ilerlemeyi ve İptal düğmesini gösterir; çalışırken uygulamadan çıkabilirsiniz.</li>
+<li>Kısa reklamdan sonra <b>Devam</b>'a, ardından <b>Aç</b>, <b>Paylaş</b> ya da <b>Farklı kaydet</b>'e dokunun. Dosya <i>Documents/DocLeaf</i> klasöründedir ve Geçmiş onu listeler.</li>
+</ol>
+</section>
+
+<section aria-labelledby="limits">
+<h2 id="limits">İyi dönüşenler ve henüz desteklenmeyenler</h2>
+<h3>İyi dönüşenler</h3>
+<ul>
+<li>Metin PDF&#x27;leri: sözleşmeler, raporlar, makaleler, faturalar, mektuplar.</li>
+<li>Çizgili, zebra gölgeli ya da çizgisiz tablolar; sayfalara yayılan tablolar.</li>
+<li>İki sütunlu metin, başlıklar ve listeler, bağlantılar, üst ve alt bilgiler.</li>
+<li>Latin, Çince, Japonca, Korece ve Devanagari yazı sistemlerindeki taranmış sayfalar.</li>
+</ul>
+<h3>Henüz desteklenmiyor</h3>
+<ul>
+<li>Parola korumalı PDF&#x27;ler: önce parolayı kaldırın.</li>
+<li>Arapça, İbranice, Kiril, Yunan veya Tay alfabesindeki taramalar.</li>
+<li>İç içe tablolar: tek düzeye düzleştirilir.</li>
+<li>Belge içinde başka yere atlayan bağlantılar. Web bağlantıları çalışır.</li>
+<li>Çok büyük PDF&#x27;ler eski bir telefonun belleğini aşabilir: bunun yerine bir sayfa aralığı dönüştürün.</li>
+<li>Karmaşık tasarımlar Word&#x27;de rötuş gerektirebilir. Güvenmeden önce sonucu gözden geçirin.</li>
+</ul>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">Sık sorulan sorular</h2>
+<div class="faq">
+<div><h3>Android&#x27;de PDF&#x27;yi yüklemeden nasıl Word&#x27;e çeviririm?</h3><p>DocLeaf&#x27;i kurun, PDF&#x27;yi seçin ve Word&#x27;e dönüştür&#x27;e dokunun. Dönüştürme telefonunuzda çalışır; dosya hiçbir zaman yüklenmez ve hesap gerekmez.</p></div>
+<div><h3>PDF&#x27;yi Word&#x27;e çevirirken tabloları hangi uygulama korur?</h3><p>DocLeaf tabloları birleşik hücreler, kenarlıklar ve gölgelendirmeyle gerçek Word tabloları olarak yeniden kurar. İç içe tablolar tek düzeye düzleştirilir; karmaşık düzenler Word&#x27;de rötuş gerektirebilir.</p></div>
+<div><h3>Taranmış bir PDF&#x27;yi telefonda düzenlenebilir Word&#x27;e çevirebilir miyim?</h3><p>Evet. Resim olan sayfalar telefonda Google ML Kit OCR ile okunur ve Word metni ile tabloları olarak yeniden kurulur. Latin, Çince, Japonca, Korece ve Devanagari yazı sistemlerini okur; Arapça, İbranice, Kiril, Yunan ve Tay taramaları henüz desteklenmiyor.</p></div>
+<div><h3>Çevrimdışı çalışır mı?</h3><p>Metin PDF&#x27;leri bağlantı olmadan dönüşür. Taranmış sayfalar küçük bir tanıma modeli gerektirir; Google Play hizmetleri bunu bir yazı sistemi ilk kullanıldığında bir kez indirir.</p></div>
+<div><h3>Sayfa sınırı ya da filigran var mı?</h3><p>Hayır. Uygulama filigran eklemez ve sayfa sınırı koymaz. Çok büyük bir PDF eski bir telefonun belleğini aşabilir; bunun yerine bir sayfa aralığı dönüştürün.</p></div>
+<div><h3>DocLeaf ücretsiz mi? Hangi reklamlar var?</h3><p>Kullanımı ücretsizdir. Ana sayfanın, Geçmiş&#x27;in ve Ayarlar&#x27;ın altında bir banner durur ve Devam&#x27;a dokunduğunuzda bir dönüştürmeden sonra kısa bir tam ekran reklam oynar. Tek seferlik bir satın alma reklamları kaldırır. Abonelik yok.</p></div>
+<div><h3>Parola korumalı PDF&#x27;leri açar mı?</h3><p>Henüz değil. Parolayı dosyayı oluşturan uygulamada kaldırın, sonra dönüştürün.</p></div>
+<div><h3>Dosyalarım nerede tutulur? Yedeklenir mi?</h3><p>PDF yalnızca dönüştürme için özel bir çalışma klasörüne kopyalanır ve sonra silinir. Word dosyası Documents/DocLeaf klasörüne ya da Farklı kaydet ile seçtiğiniz yere kaydedilir. Uygulama Android bulut yedeğinin ve telefondan telefona aktarımın dışında tutulur.</p></div>
+<div><h3>Hangi telefonlarda çalışır? iPhone sürümü var mı?</h3><p>Android 7.0 ve üzeri, telefon ve tabletlerde. DocLeaf yalnızca Android uygulamasıdır; iPhone ya da web sürümü yoktur.</p></div>
+<div><h3>Uygulama hangi dillerde?</h3><p>İngilizce, Türkçe, İspanyolca, Portekizce ve Arapça. Telefonunuzun diline uyar; Ayarlar&#x27;dan değiştirebilirsiniz.</p></div>
+<div><h3>Microsoft ile bağlantılı mı?</h3><p>Hayır. Word, Microsoft Corporation&#x27;ın ticari markasıdır. DocLeaf, Word&#x27;de ve diğer düzenleyicilerde açılan standart .docx dosyaları yazar.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>DocLeaf</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.docleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=tr"><img src="/assets/play-badge/badge-tr.png" width="646" height="250" alt="Google Play&#x27;den edinin"></a>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/docleaf/privacy/tr/">Gizlilik politikası</a><a href="/">BumuStudios uygulamaları</a><a href="mailto:bumustudios@gmail.com">İletişim: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-23">2026-11-23</time></p>
+<p>Google Play and the Google Play logo are trademarks of Google LLC. Word is a trademark of Microsoft Corporation; DocLeaf is not affiliated with Microsoft.</p>
+</footer>
+</body>
+</html>

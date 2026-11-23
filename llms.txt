@@ -232,6 +232,32 @@ Pages:
 - Same page in [Türkçe](https://bumustudios.github.io/pulserunner/tr/), [Español](https://bumustudios.github.io/pulserunner/es/), [Português](https://bumustudios.github.io/pulserunner/pt/), [हिन्दी](https://bumustudios.github.io/pulserunner/hi/), [العربية](https://bumustudios.github.io/pulserunner/ar/), [Deutsch](https://bumustudios.github.io/pulserunner/de/), [Français](https://bumustudios.github.io/pulserunner/fr/)
 - [Pulse Runner privacy policy](https://bumustudios.github.io/pulserunner/privacy/)
 
+## DocLeaf (Android)
+
+DocLeaf is an Android app that converts PDF files to editable Word (.docx) documents on the phone. In closed testing until the Google Play listing is public.
+
+- Real Word tables (merged cells, borders, shading), headings, bullet and numbered lists, web links, columns, headers and footers, right-to-left text, and pictures that keep their position, size, cropping and transparency. Two layouts: Keep layout, or Flowing text. All pages or a range such as 1-5, 9.
+- Scanned PDFs: on-device OCR (Google ML Kit, through Google Play services) for Latin, Chinese, Japanese, Korean and Devanagari scripts; a small model is downloaded once per script. Arabic, Hebrew, Cyrillic, Greek and Thai scans are not supported yet.
+- Not supported yet: password-protected PDFs, nested tables (flattened to one level), links that jump inside the document. A very large PDF can exceed the memory of an older phone; convert a page range instead.
+- No watermark and no page limit set by the app. No account. The PDF is processed on the phone and is never uploaded; text PDFs convert offline.
+- Free with ads: a banner on Home, History and Settings, and one full-screen ad after a conversion, announced by a card and played only when the user taps Continue. No app-open or rewarded ads. An optional one-time purchase removes the ads. No subscription.
+- Requires Android 7.0 or newer. Android only. The app's screens are in English, Turkish, Spanish, Portuguese and Arabic.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.docleaf
+
+Common questions:
+
+- Q: How do I convert a PDF to Word on Android without uploading it? A: Open DocLeaf, choose the PDF and tap Convert to Word. The conversion runs on the phone, so the file is never uploaded.
+- Q: Which app keeps tables when converting PDF to Word? A: DocLeaf rebuilds tables as real Word tables with merged cells, borders and shading; nested tables are flattened to one level.
+- Q: Can I convert a scanned PDF to editable Word on my phone? A: Yes, with on-device OCR in Latin, Chinese, Japanese, Korean and Devanagari scripts. Arabic, Hebrew, Cyrillic, Greek and Thai scans are not supported yet.
+- Q: Does it work offline? A: Text PDFs do. Scans need a one-time download of the recognition model through Google Play services.
+- Q: Is there a page limit or watermark? A: No watermark and no page limit set by the app.
+
+Pages:
+
+- [DocLeaf: PDF to Word converter for Android, features, how-to and FAQ (English)](https://bumustudios.github.io/docleaf/)
+- Same page in [Türkçe](https://bumustudios.github.io/docleaf/tr/)
+- [DocLeaf privacy policy](https://bumustudios.github.io/docleaf/privacy/)
+
 ## Contact
 
 - bumustudios@gmail.com

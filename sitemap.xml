@@ -1706,4 +1706,32 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/docleaf/privacy/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/docleaf/privacy/"/>
   </url>
+  <url>
+    <loc>https://bumustudios.github.io/textleaf/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/textleaf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/textleaf/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/textleaf/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/textleaf/tr/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/textleaf/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/textleaf/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/textleaf/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/textleaf/privacy/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/textleaf/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/textleaf/privacy/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/textleaf/privacy/"/>
+  </url>
+  <url>
+    <loc>https://bumustudios.github.io/textleaf/privacy/tr/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bumustudios.github.io/textleaf/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/textleaf/privacy/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/textleaf/privacy/"/>
+  </url>
 </urlset>

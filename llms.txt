@@ -258,6 +258,30 @@ Pages:
 - Same page in [Türkçe](https://bumustudios.github.io/docleaf/tr/), [Español](https://bumustudios.github.io/docleaf/es/), [Português](https://bumustudios.github.io/docleaf/pt/), [العربية](https://bumustudios.github.io/docleaf/ar/)
 - [DocLeaf privacy policy](https://bumustudios.github.io/docleaf/privacy/)
 
+## TextLeaf (Android)
+
+TextLeaf (PDF Editor & Sign: TextLeaf) is an Android app that edits the content of a PDF on the phone: the real text, pictures, highlights, notes, shapes and a signature. Coming to Google Play; the listing is not public yet.
+
+- Tap a line of text and change it; the edit is written into the PDF in the original font where the file allows it, with a close replacement (Liberation, Carlito, Caladea, Noto Sans) otherwise. Move, resize, turn and replace pictures. Highlight, underline, strike through, draw, add shapes, arrows, dates, notes and a kept signature. One undo history, crash-safe drafts, and the original file is never changed: the user saves an edited copy.
+- Not supported yet: editing Arabic, Hebrew, Indic, Thai, Chinese, Japanese or Korean text (it can still be moved, deleted and marked); scanned pages (no OCR); password-protected PDFs; editing a digitally signed PDF keeps no valid signature.
+- No account, no watermark. The PDF is processed on the phone and is never uploaded.
+- Free with ads: a banner on Home and Settings and one full-screen ad after a finished save, played only when the user taps Continue; none in the editor. An optional one-time purchase removes the ads. No subscription.
+- Requires Android 7.0 or newer. Android only. The app's screens are in English, Turkish, Spanish, Portuguese and Arabic.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.textleaf
+
+Common questions:
+
+- Q: How do I edit the text of a PDF on Android? A: Open the PDF in TextLeaf, tap Edit text, tap a line and type; save an edited copy.
+- Q: Is my PDF uploaded? A: No. TextLeaf edits the file on the phone and never uploads it.
+- Q: Can I sign a PDF with my finger? A: Yes. Draw the signature once, keep it on the phone, then place, move, resize and turn it.
+- Q: Can I edit a scanned PDF? A: Not yet; a scan is a picture and TextLeaf has no text recognition. Text boxes, marks and signatures can be added on top.
+
+Pages:
+
+- [TextLeaf: PDF editor and signer for Android, features, how-to and FAQ (English)](https://bumustudios.github.io/textleaf/)
+- Same page in [Türkçe](https://bumustudios.github.io/textleaf/tr/)
+- [TextLeaf privacy policy](https://bumustudios.github.io/textleaf/privacy/)
+
 ## Contact
 
 - bumustudios@gmail.com

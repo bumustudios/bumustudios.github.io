@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF Editor &amp; Sign: TextLeaf, edit PDF text on Android</title>
+<meta name="description" content="TextLeaf is a PDF editor for Android: change the real text of a PDF, move and replace pictures, highlight, add notes and sign. It works on your phone and the PDF is never uploaded.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/textleaf/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/textleaf/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/textleaf/tr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/textleaf/">
+<link rel="icon" type="image/png" href="/textleaf/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/textleaf/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="PDF Editor &amp; Sign: TextLeaf, edit PDF text on Android">
+<meta property="og:description" content="TextLeaf is a PDF editor for Android: change the real text of a PDF, move and replace pictures, highlight, add notes and sign. It works on your phone and the PDF is never uploaded.">
+<meta property="og:url" content="https://bumustudios.github.io/textleaf/">
+<meta property="og:image" content="https://bumustudios.github.io/textleaf/assets/icon-512.png">
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#a3175f;--accent-soft:#fbdbe9;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#ff93c0;--accent-soft:#3b1529;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(14,107,103,.20)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.shots img:only-child{grid-column:1/-1;justify-self:center;max-width:280px}
+
+.shots{display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;margin:0;list-style:none}.shots li{flex:0 0 auto}.shots img{display:block;height:420px;width:auto;border-radius:14px;border:1px solid var(--line)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "TextLeaf", "alternateName": "PDF Editor & Sign: TextLeaf", "operatingSystem": "Android 7.0 and later", "applicationCategory": "BusinessApplication", "inLanguage": ["en", "tr", "es", "pt", "ar"], "description": "TextLeaf is a PDF editor for Android: change the real text of a PDF, move and replace pictures, highlight, add notes and sign. It works on your phone and the PDF is never uploaded.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "installUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.textleaf", "url": "https://bumustudios.github.io/textleaf/", "image": "https://bumustudios.github.io/textleaf/assets/icon-512.png", "publisher": {"@type": "Organization", "name": "BumuStudios", "url": "https://bumustudios.github.io/"}, "featureList": ["Edit the real text of a PDF on the phone", "Move, resize and replace pictures", "Signature, highlight, notes, shapes and drawing", "No upload, no account", "No watermark"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I edit the text of a PDF on Android?", "acceptedAnswer": {"@type": "Answer", "text": "Open the PDF in TextLeaf, tap Edit text, tap a line and type. The change is written into the PDF, and you save an edited copy."}}, {"@type": "Question", "name": "Is my PDF uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. TextLeaf edits the file on your phone and never uploads it. The usage counts and crash reports the app sends carry no file names or text."}}, {"@type": "Question", "name": "Can I sign a PDF with my finger?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Draw your signature once, keep it on the phone if you like, then place, move, resize and turn it on the page."}}, {"@type": "Question", "name": "Can I edit a scanned PDF?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. A scan is a picture of text, and TextLeaf has no text recognition, so there is no text to change. You can still add text boxes, marks and signatures on top."}}, {"@type": "Question", "name": "Which fonts does it use?", "acceptedAnswer": {"@type": "Answer", "text": "The original font where the file allows editing. When it lacks a letter, TextLeaf uses a close replacement (Liberation, Carlito, Caladea or Noto Sans) and tells you."}}, {"@type": "Question", "name": "Will the edited PDF open in other apps?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The edit is written into the PDF itself, and the copy opens in Google Drive, Chrome and other readers."}}, {"@type": "Question", "name": "Is TextLeaf free? What ads are there?", "acceptedAnswer": {"@type": "Answer", "text": "It is free to use. A banner sits at the bottom of Home and Settings, and one short full-screen ad can play after a finished save when you tap Continue. A one-time purchase removes the ads. There is no subscription, and no ads inside the editor."}}, {"@type": "Question", "name": "Does it work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Editing needs no connection. Ads, updates and the purchase need one."}}, {"@type": "Question", "name": "Which phones does it run on? Is there an iPhone version?", "acceptedAnswer": {"@type": "Answer", "text": "Android 7.0 or newer, on phones and tablets. TextLeaf is an Android app only; there is no iPhone or web version."}}, {"@type": "Question", "name": "Is it affiliated with Adobe?", "acceptedAnswer": {"@type": "Answer", "text": "No. Adobe and Acrobat are trademarks of their owners. TextLeaf is an independent app by BumuStudios."}}]}</script>
+</head>
+<body>
+<nav class="top" aria-label="Language">
+<a class="brand" href="/textleaf/"><img src="/textleaf/assets/icon-192.png" width="36" height="36" alt="">TextLeaf</a>
+<ul class="langs">
+<li><a href="/textleaf/" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="/textleaf/tr/" hreflang="tr" lang="tr">Türkçe</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>PDF Editor &amp; Sign for Android: edit the real text in your PDF</h1>
+<p class="lede">TextLeaf is an Android app that edits the content of a PDF on your phone. Tap a line of text and change it, and the change is written into the PDF itself, in the original font where the file allows it. Move and replace pictures, highlight, draw, add notes and place your signature. The PDF is processed on the phone and is never uploaded. No account is needed.</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.textleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=en"><img src="/assets/play-badge/badge-en.png" width="646" height="250" alt="Get it on Google Play"></a>
+<p class="note">Coming to Google Play for Android 7.0 or newer. The app shows ads; a one-time purchase removes them. The Play listing opens when it is public.</p>
+</div>
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">What you get</h2>
+<ul class="facts">
+<li><b>Edit the real text</b><span>Tap text, type, and the change is written into the PDF. Font, size, colour, bold, italic and alignment from one row. Paragraphs wrap again by themselves.</span></li>
+<li><b>Pictures</b><span>Select a picture, move it, resize it, turn it, replace it, delete it or add one from your gallery.</span></li>
+<li><b>Sign and annotate</b><span>Draw your signature once, keep it on the phone and place it. Highlight, underline, strike through, draw, add shapes, arrows, dates and notes.</span></li>
+<li><b>Your original stays safe</b><span>You save an edited copy. The original file is never changed, and edits open correctly in other readers.</span></li>
+<li><b>Undo and drafts</b><span>One undo and redo history for every action. Drafts are saved while you work, and the app offers to restore them after a crash.</span></li>
+<li><b>Nothing is uploaded</b><span>Editing runs on the phone. Your PDF is never sent anywhere, and the app asks for no storage permission.</span></li>
+<li><b>No account, no watermark</b><span>Free with ads: a banner on Home and Settings and a short ad after a finished save. One optional, one-time purchase removes them.</span></li>
+<li><b>Your language</b><span>English, Turkish, Spanish, Portuguese and Arabic. It follows your phone language, and Settings lets you switch.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="shots">
+<h2 id="shots">Screenshots</h2>
+<ul class="shots"><li><img src="/textleaf/assets/shots/en-01.jpg" width="228" height="405" loading="lazy" alt="Editing a line of text in a PDF"></li><li><img src="/textleaf/assets/shots/en-02.jpg" width="228" height="405" loading="lazy" alt="Selecting a picture to move or resize"></li><li><img src="/textleaf/assets/shots/en-03.jpg" width="228" height="405" loading="lazy" alt="A signature placed on a contract"></li><li><img src="/textleaf/assets/shots/en-04.jpg" width="228" height="405" loading="lazy" alt="Highlights and a note on a page"></li><li><img src="/textleaf/assets/shots/en-05.jpg" width="228" height="405" loading="lazy" alt="The Add sheet with text, signature, date, image, shape, draw and notes"></li></ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">How to edit a PDF on Android</h2>
+<ol class="steps">
+<li>Open TextLeaf and choose a PDF, or share a PDF to TextLeaf from any app.</li>
+<li>Tap <b>Edit text</b>, then tap a line. Type your change and confirm. Use <b>Add</b> for text boxes, pictures, shapes, dates and your signature, and <b>Mark</b> to highlight.</li>
+<li>Tap the save button and choose <b>Save as</b>. The edited copy goes where you pick, and the original is untouched.</li>
+</ol>
+</section>
+
+<section aria-labelledby="limits">
+<h2 id="limits">What it can do, and what is not supported yet</h2>
+<h3>Works well</h3>
+<ul>
+<li>PDFs made by Word, Google Docs, LaTeX and most other programs, in Latin, Greek and Cyrillic letters, Turkish included.</li>
+<li>Changing a word, a line or a paragraph; headers and footers shared by many pages.</li>
+<li>Moving, resizing and replacing pictures; highlights, notes, shapes and signatures.</li>
+</ul>
+<h3>Not supported yet</h3>
+<ul>
+<li>Text in Arabic, Hebrew, Indic scripts, Thai, Chinese, Japanese and Korean cannot be edited; you can still move, delete and mark it.</li>
+<li>Scanned pages are pictures, so there is no text to edit and there is no OCR.</li>
+<li>Password-protected PDFs are not opened yet. PDFs that forbid editing open for viewing and marking only.</li>
+<li>Editing a digitally signed PDF makes its signature invalid.</li>
+<li>Vertical text is shown but not edited. A complex page may need a second look in another reader.</li>
+</ul>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">Questions people ask</h2>
+<div class="faq">
+<div><h3>How do I edit the text of a PDF on Android?</h3><p>Open the PDF in TextLeaf, tap Edit text, tap a line and type. The change is written into the PDF, and you save an edited copy.</p></div>
+<div><h3>Is my PDF uploaded?</h3><p>No. TextLeaf edits the file on your phone and never uploads it. The usage counts and crash reports the app sends carry no file names or text.</p></div>
+<div><h3>Can I sign a PDF with my finger?</h3><p>Yes. Draw your signature once, keep it on the phone if you like, then place, move, resize and turn it on the page.</p></div>
+<div><h3>Can I edit a scanned PDF?</h3><p>Not yet. A scan is a picture of text, and TextLeaf has no text recognition, so there is no text to change. You can still add text boxes, marks and signatures on top.</p></div>
+<div><h3>Which fonts does it use?</h3><p>The original font where the file allows editing. When it lacks a letter, TextLeaf uses a close replacement (Liberation, Carlito, Caladea or Noto Sans) and tells you.</p></div>
+<div><h3>Will the edited PDF open in other apps?</h3><p>Yes. The edit is written into the PDF itself, and the copy opens in Google Drive, Chrome and other readers.</p></div>
+<div><h3>Is TextLeaf free? What ads are there?</h3><p>It is free to use. A banner sits at the bottom of Home and Settings, and one short full-screen ad can play after a finished save when you tap Continue. A one-time purchase removes the ads. There is no subscription, and no ads inside the editor.</p></div>
+<div><h3>Does it work offline?</h3><p>Yes. Editing needs no connection. Ads, updates and the purchase need one.</p></div>
+<div><h3>Which phones does it run on? Is there an iPhone version?</h3><p>Android 7.0 or newer, on phones and tablets. TextLeaf is an Android app only; there is no iPhone or web version.</p></div>
+<div><h3>Is it affiliated with Adobe?</h3><p>No. Adobe and Acrobat are trademarks of their owners. TextLeaf is an independent app by BumuStudios.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>TextLeaf</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.textleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=en"><img src="/assets/play-badge/badge-en.png" width="646" height="250" alt="Get it on Google Play"></a>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/textleaf/privacy/">Privacy policy</a><a href="/">BumuStudios apps</a><a href="mailto:bumustudios@gmail.com">Contact: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-23">2026-11-23</time></p>
+<p>Google Play and the Google Play logo are trademarks of Google LLC. Adobe and Acrobat are trademarks of their owners; TextLeaf is not affiliated with Adobe.</p>
+</footer>
+</body>
+</html>

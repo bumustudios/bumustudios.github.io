@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PDF Düzenleyici: TextLeaf, Android'de PDF metnini düzenle</title>
+<meta name="description" content="TextLeaf bir Android PDF düzenleyicisidir: PDF&#x27;in gerçek metnini değiştirir, resimleri taşır ve değiştirir, vurgular, not ekler ve imzalar. Telefonunuzda çalışır ve PDF hiçbir zaman yüklenmez.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/textleaf/tr/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/textleaf/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/textleaf/tr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/textleaf/">
+<link rel="icon" type="image/png" href="/textleaf/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/textleaf/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="PDF Düzenleyici: TextLeaf, Android&#x27;de PDF metnini düzenle">
+<meta property="og:description" content="TextLeaf bir Android PDF düzenleyicisidir: PDF&#x27;in gerçek metnini değiştirir, resimleri taşır ve değiştirir, vurgular, not ekler ve imzalar. Telefonunuzda çalışır ve PDF hiçbir zaman yüklenmez.">
+<meta property="og:url" content="https://bumustudios.github.io/textleaf/tr/">
+<meta property="og:image" content="https://bumustudios.github.io/textleaf/assets/icon-512.png">
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#a3175f;--accent-soft:#fbdbe9;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#ff93c0;--accent-soft:#3b1529;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(14,107,103,.20)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.shots img:only-child{grid-column:1/-1;justify-self:center;max-width:280px}
+
+.shots{display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;margin:0;list-style:none}.shots li{flex:0 0 auto}.shots img{display:block;height:420px;width:auto;border-radius:14px;border:1px solid var(--line)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "TextLeaf", "alternateName": "PDF Düzenleyici: TextLeaf", "operatingSystem": "Android 7.0 and later", "applicationCategory": "BusinessApplication", "inLanguage": ["en", "tr", "es", "pt", "ar"], "description": "TextLeaf bir Android PDF düzenleyicisidir: PDF'in gerçek metnini değiştirir, resimleri taşır ve değiştirir, vurgular, not ekler ve imzalar. Telefonunuzda çalışır ve PDF hiçbir zaman yüklenmez.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "installUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.textleaf", "url": "https://bumustudios.github.io/textleaf/tr/", "image": "https://bumustudios.github.io/textleaf/assets/icon-512.png", "publisher": {"@type": "Organization", "name": "BumuStudios", "url": "https://bumustudios.github.io/"}, "featureList": ["PDF'in gerçek metnini telefonda düzenleme", "Resimleri taşıma, boyutlandırma ve değiştirme", "İmza, vurgu, not, şekil ve çizim", "Yükleme yok, hesap yok", "Filigran yok"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Android'de PDF metni nasıl düzenlenir?", "acceptedAnswer": {"@type": "Answer", "text": "PDF'i TextLeaf'te açın, Metni düzenle'ye dokunun, bir satıra dokunup yazın. Değişiklik PDF'e yazılır ve düzenlenmiş bir kopya kaydedersiniz."}}, {"@type": "Question", "name": "PDF'im yükleniyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. TextLeaf dosyayı telefonunuzda düzenler ve hiçbir zaman yüklemez. Uygulamanın gönderdiği kullanım sayıları ve çökme raporları dosya adı ya da metin taşımaz."}}, {"@type": "Question", "name": "PDF'i parmağımla imzalayabilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. İmzanızı bir kez çizin, isterseniz telefonda saklayın; sonra sayfada yerleştirin, taşıyın, boyutlandırın ve döndürün."}}, {"@type": "Question", "name": "Taranmış bir PDF'i düzenleyebilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Henüz değil. Tarama, metnin bir resmidir ve TextLeaf'te metin tanıma yoktur; değiştirilecek metin bulunmaz. Yine de üzerine metin kutusu, işaret ve imza ekleyebilirsiniz."}}, {"@type": "Question", "name": "Hangi yazı tiplerini kullanır?", "acceptedAnswer": {"@type": "Answer", "text": "Dosya düzenlemeye izin veriyorsa özgün yazı tipini. Bir harf eksikse TextLeaf yakın bir yedek (Liberation, Carlito, Caladea ya da Noto Sans) kullanır ve size söyler."}}, {"@type": "Question", "name": "Düzenlenmiş PDF başka uygulamalarda açılır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Düzenleme PDF'in kendisine yazılır; kopya Google Drive'da, Chrome'da ve diğer okuyucularda açılır."}}, {"@type": "Question", "name": "TextLeaf ücretsiz mi? Hangi reklamlar var?", "acceptedAnswer": {"@type": "Answer", "text": "Kullanımı ücretsizdir. Ana ekranın ve Ayarlar'ın altında bir afiş vardır; tamamlanan bir kayıttan sonra Devam'a dokunduğunuzda kısa bir tam ekran reklam oynayabilir. Tek seferlik bir satın alma reklamları kaldırır. Abonelik yoktur ve düzenleyicide reklam yoktur."}}, {"@type": "Question", "name": "Çevrimdışı çalışır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Düzenleme için bağlantı gerekmez. Reklamlar, güncellemeler ve satın alma gerektirir."}}, {"@type": "Question", "name": "Hangi telefonlarda çalışır? iPhone sürümü var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Android 7.0 ve üzeri, telefon ve tabletlerde. TextLeaf yalnızca Android uygulamasıdır; iPhone ya da web sürümü yoktur."}}, {"@type": "Question", "name": "Adobe ile bağlantısı var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Adobe ve Acrobat sahiplerinin ticari markalarıdır. TextLeaf, BumuStudios'un bağımsız bir uygulamasıdır."}}]}</script>
+</head>
+<body>
+<nav class="top" aria-label="Language">
+<a class="brand" href="/textleaf/tr/"><img src="/textleaf/assets/icon-192.png" width="36" height="36" alt="">TextLeaf</a>
+<ul class="langs">
+<li><a href="/textleaf/" hreflang="en" lang="en">English</a></li><li><a href="/textleaf/tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>Android için PDF Düzenleyici: PDF'inizin gerçek metnini düzenleyin</h1>
+<p class="lede">TextLeaf, bir PDF'in içeriğini telefonunuzda düzenleyen Android uygulamasıdır. Bir satıra dokunup değiştirin; değişiklik dosya izin veriyorsa özgün yazı tipiyle PDF'in kendisine yazılır. Resimleri taşıyın ve değiştirin, vurgulayın, çizin, not ekleyin ve imzanızı yerleştirin. PDF telefonda işlenir ve hiçbir zaman yüklenmez. Hesap gerekmez.</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.textleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=tr"><img src="/assets/play-badge/badge-tr.png" width="646" height="250" alt="Google Play&#x27;den edinin"></a>
+<p class="note">Android 7.0 ve üzeri için Google Play'e geliyor. Uygulama reklam gösterir; tek seferlik bir satın alma reklamları kaldırır. Play sayfası herkese açıldığında açılır.</p>
+</div>
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">Neler sunar</h2>
+<ul class="facts">
+<li><b>Gerçek metni düzenleyin</b><span>Metne dokunun, yazın; değişiklik PDF&#x27;e yazılır. Yazı tipi, boyut, renk, kalın, italik ve hizalama tek satırdan. Paragraflar kendiliğinden yeniden satırlanır.</span></li>
+<li><b>Resimler</b><span>Bir resim seçin; taşıyın, boyutlandırın, döndürün, değiştirin, silin ya da galeriden yenisini ekleyin.</span></li>
+<li><b>İmzalayın ve not alın</b><span>İmzanızı bir kez çizin, telefonda saklayın ve yerleştirin. Vurgulayın, altını çizin, üstünü çizin, çizim yapın; şekil, ok, tarih ve not ekleyin.</span></li>
+<li><b>Özgün dosyanız güvende</b><span>Düzenlenmiş bir kopya kaydedersiniz. Özgün dosya hiç değişmez ve düzenlemeler diğer okuyucularda doğru açılır.</span></li>
+<li><b>Geri alma ve taslaklar</b><span>Her işlem için tek bir geri alma ve yineleme geçmişi. Siz çalışırken taslaklar kaydedilir ve çökmeden sonra uygulama geri yüklemeyi önerir.</span></li>
+<li><b>Hiçbir şey yüklenmez</b><span>Düzenleme telefonda çalışır. PDF&#x27;iniz hiçbir yere gönderilmez ve uygulama depolama izni istemez.</span></li>
+<li><b>Hesap yok, filigran yok</b><span>Reklamlı ücretsiz: Ana ekranda ve Ayarlar&#x27;da bir afiş, tamamlanan kayıttan sonra kısa bir reklam. İsteğe bağlı tek seferlik bir satın alma reklamları kaldırır.</span></li>
+<li><b>Dil seçenekleri</b><span>İngilizce, Türkçe, İspanyolca, Portekizce ve Arapça. Telefon dilini izler, Ayarlar&#x27;dan değiştirebilirsiniz.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="shots">
+<h2 id="shots">Ekran görüntüleri</h2>
+<ul class="shots"><li><img src="/textleaf/assets/shots/tr-01.jpg" width="228" height="405" loading="lazy" alt="PDF&#x27;te bir metin satırını düzenleme"></li><li><img src="/textleaf/assets/shots/tr-02.jpg" width="228" height="405" loading="lazy" alt="Taşımak ya da boyutlandırmak için bir resim seçme"></li><li><img src="/textleaf/assets/shots/tr-03.jpg" width="228" height="405" loading="lazy" alt="Bir sözleşmeye yerleştirilmiş imza"></li><li><img src="/textleaf/assets/shots/tr-04.jpg" width="228" height="405" loading="lazy" alt="Bir sayfada vurgular ve bir not"></li><li><img src="/textleaf/assets/shots/tr-05.jpg" width="228" height="405" loading="lazy" alt="Metin, imza, tarih, resim, şekil, çizim ve notlar içeren Ekle sayfası"></li></ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">Android'de PDF nasıl düzenlenir</h2>
+<ol class="steps">
+<li>TextLeaf'i açıp bir PDF seçin ya da herhangi bir uygulamadan PDF'i TextLeaf'e paylaşın.</li>
+<li><b>Metni düzenle</b>ye, ardından bir satıra dokunun. Değişikliği yazıp onaylayın. Metin kutusu, resim, şekil, tarih ve imza için <b>Ekle</b>, vurgulamak için <b>İşaretle</b> kullanın.</li>
+<li>Kaydet düğmesine dokunup <b>Farklı kaydet</b>i seçin. Düzenlenmiş kopya seçtiğiniz yere gider, özgün dosyaya dokunulmaz.</li>
+</ol>
+</section>
+
+<section aria-labelledby="limits">
+<h2 id="limits">Neler yapabilir, neler henüz desteklenmiyor</h2>
+<h3>İyi çalışır</h3>
+<ul>
+<li>Word, Google Docs, LaTeX ve çoğu başka programın ürettiği PDF&#x27;ler; Latin, Yunan ve Kiril harfleri, Türkçe dahil.</li>
+<li>Bir kelimeyi, satırı ya da paragrafı değiştirme; çok sayfada ortak üst ve alt bilgiler.</li>
+<li>Resim taşıma, boyutlandırma ve değiştirme; vurgular, notlar, şekiller ve imzalar.</li>
+</ul>
+<h3>Henüz desteklenmiyor</h3>
+<ul>
+<li>Arapça, İbranice, Hint yazıları, Tayca, Çince, Japonca ve Korece metin düzenlenemez; yine de taşıyabilir, silebilir ve işaretleyebilirsiniz.</li>
+<li>Taranmış sayfalar resimdir, düzenlenecek metin yoktur ve OCR yoktur.</li>
+<li>Parola korumalı PDF&#x27;ler henüz açılmaz. Düzenlemeyi yasaklayan PDF&#x27;ler yalnızca görüntüleme ve işaretleme için açılır.</li>
+<li>Dijital imzalı bir PDF&#x27;i düzenlemek imzasını geçersiz kılar.</li>
+<li>Dikey metin gösterilir ama düzenlenmez. Karmaşık bir sayfa başka bir okuyucuda ikinci bir bakış isteyebilir.</li>
+</ul>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">Sık sorulan sorular</h2>
+<div class="faq">
+<div><h3>Android&#x27;de PDF metni nasıl düzenlenir?</h3><p>PDF&#x27;i TextLeaf&#x27;te açın, Metni düzenle&#x27;ye dokunun, bir satıra dokunup yazın. Değişiklik PDF&#x27;e yazılır ve düzenlenmiş bir kopya kaydedersiniz.</p></div>
+<div><h3>PDF&#x27;im yükleniyor mu?</h3><p>Hayır. TextLeaf dosyayı telefonunuzda düzenler ve hiçbir zaman yüklemez. Uygulamanın gönderdiği kullanım sayıları ve çökme raporları dosya adı ya da metin taşımaz.</p></div>
+<div><h3>PDF&#x27;i parmağımla imzalayabilir miyim?</h3><p>Evet. İmzanızı bir kez çizin, isterseniz telefonda saklayın; sonra sayfada yerleştirin, taşıyın, boyutlandırın ve döndürün.</p></div>
+<div><h3>Taranmış bir PDF&#x27;i düzenleyebilir miyim?</h3><p>Henüz değil. Tarama, metnin bir resmidir ve TextLeaf&#x27;te metin tanıma yoktur; değiştirilecek metin bulunmaz. Yine de üzerine metin kutusu, işaret ve imza ekleyebilirsiniz.</p></div>
+<div><h3>Hangi yazı tiplerini kullanır?</h3><p>Dosya düzenlemeye izin veriyorsa özgün yazı tipini. Bir harf eksikse TextLeaf yakın bir yedek (Liberation, Carlito, Caladea ya da Noto Sans) kullanır ve size söyler.</p></div>
+<div><h3>Düzenlenmiş PDF başka uygulamalarda açılır mı?</h3><p>Evet. Düzenleme PDF&#x27;in kendisine yazılır; kopya Google Drive&#x27;da, Chrome&#x27;da ve diğer okuyucularda açılır.</p></div>
+<div><h3>TextLeaf ücretsiz mi? Hangi reklamlar var?</h3><p>Kullanımı ücretsizdir. Ana ekranın ve Ayarlar&#x27;ın altında bir afiş vardır; tamamlanan bir kayıttan sonra Devam&#x27;a dokunduğunuzda kısa bir tam ekran reklam oynayabilir. Tek seferlik bir satın alma reklamları kaldırır. Abonelik yoktur ve düzenleyicide reklam yoktur.</p></div>
+<div><h3>Çevrimdışı çalışır mı?</h3><p>Evet. Düzenleme için bağlantı gerekmez. Reklamlar, güncellemeler ve satın alma gerektirir.</p></div>
+<div><h3>Hangi telefonlarda çalışır? iPhone sürümü var mı?</h3><p>Android 7.0 ve üzeri, telefon ve tabletlerde. TextLeaf yalnızca Android uygulamasıdır; iPhone ya da web sürümü yoktur.</p></div>
+<div><h3>Adobe ile bağlantısı var mı?</h3><p>Hayır. Adobe ve Acrobat sahiplerinin ticari markalarıdır. TextLeaf, BumuStudios&#x27;un bağımsız bir uygulamasıdır.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>TextLeaf</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.textleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=tr"><img src="/assets/play-badge/badge-tr.png" width="646" height="250" alt="Google Play&#x27;den edinin"></a>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/textleaf/privacy/tr/">Gizlilik politikası</a><a href="/">BumuStudios uygulamaları</a><a href="mailto:bumustudios@gmail.com">İletişim: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-23">2026-11-23</time></p>
+<p>Google Play ve Google Play logosu Google LLC'nin ticari markalarıdır. Adobe ve Acrobat sahiplerinin ticari markalarıdır; TextLeaf Adobe ile bağlantılı değildir.</p>
+</footer>
+</body>
+</html>

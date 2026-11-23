@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dual Camera Front Back: Duovue</title>
+<meta name="description" content="Duovue is a dual camera app for Android: record photos and videos with the front and back camera at the same time, in picture in picture or split screen. On phones that cannot run both cameras at once it takes two shots in a row. No account, no watermark.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/duovue/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/duovue/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/duovue/tr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/duovue/">
+<link rel="icon" type="image/png" href="/duovue/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/duovue/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="Dual Camera Front Back: Duovue">
+<meta property="og:description" content="Duovue is a dual camera app for Android: record photos and videos with the front and back camera at the same time, in picture in picture or split screen. On phones that cannot run both cameras at once it takes two shots in a row. No account, no watermark.">
+<meta property="og:url" content="https://bumustudios.github.io/duovue/">
+<meta property="og:image" content="https://bumustudios.github.io/duovue/assets/icon-512.png">
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#3f6b00;--accent-soft:#e9f7c8;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#b8f03c;--accent-soft:#243311;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(20,24,34,.20)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.shots img:only-child{grid-column:1/-1;justify-self:center;max-width:280px}
+
+.shots{display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;margin:0;list-style:none}.shots li{flex:0 0 auto}.shots img{display:block;height:420px;width:auto;border-radius:14px;border:1px solid var(--line)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Duovue", "alternateName": "Dual Camera Front Back: Duovue", "operatingSystem": "Android 7.0 and later", "applicationCategory": "PhotographyApplication", "inLanguage": ["en", "tr", "es", "pt", "ar"], "description": "Duovue is a dual camera app for Android: record photos and videos with the front and back camera at the same time, in picture in picture or split screen. On phones that cannot run both cameras at once it takes two shots in a row. No account, no watermark.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "installUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.dualcam", "url": "https://bumustudios.github.io/duovue/", "image": "https://bumustudios.github.io/duovue/assets/icon-512.png", "publisher": {"@type": "Organization", "name": "BumuStudios", "url": "https://bumustudios.github.io/"}, "featureList": ["Record the front and back camera at the same time on phones that support it", "Picture in picture and split screen layouts", "Two-shot photo and two-take video fallback for other phones", "No upload, no account", "No watermark"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do I record with the front and back camera at the same time on Android?", "acceptedAnswer": {"@type": "Answer", "text": "Open Duovue, choose a layout such as picture in picture, switch to Video and tap the shutter. Both cameras record into one video. This needs a phone that supports two cameras at once."}}, {"@type": "Question", "name": "Which phones support recording both cameras at once?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the phone maker and the chip, not on the app. Many Android phones from about 2020 onwards, can open a front and a back camera together, but some phones in this group allow only photos or a lower resolution, and many older and budget phones do not allow it at all. Duovue tests your phone when you open it and shows whether live dual recording works. If it does not, you get a sequential mode: a two-shot photo or two clips one after the other."}}, {"@type": "Question", "name": "Why does my phone show a message that it cannot use both cameras?", "acceptedAnswer": {"@type": "Answer", "text": "The phone maker has not enabled the dual-camera feature in its camera software, so no app can use both cameras live on that phone. Duovue then offers the two-shot photo and two-take video modes instead of a black screen."}}, {"@type": "Question", "name": "Is there a watermark?", "acceptedAnswer": {"@type": "Answer", "text": "No. Photos and videos are saved without a watermark, and recording and saving are free."}}, {"@type": "Question", "name": "Are my photos and videos uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. Pictures, video and sound are processed on your phone and saved to your gallery. The usage counts and crash reports the app sends carry no pictures, video, sound or file names."}}, {"@type": "Question", "name": "Can I record with sound?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Duovue records the microphone sound into the video and asks for microphone permission when you first record video."}}, {"@type": "Question", "name": "Is Duovue free? What ads are there?", "acceptedAnswer": {"@type": "Answer", "text": "It is free to use. Ads are not shown while you record. A one-time purchase removes the ads. There is no subscription."}}, {"@type": "Question", "name": "Does it work offline?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Shooting and saving need no connection. Ads, updates and the purchase need one."}}, {"@type": "Question", "name": "Which phones does it run on? Is there an iPhone version?", "acceptedAnswer": {"@type": "Answer", "text": "Android 7.0 or newer, on phones. Duovue is an Android app only; there is no iPhone or web version."}}, {"@type": "Question", "name": "Is it affiliated with other dual camera apps or with phone makers?", "acceptedAnswer": {"@type": "Answer", "text": "No. Duovue is an independent app by BumuStudios. Names of phone makers are trademarks of their owners."}}]}</script>
+</head>
+<body>
+<nav class="top" aria-label="Language">
+<a class="brand" href="/duovue/"><img src="/duovue/assets/icon-192.png" width="36" height="36" alt="">Duovue</a>
+<ul class="langs">
+<li><a href="/duovue/" hreflang="en" lang="en" aria-current="page">English</a></li><li><a href="/duovue/tr/" hreflang="tr" lang="tr">Türkçe</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>Dual Camera Front Back for Android: record both cameras together</h1>
+<p class="lede">Duovue is an Android camera app that shoots with the front and the back camera of your phone at the same time. Choose picture in picture, a top and bottom split or side by side, and take a photo or record a video of the whole scene and your own reaction in one file. Live recording of both cameras needs a phone that supports using two cameras at once, which many phones from about 2020 do; other phones get a mode that takes the two shots one after the other. Everything is processed on the phone, there is no account and there is no watermark.</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.dualcam&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=en"><img src="/assets/play-badge/badge-en.png" width="646" height="250" alt="Get it on Google Play"></a>
+<p class="note">Coming to Google Play for Android 7.0 or newer. The app shows ads; a one-time purchase removes them. The Play listing opens when it is public.</p>
+</div>
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">What you get</h2>
+<ul class="facts">
+<li><b>Both cameras in one frame</b><span>Picture in picture (round or rounded square), split top and bottom, split left and right, or one camera only. Drag and resize the small picture, or tap to swap the two.</span></li>
+<li><b>Photo and video</b><span>Take a dual photo or record a dual video with sound. A pause button, a timer and the free storage time are on the recording screen.</span></li>
+<li><b>Tells you what your phone can do</b><span>Duovue checks the phone before you shoot and says clearly whether live dual recording is available or which fallback you get. No black preview.</span></li>
+<li><b>Fallback for other phones</b><span>If the phone cannot open both cameras at once, take a two-shot photo (back, then front) or record clips one after the other.</span></li>
+<li><b>Saved to your gallery</b><span>Files go to a Duovue folder in your gallery as ordinary photos and videos. Nothing is uploaded.</span></li>
+<li><b>No account, no watermark</b><span>Free with ads. One optional, one-time purchase removes them. No subscription, and no ads while you record.</span></li>
+<li><b>Private by design</b><span>Camera and microphone are used on the phone only. The app asks for no location permission.</span></li>
+<li><b>Your language</b><span>English, Turkish, Spanish, Portuguese and Arabic. It follows your phone language.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">How to record with both cameras</h2>
+<ol class="steps">
+<li>Open Duovue and allow the camera. Allow the microphone when you first record video.</li>
+<li>Pick a layout in the strip above the shutter. Drag the small picture where you want it, pinch to resize it, double tap it to swap the two cameras.</li>
+<li>Tap the shutter for a photo, or switch to Video and tap it to record. Your file appears in your gallery and in the Duovue library.</li>
+</ol>
+</section>
+
+<section aria-labelledby="limits">
+<h2 id="limits">What it can do, and what is not supported</h2>
+<h3>Works well</h3>
+<ul>
+<li>Photo and video from front and back together on phones that support two cameras at once.</li>
+<li>A sequential two-shot photo and two-take video on phones that do not.</li>
+<li>Layouts, mirror for the front camera, timer, torch and zoom where the phone allows.</li>
+</ul>
+<h3>Limits</h3>
+<ul>
+<li>Live dual video on a phone whose maker has not enabled two cameras at once. Many 2020 and newer phones can; many older and budget phones cannot. The app checks and tells you.</li>
+<li>Video resolution can be lower when both cameras run together. The phone may limit it to stay cool.</li>
+<li>Recording stops if the phone gets too hot or runs out of storage; the app saves what was recorded.</li>
+<li>Android only. There is no iPhone or web version.</li>
+</ul>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">Questions people ask</h2>
+<div class="faq">
+<div><h3>How do I record with the front and back camera at the same time on Android?</h3><p>Open Duovue, choose a layout such as picture in picture, switch to Video and tap the shutter. Both cameras record into one video. This needs a phone that supports two cameras at once.</p></div>
+<div><h3>Which phones support recording both cameras at once?</h3><p>It depends on the phone maker and the chip, not on the app. Many Android phones from about 2020 onwards, can open a front and a back camera together, but some phones in this group allow only photos or a lower resolution, and many older and budget phones do not allow it at all. Duovue tests your phone when you open it and shows whether live dual recording works. If it does not, you get a sequential mode: a two-shot photo or two clips one after the other.</p></div>
+<div><h3>Why does my phone show a message that it cannot use both cameras?</h3><p>The phone maker has not enabled the dual-camera feature in its camera software, so no app can use both cameras live on that phone. Duovue then offers the two-shot photo and two-take video modes instead of a black screen.</p></div>
+<div><h3>Is there a watermark?</h3><p>No. Photos and videos are saved without a watermark, and recording and saving are free.</p></div>
+<div><h3>Are my photos and videos uploaded?</h3><p>No. Pictures, video and sound are processed on your phone and saved to your gallery. The usage counts and crash reports the app sends carry no pictures, video, sound or file names.</p></div>
+<div><h3>Can I record with sound?</h3><p>Yes. Duovue records the microphone sound into the video and asks for microphone permission when you first record video.</p></div>
+<div><h3>Is Duovue free? What ads are there?</h3><p>It is free to use. Ads are not shown while you record. A one-time purchase removes the ads. There is no subscription.</p></div>
+<div><h3>Does it work offline?</h3><p>Yes. Shooting and saving need no connection. Ads, updates and the purchase need one.</p></div>
+<div><h3>Which phones does it run on? Is there an iPhone version?</h3><p>Android 7.0 or newer, on phones. Duovue is an Android app only; there is no iPhone or web version.</p></div>
+<div><h3>Is it affiliated with other dual camera apps or with phone makers?</h3><p>No. Duovue is an independent app by BumuStudios. Names of phone makers are trademarks of their owners.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>Duovue</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.dualcam&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=en"><img src="/assets/play-badge/badge-en.png" width="646" height="250" alt="Get it on Google Play"></a>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/duovue/privacy/">Privacy policy</a><a href="/">BumuStudios apps</a><a href="mailto:bumustudios@gmail.com">Contact: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-23">2026-11-23</time></p>
+<p>Google Play and the Google Play logo are trademarks of Google LLC. Other product names are trademarks of their owners; Duovue is not affiliated with them.</p>
+</footer>
+</body>
+</html>

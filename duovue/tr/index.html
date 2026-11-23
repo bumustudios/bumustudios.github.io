@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Çift Kamera Ön Arka: Duovue</title>
+<meta name="description" content="Duovue bir Android çift kamera uygulamasıdır: ön ve arka kameranızla aynı anda fotoğraf çekin ve video kaydedin; resim içinde resim ya da bölünmüş ekran. İki kamerayı aynı anda çalıştıramayan telefonlarda art arda iki çekim alır. Hesap yok, filigran yok.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/duovue/tr/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/duovue/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/duovue/tr/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/duovue/">
+<link rel="icon" type="image/png" href="/duovue/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/duovue/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="Çift Kamera Ön Arka: Duovue">
+<meta property="og:description" content="Duovue bir Android çift kamera uygulamasıdır: ön ve arka kameranızla aynı anda fotoğraf çekin ve video kaydedin; resim içinde resim ya da bölünmüş ekran. İki kamerayı aynı anda çalıştıramayan telefonlarda art arda iki çekim alır. Hesap yok, filigran yok.">
+<meta property="og:url" content="https://bumustudios.github.io/duovue/tr/">
+<meta property="og:image" content="https://bumustudios.github.io/duovue/assets/icon-512.png">
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#3f6b00;--accent-soft:#e9f7c8;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#b8f03c;--accent-soft:#243311;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(20,24,34,.20)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.shots img:only-child{grid-column:1/-1;justify-self:center;max-width:280px}
+
+.shots{display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;margin:0;list-style:none}.shots li{flex:0 0 auto}.shots img{display:block;height:420px;width:auto;border-radius:14px;border:1px solid var(--line)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Duovue", "alternateName": "Çift Kamera Ön Arka: Duovue", "operatingSystem": "Android 7.0 and later", "applicationCategory": "PhotographyApplication", "inLanguage": ["en", "tr", "es", "pt", "ar"], "description": "Duovue bir Android çift kamera uygulamasıdır: ön ve arka kameranızla aynı anda fotoğraf çekin ve video kaydedin; resim içinde resim ya da bölünmüş ekran. İki kamerayı aynı anda çalıştıramayan telefonlarda art arda iki çekim alır. Hesap yok, filigran yok.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "installUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.dualcam", "url": "https://bumustudios.github.io/duovue/tr/", "image": "https://bumustudios.github.io/duovue/assets/icon-512.png", "publisher": {"@type": "Organization", "name": "BumuStudios", "url": "https://bumustudios.github.io/"}, "featureList": ["Destekleyen telefonlarda ön ve arka kamerayı aynı anda kaydetme", "Resim içinde resim ve bölünmüş ekran yerleşimleri", "Diğer telefonlar için iki çekimli fotoğraf ve video yedeği", "Yükleme yok, hesap yok", "Filigran yok"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Android'de ön ve arka kamerayla aynı anda nasıl kayıt yapılır?", "acceptedAnswer": {"@type": "Answer", "text": "Duovue'yu açın, resim içinde resim gibi bir yerleşim seçin, Video'ya geçin ve deklanşöre dokunun. İki kamera tek videoya kaydeder. Bunun için iki kamerayı aynı anda destekleyen bir telefon gerekir."}}, {"@type": "Question", "name": "Hangi telefonlar iki kameranın aynı anda kaydını destekler?", "acceptedAnswer": {"@type": "Answer", "text": "Bu, uygulamaya değil telefon üreticisine ve işlemciye bağlıdır. Yaklaşık 2020 sonrası pek çok Android telefon, ön ve arka kamerayı birlikte açabilir; ancak bu gruptaki bazı telefonlar yalnızca fotoğrafa ya da daha düşük çözünürlüğe izin verir, daha eski ve ekonomik pek çok telefon ise hiç izin vermez. Duovue açıldığında telefonunuzu dener ve canlı çift kaydın çalışıp çalışmadığını gösterir. Çalışmıyorsa sıralı bir mod alırsınız: iki çekimli fotoğraf ya da art arda iki klip."}}, {"@type": "Question", "name": "Telefonum neden iki kamerayı kullanamadığını söylüyor?", "acceptedAnswer": {"@type": "Answer", "text": "Telefon üreticisi kamera yazılımında çift kamera özelliğini etkinleştirmemiştir; bu yüzden hiçbir uygulama o telefonda iki kamerayı canlı kullanamaz. Duovue, siyah ekran yerine iki çekimli fotoğraf ve iki çekimli video modlarını sunar."}}, {"@type": "Question", "name": "Filigran var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Fotoğraflar ve videolar filigransız kaydedilir; kayıt ve saklama ücretsizdir."}}, {"@type": "Question", "name": "Fotoğraflarım ve videolarım yükleniyor mu?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Görüntü, video ve ses telefonunuzda işlenir ve galerinize kaydedilir. Uygulamanın gönderdiği kullanım sayıları ve çökme raporları görüntü, video, ses ya da dosya adı taşımaz."}}, {"@type": "Question", "name": "Sesli kayıt yapabilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Duovue mikrofon sesini videoya kaydeder ve videoyu ilk kaydettiğinizde mikrofon izni ister."}}, {"@type": "Question", "name": "Duovue ücretsiz mi? Hangi reklamlar var?", "acceptedAnswer": {"@type": "Answer", "text": "Kullanımı ücretsizdir. Kayıt sırasında reklam gösterilmez. Tek seferlik bir satın alma reklamları kaldırır. Abonelik yoktur."}}, {"@type": "Question", "name": "Çevrimdışı çalışır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Çekim ve kaydetme bağlantı istemez. Reklamlar, güncellemeler ve satın alma ister."}}, {"@type": "Question", "name": "Hangi telefonlarda çalışır? iPhone sürümü var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Telefonlarda Android 7.0 ve üzeri. Duovue yalnızca Android uygulamasıdır; iPhone ya da web sürümü yoktur."}}, {"@type": "Question", "name": "Başka çift kamera uygulamalarıyla ya da telefon üreticileriyle bağlantılı mı?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Duovue, BumuStudios'un bağımsız bir uygulamasıdır. Telefon üreticilerinin adları sahiplerinin ticari markalarıdır."}}]}</script>
+</head>
+<body>
+<nav class="top" aria-label="Language">
+<a class="brand" href="/duovue/tr/"><img src="/duovue/assets/icon-192.png" width="36" height="36" alt="">Duovue</a>
+<ul class="langs">
+<li><a href="/duovue/" hreflang="en" lang="en">English</a></li><li><a href="/duovue/tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>Android için Çift Kamera Ön Arka: iki kamerayı birlikte kaydedin</h1>
+<p class="lede">Duovue, telefonunuzun ön ve arka kamerasıyla aynı anda çeken bir Android kamera uygulamasıdır. Resim içinde resim, alt alta bölme ya da yan yana yerleşimini seçin; ortamı ve kendi tepkinizi tek dosyada fotoğraf olarak çekin ya da video olarak kaydedin. İki kameranın canlı kaydı, iki kamerayı aynı anda kullanmayı destekleyen bir telefon ister; yaklaşık 2020 sonrası pek çok telefon destekler. Diğer telefonlar için iki çekimi art arda alan bir mod vardır. Her şey telefonda işlenir, hesap gerekmez ve filigran yoktur.</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.dualcam&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=tr"><img src="/assets/play-badge/badge-tr.png" width="646" height="250" alt="Google Play&#x27;den edinin"></a>
+<p class="note">Android 7.0 ve üzeri için Google Play'e geliyor. Uygulama reklam gösterir; tek seferlik bir satın alma reklamları kaldırır. Play sayfası herkese açıldığında açılır.</p>
+</div>
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">Neler sunuyor</h2>
+<ul class="facts">
+<li><b>Tek karede iki kamera</b><span>Resim içinde resim (yuvarlak ya da yuvarlatılmış kare), alt alta bölme, yan yana bölme ya da tek kamera. Küçük görüntüyü sürükleyip boyutlandırın ya da dokunarak iki kamerayı değiştirin.</span></li>
+<li><b>Fotoğraf ve video</b><span>Çift fotoğraf çekin ya da sesli çift video kaydedin. Kayıt ekranında duraklatma düğmesi, zamanlayıcı ve kalan depolama süresi bulunur.</span></li>
+<li><b>Telefonunuzun neyi yapabildiğini söyler</b><span>Duovue çekimden önce telefonu denetler ve canlı çift kaydın mümkün olup olmadığını ya da hangi yedek modu alacağınızı açıkça söyler. Siyah önizleme yok.</span></li>
+<li><b>Diğer telefonlar için yedek mod</b><span>Telefon iki kamerayı aynı anda açamıyorsa iki çekimli fotoğraf (önce arka, sonra ön) çekin ya da klipleri art arda kaydedin.</span></li>
+<li><b>Galerinize kaydedilir</b><span>Dosyalar galerinizde Duovue klasörüne sıradan fotoğraf ve video olarak gider. Hiçbir şey yüklenmez.</span></li>
+<li><b>Hesap yok, filigran yok</b><span>Reklamlarla ücretsiz. İsteğe bağlı tek seferlik bir satın alma reklamları kaldırır. Abonelik yok ve kayıt sırasında reklam yok.</span></li>
+<li><b>Tasarım gereği özel</b><span>Kamera ve mikrofon yalnızca telefonda kullanılır. Uygulama konum izni istemez.</span></li>
+<li><b>Diliniz</b><span>İngilizce, Türkçe, İspanyolca, Portekizce ve Arapça. Telefonunuzun dilini izler.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">İki kamerayla nasıl kayıt yapılır</h2>
+<ol class="steps">
+<li>Duovue'yu açın ve kameraya izin verin. Videoyu ilk kaydettiğinizde mikrofona izin verin.</li>
+<li>Deklanşörün üstündeki şeritten bir yerleşim seçin. Küçük görüntüyü istediğiniz yere sürükleyin, sıkıştırarak boyutlandırın, iki kez dokunarak iki kamerayı değiştirin.</li>
+<li>Fotoğraf için deklanşöre dokunun ya da Video'ya geçip kayıt için dokunun. Dosyanız galerinizde ve Duovue kitaplığında görünür.</li>
+</ol>
+</section>
+
+<section aria-labelledby="limits">
+<h2 id="limits">Neler yapabilir, nelerin desteği yok</h2>
+<h3>İyi çalışır</h3>
+<ul>
+<li>İki kamerayı aynı anda destekleyen telefonlarda ön ve arkadan birlikte fotoğraf ve video.</li>
+<li>Desteklemeyen telefonlarda sıralı iki çekimli fotoğraf ve iki çekimli video.</li>
+<li>Telefonun izin verdiği ölçüde yerleşimler, ön kamera için ayna, zamanlayıcı, fener ve yakınlaştırma.</li>
+</ul>
+<h3>Sınırlar</h3>
+<ul>
+<li>Üreticisinin iki kamerayı aynı anda etkinleştirmediği telefonda canlı çift video. 2020 ve sonrası pek çok telefon yapabilir; daha eski ve ekonomik pek çok telefon yapamaz. Uygulama denetler ve size söyler.</li>
+<li>İki kamera birlikte çalışırken video çözünürlüğü daha düşük olabilir. Telefon serin kalmak için sınırlayabilir.</li>
+<li>Telefon çok ısınırsa ya da depolama dolarsa kayıt durur; uygulama o ana kadar kaydedileni saklar.</li>
+<li>Yalnızca Android. iPhone ya da web sürümü yoktur.</li>
+</ul>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">Sık sorulan sorular</h2>
+<div class="faq">
+<div><h3>Android'de ön ve arka kamerayla aynı anda nasıl kayıt yapılır?</h3><p>Duovue'yu açın, resim içinde resim gibi bir yerleşim seçin, Video'ya geçin ve deklanşöre dokunun. İki kamera tek videoya kaydeder. Bunun için iki kamerayı aynı anda destekleyen bir telefon gerekir.</p></div>
+<div><h3>Hangi telefonlar iki kameranın aynı anda kaydını destekler?</h3><p>Bu, uygulamaya değil telefon üreticisine ve işlemciye bağlıdır. Yaklaşık 2020 sonrası pek çok Android telefon, ön ve arka kamerayı birlikte açabilir; ancak bu gruptaki bazı telefonlar yalnızca fotoğrafa ya da daha düşük çözünürlüğe izin verir, daha eski ve ekonomik pek çok telefon ise hiç izin vermez. Duovue açıldığında telefonunuzu dener ve canlı çift kaydın çalışıp çalışmadığını gösterir. Çalışmıyorsa sıralı bir mod alırsınız: iki çekimli fotoğraf ya da art arda iki klip.</p></div>
+<div><h3>Telefonum neden iki kamerayı kullanamadığını söylüyor?</h3><p>Telefon üreticisi kamera yazılımında çift kamera özelliğini etkinleştirmemiştir; bu yüzden hiçbir uygulama o telefonda iki kamerayı canlı kullanamaz. Duovue, siyah ekran yerine iki çekimli fotoğraf ve iki çekimli video modlarını sunar.</p></div>
+<div><h3>Filigran var mı?</h3><p>Hayır. Fotoğraflar ve videolar filigransız kaydedilir; kayıt ve saklama ücretsizdir.</p></div>
+<div><h3>Fotoğraflarım ve videolarım yükleniyor mu?</h3><p>Hayır. Görüntü, video ve ses telefonunuzda işlenir ve galerinize kaydedilir. Uygulamanın gönderdiği kullanım sayıları ve çökme raporları görüntü, video, ses ya da dosya adı taşımaz.</p></div>
+<div><h3>Sesli kayıt yapabilir miyim?</h3><p>Evet. Duovue mikrofon sesini videoya kaydeder ve videoyu ilk kaydettiğinizde mikrofon izni ister.</p></div>
+<div><h3>Duovue ücretsiz mi? Hangi reklamlar var?</h3><p>Kullanımı ücretsizdir. Kayıt sırasında reklam gösterilmez. Tek seferlik bir satın alma reklamları kaldırır. Abonelik yoktur.</p></div>
+<div><h3>Çevrimdışı çalışır mı?</h3><p>Evet. Çekim ve kaydetme bağlantı istemez. Reklamlar, güncellemeler ve satın alma ister.</p></div>
+<div><h3>Hangi telefonlarda çalışır? iPhone sürümü var mı?</h3><p>Telefonlarda Android 7.0 ve üzeri. Duovue yalnızca Android uygulamasıdır; iPhone ya da web sürümü yoktur.</p></div>
+<div><h3>Başka çift kamera uygulamalarıyla ya da telefon üreticileriyle bağlantılı mı?</h3><p>Hayır. Duovue, BumuStudios'un bağımsız bir uygulamasıdır. Telefon üreticilerinin adları sahiplerinin ticari markalarıdır.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>Duovue</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.dualcam&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=tr"><img src="/assets/play-badge/badge-tr.png" width="646" height="250" alt="Google Play&#x27;den edinin"></a>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/duovue/privacy/tr/">Gizlilik politikası</a><a href="/">BumuStudios uygulamaları</a><a href="mailto:bumustudios@gmail.com">İletişim: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-23">2026-11-23</time></p>
+<p>Google Play ve Google Play logosu Google LLC'nin ticari markalarıdır. Diğer ürün adları sahiplerinin ticari markalarıdır; Duovue onlarla bağlantılı değildir.</p>
+</footer>
+</body>
+</html>

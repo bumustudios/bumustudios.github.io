@@ -282,6 +282,29 @@ Pages:
 - Same page in [Türkçe](https://bumustudios.github.io/textleaf/tr/)
 - [TextLeaf privacy policy](https://bumustudios.github.io/textleaf/privacy/)
 
+## Duovue
+
+Duovue (Dual Camera Front Back: Duovue) is an Android camera app that records photos and videos with the front and the back camera at the same time, in picture in picture or split screen layouts. Coming to Google Play; the listing is not public yet.
+
+- Live recording of both cameras needs a phone that supports using two cameras at once (many phones from about 2020 do; many older and budget phones do not). The app checks the phone and says so. On other phones it takes a two-shot photo (back, then front) or records two clips one after the other.
+- Layouts: round or rounded-square picture in picture, split top and bottom, split left and right, one camera. Dual photo and dual video with sound, mirror for the front camera, timer, torch, zoom.
+- No account, no watermark. Pictures, video and sound are processed on the phone and saved to the user's gallery; nothing is uploaded.
+- Free with ads, none while recording. An optional one-time purchase removes the ads. No subscription.
+- Requires Android 7.0 or newer. Android only. The app's screens are in English, Turkish, Spanish, Portuguese and Arabic.
+- Google Play: https://play.google.com/store/apps/details?id=com.bumustudios.dualcam
+
+Common questions:
+
+- Q: Which phones support recording both cameras at once? A: It depends on the phone maker and chip: many Android phones from about 2020 onwards can, many older and budget phones cannot. Duovue tests the phone and offers a sequential mode where live dual recording is not possible.
+- Q: Is there a watermark? A: No.
+- Q: Are my photos and videos uploaded? A: No. They are saved to the gallery on the phone.
+
+Pages:
+
+- [Duovue: dual camera front and back for Android, features, how-to and FAQ (English)](https://bumustudios.github.io/duovue/)
+- Same page in [Türkçe](https://bumustudios.github.io/duovue/tr/)
+- [Duovue privacy policy](https://bumustudios.github.io/duovue/privacy/)
+
 ## Contact
 
 - bumustudios@gmail.com

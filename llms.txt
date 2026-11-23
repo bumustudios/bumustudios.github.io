@@ -255,7 +255,7 @@ Common questions:
 Pages:
 
 - [DocLeaf: PDF to Word converter for Android, features, how-to and FAQ (English)](https://bumustudios.github.io/docleaf/)
-- Same page in [Türkçe](https://bumustudios.github.io/docleaf/tr/)
+- Same page in [Türkçe](https://bumustudios.github.io/docleaf/tr/), [Español](https://bumustudios.github.io/docleaf/es/), [Português](https://bumustudios.github.io/docleaf/pt/), [العربية](https://bumustudios.github.io/docleaf/ar/)
 - [DocLeaf privacy policy](https://bumustudios.github.io/docleaf/privacy/)
 
 ## Contact

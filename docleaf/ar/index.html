@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تحويل PDF إلى Word على أندرويد دون رفع الملف: DocLeaf</title>
+<meta name="description" content="يحوّل DocLeaf ملفات PDF إلى مستندات Word (‎.docx) قابلة للتعديل على هاتفك الأندرويد. جداول Word حقيقية وصور وOCR داخل الجهاز للصفحات الممسوحة ضوئيًا. لا يُرفع ملف PDF أبدًا.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://bumustudios.github.io/docleaf/ar/">
+<link rel="alternate" hreflang="en" href="https://bumustudios.github.io/docleaf/">
+<link rel="alternate" hreflang="tr" href="https://bumustudios.github.io/docleaf/tr/">
+<link rel="alternate" hreflang="es" href="https://bumustudios.github.io/docleaf/es/">
+<link rel="alternate" hreflang="pt" href="https://bumustudios.github.io/docleaf/pt/">
+<link rel="alternate" hreflang="ar" href="https://bumustudios.github.io/docleaf/ar/">
+<link rel="alternate" hreflang="x-default" href="https://bumustudios.github.io/docleaf/">
+<link rel="icon" type="image/png" href="/docleaf/assets/icon-192.png">
+<link rel="apple-touch-icon" href="/docleaf/assets/icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BumuStudios">
+<meta property="og:title" content="تحويل PDF إلى Word على أندرويد دون رفع الملف: DocLeaf">
+<meta property="og:description" content="يحوّل DocLeaf ملفات PDF إلى مستندات Word (‎.docx) قابلة للتعديل على هاتفك الأندرويد. جداول Word حقيقية وصور وOCR داخل الجهاز للصفحات الممسوحة ضوئيًا. لا يُرفع ملف PDF أبدًا.">
+<meta property="og:url" content="https://bumustudios.github.io/docleaf/ar/">
+<meta property="og:image" content="https://bumustudios.github.io/docleaf/assets/icon-512.png">
+<style>
+:root{--bg:#f6f6fb;--surface:#fff;--ink:#17172b;--ink-2:#53566c;--line:#e2e2ee;--accent:#0e6b67;--accent-soft:#d3eeea;--ok:#0f7a55}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0f1a;--surface:#191928;--ink:#ececf6;--ink-2:#a7a9c1;--line:#2b2b42;--accent:#7fd6cf;--accent-soft:#163533;--ok:#5fd3a5}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;padding:0 16px 64px;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Devanagari","Noto Sans Arabic",sans-serif;-webkit-font-smoothing:antialiased}
+main,.top,footer{max-width:760px;margin:0 auto}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:16px 0 8px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+.langs{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:2px 12px;font-size:14px}
+.langs a{text-decoration:none;color:var(--ink-2)}.langs a:hover{text-decoration:underline}
+.langs [aria-current]{color:var(--ink);font-weight:700}
+.hero{display:grid;gap:24px;padding:24px 0 8px;align-items:center}
+h1{font-size:clamp(28px,6.4vw,42px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px}
+.lede{font-size:18px;color:var(--ink-2);margin:0 0 20px}
+.badge{display:inline-block;line-height:0}.badge img{height:72px;width:auto;margin-inline-start:-10px}
+.note{font-size:14px;color:var(--ink-2);margin:6px 0 0}
+.phone{justify-self:center;width:min(280px,72vw);height:auto;border-radius:22px;box-shadow:0 12px 40px rgba(14,107,103,.20)}
+h2{font-size:clamp(22px,4.6vw,28px);line-height:1.25;letter-spacing:-.01em;margin:48px 0 16px}
+.facts{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.facts li{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.facts b{display:block;font-size:17px;margin-bottom:2px}
+.facts b::before{content:"\2713";color:var(--ok);margin-inline-end:8px}
+.facts span{color:var(--ink-2);font-size:15.5px}
+ol.steps{counter-reset:s;list-style:none;margin:0 0 20px;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding-inline-start:44px;margin-bottom:14px}
+ol.steps li::before{content:counter(s);position:absolute;inset-inline-start:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;display:grid;place-items:center;font-size:15px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 0}
+.shots img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.faq{border-top:1px solid var(--line)}
+.faq div{border-bottom:1px solid var(--line);padding:4px 0 6px}
+.faq h3{font-size:17.5px;line-height:1.35;margin:14px 0 6px}
+.faq p{margin:0 0 10px;color:var(--ink-2)}
+.cta{margin-top:40px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 20px 16px;text-align:center}
+.cta p{margin:0 0 8px;font-weight:600}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+footer p{margin:0 0 8px}
+footer .links{display:flex;flex-wrap:wrap;gap:4px 18px}
+@media (min-width:760px){.hero{grid-template-columns:1.25fr 1fr}.facts{grid-template-columns:1fr 1fr}.shots{max-width:560px}}
+.shots img:only-child{grid-column:1/-1;justify-self:center;max-width:280px}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "DocLeaf", "alternateName": "محوّل PDF إلى Word: DocLeaf", "operatingSystem": "Android 7.0 وما بعده", "applicationCategory": "UtilitiesApplication", "inLanguage": ["en", "tr", "es", "pt", "ar"], "description": "DocLeaf تطبيق أندرويد يحوّل ملفات PDF إلى مستندات Word (‎.docx) قابلة للتعديل على الهاتف، مع جداول Word حقيقية وصور وOCR داخل الجهاز للصفحات الممسوحة ضوئيًا. لا يُرفع ملف PDF.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "downloadUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.docleaf", "installUrl": "https://play.google.com/store/apps/details?id=com.bumustudios.docleaf", "url": "https://bumustudios.github.io/docleaf/ar/", "image": "https://bumustudios.github.io/docleaf/assets/icon-512.png", "publisher": {"@type": "Organization", "name": "BumuStudios", "url": "https://bumustudios.github.io/"}, "featureList": ["PDF إلى Word (‎.docx) على الهاتف", "جداول Word حقيقية", "OCR داخل الجهاز للصفحات الممسوحة ضوئيًا", "دون رفع الملفات ودون حساب", "دون علامة مائية ودون حد للصفحات يضعه التطبيق"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ar", "mainEntity": [{"@type": "Question", "name": "كيف أحوّل PDF إلى Word على أندرويد دون رفعه؟", "acceptedAnswer": {"@type": "Answer", "text": "ثبّت DocLeaf، واختر ملف PDF، ثم اضغط تحويل إلى Word. يعمل التحويل على هاتفك، لذا لا يُرفع الملف أبدًا ولا تحتاج إلى حساب."}}, {"@type": "Question", "name": "أي تطبيق يحافظ على الجداول عند تحويل PDF إلى Word؟", "acceptedAnswer": {"@type": "Answer", "text": "يعيد DocLeaf بناء الجداول كجداول Word حقيقية، مع الخلايا المدمجة والحدود والتظليل. تُسطَّح الجداول المتداخلة إلى مستوى واحد، وقد تحتاج التصاميم المعقدة إلى لمسات في Word."}}, {"@type": "Question", "name": "هل يمكنني تحويل PDF ممسوح ضوئيًا إلى Word قابل للتعديل على هاتفي؟", "acceptedAnswer": {"@type": "Answer", "text": "نعم. تُقرأ الصفحات التي هي صور على الهاتف بتقنية OCR من Google ML Kit وتُعاد بناؤها كنص وجداول Word. يقرأ الأنظمة الكتابية اللاتينية والصينية واليابانية والكورية والديفاناغاري؛ أما المسح بالعربية والعبرية والسيريلية واليونانية والتايلاندية فغير مدعوم بعد."}}, {"@type": "Question", "name": "هل يعمل دون اتصال بالإنترنت؟", "acceptedAnswer": {"@type": "Answer", "text": "تُحوَّل ملفات PDF النصية دون اتصال. تحتاج الصفحات الممسوحة إلى نموذج تعرف صغير، تنزّله خدمات Google Play مرة واحدة عند استخدام نظام كتابي لأول مرة."}}, {"@type": "Question", "name": "هل هناك حد للصفحات أو علامة مائية؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. لا يضيف التطبيق علامة مائية ولا يحدد عددًا أقصى للصفحات. قد يتجاوز ملف PDF كبير جدًا ذاكرة هاتف قديم؛ حوّل نطاقًا من الصفحات بدلًا من ذلك."}}, {"@type": "Question", "name": "هل DocLeaf مجاني؟ ما الإعلانات التي يعرضها؟", "acceptedAnswer": {"@type": "Answer", "text": "الاستخدام مجاني. يظهر شريط إعلاني أسفل الرئيسية والسجل والإعدادات، ويُعرض إعلان قصير بملء الشاشة بعد التحويل عند الضغط على متابعة. عملية شراء لمرة واحدة تزيل الإعلانات. لا يوجد اشتراك."}}, {"@type": "Question", "name": "هل يفتح ملفات PDF المحمية بكلمة مرور؟", "acceptedAnswer": {"@type": "Answer", "text": "ليس بعد. أزل كلمة المرور في التطبيق الذي أنشأ الملف ثم حوّله."}}, {"@type": "Question", "name": "أين تُحفظ ملفاتي؟ وهل لها نسخة احتياطية؟", "acceptedAnswer": {"@type": "Answer", "text": "يُنسخ ملف PDF إلى مجلد مؤقت خاص أثناء التحويل فقط ثم يُحذف. يُحفظ ملف Word في Documents/DocLeaf أو في المكان الذي تختاره عبر حفظ باسم. التطبيق مستثنى من النسخ الاحتياطي السحابي في أندرويد ومن النقل من هاتف إلى هاتف."}}, {"@type": "Question", "name": "على أي هواتف يعمل؟ وهل توجد نسخة للآيفون؟", "acceptedAnswer": {"@type": "Answer", "text": "على أندرويد 7.0 أو أحدث، في الهواتف والأجهزة اللوحية. DocLeaf تطبيق أندرويد فقط؛ لا توجد نسخة للآيفون ولا نسخة ويب."}}, {"@type": "Question", "name": "بأي لغات التطبيق؟", "acceptedAnswer": {"@type": "Answer", "text": "العربية والإنجليزية والتركية والإسبانية والبرتغالية. يتبع لغة هاتفك، ويمكنك تغييرها من الإعدادات."}}, {"@type": "Question", "name": "هل هو تابع لـ Microsoft؟", "acceptedAnswer": {"@type": "Answer", "text": "لا. Word علامة تجارية لشركة Microsoft Corporation. يكتب DocLeaf ملفات ‎.docx قياسية تُفتح في Word وفي محررات أخرى."}}]}</script>
+</head>
+<body>
+<nav class="top" aria-label="اللغة">
+<a class="brand" href="/docleaf/"><img src="/docleaf/assets/icon-192.png" width="36" height="36" alt="">DocLeaf</a>
+<ul class="langs">
+<li><a href="/docleaf/" hreflang="en" lang="en">English</a></li><li><a href="/docleaf/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/docleaf/es/" hreflang="es" lang="es">Español</a></li><li><a href="/docleaf/pt/" hreflang="pt" lang="pt">Português</a></li><li><a href="/docleaf/ar/" hreflang="ar" lang="ar" aria-current="page">العربية</a></li>
+</ul>
+</nav>
+<main id="main">
+<section class="hero">
+<div>
+<h1>حوّل PDF إلى Word على أندرويد دون رفع الملف</h1>
+<p class="lede">DocLeaf تطبيق أندرويد يحوّل ملفات PDF إلى مستندات Word (‎.docx) قابلة للتعديل على هاتفك. يبقى النص نصًا، وتصبح الجداول جداول Word حقيقية، وتبقى الصور في أماكنها، وتُقرأ الصفحات الممسوحة ضوئيًا بالتعرف على النص (OCR) داخل الجهاز. تتم معالجة ملف PDF على الهاتف ولا يُرفع أبدًا. لا حاجة إلى حساب.</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.docleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=ar"><img src="/assets/play-badge/badge-ar.png" width="646" height="250" alt="احصل عليه من Google Play"></a>
+<p class="note">الاستخدام مجاني على Google Play لأندرويد 7.0 أو أحدث. يعرض التطبيق إعلانات، وتزيلها عملية شراء لمرة واحدة. في اختبار مغلق: ستُفتح صفحة Play عندما تصبح عامة.</p>
+</div>
+</section>
+
+<section aria-labelledby="facts">
+<h2 id="facts">ما الذي تحصل عليه</h2>
+<ul class="facts">
+<li><b>جداول Word حقيقية</b><span>تُعاد بناء الجداول كجداول Word حقيقية، مع الخلايا المدمجة والحدود والتظليل، وليس كصور أو نص مفصول بعلامات جدولة.</span></li>
+<li><b>يبقى النص نصًا</b><span>تُنقل العناوين والقوائم النقطية والمرقمة وروابط الويب والأعمدة والرؤوس والتذييلات والنص من اليمين إلى اليسار مثل العربية والعبرية.</span></li>
+<li><b>الصور في أماكنها</b><span>تبقى الصور في مكانها في ملف PDF بحجمها وقصها وشفافيتها.</span></li>
+<li><b>ملفات PDF الممسوحة ضوئيًا</b><span>تُقرأ الصفحات التي هي صور على الهاتف بتقنية OCR من Google ML Kit: الأنظمة الكتابية اللاتينية والصينية واليابانية والكورية والديفاناغاري.</span></li>
+<li><b>لا يُرفع أي شيء</b><span>يعمل التحويل على الهاتف. لا يُرسل ملف PDF ولا ملف Word إلى أي مكان، ولا يطلب التطبيق إذن التخزين.</span></li>
+<li><b>يعمل دون اتصال بالإنترنت</b><span>تُحوَّل ملفات PDF النصية دون اتصال. تحتاج الصفحات الممسوحة إلى تنزيل نموذج تعرف صغير لمرة واحدة عبر خدمات Google Play.</span></li>
+<li><b>دون علامة مائية ودون حد للصفحات</b><span>لا يضع التطبيق أي ختم على ملف Word ولا يحدد عددًا أقصى للصفحات. اختر كل الصفحات أو نطاقًا مثل 1-5, 9.</span></li>
+<li><b>دون حساب ودون اشتراك</b><span>مجاني مع الإعلانات: شريط إعلاني وإعلان قصير بعد كل تحويل. عملية شراء اختيارية لمرة واحدة تزيلها.</span></li>
+</ul>
+</section>
+
+<section aria-labelledby="how">
+<h2 id="how">كيف تحوّل PDF إلى Word</h2>
+<ol class="steps">
+<li>افتح DocLeaf واضغط <b>اختيار ملف PDF</b>، أو شارك ملف PDF مع DocLeaf من أي تطبيق.</li>
+<li>اختر <b>كل الصفحات</b> أو <b>نطاق</b>، ثم تخطيطًا: <b>الحفاظ على التخطيط</b> يتبع الصفحة، و<b>نص متدفق</b> يعيد ترتيب الكلمات ويسهل تعديله. اترك <b>الصفحات الممسوحة (OCR)</b> على <b>تلقائي</b>.</li>
+<li>اضغط <b>تحويل إلى Word</b>. يعرض إشعار التقدم وزر إلغاء، ويمكنك مغادرة التطبيق أثناء التحويل.</li>
+<li>اضغط <b>متابعة</b> بعد الإعلان القصير، ثم <b>فتح</b> أو <b>مشاركة</b> أو <b>حفظ باسم</b>. يوجد الملف في <i><bdi>Documents/DocLeaf</bdi></i> ويعرضه السجل.</li>
+</ol>
+</section>
+
+<section aria-labelledby="limits">
+<h2 id="limits">ما الذي يُحوَّل جيدًا وما الذي لا يُدعم بعد</h2>
+<h3>يُحوَّل جيدًا</h3>
+<ul>
+<li>ملفات PDF النصية: العقود والتقارير والأبحاث والفواتير والرسائل.</li>
+<li>جداول بخطوط أو بتظليل متناوب أو بدونهما، وجداول تمتد عبر عدة صفحات.</li>
+<li>نص بعمودين، وعناوين وقوائم، وروابط، ورؤوس وتذييلات.</li>
+<li>صفحات ممسوحة ضوئيًا بالأنظمة الكتابية اللاتينية والصينية واليابانية والكورية والديفاناغاري.</li>
+</ul>
+<h3>غير مدعوم بعد</h3>
+<ul>
+<li>ملفات PDF المحمية بكلمة مرور: أزل كلمة المرور أولًا.</li>
+<li>المسح الضوئي بالعربية أو العبرية أو السيريلية أو اليونانية أو التايلاندية.</li>
+<li>الجداول المتداخلة: تُسطَّح إلى مستوى واحد.</li>
+<li>الروابط التي تنتقل داخل المستند. روابط الويب تعمل.</li>
+<li>قد تتجاوز ملفات PDF الكبيرة جدًا ذاكرة هاتف قديم: حوّل نطاقًا من الصفحات بدلًا من ذلك.</li>
+<li>قد تحتاج التصاميم المعقدة إلى لمسات في Word. راجع النتيجة قبل الاعتماد عليها.</li>
+</ul>
+</section>
+
+<section aria-labelledby="faq">
+<h2 id="faq">أسئلة يطرحها المستخدمون</h2>
+<div class="faq">
+<div><h3>كيف أحوّل PDF إلى Word على أندرويد دون رفعه؟</h3><p>ثبّت DocLeaf، واختر ملف PDF، ثم اضغط تحويل إلى Word. يعمل التحويل على هاتفك، لذا لا يُرفع الملف أبدًا ولا تحتاج إلى حساب.</p></div>
+<div><h3>أي تطبيق يحافظ على الجداول عند تحويل PDF إلى Word؟</h3><p>يعيد DocLeaf بناء الجداول كجداول Word حقيقية، مع الخلايا المدمجة والحدود والتظليل. تُسطَّح الجداول المتداخلة إلى مستوى واحد، وقد تحتاج التصاميم المعقدة إلى لمسات في Word.</p></div>
+<div><h3>هل يمكنني تحويل PDF ممسوح ضوئيًا إلى Word قابل للتعديل على هاتفي؟</h3><p>نعم. تُقرأ الصفحات التي هي صور على الهاتف بتقنية OCR من Google ML Kit وتُعاد بناؤها كنص وجداول Word. يقرأ الأنظمة الكتابية اللاتينية والصينية واليابانية والكورية والديفاناغاري؛ أما المسح بالعربية والعبرية والسيريلية واليونانية والتايلاندية فغير مدعوم بعد.</p></div>
+<div><h3>هل يعمل دون اتصال بالإنترنت؟</h3><p>تُحوَّل ملفات PDF النصية دون اتصال. تحتاج الصفحات الممسوحة إلى نموذج تعرف صغير، تنزّله خدمات Google Play مرة واحدة عند استخدام نظام كتابي لأول مرة.</p></div>
+<div><h3>هل هناك حد للصفحات أو علامة مائية؟</h3><p>لا. لا يضيف التطبيق علامة مائية ولا يحدد عددًا أقصى للصفحات. قد يتجاوز ملف PDF كبير جدًا ذاكرة هاتف قديم؛ حوّل نطاقًا من الصفحات بدلًا من ذلك.</p></div>
+<div><h3>هل DocLeaf مجاني؟ ما الإعلانات التي يعرضها؟</h3><p>الاستخدام مجاني. يظهر شريط إعلاني أسفل الرئيسية والسجل والإعدادات، ويُعرض إعلان قصير بملء الشاشة بعد التحويل عند الضغط على متابعة. عملية شراء لمرة واحدة تزيل الإعلانات. لا يوجد اشتراك.</p></div>
+<div><h3>هل يفتح ملفات PDF المحمية بكلمة مرور؟</h3><p>ليس بعد. أزل كلمة المرور في التطبيق الذي أنشأ الملف ثم حوّله.</p></div>
+<div><h3>أين تُحفظ ملفاتي؟ وهل لها نسخة احتياطية؟</h3><p>يُنسخ ملف PDF إلى مجلد مؤقت خاص أثناء التحويل فقط ثم يُحذف. يُحفظ ملف Word في Documents/DocLeaf أو في المكان الذي تختاره عبر حفظ باسم. التطبيق مستثنى من النسخ الاحتياطي السحابي في أندرويد ومن النقل من هاتف إلى هاتف.</p></div>
+<div><h3>على أي هواتف يعمل؟ وهل توجد نسخة للآيفون؟</h3><p>على أندرويد 7.0 أو أحدث، في الهواتف والأجهزة اللوحية. DocLeaf تطبيق أندرويد فقط؛ لا توجد نسخة للآيفون ولا نسخة ويب.</p></div>
+<div><h3>بأي لغات التطبيق؟</h3><p>العربية والإنجليزية والتركية والإسبانية والبرتغالية. يتبع لغة هاتفك، ويمكنك تغييرها من الإعدادات.</p></div>
+<div><h3>هل هو تابع لـ Microsoft؟</h3><p>لا. Word علامة تجارية لشركة Microsoft Corporation. يكتب DocLeaf ملفات ‎.docx قياسية تُفتح في Word وفي محررات أخرى.</p></div>
+</div>
+</section>
+
+<div class="cta">
+<p>DocLeaf</p>
+<a class="badge" href="https://play.google.com/store/apps/details?id=com.bumustudios.docleaf&amp;utm_source=bumustudios_site&amp;utm_medium=web&amp;utm_campaign=landing&amp;utm_content=ar"><img src="/assets/play-badge/badge-ar.png" width="646" height="250" alt="احصل عليه من Google Play"></a>
+</div>
+</main>
+<footer>
+<p class="links"><a href="/docleaf/privacy/">سياسة الخصوصية (بالإنجليزية)</a><a href="/">تطبيقات BumuStudios</a><a href="mailto:bumustudios@gmail.com">للتواصل: bumustudios@gmail.com</a></p>
+<p>© 2026 BumuStudios · <time datetime="2026-11-23">2026-11-23</time></p>
+<p>Google Play وشعار Google Play علامتان تجاريتان لشركة Google LLC. Word علامة تجارية لشركة Microsoft Corporation؛ DocLeaf غير تابع لـ Microsoft.</p>
+</footer>
+</body>
+</html>
